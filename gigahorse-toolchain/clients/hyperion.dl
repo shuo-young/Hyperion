@@ -1,0 +1,294 @@
+#include "../clientlib/decompiler_imports.dl"
+#include "../clientlib/loops_semantics.dl"
+#include "../clientlib/guards.dl"
+#include "../clientlib/vulnerability_macros.dl"
+
+// basic functionality
+// map the statement (included in the callgraph) to a function
+.decl Hyperion_Statement_Function(stmt:Statement, func:Function)
+Hyperion_Statement_Function(stmt, func) :-
+  Statement_Function(stmt, func).
+
+Hyperion_Statement_Function(stmt, caller) :-
+  InFunction(block, caller),
+  CallGraphEdge(block, callee),
+  Hyperion_Statement_Function(stmt, callee).
+
+.decl Hyperion_SensitiveCall(callStmt: Statement, recipient:Variable, amount:Variable)
+.output Hyperion_SensitiveCall
+Hyperion_SensitiveCall(callStmt, recipient, amount) :-
+  CallToSignature(callStmt, "transfer(address,uint256)"),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 1, recipient),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 2, amount).
+
+Hyperion_SensitiveCall(callStmt, recipient, amount) :-
+  CALL(callStmt, _, recipient, amount, _, _, _, _, _),
+  !StatementUsesMemory_ActualMemoryArg(callStmt, _, _, _).
+
+.decl Hyperion_StaticallyGuardedBlock(guardedBlock: Block, globalVal: Value)
+Hyperion_StaticallyGuardedBlock(guardedBlock, globalVal) :-
+  ControlsWith(_, guardedBlock, predicate),
+  (CALLER(_, msgsenderFrom) ; ORIGIN(_, msgsenderFrom)),
+  DataFlows(msgsenderFrom, msgsender),
+  EQVars(global, msgsender, predicateFrom),
+  LoadGlobalVariable(_, globalVal, globalFrom),
+  DataFlows(globalFrom, global),
+  DataFlows(predicateFrom, predicate).
+
+// storage slot infer
+.decl Hyperion_OwnerSlot(slotNum:Value)
+.output Hyperion_OwnerSlot
+Hyperion_OwnerSlot(slotNum) :-
+  Hyperion_StaticallyGuardedBlock(_, slotNum).
+
+// ?recover by the name intuitively
+.decl Hyperion_CallConstrainedByOwner(callStmt:Statement, val:Value, funcSign:symbol)
+.output Hyperion_CallConstrainedByOwner
+Hyperion_CallConstrainedByOwner(callStmt, val, funcSign) :-
+  Hyperion_StaticallyGuardedBlock(block, val),
+  Hyperion_SensitiveCall(callStmt, _, _),
+  Statement_Block(callStmt, block),
+  Hyperion_Statement_Function(callStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+.decl Hyperion_BalanceSlot(id:Value)
+.output Hyperion_BalanceSlot
+Hyperion_BalanceSlot(id):-
+  PublicFunctionArg(func, receiverFrom, _),
+  PublicFunctionArg(func, amountFrom, _),
+  DataFlows(receiverFrom, receiver),
+  DataFlows(amountFrom, amount),
+  LoadFromDataStructure(_, id, receiver, balanceVar),
+  DataFlows(balanceVar, addBalanceVar),
+  ADDFix(_, addBalanceVar, amount, _).
+
+// ?not fully remembered
+.decl Hyperion_SupplySlot(slotNum:Value)
+.output Hyperion_SupplySlot
+Hyperion_SupplySlot(slotNum) :-
+  LoadGlobalVariable(_, slotNum, supply),
+  DataFlows(supply, addSupplyVar),
+  ADDFix(_, addSupplyVar, _, _).
+
+.decl Hyperion_TimeSlot(slotNum:Value)
+.output Hyperion_TimeSlot
+Hyperion_TimeSlot(slotNum) :-
+  Hyperion_StaticallyGuardedBlock(block, ownerSlot),
+  StoreGlobalVariable(setOwnerStmt, ownerSlot, setOwnerAddress),
+  Statement_Block(setOwnerStmt, block),
+  Variable_Value(setOwnerAddress, "0x0"),
+  PublicFunctionArg(_, arg, _),
+  TIMESTAMP(_, timeVar),
+  DataFlows(timeVar, setTimeVar),
+  DataFlows(arg, setTimeVar),
+  Statement_Block(timeStoreStmt, block),
+  StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
+
+.decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
+.output Hyperion_Recipient
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  LoadGlobalVariable(_, val, to),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, to, _),
+  Hyperion_Statement_Function(callStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  val = "CALLER",
+  CALLER(_, msgsenderFrom),
+  DataFlows(msgsenderFrom, msgSender),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, msgSender, _),
+  Hyperion_Statement_Function(callStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+.decl Hyperion_CallPrivateFuncArg(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
+.output Hyperion_CallPrivateFuncArg
+Hyperion_CallPrivateFuncArg(cpStmt, orginVar, targetVar) :-
+  CALLPRIVATE(cpStmt, _),
+  Statement_Uses(cpStmt, orginVar, index),
+  Statement_Block(cpStmt, block),
+  FunctionCallReturn(block, targetFun, _),
+  FormalArgs(targetFun, targetVar, index-1).
+
+.decl Hyperion_PrivateCallReturn(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
+.output Hyperion_PrivateCallReturn
+Hyperion_PrivateCallReturn(cpStmt, orginVar, targetVar) :-
+  FunctionCallReturn(block, targetFun, _),
+  RETURNPRIVATE(rpStmt, _),
+  Statement_Function(rpStmt, targetFun),
+  Statement_Uses(rpStmt, orginVar, _),
+  CALLPRIVATE(cpStmt, _),
+  Statement_Block(cpStmt, block),
+  Statement_Defines(cpStmt, targetVar, _).
+
+// math op
+.decl Hyperion_Add(a: Variable, b: Variable, res:Variable)
+.output Hyperion_Add
+Hyperion_Add(a, b, res):-
+  ADD(_, a, b, res).
+Hyperion_Add(a, b, to):-
+  PHI(_, from, to),
+  ADD(_, a, b, from).
+
+.decl Hyperion_Sub(a: Variable, b: Variable, res:Variable)
+.output Hyperion_Sub
+Hyperion_Sub(a, b, res):-
+  SUB(_, a, b, res).
+Hyperion_Sub(a, b, to):-
+  PHI(_, from, to),
+  SUB(_, a, b, from).
+  
+
+.decl Hyperion_Mul(a: Variable, b: Variable, res:Variable)
+.output Hyperion_Mul
+Hyperion_Mul(a, b, res):-
+  MUL(_, a, b, res).
+Hyperion_Mul(a, b, to):-
+  PHI(_, from, to),
+  MUL(_, a, b, from).
+
+
+.decl Hyperion_Div(a: Variable, b: Variable, res:Variable)
+.output Hyperion_Div
+Hyperion_Div(a, b, res):-
+  DIV(_, a, b, res).
+Hyperion_Div(a, b, to):-
+  PHI(_, from, to),
+  DIV(_, a, b, from).
+
+  // restore external call info
+.decl Hyperion_ExternalCallInfo(func:Function, callStmt:Statement, callOp:Opcode, calleeVar:Variable, numArg:number, numRet:number)
+.output Hyperion_ExternalCallInfo
+Hyperion_ExternalCallInfo(func, callStmt, callOp, calleeVar, numArg, numRet) :-
+  PublicFunctionSelector(func, _),
+  Hyperion_Statement_Function(callStmt, func),
+  (CALL(callStmt, _, calleeVar, _, _, _, _, _, _);STATICCALL(callStmt, _, calleeVar, _, _, _, _, _);DELEGATECALL(callStmt, _, calleeVar, _, _, _, _, _)),
+  Statement_Opcode(callStmt, callOp),
+  ExternalCall_NumOfArgs(callStmt, numArg),
+  numRet = count: ExternalCall_ActualReturn(callStmt, _, _).
+
+// restore funcSign
+.decl Hyperion_ExternalCall_FuncSign_ConstType(func:Function, callStmt:Statement, funcSign:Value)
+.output Hyperion_ExternalCall_FuncSign_ConstType
+Hyperion_ExternalCall_FuncSign_ConstType(func, callStmt, funcSign) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, _, _, _),
+  Variable_Value(actual, funcSign),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 0, actual).
+
+.decl Hyperion_ExternalCall_FuncSign_Fallback(func:Function, callStmt:Statement, funcSign:Value)
+.output Hyperion_ExternalCall_FuncSign_Fallback
+Hyperion_ExternalCall_FuncSign_Fallback(func, callStmt, funcSign) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, _, _, _),
+  !StatementUsesMemory_ActualMemoryArg(callStmt, _, _, _),
+  funcSign = "0x00000000".
+
+.decl Hyperion_ExternalCall_FuncSign_ProxyType(func:Function, callStmt:Statement)
+.output Hyperion_ExternalCall_FuncSign_ProxyType
+Hyperion_ExternalCall_FuncSign_ProxyType(func, callStmt) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, _, _, _),
+  DELEGATECALL(callStmt, _, _, _, data_length, _, _, _),
+  CALLDATASIZE(_, data_length).
+
+Hyperion_ExternalCall_FuncSign_ProxyType(func, callStmt) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, _, _, _),
+  DELEGATECALL(callStmt, _, _, _, data_length2, _, _, _),
+  CALLDATASIZE(_, data_length1),
+  DataFlows(data_length1, data_length2).
+
+.decl Hyperion_ExternalCall_FuncSign_Metrics(func:Function, call:number, constType:number, proxyType:number)
+.output Hyperion_ExternalCall_FuncSign_Metrics
+Hyperion_ExternalCall_FuncSign_Metrics(func, callNum, constTypeNum, proxyTypeNum) :-
+  PublicFunctionSelector(func, _),
+  callNum = count:Hyperion_ExternalCallInfo(func, _, _, _, _, _),
+  constTypeNum = count:Hyperion_ExternalCall_FuncSign_ConstType(func, _, _),
+  proxyTypeNum = count:Hyperion_ExternalCall_FuncSign_ProxyType(func, _).
+
+// restore callee
+.decl Hyperion_ExternalCall_Callee_ConstType(func:Function, callStmt:Statement, callee:Value)
+.output Hyperion_ExternalCall_Callee_ConstType
+Hyperion_ExternalCall_Callee_ConstType(func, callStmt, callee) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, calleeVar, _, _),
+  Variable_Value(calleeVar, callee).
+
+.decl Hyperion_ExternalCall_Callee_StorageType(func:Function, callStmt:Statement, storageSlot:symbol, byteLow:number, byteHigh:number)
+.output Hyperion_ExternalCall_Callee_StorageType
+Hyperion_ExternalCall_Callee_StorageType(func, callStmt, storageSlot, byteLow, byteHigh) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, calleeVar, _, _),
+  !Variable_Value(calleeVar, _),
+  Hyperion_StorageVariableAddrType(storVar, calleeVar),
+  StorageVariableInfo(storVar, storageSlot, byteLow, byteHigh).
+
+.decl Hyperion_ExternalCall_Callee_StorageType_ForProxy(func:Function, callStmt:Statement, storageSlot:symbol)
+.output Hyperion_ExternalCall_Callee_StorageType_ForProxy
+Hyperion_ExternalCall_Callee_StorageType_ForProxy(func, callStmt, storageSlot) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, calleeVar, _, _),
+  DataFlows(var, calleeVar),
+  SLOADOfConst(_, storageSlot, var).
+
+.decl Hyperion_ExternalCall_Callee_FuncArgType(func:Function, callStmt:Statement, pubFun:Function, argIndex:number)
+.output Hyperion_ExternalCall_Callee_FuncArgType
+Hyperion_ExternalCall_Callee_FuncArgType(func, callStmt, pubFun, argIndex) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, calleeVar, _, _),
+  !Variable_Value(calleeVar, _),
+  PublicFunctionArg(pubFun, funcArg, argIndex),
+  DataFlows(funcArg, calleeVar).
+
+.decl Hyperion_ExternalCall_Callee_Metrics(pubFun:Function, callNum:number, typeConst:number, typeStorage:number, typeStorageForProxy:number, typeFuncArg:number)
+.output Hyperion_ExternalCall_Callee_Metrics
+Hyperion_ExternalCall_Callee_Metrics(pubFun, callNum, typeConst, typeStorage, typeStorageForProxy, typeFuncArg) :-
+  PublicFunctionSelector(pubFun, _),
+  callNum = count: Hyperion_ExternalCallInfo(pubFun, _, _, _, _, _),
+  typeConst = count: Hyperion_ExternalCall_Callee_ConstType(pubFun, _, _),
+  typeStorage = count: Hyperion_ExternalCall_Callee_StorageType(pubFun, _, _, _, _),
+  typeStorageForProxy = count: Hyperion_ExternalCall_Callee_StorageType_ForProxy(pubFun, _, _),
+  typeFuncArg = count: Hyperion_ExternalCall_Callee_FuncArgType(pubFun, _, _, _).
+
+.decl Hyperion_ExternalCall_Known_Arg(func:Function, callStmt:Statement, argIndex:number, argVal:Value)
+.output Hyperion_ExternalCall_Known_Arg
+Hyperion_ExternalCall_Known_Arg(func, callStmt, argIndex-1, argVal) :-
+  Hyperion_ExternalCallInfo(func, callStmt, _, _, _, _),
+  Variable_Value(arg, argVal),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, argIndex, arg),
+  argIndex != 0.
+
+// Helper
+.decl Hyperion_FunctionInfo(func:Function, funcSign:symbol, funcHighLevelName:symbol)
+.output Hyperion_FunctionInfo
+Hyperion_FunctionInfo(func, funcSign, funcHighLevelName) :-
+  PublicFunctionSelector(func, funcSign),
+  HighLevelFunctionName(func, funcHighLevelName).
+
+.decl Hyperion_StorageVariableAddrType(storVar:symbol, calleeVar:Variable)
+Hyperion_StorageVariableAddrType(storVar, addr):-
+  StorageVariableInfo(storVar, originStorVar, byteLow, byteHigh),
+  VarHoldsBytesOfStorVarFinal(var, _, $Variable($Constant(originStorVar)), byteLow, byteHigh),
+  widthBytes = 1 + byteHigh - byteLow,
+  widthBytes = 20,
+  DataFlows(var, addr),
+  AddressTypedVar(addr).
+
+Hyperion_StorageVariableAddrType(storVar, addr):-
+  StorageVariableInfo(storVar, originStorVar, byteLow, byteHigh),
+  VarWrittenToBytesOfStorVarFinal(var, _, $Variable($Constant(originStorVar)), byteLow, byteHigh),
+  widthBytes = 1 + byteHigh - byteLow,
+  widthBytes = 20,
+  DataFlows(addr, var),
+  AddressTypedVar(addr).
+
+Hyperion_StorageVariableAddrType(storVar, addrFrom):-
+  AddressTypedVar(addrFrom),
+  DataFlows(addrFrom, addr),
+  (EQ(_, otherAddr, addr, _) ; EQ(_, addr, otherAddr, _)),
+  DataFlows(var, otherAddr),
+  VarHoldsBytesOfStorVarFinal(var, _, $Variable($Constant(originStorVar)), byteLow, byteHigh),
+  StorageVariableInfo(storVar, originStorVar, byteLow, byteHigh),
+  widthBytes = 1 + byteHigh - byteLow,
+  widthBytes = 20.
+
+.decl Hyperion_CompareVars(a: Variable, b: Variable, res: Variable)
+Hyperion_CompareVars(a, b, res) :-
+  LT(_, a, b, res);LT(_, b, a, res);
+  GT(_, a, b, res);LT(_, b, a, res);
+  SLT(_, a, b, res);LT(_, b, a, res);
+  SGT(_, a, b, res);LT(_, b, a, res).
