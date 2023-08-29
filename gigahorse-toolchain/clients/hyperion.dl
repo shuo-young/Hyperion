@@ -53,7 +53,7 @@ Hyperion_CallConstrainedByOwner(callStmt, val, funcSign) :-
 
 .decl Hyperion_BalanceSlot(id:Value)
 .output Hyperion_BalanceSlot
-Hyperion_BalanceSlot(id):-
+Hyperion_BalanceSlot(id) :-
   PublicFunctionArg(func, receiverFrom, _),
   PublicFunctionArg(func, amountFrom, _),
   DataFlows(receiverFrom, receiver),
@@ -66,22 +66,25 @@ Hyperion_BalanceSlot(id):-
 .decl Hyperion_SupplySlot(slotNum:Value)
 .output Hyperion_SupplySlot
 Hyperion_SupplySlot(slotNum) :-
+  PublicFunctionArg(_, amount, _),
   LoadGlobalVariable(_, slotNum, supply),
-  DataFlows(supply, addSupplyVar),
-  ADDFix(_, addSupplyVar, _, _).
+  DataFlows(supply, supplyVar),
+  DataFlows(amount, amountVar),
+  ADDFix(_, supplyVar, amountVar, _).
 
 .decl Hyperion_TimeSlot(slotNum:Value)
 .output Hyperion_TimeSlot
 Hyperion_TimeSlot(slotNum) :-
-  Hyperion_StaticallyGuardedBlock(block, ownerSlot),
-  StoreGlobalVariable(setOwnerStmt, ownerSlot, setOwnerAddress),
-  Statement_Block(setOwnerStmt, block),
-  Variable_Value(setOwnerAddress, "0x0"),
-  PublicFunctionArg(_, arg, _),
+  Hyperion_StaticallyGuardedBlock(_, ownerSlot),
+  Hyperion_Statement_Function(setOwnerStmt, func),
+  Hyperion_Statement_Function(timeStoreStmt, func),
+  // change owner address
+  StoreGlobalVariable(setOwnerStmt, ownerSlot, _),
+  // change time
+  PublicFunctionArg(func, arg, _),
   TIMESTAMP(_, timeVar),
   DataFlows(timeVar, setTimeVar),
   DataFlows(arg, setTimeVar),
-  Statement_Block(timeStoreStmt, block),
   StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
 
 .decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
@@ -125,24 +128,24 @@ Hyperion_PrivateCallReturn(cpStmt, orginVar, targetVar) :-
 // math op
 .decl Hyperion_Add(a: Variable, b: Variable, res:Variable)
 .output Hyperion_Add
-Hyperion_Add(a, b, res):-
+Hyperion_Add(a, b, res) :-
   ADD(_, a, b, res).
-Hyperion_Add(a, b, to):-
+Hyperion_Add(a, b, to) :-
   PHI(_, from, to),
   ADD(_, a, b, from).
 
 .decl Hyperion_Sub(a: Variable, b: Variable, res:Variable)
 .output Hyperion_Sub
-Hyperion_Sub(a, b, res):-
+Hyperion_Sub(a, b, res) :-
   SUB(_, a, b, res).
-Hyperion_Sub(a, b, to):-
+Hyperion_Sub(a, b, to) :-
   PHI(_, from, to),
   SUB(_, a, b, from).
   
 
 .decl Hyperion_Mul(a: Variable, b: Variable, res:Variable)
 .output Hyperion_Mul
-Hyperion_Mul(a, b, res):-
+Hyperion_Mul(a, b, res) :-
   MUL(_, a, b, res).
 Hyperion_Mul(a, b, to):-
   PHI(_, from, to),
@@ -151,9 +154,9 @@ Hyperion_Mul(a, b, to):-
 
 .decl Hyperion_Div(a: Variable, b: Variable, res:Variable)
 .output Hyperion_Div
-Hyperion_Div(a, b, res):-
+Hyperion_Div(a, b, res) :-
   DIV(_, a, b, res).
-Hyperion_Div(a, b, to):-
+Hyperion_Div(a, b, to) :-
   PHI(_, from, to),
   DIV(_, a, b, from).
 

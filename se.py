@@ -111,6 +111,7 @@ def analyze_bytecode():
 
     helper = InputHelper(source=args.source, evm=args.evm)
     inp = helper.get_inputs()[0]
+    print(inp['disasm_file'])
 
     result, exit_code = sym_exec.run(disasm_file=inp['disasm_file'])
     helper.rm_tmp_files()

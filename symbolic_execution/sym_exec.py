@@ -482,7 +482,7 @@ def get_init_global_state(path_conditions_and_vars):
     constraint = init_ia >= BitVecVal(0, 256)
     path_conditions_and_vars["path_condition"].append(constraint)
 
-    # update the balances of the "caller" and "callee"
+    # update the balances of the "caller" and "callee"re
     global_state["balance"]["Is"] = init_is - deposited_value
     global_state["balance"]["Ia"] = init_ia + deposited_value
 
@@ -593,7 +593,7 @@ def full_sym_exec():
     )
     # if g_src_map:
     start_block_to_func_sig = get_start_block_to_func_sig()
-    print(start_block_to_func_sig)
+    # print(start_block_to_func_sig)
 
     return sym_exec_block(params, 0, 0, 0, -1, "fallback")
 
@@ -820,20 +820,6 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
     # collecting the analysis result by calling this skeletal function
     # this should be done before symbolically executing the instruction,
     # since SE will modify the stack and mem
-    # semantic_analysis(
-    #     analysis,
-    #     opcode,
-    #     stack,
-    #     mem,
-    #     global_state,
-    #     global_problematic_pcs,
-    #     current_func_name,
-    #     g_src_map,
-    #     path_conditions_and_vars,
-    #     solver,
-    #     instructions,
-    #     g_slot_map,
-    # )
 
     log.debug("==============================")
     log.debug("EXECUTING: " + instr)
@@ -1410,28 +1396,6 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                 new_var = BitVec(new_var_name, 256)
                 path_conditions_and_vars[new_var_name] = new_var
                 stack.insert(0, new_var)
-            # find special stack&mem events during SE
-            if global_state["mint"]["MSTORE_2"] == True:
-                global_state["mint"]["hash"] = stack[0]
-                global_state["mint"]["MSTORE_2"] = False
-            elif global_state["approve"]["MSTORE_2"] == True:
-                global_state["approve"]["hash"] = stack[0]
-                global_state["approve"]["MSTORE_2"] = False
-            elif global_state["approve"]["MSTORE_owner"] == True:
-                global_state["approve"]["owner_hash"] = stack[0]
-                global_state["approve"]["MSTORE_owner"] = False
-            elif global_state["burn"]["MSTORE_2"] == True:
-                global_state["burn"]["hash"] = stack[0]
-                global_state["burn"]["MSTORE_2"] = False
-            elif global_state["setApprovalForAll"]["MSTORE_3"] == True:
-                global_state["setApprovalForAll"]["hash"] = stack[0]
-                global_state["setApprovalForAll"]["MSTORE_3"] = False
-            elif global_state["transfer"]["MSTORE_owner"] == True:
-                global_state["transfer"]["owner_hash"] = stack[0]
-                global_state["transfer"]["MSTORE_owner"] = False
-            elif global_state["transfer"]["MSTORE_2"] == True:
-                global_state["approve"]["hash"] = stack[0]
-                global_state["transfer"]["MSTORE_2"] = False
 
         else:
             raise ValueError("STACK underflow")
@@ -2154,8 +2118,6 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = first * second & UNSIGNED_BOUND_NUMBER
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
-            if second == global_params.ONERC721RECEIVED_SELECTOR:
-                global_params.ONERC721RECEIVED_SELECTOR_SHL = computed
 
             # *Simpler model
             # first = stack.pop(0)
@@ -2362,6 +2324,14 @@ class Timeout:
         raise TimeoutError(self.error_message)
 
 
+def detect_vulnerabilities():
+    if instructions:
+        evm_code_coverage = float(len(visited_pcs)) / len(instructions.keys()) * 100
+        log.info("\t  EVM Code Coverage: \t\t\t %s%%", round(evm_code_coverage, 1))
+        results["evm_code_coverage"] = str(round(evm_code_coverage, 1))
+    return results, 0
+
+
 def do_nothing():
     pass
 
@@ -2402,6 +2372,7 @@ def run(disasm_file=None, source_map=None):
     global g_disasm_file
     global results
     global begin
+    global g_src_map
 
     g_disasm_file = disasm_file
     # no source_map by default
@@ -2413,5 +2384,5 @@ def run(disasm_file=None, source_map=None):
         begin = time.time()
         log.info("\t============ Results ===========")
         analyze()
-        ret = None
+        ret = detect_vulnerabilities()
         return ret

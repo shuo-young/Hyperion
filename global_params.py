@@ -20,7 +20,7 @@ PRINT_MODE = 0
 DEBUG_MODE = 0
 
 # Timeout for z3 in ms
-TIMEOUT = 3000
+TIMEOUT = 300
 
 # Set this flag to 2 if we want to do evm real value unit test
 # Set this flag to 3 if we want to do evm symbolic unit test
@@ -39,11 +39,11 @@ PRINT_PATHS = 0
 STORE_RESULT = 1
 
 # depth limit for DFS
-DEPTH_LIMIT = 500
+DEPTH_LIMIT = 200
 
 GAS_LIMIT = 400000000
 
-LOOP_LIMIT = 200
+LOOP_LIMIT = 50
 
 GENERATE_TEST_CASES = 0
 
@@ -51,3 +51,11 @@ GENERATE_TEST_CASES = 0
 PARALLEL = 0
 
 TARGET_CONTRACTS = None
+
+# WEB = 1 means that we are using Oyente for web service
+WEB = 0
+
+# Use a public blockchain to speed up the symbolic execution
+USE_GLOBAL_BLOCKCHAIN = 0
+
+USE_GLOBAL_STORAGE = 0
