@@ -29,6 +29,10 @@ visited_blocks = set()
 UNSIGNED_BOUND_NUMBER = 2**256 - 1
 CONSTANT_ONES_159 = BitVecVal((1 << 160) - 1, 256)
 
+Assertion = namedtuple('Assertion', ['pc', 'model'])
+Underflow = namedtuple('Underflow', ['pc', 'model'])
+Overflow = namedtuple('Overflow', ['pc', 'model'])
+
 
 class Parameter:
     def __init__(self, **kwargs):
@@ -128,7 +132,10 @@ def initGlobalVars():
     path_conditions = []
 
     global global_problematic_pcs  # for different defects
-    global_problematic_pcs = {}
+    global_problematic_pcs = {
+        "integer_underflow": [],
+        "integer_overflow": [],
+    }
 
     # store global variables, e.g. storage, balance of all paths
     global all_gs
@@ -849,14 +856,14 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
 
             check_revert = False
-            if jump_type[block] == "conditional":
+            if jump_type[block] == 'conditional':
                 jump_target = vertices[block].get_jump_target()
                 falls_to = vertices[block].get_falls_to()
                 check_revert = any(
                     [
                         True
                         for instruction in vertices[jump_target].get_instructions()
-                        if instruction.startswith("REVERT")
+                        if instruction.startswith('REVERT')
                     ]
                 )
                 if not check_revert:
@@ -864,13 +871,24 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                         [
                             True
                             for instruction in vertices[falls_to].get_instructions()
-                            if instruction.startswith("REVERT")
+                            if instruction.startswith('REVERT')
                         ]
                     )
 
+            if jump_type[block] != 'conditional' or not check_revert:
+                if not isAllReal(computed, first):
+                    solver.push()
+                    solver.add(UGT(first, computed))
+                    if check_sat(solver) == sat:
+                        global_problematic_pcs['integer_overflow'].append(
+                            Overflow(global_state['pc'] - 1, solver.model())
+                        )
+                        overflow_pcs.append(global_state['pc'] - 1)
+                    solver.pop()
+
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "MUL":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -884,7 +902,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "SUB":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -901,14 +919,14 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
 
             check_revert = False
-            if jump_type[block] == "conditional":
+            if jump_type[block] == 'conditional':
                 jump_target = vertices[block].get_jump_target()
                 falls_to = vertices[block].get_falls_to()
                 check_revert = any(
                     [
                         True
                         for instruction in vertices[jump_target].get_instructions()
-                        if instruction.startswith("REVERT")
+                        if instruction.startswith('REVERT')
                     ]
                 )
                 if not check_revert:
@@ -916,13 +934,23 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                         [
                             True
                             for instruction in vertices[falls_to].get_instructions()
-                            if instruction.startswith("REVERT")
+                            if instruction.startswith('REVERT')
                         ]
                     )
 
+            if jump_type[block] != 'conditional' or not check_revert:
+                if not isAllReal(first, second):
+                    solver.push()
+                    solver.add(UGT(second, first))
+                    if check_sat(solver) == sat:
+                        global_problematic_pcs['integer_underflow'].append(
+                            Underflow(global_state['pc'] - 1, solver.model())
+                        )
+                    solver.pop()
+
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "DIV":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -948,7 +976,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "SDIV":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -980,10 +1008,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                         solver.push()
                         solver.add(first / second < 0)
                         sign = -1 if check_sat(solver) == sat else 1
-
-                        def z3_abs(x):
-                            return If(x >= 0, x, -x)
-
+                        z3_abs = lambda x: If(x >= 0, x, -x)
                         first = z3_abs(first)
                         second = z3_abs(second)
                         computed = sign * (first / second)
@@ -993,7 +1018,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "MOD":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -1023,7 +1048,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "SMOD":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -1056,9 +1081,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                     )
                     solver.pop()
 
-                    def z3_abs(x):
-                        return If(x >= 0, x, -x)
-
+                    z3_abs = lambda x: If(x >= 0, x, -x)
                     first = z3_abs(first)
                     second = z3_abs(second)
 
@@ -1068,7 +1091,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "ADDMOD":
         if len(stack) > 2:
             global_state["pc"] = global_state["pc"] + 1
@@ -1098,7 +1121,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "MULMOD":
         if len(stack) > 2:
             global_state["pc"] = global_state["pc"] + 1
@@ -1128,7 +1151,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "EXP":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -1145,7 +1168,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     elif opcode == "SIGNEXTEND":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
@@ -1180,7 +1203,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             computed = simplify(computed) if is_expr(computed) else computed
             stack.insert(0, computed)
         else:
-            raise ValueError("STACK underflow")
+            raise ValueError('STACK underflow')
     #
     #  10s: Comparison and Bitwise Logic Operations
     #
@@ -1790,8 +1813,6 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
                         global_state["Ia"][position] = new_var
                     else:
                         global_state["Ia"][str(position)] = new_var
-            if global_state["burn"]["hash"] != None:
-                global_state["burn"]["sload"] = stack[0]
         else:
             raise ValueError("STACK underflow")
 
@@ -1899,10 +1920,6 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             temp = stack[position]
             stack[position] = stack[0]
             stack[0] = temp
-            # *Delete => SWAP, others => DUP2
-            if stack[1] == global_state["burn"]["sload"]:
-                global_state["burn"]["valid"] = True
-                global_state["burn"]["trigger"] = False
         else:
             raise ValueError("STACK underflow")
 
@@ -2070,7 +2087,7 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             pass
         else:
             raise ValueError("STACK underflow")
-    elif opcode == "SELFDESTRUCT":
+    elif opcode in ("SELFDESTRUCT", "SUICIDE"):
         global_state["pc"] = global_state["pc"] + 1
         recipient = stack.pop(0)
         transfer_amount = global_state["balance"]["Ia"]
@@ -2324,10 +2341,28 @@ class Timeout:
         raise TimeoutError(self.error_message)
 
 
+def detect_integer_underflow():
+    log.info(
+        '\t  Integer Underflow: \t\t\t %s',
+        len(global_problematic_pcs['integer_underflow']) > 0,
+    )
+
+
+def detect_integer_overflow():
+    overflows = []
+    for overflow in global_problematic_pcs['integer_overflow']:
+        if overflow.pc not in revertible_overflow_pcs:
+            overflows.append(overflow)
+
+    log.info('\t  Integer Overflow: \t\t\t %s', len(overflows) > 0)
+
+
 def detect_vulnerabilities():
     if instructions:
         evm_code_coverage = float(len(visited_pcs)) / len(instructions.keys()) * 100
         log.info("\t  EVM Code Coverage: \t\t\t %s%%", round(evm_code_coverage, 1))
+        detect_integer_overflow()
+        detect_integer_underflow()
         results["evm_code_coverage"] = str(round(evm_code_coverage, 1))
     return results, 0
 
