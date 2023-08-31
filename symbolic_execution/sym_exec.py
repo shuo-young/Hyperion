@@ -600,7 +600,7 @@ def full_sym_exec():
     )
     # if g_src_map:
     start_block_to_func_sig = get_start_block_to_func_sig()
-    # print(start_block_to_func_sig)
+    print(start_block_to_func_sig)
 
     return sym_exec_block(params, 0, 0, 0, -1, "fallback")
 
@@ -1963,7 +1963,8 @@ def sym_exec_ins(params, block, instr, func_call, current_func_name):
             size_data_input = stack.pop(0)
             start_data_output = stack.pop(0)
             size_data_ouput = stack.pop(0)
-
+            log.info(recipient)
+            log.info(transfer_amount)
             # in the paper, it is shaky when the size of data output is
             # min of stack[6] and the | o |
 
