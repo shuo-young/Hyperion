@@ -12,6 +12,12 @@ class Block:
         self.predecessors: List[Block] = []
         self.successors: List[Block] = []
 
+    def set_branch_expression(self, branch):
+        self.branch_expression = branch
+
+    def get_branch_expression(self):
+        return self.branch_expression
+
 
 class Function:
     def __init__(
@@ -76,6 +82,7 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
         tac_formal_args[func_id].append((arg, int(pos)))
 
     # Inverse mapping
+    # global tac_block_function
     tac_block_function: Mapping[str, str] = {}
     for func_id, block_ids in tac_function_blocks.items():
         for block in block_ids:
@@ -148,3 +155,23 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
         )
 
     return blocks, functions
+
+
+def emit_stmt(path, stmt: Statement):
+    tac_variable_value = load_csv_map(path + 'TAC_Variable_Value.csv')
+
+    def render_var(var: str):
+        if var in tac_variable_value:
+            return int(tac_variable_value[var], 16)
+        else:
+            return f"v{var.replace('0x', '')}"
+
+    defs = [render_var(v) for v in stmt.defs]
+    uses = [render_var(v) for v in stmt.operands]
+
+    return defs, uses
+
+    # if defs:
+    #     emit(f"{stmt.ident}: {', '.join(defs)} = {stmt.op} {', '.join(uses)}", out, 1)
+    # else:
+    #     emit(f"{stmt.ident}: {stmt.op} {', '.join(uses)}", out, 1)
