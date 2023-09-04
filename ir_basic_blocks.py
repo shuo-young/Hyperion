@@ -11,6 +11,8 @@ class Block:
         self.statements = statements
         self.predecessors: List[Block] = []
         self.successors: List[Block] = []
+        self.private_call_target: Block = None
+        self.return_defs = []
 
     def set_branch_expression(self, branch):
         self.branch_expression = branch
@@ -72,6 +74,10 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
     # (block, function)
     # map function to its blocks
     tac_function_blocks = load_csv_multimap(path + 'InFunction.csv', reverse=True)
+
+    # map blocks to its function
+    tac_block_function = load_csv_map(path + 'InFunction.csv')
+    print(tac_block_function)
     # (pubfuncid, selector)
     tac_func_id_to_public = load_csv_map(path + 'PublicFunction.csv')
     # function name, not necessary in SE

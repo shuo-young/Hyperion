@@ -35,6 +35,7 @@ class Parameter:
             "visited": [],
             "overflow_pcs": [],
             "mem": {},
+            "var_to_source": {},
             "analysis": {},
             "sha3_list": {},
             "global_state": {},
@@ -270,6 +271,7 @@ def build_cfg_and_analyze():
     """Build cfg from ir and perform symbolic execution"""
     logging.info("Building CFG from IR...")
     global blocks
+    global functions
     blocks, functions = construct_cfg(path)
     # todo need label jump type and mark vertice
 
@@ -343,6 +345,15 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
     # successors can only be 0 or 1 or 2 or 3
     # CALLPRIVATE opcode can insert the successors to make it 3
     successors = block.successors
+
+    if block.private_call_target != None:
+        print("!!!!")
+        successor = block.private_call_target
+        new_params = params.copy()
+        # new_params.global_state["pc"] = successor
+        sym_exec_block(
+            new_params, successor, block, depth, func_call, current_func_name
+        )
 
     if len(successors) == 2:
         # conditional jump
@@ -448,8 +459,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     calls = params.calls
     overflow_pcs = params.overflow_pcs
     defs, uses = emit_stmt(path, statement)
-    print(defs)
-    print(uses)
+    var_to_source = params.var_to_source
+
     # hex value tranformed to int type (base 10)
     # var remain to strings
 
@@ -482,17 +493,22 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     log.debug("EXECUTING: " + instr)
     print("==============================")
     print("EXECUTING: " + instr)
-
+    print(defs)
+    print(uses)
     # print(block.ident)
     # print(instr)
     if opcode == "STOP":
         global_state["pc"] = global_state["pc"] + 1
         return
     elif opcode == "ADD":
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            first = stack.pop(0)
-            second = stack.pop(0)
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            second = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
             # Type conversion is needed when they are mismatched
             if isReal(first) and isSymbolic(second):
                 first = BitVecVal(first, 256)
@@ -515,8 +531,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     )
                     overflow_pcs.append(global_state['pc'] - 1)
                 solver.pop()
-
-            stack.insert(0, computed)
+            var_to_source[defs[0]] = computed
+            # stack.insert(0, computed)
         else:
             raise ValueError('STACK underflow')
     elif opcode == "MUL":
@@ -534,10 +550,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             raise ValueError('STACK underflow')
     elif opcode == "SUB":
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            first = stack.pop(0)
-            second = stack.pop(0)
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            second = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
             if isReal(first) and isSymbolic(second):
                 first = BitVecVal(first, 256)
                 computed = first - second
@@ -556,8 +576,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                         Underflow(global_state['pc'] - 1, solver.model())
                     )
                 solver.pop()
-
-            stack.insert(0, computed)
+            var_to_source[defs[0]] = computed
+            # stack.insert(0, computed)
         else:
             raise ValueError('STACK underflow')
     elif opcode == "DIV":
@@ -762,20 +782,25 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             raise ValueError('STACK underflow')
     elif opcode == "EXP":
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            base = stack.pop(0)
-            exponent = stack.pop(0)
+            # base = stack.pop(0)
+            # exponent = stack.pop(0)
+
+            if len(defs) > 0:
+                if isReal(defs[0]):
+                    pass
+
             # Type conversion is needed when they are mismatched
-            if isAllReal(base, exponent):
-                computed = pow(base, exponent, 2**256)
-            else:
-                # The computed value is unknown, this is because power is
-                # not supported in bit-vector theory
-                new_var_name = gen.gen_arbitrary_var()
-                computed = BitVec(new_var_name, 256)
-            computed = simplify(computed) if is_expr(computed) else computed
-            stack.insert(0, computed)
+            # if isAllReal(base, exponent):
+            #     computed = pow(base, exponent, 2**256)
+            # else:
+            #     # The computed value is unknown, this is because power is
+            #     # not supported in bit-vector theory
+            #     new_var_name = gen.gen_arbitrary_var()
+            #     computed = BitVec(new_var_name, 256)
+            # computed = simplify(computed) if is_expr(computed) else computed
+            # stack.insert(0, computed)
         else:
             raise ValueError('STACK underflow')
     elif opcode == "SIGNEXTEND":
@@ -817,11 +842,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     #  10s: Comparison and Bitwise Logic Operations
     #
     elif opcode == "LT":
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            first = stack.pop(0)
-            second = stack.pop(0)
-
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            second = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
             if isAllReal(first, second):
                 first = to_unsigned(first)
                 second = to_unsigned(second)
@@ -832,14 +860,19 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
             computed = simplify(computed) if is_expr(computed) else computed
-            stack.insert(0, computed)
+            var_to_source[defs[0]] = computed
+            # stack.insert(0, computed)
         else:
             raise ValueError("STACK underflow")
     elif opcode == "GT":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            first = stack.pop(0)
-            second = stack.pop(0)
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            second = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
 
             if isAllReal(first, second):
                 first = to_unsigned(first)
@@ -851,7 +884,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
             computed = simplify(computed) if is_expr(computed) else computed
-            stack.insert(0, computed)
+            # stack.insert(0, computed)
+            var_to_source[defs[0]] = computed
         else:
             raise ValueError("STACK underflow")
     elif opcode == "SLT":  # Not fully faithful to signed comparison
@@ -913,29 +947,39 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if len(opcode) > 0:
             global_state["pc"] = global_state["pc"] + 1
             # first = stack.pop(0)
-            first = uses[0]
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
             if isReal(first):
                 if first == 0:
                     computed = 1
                 else:
                     computed = 0
             else:
-                if first in var_to_source.keys():
-                    first = var_to_source[first]
-                    computed = If(first == 0, BitVecVal(1, 256), BitVecVal(0, 256))
-            # computed = simplify(computed) if is_expr(computed) else computed
+                computed = If(first == 0, BitVecVal(1, 256), BitVecVal(0, 256))
+            computed = simplify(computed) if is_expr(computed) else computed
             # stack.insert(0, computed)
             var_to_source[defs[0]] = computed
         else:
             raise ValueError("STACK underflow")
     elif opcode == "AND":
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            first = stack.pop(0)
-            second = stack.pop(0)
+            # first = stack.pop(0)
+            # second = stack.pop(0)
+            first = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            second = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
+            # if isSymbolic(second):
+            #     if second in var_to_source.keys():
+            #         second = var_to_source[second]
             computed = first & second
             computed = simplify(computed) if is_expr(computed) else computed
-            stack.insert(0, computed)
+            # stack.insert(0, computed)
+            var_to_source[defs[0]] = computed
         else:
             raise ValueError("STACK underflow")
     elif opcode == "OR":
@@ -1003,10 +1047,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # 20s: SHA3/KECCAK256
     #
     elif opcode in ["KECCAK256", "SHA3"]:
-        if len(stack) > 1:
+        if len(opcode) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            s0 = stack.pop(0)  # 0
-            s1 = stack.pop(0)  # 64
+            s0 = uses[0]  # 0
+            s1 = uses[1]  # 64
             slot = None
             if isAllReal(s0, s1):
                 # simulate the hashing of sha3
@@ -1026,12 +1070,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     new_var = BitVec(new_var_name, 256)
                     sha3_list[position] = new_var
                     stack.insert(0, new_var)
+                    var_to_source[defs[0]] = new_var
             else:
                 # push into the execution a fresh symbolic variable
                 new_var_name = gen.gen_arbitrary_var()
                 new_var = BitVec(new_var_name, 256)
                 path_conditions_and_vars[new_var_name] = new_var
                 stack.insert(0, new_var)
+                var_to_source[defs[0]] = new_var
 
         else:
             raise ValueError("STACK underflow")
@@ -1063,6 +1109,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "CALLER":  # get caller address
         # that is directly responsible for this execution
         global_state["pc"] = global_state["pc"] + 1
+        var_to_source[defs[0]] = global_state["sender_address"]
         stack.insert(0, global_state["sender_address"])
     elif opcode == "ORIGIN":  # get execution origination address
         global_state["pc"] = global_state["pc"] + 1
@@ -1241,7 +1288,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         stack.insert(0, global_state["currentCoinbase"])
     elif opcode == "TIMESTAMP":  # information from block header
         global_state["pc"] = global_state["pc"] + 1
-        stack.insert(0, global_state["currentTimestamp"])
+        var_to_source[defs[0]] = global_state["currentTimestamp"]
+        # stack.insert(0, global_state["currentTimestamp"])
     elif opcode == "NUMBER":  # information from block header
         global_state["pc"] = global_state["pc"] + 1
         stack.insert(0, global_state["currentNumber"])
@@ -1299,8 +1347,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "MSTORE":
         if len(stack) > 1:
             global_state["pc"] = global_state["pc"] + 1
-            stored_address = stack.pop(0)
-            stored_value = stack.pop(0)
+            stored_address = uses[0]
+
+            stored_value = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
             # MSTORE slotid to MEM32
 
             current_miu_i = global_state["miu_i"]
@@ -1367,28 +1418,35 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             raise ValueError("STACK underflow")
     elif opcode == "SLOAD":
-        if len(stack) > 0:
+        if len(opcode) > 0:
             global_state["pc"] = global_state["pc"] + 1
-            position = stack.pop(0)
+            position = uses[0]
 
             if isReal(position) and position in global_state["Ia"]:
                 value = global_state["Ia"][position]
-                stack.insert(0, value)
+                # stack.insert(0, value)
+                var_to_source[defs[0]] = value
             else:
                 if str(position) in global_state["Ia"]:
                     value = global_state["Ia"][str(position)]
-                    stack.insert(0, value)
+                    # stack.insert(0, value)
+                    var_to_source[defs[0]] = value
                 else:
                     if is_expr(position):
                         position = simplify(position)
-                    new_var_name = gen.gen_owner_store_var(position)
+                    new_var_name = (
+                        gen.gen_owner_store_var(var_to_source[position])
+                        if position in var_to_source.keys()
+                        else gen.gen_owner_store_var(position)
+                    )
 
                     if new_var_name in path_conditions_and_vars:
                         new_var = path_conditions_and_vars[new_var_name]
                     else:
                         new_var = BitVec(new_var_name, 256)
                         path_conditions_and_vars[new_var_name] = new_var
-                    stack.insert(0, new_var)
+                    # stack.insert(0, new_var)
+                    var_to_source[defs[0]] = new_var
                     if isReal(position):
                         global_state["Ia"][position] = new_var
                     else:
@@ -1413,8 +1471,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             raise ValueError("STACK underflow")
     elif opcode == "JUMP":
-        if len(stack) > 0:
-            target_block = stack.pop(0)
+        if len(opcode) > 0:
+            target_block = uses[0]
             # next_block = blocks[hex(target_block)]
             # block.successors.append(next_block)
             # target_address = stack.pop(0)
@@ -1430,8 +1488,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             raise ValueError("STACK underflow")
     elif opcode == "JUMPI":
         # We need to prepare two branches
-        if len(stack) > 1:
-            target_address = stack.pop(0)
+        if len(opcode) > 1:
+            target_address = uses[0]
             # next_block = blocks[hex(target_block)]
             # block.successors.append(next_block)
             # if isSymbolic(target_address):
@@ -1440,7 +1498,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             #     except:
             #         raise TypeError("Target address must be an integer")
             # vertices[block].set_jump_target(target_address)
-            flag = stack.pop(0)
+            flag = var_to_source[uses[1]]
             branch_expression = BitVecVal(0, 1) == BitVecVal(1, 1)
             if isReal(flag):
                 if flag != 0:
@@ -1909,7 +1967,24 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         stack.insert(0, global_state["currentBaseFee"])
 
     elif opcode == "CALLPRIVATE":
-        pass
+        # todomark start block, find its func, when executing returnprivate in this func, find the return target
+        private_fun_start_block = blocks[hex(uses[0])]
+        print(private_fun_start_block.ident)
+        target_private_fun = None
+        for function in functions:
+            if function.head_block.ident == private_fun_start_block:
+                target_private_fun = function
+        blocks[len(functions[private_fun_start_block]) - 1].return_defs = defs
+        block.private_call_target = blocks[hex(uses[0])]
+
+        # block.private_call_target.return_defs = defs
+
+        private_func_arg_map = {}
+        for i in range(1, len(uses)):
+            var_to_source[hex(uses[0]).replace("0x", "v") + "arg" + str(i - 1)] = (
+                var_to_source[uses[i]] if uses[i] in var_to_source.keys() else uses[i]
+            )
+        # print(private_func_arg_map)
         # for i in range(len(uses) - 1, -1, -1):
         #     stack.insert(0, uses[i])
         #     print(uses[i])
@@ -1921,12 +1996,16 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # func_id = tac_block_function[next_block]
 
     elif opcode == "RETURNPRIVATE":
+        return_defs = block.return_defs
+        print(return_defs)
+        for i in range(1, len(uses)):
+            var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
         # for i in range(len(uses) - 1, -1, -1):
         #     stack.insert(0, uses[i])
         # return_func = stack.pop(0)
         # next_block = blocks[hex(return_func)]
         # block.successors.append(next_block)
-        pass
+        # pass
 
     else:
         log.info("UNKNOWN INSTRUCTION: " + opcode)
@@ -1935,6 +2014,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             # exit(UNKNOWN_INSTRUCTION)
         raise Exception("UNKNOWN INSTRUCTION: " + opcode)
     print(var_to_source)
+    print(mem)
 
 
 if __name__ == "__main__":
