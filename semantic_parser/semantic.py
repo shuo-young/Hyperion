@@ -78,12 +78,39 @@ class Semantics:
             df = pd.DataFrame()
         return df
 
+    def get_recipient(self):
+        loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_Recipient.csv"
+        )
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["callStmt", "to", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df
+
+    def get_call_constrain_info(self):
+        loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_CallConstrainedByOwner.csv"
+        )
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["callStmt", "val", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df
+
     def analyze_formula(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
             + self.address
             + "/out/Hyperion_SensitiveCall.csv"
         )
+        # mark the receiver and the tranfer amount of ETH/ERC token
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
             df.columns = ["callStmt", "recipient", "amount"]
@@ -167,6 +194,16 @@ class Semantics:
             final_formula = self.expand_expression(variables, var)
             print(f"The final formula for {var} is {final_formula}")
 
+        # we now know the transfer target and amount
+        # use the recipient role to find clearETH pattern risky withdrawl
+        # 1.transfer 2.caller 3.caller constrained by slot load
+        recipient = self.get_recipient()
+        call_contrain = self.get_call_constrain_info()
+        merged_df = df.merge(recipient, on='callStmt').merge(
+            call_contrain, on='callStmt'
+        )
+        if len(merged_df) > 0:
+            print("true clear ETH!")
         return
 
     def process_csv(
@@ -203,66 +240,66 @@ class Semantics:
         a, b, op = variables[var]
         return f'({self.expand_expression(variables,a)}) {op} ({self.expand_expression(variables,b)})'
 
-    # def analyze_lock_time(self):
-    #     lock_loc = (
-    #         "./gigahorse-toolchain/.temp/"
-    #         + self.address
-    #         + "/out/Hyperion_LockLiquidity.csv"
-    #     )
-    #     if os.path.exists(lock_loc) and (os.path.getsize(lock_loc) > 0):
-    #         df_lock = pd.read_csv(lock_loc, header=None, sep='	')
-    #         df_lock.columns = ["funcSign", "slotNum"]
-    #     else:
-    #         df_lock = pd.DataFrame()
+    def analyze_lock_time(self):
+        lock_loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_LockLiquidity.csv"
+        )
+        if os.path.exists(lock_loc) and (os.path.getsize(lock_loc) > 0):
+            df_lock = pd.read_csv(lock_loc, header=None, sep='	')
+            df_lock.columns = ["funcSign", "slotNum"]
+        else:
+            df_lock = pd.DataFrame()
 
-    #     if df_lock.empty:
-    #         return
-    #     unlock_loc = (
-    #         "./gigahorse-toolchain/.temp/"
-    #         + self.address
-    #         + "/out/Hyperion_UnlockLiquidity.csv"
-    #     )
+        if df_lock.empty:
+            return
+        unlock_loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_UnlockLiquidity.csv"
+        )
 
-    #     if os.path.exists(unlock_loc) and (os.path.getsize(unlock_loc) > 0):
-    #         df_unlock = pd.read_csv(unlock_loc, header=None, sep='	')
-    #         df_unlock.columns = ["funcSign", "slotNum"]
-    #     else:
-    #         df_unlock = pd.DataFrame()
+        if os.path.exists(unlock_loc) and (os.path.getsize(unlock_loc) > 0):
+            df_unlock = pd.read_csv(unlock_loc, header=None, sep='	')
+            df_unlock.columns = ["funcSign", "slotNum"]
+        else:
+            df_unlock = pd.DataFrame()
 
-    #     if df_unlock.empty:
-    #         return
+        if df_unlock.empty:
+            return
 
-    #     # merge A and B, finding its same slotNum and different funcSign
-    #     res = pd.merge(df_lock, df_unlock, how='left', on='slotNum')
-    #     # print(res)
-    #     # funcSign_x differ funcSign_y
+        # merge A and B, finding its same slotNum and different funcSign
+        res = pd.merge(df_lock, df_unlock, how='left', on='slotNum')
+        # print(res)
+        # funcSign_x differ funcSign_y
 
-    # def analyze_unlimited_mint(self):
-    #     om_loc = (
-    #         "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_OverMint.csv"
-    #     )
-    #     if os.path.exists(om_loc) and (os.path.getsize(om_loc) > 0):
-    #         df_om = pd.read_csv(om_loc, header=None, sep='	')
-    #         df_om.columns = ["funcSign", "supplySlotNum", "ownerSlot", "id"]
-    #     else:
-    #         df_om = pd.DataFrame()
+    def analyze_unlimited_mint(self):
+        om_loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_OverMint.csv"
+        )
+        if os.path.exists(om_loc) and (os.path.getsize(om_loc) > 0):
+            df_om = pd.read_csv(om_loc, header=None, sep='	')
+            df_om.columns = ["funcSign", "supplySlotNum", "ownerSlot", "id"]
+        else:
+            df_om = pd.DataFrame()
 
-    #     if df_om.empty:
-    #         return
+        if df_om.empty:
+            return
 
-    #     print(len(df_om))
+        print(len(df_om))
 
-    # def analyze_clear_ETH(self):
-    #     ce_loc = (
-    #         "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_ClearETH.csv"
-    #     )
-    #     if os.path.exists(ce_loc) and (os.path.getsize(ce_loc) > 0):
-    #         df_ce = pd.read_csv(ce_loc, header=None, sep='	')
-    #         df_ce.columns = ["funcSign", "ownerSlot", "ethAmount"]
-    #     else:
-    #         df_ce = pd.DataFrame()
+    def analyze_clear_ETH(self):
+        ce_loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_ClearETH.csv"
+        )
+        if os.path.exists(ce_loc) and (os.path.getsize(ce_loc) > 0):
+            df_ce = pd.read_csv(ce_loc, header=None, sep='	')
+            df_ce.columns = ["funcSign", "ownerSlot", "ethAmount"]
+        else:
+            df_ce = pd.DataFrame()
 
-    #     if df_ce.empty:
-    #         return
+        if df_ce.empty:
+            return
 
-    #     print(len(df_ce))
+        print(len(df_ce))

@@ -67,3 +67,5 @@ if __name__ == '__main__':
         source["address"],
         source["block_number"],
     )
+
+    # semantic covers the targeted functions, storage of the critical state variable
