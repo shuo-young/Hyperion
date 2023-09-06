@@ -12,7 +12,19 @@ class Block:
         self.predecessors: List[Block] = []
         self.successors: List[Block] = []
         self.private_call_target: Block = None
-        self.return_defs = []
+        self.return_private_target: Block = None
+
+    def set_falls_to(self, block):
+        self.falls_to = block
+
+    def get_falls_to(self):
+        return self.falls_to
+
+    def set_jump_target(self, block):
+        self.jump_target = -1
+
+    def get_jump_target(self):
+        return self.jump_target
 
     def set_branch_expression(self, branch):
         self.branch_expression = branch
@@ -37,6 +49,8 @@ class Function:
         self.is_public = is_public
         self.selector = selector
         self.head_block = head_block
+        self.return_defs = []
+        self.caller_block: Block = None
 
 
 def load_csv(path: str, seperator: str = '\t') -> List[Union[str, List[str]]]:
@@ -77,7 +91,7 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
 
     # map blocks to its function
     tac_block_function = load_csv_map(path + 'InFunction.csv')
-    print(tac_block_function)
+    # print(tac_block_function)
     # (pubfuncid, selector)
     tac_func_id_to_public = load_csv_map(path + 'PublicFunction.csv')
     # function name, not necessary in SE
@@ -93,7 +107,6 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
     for func_id, block_ids in tac_function_blocks.items():
         for block in block_ids:
             tac_block_function[block] = func_id
-
     tac_block_stmts = load_csv_multimap(path + 'TAC_Block.csv', reverse=True)
     tac_op = load_csv_map(path + 'TAC_Op.csv')
 
@@ -137,6 +150,12 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
     for block in blocks.values():
         block.predecessors = [blocks[pred] for pred in tac_block_pred[block.ident]]
         block.successors = [blocks[succ] for succ in tac_block_succ[block.ident]]
+        if len(block.successors) == 2:
+            block.set_falls_to(block.successors[0])
+            block.set_jump_target(block.successors[1])
+        elif len(block.successors) == 1:
+            block.set_jump_target(block.successors[0])
+
 
     functions: Mapping[str, Function] = {}
     for (block_id,) in load_csv(path + 'IRFunctionEntry.csv'):
@@ -160,7 +179,7 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
             formals,
         )
 
-    return blocks, functions
+    return blocks, functions, tac_block_function
 
 
 def emit_stmt(path, stmt: Statement):

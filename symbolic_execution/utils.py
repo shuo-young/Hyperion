@@ -53,7 +53,10 @@ def check_sat(solver, pop_if_exception=True):
     try:
         ret = solver.check()
         if ret == unknown:
-            raise Z3Exception(solver.reason_unknown())
+            # pop unknown
+            solver.pop()
+            return ret
+            # raise Z3Exception(solver.reason_unknown())
     except Exception as e:
         if pop_if_exception:
             solver.pop()

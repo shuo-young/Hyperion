@@ -27,7 +27,7 @@ TIMEOUT = 100
 UNIT_TEST = 0
 
 # timeout to run symbolic execution (in secs)
-GLOBAL_TIMEOUT = 100
+GLOBAL_TIMEOUT = 300
 
 # timeout to run symbolic execution (in secs) for testing
 GLOBAL_TIMEOUT_TEST = 2
@@ -39,11 +39,11 @@ PRINT_PATHS = 0
 STORE_RESULT = 1
 
 # depth limit for DFS
-DEPTH_LIMIT = 200
+DEPTH_LIMIT = 100
 
 GAS_LIMIT = 400000000
 
-LOOP_LIMIT = 50
+LOOP_LIMIT = 5
 
 GENERATE_TEST_CASES = 0
 
