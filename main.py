@@ -1,6 +1,7 @@
 import argparse
 from datetime import datetime
 from web3 import Web3
+import logging
 
 import time
 from global_params import *
@@ -14,11 +15,11 @@ if __name__ == '__main__':
     # Main Body
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-du",
-        "--dapp_url",
-        help="The url of the tested dapp.",
+        "-dt",
+        "--dapp_text",
+        help="The text information of the tested dapp.",
         action="store",
-        dest="dapp_url",
+        dest="dapp_text",
         type=str,
     )
     parser.add_argument(
@@ -47,10 +48,21 @@ if __name__ == '__main__':
         type=int,
         default=16000000,
     )
+    parser.add_argument(
+        "-v", "--verbose", help="Verbose output, print everything.", action="store_true"
+    )
     args = parser.parse_args()
 
+    logging.basicConfig()
+    rootLogger = logging.getLogger(None)
+
+    if args.verbose:
+        rootLogger.setLevel(level=logging.DEBUG)
+    else:
+        rootLogger.setLevel(level=logging.INFO)
+
     # NLP process
-    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_url)
+    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
     # specs = extract_specs_helper.process()
 
     # Backend contract analysis

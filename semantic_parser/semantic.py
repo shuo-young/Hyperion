@@ -13,6 +13,8 @@ class Semantics:
             self.address = self.format_addr(address)
         self.block_number = block_number
         self.analyze()
+        self.targeted_funcs = []
+        self.transfer_funcs = []
 
     def format_addr(self, addr):
         if len(addr) != 42:
@@ -32,6 +34,7 @@ class Semantics:
             # self.analyze_unlimited_mint()
             # self.analyze_clear_ETH()
 
+    # extendable for more platforms
     def set_url(self):
         if self.platform == "ETH":
             self.url = (
@@ -70,14 +73,7 @@ class Semantics:
         )
         os.system(command.format(contract_addr=self.address))
 
-    def extract_math(self, loc):
-        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["a", "b", "res"]
-        else:
-            df = pd.DataFrame()
-        return df
-
+    # receiver of transfer calls
     def get_recipient(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
@@ -91,6 +87,8 @@ class Semantics:
             df = pd.DataFrame()
         return df
 
+    # get the constrained call by require-msg.sender like pattern
+    # val => slot of owner/compared storage var
     def get_call_constrain_info(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
@@ -104,6 +102,7 @@ class Semantics:
             df = pd.DataFrame()
         return df
 
+    # deprecated for just dataflow backward analysis
     def analyze_formula(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
@@ -303,3 +302,67 @@ class Semantics:
             return
 
         print(len(df_ce))
+
+    def infer_balance(self):
+        balance_loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_BalanceSlot.csv"
+        )
+        if os.path.exists(balance_loc) and (os.path.getsize(balance_loc) > 0):
+            df_balance = pd.read_csv(balance_loc, header=None, sep='	')
+            df_balance.columns = ["id"]
+        else:
+            df_balance = pd.DataFrame()
+        return df_balance
+
+    def infer_time(self):
+        time_loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
+        )
+        if os.path.exists(time_loc) and (os.path.getsize(time_loc) > 0):
+            df_time = pd.read_csv(time_loc, header=None, sep='	')
+            df_time.columns = ["id"]
+        else:
+            df_time = pd.DataFrame()
+        return df_time
+
+    def infer_supply(self):
+        supply_loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
+        )
+        if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
+            df_supply = pd.read_csv(supply_loc, header=None, sep='	')
+            df_supply.columns = ["id"]
+        else:
+            df_supply = pd.DataFrame()
+        return df_supply
+
+    def infer_owner(self):
+        owner_loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
+        )
+        if os.path.exists(owner_loc) and (os.path.getsize(owner_loc) > 0):
+            df_owner = pd.read_csv(owner_loc, header=None, sep='	')
+            df_owner.columns = ["id"]
+        else:
+            df_owner = pd.DataFrame()
+        return df_owner
+
+    def get_storage_content(self, slot_index, byteLow, byteHigh):
+        if self.url.startswith("https"):
+            w3 = Web3(Web3.HTTPProvider(self.url))
+        else:
+            w3 = Web3(Web3.WebsocketProvider(self.url))
+        contract_address = Web3.to_checksum_address(self.storage_addr)
+        storage_content = str(
+            w3.eth.get_storage_at(contract_address, slot_index, self.block_number).hex()
+        )
+        storage_content = storage_content.replace("0x", "")
+        # get storage address
+        if byteLow == 0:
+            contract_addr = "0x" + storage_content[-(byteHigh + 1) * 2 :]
+        else:
+            contract_addr = "0x" + storage_content[-(byteHigh + 1) * 2 : -byteLow * 2]
+        # maybe other type of storage, like string etc
+        return contract_addr
