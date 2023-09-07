@@ -43,12 +43,12 @@ DEPTH_LIMIT = 100
 
 GAS_LIMIT = 400000000
 
-LOOP_LIMIT = 5
+LOOP_LIMIT = 20
 
 GENERATE_TEST_CASES = 0
 
-# Run NFTGuard in parallel
-PARALLEL = 0
+# Run Hyperion in parallel
+PARALLEL = 1
 
 TARGET_CONTRACTS = None
 

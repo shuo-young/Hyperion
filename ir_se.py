@@ -168,7 +168,7 @@ def get_init_global_state(path_conditions_and_vars):
     return global_state
 
 
-def generate_dot_file(visited_edges, filename='cfg.dot'):
+def generate_dot_file(filename='cfg.dot'):
     """
     Generates a .dot file for the control flow graph based on visited_edges.
 
@@ -182,19 +182,60 @@ def generate_dot_file(visited_edges, filename='cfg.dot'):
         f.write("    node [shape=box];\n")
 
         for edge, count in visited_edges.items():
+            current_edge_type = visited_edges_type.get(edge, "normal")
+
+            if current_edge_type == "private_call_return":
+                color = "red"
+            elif current_edge_type == "private_call_from":
+                color = "blue"
+            else:
+                color = "black"
             f.write(
-                f'    "{edge.v1.ident}" -> "{edge.v2.ident}" [label="Visited: {count}"];\n'
+                f'    "{edge.v1.ident}" -> "{edge.v2.ident}" [label="Visited: {count}", color="{color}"];\n'
             )
 
         f.write("}\n")
+
+
+class CustomSolver:
+    def __init__(self, parallel=0, timeout=0):
+        self.push_count = 0
+        if parallel == 1:
+            t2 = Then('simplify', 'solve-eqs', 'smt')
+            _t = Then('tseitin-cnf-core', 'split-clause')
+            t1 = ParThen(_t, t2)
+            self.solver = OrElse(t1, t2).solver()
+        else:
+            self.solver = Solver()
+        self.solver.set("timeout", timeout)
+        self.solver.add()
+
+    def push(self):
+        self.solver.push()
+        self.push_count += 1
+
+    def pop(self):
+        if self.push_count > 0:
+            self.solver.pop()
+            self.push_count -= 1
+        else:
+            raise Exception("Cannot pop from an empty stack!")
+
+    def can_pop(self):
+        return self.push_count > 0
+
+    def add(self, *args):
+        return self.solver.add(*args)
+
+    def check(self):
+        return self.solver.check()
 
 
 def initGlobalVars():
     # Initialize global variables
     global solver
     # Z3 solver
-    solver = Solver()
-    solver.set("timeout", global_params.TIMEOUT)
+    solver = CustomSolver(global_params.PARALLEL, global_params.TIMEOUT)
 
     global MSIZE
     MSIZE = False
@@ -247,6 +288,9 @@ def initGlobalVars():
     global visited_edges
     visited_edges = {}
 
+    global visited_edges_type
+    visited_edges_type = {}
+
     global money_flow_all_paths
     money_flow_all_paths = []
 
@@ -297,7 +341,7 @@ def build_cfg_and_analyze():
 
     # todo find targeted SE paths
     targeted_sym_exec()
-    generate_dot_file(visited_edges)
+    generate_dot_file()
 
 
 def targeted_sym_exec():
@@ -338,12 +382,32 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
 
     Edge = namedtuple("Edge", ["v1", "v2"])
 
+    if block.return_private_from != None:
+        pre_block = block.return_private_from
+
+    elif block.private_call_from != None:
+        pre_block = block.private_call_from
+
     current_edge = Edge(pre_block, block)
+
+    if block.return_private_from != None:
+        visited_edges_type[current_edge] = "private_call_return"
+
+    elif block.private_call_from != None:
+        visited_edges_type[current_edge] = "private_call_from"
+
+    else:
+        visited_edges_type[current_edge] = "normal"
+
     if current_edge in visited_edges:
         updated_count_number = visited_edges[current_edge] + 1
         visited_edges.update({current_edge: updated_count_number})
     else:
         visited_edges.update({current_edge: 1})
+
+    # print(current_edge[0].ident)
+    # print(current_edge[1].ident)
+    # print("count number: " + str(visited_edges[current_edge]))
 
     if visited_edges[current_edge] > global_params.LOOP_LIMIT:
         log.debug("Overcome a number of loop limit. Terminating this path ...")
@@ -367,7 +431,6 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
     if block.private_call_target != None:
         successor = block.private_call_target
         new_params = params.copy()
-        # new_params.global_state["pc"] = successor
         sym_exec_block(
             new_params, successor, block, depth, func_call, current_func_name
         )
@@ -375,7 +438,6 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
     elif block.return_private_target != None:
         successor = block.return_private_target
         new_params = params.copy()
-        # new_params.global_state["pc"] = successor
         sym_exec_block(
             new_params, successor, block, depth, func_call, current_func_name
         )
@@ -390,7 +452,6 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
         # unconditional jump opcode
         successor = block.successors[0]
         new_params = params.copy()
-        # new_params.global_state["pc"] = successor
         sym_exec_block(
             new_params, successor, block, depth, func_call, current_func_name
         )
@@ -404,10 +465,13 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
         try:
             if solver.check() == unsat:
                 log.debug("INFEASIBLE PATH DETECTED")
+                print("======JUMPI jump target======")
+                print("INFEASIBLE PATH DETECTED")
+                print(block.ident)
             else:
-                left_branch = block.successors[1]
+                # true branch
+                left_branch = block.get_jump_target()
                 new_params = params.copy()
-                # new_params.global_state["pc"] = left_branch
                 new_params.path_conditions_and_vars["path_condition"].append(
                     branch_expression
                 )
@@ -422,7 +486,8 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
         except Exception as e:
             traceback.print_exc()
 
-        solver.pop()  # POP SOLVER CONTEXT
+        if solver.can_pop():
+            solver.pop()  # POP SOLVER CONTEXT
 
         solver.push()  # SET A BOUNDARY FOR SOLVER
         negated_branch_expression = Not(branch_expression)
@@ -436,10 +501,12 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
                 # no need to check for the negated condition, but we can immediately go into
                 # the else branch
                 log.debug("INFEASIBLE PATH DETECTED")
+                print("======JUMPI fall target======")
+                print("INFEASIBLE PATH DETECTED")
+                print(block.ident)
             else:
-                right_branch = block.successors[0]
+                right_branch = block.get_falls_to()
                 new_params = params.copy()
-                # new_params.global_state["pc"] = right_branch
                 new_params.path_conditions_and_vars["path_condition"].append(
                     negated_branch_expression
                 )
@@ -453,10 +520,10 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
             raise
         except Exception as e:
             traceback.print_exc()
-
-        solver.pop()  # POP SOLVER CONTEXT
-        updated_count_number = visited_edges[current_edge] - 1
-        visited_edges.update({current_edge: updated_count_number})
+        if solver.can_pop():
+            solver.pop()  # POP SOLVER CONTEXT
+        # updated_count_number = visited_edges[current_edge] - 1
+        # visited_edges.update({current_edge: updated_count_number})
 
     else:
         updated_count_number = visited_edges[current_edge] - 1
@@ -495,7 +562,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # its gonna be used in opcodes with real meaning
 
     instr = statement[1]
-    visited_pcs.add(global_state["pc"])
 
     instr_parts = str.split(instr, " ")
     opcode = instr_parts[0]
@@ -574,14 +640,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             computed = (first - second) % (2**256)
         computed = simplify(computed) if is_expr(computed) else computed
 
-        if not isAllReal(first, second):
-            solver.push()
-            solver.add(UGT(second, first))
-            if check_sat(solver) == sat:
-                global_problematic_pcs['integer_underflow'].append(
-                    Underflow(global_state['pc'] - 1, solver.model())
-                )
-            solver.pop()
+        # if not isAllReal(first, second):
+        #     solver.push()
+        #     solver.add(UGT(second, first))
+        #     if check_sat(solver) == sat:
+        #         global_problematic_pcs['integer_underflow'].append(
+        #             Underflow(global_state['pc'] - 1, solver.model())
+        #         )
+        #     solver.pop()
         var_to_source[defs[0]] = computed
 
     elif opcode == "DIV":
@@ -610,6 +676,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             # if check_sat(solver) == unsat or unknown:
             # computed = 0
             # else:
+            # if UDIV Phase failed, may cause by the phi return
             computed = UDiv(first, second)
             # solver.pop()
         computed = simplify(computed) if is_expr(computed) else computed
@@ -858,6 +925,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
+            print("GT===")
+            print(first)
+            print(second)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
 
@@ -1345,9 +1415,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     global_state["Ia"][str(position)] = new_var
 
     elif opcode == "SSTORE":
-        for call_pc in calls:
-            calls_affect_state[call_pc] = True
-        global_state["pc"] = global_state["pc"] + 1
         stored_address = (
             var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         )
@@ -1370,6 +1437,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "JUMPI":
         # We need to prepare two branches
         target_address = uses[0]
+        print(hex(target_address))
+
+        for successor in block.successors:
+            if successor.ident.startswith(hex(target_address)):
+                block.set_jump_target(successor)
+            else:
+                block.set_falls_to(successor)
+        print(block.get_jump_target().ident)
+        print(block.get_falls_to().ident)
         flag = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         branch_expression = BitVecVal(0, 1) == BitVecVal(1, 1)
         if isReal(flag):
@@ -1380,7 +1456,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         block.set_branch_expression(branch_expression)
 
     elif opcode == "PC":
-        var_to_source[defs[0]] = global_state["pc"]
+        return
     elif opcode == "MSIZE":
         msize = 32 * global_state["miu_i"]
         var_to_source[defs[0]] = msize
@@ -1475,15 +1551,16 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if check_sat(solver) == unsat:
             # this means not enough fund, thus the execution will result in exception
             solver.pop()
+            var_to_source[defs[0]] = 0
             # stack.insert(0, 0)  # x = 0
         else:
             # the execution is possibly okay
+            var_to_source[defs[0]] = 1
             # stack.insert(0, 1)  # x = 1
             solver.pop()
             solver.add(is_enough_fund)
             path_conditions_and_vars["path_condition"].append(is_enough_fund)
             last_idx = len(path_conditions_and_vars["path_condition"]) - 1
-            # analysis["time_dependency_bug"][last_idx] = global_state["pc"] - 1
             new_balance_ia = balance_ia - transfer_amount
             global_state["balance"]["Ia"] = new_balance_ia
             address_is = path_conditions_and_vars["Is"]
@@ -1538,6 +1615,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if isReal(transfer_amount):
             if transfer_amount == 0:
                 # stack.insert(0, 1)  # x = 0
+                var_to_source[defs[0]] = 1
                 return
 
         # Let us ignore the call depth
@@ -1549,9 +1627,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if check_sat(solver) == unsat:
             # this means not enough fund, thus the execution will result in exception
             solver.pop()
+            var_to_source[defs[0]] = 0
             # stack.insert(0, 0)  # x = 0
         else:
             # the execution is possibly okay
+            var_to_source[defs[0]] = 1
             # stack.insert(0, 1)  # x = 1
             solver.pop()
             solver.add(is_enough_fund)
@@ -1746,6 +1826,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         functions[target_private_fun].return_defs = defs
         functions[target_private_fun].caller_block = block
         block.private_call_target = private_fun_start_block
+        block.private_call_target.private_call_from = block
         for i in range(1, len(uses)):
             if uses[i] in var_to_source.keys():
                 uses[i] = var_to_source[uses[i]]
@@ -1764,6 +1845,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             tac_block_function[block.ident]
         ].caller_block.successors[0]
         print(block.return_private_target.ident)
+        block.return_private_target.return_private_from = block
         for i in range(1, len(uses)):
             var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
     elif opcode == "THROW":

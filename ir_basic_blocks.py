@@ -13,6 +13,12 @@ class Block:
         self.successors: List[Block] = []
         self.private_call_target: Block = None
         self.return_private_target: Block = None
+        # for edge link of privatecall
+        self.return_private_from: Block = None
+        self.private_call_from: Block = None
+
+        self.jump_target: Block = None
+        self.falls_to: Block = None
 
     def set_falls_to(self, block):
         self.falls_to = block
@@ -31,6 +37,18 @@ class Block:
 
     def get_branch_expression(self):
         return self.branch_expression
+
+    def set_falls_to(self, block):
+        self.falls_to = block
+
+    def get_falls_to(self):
+        return self.falls_to
+
+    def set_jump_target(self, block):
+        self.jump_target = block
+
+    def get_jump_target(self):
+        return self.jump_target
 
 
 class Function:
@@ -150,12 +168,6 @@ def construct_cfg(path) -> Tuple[Mapping[str, Block], Mapping[str, Function]]:
     for block in blocks.values():
         block.predecessors = [blocks[pred] for pred in tac_block_pred[block.ident]]
         block.successors = [blocks[succ] for succ in tac_block_succ[block.ident]]
-        if len(block.successors) == 2:
-            block.set_falls_to(block.successors[0])
-            block.set_jump_target(block.successors[1])
-        elif len(block.successors) == 1:
-            block.set_jump_target(block.successors[0])
-
 
     functions: Mapping[str, Function] = {}
     for (block_id,) in load_csv(path + 'IRFunctionEntry.csv'):
