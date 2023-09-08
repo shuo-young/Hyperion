@@ -89,11 +89,11 @@ class Semantics:
 
     # get the constrained call by require-msg.sender like pattern
     # val => slot of owner/compared storage var
-    def get_call_constrain_info(self):
+    def get_call_guarded_info(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
             + self.address
-            + "/out/Hyperion_CallConstrainedByOwner.csv"
+            + "/out/Hyperion_CallGuardedByOwner.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
@@ -112,7 +112,7 @@ class Semantics:
         # mark the receiver and the tranfer amount of ETH/ERC token
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["callStmt", "recipient", "amount"]
+            df.columns = ["callStmt", "recipient", "amount", "funcSign"]
         else:
             df = pd.DataFrame()
         # print(df)
@@ -136,25 +136,18 @@ class Semantics:
         add_loc = (
             "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Add.csv"
         )
-        # add_df = self.extract_math(add_loc)
-
         # sub
         sub_loc = (
             "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Sub.csv"
         )
-        # sub_df = self.extract_math(sub_loc)
-
         # mul
         mul_loc = (
             "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Mul.csv"
         )
-        # mul_df = self.extract_math(mul_loc)
-
         # div
         div_loc = (
             "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Div.csv"
         )
-        # div_df = self.extract_math(div_loc)
 
         variables = {}
         return_private_to_call_private_return = {}
@@ -189,6 +182,7 @@ class Semantics:
         # sink site: transfer amount
         sink_site_variable = df["amount"].unique()
         # print(sink_site_variable)
+        # the formula recovered from dataflow analysis is not suitable for a complete
         for var in sink_site_variable:
             final_formula = self.expand_expression(variables, var)
             print(f"The final formula for {var} is {final_formula}")
@@ -233,6 +227,7 @@ class Semantics:
                 elif operation == 'MUL':
                     variables[c] = (a, b, '*')
 
+    # deprecated
     def expand_expression(self, variables, var):
         if var not in variables:
             return var
@@ -311,7 +306,7 @@ class Semantics:
         )
         if os.path.exists(balance_loc) and (os.path.getsize(balance_loc) > 0):
             df_balance = pd.read_csv(balance_loc, header=None, sep='	')
-            df_balance.columns = ["id"]
+            df_balance.columns = ["id", "funcSign"]
         else:
             df_balance = pd.DataFrame()
         return df_balance
@@ -322,7 +317,7 @@ class Semantics:
         )
         if os.path.exists(time_loc) and (os.path.getsize(time_loc) > 0):
             df_time = pd.read_csv(time_loc, header=None, sep='	')
-            df_time.columns = ["id"]
+            df_time.columns = ["id", "funcSign"]
         else:
             df_time = pd.DataFrame()
         return df_time
@@ -333,7 +328,7 @@ class Semantics:
         )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
             df_supply = pd.read_csv(supply_loc, header=None, sep='	')
-            df_supply.columns = ["id"]
+            df_supply.columns = ["id", "funcSign"]
         else:
             df_supply = pd.DataFrame()
         return df_supply
@@ -344,7 +339,7 @@ class Semantics:
         )
         if os.path.exists(owner_loc) and (os.path.getsize(owner_loc) > 0):
             df_owner = pd.read_csv(owner_loc, header=None, sep='	')
-            df_owner.columns = ["id"]
+            df_owner.columns = ["id", "funcSign"]
         else:
             df_owner = pd.DataFrame()
         return df_owner
@@ -366,3 +361,14 @@ class Semantics:
             contract_addr = "0x" + storage_content[-(byteHigh + 1) * 2 : -byteLow * 2]
         # maybe other type of storage, like string etc
         return contract_addr
+
+    def get_slot_tainted_by_owner(self):
+        loc = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
+        )
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["slot", "slotNum", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df
