@@ -325,26 +325,28 @@ def initGlobalVars():
     var_to_source = {}
 
 
-def run_build_cfg_and_analyze():
+def run_build_cfg_and_analyze(targeted_params):
     initGlobalVars()
-    build_cfg_and_analyze()
+    build_cfg_and_analyze(targeted_params)
 
 
-def build_cfg_and_analyze():
+def build_cfg_and_analyze(target_params):
     """Build cfg from ir and perform symbolic execution"""
     logging.info("Building CFG from IR...")
     global blocks
     global functions
     global tac_block_function
+    global path
+    path = target_params.path
     # get blocks, functions, and tac_block_function from decompiled IR
     blocks, functions, tac_block_function = construct_cfg(path)
-
+    target_params.targeted_block = functions[target_params.targeted_funcsign].head_block
     # todo find targeted SE paths
-    targeted_sym_exec()
+    targeted_sym_exec(target_params)
     generate_dot_file()
 
 
-def targeted_sym_exec():
+def targeted_sym_exec(target_params):
     # executing, starting from beginning
     path_conditions_and_vars = {"path_condition": []}
     global_state = get_init_global_state(path_conditions_and_vars)
@@ -355,7 +357,9 @@ def targeted_sym_exec():
         analysis=analysis,
     )
     # mark the start block of the targeted function and begin SE
-    return sym_exec_block(params, blocks["0x210"], blocks["0x0"], 0, -1, "fallback")
+    return sym_exec_block(
+        params, target_params.targeted_block, blocks["0x0"], 0, -1, "fallback"
+    )
 
 
 def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name):
@@ -1141,62 +1145,62 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "CALLDATACOPY":  # Copy inputter data to memory
         #  TODO: Don't know how to simulate this yet
         pass
-    elif opcode == "CODESIZE":
-        if g_disasm_file.endswith(".disasm"):
-            evm_file_name = g_disasm_file[:-7]
-        else:
-            evm_file_name = g_disasm_file
-        with open(evm_file_name, "r") as evm_file:
-            evm = evm_file.read()[:-1]
-            code_size = len(evm) / 2
-            var_to_source[defs[0]] = code_size
-    elif opcode == "CODECOPY":
-        mem_location = (
-            var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
-        )
-        code_from = (
-            var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-        )
-        no_bytes = (
-            var_to_source[uses[2]] if uses[2] in var_to_source.keys() else uses[2]
-        )
-        current_miu_i = global_state["miu_i"]
+    # elif opcode == "CODESIZE":
+    #     if g_disasm_file.endswith(".disasm"):
+    #         evm_file_name = g_disasm_file[:-7]
+    #     else:
+    #         evm_file_name = g_disasm_file
+    #     with open(evm_file_name, "r") as evm_file:
+    #         evm = evm_file.read()[:-1]
+    #         code_size = len(evm) / 2
+    #         var_to_source[defs[0]] = code_size
+    # elif opcode == "CODECOPY":
+    #     mem_location = (
+    #         var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+    #     )
+    #     code_from = (
+    #         var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+    #     )
+    #     no_bytes = (
+    #         var_to_source[uses[2]] if uses[2] in var_to_source.keys() else uses[2]
+    #     )
+    #     current_miu_i = global_state["miu_i"]
 
-        if isAllReal(mem_location, current_miu_i, code_from, no_bytes):
-            temp = int(math.ceil((mem_location + no_bytes) / float(32)))
-            if temp > current_miu_i:
-                current_miu_i = temp
+    #     if isAllReal(mem_location, current_miu_i, code_from, no_bytes):
+    #         temp = int(math.ceil((mem_location + no_bytes) / float(32)))
+    #         if temp > current_miu_i:
+    #             current_miu_i = temp
 
-            if g_disasm_file.endswith(".disasm"):
-                evm_file_name = g_disasm_file[:-7]
-            else:
-                evm_file_name = g_disasm_file
-            with open(evm_file_name, "r") as evm_file:
-                evm = evm_file.read()[:-1]
-                start = code_from * 2
-                end = start + no_bytes * 2
-                code = evm[start:end]
-            mem[mem_location] = int(code, 16)
-        else:
-            new_var_name = gen.gen_code_var("Ia", code_from, no_bytes)
-            if new_var_name in path_conditions_and_vars:
-                new_var = path_conditions_and_vars[new_var_name]
-            else:
-                new_var = BitVec(new_var_name, 256)
-                path_conditions_and_vars[new_var_name] = new_var
+    #         if g_disasm_file.endswith(".disasm"):
+    #             evm_file_name = g_disasm_file[:-7]
+    #         else:
+    #             evm_file_name = g_disasm_file
+    #         with open(evm_file_name, "r") as evm_file:
+    #             evm = evm_file.read()[:-1]
+    #             start = code_from * 2
+    #             end = start + no_bytes * 2
+    #             code = evm[start:end]
+    #         mem[mem_location] = int(code, 16)
+    #     else:
+    #         new_var_name = gen.gen_code_var("Ia", code_from, no_bytes)
+    #         if new_var_name in path_conditions_and_vars:
+    #             new_var = path_conditions_and_vars[new_var_name]
+    #         else:
+    #             new_var = BitVec(new_var_name, 256)
+    #             path_conditions_and_vars[new_var_name] = new_var
 
-            temp = ((mem_location + no_bytes) / 32) + 1
-            current_miu_i = to_symbolic(current_miu_i)
-            expression = current_miu_i < temp
-            solver.push()
-            solver.add(expression)
-            if MSIZE:
-                if check_sat(solver) != unsat:
-                    current_miu_i = If(expression, temp, current_miu_i)
-            solver.pop()
-            mem.clear()  # very conservative
-            mem[str(mem_location)] = new_var
-        global_state["miu_i"] = current_miu_i
+    #         temp = ((mem_location + no_bytes) / 32) + 1
+    #         current_miu_i = to_symbolic(current_miu_i)
+    #         expression = current_miu_i < temp
+    #         solver.push()
+    #         solver.add(expression)
+    #         if MSIZE:
+    #             if check_sat(solver) != unsat:
+    #                 current_miu_i = If(expression, temp, current_miu_i)
+    #         solver.pop()
+    #         mem.clear()  # very conservative
+    #         mem[str(mem_location)] = new_var
+    #     global_state["miu_i"] = current_miu_i
 
     elif opcode == "RETURNDATACOPY":
         pass
@@ -1857,9 +1861,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # print(mem)
 
 
-if __name__ == "__main__":
-    global g_disasm_file
-    g_disasm_file = "./gigahorse-toolchain/.temp/eth_bnbpirates/contract.disam"
-    global path
-    path = "./gigahorse-toolchain/.temp/eth_bnbpirates/out/"
-    run_build_cfg_and_analyze()
+# if __name__ == "__main__":
+# global g_disasm_file
+# g_disasm_file = "./gigahorse-toolchain/.temp/eth_bnbpirates/contract.disam"
+# global path
+# path = "./gigahorse-toolchain/.temp/eth_bnbpirates/out/"
+# run_build_cfg_and_analyze()

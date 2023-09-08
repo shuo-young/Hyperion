@@ -79,5 +79,6 @@ if __name__ == '__main__':
         source["address"],
         source["block_number"],
     )
+    semantic.fund_transfer_analysis()
 
     # semantic covers the targeted functions, storage of the critical state variable
