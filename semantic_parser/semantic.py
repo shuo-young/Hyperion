@@ -5,6 +5,7 @@ import pandas as pd
 from semantic_parser.graph_analyzer import *
 from semantic_parser.decompilation import *
 from ir_se import *
+from multiprocessing import Process
 
 
 class TargetedParameters:
@@ -75,7 +76,7 @@ class Semantics:
         # logging.info("Building CFG from IR...")
         # got the ir data structure path for CFG
         path = "./gigahorse-toolchain/.temp/" + self.address + "/out/"
-
+        processes = []
         # init params for target SE
         # should note: target functions (head blocks), critical slots and dependency relationship
         for funcSign in self.funcs_to_be_checked:
@@ -86,8 +87,14 @@ class Semantics:
                 fund_transfer_info=self.fund_transfer_graph,
                 state_dependency_info=self.state_dependency_graph,
             )
-            run_build_cfg_and_analyze(target_params)
-            print("======================END=====================")
-
+            process = Process(target=run_build_cfg_and_analyze, args=(target_params,))
+            processes.append(process)
+            process.start()
+            # run_build_cfg_and_analyze(target_params)
+            # print("======================END=====================")
+        for process in processes:
+            process.join()
+        print("======================END=====================")
+        # afterward analysis
         # could be parallel for multithread SE process
         # run_build_cfg_and_analyze(target_params)
