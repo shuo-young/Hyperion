@@ -168,7 +168,7 @@ def get_init_global_state(path_conditions_and_vars):
     return global_state
 
 
-def generate_dot_file(filename='cfg.dot'):
+def generate_dot_file(target_func):
     """
     Generates a .dot file for the control flow graph based on visited_edges.
 
@@ -176,7 +176,7 @@ def generate_dot_file(filename='cfg.dot'):
                           values are the number of times the edge has been visited.
     :param filename: The name of the output .dot file.
     """
-
+    filename = str(target_func) + ".dot"
     with open(filename, 'w') as f:
         f.write("digraph CFG {\n")
         f.write("    node [shape=box];\n")
@@ -325,9 +325,9 @@ def initGlobalVars():
     var_to_source = {}
 
 
-def run_build_cfg_and_analyze(targeted_params):
+def run_build_cfg_and_analyze(target_params):
     initGlobalVars()
-    build_cfg_and_analyze(targeted_params)
+    build_cfg_and_analyze(target_params)
 
 
 def build_cfg_and_analyze(target_params):
@@ -340,10 +340,10 @@ def build_cfg_and_analyze(target_params):
     path = target_params.path
     # get blocks, functions, and tac_block_function from decompiled IR
     blocks, functions, tac_block_function = construct_cfg(path)
-    target_params.targeted_block = functions[target_params.targeted_funcsign].head_block
+    target_params.target_block = functions[target_params.target_func].head_block
     # todo find targeted SE paths
     targeted_sym_exec(target_params)
-    generate_dot_file()
+    generate_dot_file(target_params.funcSign)
 
 
 def targeted_sym_exec(target_params):
@@ -358,7 +358,7 @@ def targeted_sym_exec(target_params):
     )
     # mark the start block of the targeted function and begin SE
     return sym_exec_block(
-        params, target_params.targeted_block, blocks["0x0"], 0, -1, "fallback"
+        params, target_params.target_block, blocks["0x0"], 0, -1, "fallback"
     )
 
 
@@ -544,6 +544,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     global blocks
     global calls_affect_state
     global instructions
+    global path
 
     stack = params.stack
     mem = params.mem

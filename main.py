@@ -5,6 +5,7 @@ import logging
 
 import time
 from global_params import *
+from ir_se import *
 
 
 from nlp.nlp import FrontEndSpecsExtractor
@@ -79,6 +80,10 @@ if __name__ == '__main__':
         source["address"],
         source["block_number"],
     )
-    semantic.fund_transfer_analysis()
 
+    # target_params = semantic.analyze()
     # semantic covers the targeted functions, storage of the critical state variable
+
+    # for target_param in target_params:
+    #     # print(target_param.target_block)
+    #     run_build_cfg_and_analyze(target_params)

@@ -82,17 +82,21 @@ Hyperion_BalanceSlot(id, funcSign) :-
   PublicFunctionSelector(func, funcSign).
 
 // maybe too general
+// add rules to confine the function: simultaneously with balance change operation
 .decl Hyperion_SupplySlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_SupplySlot
 Hyperion_SupplySlot(slotNum, funcSign) :-
-  PublicFunctionArg(_, amount, _),
-  LoadGlobalVariable(_, slotNum, supply),
+  PublicFunctionArg(func, amount, _),
+  LoadGlobalVariable(loadStmt, slotNum, supply),
   DataFlows(supply, supplyVar),
   DataFlows(amount, amountVar),
   ADDFix(addStmt, supplyVar, amountVar, _),
   Hyperion_Statement_Function(addStmt, func),
+  Hyperion_Statement_Function(loadStmt, func),
+  Hyperion_BalanceSlot(_, funcSign),
   PublicFunctionSelector(func, funcSign).
 
+// default protected by the owner requirement
 .decl Hyperion_TimeSlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_TimeSlot
 Hyperion_TimeSlot(slotNum, funcSign) :-

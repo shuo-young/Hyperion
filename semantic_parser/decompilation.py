@@ -1,7 +1,10 @@
+import logging
 from global_params import *
 import os
 from web3 import Web3
 import pandas as pd
+
+from ir_basic_blocks import construct_cfg
 
 
 class Decompiler:
@@ -12,14 +15,15 @@ class Decompiler:
         if address.startswith("0x"):
             self.address = self.format_addr(address)
         self.block_number = block_number
+        self.path = "./gigahorse-toolchain/.temp/" + self.address + "/out/"
         self.analyze()
 
     def analyze(self):
         self.set_url()
         self.download_bytecode()
-        self.set_func()
         if os.path.exists(CONTRACT_PATH + self.address + ".hex"):
             self.analyze_contract()
+            self.set_func()
             # Critical semantics extraction
             # self.analyze_formula()  # transfer amount formula recovery deprecated
 
@@ -148,7 +152,9 @@ class Decompiler:
 
     def infer_supply(self):
         supply_loc = (
-            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_SupplySlot.csv"
         )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
             df_supply = pd.read_csv(supply_loc, header=None, sep='	')
@@ -165,7 +171,7 @@ class Decompiler:
         )
         if os.path.exists(owner_loc) and (os.path.getsize(owner_loc) > 0):
             df_owner = pd.read_csv(owner_loc, header=None, sep='	')
-            df_owner.columns = ["id", "funcSign"]
+            df_owner.columns = ["id"]
         else:
             df_owner = pd.DataFrame()
         return df_owner
@@ -196,7 +202,7 @@ class Decompiler:
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["slot", "slotNum", "funcSign"]
+            df.columns = ["slot", "owner", "funcSign"]
         else:
             df = pd.DataFrame()
         return df
