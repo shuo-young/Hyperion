@@ -14,9 +14,12 @@ class FundTransferGraph:
         self.recipient_df = recipient_df
         # initialize for role mapping
         self.recipient_role = {}
+        # map ident to calls
+        self.calls = {}
         # find transfer point (callStmt, recipient, amount)
         self.analyze_transfer()
         self.set_role()
+
         # actually, we should SE every function with transfer
         self.unique_funcs = list(self.func_call.keys())
         print(self.unique_funcs)
@@ -31,9 +34,13 @@ class FundTransferGraph:
         # first: identify caller or specific address value
         # next: use guarded info to determin the role (user or owner)
         for _, row in self.recipient_df.iterrows():
-            if row['to'] == "CALLER" and len(guarded_call_slot[row['callStmt']]) > 0:
-                self.recipient_role[row['callStmt']] = "OWNER"
+            if row['to'] == "CALLER":
+                if len(guarded_call_slot[row['callStmt']]) > 0:
+                    self.recipient_role[row['callStmt']] = "OWNER"
+                else:
+                    self.recipient_role[row['callStmt']] = "USER"
             else:
+                # normal can be the tax receiver address
                 self.recipient_role[row['callStmt']] = "NORMAL"
         print(self.recipient_role)
 
@@ -48,6 +55,7 @@ class FundTransferGraph:
                 func_call[row["funcSign"]].append(
                     Transfer(row['callStmt'], row['recipient'], row['amount'])
                 )
+            self.calls[row['callStmt']] = row['amount']
         print(func_call)
         self.func_call = func_call
 
@@ -71,12 +79,15 @@ class StateDependencyGraph:
         balance = self.load_df_multimap(self.balance_slot)
         supply = self.load_df_multimap(self.supply_slot)
         time = self.load_df_multimap(self.time_slot)
-        # slot depended by owner
+        # slot dependant on owner
         self.slot_dependency_map = self.load_df_map(self.slot_tainted_by_owner)
         print(self.slot_dependency_map)
         print(balance)
         print(supply)
         print(time)
+        self.balance = balance
+        self.supply = supply
+        self.time = time
         merged_dict = defaultdict(lambda: defaultdict(list))
         for d, label in [
             (balance, 'balance'),

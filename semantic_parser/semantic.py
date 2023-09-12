@@ -76,9 +76,11 @@ class Semantics:
         # logging.info("Building CFG from IR...")
         # got the ir data structure path for CFG
         path = "./gigahorse-toolchain/.temp/" + self.address + "/out/"
-        processes = []
         # init params for target SE
         # should note: target functions (head blocks), critical slots and dependency relationship
+        self.funcs_to_be_checked = ["0xdd467064"]
+        processes = []
+
         for funcSign in self.funcs_to_be_checked:
             target_params = TargetedParameters(
                 path=path,
@@ -87,14 +89,21 @@ class Semantics:
                 fund_transfer_info=self.fund_transfer_graph,
                 state_dependency_info=self.state_dependency_graph,
             )
+
             process = Process(target=run_build_cfg_and_analyze, args=(target_params,))
             processes.append(process)
             process.start()
-            # run_build_cfg_and_analyze(target_params)
-            # print("======================END=====================")
+
         for process in processes:
             process.join()
+        # run_build_cfg_and_analyze(target_params)
+        # print("======================END=====================")
         print("======================END=====================")
         # afterward analysis
         # could be parallel for multithread SE process
         # run_build_cfg_and_analyze(target_params)
+
+        # several keys to be checked during SE
+        # 1. feasibility of the key statement
+        # 2. exact value of transfer amount
+        # 3. owner dependency check (authority check)

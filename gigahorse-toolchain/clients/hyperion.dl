@@ -31,6 +31,7 @@ Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
 
 // require(msg.sender == SLOAD(globalVal))
 .decl Hyperion_StaticallyGuardedBlock(guardedBlock: Block, globalVal: Value)
+.output Hyperion_StaticallyGuardedBlock
 Hyperion_StaticallyGuardedBlock(guardedBlock, globalVal) :-
   ControlsWith(_, guardedBlock, predicate),
   (CALLER(_, msgsenderFrom) ; ORIGIN(_, msgsenderFrom)),
@@ -112,6 +113,17 @@ Hyperion_TimeSlot(slotNum, funcSign) :-
   DataFlows(timeVar, setTimeVar),
   DataFlows(arg, setTimeVar),
   StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
+
+.decl Hyperion_PauseSlot(slotNum:Value)
+.output Hyperion_PauseSlot
+Hyperion_PauseSlot(statusSlot) :-
+  Hyperion_StaticallyGuardedBlock(block, ownerSlot),
+  // change status with constant
+  Variable_Value(statusFrom, _),
+  DataFlows(statusFrom, status),
+  statusSlot != ownerSlot,
+  Statement_Block(statusSetStmt, block),
+  StoreGlobalVariable(statusSetStmt, statusSlot, status).
 
 .decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
 .output Hyperion_Recipient

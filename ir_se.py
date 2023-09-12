@@ -26,6 +26,17 @@ Assertion = namedtuple('Assertion', ['pc', 'model'])
 Underflow = namedtuple('Underflow', ['pc', 'model'])
 Overflow = namedtuple('Overflow', ['pc', 'model'])
 
+global result
+result = {
+    "transfer": {},
+    "tax": {},
+    "mint": {},
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": {},
+}
+
 
 class Parameter:
     def __init__(self, **kwargs):
@@ -41,6 +52,7 @@ class Parameter:
             "sha3_list": {},
             "global_state": {},
             "path_conditions_and_vars": {},
+            "target_params": None,
         }
         for attr, default in six.iteritems(attr_defaults):
             setattr(self, attr, kwargs.get(attr, default))
@@ -328,6 +340,7 @@ def initGlobalVars():
 def run_build_cfg_and_analyze(target_params):
     initGlobalVars()
     build_cfg_and_analyze(target_params)
+    print(result)
 
 
 def build_cfg_and_analyze(target_params):
@@ -355,6 +368,7 @@ def targeted_sym_exec(target_params):
         path_conditions_and_vars=path_conditions_and_vars,
         global_state=global_state,
         analysis=analysis,
+        target_params=target_params,
     )
     # mark the start block of the targeted function and begin SE
     return sym_exec_block(
@@ -469,9 +483,9 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
         try:
             if solver.check() == unsat:
                 log.debug("INFEASIBLE PATH DETECTED")
-                print("======JUMPI jump target======")
-                print("INFEASIBLE PATH DETECTED")
-                print(block.ident)
+                # print("======JUMPI jump target======")
+                # print("INFEASIBLE PATH DETECTED")
+                # print(block.ident)
             else:
                 # true branch
                 left_branch = block.get_jump_target()
@@ -505,9 +519,9 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
                 # no need to check for the negated condition, but we can immediately go into
                 # the else branch
                 log.debug("INFEASIBLE PATH DETECTED")
-                print("======JUMPI fall target======")
-                print("INFEASIBLE PATH DETECTED")
-                print(block.ident)
+                # print("======JUMPI fall target======")
+                # print("INFEASIBLE PATH DETECTED")
+                # print(block.ident)
             else:
                 right_branch = block.get_falls_to()
                 new_params = params.copy()
@@ -545,6 +559,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     global calls_affect_state
     global instructions
     global path
+    global result
 
     stack = params.stack
     mem = params.mem
@@ -559,7 +574,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     defs, uses = emit_stmt(path, statement)
     # pass the stored states
     var_to_source = params.var_to_source
+    target_params = params.target_params
 
+    # print(target_params.fund_transfer_info)
     # hex value tranformed to int type (base 10)
     # var remain to strings
 
@@ -567,6 +584,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # its gonna be used in opcodes with real meaning
 
     instr = statement[1]
+    ident = statement[0]
 
     instr_parts = str.split(instr, " ")
     opcode = instr_parts[0]
@@ -655,13 +673,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         #     solver.pop()
         var_to_source[defs[0]] = computed
 
+    # due to the exist of PHI opcode, some path may not be feasible to perform DIV operation
     elif opcode == "DIV":
-        # print(var_to_source)
-        print(len(var_to_source.keys()))
+        print(var_to_source)
+        # print(len(var_to_source.keys()))
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-        print(f"First: {first}")
-        print(f"Second: {second}")
+        # print(f"First: {first}")
+        # print(f"Second: {second}")
         if isAllReal(first, second):
             if second == 0:
                 computed = 0
@@ -914,8 +933,18 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
+            print(var_to_source)
+            print(f"First: {first}, Type of First: {type(first)}")
+            print(f"Second: {second}, Type of Second: {type(second)}")
+            # miss cases due to PHI opcode
+            if isinstance(first, str):
+                first = BitVec(first, 256)
+            elif isinstance(second, str):
+                second = BitVec(second, 256)
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
+        print("Computed:")
+        print(computed)
         var_to_source[defs[0]] = computed
 
     elif opcode == "GT":
@@ -930,9 +959,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
-            print("GT===")
-            print(first)
-            print(second)
+            # print("GT===")
+            # print(first)
+            # print(second)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
 
@@ -994,6 +1023,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 computed = 0
         else:
             computed = If(first == 0, BitVecVal(1, 256), BitVecVal(0, 256))
+        print(computed)
         computed = simplify(computed) if is_expr(computed) else computed
         var_to_source[defs[0]] = computed
     elif opcode == "AND":
@@ -1284,6 +1314,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         pass
     elif opcode == "MLOAD":
         address = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+        print(address)
+        print(mem)
         current_miu_i = global_state["miu_i"]
         if isAllReal(address, current_miu_i) and address in mem:
             temp = int(math.ceil((address + 32) / float(32)))
@@ -1324,7 +1356,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         )
         # MSTORE slotid to MEM32
-
+        print(stored_address)
+        print(stored_value)
+        print(mem)
         current_miu_i = global_state["miu_i"]
         if isReal(stored_address):
             # preparing data for hashing later
@@ -1426,10 +1460,35 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         stored_value = (
             var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         )
+        logging.info("SSTORE")
 
         if isReal(stored_address):
             # note that the stored_value could be unknown
             global_state["Ia"][stored_address] = stored_value
+            print(hex(stored_address))
+            # check time sstore op
+            print(target_params.state_dependency_info.time[target_params.funcSign])
+            if (
+                hex(stored_address)
+                in target_params.state_dependency_info.time[target_params.funcSign]
+            ):
+                result["lock"] = True
+
+            # check supply sstore op
+            # the supply and balance slot exist in the same func
+            # supply dependant on owner
+            if (
+                hex(stored_address)
+                in target_params.state_dependency_info.supply[target_params.funcSign]
+                and target_params.funcSign
+                in target_params.state_dependency_info.owner.keys()
+            ):
+                # check owner constrain
+                if (
+                    hex(stored_address)
+                    in target_params.state_dependency_info.slot_dependency_map.keys()
+                ):
+                    result["mint"] = True
         else:
             # note that the stored_value could be unknown
             global_state["Ia"][str(stored_address)] = stored_value
@@ -1437,20 +1496,20 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "JUMP":
         # know jump target in the successors identified (length = 1)
         target_block = uses[0]
-        print(block.successors[0].ident)
+        # print(block.successors[0].ident)
 
     elif opcode == "JUMPI":
         # We need to prepare two branches
         target_address = uses[0]
-        print(hex(target_address))
+        # print(hex(target_address))
 
         for successor in block.successors:
             if successor.ident.startswith(hex(target_address)):
                 block.set_jump_target(successor)
             else:
                 block.set_falls_to(successor)
-        print(block.get_jump_target().ident)
-        print(block.get_falls_to().ident)
+        # print(block.get_jump_target().ident)
+        # print(block.get_falls_to().ident)
         flag = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         branch_expression = BitVecVal(0, 1) == BitVecVal(1, 1)
         if isReal(flag):
@@ -1537,8 +1596,24 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         )
         log.info(recipient)
         log.info(transfer_amount)
-        print(recipient)
-        print(transfer_amount)
+        # print(recipient)
+        # print(transfer_amount)
+        print(ident)
+        # feasibility forward check
+        # get the formula of the transfer amount
+        # with the inferred transfer recipient role
+        if ident in target_params.fund_transfer_info.calls.keys():
+            res = [
+                target_params.fund_transfer_info.calls[ident],
+                target_params.fund_transfer_info.recipient_role[ident],
+            ]
+            if target_params.fund_transfer_info.recipient_role[ident] == "NORMAL":
+                result["tax"][ident] = res
+            else:  # user transfer
+                result["transfer"][ident] = res
+            if target_params.fund_transfer_info.recipient_role[ident] == "OWNER":
+                result["clear"][ident] = res
+
         # in the paper, it is shaky when the size of data output is
         # min of stack[6] and the | o |
 
@@ -1826,7 +1901,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "CALLPRIVATE":
         # todomark start block, find its func, when executing returnprivate in this func, find the return target
         private_fun_start_block = blocks[hex(uses[0])]
-        print(private_fun_start_block.ident)
+        # print(private_fun_start_block.ident)
         target_private_fun = tac_block_function[private_fun_start_block.ident]
         functions[target_private_fun].return_defs = defs
         functions[target_private_fun].caller_block = block
@@ -1845,11 +1920,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # should not use the return arg as the return target
         # should use the successor of the caller function
         return_defs = functions[tac_block_function[block.ident]].return_defs
-        print(return_defs)
+        # print(return_defs)
         block.return_private_target = functions[
             tac_block_function[block.ident]
         ].caller_block.successors[0]
-        print(block.return_private_target.ident)
+        # print(block.return_private_target.ident)
         block.return_private_target.return_private_from = block
         for i in range(1, len(uses)):
             var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
