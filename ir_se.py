@@ -1,5 +1,7 @@
+from multiprocessing import Process
 from ir_basic_blocks import *
 from z3 import *
+from semantic_parser.semantic import TargetedParameters
 from symbolic_execution.semantic_analysis import *
 from symbolic_execution.vargenerator import *
 from symbolic_execution.execution_states import (
@@ -344,22 +346,12 @@ def run_build_cfg_and_analyze(target_params):
 
 
 def build_cfg_and_analyze(target_params):
-    """Build cfg from ir and perform symbolic execution"""
-    logging.info("Building CFG from IR...")
-    global blocks
-    global functions
-    global tac_block_function
-    global path
-    path = target_params.path
-    # get blocks, functions, and tac_block_function from decompiled IR
-    blocks, functions, tac_block_function = construct_cfg(path)
-    target_params.target_block = functions[target_params.target_func].head_block
-    # todo find targeted SE paths
     targeted_sym_exec(target_params)
     generate_dot_file(target_params.funcSign)
 
 
 def targeted_sym_exec(target_params):
+    global blocks
     # executing, starting from beginning
     path_conditions_and_vars = {"path_condition": []}
     global_state = get_init_global_state(path_conditions_and_vars)
@@ -1489,6 +1481,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     in target_params.state_dependency_info.slot_dependency_map.keys()
                 ):
                     result["mint"] = True
+
+            # check pause sstore op
+            if (
+                hex(stored_address)
+                in target_params.state_dependency_info.pause[target_params.funcSign]
+            ):
+                # default has owner constrain
+                result["pause"] = True
         else:
             # note that the stored_value could be unknown
             global_state["Ia"][str(stored_address)] = stored_value
@@ -1937,9 +1937,64 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # print(mem)
 
 
-# if __name__ == "__main__":
-# global g_disasm_file
-# g_disasm_file = "./gigahorse-toolchain/.temp/eth_bnbpirates/contract.disam"
-# global path
-# path = "./gigahorse-toolchain/.temp/eth_bnbpirates/out/"
-# run_build_cfg_and_analyze()
+def analyze(target_params):
+    run_build_cfg_and_analyze(target_params)
+
+
+def run(inputs):
+    global results
+    global funcs_to_be_checked
+    global blocks
+    global functions
+    global tac_block_function
+    global fund_transfer_graph
+    global state_dependency_graph
+    global func_map
+    global path
+
+    blocks = inputs["blocks"]
+    functions = inputs["functions"]
+    tac_block_function = inputs["tac_block_function"]
+    funcs_to_be_checked = inputs["funcs_to_be_checked"]
+    fund_transfer_graph = inputs['fund_transfer_graph']
+    state_dependency_graph = inputs["state_dependency_graph"]
+    func_map = inputs["func_map"]
+    path = inputs["path"]
+
+    log.info("\t============ Results ===========")
+    # init params for target SE
+    # should note: target functions (head blocks), critical slots and dependency relationship
+    # self.funcs_to_be_checked = ["0xdd467064"]
+    processes = []
+
+    for funcSign in funcs_to_be_checked:
+        target_params = TargetedParameters(
+            path=path,
+            funcSign=funcSign,
+            fund_transfer_info=fund_transfer_graph,
+            target_block=functions[func_map[funcSign]].head_block,
+            state_dependency_info=state_dependency_graph,
+        )
+
+        process = Process(target=analyze, args=(target_params,))
+        processes.append(process)
+        process.start()
+
+    for process in processes:
+        process.join()
+    # run_build_cfg_and_analyze(target_params)
+    # print("======================END=====================")
+    print("======================END=====================")
+    return results, 0
+    # afterward analysis
+    # could be parallel for multithread SE process
+    # run_build_cfg_and_analyze(target_params)
+
+    # several keys to be checked during SE
+    # 1. feasibility of the key statement
+    # 2. exact value of transfer amount
+    # 3. owner dependency check (authority check)
+    analyze()
+    # ret = detect_vulnerabilities()
+    # closing_message()
+    return {}, 0

@@ -114,16 +114,34 @@ Hyperion_TimeSlot(slotNum, funcSign) :-
   DataFlows(arg, setTimeVar),
   StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
 
-.decl Hyperion_PauseSlot(slotNum:Value)
+.decl Hyperion_PauseSlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_PauseSlot
-Hyperion_PauseSlot(statusSlot) :-
+Hyperion_PauseSlot(statusSlot, funcSign) :-
   Hyperion_StaticallyGuardedBlock(block, ownerSlot),
   // change status with constant
   Variable_Value(statusFrom, _),
   DataFlows(statusFrom, status),
   statusSlot != ownerSlot,
   Statement_Block(statusSetStmt, block),
-  StoreGlobalVariable(statusSetStmt, statusSlot, status).
+  StoreGlobalVariable(statusSetStmt, statusSlot, status),
+  Hyperion_Statement_Function(statusSetStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+// codesize deduced tokenURI storage
+// 1. technical way
+// id flows to byte use (focus on uint to string op)
+// another may: flows to shl shr op uses (not work)
+// 2. finally use the function selector: c87b56dd
+// it works well
+.decl Hyperion_TokenURIStorage(slotNum:Value, funcSign:symbol)
+.output Hyperion_TokenURIStorage
+Hyperion_TokenURIStorage(slotNum, funcSign) :-
+  SLOADOfConst(loadStmt, slotNum, _),
+  ConstantPossibleSigHash(funcSign, _, sigText),
+  sigText = "tokenURI(uint256)",
+  Hyperion_Statement_Function(csStmt, func),
+  Hyperion_Statement_Function(loadStmt, func),
+  PublicFunctionSelector(func, funcSign).
 
 .decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
 .output Hyperion_Recipient

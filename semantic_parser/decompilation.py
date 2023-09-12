@@ -176,12 +176,61 @@ class Decompiler:
             df_owner = pd.DataFrame()
         return df_owner
 
+    def infer_pause(self):
+        loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_PauseSlot.csv"
+        )
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["id", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df
+
+    def infer_tokenURI(self):
+        loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_TokenURIStorage.csv"
+        )
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["id", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df
+
+    def get_storage_way(self):
+        df = self.infer_tokenURI()
+        token_uri_prefix = []
+        for _, row in df.iterrows():
+            uri = self.get_storage_string_content(int(row["id"], 16))
+            if uri not in token_uri_prefix:
+                token_uri_prefix.append(uri)
+                if uri.startswith("http"):
+                    self.http_storage = True
+                    return "http"
+                elif uri.startswith("ipfs"):
+                    self.ipfs_storage = True
+                    return "ipfs"
+
+    def get_storage_string_content(self, slot_index):
+        if self.url.startswith("https"):
+            w3 = Web3(Web3.HTTPProvider(self.url))
+        else:
+            w3 = Web3(Web3.WebsocketProvider(self.url))
+        contract_address = Web3.to_checksum_address(self.address)
+        storage_content = w3.eth.get_storage_at(contract_address, slot_index)
+        return storage_content.decode('utf-8').replace('\x00', '')
+
     def get_storage_content(self, slot_index, byteLow, byteHigh):
         if self.url.startswith("https"):
             w3 = Web3(Web3.HTTPProvider(self.url))
         else:
             w3 = Web3(Web3.WebsocketProvider(self.url))
-        contract_address = Web3.to_checksum_address(self.storage_addr)
+        contract_address = Web3.to_checksum_address(self.address)
         storage_content = str(
             w3.eth.get_storage_at(contract_address, slot_index, self.block_number).hex()
         )

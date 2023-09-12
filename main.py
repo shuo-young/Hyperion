@@ -1,7 +1,9 @@
 import argparse
 from datetime import datetime
+from multiprocessing import Process
 from web3 import Web3
 import logging
+import ir_se
 
 import time
 from global_params import *
@@ -9,10 +11,36 @@ from ir_se import *
 
 
 from nlp.nlp import FrontEndSpecsExtractor
-from semantic_parser.semantic import Semantics
+from semantic_parser.semantic import Semantics, TargetedParameters
 
 
-if __name__ == '__main__':
+def analyze_dapp():
+    global args
+    # NLP process
+    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
+    # specs = extract_specs_helper.process()
+
+    # Backend contract analysis
+    source = {
+        "platform": args.platform,
+        "address": args.addr,
+        "block_number": args.block_number,
+    }
+    # Analyzer
+    # semantic covers the targeted functions, storage of the critical state variable
+    semantic = Semantics(
+        source["platform"],
+        source["address"],
+        source["block_number"],
+    )
+    inputs = semantic.get_inputs()[0]
+    results = {}
+    exit_code = 0
+    result, exit_code = ir_se.run(inputs)
+
+
+def main():
+    global args
     # Main Body
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -62,28 +90,9 @@ if __name__ == '__main__':
     else:
         rootLogger.setLevel(level=logging.INFO)
 
-    # NLP process
-    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
-    # specs = extract_specs_helper.process()
+    exit_code = analyze_dapp()
+    exit(exit_code)
 
-    # Backend contract analysis
-    source = {
-        "platform": args.platform,
-        "address": args.addr,
-        "block_number": args.block_number,
-    }
-    begin = time.perf_counter()
 
-    # Analyzer
-    semantic = Semantics(
-        source["platform"],
-        source["address"],
-        source["block_number"],
-    )
-
-    # target_params = semantic.analyze()
-    # semantic covers the targeted functions, storage of the critical state variable
-
-    # for target_param in target_params:
-    #     # print(target_param.target_block)
-    #     run_build_cfg_and_analyze(target_params)
+if __name__ == '__main__':
+    main()

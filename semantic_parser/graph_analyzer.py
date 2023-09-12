@@ -62,13 +62,20 @@ class FundTransferGraph:
 
 class StateDependencyGraph:
     def __init__(
-        self, balance_slot, time_slot, supply_slot, owner_slot, slot_tainted_by_owner
+        self,
+        balance_slot,
+        time_slot,
+        supply_slot,
+        owner_slot,
+        slot_tainted_by_owner,
+        pause_slot,
     ):
         self.balance_slot = balance_slot
         self.time_slot = time_slot
         self.supply_slot = supply_slot
         self.owner_slot = owner_slot
         self.slot_tainted_by_owner = slot_tainted_by_owner
+        self.pause_slot = pause_slot
 
         self.unique_funcs = []
         self.analyze_state_dependency()
@@ -79,20 +86,24 @@ class StateDependencyGraph:
         balance = self.load_df_multimap(self.balance_slot)
         supply = self.load_df_multimap(self.supply_slot)
         time = self.load_df_multimap(self.time_slot)
+        pause = self.load_df_multimap(self.pause_slot)
         # slot dependant on owner
         self.slot_dependency_map = self.load_df_map(self.slot_tainted_by_owner)
         print(self.slot_dependency_map)
         print(balance)
         print(supply)
         print(time)
+        print(pause)
         self.balance = balance
         self.supply = supply
         self.time = time
+        self.pause = pause
         merged_dict = defaultdict(lambda: defaultdict(list))
         for d, label in [
             (balance, 'balance'),
             (supply, 'supply'),
             (time, 'time'),
+            (pause, 'pause'),
         ]:
             for key, values in d.items():
                 if key not in self.unique_funcs:

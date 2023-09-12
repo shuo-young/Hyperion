@@ -1,11 +1,9 @@
-import os
 from global_params import *
-import pandas as pd
 
 from semantic_parser.graph_analyzer import *
 from semantic_parser.decompilation import *
 from ir_se import *
-from multiprocessing import Process
+import six
 
 
 class TargetedParameters:
@@ -29,7 +27,6 @@ class TargetedParameters:
 
 class Semantics:
     def __init__(self, platform, address, block_number):
-        self.address = address
         self.decompiler = Decompiler(platform, address, block_number)
         self.recipient = self.decompiler.get_recipient()
         self.call_guarded_by_owner = self.decompiler.get_call_guarded_info()
@@ -43,6 +40,8 @@ class Semantics:
         self.infer_supply = self.decompiler.infer_supply()
         self.infer_owner = self.decompiler.infer_owner()
         self.slot_tainted_by_owner = self.decompiler.get_slot_tainted_by_owner()
+        self.infer_pause = self.decompiler.infer_pause()
+        self.storage_way = self.decompiler.get_storage_way()
 
         # two phase graph analysis
         self.fund_transfer_analysis()
@@ -55,7 +54,6 @@ class Semantics:
         )
 
         # combination and initialization for targeted SE and double validation & -FPs
-        self.analyze()
 
     def fund_transfer_analysis(self):
         self.fund_transfer_graph = FundTransferGraph(
@@ -63,47 +61,33 @@ class Semantics:
         )
 
     def state_dependency_analysis(self):
+        # 6 states and 1 storage deduce
         self.state_dependency_graph = StateDependencyGraph(
             self.infer_balance,
             self.infer_time,
             self.infer_supply,
             self.infer_owner,
             self.slot_tainted_by_owner,
+            self.infer_pause,
         )
 
-    def analyze(self):
-        # """Build cfg from ir and perform symbolic execution"""
-        # logging.info("Building CFG from IR...")
-        # got the ir data structure path for CFG
-        path = "./gigahorse-toolchain/.temp/" + self.address + "/out/"
-        # init params for target SE
-        # should note: target functions (head blocks), critical slots and dependency relationship
-        self.funcs_to_be_checked = ["0xdd467064"]
-        processes = []
-
-        for funcSign in self.funcs_to_be_checked:
-            target_params = TargetedParameters(
-                path=path,
-                funcSign=funcSign,
-                target_func=self.func_map[funcSign],
-                fund_transfer_info=self.fund_transfer_graph,
-                state_dependency_info=self.state_dependency_graph,
-            )
-
-            process = Process(target=run_build_cfg_and_analyze, args=(target_params,))
-            processes.append(process)
-            process.start()
-
-        for process in processes:
-            process.join()
-        # run_build_cfg_and_analyze(target_params)
-        # print("======================END=====================")
-        print("======================END=====================")
-        # afterward analysis
-        # could be parallel for multithread SE process
-        # run_build_cfg_and_analyze(target_params)
-
-        # several keys to be checked during SE
-        # 1. feasibility of the key statement
-        # 2. exact value of transfer amount
-        # 3. owner dependency check (authority check)
+    def get_inputs(self):
+        inputs = []
+        # first construct cfg
+        """Build cfg from ir and perform symbolic execution"""
+        logging.info("Building CFG from IR...")
+        # get blocks, functions, and tac_block_function from decompiled IR
+        blocks, functions, tac_block_function = construct_cfg(self.decompiler.path)
+        inputs.append(
+            {
+                'blocks': blocks,
+                'functions': functions,
+                'path': self.decompiler.path,
+                'tac_block_function': tac_block_function,
+                'funcs_to_be_checked': self.funcs_to_be_checked,
+                'func_map': self.func_map,
+                'fund_transfer_graph': self.fund_transfer_graph,
+                'state_dependency_graph': self.state_dependency_graph,
+            }
+        )
+        return inputs
