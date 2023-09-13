@@ -295,10 +295,6 @@ def initGlobalVars():
     global edges
     edges = {}
 
-    # start: end
-    # global blocks
-    # blocks = {}
-
     global visited_edges
     visited_edges = {}
 
@@ -421,7 +417,6 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
 
     if visited_edges[current_edge] > global_params.LOOP_LIMIT:
         log.debug("Overcome a number of loop limit. Terminating this path ...")
-        print("Overcome a number of loop limit. Terminating this path ...")
         return stack
 
     # print(block)
@@ -453,10 +448,10 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
         )
     # end block or out of depth
     elif depth > global_params.DEPTH_LIMIT:
-        print("Overcome a number of depth limit. Terminating this path ...")
+        log.debug("Overcome a number of depth limit. Terminating this path ...")
 
     elif len(successors) == 0:
-        print("TERMINATING A PATH ...")
+        log.debug("TERMINATING A PATH ...")
 
     elif len(successors) == 1:
         # unconditional jump opcode
@@ -592,10 +587,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
     log.debug("==============================")
     log.debug("EXECUTING: " + instr)
-    print("------------------------------")
-    print("EXECUTING: " + instr)
-    print(defs)
-    print(uses)
+    # print("------------------------------")
+    # print("EXECUTING: " + instr)
+    # print(defs)
+    # print(uses)
     # print(block.ident)
     # print(instr)
     if opcode == "STOP":
@@ -951,12 +946,13 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
-            # print("GT===")
-            # print(first)
-            # print(second)
+            log.debug(var_to_source)
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
-
+        log.debug("Computed:")
+        log.debug(computed)
         var_to_source[defs[0]] = computed
 
     elif opcode == "SLT":  # Not fully faithful to signed comparison

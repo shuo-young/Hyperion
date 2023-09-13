@@ -37,6 +37,7 @@ def analyze_dapp():
     results = {}
     exit_code = 0
     result, exit_code = ir_se.run(inputs)
+    return exit_code
 
 
 def main():
@@ -82,7 +83,10 @@ def main():
     )
     args = parser.parse_args()
 
-    logging.basicConfig()
+    logging.basicConfig(
+        format='[%(levelname)s][%(filename)s:%(lineno)d]: %(message)s',
+        datefmt='%Y.%m.%d. %H:%M:%S',
+    )
     rootLogger = logging.getLogger(None)
 
     if args.verbose:

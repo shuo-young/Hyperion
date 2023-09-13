@@ -4,8 +4,6 @@ import os
 from web3 import Web3
 import pandas as pd
 
-from ir_basic_blocks import construct_cfg
-
 
 class Decompiler:
     def __init__(self, platform, address, block_number):
@@ -43,6 +41,8 @@ class Decompiler:
             self.url = (
                 "wss://bsc.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
             )
+        elif self.platform == "Polygon":
+            self.url = "https://polygon-mainnet.g.alchemy.com/v2/K8Y0dy1NhMZHds7-2B27T6wnHDtk8T3A"
         else:
             self.url = ""
 
@@ -65,6 +65,7 @@ class Decompiler:
 
     def analyze_contract(self):
         # use hyperion client to analyze the contract
+        logging.info()
         command = (
             "cd ./gigahorse-toolchain && ./gigahorse.py -j 20 -C ./clients/hyperion.dl "
             + CONTRACT_DIR
@@ -204,6 +205,8 @@ class Decompiler:
 
     def get_storage_way(self):
         df = self.infer_tokenURI()
+        if df.empty:
+            return ""
         token_uri_prefix = []
         for _, row in df.iterrows():
             uri = self.get_storage_string_content(int(row["id"], 16))
