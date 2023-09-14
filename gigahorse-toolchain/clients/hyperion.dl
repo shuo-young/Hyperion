@@ -54,8 +54,9 @@ Hyperion_OwnerSlot(slotNum) :-
 .output Hyperion_SlotTaintedByOwner
 Hyperion_SlotTaintedByOwner(slot, slotNum, funcSign) :-
   Hyperion_StaticallyGuardedBlock(block, slotNum),
+  InFunction(block, func),
   StoreGlobalVariable(sstoreStmt, slot, _),
-  Statement_Block(sstoreStmt, block),
+  // Statement_Block(sstoreStmt, block),
   Hyperion_Statement_Function(sstoreStmt, func),
   PublicFunctionSelector(func, funcSign).
 
@@ -77,6 +78,19 @@ Hyperion_BalanceSlot(id, funcSign) :-
   DataFlows(amountFrom, amount),
   // load from mapping
   LoadFromDataStructure(_, id, receiver, balanceVar),
+  DataFlows(balanceVar, addBalanceVar),
+  ADDFix(addStmt, addBalanceVar, amount, _),
+  Hyperion_Statement_Function(addStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+// another case: may add the balance of msg.sender (not from arg)
+Hyperion_BalanceSlot(id, funcSign) :-
+  (CALLER(_, msgsenderFrom) ; ORIGIN(_, msgsenderFrom)),
+  DataFlows(msgsenderFrom, msgsender),
+  PublicFunctionArg(func, amountFrom, _),
+  DataFlows(amountFrom, amount),
+  // load from mapping
+  LoadFromDataStructure(_, id, msgsender, balanceVar),
   DataFlows(balanceVar, addBalanceVar),
   ADDFix(addStmt, addBalanceVar, amount, _),
   Hyperion_Statement_Function(addStmt, func),
@@ -139,7 +153,6 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
   SLOADOfConst(loadStmt, slotNum, _),
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "tokenURI(uint256)",
-  Hyperion_Statement_Function(csStmt, func),
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
@@ -148,18 +161,22 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
 Hyperion_Recipient(callStmt, val, funcSign) :-
   LoadGlobalVariable(_, val, to),
   // may use dataflow
-  Hyperion_SensitiveCall(callStmt, to, _, funcSign),
-  Hyperion_Statement_Function(callStmt, func),
-  PublicFunctionSelector(func, funcSign).
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 
 Hyperion_Recipient(callStmt, val, funcSign) :-
   val = "CALLER",
   CALLER(_, msgsenderFrom),
   DataFlows(msgsenderFrom, msgSender),
   // may use dataflow
-  Hyperion_SensitiveCall(callStmt, msgSender, _, funcSign),
-  Hyperion_Statement_Function(callStmt, func),
-  PublicFunctionSelector(func, funcSign).
+  Hyperion_SensitiveCall(callStmt, msgSender, _, funcSign).
+
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  val = "FUNARG",
+  PublicFunctionArg(pubFun, funcArg, _),
+  DataFlows(funcArg, to),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign),
+  Hyperion_Statement_Function(callStmt, pubFun).
 
 // private call flow
 .decl Hyperion_CallPrivateFuncArg(cpStmt:Statement, orginVar:Variable, targetVar:Variable)

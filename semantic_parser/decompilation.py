@@ -4,6 +4,8 @@ import os
 from web3 import Web3
 import pandas as pd
 
+log = logging.getLogger(__name__)
+
 
 class Decompiler:
     def __init__(self, platform, address, block_number):
@@ -47,6 +49,7 @@ class Decompiler:
             self.url = ""
 
     def download_bytecode(self):
+        log.info("Get contract bytecode...")
         if self.url == "":
             return
         loc = CONTRACT_PATH + self.address + ".hex"
@@ -65,7 +68,7 @@ class Decompiler:
 
     def analyze_contract(self):
         # use hyperion client to analyze the contract
-        logging.info()
+        logging.info("Decompiling contract...")
         command = (
             "cd ./gigahorse-toolchain && ./gigahorse.py -j 20 -C ./clients/hyperion.dl "
             + CONTRACT_DIR

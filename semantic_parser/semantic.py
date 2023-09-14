@@ -44,6 +44,7 @@ class Semantics:
         self.storage_way = self.decompiler.get_storage_way()
 
         # two phase graph analysis
+        log.info("Begin graph analysis...")
         self.fund_transfer_analysis()
         self.state_dependency_analysis()
         self.funcs_to_be_checked = list(

@@ -1,7 +1,9 @@
 import pandas as pd
 from collections import defaultdict, namedtuple
+import logging
 
 Transfer = namedtuple('Transfer', ['callStmt', 'recipient', 'amount'])
+log = logging.getLogger(__name__)
 
 
 class FundTransferGraph:
@@ -22,7 +24,6 @@ class FundTransferGraph:
 
         # actually, we should SE every function with transfer
         self.unique_funcs = list(self.func_call.keys())
-        print(self.unique_funcs)
 
     def set_role(self):
         guarded_call_slot = {}
@@ -35,14 +36,18 @@ class FundTransferGraph:
         # next: use guarded info to determin the role (user or owner)
         for _, row in self.recipient_df.iterrows():
             if row['to'] == "CALLER":
-                if len(guarded_call_slot[row['callStmt']]) > 0:
-                    self.recipient_role[row['callStmt']] = "OWNER"
+                if row['callStmt'] in guarded_call_slot.keys():
+                    if len(guarded_call_slot[row['callStmt']]) > 0:
+                        self.recipient_role[row['callStmt']] = "OWNER"
                 else:
                     self.recipient_role[row['callStmt']] = "USER"
+            elif row['to'] == "FUNARG":
+                self.recipient_role[row['callStmt']] = "FUNARG"
             else:
                 # normal can be the tax receiver address
-                self.recipient_role[row['callStmt']] = "NORMAL"
-        print(self.recipient_role)
+                self.recipient_role[row['callStmt']] = "KNOWN"
+        log.info("recipient role")
+        log.info(self.recipient_role)
 
     def analyze_transfer(self):
         func_call = {}
@@ -56,7 +61,8 @@ class FundTransferGraph:
                     Transfer(row['callStmt'], row['recipient'], row['amount'])
                 )
             self.calls[row['callStmt']] = row['amount']
-        print(func_call)
+        log.info("func call")
+        log.info(func_call)
         self.func_call = func_call
 
 
@@ -79,8 +85,8 @@ class StateDependencyGraph:
 
         self.unique_funcs = []
         self.analyze_state_dependency()
-
-        print(self.unique_funcs)
+        log.info("funcs to be tested")
+        log.info(self.unique_funcs)
 
     def analyze_state_dependency(self):
         balance = self.load_df_multimap(self.balance_slot)
@@ -89,11 +95,16 @@ class StateDependencyGraph:
         pause = self.load_df_multimap(self.pause_slot)
         # slot dependant on owner
         self.slot_dependency_map = self.load_df_map(self.slot_tainted_by_owner)
-        print(self.slot_dependency_map)
-        print(balance)
-        print(supply)
-        print(time)
-        print(pause)
+        log.info("slot dependency map")
+        log.info(self.slot_dependency_map)
+        log.info("balance")
+        log.info(balance)
+        log.info("supply")
+        log.info(supply)
+        log.info("time")
+        log.info(time)
+        log.info("pause")
+        log.info(pause)
         self.balance = balance
         self.supply = supply
         self.time = time
@@ -111,7 +122,7 @@ class StateDependencyGraph:
                 # merged_dict[key].extend([f"{label}_{value}" for value in values])
                 merged_dict[key][label].extend(values)
 
-        print(merged_dict)
+        log.info(merged_dict)
         self.funcSign_feat_slot_map = merged_dict
 
         # maybe for the pic draw

@@ -28,17 +28,6 @@ Assertion = namedtuple('Assertion', ['pc', 'model'])
 Underflow = namedtuple('Underflow', ['pc', 'model'])
 Overflow = namedtuple('Overflow', ['pc', 'model'])
 
-global result
-result = {
-    "transfer": {},
-    "tax": {},
-    "mint": {},
-    "lock": {},
-    "clear": {},
-    "pause": {},
-    "metadata": {},
-}
-
 
 class Parameter:
     def __init__(self, **kwargs):
@@ -338,12 +327,11 @@ def initGlobalVars():
 def run_build_cfg_and_analyze(target_params):
     initGlobalVars()
     build_cfg_and_analyze(target_params)
-    print(result)
 
 
 def build_cfg_and_analyze(target_params):
     targeted_sym_exec(target_params)
-    generate_dot_file(target_params.funcSign)
+    # generate_dot_file(target_params.funcSign)
 
 
 def targeted_sym_exec(target_params):
@@ -371,9 +359,9 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
     global global_problematic_pcs
     global all_gs
     global results
-    print()
-    print("==============================")
-    print(block.ident)
+
+    log.debug("==============================")
+    log.debug(block.ident)
 
     visited = params.visited
     # in fact, no use of stack
@@ -469,7 +457,7 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
 
         try:
             if solver.check() == unsat:
-                log.debug("INFEASIBLE PATH DETECTED")
+                log.critical("INFEASIBLE PATH DETECTED")
                 # print("======JUMPI jump target======")
                 # print("INFEASIBLE PATH DETECTED")
                 # print(block.ident)
@@ -505,7 +493,7 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
                 # Note that this check can be optimized. I.e. if the previous check succeeds,
                 # no need to check for the negated condition, but we can immediately go into
                 # the else branch
-                log.debug("INFEASIBLE PATH DETECTED")
+                log.critical("INFEASIBLE PATH DETECTED")
                 # print("======JUMPI fall target======")
                 # print("INFEASIBLE PATH DETECTED")
                 # print(block.ident)
@@ -662,7 +650,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
     # due to the exist of PHI opcode, some path may not be feasible to perform DIV operation
     elif opcode == "DIV":
-        print(var_to_source)
+        log.debug(var_to_source)
         # print(len(var_to_source.keys()))
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
@@ -678,8 +666,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             first = to_symbolic(first)
             second = to_symbolic(second)
-            print(f"First: {first}, Type of First: {type(first)}")
-            print(f"Second: {second}, Type of Second: {type(second)}")
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # solver.push()
             # solver.add(Not(second == 0))
             # print("Solver: ")
@@ -691,8 +679,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             computed = UDiv(first, second)
             # solver.pop()
         computed = simplify(computed) if is_expr(computed) else computed
-        print("Computed:")
-        print(computed)
+        log.debug("Computed:")
+        log.debug(computed)
         var_to_source[defs[0]] = computed
 
     elif opcode == "SDIV":
@@ -920,9 +908,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
-            print(var_to_source)
-            print(f"First: {first}, Type of First: {type(first)}")
-            print(f"Second: {second}, Type of Second: {type(second)}")
+            log.debug(var_to_source)
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # miss cases due to PHI opcode
             if isinstance(first, str):
                 first = BitVec(first, 256)
@@ -930,8 +918,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 second = BitVec(second, 256)
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
-        print("Computed:")
-        print(computed)
+        log.debug("Computed:")
+        log.debug(computed)
         var_to_source[defs[0]] = computed
 
     elif opcode == "GT":
@@ -1011,7 +999,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 computed = 0
         else:
             computed = If(first == 0, BitVecVal(1, 256), BitVecVal(0, 256))
-        print(computed)
+        log.debug(computed)
         computed = simplify(computed) if is_expr(computed) else computed
         var_to_source[defs[0]] = computed
     elif opcode == "AND":
@@ -1302,8 +1290,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         pass
     elif opcode == "MLOAD":
         address = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
-        print(address)
-        print(mem)
         current_miu_i = global_state["miu_i"]
         if isAllReal(address, current_miu_i) and address in mem:
             temp = int(math.ceil((address + 32) / float(32)))
@@ -1344,9 +1330,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         )
         # MSTORE slotid to MEM32
-        print(stored_address)
-        print(stored_value)
-        print(mem)
+        # print(stored_address)
+        # print(stored_value)
+        # print(mem)
         current_miu_i = global_state["miu_i"]
         if isReal(stored_address):
             # preparing data for hashing later
@@ -1453,9 +1439,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if isReal(stored_address):
             # note that the stored_value could be unknown
             global_state["Ia"][stored_address] = stored_value
-            print(hex(stored_address))
+            log.debug(hex(stored_address))
             # check time sstore op
-            print(target_params.state_dependency_info.time[target_params.funcSign])
+            # print(target_params.state_dependency_info.time[target_params.funcSign])
             if (
                 hex(stored_address)
                 in target_params.state_dependency_info.time[target_params.funcSign]
@@ -1469,7 +1455,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 hex(stored_address)
                 in target_params.state_dependency_info.supply[target_params.funcSign]
                 and target_params.funcSign
-                in target_params.state_dependency_info.owner.keys()
+                in target_params.state_dependency_info.balance.keys()
             ):
                 # check owner constrain
                 if (
@@ -1479,12 +1465,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     result["mint"] = True
 
             # check pause sstore op
-            if (
-                hex(stored_address)
-                in target_params.state_dependency_info.pause[target_params.funcSign]
-            ):
-                # default has owner constrain
-                result["pause"] = True
+            # may occur slot offset bia
+            # 0x2_0_0 equals to 0x2 for test
+            pause_related_slots = target_params.state_dependency_info.pause[
+                target_params.funcSign
+            ]
+            for i in pause_related_slots:
+                if hex(stored_address) in i.split("_")[0]:
+                    # default has owner constrain
+                    result["pause"] = True
         else:
             # note that the stored_value could be unknown
             global_state["Ia"][str(stored_address)] = stored_value
@@ -1590,20 +1579,24 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         size_data_ouput = (
             var_to_source[uses[6]] if uses[6] in var_to_source.keys() else uses[6]
         )
-        log.info(recipient)
-        log.info(transfer_amount)
+        log.info(ident)
+        log.debug(recipient)
+        log.debug(transfer_amount)
         # print(recipient)
         # print(transfer_amount)
-        print(ident)
+        # print(ident)
         # feasibility forward check
         # get the formula of the transfer amount
         # with the inferred transfer recipient role
+        # callStmt: [amountVar, recipient_role, recipient, amount]
         if ident in target_params.fund_transfer_info.calls.keys():
             res = [
                 target_params.fund_transfer_info.calls[ident],
                 target_params.fund_transfer_info.recipient_role[ident],
+                recipient,
+                transfer_amount,
             ]
-            if target_params.fund_transfer_info.recipient_role[ident] == "NORMAL":
+            if target_params.fund_transfer_info.recipient_role[ident] == "KNOWN":
                 result["tax"][ident] = res
             else:  # user transfer
                 result["transfer"][ident] = res
@@ -1927,8 +1920,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "THROW":
         pass
     else:
-        print("UNKNOWN INSTRUCTION: " + opcode)
-        log.info("UNKNOWN INSTRUCTION: " + opcode)
+        log.debug("UNKNOWN INSTRUCTION: " + opcode)
     # print(var_to_source)
     # print(mem)
 
@@ -1938,7 +1930,7 @@ def analyze(target_params):
 
 
 def run(inputs):
-    global results
+    global result
     global funcs_to_be_checked
     global blocks
     global functions
@@ -1948,6 +1940,15 @@ def run(inputs):
     global func_map
     global path
 
+    result = {
+        "transfer": {},
+        "tax": {},
+        "mint": {},
+        "lock": {},
+        "clear": {},
+        "pause": {},
+        "metadata": {},
+    }
     blocks = inputs["blocks"]
     functions = inputs["functions"]
     tac_block_function = inputs["tac_block_function"]
@@ -1957,10 +1958,10 @@ def run(inputs):
     func_map = inputs["func_map"]
     path = inputs["path"]
 
-    log.info("\t============ Results ===========")
+    log.info("============ Begin SE ===========")
     # init params for target SE
     # should note: target functions (head blocks), critical slots and dependency relationship
-    # self.funcs_to_be_checked = ["0xdd467064"]
+    # not use multiple processes
     processes = []
 
     for funcSign in funcs_to_be_checked:
@@ -1971,17 +1972,20 @@ def run(inputs):
             target_block=functions[func_map[funcSign]].head_block,
             state_dependency_info=state_dependency_graph,
         )
+        log.info("============ Begin SE on function: " + funcSign + " ===========")
+        analyze(target_params)
+        log.info("============ End SE on function: " + funcSign + " ===========")
+        log.info(result)
+    #     process = Process(target=analyze, args=(target_params,))
+    #     processes.append(process)
+    #     process.start()
 
-        process = Process(target=analyze, args=(target_params,))
-        processes.append(process)
-        process.start()
-
-    for process in processes:
-        process.join()
+    # for process in processes:
+    #     process.join()
     # run_build_cfg_and_analyze(target_params)
     # print("======================END=====================")
-    print("======================END=====================")
-    return results, 0
+    log.info("====================== SE END =====================")
+    return result, 0
     # afterward analysis
     # could be parallel for multithread SE process
     # run_build_cfg_and_analyze(target_params)

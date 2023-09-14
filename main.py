@@ -16,10 +16,12 @@ from semantic_parser.semantic import Semantics, TargetedParameters
 
 def analyze_dapp():
     global args
+    log.info("Begin processing text info...")
     # NLP process
     # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
     # specs = extract_specs_helper.process()
-
+    log.info("Complete processing text info...")
+    log.info("Begin processing contract...")
     # Backend contract analysis
     source = {
         "platform": args.platform,
@@ -34,9 +36,11 @@ def analyze_dapp():
         source["block_number"],
     )
     inputs = semantic.get_inputs()[0]
-    results = {}
     exit_code = 0
     result, exit_code = ir_se.run(inputs)
+    log.info("Complete processing contract...")
+    result["metadata"] = semantic.storage_way
+    log.info(result)
     return exit_code
 
 
