@@ -331,7 +331,7 @@ def run_build_cfg_and_analyze(target_params):
 
 def build_cfg_and_analyze(target_params):
     targeted_sym_exec(target_params)
-    # generate_dot_file(target_params.funcSign)
+    generate_dot_file(target_params.funcSign)
 
 
 def targeted_sym_exec(target_params):
@@ -575,12 +575,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
     log.debug("==============================")
     log.debug("EXECUTING: " + instr)
-    # print("------------------------------")
-    # print("EXECUTING: " + instr)
-    # print(defs)
-    # print(uses)
-    # print(block.ident)
-    # print(instr)
     if opcode == "STOP":
         return
     elif opcode == "ADD":
@@ -594,6 +588,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             second = BitVecVal(second, 256)
             computed = first + second
         elif isSymbolic(first) and isSymbolic(second):
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
             computed = first + second
         else:
             # both are real and we need to manually modulus with 2 ** 256
@@ -634,6 +630,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         elif isSymbolic(first) and isReal(second):
             second = BitVecVal(second, 256)
             computed = first - second
+        elif isSymbolic(first) and isSymbolic(second):
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
+            computed = first + second
         else:
             computed = (first - second) % (2**256)
         computed = simplify(computed) if is_expr(computed) else computed
@@ -650,8 +650,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
     # due to the exist of PHI opcode, some path may not be feasible to perform DIV operation
     elif opcode == "DIV":
-        log.debug(var_to_source)
-        # print(len(var_to_source.keys()))
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         # print(f"First: {first}")
@@ -937,6 +935,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(var_to_source)
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
+            if isinstance(first, str):
+                first = BitVec(first, 256)
+            elif isinstance(second, str):
+                second = BitVec(second, 256)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -1033,10 +1035,16 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
     # model IR special op code PHI
     # dataflow symbol opcode
+    # fix bug: phi 0x0 y or y 0x0
     elif opcode == "PHI":
-        flow_from = (
-            var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-        )
+        if isReal(uses[1]):
+            flow_from = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+        elif isReal(uses[0]):
+            flow_from = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
         flow_to = defs[0]
         var_to_source[flow_to] = flow_from
 
@@ -1582,20 +1590,26 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         log.info(ident)
         log.debug(recipient)
         log.debug(transfer_amount)
-        # print(recipient)
-        # print(transfer_amount)
-        # print(ident)
+        # for ether transfer
         # feasibility forward check
         # get the formula of the transfer amount
         # with the inferred transfer recipient role
-        # callStmt: [amountVar, recipient_role, recipient, amount]
+        # callStmt: [recipientVar, amountVar, recipient_role, recipient, amount]
         if ident in target_params.fund_transfer_info.calls.keys():
             res = [
-                target_params.fund_transfer_info.calls[ident],
+                target_params.fund_transfer_info.calls[ident][0],
+                target_params.fund_transfer_info.calls[ident][1],
                 target_params.fund_transfer_info.recipient_role[ident],
-                recipient,
-                transfer_amount,
+                var_to_source[
+                    "v"
+                    + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
+                ],
+                var_to_source[
+                    "v"
+                    + target_params.fund_transfer_info.calls[ident][1].replace("0x", "")
+                ],
             ]
+            log.debug(res)
             if target_params.fund_transfer_info.recipient_role[ident] == "KNOWN":
                 result["tax"][ident] = res
             else:  # user transfer
@@ -1609,6 +1623,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         if isReal(transfer_amount):
             if transfer_amount == 0:
                 # stack.insert(0, 1)  # x = 0
+                # considered as the token transfer
+                # load data from the transfer
                 return
 
         # Let us ignore the call depth
@@ -1910,6 +1926,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # should use the successor of the caller function
         return_defs = functions[tac_block_function[block.ident]].return_defs
         # print(return_defs)
+        log.debug(return_defs)
         block.return_private_target = functions[
             tac_block_function[block.ident]
         ].caller_block.successors[0]
@@ -1917,6 +1934,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         block.return_private_target.return_private_from = block
         for i in range(1, len(uses)):
             var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
+            log.debug(var_to_source[return_defs[i - 1]])
     elif opcode == "THROW":
         pass
     else:
@@ -1963,7 +1981,7 @@ def run(inputs):
     # should note: target functions (head blocks), critical slots and dependency relationship
     # not use multiple processes
     processes = []
-
+    funcs_to_be_checked = ['0x3955f0fe']
     for funcSign in funcs_to_be_checked:
         target_params = TargetedParameters(
             path=path,
