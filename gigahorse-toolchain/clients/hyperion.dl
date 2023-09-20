@@ -105,13 +105,40 @@ Hyperion_SupplySlot(slotNum, funcSign) :-
   LoadGlobalVariable(loadStmt, slotNum, supply),
   DataFlows(supply, supplyVar),
   DataFlows(amount, amountVar),
-  ADDFix(addStmt, supplyVar, amountVar, _),
+  ADDFix(addStmt, supplyVar, amountVar, resVar),
+  DataFlows(resVar, addStoreResVar),
+  // store the added supply to narrow the scope
+  StoreGlobalVariable(storeStmt, slotNum, addStoreResVar),
+  Hyperion_Statement_Function(storeStmt, func),
   Hyperion_Statement_Function(addStmt, func),
   Hyperion_Statement_Function(loadStmt, func),
   Hyperion_BalanceSlot(_, funcSign),
   PublicFunctionSelector(func, funcSign).
 
+// directly identified from hash identification
+.decl Hyperion_SupplyAmountSlot(slotNum:Value, funcSign:symbol)
+.output Hyperion_SupplyAmountSlot
+Hyperion_SupplyAmountSlot(slotNum, funcSign) :-
+  SLOADOfConst(loadStmt, slotNum, _),
+  ConstantPossibleSigHash(funcSign, _, sigText),
+  sigText = "totalSupply()",
+  Hyperion_Statement_Function(loadStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
+// heuristic design, infer the constant val
+// can be replaced by the function selector hash identification above
+// .decl Hyperion_SupplyConstraint(slotNum:Value, funcSign:symbol)
+// .output Hyperion_SupplyConstraint
+// Hyperion_SupplyConstraint(slot2, funcSign) :-
+//   LoadGlobalVariable(_, slot, globalFrom1),
+//   Hyperion_CompareVars(var1, globalFrom2, _),
+//   DataFlows(globalFrom1, var1),
+//   LoadGlobalVariable(_, slot2, globalFrom2),
+//   slot2 != slot,
+//   Hyperion_SupplySlot(slot, funcSign).
+
 // default protected by the owner requirement
+// in fact, key slot should influence the feasiblity of transfer
 .decl Hyperion_TimeSlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_TimeSlot
 Hyperion_TimeSlot(slotNum, funcSign) :-
@@ -128,11 +155,15 @@ Hyperion_TimeSlot(slotNum, funcSign) :-
   DataFlows(arg, setTimeVar),
   StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
 
+// directly use pause() selector
 .decl Hyperion_PauseSlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_PauseSlot
 Hyperion_PauseSlot(statusSlot, funcSign) :-
+  ConstantPossibleSigHash(funcSign, _, sigText),
+  sigText = "pause()",
+  // subjected to the owner slot
   Hyperion_StaticallyGuardedBlock(block, ownerSlot),
-  // change status with constant
+  // change or set status with constant
   Variable_Value(statusFrom, _),
   DataFlows(statusFrom, status),
   statusSlot != ownerSlot,
@@ -160,6 +191,11 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
 .output Hyperion_Recipient
 Hyperion_Recipient(callStmt, val, funcSign) :-
   LoadGlobalVariable(_, val, to),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign).
+
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  Variable_Value(to, val),
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 

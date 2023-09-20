@@ -28,6 +28,7 @@ def analyze_dapp():
         "address": args.addr,
         "block_number": args.block_number,
     }
+
     # Analyzer
     # semantic covers the targeted functions, storage of the critical state variable
     semantic = Semantics(
@@ -40,8 +41,39 @@ def analyze_dapp():
     result, exit_code = ir_se.run(inputs)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
+    result["mint"]["const"] = semantic.supply_amount
     log.info(result)
     return exit_code
+
+
+def batch_analyze_dapp(address):
+    log.info("Begin processing text info...")
+    # NLP process
+    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
+    # specs = extract_specs_helper.process()
+    log.info("Complete processing text info...")
+    log.info("Begin processing contract...")
+    # Backend contract analysis
+    source = {
+        "platform": "BSC",
+        "address": address,
+        "block_number": 16000000,
+    }
+    # Analyzer
+    # semantic covers the targeted functions, storage of the critical state variable
+    semantic = Semantics(
+        source["platform"],
+        source["address"],
+        source["block_number"],
+    )
+    inputs = semantic.get_inputs()[0]
+    exit_code = 0
+    result, exit_code = ir_se.run(inputs)
+    log.info("Complete processing contract...")
+    result["metadata"] = semantic.storage_way
+    result["mint"]["const"] = semantic.supply_amount
+    log.info(result)
+    # return exit_code
 
 
 def main():

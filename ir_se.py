@@ -1,4 +1,6 @@
+import errno
 from multiprocessing import Process
+import signal
 from ir_basic_blocks import *
 from z3 import *
 from semantic_parser.semantic import TargetedParameters
@@ -327,11 +329,42 @@ def initGlobalVars():
 def run_build_cfg_and_analyze(target_params):
     initGlobalVars()
     build_cfg_and_analyze(target_params)
+    # global g_timeout
+
+    # try:
+    #     with Timeout(sec=global_params.GLOBAL_TIMEOUT):
+    #         build_cfg_and_analyze(target_params)
+    #     log.debug("Done Symbolic execution")
+    # except TimeoutError:
+    #     g_timeout = True
+    #     log.critical("Timeout!")
+
+
+class TimeoutError(Exception):
+    pass
+
+
+class Timeout:
+    """Timeout class using ALARM signal."""
+
+    def __init__(self, sec=10, error_message=os.strerror(errno.ETIME)):
+        self.sec = sec
+        self.error_message = error_message
+
+    def __enter__(self):
+        signal.signal(signal.SIGALRM, self._handle_timeout)
+        signal.alarm(self.sec)
+
+    def __exit__(self, *args):
+        signal.alarm(0)  # disable alarm
+
+    def _handle_timeout(self, signum, frame):
+        raise TimeoutError(self.error_message)
 
 
 def build_cfg_and_analyze(target_params):
     targeted_sym_exec(target_params)
-    generate_dot_file(target_params.funcSign)
+    # generate_dot_file(target_params.funcSign)
 
 
 def targeted_sym_exec(target_params):
@@ -910,10 +943,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # miss cases due to PHI opcode
-            if isinstance(first, str):
-                first = BitVec(first, 256)
-            elif isinstance(second, str):
-                second = BitVec(second, 256)
+            # leave it miss
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            # elif isinstance(second, str):
+            #     second = BitVec(second, 256)
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -935,10 +969,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(var_to_source)
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            if isinstance(first, str):
-                first = BitVec(first, 256)
-            elif isinstance(second, str):
-                second = BitVec(second, 256)
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            # elif isinstance(second, str):
+            #     second = BitVec(second, 256)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -1042,6 +1076,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
             )
         elif isReal(uses[0]):
+            flow_from = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
+        # another bug may occur due to phi x y, x and y are both not constants
+        elif uses[0] in var_to_source.keys():
+            flow_from = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+        elif uses[1] in var_to_source.keys():
             flow_from = (
                 var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
             )
@@ -1470,7 +1513,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     hex(stored_address)
                     in target_params.state_dependency_info.slot_dependency_map.keys()
                 ):
-                    result["mint"] = True
+                    result["mint"]["unlimited"] = True
 
             # check pause sstore op
             # may occur slot offset bia
@@ -1590,6 +1633,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         log.info(ident)
         log.debug(recipient)
         log.debug(transfer_amount)
+        if isinstance(recipient, int):
+            var_to_source[
+                "v" + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
+            ] = hex(recipient)
         # for ether transfer
         # feasibility forward check
         # get the formula of the transfer amount
@@ -1597,8 +1644,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # callStmt: [recipientVar, amountVar, recipient_role, recipient, amount]
         if ident in target_params.fund_transfer_info.calls.keys():
             res = [
-                target_params.fund_transfer_info.calls[ident][0],
-                target_params.fund_transfer_info.calls[ident][1],
                 target_params.fund_transfer_info.recipient_role[ident],
                 var_to_source[
                     "v"
@@ -1915,8 +1960,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         for i in range(1, len(uses)):
             if uses[i] in var_to_source.keys():
                 uses[i] = var_to_source[uses[i]]
-            elif isinstance(uses[i], str):
-                uses[i] = BitVec(uses[i], 256)
+            # elif isinstance(uses[i], str):
+            #     uses[i] = BitVec(uses[i], 256)
             var_to_source[hex(uses[0]).replace("0x", "v") + "arg" + str(i - 1)] = uses[
                 i
             ]
@@ -1961,7 +2006,7 @@ def run(inputs):
     result = {
         "transfer": {},
         "tax": {},
-        "mint": {},
+        "mint": {"const": None, "unlimited": None},
         "lock": {},
         "clear": {},
         "pause": {},
@@ -1981,7 +2026,7 @@ def run(inputs):
     # should note: target functions (head blocks), critical slots and dependency relationship
     # not use multiple processes
     processes = []
-    funcs_to_be_checked = ['0x3955f0fe']
+    # funcs_to_be_checked = ['0xa9059cbb']
     for funcSign in funcs_to_be_checked:
         target_params = TargetedParameters(
             path=path,

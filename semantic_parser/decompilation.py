@@ -45,8 +45,10 @@ class Decompiler:
             )
         elif self.platform == "Polygon":
             self.url = "https://polygon-mainnet.g.alchemy.com/v2/K8Y0dy1NhMZHds7-2B27T6wnHDtk8T3A"
-        else:
-            self.url = ""
+        elif self.platform == "Cronos":
+            self.url = (
+                "https://cro.getblock.io/6ecf1a9f-da32-44cd-9713-9780f45c9dac/mainnet/"
+            )
 
     def download_bytecode(self):
         log.info("Get contract bytecode...")
@@ -160,12 +162,45 @@ class Decompiler:
             + self.address
             + "/out/Hyperion_SupplySlot.csv"
         )
+        supply_amount_loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_SupplyAmountSlot.csv"
+        )
+        # if has supply (from totalSupply())
+        # just use this slot
+        if os.path.exists(supply_amount_loc) and (
+            os.path.getsize(supply_amount_loc) > 0
+        ):
+            df_supply = pd.read_csv(supply_amount_loc, header=None, sep='	')
+            df_supply.columns = ["id", "funcSign"]
+        else:
+            # if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
+            #     df_supply = pd.read_csv(supply_loc, header=None, sep='	')
+            #     df_supply.columns = ["id", "funcSign"]
+            # else:
+            df_supply = pd.DataFrame()
+        return df_supply
+
+    def get_supply_amount(self):
+        # maybe multiple supply?
+        # or can just use sole element
+        supply_amount = []
+        supply_loc = (
+            "./gigahorse-toolchain/.temp/"
+            + self.address
+            + "/out/Hyperion_SupplyAmountSlot.csv"
+        )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
             df_supply = pd.read_csv(supply_loc, header=None, sep='	')
             df_supply.columns = ["id", "funcSign"]
         else:
             df_supply = pd.DataFrame()
-        return df_supply
+
+        for _, row in df_supply.iterrows():
+            supply_amount.append(self.get_storage_num_content(int(row["id"], 16)))
+        log.info(supply_amount)
+        return supply_amount
 
     def infer_owner(self):
         owner_loc = (
@@ -209,7 +244,7 @@ class Decompiler:
     def get_storage_way(self):
         df = self.infer_tokenURI()
         if df.empty:
-            return ""
+            return None
         token_uri_prefix = []
         for _, row in df.iterrows():
             uri = self.get_storage_string_content(int(row["id"], 16))
@@ -221,6 +256,16 @@ class Decompiler:
                 elif uri.startswith("ipfs"):
                     self.ipfs_storage = True
                     return "ipfs"
+
+    def get_storage_num_content(self, slot_index):
+        if self.url.startswith("https"):
+            w3 = Web3(Web3.HTTPProvider(self.url))
+        else:
+            w3 = Web3(Web3.WebsocketProvider(self.url))
+        contract_address = Web3.to_checksum_address(self.address)
+        storage_content = w3.eth.get_storage_at(contract_address, slot_index)
+        log.info(str(storage_content.hex()))
+        return int(storage_content.hex(), 16)
 
     def get_storage_string_content(self, slot_index):
         if self.url.startswith("https"):

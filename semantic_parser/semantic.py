@@ -43,6 +43,8 @@ class Semantics:
         self.infer_pause = self.decompiler.infer_pause()
         self.storage_way = self.decompiler.get_storage_way()
 
+        self.supply_amount = self.decompiler.get_supply_amount()
+
         # two phase graph analysis
         log.info("Begin graph analysis...")
         self.fund_transfer_analysis()

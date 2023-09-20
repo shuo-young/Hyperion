@@ -60,6 +60,7 @@ class FundTransferGraph:
                 func_call[row["funcSign"]].append(
                     Transfer(row['callStmt'], row['recipient'], row['amount'])
                 )
+            # for finding value of recipient and amount during SE
             self.calls[row['callStmt']] = [row['recipient'], row['amount']]
         log.info("func call")
         log.info(func_call)
