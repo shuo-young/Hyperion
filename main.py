@@ -1,13 +1,9 @@
 import argparse
-from datetime import datetime
-from multiprocessing import Process
-from web3 import Web3
 import logging
-import ir_se
 
-import time
 from global_params import *
-from ir_se import *
+import symbolic_execution.ir_se
+from symbolic_execution.ir_se import *
 
 
 from nlp.nlp import FrontEndSpecsExtractor
@@ -38,12 +34,22 @@ def analyze_dapp():
     )
     inputs = semantic.get_inputs()[0]
     exit_code = 0
-    result, exit_code = ir_se.run(inputs)
+    result, exit_code = symbolic_execution.ir_se.run(inputs)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
     result["mint"]["const"] = semantic.supply_amount
     log.info(result)
+    json_str = json.dumps(result, default=complex_handler, indent=4)
+    filename = "result/" + source["address"] + ".json"
+    with open(filename, 'w') as file:
+        file.write(json_str)
     return exit_code
+
+
+def complex_handler(obj):
+    if isinstance(obj, BitVecRef):
+        return str(obj)
+    raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
 
 
 def batch_analyze_dapp(address):
@@ -52,7 +58,7 @@ def batch_analyze_dapp(address):
     # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
     # specs = extract_specs_helper.process()
     log.info("Complete processing text info...")
-    log.info("Begin processing contract...")
+    log.info("Begin processing contract " + address + "...")
     # Backend contract analysis
     source = {
         "platform": "BSC",
@@ -68,11 +74,15 @@ def batch_analyze_dapp(address):
     )
     inputs = semantic.get_inputs()[0]
     exit_code = 0
-    result, exit_code = ir_se.run(inputs)
+    result, exit_code = symbolic_execution.ir_se.run(inputs)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
     result["mint"]["const"] = semantic.supply_amount
     log.info(result)
+    json_str = json.dumps(result, default=complex_handler, indent=4)
+    filename = "result/" + source["address"] + ".json"
+    with open(filename, 'w') as file:
+        file.write(json_str)
     # return exit_code
 
 

@@ -1,0 +1,38 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x2544": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-3-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x25ad": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-4-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x2616": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-5-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x267f": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-6-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x26e8": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-7-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

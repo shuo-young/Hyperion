@@ -199,7 +199,6 @@ class Decompiler:
 
         for _, row in df_supply.iterrows():
             supply_amount.append(self.get_storage_num_content(int(row["id"], 16)))
-        log.info(supply_amount)
         return supply_amount
 
     def infer_owner(self):

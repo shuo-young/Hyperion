@@ -1,0 +1,18 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x1dd5S0x70c": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-26-))",
+            "Id_1"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

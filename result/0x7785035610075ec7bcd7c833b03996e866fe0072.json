@@ -1,0 +1,18 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x10ceS0x5a3": [
+            "KNOWN",
+            "Concat(0, Extract(175, 16, Ia_store-9-))",
+            "bvudiv_i(Ia_store-6-*\n         bvudiv_i(IH_b*Ia_store-2-,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-18-*Ia_store-2- +\n                           Ia_store-3-*\n                           bvudiv_i(Ia_store-16-*\n                                    Ia_store-2 + some_var_8-*\n                                    Ia_store-4-,\n                                    100),\n                           bvudiv_i(Ia_store-16-*\n                                    Ia_store-2 + some_var_8-*\n                                    Ia_store-4-,\n                                    100))),\n         100)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

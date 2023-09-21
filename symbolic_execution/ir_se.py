@@ -1,22 +1,17 @@
 import errno
-from multiprocessing import Process
 import signal
-from ir_basic_blocks import *
+from symbolic_execution.ir_basic_blocks import *
 from z3 import *
 from semantic_parser.semantic import TargetedParameters
-from symbolic_execution.semantic_analysis import *
 from symbolic_execution.vargenerator import *
-from symbolic_execution.execution_states import (
-    UNKNOWN_INSTRUCTION,
-    EXCEPTION,
-    PICKLE_PATH,
-)
 import traceback
 from symbolic_execution.vargenerator import *
 from symbolic_execution.utils import *
 import zlib
 import base64
 from numpy import mod
+import logging
+import global_params
 
 log = logging.getLogger(__name__)
 
@@ -41,7 +36,6 @@ class Parameter:
             "overflow_pcs": [],
             "mem": {},
             "var_to_source": {},
-            "analysis": {},
             "sha3_list": {},
             "global_state": {},
             "path_conditions_and_vars": {},
@@ -262,7 +256,6 @@ def initGlobalVars():
         "evm_code_coverage": "",
         "instructions": "",
         "time": "",
-        "analysis": {},
     }
 
     global calls_affect_state
@@ -372,11 +365,9 @@ def targeted_sym_exec(target_params):
     # executing, starting from beginning
     path_conditions_and_vars = {"path_condition": []}
     global_state = get_init_global_state(path_conditions_and_vars)
-    analysis = init_analysis()
     params = Parameter(
         path_conditions_and_vars=path_conditions_and_vars,
         global_state=global_state,
-        analysis=analysis,
         target_params=target_params,
     )
     # mark the start block of the targeted function and begin SE
@@ -404,7 +395,6 @@ def sym_exec_block(params, block, pre_block, depth, func_call, current_func_name
     global_state = params.global_state
     sha3_list = params.sha3_list
     path_conditions_and_vars = params.path_conditions_and_vars
-    analysis = params.analysis
     calls = params.calls
 
     Edge = namedtuple("Edge", ["v1", "v2"])
@@ -575,7 +565,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     global_state = params.global_state
     sha3_list = params.sha3_list
     path_conditions_and_vars = params.path_conditions_and_vars
-    analysis = params.analysis
     calls = params.calls
     overflow_pcs = params.overflow_pcs
     # find recovered defs and uses from the decompiled IR
@@ -658,15 +647,25 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         if isReal(first) and isSymbolic(second):
+            if isinstance(second, str):
+                second = BitVec(second, 256)
             first = BitVecVal(first, 256)
             computed = first - second
         elif isSymbolic(first) and isReal(second):
+            if isinstance(first, str):
+                first = BitVec(first, 256)
             second = BitVecVal(second, 256)
             computed = first - second
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            computed = first + second
+            if isinstance(first, str):
+                first = BitVec(first, 256)
+                log.debug(var_to_source)
+            elif isinstance(second, str):
+                second = BitVec(second, 256)
+                log.debug(var_to_source)
+            computed = first - second
         else:
             computed = (first - second) % (2**256)
         computed = simplify(computed) if is_expr(computed) else computed
@@ -939,15 +938,16 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
-            log.debug(var_to_source)
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # miss cases due to PHI opcode
-            # leave it miss
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            # elif isinstance(second, str):
-            #     second = BitVec(second, 256)
+            # try to generate a new var in z3 formula
+            if isinstance(first, str):
+                first = BitVec(first, 256)
+                log.debug(var_to_source)
+            elif isinstance(second, str):
+                second = BitVec(second, 256)
+                log.debug(var_to_source)
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -966,13 +966,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 computed = 0
         else:
-            log.debug(var_to_source)
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            # elif isinstance(second, str):
-            #     second = BitVec(second, 256)
+            # try to generate a new var in z3 formula if meet str
+            if isinstance(first, str):
+                first = BitVec(first, 256)
+                log.debug(var_to_source)
+            elif isinstance(second, str):
+                second = BitVec(second, 256)
+                log.debug(var_to_source)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -2038,7 +2040,7 @@ def run(inputs):
         log.info("============ Begin SE on function: " + funcSign + " ===========")
         analyze(target_params)
         log.info("============ End SE on function: " + funcSign + " ===========")
-        log.info(result)
+        # log.info(result)
     #     process = Process(target=analyze, args=(target_params,))
     #     processes.append(process)
     #     process.start()

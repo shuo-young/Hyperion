@@ -2,7 +2,7 @@ from global_params import *
 
 from semantic_parser.graph_analyzer import *
 from semantic_parser.decompilation import *
-from ir_se import *
+from symbolic_execution.ir_se import *
 import six
 
 
