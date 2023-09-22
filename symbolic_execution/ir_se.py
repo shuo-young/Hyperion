@@ -71,7 +71,7 @@ def get_init_global_state(path_conditions_and_vars):
         currentDifficulty
     ) = (
         currentGasLimit
-    ) = currentChainId = currentSelfBalance = currentBaseFee = callData = None
+    ) = currentChainId = currentSelfBalance = currentBaseFee = currentTimestamp = None
 
     sender_address = BitVec("Is", 256)
     receiver_address = BitVec("Ia", 256)
@@ -141,9 +141,10 @@ def get_init_global_state(path_conditions_and_vars):
         currentBaseFee = BitVec(new_var_name, 256)
         path_conditions_and_vars[new_var_name] = currentBaseFee
 
-    new_var_name = "IH_s"
-    currentTimestamp = BitVec(new_var_name, 256)
-    path_conditions_and_vars[new_var_name] = currentTimestamp
+    if not currentTimestamp:
+        new_var_name = "IH_s"
+        currentTimestamp = BitVec(new_var_name, 256)
+        path_conditions_and_vars[new_var_name] = currentTimestamp
 
     # the state of the current contract
     if "Ia" not in global_state:
@@ -612,6 +613,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
             computed = first + second
         else:
             # both are real and we need to manually modulus with 2 ** 256
@@ -634,9 +641,22 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         if isReal(first) and isSymbolic(second):
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
             first = BitVecVal(first, 256)
         elif isSymbolic(first) and isReal(second):
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
             second = BitVecVal(second, 256)
+        elif isSymbolic(first) and isSymbolic(second):
+            log.debug(f"First: {first}, Type of First: {type(first)}")
+            log.debug(f"Second: {second}, Type of Second: {type(second)}")
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
         computed = first * second & UNSIGNED_BOUND_NUMBER
         computed = simplify(computed) if is_expr(computed) else computed
         var_to_source[defs[0]] = computed
@@ -647,24 +667,24 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         if isReal(first) and isSymbolic(second):
-            if isinstance(second, str):
-                second = BitVec(second, 256)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
             first = BitVecVal(first, 256)
             computed = first - second
         elif isSymbolic(first) and isReal(second):
-            if isinstance(first, str):
-                first = BitVec(first, 256)
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
             second = BitVecVal(second, 256)
             computed = first - second
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            if isinstance(first, str):
-                first = BitVec(first, 256)
-                log.debug(var_to_source)
-            elif isinstance(second, str):
-                second = BitVec(second, 256)
-                log.debug(var_to_source)
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
             computed = first - second
         else:
             computed = (first - second) % (2**256)
@@ -706,6 +726,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             # computed = 0
             # else:
             # if UDIV Phase failed, may cause by the phi return
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
             computed = UDiv(first, second)
             # solver.pop()
         computed = simplify(computed) if is_expr(computed) else computed
@@ -942,12 +968,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # miss cases due to PHI opcode
             # try to generate a new var in z3 formula
-            if isinstance(first, str):
-                first = BitVec(first, 256)
-                log.debug(var_to_source)
-            elif isinstance(second, str):
-                second = BitVec(second, 256)
-                log.debug(var_to_source)
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -969,12 +995,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
             # try to generate a new var in z3 formula if meet str
-            if isinstance(first, str):
-                first = BitVec(first, 256)
-                log.debug(var_to_source)
-            elif isinstance(second, str):
-                second = BitVec(second, 256)
-                log.debug(var_to_source)
+            # if isinstance(first, str):
+            #     first = BitVec(first, 256)
+            #     log.debug(var_to_source)
+            # if isinstance(second, str):
+            #     second = BitVec(second, 256)
+            #     log.debug(var_to_source)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -1028,7 +1054,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # Tricky: this instruction works on both boolean and integer,
         # when we have a symbolic expression, type error might occur
         # Currently handled by try and catch
-
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         if isReal(first):
             if first == 0:
@@ -1072,26 +1097,52 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # model IR special op code PHI
     # dataflow symbol opcode
     # fix bug: phi 0x0 y or y 0x0
+    # summary 3 cases
+    # (1) tar = phi 0x0, var; var => tar
+    # (2) tar = phi var, 0x0; var => tar
+    # (3) tar = phi var, var; var1 => tar, and var2 => tar, however, one can be constant in var map
     elif opcode == "PHI":
-        if isReal(uses[1]):
-            flow_from = (
-                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
-            )
-        elif isReal(uses[0]):
-            flow_from = (
-                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-            )
-        # another bug may occur due to phi x y, x and y are both not constants
-        elif uses[0] in var_to_source.keys():
-            flow_from = (
-                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
-            )
-        elif uses[1] in var_to_source.keys():
-            flow_from = (
-                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-            )
+        # log.debug(var_to_source)
         flow_to = defs[0]
-        var_to_source[flow_to] = flow_from
+        if isReal(uses[0]) and isSymbolic(uses[1]):
+            if uses[1] not in var_to_source.keys():
+                var_to_source[flow_to] = uses[0]
+                return
+            flow_from = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
+            var_to_source[flow_to] = flow_from
+        elif isReal(uses[1]) and isSymbolic(uses[0]):
+            if uses[0] not in var_to_source.keys():
+                var_to_source[flow_to] = uses[1]
+                return
+            flow_from = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            var_to_source[flow_to] = flow_from
+        # another bug may occur due to phi x y, x and y are both not constants
+        elif isSymbolic(uses[0]) and isSymbolic(uses[1]):
+            # both uses flow to the def
+            flow_from_0 = (
+                var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+            )
+            flow_from_1 = (
+                var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+            )
+            if isReal(flow_from_0):
+                var_to_source[flow_to] = flow_from_1
+            elif isReal(flow_from_1):
+                var_to_source[flow_to] = flow_from_0
+            else:
+                # inner var flow in loop blocks (locked in the loop)
+                # outer loop var
+                if isinstance(flow_from_0, BitVecRef):
+                    var_to_source[flow_to] = flow_from_0
+                elif isinstance(flow_from_1, BitVecRef):
+                    var_to_source[flow_to] = flow_from_1
+                else:
+                    # else jump out
+                    var_to_source[flow_to] = flow_from_0
 
     elif opcode == "BYTE":
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
@@ -1635,6 +1686,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         log.info(ident)
         log.debug(recipient)
         log.debug(transfer_amount)
+        # if the recipient is the const address
         if isinstance(recipient, int):
             var_to_source[
                 "v" + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
@@ -1645,18 +1697,23 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # with the inferred transfer recipient role
         # callStmt: [recipientVar, amountVar, recipient_role, recipient, amount]
         if ident in target_params.fund_transfer_info.calls.keys():
-            res = [
-                target_params.fund_transfer_info.recipient_role[ident],
-                var_to_source[
-                    "v"
-                    + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
-                ],
-                var_to_source[
-                    "v"
-                    + target_params.fund_transfer_info.calls[ident][1].replace("0x", "")
-                ],
-            ]
-            log.debug(res)
+            if ident in target_params.fund_transfer_info.recipient_role.keys():
+                res = [
+                    target_params.fund_transfer_info.recipient_role[ident],
+                    var_to_source[
+                        "v"
+                        + target_params.fund_transfer_info.calls[ident][0].replace(
+                            "0x", ""
+                        )
+                    ],
+                    var_to_source[
+                        "v"
+                        + target_params.fund_transfer_info.calls[ident][1].replace(
+                            "0x", ""
+                        )
+                    ],
+                ]
+                log.debug(res)
             if target_params.fund_transfer_info.recipient_role[ident] == "KNOWN":
                 result["tax"][ident] = res
             else:  # user transfer
@@ -1980,7 +2037,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         # print(block.return_private_target.ident)
         block.return_private_target.return_private_from = block
         for i in range(1, len(uses)):
-            var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
+            # if return consts, e.g., 0/1, directly use the const
+            if isReal(uses[i]):
+                var_to_source[return_defs[i - 1]] = uses[i]
+            else:
+                var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
             log.debug(var_to_source[return_defs[i - 1]])
     elif opcode == "THROW":
         pass
@@ -2028,7 +2089,7 @@ def run(inputs):
     # should note: target functions (head blocks), critical slots and dependency relationship
     # not use multiple processes
     processes = []
-    # funcs_to_be_checked = ['0xa9059cbb']
+    # funcs_to_be_checked = ['0xc3873837']
     for funcSign in funcs_to_be_checked:
         target_params = TargetedParameters(
             path=path,

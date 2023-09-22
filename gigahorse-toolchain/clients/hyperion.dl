@@ -190,7 +190,9 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
 .decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
 .output Hyperion_Recipient
 Hyperion_Recipient(callStmt, val, funcSign) :-
-  LoadGlobalVariable(_, val, to),
+  LoadGlobalVariable(_, val, from),
+  // add more rules
+  DataFlows(from, to),
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 

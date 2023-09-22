@@ -7,16 +7,6 @@
         ]
     },
     "tax": {
-        "0x883S0x37c": [
-            "KNOWN",
-            "Concat(0, Extract(167, 8, Ia_store-3-))",
-            "Concat(0, Extract(255, 1, bvudiv_i(5*Iv, 100)))"
-        ],
-        "0x8bfS0x37c": [
-            "KNOWN",
-            "Concat(0, Extract(159, 0, Ia_store-4-))",
-            "bvudiv_i(5*Iv, 100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(255, 1, bvudiv_i(5*Iv, 100)))"
-        ],
         "0x4c6S0x21c": [
             "KNOWN",
             "Concat(0, Extract(167, 8, Ia_store-3-))",

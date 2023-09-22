@@ -17,7 +17,7 @@ def analyze_dapp():
     # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
     # specs = extract_specs_helper.process()
     log.info("Complete processing text info...")
-    log.info("Begin processing contract...")
+    log.info("Begin processing contract " + args.addr + "...")
     # Backend contract analysis
     source = {
         "platform": args.platform,
