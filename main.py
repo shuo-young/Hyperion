@@ -40,7 +40,7 @@ def analyze_dapp():
     result["mint"]["const"] = semantic.supply_amount
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
-    filename = "result/" + source["address"] + ".json"
+    filename = "result/others/" + source["address"] + ".json"
     with open(filename, 'w') as file:
         file.write(json_str)
     return exit_code
@@ -52,7 +52,7 @@ def complex_handler(obj):
     raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
 
 
-def batch_analyze_dapp(address):
+def batch_analyze_dapp(address, tar_dir, platform):
     log.info("Begin processing text info...")
     # NLP process
     # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
@@ -61,7 +61,7 @@ def batch_analyze_dapp(address):
     log.info("Begin processing contract " + address + "...")
     # Backend contract analysis
     source = {
-        "platform": "BSC",
+        "platform": platform,
         "address": address,
         "block_number": 16000000,
     }
@@ -80,7 +80,7 @@ def batch_analyze_dapp(address):
     result["mint"]["const"] = semantic.supply_amount
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
-    filename = "result/" + source["address"] + ".json"
+    filename = tar_dir + source["address"] + ".json"
     with open(filename, 'w') as file:
         file.write(json_str)
     # return exit_code

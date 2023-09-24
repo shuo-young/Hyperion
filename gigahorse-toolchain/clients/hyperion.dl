@@ -196,6 +196,18 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 
+// extend the rule for mapping flow from func arg
+// due to the missing in the original func arg flow rules
+// e.g., a[b], b is func arg
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  PublicFunctionArg(pubFun, funcArg, _),
+  DataFlows(funcArg, key),
+  LoadFromDataStructure(_, val, key, var),
+  DataFlows(var, to),
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign),
+  Hyperion_Statement_Function(callStmt, pubFun).
+// pattern like investors[msg.sender].referrer cannot be covered yet.
+
 Hyperion_Recipient(callStmt, val, funcSign) :-
   Variable_Value(to, val),
   // may use dataflow

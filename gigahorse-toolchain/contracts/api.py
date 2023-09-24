@@ -8,7 +8,7 @@ w3 = Web3(
         'wss://bsc.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/'
     )
 )
-address = "0xf4341fA52669cea0c1836095529A7E9B04b8b88D"
+address = "0x2e84c076c83bdcbe586be6effe2c941a24e291a7"
 addr = w3.to_checksum_address(address)
 bytecode = w3.eth.get_code(addr).hex()
 
