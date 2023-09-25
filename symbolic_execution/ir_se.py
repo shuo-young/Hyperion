@@ -1546,34 +1546,42 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             log.debug(hex(stored_address))
             # check time sstore op
             # print(target_params.state_dependency_info.time[target_params.funcSign])
-            if (
-                hex(stored_address)
-                in target_params.state_dependency_info.time[target_params.funcSign]
-            ):
+            if hex(stored_address) in target_params.state_dependency_info.time_list:
                 result["lock"] = True
 
             # check supply sstore op
             # the supply and balance slot exist in the same func
             # supply dependant on owner
-            if (
-                hex(stored_address)
-                in target_params.state_dependency_info.supply[target_params.funcSign]
-                and target_params.funcSign
-                in target_params.state_dependency_info.balance.keys()
-            ):
+            if hex(stored_address) in target_params.state_dependency_info.supply_list:
                 # check owner constrain
                 if (
                     hex(stored_address)
                     in target_params.state_dependency_info.slot_dependency_map.keys()
                 ):
                     result["mint"]["unlimited"] = True
+                # check self constrain
+                path_condition = path_conditions_and_vars["path_condition"]
+                checked = False
+                # log.info(path_condition)
+                for expr in path_condition:
+                    if not is_expr(expr):
+                        continue
+                    list_vars = get_vars(expr)
+                    for var in list_vars:
+                        # check if a var is global
+                        if is_storage_var(var):
+                            pos = get_storage_position(var)
+                            log.info(pos)
+                            if pos == stored_address:
+                                log.info("checked")
+                                checked = True
+                if not checked:
+                    result["mint"]["unlimited"] = True
 
             # check pause sstore op
-            # may occur slot offset bia
-            # 0x2_0_0 equals to 0x2 for test
-            pause_related_slots = target_params.state_dependency_info.pause[
-                target_params.funcSign
-            ]
+            # may occur slot offset bias
+            # 0x2_0_0 equals to 0x2
+            pause_related_slots = target_params.state_dependency_info.pause_list
             for i in pause_related_slots:
                 if hex(stored_address) in i.split("_")[0]:
                     # default has owner constrain
@@ -1714,12 +1722,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     ],
                 ]
                 log.debug(res)
-            if target_params.fund_transfer_info.recipient_role[ident] == "KNOWN":
-                result["tax"][ident] = res
-            else:  # user transfer
-                result["transfer"][ident] = res
-            if target_params.fund_transfer_info.recipient_role[ident] == "OWNER":
-                result["clear"][ident] = res
+                if target_params.fund_transfer_info.recipient_role[ident] == "KNOWN":
+                    result["tax"][ident] = res
+                else:  # user transfer
+                    result["transfer"][ident] = res
+                if target_params.fund_transfer_info.recipient_role[ident] == "OWNER":
+                    result["clear"][ident] = res
+            else:
+                result["tax"][ident] = ["UNKNOWN", recipient, transfer_amount]
 
         # in the paper, it is shaky when the size of data output is
         # min of stack[6] and the | o |

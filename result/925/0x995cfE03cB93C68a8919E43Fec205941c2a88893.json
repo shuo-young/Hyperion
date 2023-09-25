@@ -1,0 +1,49 @@
+{
+    "transfer": {
+        "0x1d34": [
+            "USER",
+            "Is",
+            "Ia_store-some_var_5- +\nbvudiv_i(Ia_store-2 + some_var_3-*\n         Ia_store-2 + some_var_5-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_5-),\n         864000000) +\nIa_store-1 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+        ],
+        "0x11d3": [
+            "USER",
+            "Is",
+            "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_1-, 10000)"
+        ],
+        "0xb4e": [
+            "USER",
+            "Is",
+            "Ia_store-some_var_5- +\nbvudiv_i(Ia_store-2 + some_var_3-*\n         Ia_store-2 + some_var_5-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_5-),\n         864000000) +\nIa_store-2 + some_var_2- +\nIa_store-1 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-2 + some_var_2- +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+        ]
+    },
+    "tax": {
+        "0x1d98": [
+            "KNOWN",
+            "0x557bf352da1a10b53cf6be47082f750c5eca539a",
+            "bvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+        ],
+        "0x1237": [
+            "KNOWN",
+            "0x557bf352da1a10b53cf6be47082f750c5eca539a",
+            "bvudiv_i(300*Ia_store-some_var_1-, 10000)"
+        ],
+        "0xbb2": [
+            "KNOWN",
+            "0x557bf352da1a10b53cf6be47082f750c5eca539a",
+            "bvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-2 + some_var_2- +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+        ],
+        "0x1642": [
+            "KNOWN",
+            "0x938fc197f43b4bff20c5b4663afa3c6a65d7399b",
+            "bvudiv_i(2000*Iv, 10000)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

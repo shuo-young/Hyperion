@@ -110,6 +110,10 @@ class StateDependencyGraph:
         self.supply = supply
         self.time = time
         self.pause = pause
+        self.balance_list = [item for ls in balance.values() for item in ls]
+        self.supply_list = [item for ls in supply.values() for item in ls]
+        self.time_list = [item for ls in time.values() for item in ls]
+        self.pause_list = [item for ls in pause.values() for item in ls]
         merged_dict = defaultdict(lambda: defaultdict(list))
         for d, label in [
             (balance, 'balance'),
@@ -125,24 +129,6 @@ class StateDependencyGraph:
 
         log.info(merged_dict)
         self.funcSign_feat_slot_map = merged_dict
-
-        # maybe for the pic draw
-        # G = nx.DiGraph()
-        # for funcSign, details in merged_dict.items():
-        #     for key, slots in details.items():
-        #         for slot in slots:
-        #             G.add_edge(funcSign, slot, label=key)
-
-        # for _, row in self.slot_tainted_by_owner.iterrows():
-        #     G.add_edge(row['owner'], row['slot'], label=row['funcSign'])
-
-        # pos = nx.spring_layout(G)  # 使用spring布局
-        # nx.draw_networkx_nodes(G, pos)
-        # nx.draw_networkx_edges(G, pos)
-        # nx.draw_networkx_labels(G, pos)
-        # plt.title("Slots and Function Signatures Dependency Graph")
-        # # plt.show()
-        # plt.savefig("image.png")
 
     def load_df_multimap(self, df):
         ret = defaultdict(list)

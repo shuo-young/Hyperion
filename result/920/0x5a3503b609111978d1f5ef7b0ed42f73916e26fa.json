@@ -1,0 +1,24 @@
+{
+    "transfer": {
+        "0x9e4": [
+            "USER",
+            "Is",
+            "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ]
+    },
+    "tax": {
+        "0x15f2": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-27-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

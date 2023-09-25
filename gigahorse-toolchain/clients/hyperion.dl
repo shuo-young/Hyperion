@@ -14,6 +14,8 @@ Hyperion_Statement_Function(stmt, caller) :-
   CallGraphEdge(block, callee),
   Hyperion_Statement_Function(stmt, callee).
 
+// find sensitive call tuple
+// 1. erc20 token transfer
 .decl Hyperion_SensitiveCall(callStmt: Statement, recipient:Variable, amount:Variable, funcSign:symbol)
 .output Hyperion_SensitiveCall
 Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
@@ -23,6 +25,7 @@ Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   Hyperion_Statement_Function(callStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+// 2. ether transfer
 Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   CALL(callStmt, _, recipient, amount, _, _, _, _, _),
   !StatementUsesMemory_ActualMemoryArg(callStmt, _, _, _),
@@ -60,6 +63,7 @@ Hyperion_SlotTaintedByOwner(slot, slotNum, funcSign) :-
   Hyperion_Statement_Function(sstoreStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+// get sensitive call guarded by msg.sender
 .decl Hyperion_CallGuardedByOwner(callStmt:Statement, val:Value, funcSign:symbol)
 .output Hyperion_CallGuardedByOwner
 Hyperion_CallGuardedByOwner(callStmt, val, funcSign) :-
@@ -125,18 +129,6 @@ Hyperion_SupplyAmountSlot(slotNum, funcSign) :-
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
-// heuristic design, infer the constant val
-// can be replaced by the function selector hash identification above
-// .decl Hyperion_SupplyConstraint(slotNum:Value, funcSign:symbol)
-// .output Hyperion_SupplyConstraint
-// Hyperion_SupplyConstraint(slot2, funcSign) :-
-//   LoadGlobalVariable(_, slot, globalFrom1),
-//   Hyperion_CompareVars(var1, globalFrom2, _),
-//   DataFlows(globalFrom1, var1),
-//   LoadGlobalVariable(_, slot2, globalFrom2),
-//   slot2 != slot,
-//   Hyperion_SupplySlot(slot, funcSign).
-
 // default protected by the owner requirement
 // in fact, key slot should influence the feasiblity of transfer
 .decl Hyperion_TimeSlot(slotNum:Value, funcSign:symbol)
@@ -156,6 +148,7 @@ Hyperion_TimeSlot(slotNum, funcSign) :-
   StoreGlobalVariable(timeStoreStmt, slotNum, setTimeVar).
 
 // directly use pause() selector
+// add more magic value for generalization
 .decl Hyperion_PauseSlot(slotNum:Value, funcSign:symbol)
 .output Hyperion_PauseSlot
 Hyperion_PauseSlot(statusSlot, funcSign) :-
@@ -169,6 +162,18 @@ Hyperion_PauseSlot(statusSlot, funcSign) :-
   statusSlot != ownerSlot,
   Statement_Block(statusSetStmt, block),
   StoreGlobalVariable(statusSetStmt, statusSlot, status),
+  Hyperion_Statement_Function(statusSetStmt, func),
+  PublicFunctionSelector(func, funcSign).
+Hyperion_PauseSlot(statusSlot, funcSign) :-
+  ConstantPossibleSigHash(funcSign, _, sigText),
+  sigText = "Pause()",
+  StoreGlobalVariable(statusSetStmt, statusSlot, _),
+  Hyperion_Statement_Function(statusSetStmt, func),
+  PublicFunctionSelector(func, funcSign).
+Hyperion_PauseSlot(statusSlot, funcSign) :-
+  ConstantPossibleSigHash(funcSign, _, sigText),
+  sigText = "_pause()",
+  StoreGlobalVariable(statusSetStmt, statusSlot, _),
   Hyperion_Statement_Function(statusSetStmt, func),
   PublicFunctionSelector(func, funcSign).
 
@@ -187,6 +192,8 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+// find recipient role
+// 1. address stored in state vars
 .decl Hyperion_Recipient(callStmt:Statement, val:Value, funcSign:symbol)
 .output Hyperion_Recipient
 Hyperion_Recipient(callStmt, val, funcSign) :-
@@ -199,6 +206,7 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
 // extend the rule for mapping flow from func arg
 // due to the missing in the original func arg flow rules
 // e.g., a[b], b is func arg
+// 2. address stored in the value of mapping, mapping key is the func arg
 Hyperion_Recipient(callStmt, val, funcSign) :-
   PublicFunctionArg(pubFun, funcArg, _),
   DataFlows(funcArg, key),
@@ -206,13 +214,17 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
   DataFlows(var, to),
   Hyperion_SensitiveCall(callStmt, to, _, funcSign),
   Hyperion_Statement_Function(callStmt, pubFun).
-// pattern like investors[msg.sender].referrer cannot be covered yet.
 
+// !pattern like investors[msg.sender].referrer cannot be covered yet, due to the 
+// !ability of decompiler
+
+// 3. constant address
 Hyperion_Recipient(callStmt, val, funcSign) :-
   Variable_Value(to, val),
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 
+// 4. caller recipient
 Hyperion_Recipient(callStmt, val, funcSign) :-
   val = "CALLER",
   CALLER(_, msgsenderFrom),
@@ -220,6 +232,7 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, msgSender, _, funcSign).
 
+// 5. func arg recipient
 Hyperion_Recipient(callStmt, val, funcSign) :-
   val = "FUNARG",
   PublicFunctionArg(pubFun, funcArg, _),
@@ -228,63 +241,69 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
   Hyperion_SensitiveCall(callStmt, to, _, funcSign),
   Hyperion_Statement_Function(callStmt, pubFun).
 
-// private call flow
-.decl Hyperion_CallPrivateFuncArg(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
-.output Hyperion_CallPrivateFuncArg
-Hyperion_CallPrivateFuncArg(cpStmt, orginVar, targetVar) :-
-  CALLPRIVATE(cpStmt, _),
-  Statement_Uses(cpStmt, orginVar, index),
-  Statement_Block(cpStmt, block),
-  FunctionCallReturn(block, targetFun, _),
-  FormalArgs(targetFun, targetVar, index-1).
+// 6. other cases we use unknown to denote receiver
 
-.decl Hyperion_PrivateCallReturn(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
-.output Hyperion_PrivateCallReturn
-Hyperion_PrivateCallReturn(cpStmt, orginVar, targetVar) :-
-  FunctionCallReturn(block, targetFun, _),
-  RETURNPRIVATE(rpStmt, _),
-  Statement_Function(rpStmt, targetFun),
-  Statement_Uses(rpStmt, orginVar, _),
-  CALLPRIVATE(cpStmt, _),
-  Statement_Block(cpStmt, block),
-  Statement_Defines(cpStmt, targetVar, _).
+// not used in the identification
+// private call flow
+// .decl Hyperion_CallPrivateFuncArg(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
+// .output Hyperion_CallPrivateFuncArg
+// Hyperion_CallPrivateFuncArg(cpStmt, orginVar, targetVar) :-
+//   CALLPRIVATE(cpStmt, _),
+//   Statement_Uses(cpStmt, orginVar, index),
+//   Statement_Block(cpStmt, block),
+//   FunctionCallReturn(block, targetFun, _),
+//   FormalArgs(targetFun, targetVar, index-1).
+
+// .decl Hyperion_PrivateCallReturn(cpStmt:Statement, orginVar:Variable, targetVar:Variable)
+// .output Hyperion_PrivateCallReturn
+// Hyperion_PrivateCallReturn(cpStmt, orginVar, targetVar) :-
+//   FunctionCallReturn(block, targetFun, _),
+//   RETURNPRIVATE(rpStmt, _),
+//   Statement_Function(rpStmt, targetFun),
+//   Statement_Uses(rpStmt, orginVar, _),
+//   CALLPRIVATE(cpStmt, _),
+//   Statement_Block(cpStmt, block),
+//   Statement_Defines(cpStmt, targetVar, _).
 
 // math op
-.decl Hyperion_Add(a: Variable, b: Variable, res:Variable)
-.output Hyperion_Add
-Hyperion_Add(a, b, res) :-
-  ADD(_, a, b, res).
-Hyperion_Add(a, b, to) :-
-  PHI(_, from, to),
-  ADD(_, a, b, from).
+// not used
+// phi opcode
+// .decl Hyperion_Add(a: Variable, b: Variable, res:Variable)
+// .output Hyperion_Add
+// Hyperion_Add(a, b, res) :-
+//   ADD(_, a, b, res).
+// Hyperion_Add(a, b, to) :-
+//   PHI(_, from, to),
+//   ADD(_, a, b, from).
 
-.decl Hyperion_Sub(a: Variable, b: Variable, res:Variable)
-.output Hyperion_Sub
-Hyperion_Sub(a, b, res) :-
-  SUB(_, a, b, res).
-Hyperion_Sub(a, b, to) :-
-  PHI(_, from, to),
-  SUB(_, a, b, from).
+// .decl Hyperion_Sub(a: Variable, b: Variable, res:Variable)
+// .output Hyperion_Sub
+// Hyperion_Sub(a, b, res) :-
+//   SUB(_, a, b, res).
+// Hyperion_Sub(a, b, to) :-
+//   PHI(_, from, to),
+//   SUB(_, a, b, from).
   
 
-.decl Hyperion_Mul(a: Variable, b: Variable, res:Variable)
-.output Hyperion_Mul
-Hyperion_Mul(a, b, res) :-
-  MUL(_, a, b, res).
-Hyperion_Mul(a, b, to):-
-  PHI(_, from, to),
-  MUL(_, a, b, from).
+// .decl Hyperion_Mul(a: Variable, b: Variable, res:Variable)
+// .output Hyperion_Mul
+// Hyperion_Mul(a, b, res) :-
+//   MUL(_, a, b, res).
+// Hyperion_Mul(a, b, to):-
+//   PHI(_, from, to),
+//   MUL(_, a, b, from).
 
 
-.decl Hyperion_Div(a: Variable, b: Variable, res:Variable)
-.output Hyperion_Div
-Hyperion_Div(a, b, res) :-
-  DIV(_, a, b, res).
-Hyperion_Div(a, b, to) :-
-  PHI(_, from, to),
-  DIV(_, a, b, from).
+// .decl Hyperion_Div(a: Variable, b: Variable, res:Variable)
+// .output Hyperion_Div
+// Hyperion_Div(a, b, res) :-
+//   DIV(_, a, b, res).
+// Hyperion_Div(a, b, to) :-
+//   PHI(_, from, to),
+//   DIV(_, a, b, from).
 
-  // restore external call info
+// restore external call info
+// for cross-contract extension
 .decl Hyperion_ExternalCallInfo(func:Function, callStmt:Statement, callOp:Opcode, calleeVar:Variable, numArg:number, numRet:number)
 .output Hyperion_ExternalCallInfo
 Hyperion_ExternalCallInfo(func, callStmt, callOp, calleeVar, numArg, numRet) :-

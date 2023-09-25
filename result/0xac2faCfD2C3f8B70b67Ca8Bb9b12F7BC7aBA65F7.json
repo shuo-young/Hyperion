@@ -1,0 +1,73 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x4e1c": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-56-"
+        ],
+        "0x16f0": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-47-"
+        ],
+        "0x47c4": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-49-"
+        ],
+        "0x5675": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_164-))",
+            "Ia_store-22-"
+        ],
+        "0x57d2": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            "IH_b"
+        ],
+        "0x2fcc": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-54-"
+        ],
+        "0x3cdd": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-55-"
+        ],
+        "0x420b": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-52-"
+        ],
+        "0x1db6": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-50-"
+        ],
+        "0x23ad": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-53-"
+        ],
+        "0x540c": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-51-"
+        ],
+        "0x29d6": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+            "Ia_store-48-"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

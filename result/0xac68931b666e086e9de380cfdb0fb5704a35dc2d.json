@@ -1,0 +1,25 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x23e5S0x1ff5": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-6-))",
+            "bvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+        ],
+        "0x23e5S0x1fd4": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-5-))",
+            "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b*Ia_store-19-, Ia_store-some_var_2-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+        ]
+    },
+    "mint": {
+        "const": [
+            10000000000000000000000000000000000
+        ],
+        "unlimited": null
+    },
+    "lock": true,
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

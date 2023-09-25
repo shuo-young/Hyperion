@@ -1,0 +1,44 @@
+{
+    "transfer": {
+        "0x96e": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Ia_store-some_var_1- + Ia_store-1 + some_var_1-"
+        ],
+        "0x13a0S0x513": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Ia_store-1 + some_var_1-"
+        ]
+    },
+    "tax": {
+        "0xf3cS0x3aa": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-0-))",
+            "Id_1"
+        ],
+        "0x1535S0x62e": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia))",
+            "Iv"
+        ],
+        "0x18dcS0x62e": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-0-))",
+            "bvudiv_i(5*Iv, 100)"
+        ],
+        "0x1923S0x62e": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-0-))",
+            "bvudiv_i(5*Iv, 100)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

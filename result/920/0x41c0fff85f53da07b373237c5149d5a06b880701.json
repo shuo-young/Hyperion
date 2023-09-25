@@ -1,0 +1,36 @@
+{
+    "transfer": {
+        "0xaedS0x378": [
+            "OWNER",
+            "Is",
+            "IH_b"
+        ],
+        "0x6ff": [
+            "FUNARG",
+            "Concat(0, Extract(159, 0, Id_1))",
+            0.0
+        ],
+        "0xd76": [
+            "FUNARG",
+            "Concat(0, Extract(159, 0, Id_1))",
+            "bvudiv_i(Ia_store-6-*Iv, 10000)"
+        ]
+    },
+    "tax": {},
+    "mint": {
+        "const": [
+            100000000000000000000000000
+        ],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {
+        "0xaedS0x378": [
+            "OWNER",
+            "Is",
+            "IH_b"
+        ]
+    },
+    "pause": {},
+    "metadata": null
+}

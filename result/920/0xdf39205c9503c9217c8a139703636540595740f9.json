@@ -1,0 +1,44 @@
+{
+    "transfer": {
+        "0x105a": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-13-*\nbvudiv_i(Ia_store-21-*mem_mem_64,\n         Ia_store-22- +\n         bvudiv_i(Ia_store-20-*Ia_store-21- +\n                  Ia_store-22-*\n                  (Ia_store-3 + some_var_1- +\n                   Ia_store-2 + some_var_1-*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-4 + some_var_1-)),\n                  Ia_store-3 + some_var_1- +\n                  Ia_store-2 + some_var_1-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_1-)))"
+        ]
+    },
+    "tax": {
+        "0x2de6": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-27-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ],
+        "0x2eb6": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-28-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ],
+        "0x2f86": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-29-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ],
+        "0x3056": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-30-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ],
+        "0x3126": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-31-))",
+            "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

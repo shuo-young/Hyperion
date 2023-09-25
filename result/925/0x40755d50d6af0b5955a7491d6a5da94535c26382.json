@@ -1,0 +1,18 @@
+{
+    "transfer": {
+        "0xe51S0x382": [
+            "USER",
+            "Is",
+            "Ia_store-6 + some_var_1-"
+        ]
+    },
+    "tax": {},
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

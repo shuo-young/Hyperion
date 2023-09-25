@@ -1,0 +1,69 @@
+{
+    "transfer": {
+        "0x192f": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "bvudiv_i(80*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         100)"
+        ]
+    },
+    "tax": {
+        "0x1735": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-3-))",
+            "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+        ],
+        "0x179e": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-4-))",
+            "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+        ],
+        "0x1807": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-5-))",
+            "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+        ],
+        "0x1870": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-7-))",
+            "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+        ],
+        "0x18d9": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-6-))",
+            "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+        ],
+        "0x2544": [
+            "KNOWN",
+            "Concat(0, Extract(167, 8, Ia_store-3-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x25ad": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-4-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x2616": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-5-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x267f": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-6-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ],
+        "0x26e8": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-7-))",
+            "bvudiv_i(25*Iv, 1000)"
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

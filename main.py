@@ -40,7 +40,7 @@ def analyze_dapp():
     result["mint"]["const"] = semantic.supply_amount
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
-    filename = "result/others/" + source["address"] + ".json"
+    filename = "result/" + source["address"] + ".json"
     with open(filename, 'w') as file:
         file.write(json_str)
     return exit_code
