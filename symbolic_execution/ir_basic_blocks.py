@@ -16,6 +16,7 @@ class Block:
         # for edge link of privatecall
         self.return_private_from: Block = None
         self.private_call_from: Block = None
+        self.branch_expression = True
 
         self.jump_target: Block = None
         self.falls_to: Block = None

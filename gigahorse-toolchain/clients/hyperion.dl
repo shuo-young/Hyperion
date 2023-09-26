@@ -25,6 +25,13 @@ Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   Hyperion_Statement_Function(callStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
+  CallToSignature(callStmt, "transferFrom(address,address,uint256)"),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 2, recipient),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 3, amount),
+  Hyperion_Statement_Function(callStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
 // 2. ether transfer
 Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   CALL(callStmt, _, recipient, amount, _, _, _, _, _),
@@ -64,18 +71,19 @@ Hyperion_SlotTaintedByOwner(slot, slotNum, funcSign) :-
   PublicFunctionSelector(func, funcSign).
 
 // get sensitive call guarded by msg.sender
-.decl Hyperion_CallGuardedByOwner(callStmt:Statement, val:Value, funcSign:symbol)
+.decl Hyperion_CallGuardedByOwner(callStmt:Statement, funcSign:symbol)
 .output Hyperion_CallGuardedByOwner
-Hyperion_CallGuardedByOwner(callStmt, val, funcSign) :-
-  Hyperion_StaticallyGuardedBlock(block, val),
+Hyperion_CallGuardedByOwner(callStmt, funcSign) :-
+  Hyperion_StaticallyGuardedBlock(block, _),
   Hyperion_SensitiveCall(callStmt, _, _, funcSign),
-  Statement_Block(callStmt, block),
+  // Statement_Block(callStmt, block),
+  InFunction(block, func),
   Hyperion_Statement_Function(callStmt, func),
   PublicFunctionSelector(func, funcSign).
 
-.decl Hyperion_BalanceSlot(id:Value, funcSign:symbol)
+.decl Hyperion_BalanceSlot(statement: Statement, id:Value, funcSign:symbol)
 .output Hyperion_BalanceSlot
-Hyperion_BalanceSlot(id, funcSign) :-
+Hyperion_BalanceSlot(addStmt, id, funcSign) :-
   PublicFunctionArg(func, receiverFrom, _),
   PublicFunctionArg(func, amountFrom, _),
   DataFlows(receiverFrom, receiver),
@@ -85,10 +93,11 @@ Hyperion_BalanceSlot(id, funcSign) :-
   DataFlows(balanceVar, addBalanceVar),
   ADDFix(addStmt, addBalanceVar, amount, _),
   Hyperion_Statement_Function(addStmt, func),
+  Hyperion_SupplySlot(_, _, funcSign),
   PublicFunctionSelector(func, funcSign).
 
 // another case: may add the balance of msg.sender (not from arg)
-Hyperion_BalanceSlot(id, funcSign) :-
+Hyperion_BalanceSlot(addStmt, id, funcSign) :-
   (CALLER(_, msgsenderFrom) ; ORIGIN(_, msgsenderFrom)),
   DataFlows(msgsenderFrom, msgsender),
   PublicFunctionArg(func, amountFrom, _),
@@ -98,42 +107,52 @@ Hyperion_BalanceSlot(id, funcSign) :-
   DataFlows(balanceVar, addBalanceVar),
   ADDFix(addStmt, addBalanceVar, amount, _),
   Hyperion_Statement_Function(addStmt, func),
+  // has supply change to identify as mint-like function
+  Hyperion_SupplySlot(_, _, funcSign),
   PublicFunctionSelector(func, funcSign).
 
 // maybe too general
 // add rules to confine the function: simultaneously with balance change operation
-.decl Hyperion_SupplySlot(slotNum:Value, funcSign:symbol)
+.decl Hyperion_SupplySlot(statement: Statement, slotNum:Value, funcSign:symbol)
 .output Hyperion_SupplySlot
-Hyperion_SupplySlot(slotNum, funcSign) :-
-  PublicFunctionArg(func, amount, _),
-  LoadGlobalVariable(loadStmt, slotNum, supply),
-  DataFlows(supply, supplyVar),
-  DataFlows(amount, amountVar),
-  ADDFix(addStmt, supplyVar, amountVar, resVar),
-  DataFlows(resVar, addStoreResVar),
-  // store the added supply to narrow the scope
-  StoreGlobalVariable(storeStmt, slotNum, addStoreResVar),
-  Hyperion_Statement_Function(storeStmt, func),
-  Hyperion_Statement_Function(addStmt, func),
-  Hyperion_Statement_Function(loadStmt, func),
-  Hyperion_BalanceSlot(_, funcSign),
-  PublicFunctionSelector(func, funcSign).
+// Hyperion_SupplySlot(slotNum, funcSign) :-
+//   PublicFunctionArg(func, amount, _),
+//   LoadGlobalVariable(loadStmt, slotNum, supply),
+//   DataFlows(supply, supplyVar),
+//   DataFlows(amount, amountVar),
+//   ADDFix(addStmt, supplyVar, amountVar, resVar),
+//   DataFlows(resVar, addStoreResVar),
+//   // store the added supply to narrow the scope
+//   StoreGlobalVariable(storeStmt, slotNum, addStoreResVar),
+//   Hyperion_Statement_Function(storeStmt, func),
+//   Hyperion_Statement_Function(addStmt, func),
+//   Hyperion_Statement_Function(loadStmt, func),
+//   Hyperion_BalanceSlot(_, funcSign),
+//   PublicFunctionSelector(func, funcSign).
 
 // directly identified from hash identification
-.decl Hyperion_SupplyAmountSlot(slotNum:Value, funcSign:symbol)
-.output Hyperion_SupplyAmountSlot
-Hyperion_SupplyAmountSlot(slotNum, funcSign) :-
+Hyperion_SupplySlot(loadStmt, slotNum, funcSign) :-
   SLOADOfConst(loadStmt, slotNum, _),
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "totalSupply()",
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+// // directly identified from hash identification
+// .decl Hyperion_SupplyAmountSlot(slotNum:Value, funcSign:symbol)
+// .output Hyperion_SupplyAmountSlot
+// Hyperion_SupplyAmountSlot(slotNum, funcSign) :-
+//   SLOADOfConst(loadStmt, slotNum, _),
+//   ConstantPossibleSigHash(funcSign, _, sigText),
+//   sigText = "totalSupply()",
+//   Hyperion_Statement_Function(loadStmt, func),
+//   PublicFunctionSelector(func, funcSign).
+
 // default protected by the owner requirement
 // in fact, key slot should influence the feasiblity of transfer
-.decl Hyperion_TimeSlot(slotNum:Value, funcSign:symbol)
+.decl Hyperion_TimeSlot(statement: Statement, slotNum:Value, funcSign:symbol)
 .output Hyperion_TimeSlot
-Hyperion_TimeSlot(slotNum, funcSign) :-
+Hyperion_TimeSlot(timeStoreStmt, slotNum, funcSign) :-
   Hyperion_StaticallyGuardedBlock(_, ownerSlot),
   Hyperion_Statement_Function(setOwnerStmt, func),
   Hyperion_Statement_Function(timeStoreStmt, func),
@@ -149,9 +168,9 @@ Hyperion_TimeSlot(slotNum, funcSign) :-
 
 // directly use pause() selector
 // add more magic value for generalization
-.decl Hyperion_PauseSlot(slotNum:Value, funcSign:symbol)
+.decl Hyperion_PauseSlot(statement: Statement, slotNum:Value, funcSign:symbol)
 .output Hyperion_PauseSlot
-Hyperion_PauseSlot(statusSlot, funcSign) :-
+Hyperion_PauseSlot(statusSetStmt, statusSlot, funcSign) :-
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "pause()",
   // subjected to the owner slot
@@ -164,13 +183,15 @@ Hyperion_PauseSlot(statusSlot, funcSign) :-
   StoreGlobalVariable(statusSetStmt, statusSlot, status),
   Hyperion_Statement_Function(statusSetStmt, func),
   PublicFunctionSelector(func, funcSign).
-Hyperion_PauseSlot(statusSlot, funcSign) :-
+
+Hyperion_PauseSlot(statusSetStmt, statusSlot, funcSign) :-
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "Pause()",
   StoreGlobalVariable(statusSetStmt, statusSlot, _),
   Hyperion_Statement_Function(statusSetStmt, func),
   PublicFunctionSelector(func, funcSign).
-Hyperion_PauseSlot(statusSlot, funcSign) :-
+
+Hyperion_PauseSlot(statusSetStmt, statusSlot, funcSign) :-
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "_pause()",
   StoreGlobalVariable(statusSetStmt, statusSlot, _),
@@ -183,9 +204,9 @@ Hyperion_PauseSlot(statusSlot, funcSign) :-
 // another may: flows to shl shr op uses (not work)
 // 2. finally use the function selector: c87b56dd
 // it works well
-.decl Hyperion_TokenURIStorage(slotNum:Value, funcSign:symbol)
+.decl Hyperion_TokenURIStorage(slotNum:Value)
 .output Hyperion_TokenURIStorage
-Hyperion_TokenURIStorage(slotNum, funcSign) :-
+Hyperion_TokenURIStorage(slotNum) :-
   SLOADOfConst(loadStmt, slotNum, _),
   ConstantPossibleSigHash(funcSign, _, sigText),
   sigText = "tokenURI(uint256)",
@@ -203,10 +224,42 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
   // may use dataflow
   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
 
+// 2. constant address
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  Variable_Value(to, val),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign).
+
+// 3. caller recipient
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  val = "CALLER",
+  CALLER(_, msgsenderFrom),
+  DataFlows(msgsenderFrom, msgSender),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, msgSender, _, funcSign).
+
+// // 4. owner recipient
+// Hyperion_Recipient(callStmt, val, funcSign) :-
+//   Hyperion_OwnerSlot(slot),
+//   LoadGlobalVariable(_, slot, resVar),
+//   val = "OWNER",
+//   DataFlows(resVar, to),
+//   // may use dataflow
+//   Hyperion_SensitiveCall(callStmt, to, _, funcSign).
+
+// 5. func arg recipient
+Hyperion_Recipient(callStmt, val, funcSign) :-
+  val = "FUNARG",
+  PublicFunctionArg(pubFun, funcArg, _),
+  DataFlows(funcArg, to),
+  // may use dataflow
+  Hyperion_SensitiveCall(callStmt, to, _, funcSign),
+  Hyperion_Statement_Function(callStmt, pubFun).
+
 // extend the rule for mapping flow from func arg
 // due to the missing in the original func arg flow rules
 // e.g., a[b], b is func arg
-// 2. address stored in the value of mapping, mapping key is the func arg
+// 6. address stored in the value of mapping, mapping key is the func arg
 Hyperion_Recipient(callStmt, val, funcSign) :-
   PublicFunctionArg(pubFun, funcArg, _),
   DataFlows(funcArg, key),
@@ -217,29 +270,6 @@ Hyperion_Recipient(callStmt, val, funcSign) :-
 
 // !pattern like investors[msg.sender].referrer cannot be covered yet, due to the 
 // !ability of decompiler
-
-// 3. constant address
-Hyperion_Recipient(callStmt, val, funcSign) :-
-  Variable_Value(to, val),
-  // may use dataflow
-  Hyperion_SensitiveCall(callStmt, to, _, funcSign).
-
-// 4. caller recipient
-Hyperion_Recipient(callStmt, val, funcSign) :-
-  val = "CALLER",
-  CALLER(_, msgsenderFrom),
-  DataFlows(msgsenderFrom, msgSender),
-  // may use dataflow
-  Hyperion_SensitiveCall(callStmt, msgSender, _, funcSign).
-
-// 5. func arg recipient
-Hyperion_Recipient(callStmt, val, funcSign) :-
-  val = "FUNARG",
-  PublicFunctionArg(pubFun, funcArg, _),
-  DataFlows(funcArg, to),
-  // may use dataflow
-  Hyperion_SensitiveCall(callStmt, to, _, funcSign),
-  Hyperion_Statement_Function(callStmt, pubFun).
 
 // 6. other cases we use unknown to denote receiver
 

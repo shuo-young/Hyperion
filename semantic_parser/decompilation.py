@@ -113,7 +113,7 @@ class Decompiler:
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["callStmt", "val", "funcSign"]
+            df.columns = ["callStmt", "funcSign"]
         else:
             df = pd.DataFrame()
         return df
@@ -140,7 +140,7 @@ class Decompiler:
         )
         if os.path.exists(balance_loc) and (os.path.getsize(balance_loc) > 0):
             df_balance = pd.read_csv(balance_loc, header=None, sep='	')
-            df_balance.columns = ["id", "funcSign"]
+            df_balance.columns = ["stmt", "id", "funcSign"]
         else:
             df_balance = pd.DataFrame()
         return df_balance
@@ -151,7 +151,7 @@ class Decompiler:
         )
         if os.path.exists(time_loc) and (os.path.getsize(time_loc) > 0):
             df_time = pd.read_csv(time_loc, header=None, sep='	')
-            df_time.columns = ["id", "funcSign"]
+            df_time.columns = ["stmt", "id", "funcSign"]
         else:
             df_time = pd.DataFrame()
         return df_time
@@ -193,13 +193,10 @@ class Decompiler:
         )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
             df_supply = pd.read_csv(supply_loc, header=None, sep='	')
-            df_supply.columns = ["id", "funcSign"]
+            df_supply.columns = ["stmt", "id", "funcSign"]
         else:
             df_supply = pd.DataFrame()
-
-        for _, row in df_supply.iterrows():
-            supply_amount.append(self.get_storage_num_content(int(row["id"], 16)))
-        return supply_amount
+        return df_supply
 
     def infer_owner(self):
         owner_loc = (
@@ -222,7 +219,7 @@ class Decompiler:
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["id", "funcSign"]
+            df.columns = ["stmt", "id", "funcSign"]
         else:
             df = pd.DataFrame()
         return df
@@ -235,7 +232,7 @@ class Decompiler:
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["id", "funcSign"]
+            df.columns = ["id"]
         else:
             df = pd.DataFrame()
         return df

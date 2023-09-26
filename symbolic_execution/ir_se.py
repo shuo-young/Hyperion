@@ -1183,7 +1183,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             data = [str(x) for x in memory[s0 : s0 + s1]]
 
             # *Slot id in memory[63] <= MSTORE(64, slot)
-            slot = memory[63]
+            # slot = memory[63]
             # print(slot)
             # print(sha3_list)
             position = "".join(data)
