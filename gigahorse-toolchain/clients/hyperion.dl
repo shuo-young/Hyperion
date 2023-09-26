@@ -25,6 +25,13 @@ Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   Hyperion_Statement_Function(callStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
+  CallToSignature(callStmt, "transferFrom(address,address,uint256)"),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 2, recipient),
+  StatementUsesMemory_ActualMemoryArg(callStmt, _, 3, amount),
+  Hyperion_Statement_Function(callStmt, func),
+  PublicFunctionSelector(func, funcSign).
+
 // 2. ether transfer
 Hyperion_SensitiveCall(callStmt, recipient, amount, funcSign) :-
   CALL(callStmt, _, recipient, amount, _, _, _, _, _),
