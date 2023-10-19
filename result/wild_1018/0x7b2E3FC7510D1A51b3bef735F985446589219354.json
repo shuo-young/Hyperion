@@ -1,0 +1,35 @@
+{
+    "transfer": {
+        "0x9f487685": {
+            "0x20ef": [
+                "Concat(0, Extract(159, 0, Is))",
+                "0"
+            ],
+            "0x202e": [
+                "Concat(0, Extract(159, 0, Is))",
+                "balance_126 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIH_b +\nIv"
+            ]
+        },
+        "0x30eb1278": {
+            "0x20ef": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_2"
+            ],
+            "0x202e": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_2"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            420000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x2fb7S0x2525": [
+            "KNOWN",
+            "Concat(0,\n       Extract(159,\n               0,\n               bvudiv_i(Ia_store-13-,\n                        If(ULE(mem_mem_64,\n                               If(mem_mem_64 == 0, 0, 1)),\n                           0,\n                           1))))",
+            "IH_b"
+        ],
+        "0xfdcS0x3f2": [
+            "OWNER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Id_1"
+        ]
+    },
+    "pause": false,
+    "metadata": ""
+}

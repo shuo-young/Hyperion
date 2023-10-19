@@ -1,0 +1,27 @@
+{
+    "transfer": {
+        "0x2529061d": {
+            "0x4c35": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Ia_store-some_var_1-"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0x8df3f826": {
+            "0x4c35": [
+                "Concat(0, Extract(159, 0, Ia_store-0-))",
+                "Id_1"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": true,
+    "metadata": ""
+}

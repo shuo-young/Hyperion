@@ -7,47 +7,32 @@ log = logging.getLogger(__name__)
 
 
 class FundTransferGraph:
-    def __init__(self, sensitive_call_df, call_guarded_by_owner_df, recipient_df):
+    def __init__(self, sensitive_call_df, clear_call_df):
         # ["callStmt", "recipient", "amount", "funcSign"]
         self.sensitive_call_df = sensitive_call_df
-        # ["callStmt", "val", "funcSign"]
-        self.call_guarded_by_owner_df = call_guarded_by_owner_df
-        # ["callStmt", "to", "funcSign"]
-        self.recipient_df = recipient_df
-        # initialize for role mapping
-        self.recipient_role = {}
-        # map ident to calls
+        self.clear_call_df = clear_call_df
         self.calls = {}
+        # map ident to calls
+        self.clearcall = {}
         # find transfer point (callStmt, recipient, amount)
         self.analyze_transfer()
-        self.set_role()
+        self.set_clear_call()
 
         # actually, we should SE every function with transfer
         self.unique_funcs = list(self.func_call.keys())
 
-    def set_role(self):
-        guarded_call_slot = {}
-        for _, row in self.call_guarded_by_owner_df.iterrows():
-            if row['callStmt'] not in guarded_call_slot.keys():
-                guarded_call_slot[row['callStmt']] = [row['val']]
+    def set_clear_call(self):
+        clear_funcSign_callStmt = {}
+        # use the decompilation rules to determine
+        for _, row in self.clear_call_df.iterrows():
+            if row['funcSign'] not in clear_funcSign_callStmt.keys():
+                clear_funcSign_callStmt[row['funcSign']] = [row['callStmt']]
             else:
-                guarded_call_slot[row['callStmt']].append(row['val'])
-        # first: identify caller or specific address value
-        # next: use guarded info to determin the role (user or owner)
-        for _, row in self.recipient_df.iterrows():
-            if row['to'] == "CALLER":
-                if row['callStmt'] in guarded_call_slot.keys():
-                    if len(guarded_call_slot[row['callStmt']]) > 0:
-                        self.recipient_role[row['callStmt']] = "OWNER"
-                else:
-                    self.recipient_role[row['callStmt']] = "USER"
-            elif row['to'] == "FUNARG":
-                self.recipient_role[row['callStmt']] = "FUNARG"
-            else:
-                # normal can be the tax receiver address
-                self.recipient_role[row['callStmt']] = "KNOWN"
-        log.info("recipient role")
-        log.info(self.recipient_role)
+                clear_funcSign_callStmt[row['funcSign']].append(row['callStmt'])
+
+        log.info("clearance call")
+        self.clearcall = clear_funcSign_callStmt
+        log.info(self.clearcall)
 
     def analyze_transfer(self):
         func_call = {}
@@ -76,6 +61,7 @@ class StateDependencyGraph:
         owner_slot,
         slot_tainted_by_owner,
         pause_slot,
+        guarded_mint,
     ):
         self.balance_slot = balance_slot
         self.time_slot = time_slot
@@ -83,40 +69,43 @@ class StateDependencyGraph:
         self.owner_slot = owner_slot
         self.slot_tainted_by_owner = slot_tainted_by_owner
         self.pause_slot = pause_slot
+        self.guarded_mint = guarded_mint
 
         self.unique_funcs = []
         self.analyze_state_dependency()
-        log.info("funcs to be tested")
-        log.info(self.unique_funcs)
 
     def analyze_state_dependency(self):
-        balance = self.load_df_multimap(self.balance_slot)
+        # balance = self.load_df_multimap(self.balance_slot)
         supply = self.load_df_multimap(self.supply_slot)
         time = self.load_df_multimap(self.time_slot)
         pause = self.load_df_multimap(self.pause_slot)
-        # slot dependant on owner
+        # slots depends on owner
+        # can also be used to judge whether fee depends on the modifiable state variables
         self.slot_dependency_map = self.load_df_map(self.slot_tainted_by_owner)
+        self.guarded_mint_map = self.load_df_map(self.guarded_mint, reverse=True)
         log.info("slot dependency map")
         log.info(self.slot_dependency_map)
-        log.info("balance")
-        log.info(balance)
+        log.info("guarded mint map")
+        log.info(self.guarded_mint_map)
+        # log.info("balance")
+        # log.info(balance)
         log.info("supply")
         log.info(supply)
         log.info("time")
         log.info(time)
         log.info("pause")
         log.info(pause)
-        self.balance = balance
+        # self.balance = balance
         self.supply = supply
         self.time = time
         self.pause = pause
-        self.balance_list = [item for ls in balance.values() for item in ls]
+        # self.balance_list = [item for ls in balance.values() for item in ls]
         self.supply_list = [item for ls in supply.values() for item in ls]
         self.time_list = [item for ls in time.values() for item in ls]
         self.pause_list = [item for ls in pause.values() for item in ls]
         merged_dict = defaultdict(lambda: defaultdict(list))
         for d, label in [
-            (balance, 'balance'),
+            # (balance, 'balance'),
             (supply, 'supply'),
             (time, 'time'),
             (pause, 'pause'),

@@ -1,0 +1,68 @@
+{
+    "transfer": {
+        "0x45710074": {
+            "0xade": [
+                "USER",
+                "Is",
+                "bvudiv_i(IH_b*Ia_store-22-,\n         Ia_store-23- +\n         bvudiv_i(Ia_store-21-*Ia_store-22- +\n                  Ia_store-23-*\n                  (Ia_store-3 + some_var_1- +\n                   Ia_store-2 + some_var_2-*Ia_store-3-),\n                  Ia_store-3 + some_var_1- +\n                  Ia_store-2 + some_var_2-*Ia_store-3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-7-*\n         bvudiv_i(IH_b*Ia_store-22-,\n                  Ia_store-23- +\n                  bvudiv_i(Ia_store-21-*Ia_store-22- +\n                           Ia_store-23-*\n                           (Ia_store-3 + some_var_1- +\n                            Ia_store-2 + some_var_2-*\n                            Ia_store-3-),\n                           Ia_store-3 + some_var_1- +\n                           Ia_store-2 + some_var_2-*\n                           Ia_store-3-)),\n         Ia_store-5-)"
+            ]
+        },
+        "0x96899447": {
+            "0x1083": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_1"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0x45710074": {
+            "0x188e": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-6-*\n         bvudiv_i(IH_b*Ia_store-22-,\n                  Ia_store-23- +\n                  bvudiv_i(Ia_store-21-*Ia_store-22- +\n                           Ia_store-23-*\n                           (Ia_store-3 + some_var_1- +\n                            Ia_store-2 + some_var_2-*\n                            Ia_store-3-),\n                           Ia_store-3 + some_var_1- +\n                           Ia_store-2 + some_var_2-*\n                           Ia_store-3-)),\n         Ia_store-5-)"
+            ],
+            "0x18c9": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-28-))",
+                "bvudiv_i(Ia_store-6-*\n         bvudiv_i(IH_b*Ia_store-22-,\n                  Ia_store-23- +\n                  bvudiv_i(Ia_store-21-*Ia_store-22- +\n                           Ia_store-23-*\n                           (Ia_store-3 + some_var_1- +\n                            Ia_store-2 + some_var_2-*\n                            Ia_store-3-),\n                           Ia_store-3 + some_var_1- +\n                           Ia_store-2 + some_var_2-*\n                           Ia_store-3-)),\n         Ia_store-5-)"
+            ],
+            "0x1904": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-29-))",
+                "bvudiv_i(Ia_store-7-*\n         bvudiv_i(IH_b*Ia_store-22-,\n                  Ia_store-23- +\n                  bvudiv_i(Ia_store-21-*Ia_store-22- +\n                           Ia_store-23-*\n                           (Ia_store-3 + some_var_1- +\n                            Ia_store-2 + some_var_2-*\n                            Ia_store-3-),\n                           Ia_store-3 + some_var_1- +\n                           Ia_store-2 + some_var_2-*\n                           Ia_store-3-)),\n         Ia_store-5-)"
+            ]
+        },
+        "0x7523b837": {
+            "0xe35": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-5 + some_var_1-))",
+                "bvudiv_i(Ia_store-4-*Iv, Ia_store-5-)"
+            ],
+            "0x188e": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-6-*Iv, Ia_store-5-)"
+            ],
+            "0x18c9": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-28-))",
+                "bvudiv_i(Ia_store-6-*Iv, Ia_store-5-)"
+            ],
+            "0x1904": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-29-))",
+                "bvudiv_i(Ia_store-7-*Iv, Ia_store-5-)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

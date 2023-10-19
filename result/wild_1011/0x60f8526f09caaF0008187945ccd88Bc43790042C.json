@@ -1,0 +1,48 @@
+{
+    "transfer": {
+        "0x9a2": [
+            "USER",
+            "Is",
+            "Id_1"
+        ],
+        "0x918": [
+            "USER",
+            "Is",
+            "Id_1"
+        ]
+    },
+    "tax": {
+        "modifiable": false,
+        "0x1197": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-10-))",
+            0
+        ],
+        "0x1107": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-10-))",
+            0
+        ]
+    },
+    "mint": {
+        "amount": [
+            109419367166001644579
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xfde": [
+            "OWNER",
+            "Concat(0, Extract(159, 0, Is))",
+            "mem_mem_64"
+        ],
+        "0xef2": [
+            "OWNER",
+            "Concat(0, Extract(159, 0, Is))",
+            "mem_mem_64"
+        ]
+    },
+    "pause": false,
+    "metadata": null
+}

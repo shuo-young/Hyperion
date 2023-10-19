@@ -1,0 +1,49 @@
+{
+    "transfer": {
+        "0xd95b0a12": {
+            "0x1ccfS0x1bd7S0x1b050x19f7": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Ia_store-1 + some_var_1- +\nIa_store-5 + some_var_2- +\nbvudiv_i(Ia_store-2 + some_var_2-*\n         Ia_store-6-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_2-),\n         Ia_store-4-*Ia_store-7-)"
+            ]
+        },
+        "0x8a623d86": {
+            "0x1ccfS0x1bd7S0x1b050x19f7": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Ia_store-5 + some_var_2- +\nbvudiv_i(Ia_store-2 + some_var_2-*\n         Ia_store-6-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_2-),\n         Ia_store-4-*Ia_store-7-)"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0x6e553f65": {
+            "0x1ccfS0x1bd7S0x1b050x19f7": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-8-))",
+                "bvudiv_i(Ia_store-2-*Id_1, Ia_store-7-)"
+            ],
+            "0xc31": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-1 + some_var_32-))",
+                "bvudiv_i(Ia_store-3-*Id_1, Ia_store-7-)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xd321fe29": {
+            "0x1ccfS0x1bd7S0x1b050x19f7": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Is))",
+                "mem_mem_64"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

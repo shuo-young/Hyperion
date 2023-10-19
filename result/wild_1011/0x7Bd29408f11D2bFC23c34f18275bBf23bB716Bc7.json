@@ -1,0 +1,32 @@
+{
+    "transfer": {
+        "0x27f6": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Iv"
+        ],
+        "0x2f3d": [
+            "USER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Id_1"
+        ]
+    },
+    "tax": {
+        "modifiable": false,
+        "0x2860": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-15-))",
+            0
+        ]
+    },
+    "mint": {
+        "amount": [
+            20000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": null
+}

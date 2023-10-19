@@ -1,0 +1,24 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0xf50": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-3-))",
+            0
+        ],
+        "0xff4": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-7-))",
+            "bvudiv_i(80*Id_2, 1000)"
+        ]
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

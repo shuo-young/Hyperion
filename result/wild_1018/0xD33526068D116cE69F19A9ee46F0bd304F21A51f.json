@@ -1,0 +1,23 @@
+{
+    "transfer": {
+        "0xfe784eaa": {
+            "0x1004": [
+                "Is",
+                "Id_1"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            19768220192070690741835532
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,20 @@
+{
+    "transfer": {
+        "0x20830x1f8a": [
+            "FUNARG",
+            "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+            "bvudiv_i(0, Ia_store-0-)"
+        ]
+    },
+    "tax": {},
+    "mint": {
+        "const": [
+            300000000000000000000000
+        ],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

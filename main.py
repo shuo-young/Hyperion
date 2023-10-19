@@ -7,7 +7,7 @@ from symbolic_execution.ir_se import *
 
 
 from nlp.nlp import FrontEndSpecsExtractor
-from semantic_parser.semantic import Semantics, TargetedParameters
+from semantic_parser.semantic import Semantics
 
 
 def analyze_dapp():
@@ -37,10 +37,10 @@ def analyze_dapp():
     result, exit_code = symbolic_execution.ir_se.run(inputs)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
-    result["mint"]["const"] = semantic.supply_amount
+    result["mint"]["amount"] = semantic.supply_amount
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
-    filename = "result/" + source["address"] + ".json"
+    filename = args.output_dir + "/" + source["address"] + ".json"
     with open(filename, 'w') as file:
         file.write(json_str)
     return exit_code
@@ -50,40 +50,6 @@ def complex_handler(obj):
     if isinstance(obj, BitVecRef):
         return str(obj)
     raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
-
-
-def batch_analyze_dapp(address, tar_dir, platform):
-    log.info("Begin processing text info...")
-    # NLP process
-    # extract_specs_helper = FrontEndSpecsExtractor(args.dapp_text)
-    # specs = extract_specs_helper.process()
-    log.info("Complete processing text info...")
-    log.info("Begin processing contract " + address + "...")
-    # Backend contract analysis
-    source = {
-        "platform": platform,
-        "address": address,
-        "block_number": 16000000,
-    }
-    # Analyzer
-    # semantic covers the targeted functions, storage of the critical state variable
-    semantic = Semantics(
-        source["platform"],
-        source["address"],
-        source["block_number"],
-    )
-    inputs = semantic.get_inputs()[0]
-    exit_code = 0
-    result, exit_code = symbolic_execution.ir_se.run(inputs)
-    log.info("Complete processing contract...")
-    result["metadata"] = semantic.storage_way
-    result["mint"]["const"] = semantic.supply_amount
-    log.info(result)
-    json_str = json.dumps(result, default=complex_handler, indent=4)
-    filename = tar_dir + source["address"] + ".json"
-    with open(filename, 'w') as file:
-        file.write(json_str)
-    # return exit_code
 
 
 def main():
@@ -126,6 +92,15 @@ def main():
     )
     parser.add_argument(
         "-v", "--verbose", help="Verbose output, print everything.", action="store_true"
+    )
+    parser.add_argument(
+        "-d",
+        "--directory",
+        help="Output directory path.",
+        action="store",
+        dest="output_dir",
+        type=str,
+        default="result",
     )
     args = parser.parse_args()
 

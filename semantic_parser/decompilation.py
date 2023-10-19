@@ -24,8 +24,6 @@ class Decompiler:
         if os.path.exists(CONTRACT_PATH + self.address + ".hex"):
             self.analyze_contract()
             self.set_func()
-            # Critical semantics extraction
-            # self.analyze_formula()  # transfer amount formula recovery deprecated
 
     def format_addr(self, addr):
         if len(addr) != 42:
@@ -49,6 +47,26 @@ class Decompiler:
             self.url = (
                 "https://cro.getblock.io/6ecf1a9f-da32-44cd-9713-9780f45c9dac/mainnet/"
             )
+        elif self.platform == "Avalanche":
+            self.url = "https://avalanche-mainnet.infura.io/v3/6807f78a636b46c7a7573af66a2e3391"
+        elif self.platform == "Fantom":
+            self.url = "https://practical-long-energy.fantom.discover.quiknode.pro/fc97af1ebab40f57ea698b6cf3dd67a2d24cac1a/"
+        elif self.platform == "Moonbeam":
+            self.url = "https://moonbeam.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
+        elif self.platform == "Arbitrum":
+            self.url = (
+                "https://arb.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
+            )
+        elif self.platform == "Tron":
+            self.url = "https://trx.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/fullnode/jsonrpc"
+        elif self.platform == "Optimism":
+            self.url = (
+                "https://op.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
+            )
+        elif self.platform == "Moonriver":
+            self.url = "https://moonriver.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
+        else:
+            self.url = ""
 
     def download_bytecode(self):
         log.info("Get contract bytecode...")
@@ -80,12 +98,12 @@ class Decompiler:
 
     def set_func(self):
         loc = "./gigahorse-toolchain/.temp/" + self.address + "/out/PublicFunction.csv"
+        func_map = {}
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
             df.columns = ["func", "funcSign"]
-        func_map = {}
-        for index, row in df.iterrows():
-            func_map[row["funcSign"]] = row["func"]
+            for _, row in df.iterrows():
+                func_map[row["funcSign"]] = row["func"]
         self.func_map = func_map
 
     # =======followings are the decompilation information extraction=======
@@ -162,29 +180,17 @@ class Decompiler:
             + self.address
             + "/out/Hyperion_SupplySlot.csv"
         )
-        supply_amount_loc = (
-            "./gigahorse-toolchain/.temp/"
-            + self.address
-            + "/out/Hyperion_SupplyAmountSlot.csv"
-        )
         # if has supply (from totalSupply())
         # just use this slot
-        if os.path.exists(supply_amount_loc) and (
-            os.path.getsize(supply_amount_loc) > 0
-        ):
-            df_supply = pd.read_csv(supply_amount_loc, header=None, sep='	')
+        if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
+            df_supply = pd.read_csv(supply_loc, header=None, sep='	')
             df_supply.columns = ["id", "funcSign"]
         else:
-            # if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
-            #     df_supply = pd.read_csv(supply_loc, header=None, sep='	')
-            #     df_supply.columns = ["id", "funcSign"]
-            # else:
             df_supply = pd.DataFrame()
         return df_supply
 
     def get_supply_amount(self):
         # maybe multiple supply?
-        # or can just use sole element
         supply_amount = []
         supply_loc = (
             "./gigahorse-toolchain/.temp/"
@@ -193,7 +199,7 @@ class Decompiler:
         )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
             df_supply = pd.read_csv(supply_loc, header=None, sep='	')
-            df_supply.columns = ["id", "funcSign"]
+            df_supply.columns = ["id"]
         else:
             df_supply = pd.DataFrame()
 
@@ -241,12 +247,44 @@ class Decompiler:
         return df
 
     def get_storage_way(self):
+        if self.url.startswith("https"):
+            w3 = Web3(Web3.HTTPProvider(self.url))
+        else:
+            w3 = Web3(Web3.WebsocketProvider(self.url))
+        # judge 2 conditions
+        # 1. tokenuri = string
+        # 2. tokenuri[id] = string
         df = self.infer_tokenURI()
         if df.empty:
-            return None
+            return ""
+        # maybe multiple uri prefix
+        # check for every of them
         token_uri_prefix = []
         for _, row in df.iterrows():
             uri = self.get_storage_string_content(int(row["id"], 16))
+            log.info(uri)
+            # http and ipfs
+            if len(uri) < 4:
+                # use web3 client and abi
+                contract_abi = [
+                    {
+                        "constant": True,
+                        "inputs": [{"name": "tokenId", "type": "uint256"}],
+                        "name": "tokenURI",
+                        "outputs": [{"name": "", "type": "string"}],
+                        "payable": False,
+                        "stateMutability": "view",
+                        "type": "function",
+                    }
+                ]
+
+                # 创建合约实例
+                contract = w3.eth.contract(address=self.address, abi=contract_abi)
+                # 调用tokenURI函数
+                token_id = 0
+                uri = contract.functions.tokenURI(token_id).call()
+            # just use the protocal
+            uri = uri.split(":")[0]
             if uri not in token_uri_prefix:
                 token_uri_prefix.append(uri)
                 if uri.startswith("http"):
@@ -306,135 +344,28 @@ class Decompiler:
             df = pd.DataFrame()
         return df
 
-    # ========deprecated dataflow reverse analysis========
-    # deprecated for just dataflow backward analysis
-    def analyze_formula(self):
+    def get_guarded_mint(self):
         loc = (
             "./gigahorse-toolchain/.temp/"
             + self.address
-            + "/out/Hyperion_SensitiveCall.csv"
+            + "/out/Hyperion_GuardedMint.csv"
         )
-        # mark the receiver and the tranfer amount of ETH/ERC token
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
             df = pd.read_csv(loc, header=None, sep='	')
-            df.columns = ["callStmt", "recipient", "amount", "funcSign"]
+            df.columns = ["slot", "funcSign"]
         else:
             df = pd.DataFrame()
-        # print(df)
-        if df.empty:
-            return
+        return df
 
-        return_private_bridge_loc = (
+    def get_clear_call(self):
+        loc = (
             "./gigahorse-toolchain/.temp/"
             + self.address
-            + "/out/Hyperion_PrivateCallReturn.csv"
+            + "/out/Hyperion_ClearBalance.csv"
         )
-
-        private_callarg_bridge_loc = (
-            "./gigahorse-toolchain/.temp/"
-            + self.address
-            + "/out/Hyperion_CallPrivateFuncArg.csv"
-        )
-
-        # from etheAmount to its origin (reverse)
-        # add
-        add_loc = (
-            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Add.csv"
-        )
-        # sub
-        sub_loc = (
-            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Sub.csv"
-        )
-        # mul
-        mul_loc = (
-            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Mul.csv"
-        )
-        # div
-        div_loc = (
-            "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_Div.csv"
-        )
-
-        variables = {}
-        return_private_to_call_private_return = {}
-        return_private_bridge = pd.read_csv(
-            return_private_bridge_loc, header=None, sep='	'
-        )
-        private_callarg_bridge = pd.read_csv(
-            private_callarg_bridge_loc, header=None, sep='	'
-        )
-        call_private_stmt_def_dict = {}
-        for index, row in return_private_bridge.iterrows():
-            if str(row[1]) not in return_private_to_call_private_return.keys():
-                return_private_to_call_private_return[str(row[1])] = [str(row[2])]
-            else:
-                return_private_to_call_private_return[str(row[1])].append(str(row[2]))
-            call_private_stmt_def_dict[str(row[2])] = str(row[0])
-
-        # read op csv
-        self.process_csv(
-            variables, return_private_to_call_private_return, add_loc, 'ADD'
-        )
-        self.process_csv(
-            variables, return_private_to_call_private_return, sub_loc, 'SUB'
-        )
-        self.process_csv(
-            variables, return_private_to_call_private_return, mul_loc, 'MUL'
-        )
-        self.process_csv(
-            variables, return_private_to_call_private_return, div_loc, 'DIV'
-        )
-        # print(variables)
-        # sink site: transfer amount
-        sink_site_variable = df["amount"].unique()
-        # print(sink_site_variable)
-        # the formula recovered from dataflow analysis is not suitable for a complete
-        for var in sink_site_variable:
-            final_formula = self.expand_expression(variables, var)
-            print(f"The final formula for {var} is {final_formula}")
-
-        # we now know the transfer target and amount
-        # use the recipient role to find clearETH pattern risky withdrawl
-        # 1.transfer 2.caller 3.caller constrained by slot load
-        recipient = self.get_recipient()
-        call_contrain = self.get_call_constrain_info()
-        merged_df = df.merge(recipient, on='callStmt').merge(
-            call_contrain, on='callStmt'
-        )
-        if len(merged_df) > 0:
-            print("true clear ETH!")
-        return
-
-    # deprecated
-    def expand_expression(self, variables, var):
-        if var not in variables:
-            return var
-        a, b, op = variables[var]
-        return f'({self.expand_expression(variables,a)}) {op} ({self.expand_expression(variables,b)})'
-
-    def process_csv(
-        self, variables, return_private_to_call_private_return, file_path, operation
-    ):
-        df = pd.read_csv(file_path, header=None, sep='	')
-        for index, row in df.iterrows():
-            a, b, c = str(row[0]), str(row[1]), str(row[2])
-            if c in return_private_to_call_private_return.keys():
-                c_ = return_private_to_call_private_return[c]
-                for c in c_:
-                    if operation == 'ADD':
-                        variables[c] = (a, b, '+')
-                    elif operation == 'SUB':
-                        variables[c] = (a, b, '-')
-                    elif operation == 'DIV':
-                        variables[c] = (a, b, '/')
-                    elif operation == 'MUL':
-                        variables[c] = (a, b, '*')
-
-            else:
-                if operation == 'ADD':
-                    variables[c] = (a, b, '+')
-                elif operation == 'SUB':
-                    variables[c] = (a, b, '-')
-                elif operation == 'DIV':
-                    variables[c] = (a, b, '/')
-                elif operation == 'MUL':
-                    variables[c] = (a, b, '*')
+        if os.path.exists(loc) and (os.path.getsize(loc) > 0):
+            df = pd.read_csv(loc, header=None, sep='	')
+            df.columns = ["callStmt", "funcSign"]
+        else:
+            df = pd.DataFrame()
+        return df

@@ -30,7 +30,10 @@ class Semantics:
         self.decompiler = Decompiler(platform, address, block_number)
         self.recipient = self.decompiler.get_recipient()
         self.call_guarded_by_owner = self.decompiler.get_call_guarded_info()
+
         self.sensitive_call = self.decompiler.get_sensitive_call()
+        # get clearance
+        self.clear_call = self.decompiler.get_clear_call()
 
         # func selector to its id
         self.func_map = self.decompiler.func_map
@@ -39,10 +42,18 @@ class Semantics:
         self.infer_time = self.decompiler.infer_time()
         self.infer_supply = self.decompiler.infer_supply()
         self.infer_owner = self.decompiler.infer_owner()
-        self.slot_tainted_by_owner = self.decompiler.get_slot_tainted_by_owner()
         self.infer_pause = self.decompiler.infer_pause()
-        self.storage_way = self.decompiler.get_storage_way()
 
+        # find which slot can be set by the privileged user, e.g., owner
+        self.slot_tainted_by_owner = self.decompiler.get_slot_tainted_by_owner()
+
+        # protection patterns
+        self.guarded_mint = self.decompiler.get_guarded_mint()
+
+        # block state-related
+        self.storage_way = self.decompiler.get_storage_way()
+        log.info("storage position")
+        log.info(self.storage_way)
         self.supply_amount = self.decompiler.get_supply_amount()
 
         # two phase graph analysis
@@ -55,12 +66,14 @@ class Semantics:
                 + self.state_dependency_graph.unique_funcs
             )
         )
+        log.info("funcs to be tested")
+        log.info(self.funcs_to_be_checked)
 
         # combination and initialization for targeted SE and double validation & -FPs
 
     def fund_transfer_analysis(self):
         self.fund_transfer_graph = FundTransferGraph(
-            self.sensitive_call, self.call_guarded_by_owner, self.recipient
+            self.sensitive_call, self.clear_call
         )
 
     def state_dependency_analysis(self):
@@ -72,6 +85,7 @@ class Semantics:
             self.infer_owner,
             self.slot_tainted_by_owner,
             self.infer_pause,
+            self.guarded_mint,
         )
 
     def get_inputs(self):

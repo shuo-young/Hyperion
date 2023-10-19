@@ -1,0 +1,55 @@
+{
+    "transfer": {
+        "0x22f4S0x21abS0x209f0x1b7d": [
+            "FUNARG",
+            "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+            "Id_2"
+        ],
+        "0x10b4": [
+            "FUNARG",
+            "Concat(0, Extract(159, 0, Id_4))",
+            "Id_6"
+        ],
+        "0xb80S0x2db": [
+            "OWNER",
+            "Is",
+            "Id_1"
+        ]
+    },
+    "tax": {
+        "0x22f4S0x21abS0x209f0x1bcfS0x1c56": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Id_11))",
+            0
+        ],
+        "0x1f42": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, mem_64 + mem_64))",
+            "mem_64 + mem_64"
+        ],
+        "0x1d8b": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, mem_32 + mem_64))",
+            "mem_32 + mem_64"
+        ],
+        "0x17c7S0x4ca": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Id_11))",
+            0
+        ]
+    },
+    "mint": {
+        "const": [],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {
+        "0xb80S0x2db": [
+            "OWNER",
+            "Is",
+            "Id_1"
+        ]
+    },
+    "pause": {},
+    "metadata": null
+}

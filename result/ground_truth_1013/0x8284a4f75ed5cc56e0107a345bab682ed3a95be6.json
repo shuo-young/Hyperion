@@ -1,0 +1,32 @@
+{
+    "transfer": {
+        "0xba1ac0b8": {
+            "0x2616S0xb3f": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_2"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            5000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x18ce6427": {
+            "0x12daS0x4ee": [
+                "",
+                "Concat(0, Extract(159, 0, Is))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

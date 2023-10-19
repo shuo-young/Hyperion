@@ -1,0 +1,38 @@
+{
+    "transfer": {
+        "0x1d6f757d": {
+            "0x9a2": [
+                "Is",
+                "Id_1"
+            ],
+            "0x918": [
+                "Is",
+                "Id_1"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            109419367166001644579
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xd9ee369a": {
+            "0xfde": [
+                "Concat(0, Extract(159, 0, Is))",
+                "mem_mem_64"
+            ],
+            "0xef2": [
+                "Concat(0, Extract(159, 0, Is))",
+                "mem_mem_64"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

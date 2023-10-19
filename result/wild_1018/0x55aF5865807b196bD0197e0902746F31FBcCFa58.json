@@ -1,0 +1,64 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0xd0e30db0": {
+            "0x21f10x2047": [
+                "0x0",
+                "mem_mem_64"
+            ]
+        },
+        "0x39d6ec": {
+            "0x21f10x207bS0x2135S0x1cc0": [
+                "0x0",
+                "Id_2"
+            ]
+        },
+        "0xf714ce": {
+            "0x21f10x207bS0x2135S0x1cc0": [
+                "0x0",
+                "Id_1"
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x21f10x207bS0x2135S0x1cc0": [
+                "0x0",
+                "Ia_store-some_var_1-"
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0x21f10x207bS0x2135S0x1cc0": [
+                "0x0",
+                "Id_1"
+            ]
+        },
+        "0x6e553f65": {
+            "0x21f10x2047": [
+                "0x0",
+                "Id_1"
+            ]
+        },
+        "0x81a37c18": {
+            "0x21f10x2047": [
+                "0x0",
+                "Id_2"
+            ]
+        },
+        "0xb6b55f25": {
+            "0x21f10x2047": [
+                "0x0",
+                "Id_1"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            538313476684290613053711
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

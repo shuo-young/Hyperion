@@ -1,0 +1,81 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x70047eeb": {
+            "0x2fcc": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-54-"
+            ]
+        },
+        "0x38fc99bd": {
+            "0x1db6": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-50-"
+            ]
+        },
+        "0x6254a0ef": {
+            "0x29d6": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-48-"
+            ]
+        },
+        "0xc3285de6": {
+            "0x47c4": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-49-"
+            ]
+        },
+        "0xa565a5b6": {
+            "0x3cdd": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-55-"
+            ]
+        },
+        "0x1073bf5": {
+            "0x16f0": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-47-"
+            ]
+        },
+        "0xed3bb9fa": {
+            "0x540c": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-51-"
+            ]
+        },
+        "0x461aa478": {
+            "0x23ad": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-53-"
+            ]
+        },
+        "0xae01d264": {
+            "0x420b": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-52-"
+            ]
+        },
+        "0xe35fc7e2": {
+            "0x4e1c": [
+                "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                "Ia_store-56-"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x8853b53e": {
+            "0x57d2": [
+                "Concat(0, Extract(159, 0, Ia_store-0-))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

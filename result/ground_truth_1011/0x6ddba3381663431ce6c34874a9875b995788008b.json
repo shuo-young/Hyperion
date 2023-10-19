@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0xf3d": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-19-))",
+            0
+        ],
+        "0x1151": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-19-))",
+            0
+        ],
+        "0x154f": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-18-))",
+            "bvudiv_i(Ia_store-1-*\n         bvudiv_i(Ia_store-13-*mem_mem_64,\n                  Ia_store-14- +\n                  bvudiv_i(Ia_store-12-*Ia_store-13- +\n                           Ia_store-14-*\n                           (Ia_store-3 + some_var_2- +\n                            Ia_store-16-*\n                            Ia_store-2 + some_var_2-),\n                           Ia_store-3 + some_var_2- +\n                           Ia_store-16-*\n                           Ia_store-2 + some_var_2-)),\n         1000)"
+        ]
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,22 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            253800000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xc68": [
+            "OWNER",
+            "Concat(0, Extract(159, 0, Is))",
+            "Id_1"
+        ]
+    },
+    "pause": true,
+    "metadata": ""
+}

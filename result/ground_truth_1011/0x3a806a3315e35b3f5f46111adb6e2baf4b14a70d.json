@@ -1,0 +1,32 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            50000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x1c39S0xc9b": [
+            "OWNER",
+            "Is",
+            "IH_b"
+        ],
+        "0x406bS0x3711": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-some_var_4-))",
+            "IH_b"
+        ],
+        "0x231cS0xef7": [
+            "OWNER",
+            "Is",
+            "mem_mem_64"
+        ]
+    },
+    "pause": false,
+    "metadata": ""
+}

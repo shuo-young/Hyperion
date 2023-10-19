@@ -1,0 +1,45 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0xf91b3f72": {
+            "0x2ecc": [
+                "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                "Iv"
+            ]
+        },
+        "0xa2a1623d": {
+            "0x2527": [
+                "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                "mem_32 + mem_64"
+            ]
+        },
+        "0xc57559dd": {
+            "0x2a2d": [
+                "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                "Iv"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x73bc79cf": {
+            "0x332a0x62a": [
+                "Concat(0, Extract(159, 0, Id_5))",
+                "mem_mem_64"
+            ]
+        },
+        "0x9fc27226": {
+            "0x332a0x1723S0x2232": [
+                "Concat(0, Extract(159, 0, Id_5))",
+                "mem_mem_64"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,19 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x12b0": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            0
+        ]
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

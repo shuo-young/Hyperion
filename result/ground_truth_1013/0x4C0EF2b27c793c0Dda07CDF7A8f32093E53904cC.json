@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x6dd8e7c3": {
+            "0x8d8S0x3a5": [
+                "OWNER",
+                "Concat(0, Extract(167, 8, Ia_store-0-))",
+                "bvudiv_i(5*Iv, 100)"
+            ]
+        },
+        "0x7525bca1": {
+            "0xa8cS0x3b8": [
+                "OWNER",
+                "Concat(0, Extract(167, 8, Ia_store-0-))",
+                "bvudiv_i(5*\n         bvudiv_i(10000*IH_b,\n                  5000 +\n                  bvudiv_i(10000*Ia_store-5- +\n                           5000*Ia_store-some_var_9-,\n                           Ia_store-some_var_9-)),\n         100)"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

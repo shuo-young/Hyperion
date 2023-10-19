@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x4912dd14": {
+            "0x22f4S0x21abS0x209f0x1b7d": [
+                "OWNER",
+                "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+                "Id_2"
+            ]
+        },
+        "0x8f64d73a": {
+            "0xb80S0x2db": [
+                "OWNER",
+                "Is",
+                "Id_1"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

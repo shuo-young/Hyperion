@@ -1,0 +1,24 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0xfba05279": {
+            "0xff4": [
+                "Concat(0, Extract(159, 0, Ia_store-7-))",
+                "bvudiv_i(80*Id_2, 1000)"
+            ],
+            "0x106e": [
+                "Concat(0, Extract(159, 0, Ia_store-8-))",
+                "bvudiv_i(20*Id_2, 1000)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

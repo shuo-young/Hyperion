@@ -1,0 +1,31 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            0,
+            0,
+            5
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xdf8de3e7": {
+            "0x1674S0x6b9": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-0-))",
+                "mem_mem_64"
+            ],
+            "0x1537S0x6b9": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-0-))",
+                "balance_5"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

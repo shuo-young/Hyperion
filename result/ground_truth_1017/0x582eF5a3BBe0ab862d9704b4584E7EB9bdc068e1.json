@@ -1,0 +1,65 @@
+{
+    "transfer": {
+        "0x3955f0fe": {
+            "0x192f": [
+                "Concat(0, Extract(159, 0, Is))",
+                "bvudiv_i(80*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         100)"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0xdb663865": {
+            "0x2544": [
+                "Concat(0, Extract(167, 8, Ia_store-3-))",
+                "bvudiv_i(25*Iv, 1000)"
+            ],
+            "0x25ad": [
+                "Concat(0, Extract(159, 0, Ia_store-4-))",
+                "bvudiv_i(25*Iv, 1000)"
+            ],
+            "0x2616": [
+                "Concat(0, Extract(159, 0, Ia_store-5-))",
+                "bvudiv_i(25*Iv, 1000)"
+            ],
+            "0x267f": [
+                "Concat(0, Extract(159, 0, Ia_store-6-))",
+                "bvudiv_i(25*Iv, 1000)"
+            ],
+            "0x26e8": [
+                "Concat(0, Extract(159, 0, Ia_store-7-))",
+                "bvudiv_i(25*Iv, 1000)"
+            ]
+        },
+        "0x3955f0fe": {
+            "0x1735": [
+                "Concat(0, Extract(167, 8, Ia_store-3-))",
+                "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+            ],
+            "0x179e": [
+                "Concat(0, Extract(159, 0, Ia_store-4-))",
+                "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+            ],
+            "0x1807": [
+                "Concat(0, Extract(159, 0, Ia_store-5-))",
+                "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+            ],
+            "0x1870": [
+                "Concat(0, Extract(159, 0, Ia_store-7-))",
+                "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+            ],
+            "0x18d9": [
+                "Concat(0, Extract(159, 0, Ia_store-6-))",
+                "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_5,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-16- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_2- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_2- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         1000)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

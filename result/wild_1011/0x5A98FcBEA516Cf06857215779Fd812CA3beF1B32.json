@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x1674S0x6b9": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            "mem_mem_64"
+        ]
+    },
+    "mint": {
+        "amount": [
+            0,
+            0,
+            5
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x1537S0x6b9": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            "balance_4"
+        ]
+    },
+    "pause": false,
+    "metadata": null
+}

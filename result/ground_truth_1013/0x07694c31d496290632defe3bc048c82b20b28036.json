@@ -1,0 +1,36 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3b653755": {
+            "0x1777": [
+                "OWNER",
+                "Concat(0, Extract(167, 8, Ia_store-4-))",
+                "Concat(0, Extract(255, 1, bvudiv_i(5*Id_1, 100)))"
+            ]
+        },
+        "0x3955f0fe": {
+            "0xab9": [
+                "OWNER",
+                "Concat(0, Extract(167, 8, Ia_store-4-))",
+                "Concat(0,\n       Extract(255,\n               1,\n               bvudiv_i(Ia_store-1-*Ia_store-some_var_26-,\n                        100)))"
+            ]
+        },
+        "0x450edf95": {
+            "0x1777": [
+                "OWNER",
+                "Concat(0, Extract(167, 8, Ia_store-4-))",
+                "Concat(0, Extract(255, 1, bvudiv_i(5*Id_2, 100)))"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

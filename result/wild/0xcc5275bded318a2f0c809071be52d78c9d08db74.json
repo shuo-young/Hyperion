@@ -1,0 +1,20 @@
+{
+    "transfer": {},
+    "tax": {
+        "0x708": [
+            "UNKNOWN",
+            "Ia",
+            0
+        ]
+    },
+    "mint": {
+        "const": [
+            56502
+        ],
+        "unlimited": null
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

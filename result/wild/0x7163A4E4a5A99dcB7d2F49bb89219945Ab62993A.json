@@ -1,0 +1,26 @@
+{
+    "transfer": {
+        "0x1893S0x17ceS0x16d90x1363": [
+            "FUNARG",
+            "0xd691d9a68c887bdf34da8c36f63487333acfd103",
+            "3009 +\nbvudiv_i(Ia_store-some_var_3-*\n         (bvudiv_i(Ia_store-3-*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-4-),\n                   1000000000000000000) +\n          Ia_store-5-),\n         9271)"
+        ]
+    },
+    "tax": {
+        "0x1893S0x17ceS0x16d90x13b5S0x1675": [
+            "UNKNOWN",
+            150392330632890172677238240687248509119002776721,
+            0
+        ]
+    },
+    "mint": {
+        "const": [
+            241420140948991070000
+        ],
+        "unlimited": null
+    },
+    "lock": true,
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

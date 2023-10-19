@@ -1,0 +1,36 @@
+{
+    "transfer": {
+        "0xddc63262": {
+            "0x1d34": [
+                "USER",
+                "Is",
+                "Ia_store-some_var_5- +\nbvudiv_i(Ia_store-2 + some_var_3-*\n         Ia_store-2 + some_var_5-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_5-),\n         864000000) +\nIa_store-1 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+            ]
+        },
+        "0x84ea2cd1": {
+            "0x11d3": [
+                "USER",
+                "Is",
+                "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_1-, 10000)"
+            ]
+        },
+        "0x2e17de78": {
+            "0xb4e": [
+                "USER",
+                "Is",
+                "Ia_store-some_var_5- +\nbvudiv_i(Ia_store-2 + some_var_3-*\n         Ia_store-2 + some_var_5-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-4 + some_var_5-),\n         864000000) +\nIa_store-2 + some_var_2- +\nIa_store-1 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-some_var_5- +\n         300*\n         bvudiv_i(Ia_store-2 + some_var_3-*\n                  Ia_store-2 + some_var_5-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-4 + some_var_5-),\n                  864000000) +\n         300*Ia_store-2 + some_var_2- +\n         300*Ia_store-1 + some_var_1-,\n         10000)"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

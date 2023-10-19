@@ -1,0 +1,41 @@
+{
+    "transfer": {
+        "0x3955f0fe": {
+            "0x9e4": [
+                "Is",
+                "mem_mem_64"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": true,
+        "0x3955f0fe": {
+            "0x15f2": [
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+            ]
+        },
+        "0x450edf95": {
+            "0xdf3S0x41c": [
+                "Concat(0, Extract(159, 0, Ia_store-5 + some_var_1-))",
+                "bvudiv_i(Ia_store-4-*Id_2, Ia_store-3-)"
+            ],
+            "0x15f2": [
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ],
+            "0xbabS0x41c": [
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "Id_2"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

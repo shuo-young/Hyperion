@@ -1,0 +1,23 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            0,
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0xa03S0x396": [
+            "USER",
+            "Is",
+            "IH_b"
+        ]
+    },
+    "pause": false,
+    "metadata": null
+}

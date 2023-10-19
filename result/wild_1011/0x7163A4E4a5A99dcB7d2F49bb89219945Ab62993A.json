@@ -1,0 +1,21 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x1893S0x17ceS0x16d90x13b5S0x1675": [
+            "UNKNOWN",
+            150392330632890172677238240687248509119002776721,
+            0
+        ]
+    },
+    "mint": {
+        "amount": [
+            241420140948991070000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {},
+    "pause": false,
+    "metadata": null
+}

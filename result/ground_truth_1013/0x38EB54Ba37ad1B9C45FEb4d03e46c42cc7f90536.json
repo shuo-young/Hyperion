@@ -1,0 +1,81 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3955f0fe": {
+            "0x190e": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(0, Ia_store-3-)"
+            ],
+            "0x1988": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-28-))",
+                "bvudiv_i(0, Ia_store-3-)"
+            ],
+            "0x1a02": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-29-))",
+                "bvudiv_i(0, Ia_store-3-)"
+            ],
+            "0x1af6": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-31-))",
+                "bvudiv_i(0, Ia_store-3-)"
+            ]
+        },
+        "0x450edf95": {
+            "0x190e": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ],
+            "0x1988": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-28-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ],
+            "0x1a02": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-29-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ],
+            "0x1af6": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-31-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ]
+        },
+        "0xfe4b84df": {
+            "0x190e": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*Id_1, Ia_store-3-)"
+            ],
+            "0x1988": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-28-))",
+                "bvudiv_i(Ia_store-5-*Id_1, Ia_store-3-)"
+            ],
+            "0x1a02": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-29-))",
+                "bvudiv_i(Ia_store-5-*Id_1, Ia_store-3-)"
+            ],
+            "0x1af6": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-31-))",
+                "bvudiv_i(Ia_store-5-*Id_1, Ia_store-3-)"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -161,3 +161,6 @@ cython_debug/
 
 *.dot
 *.png
+
+experiment_logset
+logs

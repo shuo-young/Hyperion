@@ -1,0 +1,41 @@
+{
+    "transfer": {
+        "0x62fb4e01": {
+            "0x24eb": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_4"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0x87e08c25": {
+            "0x24eb": [
+                "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "Iv"
+            ]
+        },
+        "0x27a9b424": {
+            "0x24eb": [
+                "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "Id_2"
+            ]
+        },
+        "0x5250d730": {
+            "0x24eb": [
+                "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "Iv"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            7023829271807084932531977
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

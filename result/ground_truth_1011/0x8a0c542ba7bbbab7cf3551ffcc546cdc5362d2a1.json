@@ -1,0 +1,22 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            161462
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x1477S0x552": [
+            "OWNER",
+            "Is",
+            "balance_1"
+        ]
+    },
+    "pause": false,
+    "metadata": "http"
+}

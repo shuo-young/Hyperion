@@ -1,0 +1,41 @@
+{
+    "transfer": {
+        "0x3955f0fe": {
+            "0x1176S0x5a3": [
+                "Is",
+                "IH_b"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": true,
+        "0x3955f0fe": {
+            "0x10ceS0x5a3": [
+                "Concat(0, Extract(175, 16, Ia_store-9-))",
+                "bvudiv_i(Ia_store-17-*Ia_store-6-, 100)"
+            ],
+            "0x1123S0x5a3": [
+                "Concat(0, Extract(159, 0, Ia_store-10-))",
+                "bvudiv_i(Ia_store-7-*\n         (Ia_store-17- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          bvudiv_i(Ia_store-17-*Ia_store-6-, 100)),\n         100)"
+            ]
+        },
+        "0xdb663865": {
+            "0x1888S0xaf8": [
+                "Concat(0, Extract(159, 0, Ia_store-4 + some_var_1-))",
+                "bvudiv_i(Ia_store-8-*Iv, 100)"
+            ],
+            "0x1995S0xaf8": [
+                "Concat(0, Extract(175, 16, Ia_store-9-))",
+                "bvudiv_i(Ia_store-6-*Iv, 100)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

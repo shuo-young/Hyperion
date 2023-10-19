@@ -1,0 +1,38 @@
+{
+    "transfer": {
+        "0x2e1a7d4d": {
+            "0x2f3d": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_1"
+            ]
+        },
+        "0x1249c58b": {
+            "0x27f6": [
+                "USER",
+                "Concat(0, Extract(159, 0, Is))",
+                "Iv"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false,
+        "0x1249c58b": {
+            "0x2860": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-15-))",
+                "bvudiv_i(0, Ia_store-18-)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            20000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

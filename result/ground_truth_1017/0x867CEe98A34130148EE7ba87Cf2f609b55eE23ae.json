@@ -1,0 +1,33 @@
+{
+    "transfer": {
+        "0xa09b7ae4": {
+            "0x12fa": [
+                "Is",
+                "Id_1"
+            ]
+        },
+        "0x959499b6": {
+            "0xe5b": [
+                "Is",
+                "bvudiv_i(Ia_store-6-*Ia_store-7 + some_var_1-, Ia_store-7-)"
+            ]
+        },
+        "0x9ea0e074": {
+            "0x10e4": [
+                "Is",
+                "bvudiv_i(Ia_store-3 + some_var_1-, Ia_store-8-)"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

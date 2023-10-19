@@ -1,0 +1,31 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x1cef": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            "Id_1"
+        ],
+        "0x4c41S0x3508": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-45-))",
+            "Ia_store-38-*bvudiv_i(Id_1, 100)"
+        ],
+        "0x4c8fS0x3508": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-44-))",
+            "Ia_store-39-*bvudiv_i(Id_1, 100)"
+        ]
+    },
+    "mint": {
+        "amount": [
+            96323786384880886
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

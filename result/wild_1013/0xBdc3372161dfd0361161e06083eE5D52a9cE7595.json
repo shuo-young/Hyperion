@@ -1,0 +1,24 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            5638288074802545768761
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "0xeb9253c0": {
+            "0x1207S0xec7": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-7-))",
+                "Id_2"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,55 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x23b872dd": {
+            "0x2eaf": [
+                "KNOWN",
+                "Concat(0, Extract(167, 8, Ia_store-18-))",
+                "bvudiv_i(0, mem_mem_64)"
+            ],
+            "0x2eea": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-19-))",
+                "bvudiv_i(0, mem_mem_64)"
+            ]
+        },
+        "0xa9059cbb": {
+            "0x2eaf": [
+                "KNOWN",
+                "Concat(0, Extract(167, 8, Ia_store-18-))",
+                "bvudiv_i(0, mem_mem_64)"
+            ],
+            "0x2eea": [
+                "KNOWN",
+                "Concat(0, Extract(159, 0, Ia_store-19-))",
+                "bvudiv_i(0, mem_mem_64)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            4967014119674893384040230
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x23b872dd": {
+            "0x2f51": [
+                "",
+                "Concat(0, Extract(159, 0, Ia_store-11-))",
+                "IH_b"
+            ]
+        },
+        "0xa9059cbb": {
+            "0x2f51": [
+                "",
+                "Concat(0, Extract(159, 0, Ia_store-11-))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

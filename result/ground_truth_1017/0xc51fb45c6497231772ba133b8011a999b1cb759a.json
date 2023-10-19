@@ -1,0 +1,28 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x7fbbe028": {
+            "0xf2cS0x31c": [
+                "Concat(0, Extract(167, 8, Ia_store-4-))",
+                "bvudiv_i(bvudiv_i(Ia_store-11-*Ia_store-2-, 100), 3)"
+            ],
+            "0xffcS0x31c": [
+                "Concat(0, Extract(159, 0, Ia_store-5-))",
+                "bvudiv_i(bvudiv_i(Ia_store-11-*Ia_store-2-, 100), 3)"
+            ],
+            "0x10ccS0x31c": [
+                "Concat(0, Extract(159, 0, Ia_store-6-))",
+                "bvudiv_i(bvudiv_i(Ia_store-1-*Ia_store-some_var_3-, 100), 3)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

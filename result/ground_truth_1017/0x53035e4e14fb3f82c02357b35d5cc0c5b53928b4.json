@@ -1,0 +1,23 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            210000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x616eb638": {
+            "0x1b7aS0x6c6": [
+                "Concat(0, Extract(159, 0, Is))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

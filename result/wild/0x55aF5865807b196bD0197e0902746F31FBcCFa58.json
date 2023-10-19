@@ -1,0 +1,26 @@
+{
+    "transfer": {
+        "0x21f10x207bS0x2135S0x1cc0": [
+            "FUNARG",
+            "0x0",
+            "Id_1"
+        ]
+    },
+    "tax": {
+        "0x21f10x2047": [
+            "UNKNOWN",
+            0,
+            0
+        ]
+    },
+    "mint": {
+        "const": [
+            538313476684290613053711
+        ],
+        "unlimited": true
+    },
+    "lock": {},
+    "clear": {},
+    "pause": {},
+    "metadata": null
+}

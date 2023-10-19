@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x15a8": [
+            "UNKNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-0-))",
+            0
+        ],
+        "0x1394S0x62b": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-26-))",
+            "Id_2"
+        ],
+        "0x1dd5S0x70c": [
+            "KNOWN",
+            "Concat(0, Extract(159, 0, Ia_store-26-))",
+            "Id_1"
+        ]
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

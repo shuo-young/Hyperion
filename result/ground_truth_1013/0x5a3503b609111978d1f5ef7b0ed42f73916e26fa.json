@@ -1,0 +1,34 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3955f0fe": {
+            "0x15f2": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*mem_mem_64, Ia_store-3-)"
+            ]
+        },
+        "0x450edf95": {
+            "0x15f2": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "bvudiv_i(Ia_store-5-*Id_2, Ia_store-3-)"
+            ],
+            "0xbabS0x41c": [
+                "OWNER",
+                "Concat(0, Extract(159, 0, Ia_store-27-))",
+                "Id_2"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

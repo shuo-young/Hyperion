@@ -1,0 +1,22 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            10000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "0xfa4S0x4e6": [
+            "OWNER",
+            "Is",
+            "IH_b"
+        ]
+    },
+    "pause": false,
+    "metadata": null
+}
