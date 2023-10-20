@@ -15,15 +15,18 @@ w3 = Web3(
 )
 
 
-def get_bycode(address):
+def get_bytecode(address):
     addr = w3.to_checksum_address(address)
     bytecode = w3.eth.get_code(addr).hex()
     print(bytecode)
     return bytecode
 
 
-address = "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
-addr = w3.to_checksum_address(address)
+def get_storage(address, slot):
+    addr = w3.to_checksum_address(address)
+    storage_content = w3.eth.get_storage_at(addr, slot)
+    print(storage_content)
 
-storage_content = w3.eth.get_storage_at(addr, 14)
-print(storage_content)
+
+address = "0x9A78649501BbAAC285Ea4187299471B7ad4ABD35"
+bytecode = get_bytecode(address)

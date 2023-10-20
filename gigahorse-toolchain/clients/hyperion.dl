@@ -49,6 +49,18 @@ Hyperion_OwnerSlot(slotNum) :-
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+.decl Hyperion_OwnerSlotElse(slotNum:Value)
+.output Hyperion_OwnerSlotElse
+Hyperion_OwnerSlotElse(globalVal) :-
+  ControlsWith(_, _, predicate),
+  (CALLER(_, msgsenderFrom) ; ORIGIN(_, msgsenderFrom)),
+  DataFlows(msgsenderFrom, msgsender),
+  EQVars(global, msgsender, predicateFrom),
+  LoadGlobalVariable(_, globalVal, globalFrom),
+  DataFlows(globalFrom, global),
+  DataFlows(predicateFrom, predicate).
+
+
 // require(msg.sender == SLOAD(ownerSlot))
 // use above to recover the onlyOwner modifier usage
 .decl Hyperion_StaticallyGuardedBlock(guardedBlock: Block, globalVal: Value)
@@ -146,17 +158,25 @@ Hyperion_SupplyAmountSlot(slotNum) :-
   Hyperion_Statement_Function(loadStmt, func),
   PublicFunctionSelector(func, funcSign).
 
+.decl Hyperion_SupplyAmountSlotElse(slotNum:Value)
+.output Hyperion_SupplyAmountSlotElse
+Hyperion_SupplyAmountSlotElse(slotNum) :-
+  SLOADOfConst(_, slotNum, supplyVar),
+  ADDFix(_,supplyVar, _, resFrom),
+  DataFlows(resFrom, res),
+  SSTOREToConst(_, slotNum, res).
+
 // totalSupply + amount <= maxSupply/const
-.decl Hyperion_GuardedMint(maxSupplySlot:Value, funcSign:symbol)
+.decl Hyperion_GuardedMint(supplySlot:Value, funcSign:symbol)
 .output Hyperion_GuardedMint
 Hyperion_GuardedMint(supplySlot, funcSign) :-
   // (DataFlows(amount, supplyVar);DataFlows(amount, maxSupplyVar)),
   SLOADOfConst(loadSupplyStmt, supplySlot, supply),
-  SLOADOfConst(loadMaxSupply, maxSupplySlot, maxSupply),
+  SLOADOfConst(_, maxSupplySlot, maxSupply),
   maxSupplySlot != supplySlot,
   DataFlows(supply, supplyVar),
-  DataFlows(maxSupply, maxSupplyVar),
-  Hyperion_CompareVars(supplyVar, maxSupplyVar, _),
+//   DataFlows(maxSupply, maxSupplyVar),
+  Hyperion_CompareVars(supplyVar, maxSupply, _),
 
   // DataFlows(resVar, addStoreResVar),
   // store the added supply to narrow the scope
@@ -225,7 +245,7 @@ Hyperion_PauseSlot(statusSlot, funcSign) :-
   // DataFlows(statusFrom, status),
   // statusSlot != ownerSlot,
   // Statement_Block(statusSetStmt, block),
-  StoreGlobalVariable(statusSetStmt, statusSlot, status),
+  StoreGlobalVariable(statusSetStmt, statusSlot, _),
   Hyperion_Statement_Function(statusSetStmt, func),
   PublicFunctionSelector(func, funcSign).
 Hyperion_PauseSlot(statusSlot, funcSign) :-
@@ -261,13 +281,13 @@ Hyperion_TokenURIStorage(slotNum, funcSign) :-
 Hyperion_ClearBalance(callStmt, funcSign) :-
   Statement_Opcode(stmt, "SELFBALANCE"),
   Statement_Defines(stmt, balanceVar, _),
-  Hyperion_SensitiveCall(callStmt, recipient, balanceVar, funcSign).
+  Hyperion_SensitiveCall(callStmt, _, balanceVar, funcSign).
 
 Hyperion_ClearBalance(callStmt, funcSign) :-
   ADDRESS(_, addressVarFrom),
   DataFlows(addressVarFrom, addressVar),
   BALANCE(_, addressVar, balanceVar),
-  Hyperion_SensitiveCall(callStmt, recipient, balanceVar, funcSign).
+  Hyperion_SensitiveCall(callStmt, _, balanceVar, funcSign).
 
 Hyperion_ClearBalance(callStmt, funcSign) :-
   ADDRESS(_, addressVarFrom),
@@ -275,7 +295,26 @@ Hyperion_ClearBalance(callStmt, funcSign) :-
   StatementUsesMemory_ActualMemoryArg(stmt, _, 1, addressVar),
   CallToSignature(stmt, "balanceOf(address)"),
   ExternalCall_ActualReturn(stmt, var, 0),
-  Hyperion_SensitiveCall(callStmt, recipient, var, funcSign).
+  Hyperion_SensitiveCall(callStmt, _, var, funcSign).
+
+Hyperion_ClearBalance(callStmt, funcSign) :-
+  Hyperion_StaticallyGuardedBlock(block, val),
+  InFunction(block, func),
+  PublicFunctionSelector(func, funcSign),
+  PublicFunctionArg(func, amountFrom, _),
+  DataFlows(amountFrom, amount),
+  LoadGlobalVariable(_, val, from),
+  Hyperion_SensitiveCall(callStmt, from, amount, funcSign).
+
+Hyperion_ClearBalance(callStmt, funcSign) :-
+  CALLER(_, msgsenderFrom),
+  DataFlows(msgsenderFrom, msgSender),
+  Hyperion_StaticallyGuardedBlock(block, _),
+  InFunction(block, func),
+  PublicFunctionArg(func, amountFrom, _),
+  DataFlows(amountFrom, amount),
+  PublicFunctionSelector(func, funcSign),
+  Hyperion_SensitiveCall(callStmt, msgSender, amount, funcSign).
 
 // find recipient role
 // 1. address stored in state vars

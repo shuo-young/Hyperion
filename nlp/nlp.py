@@ -189,6 +189,6 @@ The section states, ""02 Total Security Liquidity locked up for a 5 years"" This
 text3 = """The text does not explicitly state the total amount or supply of the token. However, based on the information provided, we can infer that the total supply of PunkPanda tokens is 275,000,000, with 65,000,000 tokens allocated to the incubator (token pre-sale, marketing, airdrops, and PandaPal sharing rewards)."""
 
 
-extractor = FrontEndSpecsExtractor(text3, ["fee"])
-fees = extractor.process_supply()
-print(fees)
+# extractor = FrontEndSpecsExtractor(text3, ["fee"])
+# fees = extractor.process_supply()
+# print(fees)

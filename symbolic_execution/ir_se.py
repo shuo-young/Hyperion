@@ -559,6 +559,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     global instructions
     global path
     global result
+    global state_extractor
 
     stack = params.stack
     mem = params.mem
@@ -1781,6 +1782,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                         in target_params.state_dependency_info.slot_dependency_map.keys()
                                     ):
                                         result["tax"]["modifiable"] = True
+                    # try:
+                    expr = state_extractor.compute_coefficient(str(res[ident][1]))
+                    if expr:
+                        log.info(expr)
+                    # except:
+                    # pass
                     if target_params.funcSign not in result["tax"].keys():
                         result["tax"][target_params.funcSign] = {}
                         # bypass the 0 value
@@ -1808,6 +1815,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                         elif str(var).startswith("Ia_store"):
                             log.info(res[ident][0])
                             log.info(res[ident][1])
+                            # try to get coefficient
+                            try:
+                                expr = state_extractor.compute_coefficient(
+                                    str(res[ident][1])
+                                )
+                                if expr:
+                                    log.info(expr)
+                            except:
+                                pass
                             if is_expr(res[ident][1]):
                                 amount_vars = get_vars(res[ident][1])
                                 for var in amount_vars:
@@ -2241,7 +2257,7 @@ def analyze(target_params):
     run_build_cfg_and_analyze(target_params)
 
 
-def run(inputs):
+def run(inputs, state):
     global result
     global funcs_to_be_checked
     global blocks
@@ -2251,6 +2267,7 @@ def run(inputs):
     global state_dependency_graph
     global func_map
     global path
+    global state_extractor
 
     result = {
         "transfer": {},
@@ -2269,6 +2286,7 @@ def run(inputs):
     state_dependency_graph = inputs["state_dependency_graph"]
     func_map = inputs["func_map"]
     path = inputs["path"]
+    state_extractor = state
 
     log.info("============ Begin SE ===========")
     # init params for target SE

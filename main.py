@@ -8,6 +8,7 @@ from symbolic_execution.ir_se import *
 
 from nlp.nlp import FrontEndSpecsExtractor
 from semantic_parser.semantic import Semantics
+from symbolic_execution.state_extractor import StateExtractor
 
 
 def analyze_dapp():
@@ -34,7 +35,15 @@ def analyze_dapp():
     )
     inputs = semantic.get_inputs()[0]
     exit_code = 0
-    result, exit_code = symbolic_execution.ir_se.run(inputs)
+
+    # initialize state extractor for rate determination
+    state_extractor = StateExtractor(
+        source["platform"],
+        source["address"],
+        source["block_number"],
+    )
+
+    result, exit_code = symbolic_execution.ir_se.run(inputs, state_extractor)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
     result["mint"]["amount"] = semantic.supply_amount
