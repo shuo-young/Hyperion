@@ -1,0 +1,35 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x9727151a": {
+            "0x10c3S0x5d5": [
+                "Concat(0, Extract(159, 0, Ia_store-13-))",
+                "Id_2"
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0xa98S0x382": [
+                "Concat(0, Extract(159, 0, Ia_store-13-))",
+                "Id_1"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            9311
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x853828b6": {
+            "0xf4bS0x568": [
+                "Concat(0, Extract(159, 0, Ia_store-13-))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

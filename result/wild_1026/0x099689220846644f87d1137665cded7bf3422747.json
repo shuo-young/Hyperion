@@ -1,0 +1,40 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x853828b6": {
+            "0x11b5": [
+                "Concat(0, Extract(175, 16, Ia_store-14-))",
+                "bvudiv_i(IH_b, 3)"
+            ],
+            "0x1215": [
+                "Concat(0, Extract(159, 0, Ia_store-15-))",
+                "bvudiv_i(IH_b, 3)"
+            ]
+        },
+        "0xa0712d68": {
+            "0x11b5": [
+                "Concat(0, Extract(175, 16, Ia_store-14-))",
+                "bvudiv_i(IH_b, 3)"
+            ],
+            "0x1215": [
+                "Concat(0, Extract(159, 0, Ia_store-15-))",
+                "bvudiv_i(IH_b, 3)"
+            ],
+            "0x1275": [
+                "Concat(0, Extract(159, 0, Ia_store-16-))",
+                "bvudiv_i(IH_b, 3)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            9999
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": "http"
+}

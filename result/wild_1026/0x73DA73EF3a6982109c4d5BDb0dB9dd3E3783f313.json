@@ -1,0 +1,27 @@
+{
+    "transfer": {
+        "0x6e286671": {
+            "0x2632": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_2"
+            ]
+        },
+        "0x953a1ea7": {
+            "0x2b18": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Id_38"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

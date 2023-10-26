@@ -1,0 +1,23 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            5555
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x853828b6": {
+            "0x191bS0x740": [
+                "0x5bb1396e3ec5e31e12dc7846c4c94eea25083f35",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

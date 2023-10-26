@@ -1,0 +1,22 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x695ef6bf": {
+            "0x2b15S0x6f7": [
+                "Concat(0, Extract(167, 8, Ia_store-13-))",
+                "bvudiv_i(Ia_store-14-*\n         bvudiv_i(1000000000000000000*Id_4*mem_mem_64,\n                  1000000000000000000),\n         10000)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            98729887472348790000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

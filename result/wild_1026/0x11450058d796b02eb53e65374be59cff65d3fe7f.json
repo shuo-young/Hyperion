@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x7f6d81b4": {
+            "0x1e17S0xaf1": [
+                "0x27c70cd1946795b66be9d954418546998b546634",
+                "mem_mem_64"
+            ]
+        },
+        "0xe086e5ec": {
+            "0x31ceS0xfa7": [
+                "Is",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

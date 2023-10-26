@@ -1,0 +1,16 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": null
+}

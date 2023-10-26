@@ -264,7 +264,7 @@ class Decompiler:
             uri = self.get_storage_string_content(int(row["id"], 16))
             log.info(uri)
             # http and ipfs
-            if len(uri) < 4:
+            if not ("http" in uri or "ipfs" in uri):
                 # use web3 client and abi
                 contract_abi = [
                     {
@@ -279,20 +279,30 @@ class Decompiler:
                 ]
 
                 # 创建合约实例
-                contract = w3.eth.contract(address=self.address, abi=contract_abi)
+                contract = w3.eth.contract(
+                    address=Web3.to_checksum_address(self.address), abi=contract_abi
+                )
                 # 调用tokenURI函数
-                token_id = 0
-                uri = contract.functions.tokenURI(token_id).call()
+                # sometimes 0 is not valid for a tokenid
+                token_id = 1
+                try:
+                    uri = contract.functions.tokenURI(token_id).call()
+                except Exception as e:
+                    log.error(e)
+                    uri = ""
+                log.info(uri)
             # just use the protocal
-            uri = uri.split(":")[0]
             if uri not in token_uri_prefix:
                 token_uri_prefix.append(uri)
-                if uri.startswith("http"):
+                if "http" in uri:
                     self.http_storage = True
                     return "http"
-                elif uri.startswith("ipfs"):
+                elif "ipfs" in uri:
                     self.ipfs_storage = True
                     return "ipfs"
+                elif "base64" in uri:
+                    self.base64 = True
+                    return "base64"
 
     def get_storage_num_content(self, slot_index):
         if self.url.startswith("https"):
@@ -311,7 +321,11 @@ class Decompiler:
             w3 = Web3(Web3.WebsocketProvider(self.url))
         contract_address = Web3.to_checksum_address(self.address)
         storage_content = w3.eth.get_storage_at(contract_address, slot_index)
-        return storage_content.decode('utf-8').replace('\x00', '')
+        try:
+            string_content = storage_content.decode('utf-8').replace('\x00', '')
+        except:
+            string_content = ""
+        return string_content
 
     def get_storage_content(self, slot_index, byteLow, byteHigh):
         if self.url.startswith("https"):

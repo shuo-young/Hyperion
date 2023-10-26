@@ -1568,30 +1568,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 ):
                     log.info("Unlimited Minting")
                     result["mint"]["unlimited"] = True
-            # # check self constrain
-            # # supply store var
-            # supply_state_var = r"Ia_store-%s-" % (str(stored_address))
-            # path_condition = path_conditions_and_vars["path_condition"]
-            # checked = False
-            # # remove the overflow check pattern
-            # # If(If(ULE(Ia_store-3-, Id_1 + Ia_store-3-), 0, 1) == 0...
-            # # if len(matches) == 2, there exists a boundary check
-            # log.debug(path_condition)
-            # for expr in path_condition:
-            #     if not is_expr(expr):
-            #         continue
-            #     log.debug(expr)
-            #     list_vars = get_vars(expr)
-            #     # compare or if expr, len(var) should be bigger than 1
-            #     if len(list_vars) > 1:
-            #         matches = re.findall(supply_state_var, str(expr))
-            #         if len(matches) == 1:
-            #             checked = True
-            #             log.debug(checked)
-            # if not checked:
-            #     result["mint"]["unlimited"] = True
-            # else:
-            #     result["mint"]["unlimited"] = False
             # check pause sstore op
             # may occur slot offset bias
             # 0x2_0_0 equals to 0x2
@@ -1757,7 +1733,10 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                         # now, cover the old value
                         result["clear"][target_params.funcSign][ident] = res[ident]
                 else:
-                    if str(res[ident][1]).startswith("balance_"):
+                    if (
+                        str(res[ident][1]).startswith("balance_")
+                        or str(res[ident][1]) == "IH_b"
+                    ):
                         if target_params.funcSign not in result["clear"].keys():
                             result["clear"][target_params.funcSign] = {}
                             result["clear"][target_params.funcSign][ident] = res[ident]
@@ -1848,80 +1827,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                     result["tax"][target_params.funcSign][ident] = res[
                                         ident
                                     ]
-            # receiver_vars = []
-            # if is_expr(res[ident][1]):
-            #     receiver_vars = get_vars(res[ident][1])
-            # # amount_vars = get_vars(res[ident][2])
-            # log.info(receiver_vars)
-            # log.info(transfer_amount)
-            # # log.info(amount_vars)
-            # transfer_all_amount = False
-            # # find if all the contract balance is transferred
-            # if (
-            #     str(transfer_amount).startswith("balance_")
-            #     or str(transfer_amount) == "IH_b"
-            # ):
-            #     transfer_all_amount = True
-            # if (
-            #     target_params.funcSign
-            #     in target_params.fund_transfer_info.recipient_role.keys()
-            # ):
-            #     if (
-            #         ident
-            #         in target_params.fund_transfer_info.recipient_role[
-            #             target_params.funcSign
-            #         ]
-            #     ):
-            #         res[ident][0] = "OWNER"
-            #         log.debug(res)
-            #         if target_params.funcSign not in result["clear"].keys():
-            #             result["clear"][target_params.funcSign] = {}
-            #             result["clear"][target_params.funcSign][ident] = res[ident]
-            #         else:
-            #             # now, cover the value
-            #             result["clear"][target_params.funcSign][ident] = res[ident]
-            # elif transfer_all_amount:
-            #     if target_params.funcSign not in result["clear"].keys():
-            #         result["clear"][target_params.funcSign] = {}
-            #         result["clear"][target_params.funcSign][ident] = res[ident]
-            #     else:
-            #         result["clear"][target_params.funcSign][ident] = res[ident]
-            # # from var attributes to judge roi and tax/fee
-            # else:
-            #     # from the perspective of receiver var
-            #     for var in receiver_vars:
-            #         log.info(var)
-            #         if str(var) == "Is":
-            #             res[ident][0] = "USER"
-            #             log.debug(res)
-            #             if target_params.funcSign not in result["transfer"].keys():
-            #                 result["transfer"][target_params.funcSign] = {}
-            #                 result["transfer"][target_params.funcSign][ident] = res[
-            #                     ident
-            #                 ]
-            #             else:
-            #                 # may cover the old state
-            #                 result["transfer"][target_params.funcSign][ident] = res[
-            #                     ident
-            #                 ]
-            #         elif str(var).startswith("Ia_store"):
-            #             res[ident][0] = "KNOWN"
-            #             log.debug(res)
-            #             log.info(res[ident][2])
-            #             log.info(str(res[ident][2]) == "0")
-            #             if target_params.funcSign not in result["tax"].keys():
-            #                 result["tax"][target_params.funcSign] = {}
-            #                 # bypass the 0 value
-            #                 if not (str(res[ident][2]) == "0"):
-            #                     result["tax"][target_params.funcSign][ident] = res[
-            #                         ident
-            #                     ]
-            #             else:
-            #                 # bypass the 0 value
-            #                 if not (str(res[ident][2]) == "0"):
-            #                     result["tax"][target_params.funcSign][ident] = res[
-            #                         ident
-            #                     ]
 
         # in the paper, it is shaky when the size of data output is
         # min of stack[6] and the | o |
@@ -2289,11 +2194,6 @@ def run(inputs, state):
     state_extractor = state
 
     log.info("============ Begin SE ===========")
-    # init params for target SE
-    # should note: target functions (head blocks), critical slots and dependency relationship
-    # not use multiple processes
-    processes = []
-    # funcs_to_be_checked = ['0xc3873837']
     for funcSign in funcs_to_be_checked:
         target_params = TargetedParameters(
             path=path,
@@ -2305,26 +2205,5 @@ def run(inputs, state):
         log.info("============ Begin SE on function: " + funcSign + " ===========")
         analyze(target_params)
         log.info("============ End SE on function: " + funcSign + " ===========")
-        # log.info(result)
-    #     process = Process(target=analyze, args=(target_params,))
-    #     processes.append(process)
-    #     process.start()
-
-    # for process in processes:
-    #     process.join()
-    # run_build_cfg_and_analyze(target_params)
-    # print("======================END=====================")
     log.info("====================== SE END =====================")
     return result, 0
-    # afterward analysis
-    # could be parallel for multithread SE process
-    # run_build_cfg_and_analyze(target_params)
-
-    # several keys to be checked during SE
-    # 1. feasibility of the key statement
-    # 2. exact value of transfer amount
-    # 3. owner dependency check (authority check)
-    analyze()
-    # ret = detect_vulnerabilities()
-    # closing_message()
-    return {}, 0

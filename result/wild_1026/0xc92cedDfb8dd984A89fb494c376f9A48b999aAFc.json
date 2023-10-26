@@ -1,0 +1,41 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x853828b6": {
+            "0x169fS0x5a1": [
+                "Concat(0, Extract(159, 0, Ia_store-16-))",
+                "bvudiv_i(39*balance_1, 100)"
+            ],
+            "0x16ffS0x5a1": [
+                "Concat(0, Extract(159, 0, Ia_store-17-))",
+                "bvudiv_i(25*balance_2, 100)"
+            ],
+            "0x175fS0x5a1": [
+                "Concat(0, Extract(159, 0, Ia_store-18-))",
+                "bvudiv_i(18*balance_3, 100)"
+            ],
+            "0x17bfS0x5a1": [
+                "Concat(0, Extract(159, 0, Ia_store-19-))",
+                "bvudiv_i(18*balance_4, 100)"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3ccfd60b": {
+            "0xf85S0x3e5": [
+                "Concat(0, Extract(159, 0, Is))",
+                "balance_1"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

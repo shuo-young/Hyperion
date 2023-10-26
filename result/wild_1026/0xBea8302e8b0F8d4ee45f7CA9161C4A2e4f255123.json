@@ -1,0 +1,25 @@
+{
+    "transfer": {
+        "0x2e1a7d4d": {
+            "0x59eS0x149": [
+                "Concat(0, Extract(159, 0, Is))",
+                "mem_64 + mem_64 + mem_mem_64"
+            ],
+            "0x5eeS0x149": [
+                "Is",
+                "mem_32 + mem_64"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": ""
+}

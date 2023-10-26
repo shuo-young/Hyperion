@@ -1,0 +1,22 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x51cff8d9": {
+            "0x2211S0x1da9S0x1a35": [
+                "Concat(0, Extract(159, 0, Ia_store-9-))",
+                "mem_mem_64"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            28257
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": "http"
+}

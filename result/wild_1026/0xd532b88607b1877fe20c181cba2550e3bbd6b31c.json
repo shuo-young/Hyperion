@@ -1,0 +1,23 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            8888
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3ccfd60b": {
+            "0x175eS0x517": [
+                "Concat(0, Extract(159, 0, Ia_store-6-))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

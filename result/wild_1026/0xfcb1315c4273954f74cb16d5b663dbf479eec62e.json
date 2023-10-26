@@ -1,0 +1,29 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false,
+        "0x2ff01ead": {
+            "0xf32S0x3cf": [
+                "Concat(0, Extract(159, 0, Ia_store-8-))",
+                "Iv"
+            ]
+        },
+        "0xe9ae9e51": {
+            "0x1789S0x6d2": [
+                "Concat(0, Extract(159, 0, Ia_store-8-))",
+                "Iv"
+            ]
+        }
+    },
+    "mint": {
+        "amount": [
+            50,
+            9950
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": "http"
+}

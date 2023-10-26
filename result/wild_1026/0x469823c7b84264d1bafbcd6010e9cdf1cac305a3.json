@@ -1,0 +1,16 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            7777
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": "ipfs"
+}

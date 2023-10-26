@@ -1,0 +1,23 @@
+{
+    "transfer": {
+        "0xc0c8dd07": {
+            "0x27cb": [
+                "Concat(0, Extract(159, 0, Is))",
+                "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nId_1*\nmem_128 + mem_64"
+            ]
+        }
+    },
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [
+            9666
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {},
+    "pause": false,
+    "metadata": "ipfs"
+}

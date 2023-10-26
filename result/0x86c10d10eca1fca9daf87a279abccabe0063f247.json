@@ -1,0 +1,21 @@
+{
+    "transfer": {},
+    "tax": {
+        "modifiable": false
+    },
+    "mint": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "0x3ccfd60b": {
+            "0xc10S0x3d8": [
+                "Concat(0, Extract(159, 0, Ia_store-8-))",
+                "IH_b"
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}
