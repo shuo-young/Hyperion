@@ -58,7 +58,7 @@ class StateExtractor:
             self.url = ""
 
     def extract_coefficient_from_division(self, expr):
-        # 使用非贪婪匹配和平衡组构造来匹配最外层的bvudiv_i函数
+        # match outer bvudiv_i function
         pattern = r"bvudiv_i\s*\(\s*((?:[^,()]+|(?R))+)\s*,\s*((?:[^,()]+|(?R))+)\)"
         match = re.search(pattern, expr)
 
@@ -79,17 +79,17 @@ class StateExtractor:
         else:
             w3 = Web3(Web3.WebsocketProvider(self.url))
         contract_address = Web3.to_checksum_address(self.address)
-        # 判断是否是存储槽的值
+        # judge storage value
         if "Ia_store" in store_slot:
             slot_number = int(store_slot.split('-')[1])
             storage_value = w3.eth.get_storage_at(contract_address, slot_number)
             return int(storage_value.hex(), 16)
-        # 如果是常数则直接返回
+        # return if is const
         try:
             return int(expr)
         except:
             pass
-        # 对于其他表达式，返回None
+        # for other expr
         return None
 
     def compute_coefficient(self, expr):
@@ -97,7 +97,7 @@ class StateExtractor:
         if not numerator_expr:
             return None
 
-        # 提取被除数的系数
+        # extract coefficient
         coeff_match = re.search(r'^\d+', numerator_expr)
         if coeff_match:
             numerator_expr = coeff_match.group(0)
@@ -108,7 +108,7 @@ class StateExtractor:
         else:
             denominator_value = self.get_chain_value(denominator_expr)
 
-        # 防止除以0的情况
+        # divide 0 case handler
         if denominator_value == 0:
             return float('inf')
         log.info(numerator_value)
@@ -118,5 +118,6 @@ class StateExtractor:
         return coefficient
 
 
+# test case remained
 contract_address = "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
 expr = "bvudiv_i(Ia_store-14-*\n         bvudiv_i(1000000000000000000*Id_4*mem_mem_64,\n                  1000000000000000000),\n         10000)"

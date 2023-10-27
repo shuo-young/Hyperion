@@ -1567,7 +1567,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     not in target_params.state_dependency_info.guarded_mint_map.keys()
                 ):
                     log.info("Unlimited Minting")
-                    result["mint"]["unlimited"] = True
+                    result["supply"]["unlimited"] = True
             # check pause sstore op
             # may occur slot offset bias
             # 0x2_0_0 equals to 0x2
@@ -1760,35 +1760,35 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                         hex(pos)
                                         in target_params.state_dependency_info.slot_dependency_map.keys()
                                     ):
-                                        result["tax"]["modifiable"] = True
+                                        result["fee"]["modifiable"] = True
                     # try:
                     expr = state_extractor.compute_coefficient(str(res[ident][1]))
                     if expr:
                         log.info(expr)
                     # except:
                     # pass
-                    if target_params.funcSign not in result["tax"].keys():
-                        result["tax"][target_params.funcSign] = {}
+                    if target_params.funcSign not in result["fee"].keys():
+                        result["fee"][target_params.funcSign] = {}
                         # bypass the 0 value
                         if not (str(res[ident][1]) == "0"):
-                            result["tax"][target_params.funcSign][ident] = res[ident]
+                            result["fee"][target_params.funcSign][ident] = res[ident]
                     else:
                         # bypass the 0 value
                         if not (str(res[ident][1]) == "0"):
-                            result["tax"][target_params.funcSign][ident] = res[ident]
+                            result["fee"][target_params.funcSign][ident] = res[ident]
                 else:
                     receiver_vars = get_vars(res[ident][0])
                     for var in receiver_vars:
                         if str(var) == "Is":
                             log.info(var)
-                            if target_params.funcSign not in result["transfer"].keys():
-                                result["transfer"][target_params.funcSign] = {}
-                                result["transfer"][target_params.funcSign][ident] = res[
+                            if target_params.funcSign not in result["reward"].keys():
+                                result["reward"][target_params.funcSign] = {}
+                                result["reward"][target_params.funcSign][ident] = res[
                                     ident
                                 ]
                             else:
                                 # may cover the old value
-                                result["transfer"][target_params.funcSign][ident] = res[
+                                result["reward"][target_params.funcSign][ident] = res[
                                     ident
                                 ]
                         elif str(var).startswith("Ia_store"):
@@ -1813,18 +1813,18 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                                 hex(pos)
                                                 in target_params.state_dependency_info.slot_dependency_map.keys()
                                             ):
-                                                result["tax"]["modifiable"] = True
-                            if target_params.funcSign not in result["tax"].keys():
-                                result["tax"][target_params.funcSign] = {}
+                                                result["fee"]["modifiable"] = True
+                            if target_params.funcSign not in result["fee"].keys():
+                                result["fee"][target_params.funcSign] = {}
                                 # bypass the 0 value
                                 if not (str(res[ident][1]) == "0"):
-                                    result["tax"][target_params.funcSign][ident] = res[
+                                    result["fee"][target_params.funcSign][ident] = res[
                                         ident
                                     ]
                             else:
                                 # bypass the 0 value
                                 if not (str(res[ident][1]) == "0"):
-                                    result["tax"][target_params.funcSign][ident] = res[
+                                    result["fee"][target_params.funcSign][ident] = res[
                                         ident
                                     ]
 
@@ -2175,9 +2175,9 @@ def run(inputs, state):
     global state_extractor
 
     result = {
-        "transfer": {},
-        "tax": {"modifiable": False},
-        "mint": {"amount": None, "unlimited": False},
+        "reward": {},
+        "fee": {"modifiable": False},
+        "supply": {"amount": None, "unlimited": False},
         "lock": False,
         "clear": {},
         "pause": False,

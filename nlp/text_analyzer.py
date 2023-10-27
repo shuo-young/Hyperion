@@ -1,4 +1,5 @@
-from nltk.tokenize import word_tokenize
+import re
+from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tag import pos_tag
 from nltk.corpus import wordnet
 import logging
@@ -14,7 +15,118 @@ class FrontEndSpecsExtractor:
         pass
 
     # analyze dapp frontend docs
-    def process_rate(self, text, keywords):
+    def process_reward1(self, text):
+        keywords = ['reward', 'return']
+        words = word_tokenize(text)
+        tagged = pos_tag(words)
+        synonyms = self.get_synonyms(keywords)
+        # extend possible words
+        synonyms.extend(['roi', 'profit', 'reward/profit', 'apy', 'rewards', 'apr'])
+        rewards = {}
+        # Daily rate: X% like pattern
+        daily_rate_pattern = re.compile(r'daily rate:\s*(\d+\.?\d*)%', re.IGNORECASE)
+        matches = daily_rate_pattern.findall(text)
+        for match in matches:
+            rewards['daily rate'] = match + "%"
+
+        def search_values(index, direction=1, limit=5):
+            values = []
+            skip_parenthesis = False
+            while limit > 0:
+                index += direction
+                if index < 0 or index >= len(tagged):
+                    break
+                if tagged[index][0] == '\n':
+                    break
+                if tagged[index][0] == '(':
+                    skip_parenthesis = True
+                elif tagged[index][0] == ')':
+                    skip_parenthesis = False
+                    index += direction
+                    continue
+                if skip_parenthesis:
+                    index += direction
+                    continue
+                if tagged[index][1] in ['CD', 'JJ', '%']:
+                    if (
+                        tagged[index][1] in ['CD', 'JJ']
+                        and index + 1 < len(tagged)
+                        and tagged[index + 1][0] == '%'
+                    ):
+                        values.append(tagged[index][0] + "%")
+                        index += 1
+                limit -= 1
+            # return the first found value
+            if len(values) > 0:
+                return values[0]
+            return values
+
+        for i, (word, tag) in enumerate(tagged):
+            if word.lower() in synonyms:
+                # First, search forwards until the newline or search limit.
+                percentages_forward = search_values(i, direction=1, limit=4)
+                # If no values found, search backwards with the limit.
+                if not percentages_forward:
+                    percentages_forward = search_values(i, direction=-1, limit=3)
+
+                if percentages_forward:
+                    fee_type = []
+                    k = i - 1
+                    while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
+                        fee_type.insert(0, tagged[k][0])
+                        k -= 1
+                    fee_name = ' '.join(fee_type) + ' ' + word.lower()
+                    rewards[fee_name.strip()] = percentages_forward
+
+        return rewards
+
+    def process_reward(self, text):
+        keywords = ['reward', 'return']
+        words = word_tokenize(text)
+        tagged = pos_tag(words)
+        synonyms = self.get_synonyms(keywords)
+        synonyms.extend(['roi', 'rate', 'profit', 'reward/profit'])
+        rewards = {}
+        for i, (word, tag) in enumerate(tagged):
+            if word.lower() in synonyms:
+                j = i + 1
+                percentages = []  # List to hold all percentages related to this fee
+                search_limit = 1  # Limit the search to the next 5 words
+
+                # Find all percentages related to this fee
+                while j < len(tagged) and search_limit > 0:
+                    # Move j to the next CD or JJ or '%'
+                    while j < len(tagged) and tagged[j][1] not in ['CD', 'JJ', '%']:
+                        j += 1
+                        search_limit -= 1  # Decrement the search limit
+
+                    # If j is a number and j+1 is a '%' symbol, save the percentage
+                    if (
+                        j < len(tagged)
+                        and j + 1 < len(tagged)
+                        and tagged[j + 1][0] == '%'
+                        and tagged[j][0].replace('.', '').isdigit()
+                    ):
+                        percentages.append(tagged[j][0] + "%")
+                        j += 2  # Move past the percentage symbol
+                    else:
+                        break
+
+                if percentages:
+                    fee_type = []
+                    k = i - 1
+                    while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
+                        fee_type.insert(0, tagged[k][0])
+                        k -= 1
+                    fee_name = ' '.join(fee_type) + ' ' + word.lower()
+                    rewards[
+                        fee_name.strip()
+                    ] = percentages  # Save the list of percentages
+
+        return rewards  # Return an empty dictionary if no suitable "reward" percentage is found
+
+    def process_fee(self, text):
+        keywords = ['fee', 'tax']
         words = word_tokenize(text)
         tagged = pos_tag(words)
         synonyms = self.get_synonyms(keywords)
@@ -101,7 +213,9 @@ class FrontEndSpecsExtractor:
                         lock_description.insert(0, tagged[k][0])
                         k -= 1
                     lock_name = ' '.join(lock_description) + ' ' + word.lower()
-                    lock_times[lock_name.strip()] = time_periods
+                    # if find, directly return
+                    lock_times["lock"] = time_periods
+                    return lock_times
 
         return lock_times
 
@@ -162,9 +276,28 @@ class FrontEndSpecsExtractor:
 
                 # If "total supply" was found and the supply amount is not None, return it
                 if found_total_supply and supply_amount is not None:
-                    return {"Total Supply": supply_amount}
+                    return {"supply": supply_amount}
 
         return supplies
+
+    def process_bool(self, text, type):
+        sentences = sent_tokenize(text)
+        answer_sentences = [
+            sentence for sentence in sentences if "answer" in sentence.lower()
+        ]
+        if answer_sentences:
+            answer_sentence = answer_sentences[0]
+            answer = answer_sentence.split("answer is", 1)[-1].strip()
+            if "no" in answer.lower():
+                answer = False
+            elif "yes" in answer.lower():
+                answer = True
+            else:
+                answer = False
+            return {type: answer}
+        else:
+            # if no findings, return False by default
+            return {type: False}
 
     def get_synonyms(self, keywords):
         # keywords = ['fee']
@@ -176,58 +309,22 @@ class FrontEndSpecsExtractor:
 
         # remove duplicated
         synonyms = list(set(synonyms))
-        print(synonyms)
         return synonyms
 
 
-text = """Hey! Based on the provided text, here are some important attributes and their values that can indicate the rate of reward or profit for users:
+# test case remained
+test = """"
 
-1. Daily Reward: The text mentions "3% Daily" which implies that users will receive a sell fee of 3%.
 
-2. Annual Percentage Rate (APR): The text states "1,095% APR", which indicates the total return on investment (ROI) for the year, including the daily rewards.
+Based on the provided text, here are the numerical information related to the rate of reward or profit:
 
-3. Compounding: The text mentions "Compound Daily" which indicates that the daily rewards will be compounded, meaning the profit will increase exponentially over time.
+1. APR (Annual Percentage Rate): 2,920%
+2. Dev Fee (Developer Fee): 3%
+3. Marketing Fee: 2%
+4. Referrals Earnings: 12% of the CRO (Croatian Kuna) deposited from anyone who uses your referral link.
 
-However, there is no mention of a specific rate of return for each individual user, and the text does include a risk warning, indicating that investments in crypto and blockchain are high-risk and subject to market volatility.
-
-Therefore, while there may be potential for profit, it is crucial to exercise caution and thorough research before investing."""
-
-text1 = """Only users with locked Dynamic Liquidity (Liquidity Tokens) activate eligibility to receive RDNT emissions within the money market. 
-$RDNT Liquidity mining emissions can be instantly claimed for the total amount on the condition that they are zapped into locked dLP tokens by pairing the claimed $RDNT with wstETH/BNB.
-Alternatively, emissions may be vested for three months. Vesting RDNT may be claimed early for an exit penalty to receive 10-75% of rewards, decaying linearly during the three-month vesting period. 
-This penalty fee is then distributed 90% to the Radiant DAO reserve, and the remaining 10% is sent to the Radiant Starfleet Treasury.
-Locking dLP tokens is a one to twelve-month process and must be re-locked after maturity to continue receiving platform fees.
-For a detailed breakdown of how dynamic liquidity provisioning functions, visit the dLP section of the Gitbook.
-For a detailed breakdown of how Locking & Vesting work, visit the Manage Radiant section."""
-
-text2 = """ Based on the text you provided, there is no explicit mention of liquidity lock time. However, there is a section that talks about liquidity security, which could be interpreted as a reference to the liquidity lock time. 
-
-The section states, ""02 Total Security Liquidity locked up for a 5 years"" This could mean that the liquidity for the token is locked for a period of five years, which could help to stabilize the token's price and provide a sense of security for investors. However, without further information, it's difficult to confirm the exact duration of the liquidity lock time."""
-
-text3 = """The text does not explicitly state the total amount or supply of the token. However, based on the information provided, we can infer that the total supply of PunkPanda tokens is 275,000,000, with 65,000,000 tokens allocated to the incubator (token pre-sale, marketing, airdrops, and PandaPal sharing rewards)."""
-
-text4 = """Okey Dokey! Based on the provided text, here are the numerical information related to the rate of reward or profit:
-
-* Daily Return: 8% APR
-* Dev Fee: 5%
-
-Here's the information in a key-value format as requested:
-
-{
-"Daily Return": 8,
-"Dev Fee": 5
-}"""
-
-test = """Okey, I've gone through the text you provided, and I've extracted the numerical information related to the lock time as follows:
-
-* Lock time: 3, 6, and 9 months
-
-The text mentions that liquidity has been locked for 3, 6, and 9 months on Team Finance. The links provided in the text are:
-
-* https://www.team.finance/view-coin/0xC84D8d03aA41EF941721A4D77b24bB44D7C7Ac55?name=Empire%20Capital%20Token&symbol=ECC
-* https://bscscan.com/address/0xC84D8d03aA41EF941721A4D77b24bB44D7C7Ac55#code
-
-Please note that the lock time information is based on the information provided in the text and may not be up-to-date or accurate."""
+Please note that the APR is an annual rate, and the actual rate of return may vary depending on the duration of the investment. Additionally, the referral earnings are based on the CRO deposited from users who sign up through your referral link, and the actual earnings may vary depending on the number of referrals and the amount deposited by each referral."""
 extractor = FrontEndSpecsExtractor()
-fees = extractor.process_lock_time(test)
+
+fees = extractor.process_reward1(test)
 print(fees)

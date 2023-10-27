@@ -6,7 +6,7 @@ import symbolic_execution.ir_se
 from symbolic_execution.ir_se import *
 
 
-from nlp.nlp import FrontEndSpecsExtractor
+from nlp.text_analyzer import FrontEndSpecsExtractor
 from semantic_parser.semantic import Semantics
 from symbolic_execution.state_extractor import StateExtractor
 
