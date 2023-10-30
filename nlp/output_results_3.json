@@ -1,0 +1,874 @@
+{
+    "1": [
+        {
+            "clear": false
+        }
+    ],
+    "2": [
+        {
+            "clear": false
+        }
+    ],
+    "3": [
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        }
+    ],
+    "4": [
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        }
+    ],
+    "5": [
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        }
+    ],
+    "6": [
+        {
+            "clear": false
+        }
+    ],
+    "7": [
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        }
+    ],
+    "8": [
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        },
+        {
+            "clear": false
+        }
+    ],
+    "9": [
+        {
+            "lock": [
+                "5 years"
+            ]
+        },
+        {}
+    ],
+    "10": [
+        {},
+        {}
+    ],
+    "11": [
+        {
+            "lock": [
+                "1 year",
+                "1 year"
+            ]
+        },
+        {},
+        {
+            "lock": [
+                "30 days",
+                "30 days"
+            ]
+        },
+        {
+            "lock": [
+                "9 months",
+                "9 months"
+            ]
+        },
+        {}
+    ],
+    "12": [
+        {
+            "Daily reward/profit": 0.03,
+            "reward/profit": 10.95
+        }
+    ],
+    "13": [
+        {
+            "yield": 0.02
+        }
+    ],
+    "14": [
+        {
+            "Daily return": 0.08,
+            "apr": 0.08,
+            "Total return": 29.2,
+            "daily return": 0.08
+        }
+    ],
+    "15": [
+        {
+            "Daily return": 0.1,
+            "apr": 0.1
+        }
+    ],
+    "16": [
+        {
+            "Daily Profit apy": 0.08
+        },
+        {
+            "apy": 29.2,
+            "yield": 29.2,
+            "Daily return": 0.08
+        }
+    ],
+    "17": [
+        {
+            "Referral rewards": 0.1,
+            "Daily return": 0.03,
+            "apr": 10.95
+        }
+    ],
+    "18": [
+        {
+            "apr": 0.03
+        }
+    ],
+    "19": [
+        {
+            "profit": 0.03
+        },
+        {}
+    ],
+    "20": [
+        {
+            "Daily percentage return": 0.03
+        }
+    ],
+    "21": [
+        {
+            "daily rate": 0.03,
+            "apr": 10.95
+        }
+    ],
+    "22": [
+        {
+            "roi": 0.01
+        }
+    ],
+    "23": [
+        {
+            "Daily yield": 0.08
+        },
+        {
+            "instant reward": 0.08,
+            "reward": 0.08,
+            "profit": 0.08
+        }
+    ],
+    "24": [
+        {
+            "reward": 0.03,
+            "apr": 10.95
+        }
+    ],
+    "25": [
+        {
+            "Daily percentage return": 0.08,
+            "Annual percentage return": 29.2,
+            "apr": 29.2
+        },
+        {},
+        {}
+    ],
+    "26": [
+        {
+            "Daily return": 0.08,
+            "apr": 0.08,
+            "Total return": 29.2
+        }
+    ],
+    "27": [
+        {},
+        {}
+    ],
+    "28": [
+        {
+            "Daily reward/profit": 0.05
+        }
+    ],
+    "29": [
+        {
+            "Daily profit": 0.02,
+            "Referral rewards": 0.3
+        },
+        {
+            "Daily profit": 0.02,
+            "referral rewards": 0.3
+        }
+    ],
+    "30": [
+        {
+            "Daily rewards": 0.1,
+            "apr": 36.5,
+            "Referral rewards": 0.09
+        }
+    ],
+    "31": [
+        {
+            "Daily roi": 0.08
+        }
+    ],
+    "32": [
+        {
+            "return": 0.08,
+            "Bean apr": 29.2
+        }
+    ],
+    "33": [
+        {
+            "Daily yield": 0.08,
+            "daily yield": 0.4
+        },
+        {}
+    ],
+    "34": [
+        {
+            "Daily roi": 0.03
+        }
+    ],
+    "35": [
+        {
+            "Daily rewards": 0.08,
+            "apr": 0.9,
+            "Referral rewards": 0.1
+        }
+    ],
+    "36": [
+        {},
+        {
+            "profit": 0.015,
+            "daily return": 0.015,
+            "total return": 3.65
+        }
+    ],
+    "37": [
+        {
+            "Daily percentage return": 0.06,
+            "Annual percentage return": 21.9,
+            "apr": 21.9
+        },
+        {}
+    ],
+    "38": [
+        {
+            "Daily roi": 0.02
+        },
+        {
+            "Daily reward": 0.05,
+            "Referral reward": 0.2
+        }
+    ],
+    "39": [
+        {
+            "Daily roi": 0.015
+        },
+        {},
+        {
+            "profit": 0.0043
+        },
+        {},
+        {}
+    ],
+    "40": [
+        {
+            "Daily reward": 0.16,
+            "roi": 58.4,
+            "return": 58.4
+        },
+        {}
+    ],
+    "41": [
+        {
+            "apr": 29.2
+        }
+    ],
+    "42": [
+        {
+            "supply": 250000000
+        }
+    ],
+    "43": [
+        {
+            "supply": 275000000
+        }
+    ],
+    "44": [
+        {
+            "supply": 8000000
+        }
+    ],
+    "45": [
+        {
+            "supply": 50000000
+        }
+    ],
+    "46": [
+        {
+            "supply": 21000000
+        }
+    ],
+    "47": [
+        {
+            "supply": 3000000000
+        }
+    ],
+    "48": [
+        {
+            "supply": 500000000
+        }
+    ],
+    "49": [
+        {
+            "metadata": false
+        }
+    ],
+    "50": [
+        {
+            "pause": false
+        },
+        {
+            "pause": false
+        }
+    ],
+    "51": [
+        {
+            "pause": false
+        },
+        {
+            "pause": false
+        }
+    ],
+    "52": [
+        {
+            "pause": false
+        },
+        {
+            "pause": false
+        }
+    ],
+    "53": [
+        {
+            "pause": false
+        }
+    ],
+    "54": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "55": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "56": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "57": [
+        [
+            {},
+            {
+                "trading fees": 0.05
+            }
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "58": [
+        [
+            {},
+            {}
+        ],
+        [
+            {
+                "fee": 0.08
+            },
+            {}
+        ]
+    ],
+    "59": [
+        [
+            {
+                "fee": 0.01
+            },
+            {
+                "sell fee": 0.01,
+                "marketing fee": 0.01
+            }
+        ]
+    ],
+    "60": [
+        [
+            {
+                "Transaction fee": 0.04,
+                "transaction fee": 0.15,
+                "marketing fee": 0.04,
+                "strategic buyback fee": 0.07
+            },
+            {
+                "transaction fee": 0.15,
+                "marketing fee": 0.04
+            }
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "61": [
+        [
+            {
+                "Referral fee": 0.1
+            },
+            {
+                "referral fee": 0.1
+            }
+        ]
+    ],
+    "62": [
+        [
+            {
+                "Insurance fee": 0.1
+            },
+            {}
+        ]
+    ],
+    "63": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "64": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "65": [
+        [
+            {
+                "withdrawal fee": 0.06,
+                "deposit fee": 0.06
+            },
+            {
+                "withdrawal fee": 0.06,
+                "deposit fee": 0.06
+            }
+        ]
+    ],
+    "66": [
+        [
+            {
+                "tax": 0.02,
+                "second tax": 0.02,
+                "third tax": 0.02,
+                "fourth tax": 0.02,
+                "fifth tax": 0.03,
+                "sixth tax": 0.03
+            },
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "67": [
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "68": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "69": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "70": [
+        [
+            {},
+            {}
+        ],
+        [
+            {
+                "feedback tax": 0.8,
+                "Feedback tax": 0.8,
+                "tax": 0.8
+            },
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "71": [
+        [
+            {
+                "trade fee": 0.003
+            },
+            {
+                "trade fee": 0.00025
+            }
+        ]
+    ],
+    "72": [
+        [
+            {
+                "fee": 0.1,
+                "buy fee": 0.09,
+                "tax": 0.1
+            },
+            {
+                "buy fee": 0.09
+            }
+        ],
+        [
+            {
+                "fee": 0.1
+            },
+            {
+                "buy fee": 0.1
+            }
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "73": [
+        [
+            {
+                "Presale fee": 0.5
+            },
+            {}
+        ],
+        [
+            {
+                "tax": 0.1,
+                "fee": 0.1,
+                "Deposit fee": 0.2
+            },
+            {
+                "deposit fee": 0.2
+            }
+        ]
+    ],
+    "74": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "75": [
+        [
+            {},
+            {}
+        ],
+        [
+            {
+                "Withdrawal fee": 0.25,
+                "penalty fee": 0.25,
+                "fee": 0.03
+            },
+            {
+                "withdrawal fee": 0.25
+            }
+        ]
+    ],
+    "76": [
+        [
+            {
+                "fee": 0.04
+            },
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "77": [
+        [
+            {
+                "tax": 0.1
+            },
+            {
+                "buy tax": 0.01,
+                "sell tax": 0.1
+            }
+        ]
+    ],
+    "78": [
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "79": [
+        [
+            {
+                "buy tax": 0.15,
+                "sell tax": 0.15,
+                "fee": 0.015
+            },
+            {
+                "buy tax": 0.15,
+                "sell tax": 0.15
+            }
+        ],
+        [
+            {
+                "tax": 0.15
+            },
+            {
+                "buy tax": 0.15,
+                "sell tax": 0.15
+            }
+        ]
+    ],
+    "80": [
+        [
+            {
+                "tax": 0.8
+            },
+            {}
+        ],
+        [
+            {
+                "tax": 0.8
+            },
+            {}
+        ]
+    ],
+    "81": [
+        [
+            {
+                "tax": 0.09,
+                "fee": 0.09,
+                "tax fee": 0.09
+            },
+            {
+                "tax fee": 0.09,
+                "liquidity fee": 0.09
+            }
+        ]
+    ],
+    "82": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "83": [
+        [
+            {
+                "tax": 0.6
+            },
+            {}
+        ]
+    ],
+    "84": [
+        [
+            {
+                "fee": 0.03,
+                "total fee": 0.13,
+                "sell fee": 0.03
+            },
+            {
+                "sell fee": 0.1
+            }
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "85": [
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "86": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "87": [
+        [
+            {},
+            {}
+        ]
+    ],
+    "88": [
+        [
+            {
+                "Withdrawal tax": 0.3,
+                "tax": 0.3
+            },
+            {
+                "withdrawal tax": 0.3
+            }
+        ]
+    ],
+    "89": [
+        [
+            {
+                "Withdrawal fee": 0.15
+            },
+            {
+                "withdrawal fee": 0.15
+            }
+        ],
+        [
+            {
+                "fee": 3.65
+            },
+            {}
+        ]
+    ],
+    "90": [
+        [
+            {},
+            {}
+        ],
+        [
+            {
+                "Withdrawal fee": 0.8
+            },
+            {
+                "withdrawal fee": 0.8
+            }
+        ]
+    ],
+    "91": [
+        [
+            {
+                "tax": 0.1
+            },
+            {}
+        ],
+        [
+            {
+                "daily fee": 0.015
+            },
+            {}
+        ]
+    ],
+    "92": [
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "93": [
+        [
+            {
+                "Withdrawal fee": 0.6,
+                "withdrawal fee": 0.6
+            },
+            {
+                "withdrawal fee": 0.6
+            }
+        ],
+        [
+            {},
+            {}
+        ]
+    ],
+    "94": [
+        [
+            {
+                "fee": 0.02,
+                "total fee": 29.2
+            },
+            {
+                "dev fee": 29.2,
+                "marketing fee": 0.02
+            }
+        ]
+    ]
+}

@@ -9,7 +9,6 @@ from symbolic_execution.vargenerator import *
 from symbolic_execution.utils import *
 import zlib
 import base64
-from numpy import mod
 import logging
 import global_params
 
