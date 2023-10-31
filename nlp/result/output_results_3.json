@@ -371,51 +371,47 @@
     ],
     "54": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "55": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "56": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "57": [
         [
-            {},
+            true,
             {
                 "trading fees": 0.05
             }
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "58": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {
-                "fee": 0.08
-            },
+            true,
             {}
         ]
     ],
     "59": [
         [
-            {
-                "fee": 0.01
-            },
+            true,
             {
                 "sell fee": 0.01,
                 "marketing fee": 0.01
@@ -424,58 +420,44 @@
     ],
     "60": [
         [
-            {
-                "Transaction fee": 0.04,
-                "transaction fee": 0.15,
-                "marketing fee": 0.04,
-                "strategic buyback fee": 0.07
-            },
+            true,
             {
                 "transaction fee": 0.15,
                 "marketing fee": 0.04
             }
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "61": [
         [
-            {
-                "Referral fee": 0.1
-            },
-            {
-                "referral fee": 0.1
-            }
+            true,
+            {}
         ]
     ],
     "62": [
         [
-            {
-                "Insurance fee": 0.1
-            },
+            true,
             {}
         ]
     ],
     "63": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "64": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "65": [
         [
-            {
-                "withdrawal fee": 0.06,
-                "deposit fee": 0.06
-            },
+            true,
             {
                 "withdrawal fee": 0.06,
                 "deposit fee": 0.06
@@ -484,66 +466,53 @@
     ],
     "66": [
         [
-            {
-                "tax": 0.02,
-                "second tax": 0.02,
-                "third tax": 0.02,
-                "fourth tax": 0.02,
-                "fifth tax": 0.03,
-                "sixth tax": 0.03
-            },
+            true,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "67": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "68": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "69": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "70": [
         [
-            {},
+            true,
             {}
         ],
         [
-            {
-                "feedback tax": 0.8,
-                "Feedback tax": 0.8,
-                "tax": 0.8
-            },
+            true,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "71": [
         [
-            {
-                "trade fee": 0.003
-            },
+            true,
             {
                 "trade fee": 0.00025
             }
@@ -551,49 +520,38 @@
     ],
     "72": [
         [
-            {
-                "fee": 0.1,
-                "buy fee": 0.09,
-                "tax": 0.1
-            },
+            true,
             {
                 "buy fee": 0.09
             }
         ],
         [
+            true,
             {
-                "fee": 0.1
-            },
-            {
-                "buy fee": 0.1
+                "buy fee": 0.1,
+                "sell/transfer fee": 0.1
             }
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "73": [
         [
-            {
-                "Presale fee": 0.5
-            },
+            true,
             {}
         ],
         [
-            {
-                "tax": 0.1,
-                "fee": 0.1,
-                "Deposit fee": 0.2
-            },
+            true,
             {
                 "deposit fee": 0.2
             }
@@ -601,21 +559,17 @@
     ],
     "74": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "75": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {
-                "Withdrawal fee": 0.25,
-                "penalty fee": 0.25,
-                "fee": 0.03
-            },
+            true,
             {
                 "withdrawal fee": 0.25
             }
@@ -623,29 +577,25 @@
     ],
     "76": [
         [
-            {
-                "fee": 0.04
-            },
+            true,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "77": [
         [
-            {
-                "tax": 0.1
-            },
+            true,
             {
                 "buy tax": 0.01,
                 "sell tax": 0.1
@@ -654,34 +604,28 @@
     ],
     "78": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "79": [
         [
-            {
-                "buy tax": 0.15,
-                "sell tax": 0.15,
-                "fee": 0.015
-            },
+            true,
             {
                 "buy tax": 0.15,
                 "sell tax": 0.15
             }
         ],
         [
-            {
-                "tax": 0.15
-            },
+            true,
             {
                 "buy tax": 0.15,
                 "sell tax": 0.15
@@ -690,89 +634,71 @@
     ],
     "80": [
         [
-            {
-                "tax": 0.8
-            },
+            true,
             {}
         ],
         [
-            {
-                "tax": 0.8
-            },
+            true,
             {}
         ]
     ],
     "81": [
         [
+            true,
             {
-                "tax": 0.09,
-                "fee": 0.09,
-                "tax fee": 0.09
-            },
-            {
-                "tax fee": 0.09,
                 "liquidity fee": 0.09
             }
         ]
     ],
     "82": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "83": [
         [
-            {
-                "tax": 0.6
-            },
+            true,
             {}
         ]
     ],
     "84": [
         [
+            true,
             {
-                "fee": 0.03,
-                "total fee": 0.13,
                 "sell fee": 0.03
-            },
-            {
-                "sell fee": 0.1
             }
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "85": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "86": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "87": [
         [
-            {},
+            false,
             {}
         ]
     ],
     "88": [
         [
-            {
-                "Withdrawal tax": 0.3,
-                "tax": 0.3
-            },
+            true,
             {
                 "withdrawal tax": 0.3
             }
@@ -780,29 +706,23 @@
     ],
     "89": [
         [
-            {
-                "Withdrawal fee": 0.15
-            },
+            true,
             {
                 "withdrawal fee": 0.15
             }
         ],
         [
-            {
-                "fee": 3.65
-            },
+            true,
             {}
         ]
     ],
     "90": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {
-                "Withdrawal fee": 0.8
-            },
+            true,
             {
                 "withdrawal fee": 0.8
             }
@@ -810,61 +730,51 @@
     ],
     "91": [
         [
-            {
-                "tax": 0.1
-            },
+            true,
             {}
         ],
         [
-            {
-                "daily fee": 0.015
-            },
+            true,
             {}
         ]
     ],
     "92": [
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "93": [
         [
-            {
-                "Withdrawal fee": 0.6,
-                "withdrawal fee": 0.6
-            },
+            true,
             {
                 "withdrawal fee": 0.6
             }
         ],
         [
-            {},
+            false,
             {}
         ]
     ],
     "94": [
         [
-            {
-                "fee": 0.02,
-                "total fee": 29.2
-            },
+            true,
             {
                 "dev fee": 29.2,
                 "marketing fee": 0.02

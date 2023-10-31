@@ -1,0 +1,749 @@
+{
+    "1": {
+        "clear": false
+    },
+    "2": {
+        "clear": false
+    },
+    "3": {
+        "clear": false
+    },
+    "4": {
+        "clear": false
+    },
+    "5": {
+        "clear": false
+    },
+    "6": {
+        "clear": false
+    },
+    "7": {
+        "clear": false
+    },
+    "8": {
+        "clear": false
+    },
+    "9": {
+        "lock": [
+            "5 years"
+        ]
+    },
+    "10": {},
+    "11": {
+        "lock": [
+            "1 year",
+            "1 year",
+            "30 days",
+            "30 days",
+            "9 months",
+            "9 months"
+        ]
+    },
+    "12": {
+        "reward": {
+            "daily reward/profit": 0.03,
+            "reward/profit": 10.95
+        }
+    },
+    "13": {
+        "reward": {
+            "yield": 0.02
+        }
+    },
+    "14": {
+        "reward": {
+            "daily return": 0.08,
+            "apr": 0.08,
+            "total return": 29.2
+        }
+    },
+    "15": {
+        "reward": {
+            "daily return": 0.1,
+            "apr": 0.1
+        }
+    },
+    "16": {
+        "reward": {
+            "daily profit apy": 0.08
+        }
+    },
+    "17": {
+        "reward": {
+            "referral rewards": 0.1,
+            "daily return": 0.03,
+            "apr": 10.95
+        }
+    },
+    "18": {
+        "reward": {
+            "apr": 0.03
+        }
+    },
+    "19": {
+        "reward": {
+            "profit": 0.03
+        }
+    },
+    "20": {
+        "reward": {
+            "daily percentage return": 0.03
+        }
+    },
+    "21": {
+        "reward": {
+            "daily rate": 0.03,
+            "apr": 10.95
+        }
+    },
+    "22": {
+        "reward": {
+            "roi": 0.01
+        }
+    },
+    "23": {
+        "reward": {
+            "daily yield": 0.08
+        }
+    },
+    "24": {
+        "reward": {
+            "reward": 0.03,
+            "apr": 10.95
+        }
+    },
+    "25": {
+        "reward": {
+            "daily percentage return": 0.08,
+            "annual percentage return": 29.2,
+            "apr": 29.2
+        }
+    },
+    "26": {
+        "reward": {
+            "daily return": 0.08,
+            "apr": 0.08,
+            "total return": 29.2
+        }
+    },
+    "27": {
+        "reward": {}
+    },
+    "28": {
+        "reward": {
+            "daily reward/profit": 0.05
+        }
+    },
+    "29": {
+        "reward": {
+            "daily profit": 0.02,
+            "referral rewards": 0.3
+        }
+    },
+    "30": {
+        "reward": {
+            "daily rewards": 0.1,
+            "apr": 36.5,
+            "referral rewards": 0.09
+        }
+    },
+    "31": {
+        "reward": {
+            "daily roi": 0.08
+        }
+    },
+    "32": {
+        "reward": {
+            "return": 0.08,
+            "bean apr": 29.2
+        }
+    },
+    "33": {
+        "reward": {
+            "daily yield": 0.4
+        }
+    },
+    "34": {
+        "reward": {
+            "daily roi": 0.03
+        }
+    },
+    "35": {
+        "reward": {
+            "daily rewards": 0.08,
+            "apr": 0.9,
+            "referral rewards": 0.1
+        }
+    },
+    "36": {
+        "reward": {}
+    },
+    "37": {
+        "reward": {
+            "daily percentage return": 0.06,
+            "annual percentage return": 21.9,
+            "apr": 21.9
+        }
+    },
+    "38": {
+        "reward": {
+            "daily roi": 0.02
+        }
+    },
+    "39": {
+        "reward": {
+            "daily roi": 0.015
+        }
+    },
+    "40": {
+        "reward": {
+            "daily reward": 0.16,
+            "roi": 58.4,
+            "return": 58.4
+        }
+    },
+    "41": {
+        "reward": {
+            "apr": 29.2
+        }
+    },
+    "42": {
+        "supply": 250000000
+    },
+    "43": {
+        "supply": 275000000
+    },
+    "44": {
+        "supply": 8000000
+    },
+    "45": {
+        "supply": 50000000
+    },
+    "46": {
+        "supply": 21000000
+    },
+    "47": {
+        "supply": 3000000000
+    },
+    "48": {
+        "supply": 500000000
+    },
+    "49": {
+        "metadata": false
+    },
+    "50": {
+        "pause": false
+    },
+    "51": {
+        "pause": false
+    },
+    "52": {
+        "pause": false
+    },
+    "53": {
+        "pause": false
+    },
+    "54": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "55": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "56": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "57": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.16,
+                0.16,
+                0.16,
+                0.16,
+                0.05,
+                0.05,
+                0.05,
+                0.05,
+                0.05,
+                0.05,
+                0.05,
+                0.05,
+                0.05
+            ],
+            "fees": {
+                "trading fees": 0.05
+            }
+        }
+    },
+    "58": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "59": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.01,
+                0.01,
+                0.01,
+                0.01
+            ],
+            "fees": {
+                "sell fee": 0.01,
+                "marketing fee": 0.01
+            }
+        }
+    },
+    "60": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.04,
+                0.04,
+                0.15,
+                0.15,
+                0.04,
+                0.04,
+                0.07
+            ],
+            "fees": {
+                "transaction fee": 0.15,
+                "marketing fee": 0.04
+            }
+        }
+    },
+    "61": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1
+            ],
+            "fees": {}
+        }
+    },
+    "62": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1
+            ],
+            "fees": {}
+        }
+    },
+    "63": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "64": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "65": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.06,
+                0.06,
+                0.06,
+                0.06,
+                0.06,
+                0.06
+            ],
+            "fees": {
+                "withdrawal fee": 0.06,
+                "deposit fee": 0.06
+            }
+        }
+    },
+    "66": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.09,
+                0.02,
+                0.02,
+                0.02,
+                0.02,
+                0.03,
+                0.03,
+                0.09,
+                0.02,
+                0.02
+            ],
+            "fees": {}
+        }
+    },
+    "67": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "68": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "69": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "70": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.8
+            ],
+            "fees": {}
+        }
+    },
+    "71": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.003,
+                0.003,
+                0.003,
+                0.003,
+                0.003,
+                0.003,
+                0.003,
+                0.001,
+                0.0006,
+                0.0004,
+                0.0005,
+                0.00025
+            ],
+            "fees": {
+                "trade fee": 0.00025
+            }
+        }
+    },
+    "72": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.1,
+                0.1,
+                0.09,
+                0.09
+            ],
+            "fees": {
+                "buy fee": 0.09
+            }
+        }
+    },
+    "73": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.5
+            ],
+            "fees": {}
+        }
+    },
+    "74": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "75": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "76": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.04
+            ],
+            "fees": {}
+        }
+    },
+    "77": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.01,
+                0.01,
+                0.1,
+                0.1,
+                0.0
+            ],
+            "fees": {
+                "buy tax": 0.01,
+                "sell tax": 0.1
+            }
+        }
+    },
+    "78": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "79": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.15,
+                0.15,
+                0.15,
+                0.15,
+                0.015,
+                0.015,
+                0.015,
+                0.015,
+                0.015
+            ],
+            "fees": {
+                "buy tax": 0.15,
+                "sell tax": 0.15
+            }
+        }
+    },
+    "80": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.8,
+                0.8,
+                0.8,
+                0.8,
+                0.8,
+                0.8,
+                0.8
+            ],
+            "fees": {}
+        }
+    },
+    "81": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09,
+                0.09
+            ],
+            "fees": {
+                "liquidity fee": 0.09
+            }
+        }
+    },
+    "82": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "83": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.1,
+                0.6,
+                0.6
+            ],
+            "fees": {}
+        }
+    },
+    "84": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.0,
+                0.0,
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.1,
+                0.13,
+                0.03,
+                0.03,
+                0.03,
+                0.03,
+                0.03,
+                0.03,
+                0.03,
+                0.03
+            ],
+            "fees": {
+                "sell fee": 0.03
+            }
+        }
+    },
+    "85": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "86": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "87": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "88": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.3,
+                0.3,
+                0.3,
+                0.3,
+                0.3,
+                0.3,
+                0.3,
+                0.3
+            ],
+            "fees": {
+                "withdrawal tax": 0.3
+            }
+        }
+    },
+    "89": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.15,
+                0.15
+            ],
+            "fees": {
+                "withdrawal fee": 0.15
+            }
+        }
+    },
+    "90": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "91": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.1,
+                0.1
+            ],
+            "fees": {}
+        }
+    },
+    "92": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "93": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.6,
+                0.6,
+                0.6,
+                0.6
+            ],
+            "fees": {
+                "withdrawal fee": 0.6
+            }
+        }
+    },
+    "94": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                29.2,
+                29.2,
+                29.2,
+                29.2,
+                29.2,
+                29.2,
+                29.2,
+                29.2,
+                0.03,
+                0.02,
+                0.02,
+                29.2,
+                0.03
+            ],
+            "fees": {
+                "dev fee": 29.2,
+                "marketing fee": 0.02
+            }
+        }
+    }
+}

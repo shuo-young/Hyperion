@@ -2,12 +2,30 @@ import json
 import pandas as pd
 from text_analyzer import FrontEndSpecsExtractor
 
-excel_file = "all_case_2.xlsx"
+excel_file = "dataset/all_case_2.xlsx"
 df = pd.read_excel(excel_file)
 
 results = {}
 
 extractor = FrontEndSpecsExtractor()
+
+
+def merge_dicts(dict1, dict2):
+    """merge two dict"""
+    for key, value in dict2.items():
+        if key in dict1:
+            if isinstance(value, bool):
+                dict1[key] = dict1[key] or value
+            elif isinstance(value, list):
+                dict1[key].extend(value)
+            elif isinstance(value, float):
+                if not isinstance(dict1[key], list):
+                    dict1[key] = [dict1[key]]
+                elif value not in dict1.values():
+                    dict1[key].append(value)
+        else:
+            dict1[key] = value
+    return dict1
 
 
 def process_output_1(row):
@@ -31,16 +49,16 @@ def process_output_1(row):
     else:
         result = None
 
-    # 获取id并将处理结果存储到字典中
+    # merge results of the same id
     id_value = row['id']
     if id_value in results:
-        results[id_value].append(result)
+        results[id_value] = merge_dicts(results[id_value], result)
     else:
-        results[id_value] = [result]
+        results[id_value] = result
 
 
 for index, row in df.iterrows():
     process_output_1(row)
 
-with open('output_results_3.json', 'w') as json_file:
+with open('result/output_results_4.json', 'w') as json_file:
     json.dump(results, json_file, indent=4)

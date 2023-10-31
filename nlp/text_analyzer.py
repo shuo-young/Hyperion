@@ -84,10 +84,11 @@ class FrontEndSpecsExtractor:
                     ):
                         fee_type.insert(0, tagged[k][0])
                         k -= 1
-                    fee_name = ' '.join(fee_type) + ' ' + word.lower()
-                    rewards[fee_name.strip()] = percentages_forward
-
-        return rewards
+                    reward_name = ' '.join(fee_type) + ' ' + word.lower()
+                    rewards[reward_name.strip().lower()] = percentages_forward
+        result = {}
+        result["reward"] = rewards
+        return result
 
     # def process_reward(self, text):
     #     keywords = ['reward', 'return']
@@ -251,29 +252,31 @@ class FrontEndSpecsExtractor:
             # Remove commas and percentage signs, then convert to float and divide by 100
             return float(percent_str.replace(',', '').replace('%', '')) / 100
 
-        general_keywords = ['fee', 'tax']
+        # define keywords and synonyms
+        general_keywords = ['fee', 'tax', 'fees']
+        general_synonyms = {'fee': ['charge', 'cost'], 'tax': ['levy', 'duty']}
         specific_prefixes = [
             'buy',
             'sell',
             'withdrawal',
+            'trading',
+            'trade',
+            'transaction',
             'dev',
             'marketing',
-            'burn',
-            'transaction',
-            'referral',
             'deposit',
-            'trade',
-            'trading',
-            'tax',
+            'sell/transfer',
             'liquidity',
         ]
-        specific_suffixes = ['tax', 'fee', 'fees']
 
+        # tokenize text
         words = word_tokenize(text)
         tagged = pos_tag(words)
 
-        fees_general = {}
-        fees_specific = {}
+        # initialize result
+        has_fee = False
+        fees = {}
+        fee_values = []  # list to store all fee values found
 
         def search_values(index, direction=1, limit=5):
             values = []
@@ -282,7 +285,7 @@ class FrontEndSpecsExtractor:
                 index += direction
                 if index < 0 or index >= len(tagged):
                     break
-                if tagged[index][0] == '\n':
+                if tagged[index][0] in ['\n', '\r']:
                     break
                 if tagged[index][0] == '(':
                     skip_parenthesis = True
@@ -300,52 +303,43 @@ class FrontEndSpecsExtractor:
                         and tagged[index + 1][0] == '%'
                     ):
                         values.append(percent_to_float(tagged[index][0]))
+                        fee_values.append(
+                            percent_to_float(tagged[index][0])
+                        )  # add fee value to the list
                         index += 1
                 limit -= 1
             # return the first found value
             if len(values) > 0:
                 return values[0]
-            return values
+            return None
 
-        for i, (word, tag) in enumerate(tagged[:-1]):
+        for i, (word, tag) in enumerate(tagged):
             current_word = word.lower()
-            next_word = tagged[i + 1][0].lower()
 
-            # Check if there's a percentage right before the keyword
-            if i > 1 and tagged[i - 2][1] in ['CD', 'JJ'] and tagged[i - 1][0] == '%':
-                percentage = percent_to_float(tagged[i - 2][0])
-            else:
-                percentage = None
-
-            # First, match general keywords
+            # check if contains general keywords fee/tax
             if current_word in general_keywords:
+                percentage = search_values(i, direction=1, limit=5)
                 if not percentage:
-                    percentage = search_values(i, direction=1, limit=4)
+                    percentage = search_values(i, direction=-1, limit=7)
+                if percentage and percentage != '0%':
+                    has_fee = True
+
+            # find fee type
+            if current_word in specific_prefixes:
+                next_word = tagged[i + 1][0].lower()
+                if next_word in general_keywords or next_word in general_synonyms.get(
+                    next_word, []
+                ):
+                    combined_keyword = current_word + " " + next_word
+                    percentage = search_values(i, direction=1, limit=5)
                     if not percentage:
                         percentage = search_values(i, direction=-1, limit=7)
-                if percentage:
-                    fee_type = []
-                    k = i - 1
-                    while k >= 0 and (
-                        tagged[k][1] in ['NN', 'NNS', '&', 'JJ']
-                        and tagged[k][0] not in ['%', '*']
-                    ):
-                        fee_type.insert(0, tagged[k][0])
-                        k -= 1
-                    fee_name = ' '.join(fee_type) + ' ' + word.lower()
-                    fees_general[fee_name.strip()] = percentage
-
-            # Then, match specific keywords
-            if current_word in specific_prefixes and next_word in specific_suffixes:
-                combined_keyword = current_word + " " + next_word
-                if not percentage:
-                    percentage = search_values(i + 1, direction=1, limit=4)
-                    if not percentage:
-                        percentage = search_values(i, direction=-1, limit=7)
-                if percentage:
-                    fees_specific[combined_keyword] = percentage
-
-        return fees_general, fees_specific
+                    if percentage and percentage != '0%':
+                        # if combined_keyword not in fees.keys():
+                        fees[combined_keyword.lower()] = percentage
+        result = {}
+        result["fee"] = {"has_fee": has_fee, "fee_values": fee_values, "fees": fees}
+        return result
 
     def process_lock_time(self, text):
         words = word_tokenize(text)
@@ -495,15 +489,18 @@ class FrontEndSpecsExtractor:
 
 # test case remained
 test = """"
-  Sure, I'd be happy to help! Based on the text you provided, here are the numerical information related to the rate of fee or tax:
+  "  Sure, I can help you extract numerical information related to the rate of fee or tax from the provided text. Here are the relevant details:
 
-1. Buy fee: 0%
-2. Sell fee: 10%
-3. Fee is automatically added to LP: 3%
+1. Fee/Tax Rate: 10%
+	* The text states that there is a 10% fee that the stakes seller pays.
+2. Buyback Rate: 8%
+	* The text states that 8% of the fee will be buybacked to the contract's current day lobby.
+3. Referral Bonus: 1% (for referrals) and 5% (for referrers)
+	* The text states that referrals will earn an extra 1% minted AVC tokens on their auction lobby collect, and referrers will earn an extra 5%.
 
-So, the total fee rate is 13% (10% sell fee + 3% fee added to LP)."""
+I hope this information is helpful! Let me know if you have any further questions or if there's anything else I can help with."""
 extractor = FrontEndSpecsExtractor()
 
 # for test
-fees = extractor.process_fee(test)
+# fees = extractor.process_fee(test)
 # print(fees)

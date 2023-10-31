@@ -13,7 +13,7 @@ fi
 while IFS=, read -r address platform
 do
     # Run the Python command with the extracted address and platform, and log the output
-    python3 main.py -a "$address" -bp "$platform" -d "result/wild_1026" -v > "experiment_logset/wild_1026/${address}.log" 2>&1 &
+    python3 main.py -a "$address" -bp "$platform" -d "result/wild_1031" -v > "experiment_logset/wild_1031/${address}.log" 2>&1 &
 done < "$csv_file_path"
 
 # Wait for all background processes to finish

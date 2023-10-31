@@ -90,7 +90,7 @@ class Decompiler:
         # use hyperion client to analyze the contract
         logging.info("Decompiling contract...")
         command = (
-            "cd ./gigahorse-toolchain && ./gigahorse.py -j 20 -C ./clients/hyperion.dl "
+            "cd ./gigahorse-toolchain && ./gigahorse.py -C ./clients/hyperion.dl "
             + CONTRACT_DIR
             + "{contract_addr}.hex >/dev/null 2>&1"
         )
