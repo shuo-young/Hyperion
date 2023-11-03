@@ -39,6 +39,7 @@ class Parameter:
             "global_state": {},
             "path_conditions_and_vars": {},
             "target_params": None,
+            "privatefun_defs": {},
         }
         for attr, default in six.iteritems(attr_defaults):
             setattr(self, attr, kwargs.get(attr, default))
@@ -220,6 +221,9 @@ class CustomSolver:
         else:
             raise Exception("Cannot pop from an empty stack!")
 
+    def model(self):
+        return self.solver.model()
+
     def can_pop(self):
         return self.push_count > 0
 
@@ -314,9 +318,6 @@ def initGlobalVars():
     # to generate names for symbolic variables
     global gen
     gen = Generator()
-
-    global var_to_source
-    var_to_source = {}
 
 
 def run_build_cfg_and_analyze(target_params):
@@ -559,6 +560,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     global path
     global result
     global state_extractor
+    global g_disasm_file
 
     stack = params.stack
     mem = params.mem
@@ -573,8 +575,16 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # pass the stored states
     var_to_source = params.var_to_source
     target_params = params.target_params
+    privatefun_defs = params.privatefun_defs
 
-    # print(target_params.fund_transfer_info)
+    current_func_id = functions[tac_block_function[block.ident]].ident
+    # mark the defs to the private function memory
+    if current_func_id in privatefun_defs.keys():
+        if isinstance(defs, list):
+            for subitem in defs:
+                if isinstance(subitem, str):
+                    privatefun_defs[current_func_id].append(subitem)
+
     # hex value tranformed to int type (base 10)
     # var remain to strings
 
@@ -613,12 +623,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
             computed = first + second
         else:
             # both are real and we need to manually modulus with 2 ** 256
@@ -626,6 +630,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             computed = (first + second) % (2**256)
         computed = simplify(computed) if is_expr(computed) else computed
 
+        # future will add overflow check
         # if not isAllReal(computed, first):
         #     solver.push()
         #     solver.add(UGT(first, computed))
@@ -641,22 +646,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         if isReal(first) and isSymbolic(second):
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
             first = BitVecVal(first, 256)
         elif isSymbolic(first) and isReal(second):
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
             second = BitVecVal(second, 256)
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
         computed = first * second & UNSIGNED_BOUND_NUMBER
         computed = simplify(computed) if is_expr(computed) else computed
         var_to_source[defs[0]] = computed
@@ -667,24 +662,14 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         if isReal(first) and isSymbolic(second):
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
             first = BitVecVal(first, 256)
             computed = first - second
         elif isSymbolic(first) and isReal(second):
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
             second = BitVecVal(second, 256)
             computed = first - second
         elif isSymbolic(first) and isSymbolic(second):
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
             computed = first - second
         else:
             computed = (first - second) % (2**256)
@@ -704,8 +689,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "DIV":
         first = var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
         second = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-        # print(f"First: {first}")
-        # print(f"Second: {second}")
         if isAllReal(first, second):
             if second == 0:
                 computed = 0
@@ -718,22 +701,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             second = to_symbolic(second)
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # solver.push()
-            # solver.add(Not(second == 0))
-            # print("Solver: ")
-            # print(solver)
-            # if check_sat(solver) == unsat or unknown:
-            # computed = 0
-            # else:
-            # if UDIV Phase failed, may cause by the phi return
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
             computed = UDiv(first, second)
-            # solver.pop()
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
         log.debug(computed)
@@ -966,14 +934,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # miss cases due to PHI opcode
-            # try to generate a new var in z3 formula
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
+            # miss cases due to PHI ir code
             computed = If(ULT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -994,13 +955,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
         else:
             log.debug(f"First: {first}, Type of First: {type(first)}")
             log.debug(f"Second: {second}, Type of Second: {type(second)}")
-            # try to generate a new var in z3 formula if meet str
-            # if isinstance(first, str):
-            #     first = BitVec(first, 256)
-            #     log.debug(var_to_source)
-            # if isinstance(second, str):
-            #     second = BitVec(second, 256)
-            #     log.debug(var_to_source)
             computed = If(UGT(first, second), BitVecVal(1, 256), BitVecVal(0, 256))
         computed = simplify(computed) if is_expr(computed) else computed
         log.debug("Computed:")
@@ -1102,7 +1056,6 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     # (2) tar = phi var, 0x0; var => tar
     # (3) tar = phi var, var; var1 => tar, and var2 => tar, however, one can be constant in var map
     elif opcode == "PHI":
-        # log.debug(var_to_source)
         flow_to = defs[0]
         if isReal(uses[0]) and isSymbolic(uses[1]):
             if uses[1] not in var_to_source.keys():
@@ -1184,8 +1137,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
 
             # *Slot id in memory[63] <= MSTORE(64, slot)
             slot = memory[63]
-            # print(slot)
-            # print(sha3_list)
+            # log.info(slot)
+            # log.info(sha3_list)
             position = "".join(data)
             position = re.sub("[\s+]", "", position)
             position = zlib.compress(six.b(position), 9)
@@ -1256,62 +1209,62 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "CALLDATACOPY":  # Copy inputter data to memory
         #  TODO: Don't know how to simulate this yet
         pass
-    # elif opcode == "CODESIZE":
-    #     if g_disasm_file.endswith(".disasm"):
-    #         evm_file_name = g_disasm_file[:-7]
-    #     else:
-    #         evm_file_name = g_disasm_file
-    #     with open(evm_file_name, "r") as evm_file:
-    #         evm = evm_file.read()[:-1]
-    #         code_size = len(evm) / 2
-    #         var_to_source[defs[0]] = code_size
-    # elif opcode == "CODECOPY":
-    #     mem_location = (
-    #         var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
-    #     )
-    #     code_from = (
-    #         var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
-    #     )
-    #     no_bytes = (
-    #         var_to_source[uses[2]] if uses[2] in var_to_source.keys() else uses[2]
-    #     )
-    #     current_miu_i = global_state["miu_i"]
+    elif opcode == "CODESIZE":
+        if g_disasm_file.endswith(".dasm"):
+            evm_file_name = g_disasm_file[:-7]
+        else:
+            evm_file_name = g_disasm_file
+        with open(evm_file_name, "r") as evm_file:
+            evm = evm_file.read()[:-1]
+            code_size = len(evm) / 2
+            var_to_source[defs[0]] = code_size
+    elif opcode == "CODECOPY":
+        mem_location = (
+            var_to_source[uses[0]] if uses[0] in var_to_source.keys() else uses[0]
+        )
+        code_from = (
+            var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
+        )
+        no_bytes = (
+            var_to_source[uses[2]] if uses[2] in var_to_source.keys() else uses[2]
+        )
+        current_miu_i = global_state["miu_i"]
 
-    #     if isAllReal(mem_location, current_miu_i, code_from, no_bytes):
-    #         temp = int(math.ceil((mem_location + no_bytes) / float(32)))
-    #         if temp > current_miu_i:
-    #             current_miu_i = temp
+        if isAllReal(mem_location, current_miu_i, code_from, no_bytes):
+            temp = int(math.ceil((mem_location + no_bytes) / float(32)))
+            if temp > current_miu_i:
+                current_miu_i = temp
 
-    #         if g_disasm_file.endswith(".disasm"):
-    #             evm_file_name = g_disasm_file[:-7]
-    #         else:
-    #             evm_file_name = g_disasm_file
-    #         with open(evm_file_name, "r") as evm_file:
-    #             evm = evm_file.read()[:-1]
-    #             start = code_from * 2
-    #             end = start + no_bytes * 2
-    #             code = evm[start:end]
-    #         mem[mem_location] = int(code, 16)
-    #     else:
-    #         new_var_name = gen.gen_code_var("Ia", code_from, no_bytes)
-    #         if new_var_name in path_conditions_and_vars:
-    #             new_var = path_conditions_and_vars[new_var_name]
-    #         else:
-    #             new_var = BitVec(new_var_name, 256)
-    #             path_conditions_and_vars[new_var_name] = new_var
+            if g_disasm_file.endswith(".dasm"):
+                evm_file_name = g_disasm_file[:-7]
+            else:
+                evm_file_name = g_disasm_file
+            with open(evm_file_name, "r") as evm_file:
+                evm = evm_file.read()[:-1]
+                start = code_from * 2
+                end = start + no_bytes * 2
+                code = evm[start:end]
+            mem[mem_location] = int(code, 16)
+        else:
+            new_var_name = gen.gen_code_var("Ia", code_from, no_bytes)
+            if new_var_name in path_conditions_and_vars:
+                new_var = path_conditions_and_vars[new_var_name]
+            else:
+                new_var = BitVec(new_var_name, 256)
+                path_conditions_and_vars[new_var_name] = new_var
 
-    #         temp = ((mem_location + no_bytes) / 32) + 1
-    #         current_miu_i = to_symbolic(current_miu_i)
-    #         expression = current_miu_i < temp
-    #         solver.push()
-    #         solver.add(expression)
-    #         if MSIZE:
-    #             if check_sat(solver) != unsat:
-    #                 current_miu_i = If(expression, temp, current_miu_i)
-    #         solver.pop()
-    #         mem.clear()  # very conservative
-    #         mem[str(mem_location)] = new_var
-    #     global_state["miu_i"] = current_miu_i
+            temp = ((mem_location + no_bytes) / 32) + 1
+            current_miu_i = to_symbolic(current_miu_i)
+            expression = current_miu_i < temp
+            solver.push()
+            solver.add(expression)
+            if MSIZE:
+                if check_sat(solver) != unsat:
+                    current_miu_i = If(expression, temp, current_miu_i)
+            solver.pop()
+            mem.clear()  # very conservative
+            mem[str(mem_location)] = new_var
+        global_state["miu_i"] = current_miu_i
 
     elif opcode == "RETURNDATACOPY":
         pass
@@ -1434,9 +1387,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         )
         # MSTORE slotid to MEM32
-        # print(stored_address)
-        # print(stored_value)
-        # print(mem)
+        # log.info(stored_address)
+        # log.info(stored_value)
+        # log.info(mem)
         current_miu_i = global_state["miu_i"]
         if isReal(stored_address):
             # preparing data for hashing later
@@ -1582,20 +1535,20 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
     elif opcode == "JUMP":
         # know jump target in the successors identified (length = 1)
         target_block = uses[0]
-        # print(block.successors[0].ident)
+        # log.info(block.successors[0].ident)
 
     elif opcode == "JUMPI":
         # We need to prepare two branches
         target_address = uses[0]
-        # print(hex(target_address))
+        # log.info(hex(target_address))
 
         for successor in block.successors:
             if successor.ident.startswith(hex(target_address)):
                 block.set_jump_target(successor)
             else:
                 block.set_falls_to(successor)
-        # print(block.get_jump_target().ident)
-        # print(block.get_falls_to().ident)
+        # log.info(block.get_jump_target().ident)
+        # log.info(block.get_falls_to().ident)
         flag = var_to_source[uses[1]] if uses[1] in var_to_source.keys() else uses[1]
         branch_expression = BitVecVal(0, 1) == BitVecVal(1, 1)
         if isReal(flag):
@@ -1760,12 +1713,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                         in target_params.state_dependency_info.slot_dependency_map.keys()
                                     ):
                                         result["fee"]["modifiable"] = True
-                    # try:
-                    expr = state_extractor.compute_coefficient(str(res[ident][1]))
-                    if expr:
-                        log.info(expr)
-                    # except:
-                    # pass
+                    try:
+                        expr = state_extractor.compute_coefficient(str(res[ident][1]))
+                        if expr:
+                            log.info(expr)
+                    except:
+                        pass
                     if target_params.funcSign not in result["fee"].keys():
                         result["fee"][target_params.funcSign] = {}
                         # bypass the 0 value
@@ -2130,6 +2083,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             var_to_source[hex(uses[0]).replace("0x", "v") + "arg" + str(i - 1)] = uses[
                 i
             ]
+        privatefun_defs[target_private_fun] = []
 
     elif opcode == "RETURNPRIVATE":
         # should not use the return arg as the return target
@@ -2149,6 +2103,11 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             else:
                 var_to_source[return_defs[i - 1]] = var_to_source[uses[i]]
             log.debug(var_to_source[return_defs[i - 1]])
+        if functions[tac_block_function[block.ident]].ident in privatefun_defs.keys():
+            for i in privatefun_defs[functions[tac_block_function[block.ident]].ident]:
+                if i in var_to_source.keys():
+                    var_to_source.pop(i)
+        privatefun_defs[functions[tac_block_function[block.ident]].ident] = []
     elif opcode == "THROW":
         pass
     else:
@@ -2172,6 +2131,7 @@ def run(inputs, state):
     global func_map
     global path
     global state_extractor
+    global g_disasm_file
 
     result = {
         "reward": {},
@@ -2191,6 +2151,7 @@ def run(inputs, state):
     func_map = inputs["func_map"]
     path = inputs["path"]
     state_extractor = state
+    g_disasm_file = inputs["dasm_path"]
 
     log.info("============ Begin SE ===========")
     for funcSign in funcs_to_be_checked:

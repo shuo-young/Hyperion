@@ -16,6 +16,9 @@ class Decompiler:
             self.address = self.format_addr(address)
         self.block_number = block_number
         self.path = "./gigahorse-toolchain/.temp/" + self.address + "/out/"
+        self.dasm_path = (
+            "./gigahorse-toolchain/.temp/" + self.address + "/contract.dasm"
+        )
         self.analyze()
 
     def analyze(self):

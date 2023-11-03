@@ -12,6 +12,7 @@ class TargetedParameters:
             # target func sign
             "funcSign": '',
             "path": '',
+            "dasm_path": '',
             "target_func": '',
             "target_block": None,
             "fund_transfer_info": None,
@@ -100,6 +101,7 @@ class Semantics:
                 'blocks': blocks,
                 'functions': functions,
                 'path': self.decompiler.path,
+                'dasm_path': self.decompiler.dasm_path,
                 'tac_block_function': tac_block_function,
                 'funcs_to_be_checked': self.funcs_to_be_checked,
                 'func_map': self.func_map,

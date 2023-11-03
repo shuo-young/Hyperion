@@ -46,7 +46,7 @@ def analyze_dapp():
     result, exit_code = symbolic_execution.ir_se.run(inputs, state_extractor)
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
-    result["mint"]["amount"] = semantic.supply_amount
+    result["supply"]["amount"] = semantic.supply_amount
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
     filename = args.output_dir + "/" + source["address"] + ".json"
