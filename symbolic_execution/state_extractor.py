@@ -1,6 +1,7 @@
-import regex as re
 from web3 import Web3
 import logging
+from z3 import *
+from utils import *
 
 log = logging.getLogger(__name__)
 
@@ -57,67 +58,28 @@ class StateExtractor:
         else:
             self.url = ""
 
-    def extract_coefficient_from_division(self, expr):
-        # match outer bvudiv_i function
-        pattern = r"bvudiv_i\s*\(\s*((?:[^,()]+|(?R))+)\s*,\s*((?:[^,()]+|(?R))+)\)"
-        match = re.search(pattern, expr)
+    # used by the checker in a pragram point
+    # get the states of the point
+    def get_from_var(self, expr):
+        if not is_expr(expr):
+            return
+        list_vars = get_vars(expr)
+        for var in list_vars:
+            # check if a var is global
+            if is_storage_var(var):
+                pos = get_storage_position(var)
+                constant = self.get_chain_value(pos)
+                log.info({pos: constant})
 
-        if not match:
-            return None, None
-
-        numerator_expr = match.group(1).strip()
-        denominator_expr = match.group(2).strip()
-
-        log.info(numerator_expr)
-        log.info(denominator_expr)
-
-        return numerator_expr, denominator_expr
-
-    def get_chain_value(self, store_slot):
+    def get_chain_value(self, var):
         if self.url.startswith("https"):
             w3 = Web3(Web3.HTTPProvider(self.url))
         else:
             w3 = Web3(Web3.WebsocketProvider(self.url))
         contract_address = Web3.to_checksum_address(self.address)
         # judge storage value
-        if "Ia_store" in store_slot:
-            slot_number = int(store_slot.split('-')[1])
+        if is_storage_var(var):
+            slot_number = get_storage_position(var)
             storage_value = w3.eth.get_storage_at(contract_address, slot_number)
             return int(storage_value.hex(), 16)
-        # return if is const
-        try:
-            return int(expr)
-        except:
-            pass
-        # for other expr
         return None
-
-    def compute_coefficient(self, expr):
-        numerator_expr, denominator_expr = self.extract_coefficient_from_division(expr)
-        if not numerator_expr:
-            return None
-
-        # extract coefficient
-        coeff_match = re.search(r'^\d+', numerator_expr)
-        if coeff_match:
-            numerator_expr = coeff_match.group(0)
-
-        numerator_value = self.get_chain_value(numerator_expr)
-        if denominator_expr.isdigit():
-            denominator_value = int(denominator_expr)
-        else:
-            denominator_value = self.get_chain_value(denominator_expr)
-
-        # divide 0 case handler
-        if denominator_value == 0:
-            return float('inf')
-        log.info(numerator_value)
-        log.info(denominator_value)
-        coefficient = numerator_value / denominator_value
-        log.info(coefficient)
-        return coefficient
-
-
-# test case remained
-contract_address = "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF"
-expr = "bvudiv_i(Ia_store-14-*\n         bvudiv_i(1000000000000000000*Id_4*mem_mem_64,\n                  1000000000000000000),\n         10000)"

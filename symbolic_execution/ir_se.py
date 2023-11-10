@@ -20,9 +20,9 @@ visited_blocks = set()
 UNSIGNED_BOUND_NUMBER = 2**256 - 1
 CONSTANT_ONES_159 = BitVecVal((1 << 160) - 1, 256)
 
-Assertion = namedtuple('Assertion', ['pc', 'model'])
-Underflow = namedtuple('Underflow', ['pc', 'model'])
-Overflow = namedtuple('Overflow', ['pc', 'model'])
+Assertion = namedtuple("Assertion", ["pc", "model"])
+Underflow = namedtuple("Underflow", ["pc", "model"])
+Overflow = namedtuple("Overflow", ["pc", "model"])
 
 
 class Parameter:
@@ -177,7 +177,7 @@ def generate_dot_file(target_func):
     :param filename: The name of the output .dot file.
     """
     filename = str(target_func) + ".dot"
-    with open(filename, 'w') as f:
+    with open(filename, "w") as f:
         f.write("digraph CFG {\n")
         f.write("    node [shape=box];\n")
 
@@ -201,8 +201,8 @@ class CustomSolver:
     def __init__(self, parallel=0, timeout=0):
         self.push_count = 0
         if parallel == 1:
-            t2 = Then('simplify', 'solve-eqs', 'smt')
-            _t = Then('tseitin-cnf-core', 'split-clause')
+            t2 = Then("simplify", "solve-eqs", "smt")
+            _t = Then("tseitin-cnf-core", "split-clause")
             t1 = ParThen(_t, t2)
             self.solver = OrElse(t1, t2).solver()
         else:
@@ -1651,6 +1651,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     "v"
                     + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
                 ] = hex(recipient)
+            # load value from var_to_source
             res = {
                 ident: [
                     var_to_source[
@@ -1668,6 +1669,8 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 ]
             }
             log.info(res)
+            recipient = res[ident][0]
+            transfer_amount = res[ident][1]
             if (
                 target_params.funcSign
                 in target_params.fund_transfer_info.clearcall.keys()
@@ -1680,30 +1683,31 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                 ):
                     if target_params.funcSign not in result["clear"].keys():
                         result["clear"][target_params.funcSign] = {}
-                        result["clear"][target_params.funcSign][ident] = res[ident]
+                    if ident not in result["clear"][target_params.funcSign].keys():
+                        result["clear"][target_params.funcSign][ident] = [res[ident]]
                     else:
-                        # now, cover the old value
-                        result["clear"][target_params.funcSign][ident] = res[ident]
-                else:
-                    if (
-                        str(res[ident][1]).startswith("balance_")
-                        or str(res[ident][1]) == "IH_b"
-                    ):
-                        if target_params.funcSign not in result["clear"].keys():
-                            result["clear"][target_params.funcSign] = {}
-                            result["clear"][target_params.funcSign][ident] = res[ident]
-                        else:
-                            # now, cover the old value
-                            result["clear"][target_params.funcSign][ident] = res[ident]
+                        result["clear"][target_params.funcSign][ident].append(
+                            res[ident]
+                        )
             else:
+                # additional rules for missing clear
+                if is_balance_var(transfer_amount):
+                    if target_params.funcSign not in result["clear"].keys():
+                        result["clear"][target_params.funcSign] = {}
+                    if ident not in result["clear"][target_params.funcSign].keys():
+                        result["clear"][target_params.funcSign][ident] = [res[ident]]
+                    else:
+                        result["clear"][target_params.funcSign][ident].append(
+                            res[ident]
+                        )
                 receiver_vars = []
                 # if receiver is a constant address
-                if not is_expr(res[ident][0]):
-                    log.info(res[ident][0])
-                    log.info(res[ident][1])
+                if not is_expr(recipient):
+                    log.info(recipient)
+                    log.info(transfer_amount)
                     # for tax, judge the modifiable status of tax-related vars
-                    if is_expr(res[ident][1]):
-                        amount_vars = get_vars(res[ident][1])
+                    if is_expr(transfer_amount):
+                        amount_vars = get_vars(transfer_amount)
                         for var in amount_vars:
                             if is_storage_var(var):
                                 pos = get_storage_position(var)
@@ -1713,49 +1717,54 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                         in target_params.state_dependency_info.slot_dependency_map.keys()
                                     ):
                                         result["fee"]["modifiable"] = True
-                    try:
-                        expr = state_extractor.compute_coefficient(str(res[ident][1]))
-                        if expr:
-                            log.info(expr)
-                    except:
-                        pass
+                    # try:
+                    #     expr = state_extractor.compute_coefficient(str(res[ident][1]))
+                    #     if expr:
+                    #         log.info(expr)
+                    # except:
+                    #     pass
                     if target_params.funcSign not in result["fee"].keys():
                         result["fee"][target_params.funcSign] = {}
-                        # bypass the 0 value
-                        if not (str(res[ident][1]) == "0"):
-                            result["fee"][target_params.funcSign][ident] = res[ident]
-                    else:
-                        # bypass the 0 value
-                        if not (str(res[ident][1]) == "0"):
-                            result["fee"][target_params.funcSign][ident] = res[ident]
+                    # bypass the 0 value
+                    if not is_zero(transfer_amount):
+                        if ident not in result["fee"][target_params.funcSign].keys():
+                            result["fee"][target_params.funcSign][ident] = [res[ident]]
+                        else:
+                            result["fee"][target_params.funcSign][ident].append(
+                                res[ident]
+                            )
                 else:
-                    receiver_vars = get_vars(res[ident][0])
+                    receiver_vars = get_vars(recipient)
                     for var in receiver_vars:
-                        if str(var) == "Is":
+                        if is_caller(var):
                             log.info(var)
                             if target_params.funcSign not in result["reward"].keys():
                                 result["reward"][target_params.funcSign] = {}
-                                result["reward"][target_params.funcSign][ident] = res[
-                                    ident
+
+                            if (
+                                ident
+                                not in result["reward"][target_params.funcSign].keys()
+                            ):
+                                result["reward"][target_params.funcSign][ident] = [
+                                    res[ident]
                                 ]
                             else:
-                                # may cover the old value
-                                result["reward"][target_params.funcSign][ident] = res[
-                                    ident
-                                ]
-                        elif str(var).startswith("Ia_store"):
-                            log.info(res[ident][0])
-                            log.info(res[ident][1])
-                            # try to get coefficient
-                            try:
-                                expr = state_extractor.compute_coefficient(
-                                    str(res[ident][1])
+                                result["reward"][target_params.funcSign][ident].append(
+                                    res[ident]
                                 )
-                                if expr:
-                                    log.info(expr)
-                            except:
-                                pass
-                            if is_expr(res[ident][1]):
+                        elif is_storage_var(var):
+                            log.info(recipient)
+                            log.info(transfer_amount)
+                            # try to get coefficient
+                            # try:
+                            #     expr = state_extractor.compute_coefficient(
+                            #         str(res[ident][1])
+                            #     )
+                            #     if expr:
+                            #         log.info(expr)
+                            # except:
+                            #     pass
+                            if is_expr(transfer_amount):
                                 amount_vars = get_vars(res[ident][1])
                                 for var in amount_vars:
                                     if is_storage_var(var):
@@ -1769,16 +1778,18 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                             if target_params.funcSign not in result["fee"].keys():
                                 result["fee"][target_params.funcSign] = {}
                                 # bypass the 0 value
-                                if not (str(res[ident][1]) == "0"):
-                                    result["fee"][target_params.funcSign][ident] = res[
-                                        ident
+                            if not is_zero(transfer_amount):
+                                if (
+                                    ident
+                                    not in result["fee"][target_params.funcSign].keys()
+                                ):
+                                    result["fee"][target_params.funcSign][ident] = [
+                                        res[ident]
                                     ]
-                            else:
-                                # bypass the 0 value
-                                if not (str(res[ident][1]) == "0"):
-                                    result["fee"][target_params.funcSign][ident] = res[
-                                        ident
-                                    ]
+                                else:
+                                    result["fee"][target_params.funcSign][ident].append(
+                                        res[ident]
+                                    )
 
         # in the paper, it is shaky when the size of data output is
         # min of stack[6] and the | o |
@@ -2146,7 +2157,7 @@ def run(inputs, state):
     functions = inputs["functions"]
     tac_block_function = inputs["tac_block_function"]
     funcs_to_be_checked = inputs["funcs_to_be_checked"]
-    fund_transfer_graph = inputs['fund_transfer_graph']
+    fund_transfer_graph = inputs["fund_transfer_graph"]
     state_dependency_graph = inputs["state_dependency_graph"]
     func_map = inputs["func_map"]
     path = inputs["path"]

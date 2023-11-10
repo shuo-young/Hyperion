@@ -82,6 +82,22 @@ def is_storage_var(var):
     return var.startswith("Ia_store")
 
 
+def is_balance_var(var):
+    if not isinstance(var, str):
+        var = var.decl().name()
+    return var.startswith("balance_") or var == "IH_b"
+
+
+def is_caller(var):
+    if not isinstance(var, str):
+        var = var.decl().name()
+    return var == "Is"
+
+def is_zero(var):
+    if not isinstance(var, str):
+        var = var.decl().name()
+    return var == "0" or var == "0.0"
+
 # copy only storage values/ variables from a given global state
 # TODO: add balance in the future
 def copy_global_values(global_state):
