@@ -16,23 +16,19 @@ class FrontEndSpecsExtractor:
 
     # analyze dapp frontend docs
     def process_reward(self, text):
+        # for reward, we just recover types: daily return, apr, referral reward, while apr is bigger than 1
         def percent_to_float(percent_str):
             """Converts a percentage string to a float representation."""
             # Remove commas and percentage signs, then convert to float and divide by 100
-            return float(percent_str.replace(',', '').replace('%', '')) / 100
+            return float(percent_str.replace(",", "").replace("%", "")) / 100
 
-        keywords = ['reward', 'return']
+        keywords = ["reward", "return"]
         words = word_tokenize(text)
         tagged = pos_tag(words)
         synonyms = self.get_synonyms(keywords)
         # extend possible words
-        synonyms.extend(['roi', 'profit', 'reward/profit', 'apy', 'rewards', 'apr'])
+        synonyms.extend(["roi", "profit", "apy", "rewards", "apr"])
         rewards = {}
-        # Daily rate: X% like pattern
-        daily_rate_pattern = re.compile(r'daily rate:\s*(\d+\.?\d*)%', re.IGNORECASE)
-        matches = daily_rate_pattern.findall(text)
-        for match in matches:
-            rewards['daily rate'] = percent_to_float(match)
 
         def search_values(index, direction=1, limit=5):
             values = []
@@ -41,22 +37,23 @@ class FrontEndSpecsExtractor:
                 index += direction
                 if index < 0 or index >= len(tagged):
                     break
-                if tagged[index][0] == '\n':
+                if tagged[index][0] == "\n":
                     break
-                if tagged[index][0] == '(':
+                # skip search limit when meets parenthesis
+                if tagged[index][0] == "(":
                     skip_parenthesis = True
-                elif tagged[index][0] == ')':
+                elif tagged[index][0] == ")":
                     skip_parenthesis = False
                     index += direction
                     continue
                 if skip_parenthesis:
                     index += direction
                     continue
-                if tagged[index][1] in ['CD', 'JJ', '%']:
+                if tagged[index][1] in ["CD", "JJ", "%"]:
                     if (
-                        tagged[index][1] in ['CD', 'JJ']
+                        tagged[index][1] in ["CD", "JJ"]
                         and index + 1 < len(tagged)
-                        and tagged[index + 1][0] == '%'
+                        and tagged[index + 1][0] == "%"
                     ):
                         values.append(percent_to_float(tagged[index][0]))
                         index += 1
@@ -79,195 +76,78 @@ class FrontEndSpecsExtractor:
                     k = i - 1
                     while (
                         k >= 0
-                        and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ'])
-                        and tagged[k][0] not in ['%', '*']
+                        and (tagged[k][1] in ["NN", "NNS", "&", "JJ"])
+                        and tagged[k][0] not in ["%", "*"]
                     ):
                         fee_type.insert(0, tagged[k][0])
                         k -= 1
-                    reward_name = ' '.join(fee_type) + ' ' + word.lower()
-                    rewards[reward_name.strip().lower()] = percentages_forward
+                    reward_name = " ".join(fee_type) + " " + word.lower()
+                    reward_name = reward_name.strip().lower()
+                    if percentages_forward <= 1:
+                        # first, referral
+                        if "referral" in reward_name:
+                            reward_name = "referral"
+                        # second, roi
+                        elif "daily" in reward_name or "yield" in reward_name:
+                            reward_name = "roi"
+                        # find misused apy and apr:
+                        elif "apr" in reward_name or "apy" in reward_name:
+                            reward_name = "roi"
+                    else:
+                        # unify to roi
+                        # if (
+                        #     "annual" in reward_name
+                        #     or "apr" in reward_name
+                        #     or "apy" in reward_name
+                        # ):
+                        reward_name = "roi"
+                        percentages_forward = percentages_forward / 365
+
+                    rewards[reward_name] = percentages_forward
         result = {}
         result["reward"] = rewards
         return result
-
-    # def process_reward(self, text):
-    #     keywords = ['reward', 'return']
-    #     words = word_tokenize(text)
-    #     tagged = pos_tag(words)
-    #     synonyms = self.get_synonyms(keywords)
-    #     synonyms.extend(['roi', 'rate', 'profit', 'reward/profit'])
-    #     rewards = {}
-    #     for i, (word, tag) in enumerate(tagged):
-    #         if word.lower() in synonyms:
-    #             j = i + 1
-    #             percentages = []  # List to hold all percentages related to this fee
-    #             search_limit = 1  # Limit the search to the next 5 words
-
-    #             # Find all percentages related to this fee
-    #             while j < len(tagged) and search_limit > 0:
-    #                 # Move j to the next CD or JJ or '%'
-    #                 while j < len(tagged) and tagged[j][1] not in ['CD', 'JJ', '%']:
-    #                     j += 1
-    #                     search_limit -= 1  # Decrement the search limit
-
-    #                 # If j is a number and j+1 is a '%' symbol, save the percentage
-    #                 if (
-    #                     j < len(tagged)
-    #                     and j + 1 < len(tagged)
-    #                     and tagged[j + 1][0] == '%'
-    #                     and tagged[j][0].replace('.', '').isdigit()
-    #                 ):
-    #                     percentages.append(tagged[j][0] + "%")
-    #                     j += 2  # Move past the percentage symbol
-    #                 else:
-    #                     break
-
-    #             if percentages:
-    #                 fee_type = []
-    #                 k = i - 1
-    #                 while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
-    #                     fee_type.insert(0, tagged[k][0])
-    #                     k -= 1
-    #                 fee_name = ' '.join(fee_type) + ' ' + word.lower()
-    #                 rewards[
-    #                     fee_name.strip()
-    #                 ] = percentages  # Save the list of percentages
-
-    #     return rewards  # Return an empty dictionary if no suitable "reward" percentage is found
-
-    # def process_fee(self, text):
-    #     keywords = ['fee', 'tax']
-    #     words = word_tokenize(text)
-    #     tagged = pos_tag(words)
-    #     synonyms = self.get_synonyms(keywords)
-    #     fees = {}
-    #     for i, (word, tag) in enumerate(tagged):
-    #         if word.lower() in synonyms:
-    #             j = i + 1
-    #             percentages = []  # List to hold all percentages related to this fee
-    #             search_limit = 1  # Limit the search to the next 5 words
-
-    #             # Find all percentages related to this fee
-    #             while j < len(tagged) and search_limit > 0:
-    #                 # Move j to the next CD or JJ or '%'
-    #                 while j < len(tagged) and tagged[j][1] not in ['CD', 'JJ', '%']:
-    #                     j += 1
-    #                     search_limit -= 1  # Decrement the search limit
-
-    #                 # If j is a number and j+1 is a '%' symbol, save the percentage
-    #                 if (
-    #                     j < len(tagged)
-    #                     and j + 1 < len(tagged)
-    #                     and tagged[j + 1][0] == '%'
-    #                     and tagged[j][0].replace('.', '').isdigit()
-    #                 ):
-    #                     percentages.append(tagged[j][0] + "%")
-    #                     j += 2  # Move past the percentage symbol
-    #                 else:
-    #                     break
-
-    #             if percentages:
-    #                 fee_type = []
-    #                 k = i - 1
-    #                 while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
-    #                     fee_type.insert(0, tagged[k][0])
-    #                     k -= 1
-    #                 fee_name = ' '.join(fee_type) + ' ' + word.lower()
-    #                 fees[fee_name.strip()] = percentages  # Save the list of percentages
-    #     return fees
-    # def process_fee(self, text):
-    #     keywords = [
-    #         'buy tax',
-    #         'sell tax',
-    #         'buy fee',
-    #         'sell fee',
-    #         'withdrawal fee',
-    #         'dev fee',
-    #         'marketing fee',
-    #         'burn fee',
-    #         'transaction fee',
-    #         'referral fee',
-    #         'deposit fee',
-    #         'trade fee',
-    #         'tax allocation',
-    #         'liquidity fee',
-    #     ]
-    #     words = word_tokenize(text)
-    #     tagged = pos_tag(words)
-    #     fees = {}
-
-    #     def search_values(index, direction=1, limit=5):
-    #         values = []
-    #         skip_parenthesis = False
-    #         while limit > 0:
-    #             index += direction
-    #             if index < 0 or index >= len(tagged):
-    #                 break
-    #             if tagged[index][0] == '\n':
-    #                 break
-    #             if tagged[index][0] == '(':
-    #                 skip_parenthesis = True
-    #             elif tagged[index][0] == ')':
-    #                 skip_parenthesis = False
-    #                 index += direction
-    #                 continue
-    #             if skip_parenthesis:
-    #                 index += direction
-    #                 continue
-    #             if tagged[index][1] in ['CD', 'JJ', '%']:
-    #                 if (
-    #                     tagged[index][1] in ['CD', 'JJ']
-    #                     and index + 1 < len(tagged)
-    #                     and tagged[index + 1][0] == '%'
-    #                 ):
-    #                     values.append(tagged[index][0] + "%")
-    #                     index += 1
-    #             limit -= 1
-    #         # return the first found value
-    #         if len(values) > 0:
-    #             return values[0]
-    #         return values
-
-    #     for i, (word, tag) in enumerate(
-    #         tagged[:-1]
-    #     ):  # We look ahead by one word, hence the -1
-    #         keyword = word.lower() + " " + tagged[i + 1][0].lower()
-    #         if keyword in keywords:
-    #             # First, search forwards until the newline or search limit.
-    #             percentages_forward = search_values(
-    #                 i + 1, direction=1, limit=4
-    #             )  # We start searching after the keyword
-    #             # If no values found, search backwards with the limit.
-    #             if not percentages_forward:
-    #                 percentages_forward = search_values(i, direction=-1, limit=3)
-
-    #             if percentages_forward:
-    #                 fees[keyword] = percentages_forward
-
-    #     return fees
 
     def process_fee(self, text):
         def percent_to_float(percent_str):
             """Converts a percentage string to a float representation."""
             # Remove commas and percentage signs, then convert to float and divide by 100
-            return float(percent_str.replace(',', '').replace('%', '')) / 100
+            return float(percent_str.replace(",", "").replace("%", "")) / 100
 
         # define keywords and synonyms
-        general_keywords = ['fee', 'tax', 'fees']
-        general_synonyms = {'fee': ['charge', 'cost'], 'tax': ['levy', 'duty']}
+        general_keywords = ["fee", "tax", "fees"]
+        general_synonyms = {"fee": ["charge", "cost"], "tax": ["levy", "duty"]}
+        # the key prefix can be extended
         specific_prefixes = [
-            'buy',
-            'sell',
-            'withdrawal',
-            'trading',
-            'trade',
-            'transaction',
-            'dev',
-            'marketing',
-            'deposit',
-            'sell/transfer',
-            'liquidity',
+            "buy",
+            "sell",
+            "selling",
+            "deposit",
+            "withdrawal",
+            "trading",
+            "trade",
+            "transfer",
+            "transaction",
+            "dev",
+            "marketing",
+            "liquidity",
         ]
+
+        # buy, sell, deposit, withdrawal, trade, dev, liquidity
+        fee_type_map = {
+            "buy": "buy",
+            "sell": "sell",
+            "selling": "sell",
+            "deposit": "deposit",
+            "withdrawal": "withdrawal",
+            "trading": "trade",
+            "trade": "trade",
+            "transfer": "trade",
+            "transaction": "trade",
+            "dev": "dev",
+            "marketing": "dev",
+            "liquidity": "liquidity",
+        }
 
         # tokenize text
         words = word_tokenize(text)
@@ -285,27 +165,25 @@ class FrontEndSpecsExtractor:
                 index += direction
                 if index < 0 or index >= len(tagged):
                     break
-                if tagged[index][0] in ['\n', '\r']:
+                if tagged[index][0] in ["\n", "\r"]:
                     break
-                if tagged[index][0] == '(':
-                    skip_parenthesis = True
-                elif tagged[index][0] == ')':
-                    skip_parenthesis = False
-                    index += direction
-                    continue
-                if skip_parenthesis:
-                    index += direction
-                    continue
-                if tagged[index][1] in ['CD', 'JJ', '%']:
+                # if tagged[index][0] == "(":
+                #     skip_parenthesis = True
+                # elif tagged[index][0] == ")":
+                #     skip_parenthesis = False
+                #     index += direction
+                #     continue
+                # if skip_parenthesis:
+                #     index += direction
+                #     continue
+                if tagged[index][1] in ["CD", "JJ", "%"]:
                     if (
-                        tagged[index][1] in ['CD', 'JJ']
+                        tagged[index][1] in ["CD", "JJ"]
                         and index + 1 < len(tagged)
-                        and tagged[index + 1][0] == '%'
+                        and tagged[index + 1][0] == "%"
                     ):
                         values.append(percent_to_float(tagged[index][0]))
-                        fee_values.append(
-                            percent_to_float(tagged[index][0])
-                        )  # add fee value to the list
+
                         index += 1
                 limit -= 1
             # return the first found value
@@ -318,11 +196,12 @@ class FrontEndSpecsExtractor:
 
             # check if contains general keywords fee/tax
             if current_word in general_keywords:
-                percentage = search_values(i, direction=1, limit=5)
+                percentage = search_values(i, direction=1, limit=6)
                 if not percentage:
                     percentage = search_values(i, direction=-1, limit=7)
-                if percentage and percentage != '0%':
+                if percentage and percentage > 0:
                     has_fee = True
+                    fee_values.append(percentage)  # add fee value to the list
 
             # find fee type
             if current_word in specific_prefixes:
@@ -330,13 +209,17 @@ class FrontEndSpecsExtractor:
                 if next_word in general_keywords or next_word in general_synonyms.get(
                     next_word, []
                 ):
-                    combined_keyword = current_word + " " + next_word
-                    percentage = search_values(i, direction=1, limit=5)
+                    combined_keyword = current_word
+                    percentage = search_values(i, direction=1, limit=7)
                     if not percentage:
                         percentage = search_values(i, direction=-1, limit=7)
-                    if percentage and percentage != '0%':
+                    if percentage and percentage > 0:
                         # if combined_keyword not in fees.keys():
-                        fees[combined_keyword.lower()] = percentage
+                        if combined_keyword.lower() in fee_type_map.keys():
+                            fee_general_type = fee_type_map[combined_keyword.lower()]
+                        else:
+                            fee_general_type = "other"
+                        fees[fee_general_type] = percentage
         result = {}
         result["fee"] = {"has_fee": has_fee, "fee_values": fee_values, "fees": fees}
         return result
@@ -354,7 +237,7 @@ class FrontEndSpecsExtractor:
                 # Find all time periods related to this lock
                 while j < len(tagged):
                     # Check if the token is a number (either in digit or word form)
-                    is_number = tagged[j][1] in ['CD', 'JJ'] or tagged[j][0] in [
+                    is_number = tagged[j][1] in ["CD", "JJ"] or tagged[j][0] in [
                         "one",
                         "two",
                         "three",
@@ -384,10 +267,10 @@ class FrontEndSpecsExtractor:
                 if time_periods:
                     lock_description = []
                     k = i - 1
-                    while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
+                    while k >= 0 and (tagged[k][1] in ["NN", "NNS", "&", "JJ"]):
                         lock_description.insert(0, tagged[k][0])
                         k -= 1
-                    lock_name = ' '.join(lock_description) + ' ' + word.lower()
+                    lock_name = " ".join(lock_description) + " " + word.lower()
                     # if find, directly return
                     lock_times["lock"] = time_periods
                     return lock_times
@@ -409,26 +292,26 @@ class FrontEndSpecsExtractor:
 
                 # Find all amounts related to this supply keyword
                 while j < len(tagged):
-                    if tagged[j][1] == 'CD':
+                    if tagged[j][1] == "CD":
                         amount = tagged[j][0]
                         j += 1
 
                         # Handle cases where numbers are written like "275,000,000"
                         while (
                             j < len(tagged)
-                            and tagged[j][0] in [',', '.']
+                            and tagged[j][0] in [",", "."]
                             and j + 1 < len(tagged)
-                            and tagged[j + 1][1] == 'CD'
+                            and tagged[j + 1][1] == "CD"
                         ):
                             amount += tagged[j][0] + tagged[j + 1][0]
                             j += 2
                         if j < len(tagged) and (
-                            tagged[j][0] == '%' or tagged[j][0] == '.'
+                            tagged[j][0] == "%" or tagged[j][0] == "."
                         ):
                             supply_amount = None
                         else:
                             if "," in amount:
-                                supply_amount = int(amount.replace(',', ''))
+                                supply_amount = int(amount.replace(",", ""))
                             else:
                                 supply_amount = int(amount)
                         break
@@ -439,10 +322,10 @@ class FrontEndSpecsExtractor:
                 if supply_amount:
                     supply_description = []
                     k = i - 1
-                    while k >= 0 and (tagged[k][1] in ['NN', 'NNS', '&', 'JJ']):
+                    while k >= 0 and (tagged[k][1] in ["NN", "NNS", "&", "JJ"]):
                         supply_description.insert(0, tagged[k][0])
                         k -= 1
-                    supply_name = ' '.join(supply_description) + ' ' + word.lower()
+                    supply_name = " ".join(supply_description) + " " + word.lower()
                     supplies[supply_name.strip()] = supply_amount
 
                 # Check if the current supply keyword is "total supply"
@@ -485,22 +368,3 @@ class FrontEndSpecsExtractor:
         # remove duplicated
         synonyms = list(set(synonyms))
         return synonyms
-
-
-# test case remained
-test = """"
-  "  Sure, I can help you extract numerical information related to the rate of fee or tax from the provided text. Here are the relevant details:
-
-1. Fee/Tax Rate: 10%
-	* The text states that there is a 10% fee that the stakes seller pays.
-2. Buyback Rate: 8%
-	* The text states that 8% of the fee will be buybacked to the contract's current day lobby.
-3. Referral Bonus: 1% (for referrals) and 5% (for referrers)
-	* The text states that referrals will earn an extra 1% minted AVC tokens on their auction lobby collect, and referrers will earn an extra 5%.
-
-I hope this information is helpful! Let me know if you have any further questions or if there's anything else I can help with."""
-extractor = FrontEndSpecsExtractor()
-
-# for test
-# fees = extractor.process_fee(test)
-# print(fees)

@@ -40,44 +40,37 @@
         ]
     },
     "12": {
-        "reward": {
-            "daily reward/profit": 0.03,
-            "reward/profit": 10.95
-        }
+        "reward": {}
     },
     "13": {
         "reward": {
-            "yield": 0.02
+            "roi": 0.02
         }
     },
     "14": {
         "reward": {
-            "daily return": 0.08,
-            "apr": 0.08,
-            "total return": 29.2
+            "roi": 0.08
         }
     },
     "15": {
         "reward": {
-            "daily return": 0.1,
-            "apr": 0.1
+            "roi": 0.1
         }
     },
     "16": {
         "reward": {
-            "daily profit apy": 0.08
+            "roi": 0.08
         }
     },
     "17": {
         "reward": {
-            "referral rewards": 0.1,
-            "daily return": 0.03,
-            "apr": 10.95
+            "referral": 0.1,
+            "roi": 0.03
         }
     },
     "18": {
         "reward": {
-            "apr": 0.03
+            "roi": 0.03
         }
     },
     "19": {
@@ -87,13 +80,12 @@
     },
     "20": {
         "reward": {
-            "daily percentage return": 0.03
+            "roi": 0.03
         }
     },
     "21": {
         "reward": {
-            "daily rate": 0.03,
-            "apr": 10.95
+            "roi": 0.03
         }
     },
     "22": {
@@ -103,76 +95,68 @@
     },
     "23": {
         "reward": {
-            "daily yield": 0.08
+            "roi": 0.08
         }
     },
     "24": {
         "reward": {
             "reward": 0.03,
-            "apr": 10.95
+            "roi": 0.03
         }
     },
     "25": {
         "reward": {
-            "daily percentage return": 0.08,
-            "annual percentage return": 29.2,
-            "apr": 29.2
+            "roi": 0.08
         }
     },
     "26": {
         "reward": {
-            "daily return": 0.08,
-            "apr": 0.08,
-            "total return": 29.2
+            "roi": 0.08
         }
     },
     "27": {
         "reward": {}
     },
     "28": {
-        "reward": {
-            "daily reward/profit": 0.05
-        }
+        "reward": {}
     },
     "29": {
         "reward": {
-            "daily profit": 0.02,
-            "referral rewards": 0.3
+            "roi": 0.02,
+            "referral": 0.3
         }
     },
     "30": {
         "reward": {
-            "daily rewards": 0.1,
-            "apr": 36.5,
-            "referral rewards": 0.09
+            "roi": 0.1,
+            "referral": 0.09
         }
     },
     "31": {
         "reward": {
-            "daily roi": 0.08
+            "roi": 0.08
         }
     },
     "32": {
         "reward": {
             "return": 0.08,
-            "bean apr": 29.2
+            "roi": 0.08
         }
     },
     "33": {
         "reward": {
-            "daily yield": 0.4
+            "roi": 0.4
         }
     },
     "34": {
         "reward": {
-            "daily roi": 0.03
+            "roi": 0.03
         }
     },
     "35": {
         "reward": {
-            "daily rewards": 0.08,
-            "apr": 0.9,
-            "referral rewards": 0.1
+            "roi": 0.9,
+            "referral": 0.1
         }
     },
     "36": {
@@ -180,31 +164,27 @@
     },
     "37": {
         "reward": {
-            "daily percentage return": 0.06,
-            "annual percentage return": 21.9,
-            "apr": 21.9
+            "roi": 0.06
         }
     },
     "38": {
         "reward": {
-            "daily roi": 0.02
+            "roi": 0.02
         }
     },
     "39": {
         "reward": {
-            "daily roi": 0.015
+            "roi": 0.015
         }
     },
     "40": {
         "reward": {
-            "daily reward": 0.16,
-            "roi": 58.4,
-            "return": 58.4
+            "roi": 0.16
         }
     },
     "41": {
         "reward": {
-            "apr": 29.2
+            "roi": 0.08
         }
     },
     "42": {
@@ -269,21 +249,10 @@
             "has_fee": true,
             "fee_values": [
                 0.16,
-                0.16,
-                0.16,
-                0.16,
-                0.05,
-                0.05,
-                0.05,
-                0.05,
-                0.05,
-                0.05,
-                0.05,
-                0.05,
                 0.05
             ],
             "fees": {
-                "trading fees": 0.05
+                "trade": 0.05
             }
         }
     },
@@ -299,13 +268,11 @@
             "has_fee": true,
             "fee_values": [
                 0.01,
-                0.01,
-                0.01,
                 0.01
             ],
             "fees": {
-                "sell fee": 0.01,
-                "marketing fee": 0.01
+                "sell": 0.01,
+                "dev": 0.01
             }
         }
     },
@@ -314,16 +281,13 @@
             "has_fee": true,
             "fee_values": [
                 0.04,
-                0.04,
                 0.15,
-                0.15,
-                0.04,
                 0.04,
                 0.07
             ],
             "fees": {
-                "transaction fee": 0.15,
-                "marketing fee": 0.04
+                "trade": 0.15,
+                "dev": 0.04
             }
         }
     },
@@ -364,15 +328,11 @@
             "has_fee": true,
             "fee_values": [
                 0.06,
-                0.06,
-                0.06,
-                0.06,
-                0.06,
-                0.06
+                0.14
             ],
             "fees": {
-                "withdrawal fee": 0.06,
-                "deposit fee": 0.06
+                "withdrawal": 0.06,
+                "deposit": 0.14
             }
         }
     },
@@ -388,7 +348,6 @@
                 0.03,
                 0.03,
                 0.09,
-                0.02,
                 0.02
             ],
             "fees": {}
@@ -428,21 +387,10 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                0.003,
-                0.003,
-                0.003,
-                0.003,
-                0.003,
-                0.003,
-                0.003,
-                0.001,
-                0.0006,
-                0.0004,
-                0.0005,
-                0.00025
+                0.003
             ],
             "fees": {
-                "trade fee": 0.00025
+                "trade": 0.00025
             }
         }
     },
@@ -451,25 +399,13 @@
             "has_fee": true,
             "fee_values": [
                 0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
-                0.09,
-                0.09,
-                0.09,
-                0.09,
-                0.09,
-                0.09,
                 0.09,
                 0.1,
                 0.1,
-                0.09,
                 0.09
             ],
             "fees": {
-                "buy fee": 0.09
+                "buy": 0.09
             }
         }
     },
@@ -510,14 +446,11 @@
             "has_fee": true,
             "fee_values": [
                 0.01,
-                0.01,
-                0.1,
-                0.1,
-                0.0
+                0.1
             ],
             "fees": {
-                "buy tax": 0.01,
-                "sell tax": 0.1
+                "buy": 0.01,
+                "sell": 0.1
             }
         }
     },
@@ -534,17 +467,12 @@
             "fee_values": [
                 0.15,
                 0.15,
-                0.15,
-                0.15,
-                0.015,
-                0.015,
-                0.015,
                 0.015,
                 0.015
             ],
             "fees": {
-                "buy tax": 0.15,
-                "sell tax": 0.15
+                "buy": 0.15,
+                "sell": 0.15
             }
         }
     },
@@ -552,11 +480,6 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                0.8,
-                0.8,
-                0.8,
-                0.8,
-                0.8,
                 0.8,
                 0.8
             ],
@@ -573,14 +496,10 @@
                 0.09,
                 0.09,
                 0.09,
-                0.09,
-                0.09,
-                0.09,
-                0.09,
                 0.09
             ],
             "fees": {
-                "liquidity fee": 0.09
+                "liquidity": 0.09
             }
         }
     },
@@ -597,8 +516,6 @@
             "fee_values": [
                 0.1,
                 0.1,
-                0.1,
-                0.6,
                 0.6
             ],
             "fees": {}
@@ -608,26 +525,14 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                0.0,
-                0.0,
-                0.1,
-                0.1,
-                0.1,
-                0.1,
                 0.1,
                 0.1,
                 0.13,
                 0.03,
-                0.03,
-                0.03,
-                0.03,
-                0.03,
-                0.03,
-                0.03,
                 0.03
             ],
             "fees": {
-                "sell fee": 0.03
+                "sell": 0.03
             }
         }
     },
@@ -657,16 +562,10 @@
             "has_fee": true,
             "fee_values": [
                 0.3,
-                0.3,
-                0.3,
-                0.3,
-                0.3,
-                0.3,
-                0.3,
                 0.3
             ],
             "fees": {
-                "withdrawal tax": 0.3
+                "withdrawal": 0.3
             }
         }
     },
@@ -674,11 +573,10 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                0.15,
                 0.15
             ],
             "fees": {
-                "withdrawal fee": 0.15
+                "withdrawal": 0.15
             }
         }
     },
@@ -693,9 +591,6 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                0.1,
-                0.1,
-                0.1,
                 0.1
             ],
             "fees": {}
@@ -713,12 +608,10 @@
             "has_fee": true,
             "fee_values": [
                 0.6,
-                0.6,
-                0.6,
                 0.6
             ],
             "fees": {
-                "withdrawal fee": 0.6
+                "withdrawal": 0.6
             }
         }
     },
@@ -726,23 +619,13 @@
         "fee": {
             "has_fee": true,
             "fee_values": [
-                29.2,
-                29.2,
-                29.2,
-                29.2,
-                29.2,
-                29.2,
-                29.2,
-                29.2,
+                0.03,
                 0.03,
                 0.02,
-                0.02,
-                29.2,
-                0.03
+                29.2
             ],
             "fees": {
-                "dev fee": 29.2,
-                "marketing fee": 0.02
+                "dev": 0.02
             }
         }
     }

@@ -1,0 +1,103 @@
+{
+    "1.0": {
+        "clear": false
+    },
+    "2.0": {
+        "clear": false
+    },
+    "9.0": {},
+    "10.0": {},
+    "12.0": {
+        "reward": {
+            "roi": 0.03
+        }
+    },
+    "13.0": {
+        "reward": {
+            "roi": 0.02
+        }
+    },
+    "14.0": {
+        "reward": {
+            "roi": 0.08
+        }
+    },
+    "15.0": {
+        "reward": {
+            "roi": 0.1,
+            "referral": 0.15
+        }
+    },
+    "16.0": {
+        "reward": {
+            "roi": 0.08
+        }
+    },
+    "42.0": {
+        "supply": 250000000
+    },
+    "43.0": {
+        "supply": 275000000
+    },
+    "49.0": {
+        "metadata": false
+    },
+    "50.0": {
+        "pause": false
+    },
+    "51.0": {
+        "pause": false
+    },
+    "54.0": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "55.0": {
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "57.0": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.05
+            ],
+            "fees": {
+                "trade": 0.05
+            }
+        }
+    },
+    "58.0": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.05,
+                0.05,
+                0.1,
+                0.1,
+                0.06
+            ],
+            "fees": {
+                "sell": 0.1
+            }
+        }
+    },
+    "59.0": {
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.01
+            ],
+            "fees": {
+                "sell": 0.01
+            }
+        }
+    },
+    "NaN": null
+}
