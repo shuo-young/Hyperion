@@ -10,10 +10,10 @@ class TargetedParameters:
     def __init__(self, **kwargs):
         attr_defaults = {
             # target func sign
-            "funcSign": '',
-            "path": '',
-            "dasm_path": '',
-            "target_func": '',
+            "funcSign": "",
+            "path": "",
+            "dasm_path": "",
+            "target_func": "",
             "target_block": None,
             "fund_transfer_info": None,
             "state_dependency_info": None,
@@ -98,15 +98,18 @@ class Semantics:
         blocks, functions, tac_block_function = construct_cfg(self.decompiler.path)
         inputs.append(
             {
-                'blocks': blocks,
-                'functions': functions,
-                'path': self.decompiler.path,
-                'dasm_path': self.decompiler.dasm_path,
-                'tac_block_function': tac_block_function,
-                'funcs_to_be_checked': self.funcs_to_be_checked,
-                'func_map': self.func_map,
-                'fund_transfer_graph': self.fund_transfer_graph,
-                'state_dependency_graph': self.state_dependency_graph,
+                "total_func": self.decompiler.func_num,
+                "analyzed_func": len(self.funcs_to_be_checked),
+                "block_num": self.decompiler.block_number,
+                "blocks": blocks,
+                "functions": functions,
+                "path": self.decompiler.path,
+                "dasm_path": self.decompiler.dasm_path,
+                "tac_block_function": tac_block_function,
+                "funcs_to_be_checked": self.funcs_to_be_checked,
+                "func_map": self.func_map,
+                "fund_transfer_graph": self.fund_transfer_graph,
+                "state_dependency_graph": self.state_dependency_graph,
             }
         )
         return inputs

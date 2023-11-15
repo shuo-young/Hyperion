@@ -11,6 +11,7 @@ class Decompiler:
     def __init__(self, platform, address, block_number):
         self.platform = platform
         self.address = address
+        self.func_num = 0
         # for development to skip format
         if address.startswith("0x"):
             self.address = self.format_addr(address)
@@ -70,6 +71,11 @@ class Decompiler:
             self.url = "https://moonriver.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
         else:
             self.url = ""
+        if self.url.startswith("https"):
+            w3 = Web3(Web3.HTTPProvider(self.url))
+        else:
+            w3 = Web3(Web3.WebsocketProvider(self.url))
+        self.block_number = w3.eth.get_block_number()
 
     def download_bytecode(self):
         log.info("Get contract bytecode...")
@@ -103,11 +109,12 @@ class Decompiler:
         loc = "./gigahorse-toolchain/.temp/" + self.address + "/out/PublicFunction.csv"
         func_map = {}
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["func", "funcSign"]
             for _, row in df.iterrows():
                 func_map[row["funcSign"]] = row["func"]
         self.func_map = func_map
+        self.func_num = len(func_map.keys())
 
     # =======followings are the decompilation information extraction=======
     # receiver of transfer calls
@@ -118,7 +125,7 @@ class Decompiler:
             + "/out/Hyperion_Recipient.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["callStmt", "to", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -133,7 +140,7 @@ class Decompiler:
             + "/out/Hyperion_CallGuardedByOwner.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["callStmt", "val", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -147,7 +154,7 @@ class Decompiler:
         )
         # mark the receiver and the tranfer amount of ETH/ERC token
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["callStmt", "recipient", "amount", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -160,7 +167,7 @@ class Decompiler:
             + "/out/Hyperion_BalanceSlot.csv"
         )
         if os.path.exists(balance_loc) and (os.path.getsize(balance_loc) > 0):
-            df_balance = pd.read_csv(balance_loc, header=None, sep='	')
+            df_balance = pd.read_csv(balance_loc, header=None, sep="	")
             df_balance.columns = ["id", "funcSign"]
         else:
             df_balance = pd.DataFrame()
@@ -171,7 +178,7 @@ class Decompiler:
             "./gigahorse-toolchain/.temp/" + self.address + "/out/Hyperion_TimeSlot.csv"
         )
         if os.path.exists(time_loc) and (os.path.getsize(time_loc) > 0):
-            df_time = pd.read_csv(time_loc, header=None, sep='	')
+            df_time = pd.read_csv(time_loc, header=None, sep="	")
             df_time.columns = ["id", "funcSign"]
         else:
             df_time = pd.DataFrame()
@@ -186,7 +193,7 @@ class Decompiler:
         # if has supply (from totalSupply())
         # just use this slot
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
-            df_supply = pd.read_csv(supply_loc, header=None, sep='	')
+            df_supply = pd.read_csv(supply_loc, header=None, sep="	")
             df_supply.columns = ["id", "funcSign"]
         else:
             df_supply = pd.DataFrame()
@@ -201,7 +208,7 @@ class Decompiler:
             + "/out/Hyperion_SupplyAmountSlot.csv"
         )
         if os.path.exists(supply_loc) and (os.path.getsize(supply_loc) > 0):
-            df_supply = pd.read_csv(supply_loc, header=None, sep='	')
+            df_supply = pd.read_csv(supply_loc, header=None, sep="	")
             df_supply.columns = ["id"]
         else:
             df_supply = pd.DataFrame()
@@ -217,7 +224,7 @@ class Decompiler:
             + "/out/Hyperion_OwnerSlot.csv"
         )
         if os.path.exists(owner_loc) and (os.path.getsize(owner_loc) > 0):
-            df_owner = pd.read_csv(owner_loc, header=None, sep='	')
+            df_owner = pd.read_csv(owner_loc, header=None, sep="	")
             df_owner.columns = ["id"]
         else:
             df_owner = pd.DataFrame()
@@ -230,7 +237,7 @@ class Decompiler:
             + "/out/Hyperion_PauseSlot.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["id", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -243,7 +250,7 @@ class Decompiler:
             + "/out/Hyperion_TokenURIStorage.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["id", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -325,7 +332,7 @@ class Decompiler:
         contract_address = Web3.to_checksum_address(self.address)
         storage_content = w3.eth.get_storage_at(contract_address, slot_index)
         try:
-            string_content = storage_content.decode('utf-8').replace('\x00', '')
+            string_content = storage_content.decode("utf-8").replace("\x00", "")
         except:
             string_content = ""
         return string_content
@@ -355,7 +362,7 @@ class Decompiler:
             + "/out/Hyperion_SlotTaintedByOwner.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["slot", "owner", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -368,7 +375,7 @@ class Decompiler:
             + "/out/Hyperion_GuardedMint.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["slot", "funcSign"]
         else:
             df = pd.DataFrame()
@@ -381,7 +388,7 @@ class Decompiler:
             + "/out/Hyperion_ClearBalance.csv"
         )
         if os.path.exists(loc) and (os.path.getsize(loc) > 0):
-            df = pd.read_csv(loc, header=None, sep='	')
+            df = pd.read_csv(loc, header=None, sep="	")
             df.columns = ["callStmt", "funcSign"]
         else:
             df = pd.DataFrame()
