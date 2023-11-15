@@ -172,7 +172,7 @@ Hyperion_SupplyAmountSlotElse(slotNum) :-
 Hyperion_GuardedMint(supplySlot, funcSign) :-
   // (DataFlows(amount, supplyVar);DataFlows(amount, maxSupplyVar)),
   SLOADOfConst(loadSupplyStmt, supplySlot, supply),
-  SLOADOfConst(_, maxSupplySlot, maxSupply),
+  LoadGlobalVariable(_, maxSupplySlot, maxSupply),
   maxSupplySlot != supplySlot,
   DataFlows(supply, supplyVar),
 //   DataFlows(maxSupply, maxSupplyVar),
