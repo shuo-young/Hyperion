@@ -69,6 +69,12 @@ class Decompiler:
             )
         elif self.platform == "Moonriver":
             self.url = "https://moonriver.getblock.io/6bf31e7d-f5b2-4860-8e15-aa9a11f6533d/mainnet/"
+        elif self.platform == "SKALE":
+            self.url = (
+                "https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix"
+            )
+        elif self.platform == "Base":
+            self.url = "https://base-mainnet.public.blastapi.io"
         else:
             self.url = ""
         if self.url.startswith("https"):

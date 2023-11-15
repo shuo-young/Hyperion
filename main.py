@@ -47,10 +47,13 @@ def analyze_dapp():
     log.info("Complete processing contract...")
     result["metadata"] = semantic.storage_way
     result["supply"]["amount"] = semantic.supply_amount
+    result["dapp_name"] = args.dapp_name
+    result["address"] = source["address"]
+    result["platform"] = source["platform"]
     log.info(result)
     json_str = json.dumps(result, default=complex_handler, indent=4)
     filename = args.output_dir + "/" + source["address"] + ".json"
-    with open(filename, 'w') as file:
+    with open(filename, "w") as file:
         file.write(json_str)
     return exit_code
 
@@ -103,6 +106,15 @@ def main():
         "-v", "--verbose", help="Verbose output, print everything.", action="store_true"
     )
     parser.add_argument(
+        "-n",
+        "--name",
+        help="Dapp name.",
+        action="store",
+        dest="dapp_name",
+        type=str,
+        default="",
+    )
+    parser.add_argument(
         "-d",
         "--directory",
         help="Output directory path.",
@@ -114,8 +126,8 @@ def main():
     args = parser.parse_args()
 
     logging.basicConfig(
-        format='[%(levelname)s][%(filename)s:%(lineno)d]: %(message)s',
-        datefmt='%Y.%m.%d. %H:%M:%S',
+        format="[%(levelname)s][%(filename)s:%(lineno)d]: %(message)s",
+        datefmt="%Y.%m.%d. %H:%M:%S",
     )
     rootLogger = logging.getLogger(None)
 
@@ -128,5 +140,5 @@ def main():
     exit(exit_code)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
