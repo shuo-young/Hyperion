@@ -83,20 +83,64 @@ def is_storage_var(var):
 
 
 def is_balance_var(var):
+    if not is_expr(var):
+        return False
     if not isinstance(var, str):
         var = var.decl().name()
     return var.startswith("balance_") or var == "IH_b"
 
 
 def is_caller(var):
+    if not is_expr(var):
+        return False
     if not isinstance(var, str):
         var = var.decl().name()
     return var == "Is"
 
+
 def is_zero(var):
+    return str(var) == "0" or str(var) == "0.0"
+
+
+def is_mem_var(var):
+    if not is_expr(var):
+        return False
     if not isinstance(var, str):
         var = var.decl().name()
-    return var == "0" or var == "0.0"
+    return var.startswith("mem_")
+
+
+def is_env_var(var):
+    if not is_expr(var):
+        return False
+    if not isinstance(var, str):
+        var = var.decl().name()
+    return var.startswith("IH_")
+
+
+def contains_mul_or_div(expr):
+    if not is_expr(expr):
+        return False
+    if is_const(expr):
+        return False
+
+    if expr.decl().kind() == Z3_OP_BMUL or expr.decl().kind() == Z3_OP_BUDIV_I:
+        return True
+
+    for child in expr.children():
+        if contains_mul_or_div(child):
+            return True
+
+    return False
+
+
+def is_subtracted_from_IV(expr):
+    if is_expr(expr) and expr.decl().kind() == Z3_OP_BADD:
+        minuend = expr.arg(0)  # Get the first operand (minuend)
+        if is_expr(minuend) and minuend.decl().name() == "Iv":
+            return True
+    return False
+
 
 # copy only storage values/ variables from a given global state
 # TODO: add balance in the future

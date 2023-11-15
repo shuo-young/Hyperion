@@ -92,7 +92,7 @@ def get_init_global_state(path_conditions_and_vars):
     constraint = init_ia >= BitVecVal(0, 256)
     path_conditions_and_vars["path_condition"].append(constraint)
 
-    # update the balances of the "caller" and "callee"re
+    # update the balances of the "caller" and "callee"
     global_state["balance"]["Is"] = init_is - deposited_value
     global_state["balance"]["Ia"] = init_ia + deposited_value
 
@@ -1136,7 +1136,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
             data = [str(x) for x in memory[s0 : s0 + s1]]
 
             # *Slot id in memory[63] <= MSTORE(64, slot)
-            slot = memory[63]
+            # slot = memory[63]
             # log.info(slot)
             # log.info(sha3_list)
             position = "".join(data)
@@ -1652,106 +1652,161 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     + target_params.fund_transfer_info.calls[ident][0].replace("0x", "")
                 ] = hex(recipient)
             # load value from var_to_source
-            res = {
-                ident: [
-                    var_to_source[
-                        "v"
-                        + target_params.fund_transfer_info.calls[ident][0].replace(
-                            "0x", ""
-                        )
-                    ],
-                    var_to_source[
-                        "v"
-                        + target_params.fund_transfer_info.calls[ident][1].replace(
-                            "0x", ""
-                        )
-                    ],
-                ]
-            }
+            # if unalbe to load, throw an exception
+            try:
+                res = {
+                    ident: [
+                        var_to_source[
+                            "v"
+                            + target_params.fund_transfer_info.calls[ident][0].replace(
+                                "0x", ""
+                            )
+                        ],
+                        var_to_source[
+                            "v"
+                            + target_params.fund_transfer_info.calls[ident][1].replace(
+                                "0x", ""
+                            )
+                        ],
+                    ]
+                }
+            except Exception as e:
+                log.error(e)
+                return
             log.info(res)
+            # read the value from var_to_source
             recipient = res[ident][0]
             transfer_amount = res[ident][1]
             if (
                 target_params.funcSign
                 in target_params.fund_transfer_info.clearcall.keys()
             ):
+                # the first step
+                # use semantic analysis result to judge the clear operation
                 if (
                     ident
                     in target_params.fund_transfer_info.clearcall[
                         target_params.funcSign
                     ]
                 ):
+                    result["clear"]["warning"] = True
                     if target_params.funcSign not in result["clear"].keys():
                         result["clear"][target_params.funcSign] = {}
                     if ident not in result["clear"][target_params.funcSign].keys():
                         result["clear"][target_params.funcSign][ident] = [res[ident]]
                     else:
-                        result["clear"][target_params.funcSign][ident].append(
+                        if (
                             res[ident]
-                        )
-            else:
-                # additional rules for missing clear
+                            not in result["clear"][target_params.funcSign][ident]
+                        ):
+                            result["clear"][target_params.funcSign][ident].append(
+                                res[ident]
+                            )
+            else:  # not clear, other types
+                # additional rules for missing clear, using contract balance to assist (reduce FNs)
                 if is_balance_var(transfer_amount):
+                    result["clear"]["warning"] = True
                     if target_params.funcSign not in result["clear"].keys():
                         result["clear"][target_params.funcSign] = {}
                     if ident not in result["clear"][target_params.funcSign].keys():
                         result["clear"][target_params.funcSign][ident] = [res[ident]]
                     else:
-                        result["clear"][target_params.funcSign][ident].append(
+                        if (
                             res[ident]
-                        )
+                            not in result["clear"][target_params.funcSign][ident]
+                        ):
+                            result["clear"][target_params.funcSign][ident].append(
+                                res[ident]
+                            )
+
                 receiver_vars = []
                 # if receiver is a constant address
                 if not is_expr(recipient):
                     log.info(recipient)
                     log.info(transfer_amount)
                     # for tax, judge the modifiable status of tax-related vars
-                    if is_expr(transfer_amount):
-                        amount_vars = get_vars(transfer_amount)
-                        for var in amount_vars:
-                            if is_storage_var(var):
-                                pos = get_storage_position(var)
-                                if isinstance(pos, int):
-                                    if (
-                                        hex(pos)
-                                        in target_params.state_dependency_info.slot_dependency_map.keys()
-                                    ):
-                                        result["fee"]["modifiable"] = True
+                    if contains_mul_or_div(transfer_amount):
+                        if is_expr(transfer_amount):
+                            amount_vars = get_vars(transfer_amount)
+                            for var in amount_vars:
+                                if is_storage_var(var):
+                                    pos = get_storage_position(var)
+                                    if isinstance(pos, int):
+                                        if (
+                                            hex(pos)
+                                            in target_params.state_dependency_info.slot_dependency_map.keys()
+                                        ):  # judge whether tax-related state vars can be modified by other through storage dependency
+                                            result["fee"]["modifiable"] = True
                     # try:
                     #     expr = state_extractor.compute_coefficient(str(res[ident][1]))
                     #     if expr:
                     #         log.info(expr)
                     # except:
                     #     pass
-                    if target_params.funcSign not in result["fee"].keys():
-                        result["fee"][target_params.funcSign] = {}
-                    # bypass the 0 value
-                    if not is_zero(transfer_amount):
-                        if ident not in result["fee"][target_params.funcSign].keys():
-                            result["fee"][target_params.funcSign][ident] = [res[ident]]
-                        else:
-                            result["fee"][target_params.funcSign][ident].append(
-                                res[ident]
-                            )
+                    if contains_mul_or_div(transfer_amount):
+                        if target_params.funcSign not in result["fee"].keys():
+                            result["fee"][target_params.funcSign] = {}
+                        # bypass the 0 value
+                        if not is_zero(transfer_amount):
+                            if (
+                                ident
+                                not in result["fee"][target_params.funcSign].keys()
+                            ):
+                                result["fee"][target_params.funcSign][ident] = [
+                                    res[ident]
+                                ]
+                            else:
+                                if (
+                                    res[ident]
+                                    not in result["fee"][target_params.funcSign][ident]
+                                ):
+                                    result["fee"][target_params.funcSign][ident].append(
+                                        res[ident]
+                                    )
+                            result["fee"]["warning"] = True
                 else:
                     receiver_vars = get_vars(recipient)
                     for var in receiver_vars:
                         if is_caller(var):
                             log.info(var)
-                            if target_params.funcSign not in result["reward"].keys():
-                                result["reward"][target_params.funcSign] = {}
+                            # analyze whether the reward amount is dependent on the environment var
+                            # in addition, iv-x is a refund logic, filter out
+                            if contains_mul_or_div(
+                                transfer_amount
+                            ) and not is_subtracted_from_IV(transfer_amount):
+                                amount_vars = get_vars(transfer_amount)
+                                for var in amount_vars:
+                                    if (
+                                        is_mem_var(var)
+                                        or is_balance_var(var)
+                                        or is_env_var(var)
+                                    ):
+                                        result["reward"]["warning"] = True
+                                if (
+                                    target_params.funcSign
+                                    not in result["reward"].keys()
+                                ):
+                                    result["reward"][target_params.funcSign] = {}
 
-                            if (
-                                ident
-                                not in result["reward"][target_params.funcSign].keys()
-                            ):
-                                result["reward"][target_params.funcSign][ident] = [
-                                    res[ident]
-                                ]
-                            else:
-                                result["reward"][target_params.funcSign][ident].append(
-                                    res[ident]
-                                )
+                                if (
+                                    ident
+                                    not in result["reward"][
+                                        target_params.funcSign
+                                    ].keys()
+                                ):
+                                    result["reward"][target_params.funcSign][ident] = [
+                                        res[ident]
+                                    ]
+                                else:
+                                    if (
+                                        res[ident]
+                                        not in result["reward"][target_params.funcSign][
+                                            ident
+                                        ]
+                                    ):
+                                        result["reward"][target_params.funcSign][
+                                            ident
+                                        ].append(res[ident])
                         elif is_storage_var(var):
                             log.info(recipient)
                             log.info(transfer_amount)
@@ -1765,7 +1820,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                             # except:
                             #     pass
                             if is_expr(transfer_amount):
-                                amount_vars = get_vars(res[ident][1])
+                                amount_vars = get_vars(transfer_amount)
                                 for var in amount_vars:
                                     if is_storage_var(var):
                                         pos = get_storage_position(var)
@@ -1775,76 +1830,33 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                                 in target_params.state_dependency_info.slot_dependency_map.keys()
                                             ):
                                                 result["fee"]["modifiable"] = True
-                            if target_params.funcSign not in result["fee"].keys():
-                                result["fee"][target_params.funcSign] = {}
-                                # bypass the 0 value
-                            if not is_zero(transfer_amount):
-                                if (
-                                    ident
-                                    not in result["fee"][target_params.funcSign].keys()
-                                ):
-                                    result["fee"][target_params.funcSign][ident] = [
-                                        res[ident]
-                                    ]
-                                else:
-                                    result["fee"][target_params.funcSign][ident].append(
-                                        res[ident]
-                                    )
-
-        # in the paper, it is shaky when the size of data output is
-        # min of stack[6] and the | o |
-
-        if isReal(transfer_amount):
-            if transfer_amount == 0:
-                # stack.insert(0, 1)  # x = 0
-                # considered as the token transfer
-                # load data from the transfer
-                return
-
-        # Let us ignore the call depth
-        balance_ia = global_state["balance"]["Ia"]
-        is_enough_fund = transfer_amount <= balance_ia
-        solver.push()
-        solver.add(is_enough_fund)
-
-        if check_sat(solver) == unsat:
-            # this means not enough fund, thus the execution will result in exception
-            solver.pop()
-            var_to_source[defs[0]] = 0
-            # stack.insert(0, 0)  # x = 0
-        else:
-            # the execution is possibly okay
-            var_to_source[defs[0]] = 1
-            # stack.insert(0, 1)  # x = 1
-            solver.pop()
-            solver.add(is_enough_fund)
-            path_conditions_and_vars["path_condition"].append(is_enough_fund)
-            last_idx = len(path_conditions_and_vars["path_condition"]) - 1
-            new_balance_ia = balance_ia - transfer_amount
-            global_state["balance"]["Ia"] = new_balance_ia
-            address_is = path_conditions_and_vars["Is"]
-            address_is = address_is & CONSTANT_ONES_159
-            boolean_expression = recipient != address_is
-            solver.push()
-            solver.add(boolean_expression)
-            if check_sat(solver) == unsat:
-                solver.pop()
-                new_balance_is = global_state["balance"]["Is"] + transfer_amount
-                global_state["balance"]["Is"] = new_balance_is
-            else:
-                solver.pop()
-                if isReal(recipient):
-                    new_address_name = "concrete_address_" + str(recipient)
-                else:
-                    new_address_name = gen.gen_arbitrary_address_var()
-                old_balance_name = gen.gen_arbitrary_var()
-                old_balance = BitVec(old_balance_name, 256)
-                path_conditions_and_vars[old_balance_name] = old_balance
-                constraint = old_balance >= 0
-                solver.add(constraint)
-                path_conditions_and_vars["path_condition"].append(constraint)
-                new_balance = old_balance + transfer_amount
-                global_state["balance"][new_address_name] = new_balance
+                            if contains_mul_or_div(transfer_amount):
+                                if target_params.funcSign not in result["fee"].keys():
+                                    result["fee"][target_params.funcSign] = {}
+                                    # bypass the 0 value
+                                if not is_zero(transfer_amount):
+                                    if (
+                                        ident
+                                        not in result["fee"][
+                                            target_params.funcSign
+                                        ].keys()
+                                    ):
+                                        result["fee"][target_params.funcSign][ident] = [
+                                            res[ident]
+                                        ]
+                                    else:
+                                        if (
+                                            res[ident]
+                                            not in result["fee"][
+                                                target_params.funcSign
+                                            ][ident]
+                                        ):
+                                            result["fee"][target_params.funcSign][
+                                                ident
+                                            ].append(res[ident])
+                                    result["fee"]["warning"] = True
+        # we default set the call return as 1 as we do not consider the reentrancy pattern
+        var_to_source[defs[0]] = 1
 
     elif opcode == "CALLCODE":
         # TODO: Need to handle miu_i
@@ -2145,11 +2157,17 @@ def run(inputs, state):
     global g_disasm_file
 
     result = {
-        "reward": {},
-        "fee": {"modifiable": False},
+        "dapp_name": "",
+        "total_func": inputs["total_func"],
+        "analyzed_func": inputs["analyzed_func"],
+        "block_num": inputs["block_num"],
+        "address": "",
+        "platform": "",
+        "reward": {"warning": False},
+        "fee": {"warning": False, "modifiable": False},
         "supply": {"amount": None, "unlimited": False},
         "lock": False,
-        "clear": {},
+        "clear": {"warning": False},
         "pause": False,
         "metadata": "",
     }
