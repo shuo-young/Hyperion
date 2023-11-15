@@ -1,4 +1,4 @@
-import re
+import math
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tag import pos_tag
 from nltk.corpus import wordnet
@@ -20,7 +20,10 @@ class FrontEndSpecsExtractor:
         def percent_to_float(percent_str):
             """Converts a percentage string to a float representation."""
             # Remove commas and percentage signs, then convert to float and divide by 100
-            return float(percent_str.replace(",", "").replace("%", "")) / 100
+            try:
+                return float(percent_str.replace(",", "").replace("%", "")) / 100
+            except Exception:
+                return None
 
         keywords = ["reward", "return"]
         words = word_tokenize(text)
@@ -55,7 +58,8 @@ class FrontEndSpecsExtractor:
                         and index + 1 < len(tagged)
                         and tagged[index + 1][0] == "%"
                     ):
-                        values.append(percent_to_float(tagged[index][0]))
+                        if percent_to_float(tagged[index][0]):
+                            values.append(percent_to_float(tagged[index][0]))
                         index += 1
                 limit -= 1
             # return the first found value
@@ -70,7 +74,13 @@ class FrontEndSpecsExtractor:
                 # If no values found, search backwards with the limit.
                 if not percentages_forward:
                     percentages_forward = search_values(i, direction=-1, limit=3)
-
+                if percentages_forward is None or not isinstance(
+                    percentages_forward, (int, float)
+                ):
+                    # 如果找不到有效的百分比，跳过当前循环迭代
+                    continue
+                if math.isnan(percentages_forward):
+                    continue
                 if percentages_forward:
                     fee_type = []
                     k = i - 1
@@ -228,60 +238,63 @@ class FrontEndSpecsExtractor:
         words = word_tokenize(text)
         tagged = pos_tag(words)
         synonyms = self.get_synonyms(["lock", "locked", "locking"])
-        lock_times = {}
-        for i, (word, tag) in enumerate(tagged):
-            if word.lower() in synonyms:
-                j = i + 1
-                time_periods = []
+        lock_times = {"lock": []}
+        try:
+            for i, (word, tag) in enumerate(tagged):
+                if word.lower() in synonyms:
+                    j = i + 1
+                    time_periods = []
 
-                # Find all time periods related to this lock
-                while j < len(tagged):
-                    # Check if the token is a number (either in digit or word form)
-                    is_number = tagged[j][1] in ["CD", "JJ"] or tagged[j][0] in [
-                        "one",
-                        "two",
-                        "three",
-                        "four",
-                        "five",
-                        "six",
-                        "seven",
-                        "eight",
-                        "nine",
-                        "ten",
-                    ]
+                    # Find all time periods related to this lock
+                    while j < len(tagged):
+                        # Check if the token is a number (either in digit or word form)
+                        is_number = tagged[j][1] in ["CD", "JJ"] or tagged[j][0] in [
+                            "one",
+                            "two",
+                            "three",
+                            "four",
+                            "five",
+                            "six",
+                            "seven",
+                            "eight",
+                            "nine",
+                            "ten",
+                        ]
 
-                    # If j is a number and j+1 is a time unit, save the time period
-                    if (
-                        j < len(tagged)
-                        and is_number
-                        and (
-                            tagged[j + 1][0].lower()
-                            in ["year", "years", "month", "months", "day", "days"]
-                        )
-                    ):
-                        time_periods.append(tagged[j][0] + " " + tagged[j + 1][0])
-                        j += 2
-                    else:
-                        j += 1  # Continue to the next token
+                        # If j is a number and j+1 is a time unit, save the time period
+                        if (
+                            j < len(tagged)
+                            and is_number
+                            and (
+                                tagged[j + 1][0].lower()
+                                in ["year", "years", "month", "months", "day", "days"]
+                            )
+                        ):
+                            time_periods.append(tagged[j][0] + " " + tagged[j + 1][0])
+                            j += 2
+                        else:
+                            j += 1  # Continue to the next token
 
-                if time_periods:
-                    lock_description = []
-                    k = i - 1
-                    while k >= 0 and (tagged[k][1] in ["NN", "NNS", "&", "JJ"]):
-                        lock_description.insert(0, tagged[k][0])
-                        k -= 1
-                    lock_name = " ".join(lock_description) + " " + word.lower()
-                    # if find, directly return
-                    lock_times["lock"] = time_periods
-                    return lock_times
-
+                    if time_periods:
+                        lock_description = []
+                        k = i - 1
+                        while k >= 0 and (tagged[k][1] in ["NN", "NNS", "&", "JJ"]):
+                            lock_description.insert(0, tagged[k][0])
+                            k -= 1
+                        lock_name = " ".join(lock_description) + " " + word.lower()
+                        # if find, directly return
+                        if time_periods not in lock_times["lock"]:
+                            lock_times["lock"].append(time_periods)
+                        return lock_times
+        except Exception:
+            return lock_times
         return lock_times
 
     def process_supply(self, text):
         words = word_tokenize(text)
         tagged = pos_tag(words)
         synonyms = self.get_synonyms(["supply"])
-        supplies = {}
+        supplies = {"supply": []}
         found_total_supply = False
         supply_name = ""
 
@@ -310,10 +323,13 @@ class FrontEndSpecsExtractor:
                         ):
                             supply_amount = None
                         else:
-                            if "," in amount:
-                                supply_amount = int(amount.replace(",", ""))
-                            else:
-                                supply_amount = int(amount)
+                            try:
+                                if "," in amount:
+                                    supply_amount = int(amount.replace(",", ""))
+                                else:
+                                    supply_amount = int(amount)
+                            except Exception:
+                                supply_amount = None
                         break
 
                     else:
@@ -326,7 +342,8 @@ class FrontEndSpecsExtractor:
                         supply_description.insert(0, tagged[k][0])
                         k -= 1
                     supply_name = " ".join(supply_description) + " " + word.lower()
-                    supplies[supply_name.strip()] = supply_amount
+                    if supply_amount not in supplies["supply"]:
+                        supplies["supply"].append(supply_amount)
 
                 # Check if the current supply keyword is "total supply"
                 if "total supply" in supply_name.strip().lower():
@@ -334,7 +351,7 @@ class FrontEndSpecsExtractor:
 
                 # If "total supply" was found and the supply amount is not None, return it
                 if found_total_supply and supply_amount is not None:
-                    return {"supply": supply_amount}
+                    return supplies
 
         return supplies
 
