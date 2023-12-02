@@ -1,0 +1,382 @@
+[
+    {
+        "category": 7,
+        "q1": "Whether this text indicates the NFT is accessible? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst, if NFTs are stored in centralized server like https, the NFTs can be not accessible if the centralized server shut down.\nSecond,if NFTs are stored in a decentralized manner like IPFS, the NFTs can be accessible.\nSo,if NFTs are accessible or stored via IPFS, the answer is 'yes'; otherwise, it's 'no'.\n",
+        "output_1": "O yes, the NFT is accessible. According to the text, the NFTs are stored in a decentralized manner on the Binance Smart Chain, making them accessible even if the centralized server is shut down. Additionally, the text states that the NFTs are unique and owned by the collectors, and can be transferred manually or through NFT auction marketplaces, which further supports the idea that the NFTs are accessible.",
+        "expected": "None, None or None, True",
+        "id": "50",
+        "dappName": "Cryptoz NFT",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 1,
+        "q1": "Extract numerical information related to the rate of reward or profit from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "OKEY, I understand. I can extract numerical information related to the rate of reward or profit from the provided text. Based on the text provided;\nthe numerical information I can extract is:\n\n* 3% daily rate of return or profit.\n* 1,095% APR.\n* There is no information on the numerical value of the booty collected per hour.\n\nPlease let me know if there is any other numerical information you would like to extract from the text or have any further questions.",
+        "expected": "3% daily/3%",
+        "id": "12",
+        "dappName": "ADA Pirates",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 1,
+        "q1": "Extract numerical information related to the rate of reward or profit from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": " _ _ _\n\nHere are the numerical values extracted from the text provided:\n\n* Daily rate: 3%\n* APR (annual percentage rate): 1,095%",
+        "expected": "2%",
+        "id": "13",
+        "dappName": "Ape Mines",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 1,
+        "q1": "Extract numerical information related to the rate of reward or profit from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey Dokey! Based on the provided text, here are the numerical information related to the rate of reward or profit:\n\n* Daily Return: 8% APR\n* Dev Fee: 5%\n\nHere's the information in a key-value format as requested:\n\n{\n\"Daily Return\": 8,\n\"Dev Fee\": 5\n}",
+        "expected": "Daily Return 8%/8%",
+        "id": "14",
+        "dappName": "Baked Onions MATIC",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 1,
+        "q1": "Extract numerical information related to the rate of reward or profit from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "  \nSure, here's the extracted numerical information related to the rate of reward or profit in a key-value format:\n\n\u2022 Daily Return: 10% APR\n\n\u2022 Marketing Fee: 5%\n\n\u2022 Prize Pool: 15% of the total marketing wallet fees\n\n\u2022 Prize Pool Distribution:\n\n#1 - 30%\n#2 - 20%\n#3 - 15%\n#4 - 10%\n#5 - 8%\n#6 - 6%\n#7 - 4%\n#8 - 3%\n#9 - 2%\n#10 - 2%",
+        "expected": "10%",
+        "id": "15",
+        "dappName": "Baked Pizza",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 1,
+        "q1": "Extract numerical information related to the rate of reward or profit from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey, here is the numerical information extracted from the text:\n\n\u2022 Daily Profit APY: 8%\n\u2022 Tax: 4%\n\u2022 Minimum Amount for Hiring Miners: 0.01 BNB\n\u2022 Maximum Amount for Hiring Miners: 200 BNB\n\nPlease note that these values are subject to change based on the current mining efficiency rate, which can be found on BscScan. Additionally, the referral program rewards 12% of the BNB used to hire miners, and the tax rate for the Bean Machine miner is 4%.",
+        "expected": "8% daily",
+        "id": "16",
+        "dappName": "Bean Machine",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 2,
+        "q1": "Extract numerical information related to the rate of fee or tax from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey, here are the numerical values related to the rate of fee or tax extracted from the provided text in a key-value format:\n\nKey: \"Daily Mining Efficiency Rate\"\nValue: 3%\n\nKey: \"Mining Efficiency Period\"\nValue: 30 days or less\n\nKey: \"Hire Miners Amount\"\nValue: To be approved by the user.\n\nKey: \"Compound Daily\"\nValue: Allows for the hiring of more miners to increase profit.\n\nKey: \"Withdraw Profit\"\nValue: Allows for the withdrawal of profits using the 'Pocket Your ADA' button.\n\nNote that there is no explicit mention of a fee or tax in the provided text.",
+        "expected": "None",
+        "id": "55",
+        "dappName": "ADA Pirates",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 2,
+        "q1": "Extract numerical information related to the rate of fee or tax from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "$}}%, here are the numerical information related to the rate of fee or tax that can be extracted from the provided text:\n\n{\n\"5%\": {\n\"daily\": true,\n\"initial_investment\": \"$1,000 USD\",\n\"return_on_investment\": \"$9,000 USD\"\n}\n}\n\nExplanation:\n\n* \"5% fixed income daily on your initial deposit\" means that the investor will receive a fixed rate of 5% per day on their initial investment.\n* \"Calculate your future earnings. You will receive fixed 5% daily of your initial investment\" confirms that the investor will receive a fixed rate of 5% per day on their initial investment.\n* \"% Users are rewarded with 5% every day\" indicates that the investor will receive a percentage of their initial investment (5%) every day.\n\nPlease note that the provided text does not mention any fee or tax, but rather a fixed daily income on the initial investment.",
+        "expected": "None",
+        "id": "56",
+        "dappName": "AI Trader",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 2,
+        "q1": "Extract numerical information related to the rate of fee or tax from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": " $ARTX Contract: 0x8284a4f75ed5cc56e0107a345bab682ed3a95be6\n\nKey-Value Pairs:\n\n* 5% BUSD Rewards: 5% of each transaction is paid to $ARTX holders as BUSD rewards.\n* Burn Fee: 0%\n* Buy Fee: 0%\n* Sell Fee: 0%\n\nNote: All fees are in BUSD.",
+        "expected": "Buy Fee:16%, Sell Fee:16%, Burn Fee:1%",
+        "id": "58",
+        "dappName": "ArtemisX",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 2,
+        "q1": "Extract numerical information related to the rate of fee or tax from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": " _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+        "expected": "sell fee: 10%",
+        "id": "59",
+        "dappName": "Avarice",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 2,
+        "q1": "Extract numerical information related to the rate of fee or tax from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "\n\nHere are the numerical information related to the rate of fee or tax extracted from the provided text in a key-value format:\n\n{\n\"APR\": 3.0% ~ 1095%,\n\"Referral Rewards\": 10%,\n\"JTVL Sell Fee\": 1%,\n\"Daily Capped Rewards\": 50 BNB\n}",
+        "expected": "Dev & Marketing: 1%, JTVL sell fee: 1%",
+        "id": "60",
+        "dappName": "Block Rewards",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 3,
+        "q1": "Extract numerical information related to the total amount or supply from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey dokey! Here are the numerical information related to total amount or supply in the provided text: \n\n1. Total Supply: 250,000,000 MILKY\n2. Airdrop: 25,000,000 (10% of Total Supply)\n3. Marketing: 75,000,000 (30% of Total Supply)\n4. Liquidity: 50,000,000 (20% of Total Supply)\n5. Presale: 25,000,000 (10% of Total Supply)\n6. Treasury: 37,500,000 (15% of Total Supply)\n7. Team: 25,000,000 (10% of Total Supply)\n8. Advisors: 12,500,000 (5% of Total Supply)\n8. Airdrop Worth: 18,527,818 MILKY (about 92,639.09 USD)\n\nThere you have it! These are all the numerical information related to the total amount or supply of the MilkyWay token that can be found in the provided text.",
+        "expected": "supply:250,000,000",
+        "id": "43",
+        "dappName": "Milkyway",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 3,
+        "q1": "Extract numerical information related to the total amount or supply from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "\n\nHere is the extracted numerical information in a key-value format:\n\n{\n\"Total amount of data breaches\": 36 billion,\n\"Number of Yahoo accounts hacked\": 3 billion,\n\"Targeted malicious email rate for smaller organizations\": 1 in 323\n}",
+        "expected": "None",
+        "id": "44",
+        "dappName": "PunkPanda",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 3,
+        "q1": "Extract numerical information related to the total amount or supply from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey doke! Here are the numerical information you requested:\n\n\u2022 Total supply: 275,000,000\n\u2022 Ticker symbol: PPM\n\u2022 Pre-mine: 65,000,000 ",
+        "expected": "supply:275,000,000",
+        "id": "44",
+        "dappName": "PunkPanda",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 4,
+        "q1": "Extract numerical information related to the lock time from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "Okey, I understand. Here is the information related to the lock time, presented in a key-value format based on the provided text: \n\nLock Time:\n\n* 5 years\n\nIn the provided text, there is no information related to the lock time. Therefore, I could not extract any numerical information related to lock time.",
+        "expected": "lock:5 years",
+        "id": "9",
+        "dappName": "baby bnb tiger",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 4,
+        "q1": "Extract numerical information related to the lock time from the provided text.Return the values in a key-value format,do not explain.",
+        "output_1": "\n Sure! Here are the numerical information related to the lock time of the token:\n\nLocked Supply: 24.4021%\n\nPlease note that the information is in percentage and not in absolute numbers.",
+        "expected": "None",
+        "id": "10",
+        "dappName": "BNBTiger",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 5,
+        "q1": "Whether this text indicates the existence of the manner of clearing or withdrawing all tokens/assets by someone?You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the define of the \"clearing assets\" is : An act of clearing contract assets, by calling certain functions in the contract (usually only called by privileged users) to achieve the transfer of all tokens or ethers. So generally the front end will not have this kind of information.\nSecond,if dapp can clear the assets in the contract, there may be some descriptions like: Our platform contains a feature allowing for the transfer of all contract assets to project owner for safety reasons.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "output_1": "   Based on the information provided, the answer is NO, there is no indication of a manner of clearing or withdrawing all tokens/assets by someone. The text appears to be a dashboard for a cryptocurrency investment platform, providing information about the user's investments, referral earnings, and insurance status. There is no mention of a feature or option to clear all tokens or assets.\n\nThe text mentions \"Total Deposited Value,\" \"Active Investments,\" \"Total Referral Earnings,\" \"Total Withdraw,\" and \"Insurance Status,\" which suggests that the platform is tracking the user's investments and earnings, but there is no indication of a clearing or withdrawal feature. Additionally, the text mentions \"Insurance Fee\" and \"Reward,\" which suggests that the platform may offer some form of insurance or incentives for the user's investments.\n\nIn conclusion, based on the information provided, there is no indication of a manner of clearing or withdrawing all tokens/assets by someone.",
+        "expected": "clear:0",
+        "id": "1",
+        "dappName": "BNB Daily Finance",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 5,
+        "q1": "Whether this text indicates the existence of the manner of clearing or withdrawing all tokens/assets by someone?You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the define of the \"clearing assets\" is : An act of clearing contract assets, by calling certain functions in the contract (usually only called by privileged users) to achieve the transfer of all tokens or ethers. So generally the front end will not have this kind of information.\nSecond,if dapp can clear the assets in the contract, there may be some descriptions like: Our platform contains a feature allowing for the transfer of all contract assets to project owner for safety reasons.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "output_1": " } based on the information provided, the answer is \"no\". The text does not indicate the existence of a manner of clearing or withdrawing all tokens/ assets by someone. The text describes a non-fungible token (NFT) collectibles trade game built on scarcity, rarity, and community, where users can collect, buy, sell, and exchange NFT cards and tokens through standard-compliant wallets, markets, game engines, exchanges, and other future inventions. There is no mention of a feature allowing for the transfer of all contract assets to project owners or any descriptions that suggest the possibility of clearing assets in the contract. Therefore, it is not possible to clear all tokens or assets in the contract based on the information provided.",
+        "expected": "clear:0",
+        "id": "2",
+        "dappName": "Cryptoz NFT",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 6,
+        "q1": "Whether this text indicates that the DApp can be paused? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the definition of the \"Dapp pause\" is :a dapp pause refers to a feature embedded within a smart contract of a decentralized application (dApp), enabling the contract owner to temporarily suspend specific functionalities, such as token minting. \nSecond, if dapp can be paused, there may be some descriptions like: For the safety and security of our users, in rare cases of emergency or to address potential vulnerabilities, the dapp owner has the capability to temporarily suspend specific functionalities, such as token minting or transfers.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "output_1": " |Yes| Based on the given text, the DApp can be paused.\n\nThe text contains several descriptions mentioning the temporary suspension of specific functionalities, such as token minting, which indicates that the DApp has a feature embedded within the smart contract that allows for pausing. This feature is referred to as \"dapp pause.\" Additionally, the text mentions \"safety and security,\" which suggests that the DApp owner can pause the functionalities in rare cases of emergency or to address potential vulnerabilities.",
+        "expected": "pause:0",
+        "id": "51",
+        "dappName": "Balance Network",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    },
+    {
+        "category": 6,
+        "q1": "Whether this text indicates that the DApp can be paused? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the definition of the \"Dapp pause\" is :a dapp pause refers to a feature embedded within a smart contract of a decentralized application (dApp), enabling the contract owner to temporarily suspend specific functionalities, such as token minting. \nSecond, if dapp can be paused, there may be some descriptions like: For the safety and security of our users, in rare cases of emergency or to address potential vulnerabilities, the dapp owner has the capability to temporarily suspend specific functionalities, such as token minting or transfers.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "output_1": " (Please note that I'll answer concisely according to the requirements and provide accurate information.) \n\nNo, the DApp cannot be paused based on the text provided. There is no mention of a pause feature or functionality within the Smart Contract of the Decentralized Application (DApp). The text provides information about the BNBCASINO2023 and its features, such as the ability to earn rewards, referral program, and the smart contract's distribution of rewards.",
+        "expected": "pause:0",
+        "id": "52",
+        "dappName": "BNB Casino",
+        "notes": "\u7b2c9\u6b21\u5b9e\u9a8c,\u5c06\u95ee\u9898\u5206\u4e3a\u6570\u503c\u578b\u548c\u5e03\u5c14\u578b\u56de\u7b54\u3002\u6570\u503c\u578b\u4ee5\u952e\u503c\u5bf9\u63d0\u53d6\u76f8\u5173\u6570\u503c\uff1b\u5e03\u5c14\u578b\u901a\u8fc7cot\u56de\u7b54",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    }
+]

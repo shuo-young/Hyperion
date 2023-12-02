@@ -1,0 +1,22 @@
+[
+    {
+        "category": 7,
+        "q1": "Whether this text indicates the NFT is accessible? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst, if NFTs are stored in the centralized server via https, the NFTs can be not accessible if the centralized server shut down.\nSecond,if NFTs are stored via IPFS and can be accessed forever, the NFTs can be accessible.\nSo,if NFTs are accessible or stored via IPFS, the answer is 'yes'; otherwise, it's 'no'.",
+        "input_1": "\nYou are an expert in blockchain and smart contracts.\nAlways answer according to my requirements and be concise and accurate.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n            Whether this text indicates the NFT is accessible? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst, if NFTs are stored in the centralized server via https, the NFTs can be not accessible if the centralized server shut down.\nSecond,if NFTs are stored via IPFS and can be accessed forever, the NFTs can be accessible.\nSo,if NFTs are accessible or stored via IPFS, the answer is 'yes'; otherwise, it's 'no'.\nThe text I provided is:Cryptoz Shop: Your NFT Crypt Markets View. Help Connect To Blockchain. The Cryptoz NFT Universe. Cryptoz is an NFT collectibles trade game built on scarcity, rarity, and community. The quickest way to earn CZXP is through your affiliate network. Use the Affiliate link in the top menu, and check the help section for all the ways to earn or purchase CZXP from the markets. Time to have some fun.\n\nThe goal is to collect the rare and unique undead NFT cards, earn or trade BEP-20 Cryptoz eXPerience (CZXP) tokens to unlock new levels. Each minted NFT Cryptoz card is a unique token on the Binance Smart Chain. Collectors can buy, sell, and exchange both their Cryptoz NFT cards and CZXP tokens through any standards-compliant wallets, markets, game engines, exchanges, DeFi, and other future inventions.\n\nGet Started: To interact with Cryptoz, you will need to install Metamask configured for the Binance Smart Chain and have a small amount of BNB in your account. NFT token collecting and trading is an exciting and new opportunity for classic and modern collectors alike. What makes this platform unique compared to other online digital asset-based games or systems are: Cryptoz NFT Card functions and data are a set of Smart Contracts that run independently of the creators. There is no OFF switch. The Cryptoz NFT Universe will live forever on the Binance Smart Chain. The developers cannot tamper or change the Card types once they are loaded, i.e., no re-minting scarce NFTs. The NFTs are truly unique, owned and transferable between wallets manually or automated through NFT auction marketplaces. Visit the Help section of our website to read more. +18.\n\nYou are connected to: Binance Smart Chain. CZXP Contract - 0x2b974da27c9dd35412d71dd36e3e108486c45444. Cryptoz Contract - 0x8a0c542ba7bbbab7cf3551ffcc546cdc5362d2a1.\n\nLinks: Blog. Telegram. Support Us. Donations. Cool Swag.\n\n2021 Copyright Cardinal Entertainment.",
+        "output_1": "O yes, the NFT is accessible. According to the text, the NFTs are stored via IPFS, which means they can be accessed forever. Additionally, the text states that the NFTs are unique and transferable between wallets, which further indicates that they are accessible.",
+        "expected": "None, None or None, True",
+        "id": "50",
+        "dappName": "Cryptoz NFT",
+        "notes": "\u5355\u72ec\u4f18\u5316NFT\u7c7b",
+        "key_parameter": {
+            "peft_model": false,
+            "do_sample": true,
+            "temperature": 1.0,
+            "top_p": 1.0,
+            "top_k": 10,
+            "use_fast_kernels": false
+        },
+        "correct": "",
+        "evaluate": ""
+    }
+]

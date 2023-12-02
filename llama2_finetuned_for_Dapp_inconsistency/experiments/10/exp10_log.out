@@ -1,0 +1,4 @@
+2023-10-24 09:17:05,282 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/10/old_text_no_format.out - INFO - 第10次实验，数值类不做格式化限制
+2023-10-24 09:17:05,282 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/10/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 09:17:14,887 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/10/old_text_no_format.out - INFO - 第10次实验，数值类不做格式化限制
+2023-10-24 09:17:14,887 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/10/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

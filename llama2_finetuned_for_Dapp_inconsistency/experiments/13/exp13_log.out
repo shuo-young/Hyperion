@@ -1,0 +1,4 @@
+2023-10-25 09:26:42,692 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/13/log.out - INFO - 使用llama对文本进行分段
+2023-10-25 09:26:42,692 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/13/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-25 09:36:43,378 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/13/log.out - INFO - 使用llama对文本进行分段
+2023-10-25 09:36:43,378 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/13/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

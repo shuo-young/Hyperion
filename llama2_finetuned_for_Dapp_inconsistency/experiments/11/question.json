@@ -1,0 +1,8 @@
+[
+    {
+        "q1":"Whether this text indicates the NFT is accessible? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst, if NFTs are stored in the centralized server via https, the NFTs can be not accessible if the centralized server shut down.\nSecond,if NFTs are stored via IPFS and can be accessed forever, the NFTs can be accessible.\nSo,if NFTs are accessible or stored via IPFS, the answer is 'yes'; otherwise, it's 'no'.",
+        "category":7
+    }
+]
+
+

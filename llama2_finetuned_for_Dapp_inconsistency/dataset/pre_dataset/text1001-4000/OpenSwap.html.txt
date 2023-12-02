@@ -1,0 +1,1 @@
+ SwapLiquidityTokensYieldsBridgeNftBarPerpetual BondsInfoOptimismConnect WalletLight ​ Disclaimer:- You are responsible for your funds.- Please DYOR. Read the Docs.- A lot of our contracts aren't audited yet.Fees- Aggregator Swap fees: 0.03% + LP feeI Accept

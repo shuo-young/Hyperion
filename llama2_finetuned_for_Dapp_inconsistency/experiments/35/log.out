@@ -1,0 +1,300 @@
+nohup: ignoring input
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/home/zhongqy/workplace/llama2_finetuning_for_Dapp/llama-recipes-09-11/llama_finetuning.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import packaging
+/home/zhongqy/workplace/llama2_finetuning_for_Dapp/llama-recipes-09-11/llama_finetuning.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import packaging
+Clearing GPU cache for all ranks
+--> Running with torch dist debug set to detail
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:09<00:19,  9.59s/it]Loading checkpoint shards:  33%|███▎      | 1/3 [00:09<00:19,  9.50s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:16<00:08,  8.17s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:18<00:09,  9.16s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:22<00:00,  7.04s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:22<00:00,  7.49s/it]
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:362: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+The BetterTransformer implementation does not support padding during training, as the fused kernels do not support attention masks. Beware that passing padded batched data during training may result in unexpected outputs. Please refer to https://huggingface.co/docs/optimum/bettertransformer/overview for more details.
+Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.07s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.67s/it]
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:362: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+The BetterTransformer implementation does not support padding during training, as the fused kernels do not support attention masks. Beware that passing padded batched data during training may result in unexpected outputs. Please refer to https://huggingface.co/docs/optimum/bettertransformer/overview for more details.
+--> Model /mnt/data2/zhongqy/llama-2-13b-chat-hf
+
+--> /mnt/data2/zhongqy/llama-2-13b-chat-hf has 13015.86432 Million params
+
+trainable params: 6,553,600 || all params: 13,022,417,920 || trainable%: 0.05032552357220002
+trainable params: 6,553,600 || all params: 13,022,417,920 || trainable%: 0.05032552357220002
+bFloat16 enabled for mixed precision - using bfSixteen policy
+--> applying fsdp activation checkpointing...
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/torch/cuda/memory.py:303: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+Training Epoch0:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]--> applying fsdp activation checkpointing...
+--> Training Set Length = 70
+--> Validation Set Length = 70
+/mnt/data2/zhongqy/anaconda3/envs/llama/lib/python3.10/site-packages/torch/cuda/memory.py:303: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+Training Epoch0:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 1.733123540878296
+Training Epoch0:  12%|[34m█▎        [0m| 1/8 [00:07<00:54,  7.79s/it]Training Epoch0:  12%|[34m█▎        [0m| 1/8 [00:14<01:41, 14.47s/it]
+ step 1 is completed and loss is 0.4849523901939392
+Training Epoch0:  25%|[34m██▌       [0m| 2/8 [00:12<00:35,  5.92s/it]Training Epoch0:  25%|[34m██▌       [0m| 2/8 [00:19<00:51,  8.66s/it]Training Epoch0:  38%|[34m███▊      [0m| 3/8 [00:23<00:33,  6.79s/it]
+ step 2 is completed and loss is 0.36580127477645874
+Training Epoch0:  38%|[34m███▊      [0m| 3/8 [00:16<00:26,  5.30s/it]
+ step 3 is completed and loss is 0.3677874207496643
+Training Epoch0:  50%|[34m█████     [0m| 4/8 [00:21<00:20,  5.02s/it]Training Epoch0:  50%|[34m█████     [0m| 4/8 [00:28<00:23,  5.93s/it]Training Epoch0:  62%|[34m██████▎   [0m| 5/8 [00:32<00:16,  5.44s/it]
+ step 4 is completed and loss is 0.3469507694244385
+Training Epoch0:  62%|[34m██████▎   [0m| 5/8 [00:26<00:14,  4.87s/it]
+ step 5 is completed and loss is 0.29323115944862366
+Training Epoch0:  75%|[34m███████▌  [0m| 6/8 [00:30<00:09,  4.77s/it]Training Epoch0:  75%|[34m███████▌  [0m| 6/8 [00:37<00:10,  5.16s/it]Training Epoch0:  88%|[34m████████▊ [0m| 7/8 [00:41<00:04,  4.96s/it]
+ step 6 is completed and loss is 0.6993100047111511
+Training Epoch0:  88%|[34m████████▊ [0m| 7/8 [00:35<00:04,  4.71s/it]Training Epoch0: 100%|[34m██████████[0m| 8/8 [00:46<00:00,  4.84s/it]
+ step 7 is completed and loss is 0.2857743501663208
+Training Epoch0: 100%|[34m██████████[0m| 8/8 [00:39<00:00,  4.66s/it]Training Epoch0: 100%|[34m██████████[0m| 8/8 [00:46<00:00,  5.82s/it]
+Training Epoch0: 100%|[34m██████████[0m| 8/8 [00:39<00:00,  4.99s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 53 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 3 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 1: train_perplexity=1.9780, train_epoch_loss=0.6821, epcoh time 40.59034815058112s
+Training Epoch1:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch1:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch1:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.16s/it]
+ step 0 is completed and loss is 0.8956337571144104
+Training Epoch1:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.09s/it]
+ step 1 is completed and loss is 0.2815141975879669
+Training Epoch1:  25%|[34m██▌       [0m| 2/8 [00:09<00:28,  4.83s/it]Training Epoch1:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.87s/it]
+ step 2 is completed and loss is 0.17057962715625763
+Training Epoch1:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.75s/it]Training Epoch1:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.77s/it]
+ step 3 is completed and loss is 0.16765253245830536
+Training Epoch1:  50%|[34m█████     [0m| 4/8 [00:19<00:18,  4.72s/it]Training Epoch1:  50%|[34m█████     [0m| 4/8 [00:19<00:18,  4.73s/it]
+ step 4 is completed and loss is 0.17223410308361053
+Training Epoch1:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.70s/it]Training Epoch1:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.70s/it]Training Epoch1:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.68s/it]
+ step 5 is completed and loss is 0.1997278779745102
+Training Epoch1:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.68s/it]
+ step 6 is completed and loss is 0.33367034792900085
+Training Epoch1:  88%|[34m████████▊ [0m| 7/8 [00:32<00:04,  4.66s/it]Training Epoch1:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.66s/it]Training Epoch1: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.65s/it]
+ step 7 is completed and loss is 0.15552185475826263
+Training Epoch1: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.65s/it]Training Epoch1: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.72s/it]
+Training Epoch1: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.71s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT modules
+we are about to save the PEFT modules
+Epoch 2: train_perplexity=1.4313, train_epoch_loss=0.3586, epcoh time 38.412154144607484s
+Training Epoch2:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch2:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch2:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.06s/it]
+ step 0 is completed and loss is 0.3877955377101898
+Training Epoch2:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.11s/it]Training Epoch2:  25%|[34m██▌       [0m| 2/8 [00:09<00:28,  4.83s/it]
+ step 1 is completed and loss is 0.20909003913402557
+Training Epoch2:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.85s/it]Training Epoch2:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.76s/it]
+ step 2 is completed and loss is 0.12690527737140656
+Training Epoch2:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.77s/it]Training Epoch2:  50%|[34m█████     [0m| 4/8 [00:19<00:18,  4.74s/it]
+ step 3 is completed and loss is 0.12748973071575165
+Training Epoch2:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.75s/it]
+ step 4 is completed and loss is 0.12914471328258514
+Training Epoch2:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.73s/it]Training Epoch2:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.73s/it]
+ step 5 is completed and loss is 0.1552087515592575
+Training Epoch2:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.71s/it]Training Epoch2:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.71s/it]
+ step 6 is completed and loss is 0.20832796394824982
+Training Epoch2:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]Training Epoch2:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]
+ step 7 is completed and loss is 0.09940800070762634
+Training Epoch2: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.68s/it]Training Epoch2: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.69s/it]Training Epoch2: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.74s/it]
+Training Epoch2: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.74s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT modules
+we are about to save the PEFT modules
+Epoch 3: train_perplexity=1.2426, train_epoch_loss=0.2172, epcoh time 38.79462490975857s
+Training Epoch3:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch3:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 0.15614891052246094
+Training Epoch3:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.22s/it]Training Epoch3:  12%|[34m█▎        [0m| 1/8 [00:05<00:37,  5.35s/it]Training Epoch3:  25%|[34m██▌       [0m| 2/8 [00:10<00:29,  4.96s/it]
+ step 1 is completed and loss is 0.1394936442375183
+Training Epoch3:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.92s/it]
+ step 2 is completed and loss is 0.07917863130569458
+Training Epoch3:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.82s/it]Training Epoch3:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.85s/it]
+ step 3 is completed and loss is 0.08052542805671692
+Training Epoch3:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.77s/it]Training Epoch3:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.79s/it]
+ step 4 is completed and loss is 0.09778033941984177
+Training Epoch3:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.75s/it]Training Epoch3:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]Training Epoch3:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]
+ step 5 is completed and loss is 0.12464030086994171
+Training Epoch3:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]
+ step 6 is completed and loss is 0.13941003382205963
+Training Epoch3:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]Training Epoch3:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]Training Epoch3: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.69s/it]
+ step 7 is completed and loss is 0.07715027034282684
+Training Epoch3: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.69s/it]Training Epoch3: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.78s/it]
+Training Epoch3: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.76s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 4: train_perplexity=1.1446, train_epoch_loss=0.1351, epcoh time 38.84841626789421s
+Training Epoch4:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch4:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch4:  12%|[34m█▎        [0m| 1/8 [00:05<00:37,  5.31s/it]
+ step 0 is completed and loss is 0.06435096263885498
+Training Epoch4:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.22s/it]Training Epoch4:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.94s/it]
+ step 1 is completed and loss is 0.10218597948551178
+Training Epoch4:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.91s/it]Training Epoch4:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.84s/it]
+ step 2 is completed and loss is 0.05416509136557579
+Training Epoch4:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.82s/it]Training Epoch4:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.79s/it]
+ step 3 is completed and loss is 0.04671613499522209
+Training Epoch4:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.78s/it]Training Epoch4:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]
+ step 4 is completed and loss is 0.08801119774580002
+Training Epoch4:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]
+ step 5 is completed and loss is 0.09927050024271011
+Training Epoch4:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch4:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.74s/it]
+ step 6 is completed and loss is 0.07062680274248123
+Training Epoch4:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]Training Epoch4:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.72s/it]Training Epoch4: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.70s/it]
+ step 7 is completed and loss is 0.048489734530448914
+Training Epoch4: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.70s/it]Training Epoch4: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.78s/it]
+Training Epoch4: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.77s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 5: train_perplexity=1.0927, train_epoch_loss=0.0887, epcoh time 38.825138909742236s
+Training Epoch5:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch5:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 0.03526042774319649
+Training Epoch5:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.19s/it]Training Epoch5:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.07s/it]
+ step 1 is completed and loss is 0.08247882127761841
+Training Epoch5:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.92s/it]Training Epoch5:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.86s/it]
+ step 2 is completed and loss is 0.036988161504268646
+Training Epoch5:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.82s/it]Training Epoch5:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.79s/it]
+ step 3 is completed and loss is 0.032717108726501465
+Training Epoch5:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.77s/it]Training Epoch5:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.76s/it]
+ step 4 is completed and loss is 0.07572353631258011
+Training Epoch5:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.74s/it]Training Epoch5:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.73s/it]
+ step 5 is completed and loss is 0.0713319331407547
+Training Epoch5:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch5:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.72s/it]Training Epoch5:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]
+ step 6 is completed and loss is 0.030094070360064507
+Training Epoch5:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]
+ step 7 is completed and loss is 0.031824130564928055
+Training Epoch5: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.69s/it]Training Epoch5: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.70s/it]Training Epoch5: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.75s/it]
+Training Epoch5: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.77s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 6: train_perplexity=1.0645, train_epoch_loss=0.0625, epcoh time 38.865682986564934s
+Training Epoch6:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch6:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 0.01809474639594555
+Training Epoch6:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.19s/it]Training Epoch6:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.28s/it]Training Epoch6:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.94s/it]
+ step 1 is completed and loss is 0.06586602330207825
+Training Epoch6:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.91s/it]
+ step 2 is completed and loss is 0.0278074499219656
+Training Epoch6:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.82s/it]Training Epoch6:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.80s/it]
+ step 3 is completed and loss is 0.022990936413407326
+Training Epoch6:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.77s/it]Training Epoch6:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.78s/it]
+ step 4 is completed and loss is 0.058976996690034866
+Training Epoch6:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.74s/it]Training Epoch6:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]
+ step 5 is completed and loss is 0.057409632951021194
+Training Epoch6:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch6:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch6:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]
+ step 6 is completed and loss is 0.02455759420990944
+Training Epoch6:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]
+ step 7 is completed and loss is 0.022067662328481674
+Training Epoch6: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.69s/it]Training Epoch6: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.70s/it]Training Epoch6: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.77s/it]
+Training Epoch6: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.76s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 7: train_perplexity=1.0454, train_epoch_loss=0.0444, epcoh time 38.891266003251076s
+Training Epoch7:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch7:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch7:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.16s/it]
+ step 0 is completed and loss is 0.009068792685866356
+Training Epoch7:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.08s/it]Training Epoch7:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.89s/it]
+ step 1 is completed and loss is 0.055955369025468826
+Training Epoch7:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.87s/it]
+ step 2 is completed and loss is 0.022789739072322845
+Training Epoch7:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.83s/it]Training Epoch7:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.81s/it]Training Epoch7:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.78s/it]
+ step 3 is completed and loss is 0.017463039606809616
+Training Epoch7:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.77s/it]
+ step 4 is completed and loss is 0.047648731619119644
+Training Epoch7:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.75s/it]Training Epoch7:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]Training Epoch7:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]
+ step 5 is completed and loss is 0.04693851247429848
+Training Epoch7:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch7:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.72s/it]
+ step 6 is completed and loss is 0.015732906758785248
+Training Epoch7:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.72s/it]Training Epoch7: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.70s/it]
+ step 7 is completed and loss is 0.019204556941986084
+Training Epoch7: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.70s/it]Training Epoch7: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.77s/it]
+Training Epoch7: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.76s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 8: train_perplexity=1.0328, train_epoch_loss=0.0323, epcoh time 38.81147971190512s
+Training Epoch8:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch8:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 0.005069408565759659
+Training Epoch8:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.18s/it]Training Epoch8:  12%|[34m█▎        [0m| 1/8 [00:05<00:36,  5.24s/it]Training Epoch8:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.93s/it]
+ step 1 is completed and loss is 0.05181509628891945
+Training Epoch8:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.91s/it]Training Epoch8:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.83s/it]
+ step 2 is completed and loss is 0.018160315230488777
+Training Epoch8:  38%|[34m███▊      [0m| 3/8 [00:14<00:24,  4.82s/it]
+ step 3 is completed and loss is 0.012523485347628593
+Training Epoch8:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.77s/it]Training Epoch8:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.78s/it]Training Epoch8:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.75s/it]
+ step 4 is completed and loss is 0.039573539048433304
+Training Epoch8:  62%|[34m██████▎   [0m| 5/8 [00:24<00:14,  4.76s/it]
+ step 5 is completed and loss is 0.03919757530093193
+Training Epoch8:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.73s/it]Training Epoch8:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.74s/it]
+ step 6 is completed and loss is 0.010064090602099895
+Training Epoch8:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]Training Epoch8:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.71s/it]Training Epoch8: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.69s/it]
+ step 7 is completed and loss is 0.015208764001727104
+Training Epoch8: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.69s/it]Training Epoch8: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.77s/it]
+Training Epoch8: 100%|[34m██████████[0m| 8/8 [00:38<00:00,  4.76s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 9: train_perplexity=1.0248, train_epoch_loss=0.0245, epcoh time 38.85237211082131s
+Training Epoch9:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]Training Epoch9:   0%|[34m          [0m| 0/8 [00:00<?, ?it/s]
+ step 0 is completed and loss is 0.003370505291968584
+Training Epoch9:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.11s/it]Training Epoch9:  12%|[34m█▎        [0m| 1/8 [00:05<00:35,  5.06s/it]
+ step 1 is completed and loss is 0.04827774316072464
+Training Epoch9:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.87s/it]Training Epoch9:  25%|[34m██▌       [0m| 2/8 [00:09<00:29,  4.85s/it]
+ step 2 is completed and loss is 0.01605023629963398
+Training Epoch9:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.79s/it]Training Epoch9:  38%|[34m███▊      [0m| 3/8 [00:14<00:23,  4.77s/it]
+ step 3 is completed and loss is 0.010699301026761532
+Training Epoch9:  50%|[34m█████     [0m| 4/8 [00:19<00:19,  4.75s/it]Training Epoch9:  50%|[34m█████     [0m| 4/8 [00:19<00:18,  4.75s/it]
+ step 4 is completed and loss is 0.03376388922333717
+Training Epoch9:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.73s/it]Training Epoch9:  62%|[34m██████▎   [0m| 5/8 [00:23<00:14,  4.73s/it]Training Epoch9:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.71s/it]
+ step 5 is completed and loss is 0.033143848180770874
+Training Epoch9:  75%|[34m███████▌  [0m| 6/8 [00:28<00:09,  4.72s/it]
+ step 6 is completed and loss is 0.0074776411056518555
+Training Epoch9:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]Training Epoch9:  88%|[34m████████▊ [0m| 7/8 [00:33<00:04,  4.70s/it]Training Epoch9: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.69s/it]
+ step 7 is completed and loss is 0.012672356329858303
+Training Epoch9: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.69s/it]Training Epoch9: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.74s/it]
+Training Epoch9: 100%|[34m██████████[0m| 8/8 [00:37<00:00,  4.75s/it]
+Max CUDA memory allocated was 38 GB
+Max CUDA memory reserved was 52 GB
+Peak active CUDA memory was 38 GB
+Cuda Malloc retires : 0
+CPU Total Peak Memory consumed during the train (max): 4 GB
+we are about to save the PEFT moduleswe are about to save the PEFT modules
+
+Epoch 10: train_perplexity=1.0198, train_epoch_loss=0.0196, epcoh time 38.64394685998559s
+Key: avg_train_prep, Value: 1.207659125328064
+Key: avg_train_loss, Value: 0.16649238765239716

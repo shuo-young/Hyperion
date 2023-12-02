@@ -1,0 +1,20 @@
+2023-10-24 11:12:44,449 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:12:44,449 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:12:48,884 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:12:48,884 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:17:37,012 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:17:37,013 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:17:38,123 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:17:38,123 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:20:13,174 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:20:13,174 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:20:14,244 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:20:14,244 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:21:57,327 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:21:57,327 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:22:01,042 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:22:01,042 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:23:30,991 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:23:30,991 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-24 11:23:32,839 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - 单独优化NFT类
+2023-10-24 11:23:32,839 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/11/old_text_no_format.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

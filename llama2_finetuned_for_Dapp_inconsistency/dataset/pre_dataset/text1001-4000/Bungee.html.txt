@@ -1,0 +1,1 @@
+TransferRefuelTransaction HistoryConnect WalletTransferFromBal: 0 MAXNo Supported TokensSelect TokenNo tokens foundToBal: 0 0No Supported TokensSelect TokenNo tokens foundEnable Refuel Refuel isn't supported for same chain swapsConnect WalletRecipient Address Add AddressPowered by SocketDiscordTwitterMediumMulti Tx transfer 

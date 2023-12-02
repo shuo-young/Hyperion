@@ -1,0 +1,32 @@
+[
+    {
+        "q1":"Extract numerical information related to the rate of reward or profit from the provided text.",
+        "category":1
+    },
+    {
+        "q1":"Extract numerical information related to the rate of fee or tax from the provided text. ",
+        "category":2
+    },
+    {
+        "q1":"Extract numerical information related to the total amount or supply from the provided text. ",
+        "category":3
+    },
+    {
+        "q1":"Extract numerical information related to the lock time from the provided text. ",
+        "category":4
+    },
+    {
+        "q1": "Whether this text indicates the existence of the manner of clearing or withdrawing all the tokens/assets containing in the contract by someone?You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the definition of the \"clearing assets\" is : An act of clearing contract assets, by calling certain functions in the contract (usually only called by privileged users) to achieve the transfer of all tokens or ethers. So generally the front end will not have this kind of information.\nSecond,if dapp can clear the assets in the contract, there may be some descriptions like: Our platform contains a feature allowing for the transfer of all contract assets to project owner for safety reasons.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "category":5
+    },
+    {
+        "q1":"Whether this text indicates that the DApp can be paused? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,the definition of the \"Dapp pause\" is :a dapp pause refers to a feature embedded within a smart contract of a decentralized application (dApp), enabling the contract owner to temporarily suspend specific functionalities, such as token minting. \nSecond, if dapp can be paused, there may be some descriptions like: For the safety and security of our users, in rare cases of emergency or to address potential vulnerabilities, the dapp owner has the capability to temporarily suspend specific functionalities, such as token minting or transfers.This is just an example to help you understand. The actual situation is not limited to such descriptions.\n",
+        "category":6
+    },
+    {
+        "q1":"Whether this text indicates the NFT is stored in centralized server? You need to answer 'yes' or 'no' and provide a concise explanation.\nThink step by step:\nFirst,If the text mentions that NFTs are stored using HTTPS, or suggests the possibility of the server shutting down, conclude that the NFT is stored in centralized server.\nSecond,If the text mentions that NFTs can be accessed forever or are stored via IPFS, conclude that the NFT is not stored in a centralized server.",
+        "category":7
+    }
+]
+
+

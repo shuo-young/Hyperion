@@ -1,0 +1,10 @@
+2023-10-23 08:33:24,441 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - 第9次实验,将问题分为数值型和布尔型回答。数值型以键值对提取相关数值；布尔型通过cot回答
+2023-10-23 08:33:24,441 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-23 08:33:29,475 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - 第9次实验,将问题分为数值型和布尔型回答。数值型以键值对提取相关数值；布尔型通过cot回答
+2023-10-23 08:33:29,475 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-23 08:33:34,834 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - 第9次实验,将问题分为数值型和布尔型回答。数值型以键值对提取相关数值；布尔型通过cot回答
+2023-10-23 08:33:34,834 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-23 08:44:02,529 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - 第9次实验,将问题分为数值型和布尔型回答。数值型以键值对提取相关数值；布尔型通过cot回答
+2023-10-23 08:44:02,530 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-23 08:44:14,408 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - 第9次实验,将问题分为数值型和布尔型回答。数值型以键值对提取相关数值；布尔型通过cot回答
+2023-10-23 08:44:14,408 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/9/base.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

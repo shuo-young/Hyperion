@@ -1,0 +1,1 @@
+ disperse telegram verb distribute ether or tokens to multiple addresses recipients and amounts enter one address and amount in ETH on each line. supports any format. 

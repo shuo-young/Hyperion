@@ -1,0 +1,1 @@
+ Provide Feedback Trade dropdown icon Account dropdown icon FAQ dropdown icon More dropdown icon 0 Swap Limit WETH Select a token Connect Wallet Web v1.47.1 ↗ Vault Relayer v1.4.0 ↗ Settlement Contract v1.4.0 ↗   CoW Swap footer image The most recent block number on this network. Prices update on every block. 

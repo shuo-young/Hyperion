@@ -1,0 +1,246 @@
+torchrun --nnodes 1 --nproc_per_node 2 llama_finetuning.py \
+--enable_fsdp --use_peft --peft_method lora \
+--model_name ../models/llama-2-13b-chat-hf \
+--pure_bf16 \
+--output_dir ../models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA \
+--dataset alpaca_dataset \
+--data_path ./ft_datasets/ConvFinQA.json \
+--batch_size_training 256 \
+--micro_batch_size 16 \
+--use_fast_kernels 2>&1|tee 2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA.log
+
+torchrun --nnodes 1 --nproc_per_node 2 eval_inference.py \
+--model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+--peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch2 \
+--prompt_file ConvFinQA_test.json \
+--use_fast_kernels True \
+--batch_size 100 2>&1|tee test_lora_ConvFinQA_use_fast_kernels.log
+
+python eval.py \
+    --model "hf-causal-experimental" \
+    --model_args "pretrained=/GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf,tokenizer=/GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf,peft=/GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch2" \
+    --tasks "flare_convfinqa" \
+    --no_cache 2>&1|tee 111.log
+    
+
+python eval.py \
+    --model hf-causal \
+    --model_args pretrained=/GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf,peft=/GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch2 \
+    --tasks flare_finqa \
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch2 \
+    --prompt_file ConvFinQA_test.json  \
+    --batch_size 1 2>&1|tee test_lora_ConvFinQA_use_fast_kernels.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora_ConvFinQA_use_fast_kernels_llama2_no_peft.json \
+    --batch_size 1 2>&1|tee test_lora_ConvFinQA_use_fast_kernels_llama2_no_peft.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch0 \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora_ConvFinQA_use_fast_kernels_llama2_lora_epoch_0.json \
+    --batch_size 1 2>&1|tee test_lora_ConvFinQA_use_fast_kernels_llama2_lora_epoch_0.log
+
+
+python eval_inference.py     --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf     --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/7b_lora_r_32_no_quantization     --prompt_file ConvFinQA_test.json     --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora.json     --batch_size 1 2>&1|tee test_lora.log                        --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora.json     --batch_size 1 2>&1|tee test_lora.log                                                                   
+python eval_inference.py     --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf   /GPUFS/nsccgz_ywang_zfd/glh/code/models/13b_lora_r_8_no_quantization_json_HC3     --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora.json     --batch_size 1 2>&1|tee test_lora.log
+
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch0 \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora_ConvFinQA_use_fast_kernels_llama2_lora_epoch_0_top_p_0.5_top_k_50_temperature_0.2.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee test_lora_ConvFinQA_use_fast_kernels_llama2_lora_epoch_0_top_p_0.5_top_k_50_temperature_0.2.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_ConvFinQA_use_fast_kernels_llama2_epoch_0_top_p_0.5_top_k_50_temperature_0.2.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee test_ConvFinQA_use_fast_kernels_llama2_epoch_0_top_p_0.5_top_k_50_temperature_0.2.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/13b_lora_r_8_no_quantization_json_HC3 \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/test_lora_HC3_use_fast_kernels_llama2_lora_epoch_0_top_p_0.5_top_k_50_temperature_0.2.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee test_lora_HC3_use_fast_kernels_llama2_lora_epoch_0_top_p_0.5_top_k_50_temperature_0.2.log
+
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/13b_test_r_8_no_quantization_json_FinGPT_v3 \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/13b_test_r_8_no_quantization_json_FinGPT_v3.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee 13b_test_r_8_no_quantization_json_FinGPT_v3.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/raw_llama2_model.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee raw_llama2_model.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/2048_13b_r_8_no_quantization_batch_size_256_micro_bs_16_json_ConvFinQA_epoch2 \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/lora_epoch_2.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee lora_epoch_2.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/chinese-alpaca-2-13b \
+    --prompt_file ConvFinQA_test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/chinese-alpaca-2-13b.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee chinese-alpaca-2-13b.log
+
+python evaluate_zh_1.py \
+    --model_name_or_path /GPUFS/nsccgz_ywang_zfd/glh/code/models/chinese-alpaca-2-13b \
+    --split test \
+    2>&1|tee chinese-alpaca-2-13b_c-eval.log
+
+python evaluate_zh.py \
+    --model_name_or_path /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --split test \
+    --output_dir llama-2-13b-chat-hf_c-eval \
+    2>&1|tee llama-2-13b-chat-hf_c-eval.log
+
+
+torchrun --nnodes 1 --nproc_per_node 2 llama_finetuning.py \
+    --enable_fsdp --use_peft --peft_method lora \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/chinese-alpaca-2-13b \
+    --pure_bf16 \
+    --output_dir ../models/23_08_30 \
+    --dataset alpaca_dataset \
+    --data_path ./ft_datasets/train.json \
+    --batch_size_training 256 \
+    --micro_batch_size 16 \
+    --use_fast_kernels 2>&1|tee 23_08_30.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/23_08_29_epoch0 \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/datapreprocess/test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/13b_test_r_8_no_quantization_json_FinGPT_v3.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee 13b_test_r_8_no_quantization_json_FinGPT_v3.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/23_08_29_epoch0 \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/datapreprocess/test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/13b_test_r_8_no_quantization_json_FinGPT_v3.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee 13b_test_r_8_no_quantization_json_FinGPT_v3.log
+
+
+torchrun --nnodes 1 --nproc_per_node 2 llama_finetuning.py \
+    --enable_fsdp --use_peft --peft_method lora \
+    --model_name ../models/llama-2-13b-chat-hf \
+    --pure_bf16 \
+    --output_dir ../models/pretrain_yanlin \
+    --dataset pretrain_dataset \
+    --data_path ./ft_datasets/yanlin.json \
+    --batch_size_training 256 \
+    --micro_batch_size 16 \
+    --use_fast_kernels 2>&1|tee pretrain_yanlin.log
+
+python eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/23_08_29_epoch0 \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/datapreprocess/test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/evaluation/13b_test_r_8_no_quantization_json_FinGPT_v3.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 2>&1|tee 13b_test_r_8_no_quantization_json_FinGPT_v3.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/CodeLlama-13b-Instruct-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/Chinese-LLaMA-Alpaca-2/scripts/training/pretrain_09_11/pt_lora_model \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/Chinese-LLaMA-Alpaca-2/scripts/training/test.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/Chinese-LLaMA-Alpaca-2/scripts/training/test_pretrain_09_11.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.2 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/glh/code/Chinese-LLaMA-Alpaca-2/scripts/training/test_pretrain_09_11.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/inference/inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/CodeLlama-13b-Instruct-hf \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/ft_datasets/formatted_posts.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/formatted_posts.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.7 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes/formatted_posts.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes-09-11/inference/eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/CodeLlama-13b-Instruct-hf \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/formatted_posts.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/formatted_posts_09_12.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.7 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/formatted_posts_09_12.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes-09-11/inference/eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/formatted_posts.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/llama2_formatted_posts_09_12.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.7 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/glh/code/llama_recipes/examples/llama2_formatted_posts_09_12.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes-09-11/inference/eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/CodeLlama-13b-Instruct-hf \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/wyl/test_contract_info.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/wyl/test_contract_info_output.json \
+    --batch_size 1 \
+    --top_p 0.5 \
+    --top_k 50 \
+    --temperature 0.7 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/wyl/test_contract_info_output.log
+
+python /GPUFS/nsccgz_ywang_zfd/glh/code/llama-recipes-09-11/inference/eval_inference.py \
+    --model_name /GPUFS/nsccgz_ywang_zfd/glh/code/models/llama-2-13b-chat-hf \
+    --peft_model /GPUFS/nsccgz_ywang_zfd/glh/code/models/lora_yanlin_epoch9 \
+    --prompt_file /GPUFS/nsccgz_ywang_zfd/chenchong/ask.json \
+    --output_path /GPUFS/nsccgz_ywang_zfd/chenchong/answer_09_19.json \
+    --batch_size 1 \
+    2>&1|tee /GPUFS/nsccgz_ywang_zfd/chenchong/answer_09_19.log
+    

@@ -1,0 +1,1 @@
+ V i e w : O n : O p e n S e a V i e w : O n : O p e n S e a 0 Menu no_connection C o n n e c t : w a l l e t C o n n e c t : w a l l e t no_connection Connect Wallet Inventory 

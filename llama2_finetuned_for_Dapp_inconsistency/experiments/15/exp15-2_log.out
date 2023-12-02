@@ -1,0 +1,4 @@
+2023-10-26 04:40:07,341 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/15/log2.out - INFO - do_sample设置为fasle，检测随机性
+2023-10-26 04:40:07,341 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/15/log2.out - INFO - {'peft_model': False, 'do_sample': False, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-26 04:40:07,371 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/15/log2.out - INFO - do_sample设置为fasle，检测随机性
+2023-10-26 04:40:07,371 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/15/log2.out - INFO - {'peft_model': False, 'do_sample': False, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

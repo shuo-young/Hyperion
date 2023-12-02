@@ -1,0 +1,8 @@
+2023-10-26 02:55:30,981 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - 实验12基础上，分段从2800变为1800
+2023-10-26 02:55:30,982 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-26 03:08:17,818 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - 实验12基础上，分段从2800变为1800
+2023-10-26 03:08:17,818 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-26 03:21:44,824 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - 实验12基础上，分段从2800变为1800
+2023-10-26 03:21:44,824 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-26 03:21:56,357 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - 实验12基础上，分段从2800变为1800
+2023-10-26 03:21:56,357 - /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/14/log.out - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

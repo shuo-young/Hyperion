@@ -1,0 +1,3 @@
+微调数据集中包含所有类型的问题
+
+微调模型保存在/mnt/data2/zhongqy/model中
