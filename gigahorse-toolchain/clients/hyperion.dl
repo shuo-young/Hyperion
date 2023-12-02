@@ -142,8 +142,8 @@ Hyperion_BalanceSlot(id, funcSign) :-
 Hyperion_SupplySlot(slotNum, funcSign) :-
   Hyperion_SupplyAmountSlot(slotNum),
   SLOADOfConst(_, slotNum, supplyVar),
-  ADDFix(_,supplyVar, _, resFrom),
-  DataFlows(resFrom, res),
+  // ADDFix(_,supplyVar, _, resFrom),
+  DataFlows(supplyVar, res),
   SSTOREToConst(storeStmt, slotNum, res),
   Hyperion_Statement_Function(storeStmt, func),
   PublicFunctionSelector(func, funcSign).

@@ -30,7 +30,7 @@ class FrontEndSpecsExtractor:
         tagged = pos_tag(words)
         synonyms = self.get_synonyms(keywords)
         # extend possible words
-        synonyms.extend(["roi", "profit", "apy", "rewards", "apr"])
+        synonyms.extend(["roi", "profit", "apy", "rewards", "apr", "referral"])
         rewards = {}
 
         def search_values(index, direction=1, limit=5):
@@ -70,7 +70,7 @@ class FrontEndSpecsExtractor:
         for i, (word, tag) in enumerate(tagged):
             if word.lower() in synonyms:
                 # First, search forwards until the newline or search limit.
-                percentages_forward = search_values(i, direction=1, limit=4)
+                percentages_forward = search_values(i, direction=1, limit=5)
                 # If no values found, search backwards with the limit.
                 if not percentages_forward:
                     percentages_forward = search_values(i, direction=-1, limit=3)
