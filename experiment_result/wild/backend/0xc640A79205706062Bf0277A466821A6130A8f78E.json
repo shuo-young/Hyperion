@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Iron Bank",
+    "total_func": 7,
+    "analyzed_func": 1,
+    "block_num": 112675261,
+    "address": "0xc640A79205706062Bf0277A466821A6130A8f78E",
+    "platform": "Optimism",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

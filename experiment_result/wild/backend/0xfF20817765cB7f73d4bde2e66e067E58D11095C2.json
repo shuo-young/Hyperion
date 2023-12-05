@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Flexa",
+    "total_func": 44,
+    "analyzed_func": 1,
+    "block_num": 18650080,
+    "address": "0xfF20817765cB7f73d4bde2e66e067E58D11095C2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            99446043447158317219452052894
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

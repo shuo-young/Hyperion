@@ -1,0 +1,27 @@
+{
+    "dapp_name": "PoolTogether",
+    "total_func": 30,
+    "analyzed_func": 4,
+    "block_num": 18655372,
+    "address": "0x32e8D4c9d1B711BC958d0Ce8D14b41F77Bb03a64",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1121573109260
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

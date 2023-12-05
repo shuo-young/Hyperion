@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Gambling Apes Official",
+    "total_func": 47,
+    "analyzed_func": 7,
+    "block_num": 18641149,
+    "address": "0x90ca8a3eb2574f937f514749ce619fdcca187d45",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            7777
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x11d8S0x4e7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

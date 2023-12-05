@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Tetu",
+    "total_func": 3,
+    "analyzed_func": 0,
+    "block_num": 50423921,
+    "address": "0x5C65bdebca760d113B4Ef334013eAFf07779F00b",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

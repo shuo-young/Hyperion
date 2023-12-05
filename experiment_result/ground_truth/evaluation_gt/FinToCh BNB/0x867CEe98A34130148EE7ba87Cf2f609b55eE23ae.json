@@ -1,0 +1,79 @@
+{
+    "dapp_name": "FinToCh BNB",
+    "total_func": 36,
+    "analyzed_func": 4,
+    "block_num": 34078061,
+    "address": "0x867CEe98A34130148EE7ba87Cf2f609b55eE23ae",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x959499b6": {
+            "0xe5b": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-6-*Ia_store-7 + some_var_1-, Ia_store-7-)"
+                ]
+            ]
+        },
+        "0x9ea0e074": {
+            "0x10e4": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-3 + some_var_1-, Ia_store-8-)"
+                ]
+            ]
+        },
+        "ui": {
+            "roi": 0.02,
+            "referral": 0.3
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xa09b7ae4": {
+            "0x12fa": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

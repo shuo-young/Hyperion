@@ -1,0 +1,59 @@
+{
+    "dapp_name": "KeeperDAO",
+    "total_func": 11,
+    "analyzed_func": 2,
+    "block_num": 18671401,
+    "address": "0xaef38e99B9Db5E96cAb3cE5cBc29A3a1dFeFFe71",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x16114acd": {
+            "0xe2fS0xd4bS0xc03S0x97c": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

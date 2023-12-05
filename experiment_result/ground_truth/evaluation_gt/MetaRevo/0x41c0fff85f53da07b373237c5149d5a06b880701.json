@@ -1,0 +1,68 @@
+{
+    "dapp_name": "MetaRevo",
+    "total_func": 20,
+    "analyzed_func": 3,
+    "block_num": 34077935,
+    "address": "0x41c0fff85f53da07b373237c5149d5a06b880701",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.15,
+                0.15
+            ],
+            "fees": {
+                "buy": 0.15,
+                "sell": 0.15
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x616eb638": {
+            "0xaedS0x378": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

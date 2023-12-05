@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Capital DEX",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18647093,
+    "address": "0xB2C747Aed3e54da0ad14D41B710CC40F88E51aA9",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

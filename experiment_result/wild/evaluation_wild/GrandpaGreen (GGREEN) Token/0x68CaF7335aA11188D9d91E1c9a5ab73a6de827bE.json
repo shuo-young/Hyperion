@@ -1,0 +1,53 @@
+{
+    "dapp_name": "GrandpaGreen (GGREEN) Token",
+    "total_func": 91,
+    "analyzed_func": 2,
+    "block_num": 50451236,
+    "address": "0x68CaF7335aA11188D9d91E1c9a5ab73a6de827bE",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            108000000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

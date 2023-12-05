@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SOCIALBI",
+    "total_func": 40,
+    "analyzed_func": 4,
+    "block_num": 18671788,
+    "address": "0x03f2892669d00bffb6c5f317106f7e89213894af",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            7777777000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

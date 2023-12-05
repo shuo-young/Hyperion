@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Mute",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18652366,
+    "address": "0xa49d7499271ae71cd8ab9ac515e6694c755d400c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

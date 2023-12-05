@@ -1,0 +1,27 @@
+{
+    "dapp_name": "QiDao",
+    "total_func": 21,
+    "analyzed_func": 2,
+    "block_num": 50411458,
+    "address": "0xfA19c1d104F4AEfb8d5564f02B3AdCa1b515da58",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

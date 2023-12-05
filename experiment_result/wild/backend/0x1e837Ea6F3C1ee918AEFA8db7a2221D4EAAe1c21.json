@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Arbidex",
+    "total_func": 16,
+    "analyzed_func": 2,
+    "block_num": 153696454,
+    "address": "0x1e837Ea6F3C1ee918AEFA8db7a2221D4EAAe1c21",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9be65a60": {
+            "0x4d00x3e1S0x173": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,35 @@
+{
+    "dapp_name": "The Wanderers",
+    "total_func": 31,
+    "analyzed_func": 7,
+    "block_num": 18642049,
+    "address": "0x8184a482a5038b124d933b779e0ea6e0fb72f54e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            8887
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x30509bca": {
+            "0xb4cS0x348": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

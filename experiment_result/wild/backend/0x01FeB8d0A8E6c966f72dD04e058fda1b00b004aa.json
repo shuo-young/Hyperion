@@ -1,0 +1,45 @@
+{
+    "dapp_name": "FTM Farmer",
+    "total_func": 32,
+    "analyzed_func": 2,
+    "block_num": 71615129,
+    "address": "0x01FeB8d0A8E6c966f72dD04e058fda1b00b004aa",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0xca8": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-5-))",
+                    "bvudiv_i(33*Iv, 1000)"
+                ]
+            ],
+            "0xce3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(33*Iv, 1000)"
+                ]
+            ],
+            "0xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(33*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

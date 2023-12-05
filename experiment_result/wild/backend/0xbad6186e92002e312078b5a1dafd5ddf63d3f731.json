@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Anonymice",
+    "total_func": 29,
+    "analyzed_func": 5,
+    "block_num": 18640887,
+    "address": "0xbad6186e92002e312078b5a1dafd5ddf63d3f731",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "base64"
+}

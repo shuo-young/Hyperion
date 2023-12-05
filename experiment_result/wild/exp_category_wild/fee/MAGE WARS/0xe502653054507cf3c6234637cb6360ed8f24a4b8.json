@@ -1,0 +1,73 @@
+{
+    "dapp_name": "MAGE WARS",
+    "total_func": 22,
+    "analyzed_func": 2,
+    "block_num": 33775466,
+    "address": "0xe502653054507cf3c6234637cb6360ed8f24a4b8",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x54876921": {
+            "0xdf4S0x288": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "200000000000*Id_1"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xfe53bd09": {
+            "0x1bed": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "Concat(0, Extract(255, 1, bvudiv_i(5*Iv, 100)))"
+                ]
+            ],
+            "0x1ce8": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "Concat(0, Extract(255, 1, bvudiv_i(5*Iv, 100)))"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

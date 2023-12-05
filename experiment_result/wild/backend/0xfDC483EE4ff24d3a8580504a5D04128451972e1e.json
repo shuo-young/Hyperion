@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Snail Trail Game",
+    "total_func": 39,
+    "analyzed_func": 2,
+    "block_num": 38190118,
+    "address": "0xfDC483EE4ff24d3a8580504a5D04128451972e1e",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0xbe3S0x404": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

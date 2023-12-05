@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Caesar.finance",
+    "total_func": 29,
+    "analyzed_func": 4,
+    "block_num": 18670403,
+    "address": "0xFa3363d484C7929A287a6199d0D5c2226d98BAE5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

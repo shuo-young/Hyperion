@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Stader(SD)",
+    "total_func": 25,
+    "analyzed_func": 2,
+    "block_num": 18656193,
+    "address": "0x30d20208d987713f46dfd34ef128bb16c404d10f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            150000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

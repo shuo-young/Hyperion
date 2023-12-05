@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Summer.fi",
+    "total_func": 18,
+    "analyzed_func": 0,
+    "block_num": 18657207,
+    "address": "0xaa745404d55f88c108a28c86abe7b5a1e7817c07",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

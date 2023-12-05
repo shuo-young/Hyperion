@@ -1,0 +1,77 @@
+{
+    "dapp_name": "MULTI STAKE",
+    "total_func": 39,
+    "analyzed_func": 3,
+    "block_num": 33853020,
+    "address": "0x086fdf589c71e7a5dea5415eb07c1f0879e84dd3",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0x1c4e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(30*Iv, 1000)"
+                ]
+            ],
+            "0x1c89": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(30*Iv, 1000)"
+                ]
+            ],
+            "0x1cc4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(30*Iv, 1000)"
+                ]
+            ],
+            "0x1cff": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "bvudiv_i(30*Iv, 1000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "firstbet",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 18661890,
+    "address": "0xd9bcf875d0ca721ec89fe49b57c144e7c1f6451e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

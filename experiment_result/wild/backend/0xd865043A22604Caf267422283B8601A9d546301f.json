@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Archly",
+    "total_func": 21,
+    "analyzed_func": 1,
+    "block_num": 33781578,
+    "address": "0xd865043A22604Caf267422283B8601A9d546301f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xed29fc11": {
+            "0xc0c": [
+                [
+                    "0x684802262d614d0cd0c9571672f03dd9e85d7824",
+                    "bvudiv_i(Ia_store-5-*\n         (bvudiv_i(mem_mem_64*bvudiv_i(0, mem_mem_64),\n                   mem_mem_64) +\n          bvudiv_i(0, mem_mem_64)),\n         1000)"
+                ]
+            ],
+            "0xcc8": [
+                [
+                    "0x684802262d614d0cd0c9571672f03dd9e85d7824",
+                    "bvudiv_i(mem_mem_64*bvudiv_i(0, mem_mem_64), mem_mem_64)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

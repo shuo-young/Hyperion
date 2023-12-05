@@ -1,0 +1,61 @@
+{
+    "dapp_name": "ShuttleOne",
+    "total_func": 45,
+    "analyzed_func": 6,
+    "block_num": 18671696,
+    "address": "0xd216356c91b88609c82bd988d4425bb7edf1beb4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            408952042333134621215938
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x11faS0x636": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

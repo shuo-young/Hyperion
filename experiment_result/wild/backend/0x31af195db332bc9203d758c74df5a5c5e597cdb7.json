@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CryptoAssault",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 18672306,
+    "address": "0x31af195db332bc9203d758c74df5a5c5e597cdb7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            4911
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

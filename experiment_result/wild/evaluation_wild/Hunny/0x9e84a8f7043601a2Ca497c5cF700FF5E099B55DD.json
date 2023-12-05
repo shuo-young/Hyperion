@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Hunny",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 33810172,
+    "address": "0x9e84a8f7043601a2Ca497c5cF700FF5E099B55DD",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.65
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            19999979
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

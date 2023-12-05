@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Gray Boys",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 18641712,
+    "address": "0x8d4100897447d173289560bc85c5c432be4f44e4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.3
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            10000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xaafS0x3c1": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "y00ts",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 50328100,
+    "address": "0x670fd103b1a08628e9557cD66B87DeD841115190",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

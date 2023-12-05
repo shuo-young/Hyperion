@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Idle Finance",
+    "total_func": 27,
+    "analyzed_func": 0,
+    "block_num": 18660310,
+    "address": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            13000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

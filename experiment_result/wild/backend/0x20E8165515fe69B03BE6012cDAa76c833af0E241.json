@@ -1,0 +1,35 @@
+{
+    "dapp_name": "PipeFlare",
+    "total_func": 47,
+    "analyzed_func": 6,
+    "block_num": 50341189,
+    "address": "0x20E8165515fe69B03BE6012cDAa76c833af0E241",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xcb7S0x475": [
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-17-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

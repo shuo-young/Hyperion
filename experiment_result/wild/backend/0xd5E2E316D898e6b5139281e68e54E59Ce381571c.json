@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Pandora Digital",
+    "total_func": 22,
+    "analyzed_func": 3,
+    "block_num": 33821346,
+    "address": "0xd5E2E316D898e6b5139281e68e54E59Ce381571c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xe4fc6b6d": {
+            "0x1e85S0x1cf3S0x1726S0x13330x42f": [
+                [
+                    "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+                    "bvudiv_i(Ia_store-5-*mem_mem_64, 10000)"
+                ]
+            ],
+            "0x1e85S0x1cf3S0x1726S0x13330xe91B0xec4": [
+                [
+                    "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+                    "bvudiv_i(Ia_store-7-*mem_mem_64, 10000)"
+                ]
+            ],
+            "0x1e85S0x1cf3S0x1726S0x13330xe91B0xee3": [
+                [
+                    "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+                    "bvudiv_i(Ia_store-6-*mem_mem_64, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xbd1b820c": {
+            "0x1e85S0x1cf3S0x1726S0x13330x3e9": [
+                [
+                    "Concat(0, Extract(159, 0, mem_mem_64))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x303e6aa4": {
+            "0x1e85S0x1cf3S0x1726S0x13330x1f4": [
+                [
+                    "Concat(0, Extract(159, 0, mem_mem_64))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

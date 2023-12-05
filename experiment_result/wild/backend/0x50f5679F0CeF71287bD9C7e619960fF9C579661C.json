@@ -1,0 +1,49 @@
+{
+    "dapp_name": "OpenSwap",
+    "total_func": 26,
+    "analyzed_func": 17,
+    "block_num": 33816266,
+    "address": "0x50f5679F0CeF71287bD9C7e619960fF9C579661C",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xf305d719": {
+            "0x39c9": [
+                [
+                    "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                    "bvudiv_i(Id_2*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5b0d5984": {
+            "0x3fdd0x2938S0x1b9f": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xaf2979eb": {
+            "0x3fdd0xa03": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

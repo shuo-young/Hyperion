@@ -1,0 +1,69 @@
+{
+    "dapp_name": "Beat Maker Token",
+    "total_func": 55,
+    "analyzed_func": 2,
+    "block_num": 33851757,
+    "address": "0x7ac61c43681f8f746395d47d5d904eef7e069ba6",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x23b872dd": {
+            "0x2c2eS0x231c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1)"
+                ]
+            ]
+        },
+        "0xa9059cbb": {
+            "0x2c2eS0x231c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1)"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Planet IX",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 50341277,
+    "address": "0x773895915168137be0c8dcbd6fd7e44e7cc9d3db",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x5ff3337f": {
+            "0x21a1S0x20b0S0x1fde0x1eafS0x1eeb": [
+                [
+                    "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
+                    "1000000000000000000*Id_1"
+                ]
+            ]
+        },
+        "0x469426e2": {
+            "0x21a1S0x20b0S0x1fde0x1e83S0xe11": [
+                [
+                    "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
+                    "1000000000000000000*Ia_store-some_var_3-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

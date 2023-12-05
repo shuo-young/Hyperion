@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Metroverse Blackout",
+    "total_func": 53,
+    "analyzed_func": 4,
+    "block_num": 18642169,
+    "address": "0x25cd67e2dfec471acd3cdd3b22ccf7147596dd8b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            20000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x11f0S0x558": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

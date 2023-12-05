@@ -1,0 +1,231 @@
+{
+    "dapp_name": "BAEX",
+    "total_func": 38,
+    "analyzed_func": 6,
+    "block_num": 18670401,
+    "address": "0x889a3a814181536822e83373b4017e1122b01932",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xa9059cbb": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(mem_mem_64*some_var_28, some_var_32)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-11-*Id_2, 100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         mem_mem_64*\n         some_var_28,\n         some_var_191)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-11-*Id_2, 100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_361)"
+                ]
+            ]
+        },
+        "0xcb1a8015": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(mem_mem_64*some_var_23, some_var_27)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-11-*Id_2, 100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         mem_mem_64*\n         some_var_23,\n         some_var_257)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-11-*Id_2, 100000000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_365)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xa9059cbb": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_38)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_197)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_367)"
+                ]
+            ]
+        },
+        "0xab6167a9": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_162)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_411)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_463)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_514)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_600)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64, some_var_637)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "mem_mem_64*some_var_672"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_740)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_849)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_944)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_984)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_1028)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_1068)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1),\n         some_var_1145)"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_38)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_222)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_400)"
+                ]
+            ]
+        },
+        "0x7697421c": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_35)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_265)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_384)"
+                ]
+            ]
+        },
+        "0xcb1a8015": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_33)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_263)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_371)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_421)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_434*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_474)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_487*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_527)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_540*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_580)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_593*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_633)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_646*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_2, 100000000),\n                  100000000),\n         some_var_686)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "some_var_699*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            45865351300272
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

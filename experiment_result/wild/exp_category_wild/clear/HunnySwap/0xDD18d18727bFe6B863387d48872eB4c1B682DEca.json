@@ -1,0 +1,67 @@
+{
+    "dapp_name": "HunnySwap",
+    "total_func": 26,
+    "analyzed_func": 3,
+    "block_num": 38236566,
+    "address": "0xDD18d18727bFe6B863387d48872eB4c1B682DEca",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0x11f4": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-3 + some_var_1 + 4*Id_1-*\n         Ia_store-some_var_3-,\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_3-"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0x11f4": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-3 + some_var_1 + 4*Id_1-*\n         Ia_store-some_var_3-,\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_3-"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

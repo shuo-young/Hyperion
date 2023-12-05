@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Synthetix",
+    "total_func": 46,
+    "analyzed_func": 11,
+    "block_num": 18657914,
+    "address": "0x0a24864596c54d79c825e64b281645249c14590c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            27686871830814049612
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

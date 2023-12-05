@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Dypius",
+    "total_func": 44,
+    "analyzed_func": 4,
+    "block_num": 18672497,
+    "address": "0xdCBB5B2148f0cf1Abd7757Ba04A5821fEaD80587",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xa6ab9a7a": {
+            "0x2da4S0x2b0dS0x226dB0x145b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "bvudiv_i(Ia_store-7-*Concat(0, Extract(159, 0, Id_2)),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

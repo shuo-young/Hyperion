@@ -1,0 +1,70 @@
+{
+    "dapp_name": "Chronos",
+    "total_func": 47,
+    "analyzed_func": 4,
+    "block_num": 153872409,
+    "address": "0xC9445A9AFe8E48c71459aEdf956eD950e983eC5A",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.0056830000000000006,
+            "total reward": 1.0
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x89afcb44": {
+            "0x23cb0x2319": [
+                [
+                    "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            3779920616
+        ],
+        "unlimited": false,
+        "ui": [
+            7
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

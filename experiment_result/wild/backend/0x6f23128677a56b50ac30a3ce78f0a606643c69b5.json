@@ -1,0 +1,43 @@
+{
+    "dapp_name": "Veggies Farm",
+    "total_func": 18,
+    "analyzed_func": 2,
+    "block_num": 33775784,
+    "address": "0x6f23128677a56b50ac30a3ce78f0a606643c69b5",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x89476069": {
+            "0xcd9S0xbe1S0xb0fS0xab8": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe086e5ec": {
+            "0x5cdS0x295": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

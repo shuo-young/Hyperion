@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Sneaky Vampire Syndicate",
+    "total_func": 52,
+    "analyzed_func": 7,
+    "block_num": 18640733,
+    "address": "0x219b8ab790decc32444a6600971c7c3718252539",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            8888
+        ],
+        "unlimited": false,
+        "ui": [
+            8888
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xf1dS0x4b0": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "dapp_name": "PancakeFork Finance",
+    "total_func": 32,
+    "analyzed_func": 4,
+    "block_num": 33818514,
+    "address": "0x62871e7afEE9F75f64F6Fc45817274593Bd7f7de",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0xdb2e21bc": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x1c38": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-14-*Ia_store-some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-15-*Ia_store-some_var_1-, 10000)"
+                ]
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0xc6a": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-14-*Id_1, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-15-*Id_1, 10000)"
+                ]
+            ],
+            "0x2a5dS0x2946S0x2857S0x23a3B0xa8b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        },
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x16ec": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xdb2e21bc": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x1bac": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-14-*Ia_store-some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-15-*Ia_store-some_var_1-, 10000)"
+                ]
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0xbe2": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-14-*Id_1, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-15-*Id_1, 10000)"
+                ]
+            ]
+        },
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x1827": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-13-*Id_1, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3279beab": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0xf44": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

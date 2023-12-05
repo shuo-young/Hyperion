@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Merge Cats",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 18673779,
+    "address": "0xbb1f24c0c1554b9990222f036b0aad6ee4caec29",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            322094483999999999996846708
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

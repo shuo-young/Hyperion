@@ -1,0 +1,65 @@
+{
+    "dapp_name": "Moonshots Farm",
+    "total_func": 15,
+    "analyzed_func": 5,
+    "block_num": 33852894,
+    "address": "0x57d3ac2c209d9de02a80700c1d1c2ca4bc029b04",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x406cf229": {
+            "0x58c": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_2- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_1-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_6- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_5-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_10- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_9-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-some_var_14-*\n               (Ia_store-7- +\n                bvudiv_i(18446744073709551616*\n                         Ia_store-2-*\n                         (IH_s +\n                          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                          Ia_store-5-),\n                         Ia_store-6-)) +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_13-))"
+                ]
+            ]
+        },
+        "0xa9e732bb": {
+            "0x58c": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_2- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_1-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_13- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_12-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-7-*Ia_store-some_var_24- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_23-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-some_var_35-*\n               (Ia_store-7- +\n                bvudiv_i(18446744073709551616*\n                         Ia_store-2-*\n                         (IH_s +\n                          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                          Ia_store-5-),\n                         Ia_store-6-)) +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_34-))"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "ShibaX",
+    "total_func": 34,
+    "analyzed_func": 5,
+    "block_num": 33855661,
+    "address": "0x020bE500134F13B492dD8453923eBcB03E371D93",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xe63f776f": {
+            "0x1335": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(Ia_store-9-*Id_2, Ia_store-10-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

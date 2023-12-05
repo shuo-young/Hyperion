@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Creepz Reptile Armoury",
+    "total_func": 48,
+    "analyzed_func": 2,
+    "block_num": 18641709,
+    "address": "0x5f4a54e29ccb8a02cdf7d7bfa8a0999a8330cced",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            20000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xb21S0x3bd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

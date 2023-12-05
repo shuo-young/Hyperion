@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Auragi",
+    "total_func": 48,
+    "analyzed_func": 4,
+    "block_num": 153726270,
+    "address": "0x20fafbcfb92b7c8713a69b965c4e007aa2d6e873",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xbc25cf77": {
+            "0x21ec0x71d": [
+                [
+                    "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+                    "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-"
+                ]
+            ],
+            "0x21ec0x1b29S0x1b79": [
+                [
+                    "0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae",
+                    "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-10-"
+                ]
+            ]
+        },
+        "0x89afcb44": {
+            "0x21ec0x216b": [
+                [
+                    "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            9538913943831369
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

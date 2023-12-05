@@ -1,0 +1,35 @@
+{
+    "dapp_name": "BYOLAND",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 18641720,
+    "address": "0x0616a2ef54bad0b37dce41c8d8e35cce17a926f3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10056
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x101aS0x4e6": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

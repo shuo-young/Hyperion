@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Capital DAO Protocol",
+    "total_func": 19,
+    "analyzed_func": 3,
+    "block_num": 18661767,
+    "address": "0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            9415003113000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

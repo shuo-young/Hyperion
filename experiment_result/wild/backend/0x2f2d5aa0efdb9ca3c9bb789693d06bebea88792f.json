@@ -1,0 +1,27 @@
+{
+    "dapp_name": "BlockCities",
+    "total_func": 32,
+    "analyzed_func": 2,
+    "block_num": 18672110,
+    "address": "0x2f2d5aa0efdb9ca3c9bb789693d06bebea88792f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            3232
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

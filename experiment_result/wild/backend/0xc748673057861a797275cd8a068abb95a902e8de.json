@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Baby Doge Coin",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 33851752,
+    "address": "0xc748673057861a797275cd8a068abb95a902e8de",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            420000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": true,
+        "0x48c54b9d": {
+            "0xfb0S0x564": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

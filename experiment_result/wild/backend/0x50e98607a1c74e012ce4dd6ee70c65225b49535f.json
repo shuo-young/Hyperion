@@ -1,0 +1,25 @@
+{
+    "dapp_name": "DracooMaster",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33776138,
+    "address": "0x50e98607a1c74e012ce4dd6ee70c65225b49535f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

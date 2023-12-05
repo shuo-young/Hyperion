@@ -1,0 +1,65 @@
+{
+    "dapp_name": "Meebits",
+    "total_func": 44,
+    "analyzed_func": 4,
+    "block_num": 18660425,
+    "address": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x1249c58b": {
+            "0x2860": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(Ia_store-16-*\n         (Ia_store-18- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          IH_s +\n          Ia_store-17-),\n         Ia_store-18-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(0, Ia_store-18-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            20000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

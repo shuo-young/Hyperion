@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Mojo Melee",
+    "total_func": 56,
+    "analyzed_func": 11,
+    "block_num": 50339900,
+    "address": "0x90C45Bb702384812825dA4971054fdb6836582a0",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            17232
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Blocklete Golf",
+    "total_func": 57,
+    "analyzed_func": 8,
+    "block_num": 18672116,
+    "address": "0xB95FAdA77B99070bf20968c9c1Da43219a81B14e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x61e46249": {
+            "0x2014": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-18-))",
+                    "balance_8"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

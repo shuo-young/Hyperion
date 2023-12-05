@@ -1,0 +1,77 @@
+{
+    "dapp_name": "Trader Joe",
+    "total_func": 25,
+    "analyzed_func": 17,
+    "block_num": 18658075,
+    "address": "0x89Fa1974120d2a7F83a0cb80df3654721c6a38Cd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.071,
+            "24-hour reward": 0.1118
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.0634,
+                0.0462
+            ],
+            "fees": {
+                "trade": 0.0462
+            }
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            23258605
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x73bc79cf": {
+            "0x332a0x62a": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x9fc27226": {
+            "0x332a0x1723S0x2232": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

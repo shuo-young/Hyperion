@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Sewer Pass",
+    "total_func": 47,
+    "analyzed_func": 4,
+    "block_num": 18617106,
+    "address": "0x764aeebcf425d56800ef2c84f2578689415a2daa",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            3675462403398907029200547734301629421828527408622116
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x51cff8d9": {
+            "0xc62S0x3dd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": null,
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

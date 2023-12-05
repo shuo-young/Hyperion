@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Reflexer Labs",
+    "total_func": 20,
+    "analyzed_func": 0,
+    "block_num": 18655966,
+    "address": "0x4ed9C0dCa0479bC64d8f4EB3007126D5791f7851",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

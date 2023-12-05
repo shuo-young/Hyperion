@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Hippo Dash by Gameta",
+    "total_func": 18,
+    "analyzed_func": 1,
+    "block_num": 33776358,
+    "address": "0x1c37948Cb9fC4a802f91e946CA15df4504c91D03",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            282810000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

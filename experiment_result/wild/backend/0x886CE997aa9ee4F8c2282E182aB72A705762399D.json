@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Olympus DAO",
+    "total_func": 37,
+    "analyzed_func": 4,
+    "block_num": 18652402,
+    "address": "0x886CE997aa9ee4F8c2282E182aB72A705762399D",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

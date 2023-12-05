@@ -1,0 +1,65 @@
+{
+    "dapp_name": "WaterDendy",
+    "total_func": 19,
+    "analyzed_func": 2,
+    "block_num": 154581979,
+    "address": "0x88692aD37c48e8F4c821b71484AE3C2878C2A2C6",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.008244109589041097
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.03,
+                0.03,
+                1.0,
+                0.3333,
+                1.0
+            ],
+            "fees": {
+                "deposit": 1.0
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            32874756691679049030575
+        ],
+        "unlimited": false,
+        "ui": [
+            32569
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

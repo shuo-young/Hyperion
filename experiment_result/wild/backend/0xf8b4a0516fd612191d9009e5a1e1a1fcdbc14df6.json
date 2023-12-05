@@ -1,0 +1,49 @@
+{
+    "dapp_name": "Drakons",
+    "total_func": 21,
+    "analyzed_func": 6,
+    "block_num": 18672483,
+    "address": "0xf8b4a0516fd612191d9009e5a1e1a1fcdbc14df6",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x454a2ab3": {
+            "0xb81": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Concat(0, Extract(127, 0, Ia_store-1 + some_var_1-)) +\nbvsdiv_i(0,\n         If(0 <=\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)),\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)),\n            115792089237316195423570985008687907853269984665640564039457584007913129639935*\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-2-*\n         (Concat(0,\n                 Extract(127, 0, Ia_store-1 + some_var_1-)) +\n          bvsdiv_i(0,\n                   If(0 <=\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-)),\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-)),\n                      115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-))))),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Concat(0, Extract(255, 128, Ia_store-1 + some_var_1-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-2-*\n         Concat(0,\n                Extract(255, 128, Ia_store-1 + some_var_1-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Concat(0, Extract(127, 0, Ia_store-1 + some_var_1-)) +\nbvsdiv_i(If(0 <=\n            (IH_s +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            64,\n                            Ia_store-2 + some_var_1-)))*\n            (Concat(0,\n                    Extract(255,\n                            128,\n                            Ia_store-1 + some_var_1-)) +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            0,\n                            Ia_store-1 + some_var_1-))),\n            (IH_s +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            64,\n                            Ia_store-2 + some_var_1-)))*\n            (Concat(0,\n                    Extract(255,\n                            128,\n                            Ia_store-1 + some_var_1-)) +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            0,\n                            Ia_store-1 + some_var_1-))),\n            115792089237316195423570985008687907853269984665640564039457584007913129639935*\n            (IH_s +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            64,\n                            Ia_store-2 + some_var_1-)))*\n            (Concat(0,\n                    Extract(255,\n                            128,\n                            Ia_store-1 + some_var_1-)) +\n             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n             Concat(0,\n                    Extract(127,\n                            0,\n                            Ia_store-1 + some_var_1-)))),\n         If(0 <=\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)),\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)),\n            115792089237316195423570985008687907853269984665640564039457584007913129639935*\n            Concat(0,\n                   Extract(63, 0, Ia_store-2 + some_var_1-)))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-2-*\n         (Concat(0,\n                 Extract(127, 0, Ia_store-1 + some_var_1-)) +\n          bvsdiv_i(If(0 <=\n                      (IH_s +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      64,\n                                      Ia_store-2 + some_var_1-)))*\n                      (Concat(0,\n                              Extract(255,\n                                      128,\n                                      Ia_store-1 + some_var_1-)) +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      0,\n                                      Ia_store-1 + some_var_1-))),\n                      (IH_s +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      64,\n                                      Ia_store-2 + some_var_1-)))*\n                      (Concat(0,\n                              Extract(255,\n                                      128,\n                                      Ia_store-1 + some_var_1-)) +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      0,\n                                      Ia_store-1 + some_var_1-))),\n                      115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                      (IH_s +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      64,\n                                      Ia_store-2 + some_var_1-)))*\n                      (Concat(0,\n                              Extract(255,\n                                      128,\n                                      Ia_store-1 + some_var_1-)) +\n                       115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                       Concat(0,\n                              Extract(127,\n                                      0,\n                                      Ia_store-1 + some_var_1-)))),\n                   If(0 <=\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-)),\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-)),\n                      115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                      Concat(0,\n                             Extract(63,\n                                     0,\n                                     Ia_store-2 + some_var_1-))))),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x6dcS0x284": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

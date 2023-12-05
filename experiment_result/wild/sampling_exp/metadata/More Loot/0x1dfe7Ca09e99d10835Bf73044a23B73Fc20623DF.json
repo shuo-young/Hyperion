@@ -1,0 +1,55 @@
+{
+    "dapp_name": "More Loot",
+    "total_func": 29,
+    "analyzed_func": 4,
+    "block_num": 18617106,
+    "address": "0x1dfe7Ca09e99d10835Bf73044a23B73Fc20623DF",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            135462
+        ],
+        "unlimited": true,
+        "ui": [
+            135400
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "base64",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

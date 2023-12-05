@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Smatic",
+    "total_func": 22,
+    "analyzed_func": 3,
+    "block_num": 50452643,
+    "address": "0x763B7200d141B6eF69FCAd6ac96C8063f2c85a8e",
+    "platform": "Polygon",
+    "reward": {
+        "warning": true,
+        "0x9698e1f5": {
+            "0xf15S0x2c3": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-6*Id_1 + some_var_2-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + 6*Id_1 + some_var_2-),\n         Ia_store-4-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

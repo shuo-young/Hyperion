@@ -1,0 +1,53 @@
+{
+    "dapp_name": "CompliFi",
+    "total_func": 37,
+    "analyzed_func": 7,
+    "block_num": 18670430,
+    "address": "0x2E17509724dbE94D9cB03c3ecDaB6a49bC78AF94",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x278ecde1": {
+            "0x29d0": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "2*Id_1*mem_mem_64"
+                ]
+            ]
+        },
+        "0xdd12a043": {
+            "0x29d0": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-8-*Id_2, 1000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-7-*Id_1, 1000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Id_2*\n         bvudiv_i(1000000000000*mem_mem_64 +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  mem_mem_64*\n                  mem_mem_64,\n                  mem_mem_64),\n         1000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Id_1*bvudiv_i(mem_mem_64*mem_mem_64, mem_mem_64),\n         1000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

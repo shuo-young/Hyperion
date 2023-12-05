@@ -1,0 +1,33 @@
+{
+    "dapp_name": "HyperSnakes",
+    "total_func": 25,
+    "analyzed_func": 7,
+    "block_num": 18673701,
+    "address": "0x239ec890c0ae862aec500de5fd18515fb9ebf8d8",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x86bb8f37": {
+            "0x1750": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*mem_mem_64,\n         Ia_store-3 + some_var_1-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

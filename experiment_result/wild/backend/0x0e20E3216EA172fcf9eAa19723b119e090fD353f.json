@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Xiasi inu",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 33857406,
+    "address": "0x0e20E3216EA172fcf9eAa19723b119e090fD353f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": true,
+        "0x48c54b9d": {
+            "0xfb0S0x564": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

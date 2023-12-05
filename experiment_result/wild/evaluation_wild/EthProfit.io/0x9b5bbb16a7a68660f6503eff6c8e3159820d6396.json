@@ -1,0 +1,63 @@
+{
+    "dapp_name": "EthProfit.io",
+    "total_func": 10,
+    "analyzed_func": 1,
+    "block_num": 18660696,
+    "address": "0x9b5bbb16a7a68660f6503eff6c8e3159820d6396",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x00000000": {
+            "0x6f6": [
+                [
+                    "Is",
+                    "bvudiv_i(450*Ia_store-some_var_1-, 10000)*\nbvudiv_i(IH_s +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         Ia_store-some_var_6-,\n         Ia_store-7-)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(425*Ia_store-some_var_1-, 10000)*\nbvudiv_i(IH_s +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         Ia_store-some_var_6-,\n         Ia_store-7-)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

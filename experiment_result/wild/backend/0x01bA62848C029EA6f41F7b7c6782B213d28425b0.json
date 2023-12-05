@@ -1,0 +1,27 @@
+{
+    "dapp_name": "TwinShiba",
+    "total_func": 77,
+    "analyzed_func": 3,
+    "block_num": 33857187,
+    "address": "0x01bA62848C029EA6f41F7b7c6782B213d28425b0",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

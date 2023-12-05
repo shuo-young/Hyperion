@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Incognito",
+    "total_func": 39,
+    "analyzed_func": 6,
+    "block_num": 18641794,
+    "address": "0x3f4a885ed8d9cdf10f3349357e3b243f3695b24a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xdccS0x42b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

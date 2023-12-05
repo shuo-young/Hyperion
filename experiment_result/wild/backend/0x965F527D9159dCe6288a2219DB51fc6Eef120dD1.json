@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Biswap",
+    "total_func": 35,
+    "analyzed_func": 2,
+    "block_num": 33847878,
+    "address": "0x965F527D9159dCe6288a2219DB51fc6Eef120dD1",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            615906665282847305373781285
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Capsule House",
+    "total_func": 41,
+    "analyzed_func": 3,
+    "block_num": 18640771,
+    "address": "0xfcb1315c4273954f74cb16d5b663dbf479eec62e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            50,
+            9950
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

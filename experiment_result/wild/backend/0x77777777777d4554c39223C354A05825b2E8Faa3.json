@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Yeti Finance",
+    "total_func": 20,
+    "analyzed_func": 0,
+    "block_num": 38292283,
+    "address": "0x77777777777d4554c39223C354A05825b2E8Faa3",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            500000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

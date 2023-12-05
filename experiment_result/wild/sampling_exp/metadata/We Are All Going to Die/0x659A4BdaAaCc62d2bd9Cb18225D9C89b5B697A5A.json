@@ -1,0 +1,56 @@
+{
+    "dapp_name": "We Are All Going to Die",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 18621983,
+    "address": "0x659A4BdaAaCc62d2bd9Cb18225D9C89b5B697A5A",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            6667,
+            0
+        ],
+        "unlimited": true,
+        "ui": [
+            5593
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

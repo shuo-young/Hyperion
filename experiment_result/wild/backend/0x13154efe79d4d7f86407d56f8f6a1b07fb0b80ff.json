@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Claim",
+    "total_func": 12,
+    "analyzed_func": 0,
+    "block_num": 18670411,
+    "address": "0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

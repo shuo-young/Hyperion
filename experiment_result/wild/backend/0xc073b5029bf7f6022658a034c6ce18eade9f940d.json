@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Swissbonds",
+    "total_func": 47,
+    "analyzed_func": 1,
+    "block_num": 50452787,
+    "address": "0xc073b5029bf7f6022658a034c6ce18eade9f940d",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

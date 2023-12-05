@@ -1,0 +1,25 @@
+{
+    "dapp_name": "CommunityGaming",
+    "total_func": 23,
+    "analyzed_func": 6,
+    "block_num": 18672219,
+    "address": "0x710abfc1c014c4793f11378ebce51f89c8240524",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

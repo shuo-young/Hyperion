@@ -1,0 +1,33 @@
+{
+    "dapp_name": "CryptoAssault",
+    "total_func": 13,
+    "analyzed_func": 2,
+    "block_num": 18672305,
+    "address": "0x63a389435f370f8aec9ddb179483bdf16d189d1c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x2e6S0x109": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

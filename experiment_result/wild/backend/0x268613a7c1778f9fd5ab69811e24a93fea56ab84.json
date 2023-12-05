@@ -1,0 +1,33 @@
+{
+    "dapp_name": "CryptoFights",
+    "total_func": 15,
+    "analyzed_func": 2,
+    "block_num": 18672356,
+    "address": "0x268613a7c1778f9fd5ab69811e24a93fea56ab84",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe086e5ec": {
+            "0x8ff": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

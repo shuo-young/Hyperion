@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Knight Story",
+    "total_func": 25,
+    "analyzed_func": 0,
+    "block_num": 18673744,
+    "address": "0xba7f66ee97f052a5efae51ba5e7689203db3dae4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

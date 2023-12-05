@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Alchemix",
+    "total_func": 23,
+    "analyzed_func": 1,
+    "block_num": 18660313,
+    "address": "0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            2783078159723307687800751
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

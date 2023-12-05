@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Infinity Crypto",
+    "total_func": 29,
+    "analyzed_func": 5,
+    "block_num": 33811229,
+    "address": "0x304507ddd7c3962b1abc8b5f7770c85351df35ca",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            13032669611703305
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

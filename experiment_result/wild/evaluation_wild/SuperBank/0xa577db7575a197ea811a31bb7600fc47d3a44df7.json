@@ -1,0 +1,55 @@
+{
+    "dapp_name": "SuperBank",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18662036,
+    "address": "0xa577db7575a197ea811a31bb7600fc47d3a44df7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.21
+            ],
+            "fees": {
+                "trade": 0.21
+            }
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

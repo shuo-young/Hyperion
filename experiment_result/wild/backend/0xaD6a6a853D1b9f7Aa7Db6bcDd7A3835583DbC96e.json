@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Imperium Empires",
+    "total_func": 26,
+    "analyzed_func": 6,
+    "block_num": 38184562,
+    "address": "0xaD6a6a853D1b9f7Aa7Db6bcDd7A3835583DbC96e",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            17344
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

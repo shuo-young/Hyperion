@@ -1,0 +1,25 @@
+{
+    "dapp_name": "HOT BEANS BNB MINER",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33855396,
+    "address": "0x6898382E0ACa52eD267b061c5E6Ae2fe8bc4f030",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

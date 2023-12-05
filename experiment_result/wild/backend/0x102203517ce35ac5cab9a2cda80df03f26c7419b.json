@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SUMOTEX",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18661157,
+    "address": "0x102203517ce35ac5cab9a2cda80df03f26c7419b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

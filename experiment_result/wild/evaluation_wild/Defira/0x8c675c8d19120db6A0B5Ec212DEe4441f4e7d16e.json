@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Defira",
+    "total_func": 27,
+    "analyzed_func": 4,
+    "block_num": 11296026,
+    "address": "0x8c675c8d19120db6A0B5Ec212DEe4441f4e7d16e",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xf6835b8": {
+            "0x602S0x1f9": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0x95ccea67": {
+            "0x1253S0x3d1": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

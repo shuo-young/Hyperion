@@ -1,0 +1,87 @@
+{
+    "dapp_name": "Chainbreakers",
+    "total_func": 54,
+    "analyzed_func": 6,
+    "block_num": 18672121,
+    "address": "0x0111ac7e9425c891f935c4ce54cf16db7c14b7db",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            2944
+        ],
+        "unlimited": false,
+        "ui": [
+            2019
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x8d78c3c": {
+            "0x13cd0x1346S0x539": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0xd314b647": {
+            "0x204bS0xd65": [
+                [
+                    "Is",
+                    "balance_1"
+                ]
+            ]
+        },
+        "0x63538dab": {
+            "0x1981S0x8e5": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0xdb0fa989": {
+            "0x13cd0x2061S0xd7a": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

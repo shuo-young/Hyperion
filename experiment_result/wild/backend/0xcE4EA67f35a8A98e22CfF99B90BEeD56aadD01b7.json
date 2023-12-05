@@ -1,0 +1,39 @@
+{
+    "dapp_name": "LAUNCHER\u9c81",
+    "total_func": 7,
+    "analyzed_func": 1,
+    "block_num": 154579157,
+    "address": "0xcE4EA67f35a8A98e22CfF99B90BEeD56aadD01b7",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x42a4fda8": {
+            "0x469S0xf2": [
+                [
+                    "0xbff3ee7d3648ce6b7de82dea427c3a1629aaf671",
+                    "bvudiv_i(5*IH_b, 100)"
+                ]
+            ],
+            "0x4ddS0xf2": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "bvudiv_i(95*IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

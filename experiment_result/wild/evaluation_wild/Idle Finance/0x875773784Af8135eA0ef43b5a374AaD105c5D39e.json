@@ -1,0 +1,59 @@
+{
+    "dapp_name": "Idle Finance",
+    "total_func": 27,
+    "analyzed_func": 0,
+    "block_num": 18660310,
+    "address": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            13000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            2600000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "90 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

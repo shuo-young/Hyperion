@@ -1,0 +1,25 @@
+{
+    "dapp_name": "BearBNB",
+    "total_func": 44,
+    "analyzed_func": 1,
+    "block_num": 33855970,
+    "address": "0xe8c7baa10c8c67f23a13d1f0bf89a2692cdf3394",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

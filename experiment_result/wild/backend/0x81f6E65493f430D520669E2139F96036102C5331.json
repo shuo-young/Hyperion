@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Freeliquid",
+    "total_func": 2,
+    "analyzed_func": 0,
+    "block_num": 18671333,
+    "address": "0x81f6E65493f430D520669E2139F96036102C5331",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

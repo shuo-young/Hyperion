@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CryptoBeasties",
+    "total_func": 16,
+    "analyzed_func": 3,
+    "block_num": 18672331,
+    "address": "0xde8e3c1947954b93fd69d7c1e882942a52a4098f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

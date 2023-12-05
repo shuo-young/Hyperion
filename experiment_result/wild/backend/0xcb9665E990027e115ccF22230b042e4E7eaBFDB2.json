@@ -1,0 +1,43 @@
+{
+    "dapp_name": "SwapBased",
+    "total_func": 30,
+    "analyzed_func": 4,
+    "block_num": 7118278,
+    "address": "0xcb9665E990027e115ccF22230b042e4E7eaBFDB2",
+    "platform": "Base",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xa694fc3a": {
+            "0x1546S0x13bb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-14-*(1 + Ia_store-0-), 10000)"
+                ]
+            ]
+        },
+        "0xecd9ba82": {
+            "0x1546S0x13bb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-14-*Id_2, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            24127051912485575222115357260
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

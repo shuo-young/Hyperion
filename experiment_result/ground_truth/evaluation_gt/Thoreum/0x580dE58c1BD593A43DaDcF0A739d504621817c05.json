@@ -1,0 +1,59 @@
+{
+    "dapp_name": "Thoreum",
+    "total_func": 53,
+    "analyzed_func": 0,
+    "block_num": 34078819,
+    "address": "0x580dE58c1BD593A43DaDcF0A739d504621817c05",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.205,
+                0.1
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            5000000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

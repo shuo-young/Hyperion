@@ -1,0 +1,826 @@
+{
+    "BNB Daily Finance": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Cryptoz NFT": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "FinToCh BNB": {
+        "reward": {
+            "roi": 0.02,
+            "referral": 0.3
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Floki CEO": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "FORSAGE Official": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Libera Financial": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.01,
+                0.1
+            ],
+            "fees": {
+                "buy": 0.01,
+                "sell": 0.1
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "MetaRevo": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.15,
+                0.15
+            ],
+            "fees": {
+                "buy": 0.15,
+                "sell": 0.15
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Yeetoshi Minter Machina": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "baby bnb tiger": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNBTiger": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.09,
+                0.02
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Baked Onions MATIC": {
+        "reward": {
+            "roi": 0.08
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Bean Machine": {
+        "reward": {
+            "roi": 0.08
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Block Rewards": {
+        "reward": {
+            "roi": 0.1,
+            "referral": 0.1
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.01,
+                10.95,
+                0.01
+            ],
+            "fees": {
+                "sell": 0.01,
+                "dev": 0.01
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNB Miner": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNB Pirates": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNB Ultra": {
+        "reward": {
+            "roi": 0.03
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNBeats": {
+        "reward": {
+            "roi": 0.01,
+            "referral": 0.14
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.06,
+                0.06,
+                0.06
+            ],
+            "fees": {
+                "withdrawal": 0.06,
+                "deposit": 0.06,
+                "dev": 0.06
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BUSD miner": {
+        "reward": {
+            "roi": 0.08
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "CAKE OF FORTUNE": {
+        "reward": {
+            "roi": 0.03
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "CROBeansMiner": {
+        "reward": {
+            "roi": 0.08,
+            "referral": 0.08
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.08,
+                0.08,
+                0.04
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Cromatoes Greenhouse Ponzi": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "F&F MinerRace": {
+        "reward": {
+            "referral": 0.05
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Gold Grinder 2.0": {
+        "reward": {
+            "roi": 0.1,
+            "referral": 0.09
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Grinch Bucks": {
+        "reward": {
+            "roi": 0.08,
+            "referral": 0.125
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Miracle BUSD Gems ROI Miner": {
+        "reward": {
+            "roi": 0.08
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.8,
+                0.8
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Polygon Matic Miner": {
+        "reward": {
+            "roi": 0.03,
+            "return": 0.03,
+            "referral": 0.1
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.03
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Staker Cafe": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.15
+            ],
+            "fees": {
+                "withdrawal": 0.15
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "The BNB Crops Farmer": {
+        "reward": {
+            "roi": 0.06,
+            "referral": 0.07
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.8
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Tron Holding": {
+        "reward": {
+            "roi": 0.05,
+            "referral": 0.2,
+            "token reward": 0.1
+        },
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "TrueFund": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Wizardly": {
+        "reward": {
+            "roi": 0.08
+        },
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.03,
+                0.03,
+                0.02,
+                0.03
+            ],
+            "fees": {
+                "dev": 0.02
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Milkyway": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            250000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "PunkPanda": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            275000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Retro DeFi": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            8000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Satozhi": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            50,
+            21000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Solar Techno Alliance": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Splinterlands": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            3000000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Yuzumax": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [
+            500000000
+        ],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Balance Network": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BNB Casino": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BRN Metaverse": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "DogeBets": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "AI Trader": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Avarice": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "BTCBullDog": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Dinosaur Eggs": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.003,
+                0.001
+            ],
+            "fees": {
+                "trade": 0.001
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Matrix Pro": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Planet9": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Poop": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.6
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Redluna": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.13,
+                0.1,
+                0.03,
+                0.03,
+                0.1,
+                0.03
+            ],
+            "fees": {
+                "buy": 0.13,
+                "sell": 0.1,
+                "dev": 0.03
+            }
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Reward Capital": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Snyper Fund": {
+        "reward": {},
+        "fee": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    },
+    "Thoreum": {
+        "reward": {},
+        "fee": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.1,
+                0.205,
+                0.1
+            ],
+            "fees": {}
+        },
+        "supply": [],
+        "lock": [],
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

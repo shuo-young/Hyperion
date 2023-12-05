@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Hedgehog",
+    "total_func": 5,
+    "analyzed_func": 0,
+    "block_num": 18671340,
+    "address": "0x0D266eCaA06C555028Bb975C52D71002CAD30EbA",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

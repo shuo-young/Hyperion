@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Flowerpatch",
+    "total_func": 26,
+    "analyzed_func": 1,
+    "block_num": 18673686,
+    "address": "0x4f41d10f7e67fd16bde916b4a6dc3dd101c57394",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            25001
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

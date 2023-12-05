@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Paradise",
+    "total_func": 4,
+    "analyzed_func": 1,
+    "block_num": 18602477,
+    "address": "0x2980bd7128af03e0a99ae354d9be81dba22f8d6e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.05
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x00000000": {
+            "0x106S0x56": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Iv, 5)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

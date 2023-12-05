@@ -1,0 +1,27 @@
+{
+    "dapp_name": "etfuel.Finance",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 33847924,
+    "address": "0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            123279435318136423615410
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

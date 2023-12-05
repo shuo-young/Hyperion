@@ -1,0 +1,79 @@
+{
+    "dapp_name": "PoWH4D - P4D",
+    "total_func": 59,
+    "analyzed_func": 14,
+    "block_num": 18661992,
+    "address": "0x96a4ed03206667017777f010dea4445823acb0fc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xe6c91a15": {
+            "0x13dd": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-15-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_4- +\nIa_store-some_var_5-"
+                ]
+            ]
+        },
+        "0xa810a54c": {
+            "0x13dd": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-15-*Ia_store-some_var_2- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_1-)) +\nIa_store-some_var_3- +\nIa_store-some_var_4-"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.21,
+                0.24
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1675315261568681235182825
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "13-24 months",
+                "25-36 months",
+                "37-60 months",
+                "12 months"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

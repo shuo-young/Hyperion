@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Nouns",
+    "total_func": 53,
+    "analyzed_func": 5,
+    "block_num": 18619592,
+    "address": "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            920
+        ],
+        "unlimited": true,
+        "ui": [
+            5
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "base64",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

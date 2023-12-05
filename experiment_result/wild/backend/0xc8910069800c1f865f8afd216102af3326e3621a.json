@@ -1,0 +1,133 @@
+{
+    "dapp_name": "Flip Coin",
+    "total_func": 16,
+    "analyzed_func": 3,
+    "block_num": 33852293,
+    "address": "0xc8910069800c1f865f8afd216102af3326e3621a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0xe5225381": {
+            "0x1ebcS0x440": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-20 + some_var_3-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-19 + some_var_4-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-18 + some_var_5-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-17 + some_var_6-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-18 + some_var_6-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-16 + some_var_7-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-18 + some_var_7-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-17 + some_var_7-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-15 + some_var_8-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-14 + some_var_9-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-13 + some_var_10-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-12 + some_var_11-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-11 + some_var_12-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-10 + some_var_13-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-9 + some_var_14-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-8 + some_var_15-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-7 + some_var_16-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-6 + some_var_17-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-5 + some_var_18-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-4 + some_var_19-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-3 + some_var_20-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-2 + some_var_21-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-1 + some_var_22-, 10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(9*Ia_store-some_var_23-, 10)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x00000000": {
+            "0x177": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

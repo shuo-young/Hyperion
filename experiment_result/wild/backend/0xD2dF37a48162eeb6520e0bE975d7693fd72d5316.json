@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Zeeverse",
+    "total_func": 33,
+    "analyzed_func": 6,
+    "block_num": 18642381,
+    "address": "0xD2dF37a48162eeb6520e0bE975d7693fd72d5316",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            3333
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x820S0x2c6": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

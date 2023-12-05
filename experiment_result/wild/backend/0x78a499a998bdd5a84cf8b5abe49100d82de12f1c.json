@@ -1,0 +1,27 @@
+{
+    "dapp_name": "JOJO",
+    "total_func": 45,
+    "analyzed_func": 0,
+    "block_num": 33852408,
+    "address": "0x78a499a998bdd5a84cf8b5abe49100d82de12f1c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Novabox",
+    "total_func": 16,
+    "analyzed_func": 1,
+    "block_num": 18661990,
+    "address": "0x72fbc0fc1446f5accc1b083f0852a7ef70a8ec9f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            17000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

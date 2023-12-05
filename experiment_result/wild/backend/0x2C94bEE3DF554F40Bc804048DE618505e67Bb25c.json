@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SwapBased",
+    "total_func": 28,
+    "analyzed_func": 4,
+    "block_num": 7117433,
+    "address": "0x2C94bEE3DF554F40Bc804048DE618505e67Bb25c",
+    "platform": "Base",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            34077287879044
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Arbitragepay",
+    "total_func": 39,
+    "analyzed_func": 2,
+    "block_num": 33851674,
+    "address": "0xa50984f7d415D3a49158A9F648B52Bd20c47265A",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3f9c793": {
+            "0xfb3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(2000*Iv, 10000)"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x2526": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(5*Ia_store-5 + some_var_1-, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(5*Ia_store-6 + some_var_1-, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x2764": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,71 @@
+{
+    "dapp_name": "HiPrecious",
+    "total_func": 29,
+    "analyzed_func": 2,
+    "block_num": 18671341,
+    "address": "0x5d0ee539893323f9965e3ac2846ea6421255ae79",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.21
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            210
+        ],
+        "unlimited": true,
+        "ui": [
+            2395
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xb7e9c44": {
+            "0x1db0S0xfe7S0x2ac": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_1"
+                ]
+            ],
+            "0x1d4dS0xfe7S0x2ac": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "balance_2"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

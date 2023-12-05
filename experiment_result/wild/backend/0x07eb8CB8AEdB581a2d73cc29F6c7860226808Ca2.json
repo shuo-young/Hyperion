@@ -1,0 +1,93 @@
+{
+    "dapp_name": "Value DeFi Protocol",
+    "total_func": 79,
+    "analyzed_func": 10,
+    "block_num": 18672033,
+    "address": "0x07eb8CB8AEdB581a2d73cc29F6c7860226808Ca2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xe9fad8ee": {
+            "0x3e36S0x3bba": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_5-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_5-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_36-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_36-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_68-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_68-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_98-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_98-"
+                ]
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0x3e36S0x3bba": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_3-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_3-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_37-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_37-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_72-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_72-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_105-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_105-"
+                ]
+            ]
+        },
+        "0x3d18b912": {
+            "0x3e36S0x3bba": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_2-, Ia_store-14-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_134-, Ia_store-14-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_241-, Ia_store-14-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(99*\n         Ia_store-some_var_241-*\n         bvudiv_i(Ia_store-26-, Ia_store-25-),\n         100)"
+                ]
+            ]
+        },
+        "0x4e71d92d": {
+            "0x3e36S0x3bba": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-12-*Ia_store-some_var_2-,\n         10000000000000000000000000000000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_2-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

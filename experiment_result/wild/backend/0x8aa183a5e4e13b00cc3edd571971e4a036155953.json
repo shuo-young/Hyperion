@@ -1,0 +1,47 @@
+{
+    "dapp_name": "SmartInu",
+    "total_func": 29,
+    "analyzed_func": 3,
+    "block_num": 33857143,
+    "address": "0x8aa183a5e4e13b00cc3edd571971e4a036155953",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x4121c28c": {
+            "0x1122": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(700*Iv, 10000)"
+                ]
+            ],
+            "0x1a4c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(800*Iv, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x38cac01e": {
+            "0xf57": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "balance_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

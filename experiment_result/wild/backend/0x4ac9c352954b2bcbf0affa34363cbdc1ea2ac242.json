@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Foodcourt Finance",
+    "total_func": 28,
+    "analyzed_func": 4,
+    "block_num": 33806701,
+    "address": "0x4ac9c352954b2bcbf0affa34363cbdc1ea2ac242",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1273187186107603227737
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

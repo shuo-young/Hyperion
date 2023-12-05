@@ -1,0 +1,27 @@
+{
+    "dapp_name": "DIByield",
+    "total_func": 27,
+    "analyzed_func": 1,
+    "block_num": 154577641,
+    "address": "0x99a8A7a45f1435aa6bfE099320a0EbDeC2BEAc03",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            3056973422076064403302448
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

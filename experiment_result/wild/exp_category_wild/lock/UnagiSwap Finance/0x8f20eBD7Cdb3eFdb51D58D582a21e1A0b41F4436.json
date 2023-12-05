@@ -1,0 +1,60 @@
+{
+    "dapp_name": "UnagiSwap Finance",
+    "total_func": 42,
+    "analyzed_func": 1,
+    "block_num": 33855763,
+    "address": "0x8f20eBD7Cdb3eFdb51D58D582a21e1A0b41F4436",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "referral": 0.3
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.12,
+                0.12
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            1
+        ]
+    },
+    "lock": {
+        "backend": true,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": true,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "dapp_name": "Olympus DAO",
+    "total_func": 17,
+    "analyzed_func": 5,
+    "block_num": 18652430,
+    "address": "0x0316508a1b5abf1CAe42912Dc2C8B9774b682fFC",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x46993135": {
+            "0x2a32S0x291bS0x282cS0x26ca0x219": [
+                [
+                    "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x70a1903d": {
+            "0x2a32S0x291bS0x282cS0x26caB0x25bd": [
+                [
+                    "0x8798249c2e607446efb7ad49ec89dd1865ff4272",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x2a32S0x291bS0x282cS0x26caB0x2323": [
+                [
+                    "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xa5f8b8cf": {
+            "0x2a32S0x291bS0x282cS0x26caB0x25bd": [
+                [
+                    "0x8798249c2e607446efb7ad49ec89dd1865ff4272",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x43a0d066": {
+            "0x2a32S0x291bS0x282cS0x26caB0x25bd": [
+                [
+                    "0x8798249c2e607446efb7ad49ec89dd1865ff4272",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x2a32S0x291bS0x282cS0x26caB0x2323": [
+                [
+                    "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x33cfcd3b": {
+            "0x2a32S0x291bS0x282cS0x26caB0x25bd": [
+                [
+                    "0x8798249c2e607446efb7ad49ec89dd1865ff4272",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x2a32S0x291bS0x282cS0x26caB0x2323": [
+                [
+                    "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

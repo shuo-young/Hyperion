@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Planet IX",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 50341334,
+    "address": "0x87a016Ae5A52688a60415036D45191e632d5D403",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

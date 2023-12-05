@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Little Lemon Friends",
+    "total_func": 50,
+    "analyzed_func": 6,
+    "block_num": 18641718,
+    "address": "0x0b22fe0a2995c5389ac093400e52471dca8bb48a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0,
+            9999
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x28caS0xed5S0x51c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

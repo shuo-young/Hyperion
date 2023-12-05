@@ -1,0 +1,65 @@
+{
+    "dapp_name": "Egoras",
+    "total_func": 23,
+    "analyzed_func": 9,
+    "block_num": 18670843,
+    "address": "0x7a24C9DB6A9f22b650087f2D65F119B9B2bc2508",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x26c4e60d": {
+            "0x10d1": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_5-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_8-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_10-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_12-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_14-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_16-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5 + some_var_3-))",
+                    "bvudiv_i(IH_b*bvudiv_i(0, Ia_store-some_var_6-), 1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4 + some_var_3-))",
+                    "bvudiv_i(IH_b*bvudiv_i(0, Ia_store-some_var_6-), 1000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5 + some_var_3-))",
+                    "bvudiv_i(IH_b*\n         bvudiv_i(1000*Ia_store-some_var_24-,\n                  Ia_store-some_var_6-),\n         1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

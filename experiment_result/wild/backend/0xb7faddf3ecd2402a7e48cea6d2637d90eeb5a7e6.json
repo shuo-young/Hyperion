@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Doges On Trial",
+    "total_func": 22,
+    "analyzed_func": 4,
+    "block_num": 18670817,
+    "address": "0xb7faddf3ecd2402a7e48cea6d2637d90eeb5a7e6",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x311a6c56": {
+            "0x18d9S0x207": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_2-))",
+                    "Ia_store-4 + some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-3-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

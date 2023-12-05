@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CryptoPets",
+    "total_func": 32,
+    "analyzed_func": 1,
+    "block_num": 18670645,
+    "address": "0xdfe0e36ea59dd7bcf8e72b3aa38d7ff1f472f1ce",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1143
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

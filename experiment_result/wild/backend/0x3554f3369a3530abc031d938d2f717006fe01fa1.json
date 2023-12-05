@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SpiritSwap",
+    "total_func": 10,
+    "analyzed_func": 0,
+    "block_num": 71521402,
+    "address": "0x3554f3369a3530abc031d938d2f717006fe01fa1",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

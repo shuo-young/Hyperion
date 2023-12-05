@@ -1,0 +1,43 @@
+{
+    "dapp_name": "Houdini Swap",
+    "total_func": 66,
+    "analyzed_func": 5,
+    "block_num": 18660797,
+    "address": "0x888ceA2BBDD5D47a4032cf63668D7525C74af57A",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xf5648a4f": {
+            "0x223bS0xab6": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xcb963728": {
+            "0x1826S0x90c": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

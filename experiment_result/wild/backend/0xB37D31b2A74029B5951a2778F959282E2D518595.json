@@ -1,0 +1,25 @@
+{
+    "dapp_name": "CelerNetwork",
+    "total_func": 37,
+    "analyzed_func": 4,
+    "block_num": 18647143,
+    "address": "0xB37D31b2A74029B5951a2778F959282E2D518595",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

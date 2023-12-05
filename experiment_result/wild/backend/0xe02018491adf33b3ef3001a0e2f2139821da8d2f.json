@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SUPERNOVA",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33855751,
+    "address": "0xe02018491adf33b3ef3001a0e2f2139821da8d2f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

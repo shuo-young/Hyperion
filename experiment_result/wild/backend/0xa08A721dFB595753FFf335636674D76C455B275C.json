@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Fei Protocol",
+    "total_func": 21,
+    "analyzed_func": 3,
+    "block_num": 18671302,
+    "address": "0xa08A721dFB595753FFf335636674D76C455B275C",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xb7e93121": {
+            "0xf4b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(mem_mem_64, 1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

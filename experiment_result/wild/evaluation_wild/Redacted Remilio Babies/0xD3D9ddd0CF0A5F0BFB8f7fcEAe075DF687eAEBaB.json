@@ -1,0 +1,56 @@
+{
+    "dapp_name": "Redacted Remilio Babies",
+    "total_func": 37,
+    "analyzed_func": 2,
+    "block_num": 18641304,
+    "address": "0xD3D9ddd0CF0A5F0BFB8f7fcEAe075DF687eAEBaB",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10001,
+            0
+        ],
+        "unlimited": false,
+        "ui": [
+            10000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

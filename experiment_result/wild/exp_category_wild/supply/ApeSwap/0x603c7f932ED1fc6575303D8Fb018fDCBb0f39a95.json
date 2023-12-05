@@ -1,0 +1,55 @@
+{
+    "dapp_name": "ApeSwap",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 33847881,
+    "address": "0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            317695787935899315004856544
+        ],
+        "unlimited": true,
+        "ui": [
+            420000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

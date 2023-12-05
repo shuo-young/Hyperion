@@ -1,0 +1,111 @@
+{
+    "dapp_name": "SmartSwap - Rigelprotocol",
+    "total_func": 30,
+    "analyzed_func": 8,
+    "block_num": 33830753,
+    "address": "0xE1ECCCcb46755a38D218Bf7Fdcd6f26C2cd7671f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x1eaaa045": {
+            "0xf490xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-10-*\n         bvudiv_i(Ia_store-1 + some_var_3-*\n                  Ia_store-3-*\n                  Ia_store-4-*\n                  (IH_i +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-2 + some_var_3-),\n                  Ia_store-8-),\n         100000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-10-*\n         bvudiv_i(Ia_store-3-*\n                  Ia_store-4-*\n                  Ia_store-5 + some_var_3-*\n                  (IH_i +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-6 + some_var_3-),\n                  Ia_store-8-),\n         100000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-10-*bvudiv_i(0, Ia_store-8-),\n         100000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-10-*\n         bvudiv_i(Ia_store-3-*\n                  Ia_store-4-*\n                  Ia_store-9 + some_var_3-*\n                  (IH_i +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-10 + some_var_3-),\n                  Ia_store-8-),\n         100000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    0.0
+                ]
+            ],
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x64482f79": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x630b5ba1": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x76b9e12a": {
+            "0xec10x3ab": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x51eb05a6": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

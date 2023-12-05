@@ -1,0 +1,25 @@
+{
+    "dapp_name": "IMVU powered by MetaJuice",
+    "total_func": 24,
+    "analyzed_func": 0,
+    "block_num": 18642531,
+    "address": "0x9384A05B7d8e3570fDB0BdE85f24bF10658ccA22",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

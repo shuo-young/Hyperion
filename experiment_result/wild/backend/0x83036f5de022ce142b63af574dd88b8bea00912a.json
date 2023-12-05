@@ -1,0 +1,35 @@
+{
+    "dapp_name": "EtherStrike",
+    "total_func": 49,
+    "analyzed_func": 3,
+    "block_num": 18670865,
+    "address": "0x83036f5de022ce142b63af574dd88b8bea00912a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            126
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x2b09S0x657": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

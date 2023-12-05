@@ -1,0 +1,59 @@
+{
+    "dapp_name": "RaidParty Heroes",
+    "total_func": 34,
+    "analyzed_func": 4,
+    "block_num": 18641065,
+    "address": "0x966731dfd9b9925dd105ff465687f5aa8f54ee9f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.05,
+            "profit": 0.05
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            6805,
+            1512
+        ],
+        "unlimited": true,
+        "ui": [
+            14814
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

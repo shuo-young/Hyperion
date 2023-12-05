@@ -1,0 +1,57 @@
+{
+    "dapp_name": "PolkaBridge",
+    "total_func": 30,
+    "analyzed_func": 4,
+    "block_num": 18671666,
+    "address": "0x75B8c48Bdb04d426aeD57b36BB835aD2dC321c30",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "rewards": 0.005
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.0025
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            65000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

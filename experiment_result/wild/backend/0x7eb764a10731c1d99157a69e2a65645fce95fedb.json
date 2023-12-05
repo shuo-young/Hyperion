@@ -1,0 +1,69 @@
+{
+    "dapp_name": "RiotCats",
+    "total_func": 24,
+    "analyzed_func": 7,
+    "block_num": 18673824,
+    "address": "0x7eb764a10731c1d99157a69e2a65645fce95fedb",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0x51ffcab3": {
+            "0x10c5S0x208": [
+                [
+                    "Is",
+                    "Concat(0,\n       Extract(127, 0, Iv) +\n       340282366920938463463374607431768211455*\n       Extract(255, 128, Ia_store-1 + some_var_1-))"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x51ffcab3": {
+            "0x1089S0x208": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Concat(0,\n       Extract(255, 128, Ia_store-1 + some_var_1-) +\n       340282366920938463463374607431768211455*\n       Extract(127,\n               0,\n               bvudiv_i(Concat(0,\n                               Extract(255,\n                                       128,\n                                       Ia_store-1 + some_var_1-)*\n                               Concat(0,\n                                      Extract(175,\n                                        160,\n                                        Ia_store-2-))),\n                        10000)))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x11952369": {
+            "0x6a9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_2"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_4"
+                ]
+            ]
+        },
+        "0x978b504e": {
+            "0x11b20x1136": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Concat(0, Extract(31, 0, Id_1))"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x6a9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_2"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

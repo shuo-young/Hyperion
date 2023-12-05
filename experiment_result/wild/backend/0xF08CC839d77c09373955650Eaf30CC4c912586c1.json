@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Unifi Protocol",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 18658403,
+    "address": "0xF08CC839d77c09373955650Eaf30CC4c912586c1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            28730393954534373
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

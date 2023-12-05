@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Pololinks",
+    "total_func": 21,
+    "analyzed_func": 1,
+    "block_num": 50451799,
+    "address": "0x63024ebcb59701ae7dda0ac57b07a98b9f5698b9",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            101010101000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            2000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xdc39d06d": {
+            "0x106bS0x480": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

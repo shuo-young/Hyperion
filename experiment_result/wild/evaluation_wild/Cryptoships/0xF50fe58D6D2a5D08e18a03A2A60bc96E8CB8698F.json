@@ -1,0 +1,64 @@
+{
+    "dapp_name": "Cryptoships",
+    "total_func": 23,
+    "analyzed_func": 1,
+    "block_num": 18672429,
+    "address": "0xF50fe58D6D2a5D08e18a03A2A60bc96E8CB8698F",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "30 days",
+                "30 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0xf853d4cc": {
+            "0x12b0S0x124aS0x459": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

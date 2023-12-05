@@ -1,0 +1,43 @@
+{
+    "dapp_name": "Crotama",
+    "total_func": 63,
+    "analyzed_func": 4,
+    "block_num": 11341160,
+    "address": "0x4c76a10A658d71AdB6431765a0a3cA13B6e2D491",
+    "platform": "Cronos",
+    "reward": {
+        "warning": true,
+        "0x1da1db5e": {
+            "0x102dS0x554": [
+                [
+                    "Is",
+                    "bvudiv_i(IH_b*Id_1, 100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x77b54bad": {
+            "0x1346S0x7cf": [
+                [
+                    "Is",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

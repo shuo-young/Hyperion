@@ -1,0 +1,25 @@
+{
+    "dapp_name": "King of Eth",
+    "total_func": 29,
+    "analyzed_func": 0,
+    "block_num": 18673725,
+    "address": "0x5ff1e4c124b6b0c9a41cf41d261b3cb9fd84c80d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

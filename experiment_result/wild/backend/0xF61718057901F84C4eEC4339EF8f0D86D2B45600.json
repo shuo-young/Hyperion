@@ -1,0 +1,27 @@
+{
+    "dapp_name": "yearn.finance (YFI)",
+    "total_func": 49,
+    "analyzed_func": 2,
+    "block_num": 18659901,
+    "address": "0xF61718057901F84C4eEC4339EF8f0D86D2B45600",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            63758141313539384208816
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

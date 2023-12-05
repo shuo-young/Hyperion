@@ -1,0 +1,97 @@
+{
+    "dapp_name": "Rabbit Finance",
+    "total_func": 55,
+    "analyzed_func": 5,
+    "block_num": 33829534,
+    "address": "0xd55054C67269E9BfeEfd5253Ba2f5a38342Dc0ef",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xfdb5a03e": {
+            "0x3444": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-80-))",
+                    "bvudiv_i(Ia_store-79-*\n         mem_mem_32*mem_mem_64*If(Extract(255, 1, mem_mem_64) == 0, 0, 1),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x62896f1e": {
+            "0x17a9": [
+                [
+                    "Concat(0, Extract(159, 0, Id_8))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_11))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_14))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_17))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_20))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_23))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_26))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_29))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_32))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_35))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_38))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_41))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x60336ec": {
+            "0xda7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-81-))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-81-))",
+                    "mem_mem_32*mem_mem_64*If(Extract(255, 1, mem_mem_64) == 0, 0, 1)"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

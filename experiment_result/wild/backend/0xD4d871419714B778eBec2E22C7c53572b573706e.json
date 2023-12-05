@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Stoner Cats",
+    "total_func": 34,
+    "analyzed_func": 5,
+    "block_num": 18641379,
+    "address": "0xD4d871419714B778eBec2E22C7c53572b573706e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10420
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x1237S0x6ff": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

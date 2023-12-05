@@ -1,0 +1,27 @@
+{
+    "dapp_name": "MMF.Money",
+    "total_func": 13,
+    "analyzed_func": 2,
+    "block_num": 11341189,
+    "address": "0x74759c8BCb6787ef25eD2ff432FE33ED57CcCB0D",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            16777169458042302563817
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

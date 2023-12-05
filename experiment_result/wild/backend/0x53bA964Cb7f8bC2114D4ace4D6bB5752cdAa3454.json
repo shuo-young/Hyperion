@@ -1,0 +1,27 @@
+{
+    "dapp_name": "ShibaX",
+    "total_func": 28,
+    "analyzed_func": 4,
+    "block_num": 33855502,
+    "address": "0x53bA964Cb7f8bC2114D4ace4D6bB5752cdAa3454",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            16232628140390239263705
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

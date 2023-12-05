@@ -1,0 +1,27 @@
+{
+    "dapp_name": "MUSystem",
+    "total_func": 10,
+    "analyzed_func": 2,
+    "block_num": 18660840,
+    "address": "0x4fe2b959e0a093c58067e00c62add84820f7dc43",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            300335136798031395
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

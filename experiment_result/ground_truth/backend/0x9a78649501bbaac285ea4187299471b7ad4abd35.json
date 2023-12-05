@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Dinosaur Eggs",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 34079085,
+    "address": "0x9a78649501bbaac285ea4187299471b7ad4abd35",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            262128585626195160395253306
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

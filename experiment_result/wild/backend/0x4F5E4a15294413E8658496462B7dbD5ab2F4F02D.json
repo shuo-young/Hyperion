@@ -1,0 +1,27 @@
+{
+    "dapp_name": "DEGO Finance",
+    "total_func": 43,
+    "analyzed_func": 6,
+    "block_num": 18670796,
+    "address": "0x4F5E4a15294413E8658496462B7dbD5ab2F4F02D",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            359979306612587937079
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

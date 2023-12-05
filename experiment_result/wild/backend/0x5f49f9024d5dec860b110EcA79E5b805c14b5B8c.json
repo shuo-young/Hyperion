@@ -1,0 +1,27 @@
+{
+    "dapp_name": "DogeWarrior",
+    "total_func": 40,
+    "analyzed_func": 2,
+    "block_num": 33857025,
+    "address": "0x5f49f9024d5dec860b110EcA79E5b805c14b5B8c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            975507132462008821419950
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

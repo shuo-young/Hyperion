@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Eternal Finance",
+    "total_func": 67,
+    "analyzed_func": 15,
+    "block_num": 34078115,
+    "address": "0xB6A0Ad1C6C2E1E158026a2b5F8Ce2e8aCacFFA95",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x2397e4d7": {
+            "0xf7fS0x480": [
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(1000000000000000000*mem_mem_64,\n                  1 + Ia_store-7-)*\n         (Id_1 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          bvudiv_i(Ia_store-62-*Id_1, 1000)),\n         1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            0.1,
+            0.3
+        ],
+        "0x47e7ef24": {
+            "0x2b98S0x13f3S0x57a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-57-*Id_2, 1000)"
+                ]
+            ],
+            "0x2c2dS0x13f3S0x57a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-58-*Id_2, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            19544089553308644558936
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

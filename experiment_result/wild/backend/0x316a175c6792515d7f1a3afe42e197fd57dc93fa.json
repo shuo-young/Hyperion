@@ -1,0 +1,45 @@
+{
+    "dapp_name": "RiotCats",
+    "total_func": 23,
+    "analyzed_func": 3,
+    "block_num": 18673827,
+    "address": "0x316a175c6792515d7f1a3afe42e197fd57dc93fa",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x11952369": {
+            "0x58e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_2"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_4"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x58e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_2"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

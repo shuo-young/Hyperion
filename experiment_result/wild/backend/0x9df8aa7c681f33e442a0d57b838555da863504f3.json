@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Llamaverse Genesis",
+    "total_func": 42,
+    "analyzed_func": 1,
+    "block_num": 18641713,
+    "address": "0x9df8aa7c681f33e442a0d57b838555da863504f3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xf96S0x44e": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

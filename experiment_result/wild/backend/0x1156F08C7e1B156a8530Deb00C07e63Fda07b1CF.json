@@ -1,0 +1,89 @@
+{
+    "dapp_name": "TTSTAR MINER",
+    "total_func": 103,
+    "analyzed_func": 5,
+    "block_num": 71615299,
+    "address": "0x1156F08C7e1B156a8530Deb00C07e63Fda07b1CF",
+    "platform": "Fantom",
+    "reward": {
+        "warning": true,
+        "0x3955f0fe": {
+            "0x16d1S0x955": [
+                [
+                    "Is",
+                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b*Ia_store-7-, Ia_store-3-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b*Ia_store-8-, Ia_store-3-)"
+                ],
+                [
+                    "Is",
+                    "Ia_store-39- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-39-*Ia_store-7-, Ia_store-3-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-39-*Ia_store-8-, Ia_store-3-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0x3955f0fe": {
+            "0x2cd1S0x16a2S0x955": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-42-))",
+                    "bvudiv_i(IH_b*Ia_store-7-, Ia_store-3-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-42-))",
+                    "bvudiv_i(Ia_store-39-*Ia_store-7-, Ia_store-3-)"
+                ]
+            ],
+            "0x2d0cS0x16a2S0x955": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-44-))",
+                    "bvudiv_i(IH_b*Ia_store-8-, Ia_store-3-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-44-))",
+                    "bvudiv_i(Ia_store-39-*Ia_store-8-, Ia_store-3-)"
+                ]
+            ]
+        },
+        "0xdb663865": {
+            "0x2f5dS0x29e4S0x11c4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-42-))",
+                    "bvudiv_i(Ia_store-5-*Iv, Ia_store-3-)"
+                ]
+            ],
+            "0x2f98S0x29e4S0x11c4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-43-))",
+                    "bvudiv_i(Ia_store-4-*Iv, Ia_store-3-)"
+                ]
+            ]
+        },
+        "0xcd38aa87": {
+            "0x24f4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-42-))",
+                    "bvudiv_i(Ia_store-22-*Ia_store-6-, Ia_store-3-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xa29f3781": {
+            "0x1f97S0xedc": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-41-))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

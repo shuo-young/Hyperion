@@ -1,0 +1,25 @@
+{
+    "dapp_name": "CryptoServal",
+    "total_func": 15,
+    "analyzed_func": 0,
+    "block_num": 18672426,
+    "address": "0xad4da252d5b4ecb8a01dbad477cca24ee7a53af0",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

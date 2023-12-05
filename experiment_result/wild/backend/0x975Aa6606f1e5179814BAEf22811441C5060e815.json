@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Freeliquid",
+    "total_func": 46,
+    "analyzed_func": 3,
+    "block_num": 18671334,
+    "address": "0x975Aa6606f1e5179814BAEf22811441C5060e815",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x56605475": {
+            "0x3292S0x2f16S0x299e": [
+                [
+                    "Concat(0, Extract(159, 0, bvudiv_i(0, Ia_store-54-)))",
+                    "8920 +\nIa_store-some_var_50- +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(0, 1000000000000000000*some_var_2) +\n          Ia_store-8 + 11*Ia_store-71- + some_var_1- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639925*\n          Ia_store-71- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          some_var_1),\n         18494)"
+                ]
+            ]
+        },
+        "0x3d18b912": {
+            "0x3292S0x2f16S0x299e": [
+                [
+                    "Concat(0, Extract(159, 0, bvudiv_i(0, Ia_store-54-)))",
+                    "8920 +\nIa_store-some_var_50- +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(0, 1000000000000000000*some_var_2) +\n          Ia_store-8 + 11*Ia_store-71- + some_var_1- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639925*\n          Ia_store-71- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          some_var_1),\n         18494)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            5,
+            1000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

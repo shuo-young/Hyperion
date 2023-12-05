@@ -1,0 +1,49 @@
+{
+    "dapp_name": "Divial Mutual",
+    "total_func": 25,
+    "analyzed_func": 4,
+    "block_num": 33856958,
+    "address": "0x19623955bdAe454325b85CF9Ab5a399B9E55e9fE",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x00000000": {
+            "0x18b7S0x795": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(1000000000000000000*\n         bvudiv_i(Iv, bvudiv_i(Ia_store-4-, 10000)),\n         10000)"
+                ]
+            ]
+        },
+        "0x64edfbf0": {
+            "0x18b7S0x795": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(1000000000000000000*\n         bvudiv_i(Iv, bvudiv_i(Ia_store-4-, 10000)),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3f212968": {
+            "0xc6d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

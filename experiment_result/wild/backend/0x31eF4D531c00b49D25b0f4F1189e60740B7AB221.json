@@ -1,0 +1,25 @@
+{
+    "dapp_name": "ANT FINANCE",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 33855970,
+    "address": "0x31eF4D531c00b49D25b0f4F1189e60740B7AB221",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Blue Bird",
+    "total_func": 51,
+    "analyzed_func": 3,
+    "block_num": 34078824,
+    "address": "0x1CD4C653C8a8775e26cc14Ab30A52bC12b3D7fd2",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            47000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "dYdX",
+    "total_func": 4,
+    "analyzed_func": 1,
+    "block_num": 18650057,
+    "address": "0xa8b39829ce2246f89b31c013b8cde15506fb9a76",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xf319142a": {
+            "0x5a9": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

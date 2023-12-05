@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Reflexer Labs",
+    "total_func": 13,
+    "analyzed_func": 2,
+    "block_num": 18655967,
+    "address": "0xa706d4c39c315288113020f3e2D7e1095e912a20",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3c6b16ab": {
+            "0xb5c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_2-))",
+                    "Ia_store-1 + some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvurem_i(Ia_store-1 + some_var_2-, mem_mem_64)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

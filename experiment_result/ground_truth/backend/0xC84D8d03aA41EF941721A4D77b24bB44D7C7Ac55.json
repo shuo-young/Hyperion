@@ -1,0 +1,42 @@
+{
+    "dapp_name": "Empire DEX",
+    "total_func": 90,
+    "analyzed_func": 7,
+    "block_num": 34078260,
+    "address": "0xC84D8d03aA41EF941721A4D77b24bB44D7C7Ac55",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true,
+        "rate": [],
+        "0xb962031a": {
+            "0x4c41S0x3508": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-45-))",
+                    "Ia_store-38-*bvudiv_i(Id_1, 100)"
+                ]
+            ],
+            "0x4c8fS0x3508": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-44-))",
+                    "Ia_store-39-*bvudiv_i(Id_1, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            96323786384880886
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

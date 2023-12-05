@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Solar Techno Alliance",
+    "total_func": 17,
+    "analyzed_func": 1,
+    "block_num": 34078224,
+    "address": "0x4d1e90ab966ae26c778b2f9f365aa40abb13f53c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            210000000000000100
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

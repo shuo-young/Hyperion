@@ -1,0 +1,95 @@
+{
+    "dapp_name": "Ethereum Cute Cat Farm",
+    "total_func": 24,
+    "analyzed_func": 2,
+    "block_num": 18601684,
+    "address": "0x67601d7a7cbbd77368785122c508503f168b1daa",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x3955f0fe": {
+            "0x8e8S0x2eb": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_4,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_4,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_6,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_6,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-))"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3955f0fe": {
+            "0x898S0x2eb": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        },
+        "0x4f74acfe": {
+            "0xed9": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "1 day"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

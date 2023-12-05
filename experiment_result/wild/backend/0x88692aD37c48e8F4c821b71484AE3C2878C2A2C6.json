@@ -1,0 +1,27 @@
+{
+    "dapp_name": "WaterDendy",
+    "total_func": 19,
+    "analyzed_func": 2,
+    "block_num": 154581979,
+    "address": "0x88692aD37c48e8F4c821b71484AE3C2878C2A2C6",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            32874756691679049030575
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

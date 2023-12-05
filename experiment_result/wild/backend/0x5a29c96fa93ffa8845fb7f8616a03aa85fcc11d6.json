@@ -1,0 +1,27 @@
+{
+    "dapp_name": "FRANCE REV FINANCE",
+    "total_func": 17,
+    "analyzed_func": 1,
+    "block_num": 33857106,
+    "address": "0x5a29c96fa93ffa8845fb7f8616a03aa85fcc11d6",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

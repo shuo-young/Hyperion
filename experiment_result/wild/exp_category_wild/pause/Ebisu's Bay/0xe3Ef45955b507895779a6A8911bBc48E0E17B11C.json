@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Ebisu's Bay",
+    "total_func": 65,
+    "analyzed_func": 9,
+    "block_num": 11296136,
+    "address": "0xe3Ef45955b507895779a6A8911bBc48E0E17B11C",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            2500
+        ],
+        "unlimited": false,
+        "ui": [
+            285580000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": true,
+        "metadata": false
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "dapp_name": "The n project",
+    "total_func": 29,
+    "analyzed_func": 4,
+    "block_num": 18640823,
+    "address": "0x05a46f1E545526FB803FF974C790aCeA34D1f2D6",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.021
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            8888
+        ],
+        "unlimited": true,
+        "ui": [
+            8882
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "base64",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

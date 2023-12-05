@@ -1,0 +1,68 @@
+{
+    "dapp_name": "StellaSwap",
+    "total_func": 35,
+    "analyzed_func": 1,
+    "block_num": 4956462,
+    "address": "0x0E358838ce72d5e61E0018a2ffaC4bEC5F4c88d2",
+    "platform": "Moonbeam",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.0005,
+                0.0005,
+                0.025,
+                0.025,
+                0.2,
+                0.2,
+                0.0005,
+                0.025,
+                0.2,
+                0.2
+            ],
+            "fees": {
+                "trade": 0.2
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            31273647563797575447574259
+        ],
+        "unlimited": false,
+        "ui": [
+            500000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

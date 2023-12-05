@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Gutter Cat Gang",
+    "total_func": 30,
+    "analyzed_func": 2,
+    "block_num": 18640730,
+    "address": "0xedb61f74b0d09b2558f1eeb79b247c1f363ae452",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xb57S0x2d9": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x17ffc320": {
+            "0x813S0x291": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

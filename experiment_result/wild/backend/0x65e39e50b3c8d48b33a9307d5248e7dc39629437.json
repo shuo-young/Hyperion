@@ -1,0 +1,41 @@
+{
+    "dapp_name": "LandSecrets",
+    "total_func": 15,
+    "analyzed_func": 3,
+    "block_num": 18671438,
+    "address": "0x65e39e50b3c8d48b33a9307d5248e7dc39629437",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xc0fe1af8": {
+            "0xded": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-some_var_9-))",
+                    "Ia_store-3-*Concat(0, Extract(31, 0, Ia_store-some_var_9-))"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-some_var_6-))",
+                    "Ia_store-3-*Concat(0, Extract(31, 0, Ia_store-some_var_6-))"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-some_var_3-))",
+                    "Ia_store-3-*Concat(0, Extract(31, 0, Ia_store-some_var_3-))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

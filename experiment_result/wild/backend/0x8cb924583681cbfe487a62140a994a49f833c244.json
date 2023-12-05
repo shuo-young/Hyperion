@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SWAPP Protocol",
+    "total_func": 66,
+    "analyzed_func": 10,
+    "block_num": 18671885,
+    "address": "0x8cb924583681cbfe487a62140a994a49f833c244",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            535013011830211003278984179
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

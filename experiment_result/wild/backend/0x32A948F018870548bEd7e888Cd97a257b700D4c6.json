@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Alligator",
+    "total_func": 15,
+    "analyzed_func": 2,
+    "block_num": 38190711,
+    "address": "0x32A948F018870548bEd7e888Cd97a257b700D4c6",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": true,
+        "0x2e17de78": {
+            "0x5b20x1fc": [
+                [
+                    "Is",
+                    "bvudiv_i(Id_1*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(0, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            67062100872208231404975803
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

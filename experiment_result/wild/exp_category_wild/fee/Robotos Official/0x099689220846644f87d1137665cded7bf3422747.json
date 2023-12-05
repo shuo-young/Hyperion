@@ -1,0 +1,95 @@
+{
+    "dapp_name": "Robotos Official",
+    "total_func": 35,
+    "analyzed_func": 6,
+    "block_num": 18640903,
+    "address": "0x099689220846644f87d1137665cded7bf3422747",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xa0712d68": {
+            "0x11b5": [
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-14-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x1215": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x1275": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ]
+        },
+        "0x853828b6": {
+            "0x11b5": [
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-14-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x1215": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x1275": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            9999
+        ],
+        "unlimited": false,
+        "ui": [
+            10000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

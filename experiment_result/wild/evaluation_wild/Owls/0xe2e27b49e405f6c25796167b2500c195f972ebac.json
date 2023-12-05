@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Owls",
+    "total_func": 32,
+    "analyzed_func": 2,
+    "block_num": 18641908,
+    "address": "0xe2e27b49e405f6c25796167b2500c195f972ebac",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            9999
+        ],
+        "unlimited": false,
+        "ui": [
+            9999
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xdb9S0x3fb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "base64",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

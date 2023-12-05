@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Anichess",
+    "total_func": 33,
+    "analyzed_func": 3,
+    "block_num": 50337046,
+    "address": "0x473989BF6409D21f8A7Fdd7133a40F9251cC1839",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

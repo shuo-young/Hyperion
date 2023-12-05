@@ -1,0 +1,57 @@
+{
+    "dapp_name": "JOJO",
+    "total_func": 22,
+    "analyzed_func": 2,
+    "block_num": 33852413,
+    "address": "0x191023b9229f8aada78ede99b7788d10a608a79a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xe0fef1e0": {
+            "0x25f6S0x24d3S0x22c7S0x2481B0x22ae": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(Ia_store-6-*bvudiv_i(Ia_store-2-*Id_5, 10000),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-5-*bvudiv_i(Ia_store-2-*Id_5, 10000),\n         10000)"
+                ],
+                [
+                    57005,
+                    "bvudiv_i(Ia_store-2-*Id_5, 10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-6-*bvudiv_i(Ia_store-2-*Id_5, 10000),\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-5-*bvudiv_i(Ia_store-2-*Id_5, 10000),\n         10000)"
+                ]
+            ]
+        },
+        "0xace293fb": {
+            "0x25f6S0x24d3S0x22c7S0x2481B0x22ae": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(Ia_store-6-*\n         bvudiv_i(Ia_store-mem_mem_64-*Iv, 10000),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-5-*\n         bvudiv_i(Ia_store-mem_mem_64-*Iv, 10000),\n         10000)"
+                ],
+                [
+                    57005,
+                    "bvudiv_i(Ia_store-mem_mem_64-*Iv, 10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-6-*\n         bvudiv_i(Ia_store-mem_mem_64-*Iv, 10000),\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-5-*\n         bvudiv_i(Ia_store-mem_mem_64-*Iv, 10000),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

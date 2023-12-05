@@ -1,0 +1,75 @@
+{
+    "dapp_name": "BitCereal",
+    "total_func": 34,
+    "analyzed_func": 6,
+    "block_num": 50451095,
+    "address": "0xf4FDd4B26d295918598C5048F05c85B87fc84a8B",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "0x35580df2": {
+            "0x8c2S0x2d6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(5*Ia_store-7-, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "referral": 0.05
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.05,
+                0.02
+            ],
+            "fees": {
+                "withdrawal": 0.05,
+                "deposit": 0.02
+            }
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x4c62ad54": {
+            "0xddfS0x36e": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "dapp_name": "Badger.Finance",
+    "total_func": 51,
+    "analyzed_func": 5,
+    "block_num": 18644897,
+    "address": "0xF6BC36280F32398A031A7294e81131aEE787D178",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x4641257d": {
+            "0x38c5S0x382eS0x35d0S0x4d030x2223": [
+                [
+                    "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+                    "bvudiv_i(Ia_store-214-*mem_128 + mem_64, 10000)"
+                ],
+                [
+                    "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+                    "bvudiv_i(Ia_store-215-*mem_128 + mem_64, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x335bS0x1a65S0x58d": [
+                [
+                    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x346fS0x1a65S0x58d": [
+                [
+                    "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

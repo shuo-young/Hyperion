@@ -1,0 +1,36 @@
+{
+    "dapp_name": "goblintownNFT",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 18640688,
+    "address": "0x8c6def540b83471664edc6d5cf75883986932674",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            9999,
+            0
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x33958a18": {
+            "0x8c0S0x32d": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

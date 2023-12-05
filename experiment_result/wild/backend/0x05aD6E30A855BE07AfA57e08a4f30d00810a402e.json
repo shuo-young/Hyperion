@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Tiny World",
+    "total_func": 19,
+    "analyzed_func": 3,
+    "block_num": 33779121,
+    "address": "0x05aD6E30A855BE07AfA57e08a4f30d00810a402e",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

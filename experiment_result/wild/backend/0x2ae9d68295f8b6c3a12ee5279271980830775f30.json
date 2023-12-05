@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Win ETH Free",
+    "total_func": 3,
+    "analyzed_func": 2,
+    "block_num": 18661226,
+    "address": "0x2ae9d68295f8b6c3a12ee5279271980830775f30",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x4557735c": {
+            "0x10f7S0x68d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(10*Id_2, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

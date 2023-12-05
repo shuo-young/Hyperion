@@ -1,0 +1,37 @@
+{
+    "dapp_name": "\u00e0 table !",
+    "total_func": 26,
+    "analyzed_func": 2,
+    "block_num": 18674644,
+    "address": "0x5d77b850ba7c6218dbb4ff087ad25dee0baa638f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe77145a1": {
+            "0x1c64": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_3"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_5"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

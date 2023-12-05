@@ -1,0 +1,71 @@
+{
+    "dapp_name": "SoulZ Monogatari",
+    "total_func": 50,
+    "analyzed_func": 7,
+    "block_num": 18623196,
+    "address": "0xa5c807a62cd6774d6bf518dd2dec0ae17446ad8d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            7777
+        ],
+        "unlimited": false,
+        "ui": [
+            7777
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x77af430": {
+            "0xb57S0x386": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x1338S0x494": [
+                [
+                    "Concat(0, Extract(159, 0, mem_224 + mem_64))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

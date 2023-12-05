@@ -1,0 +1,73 @@
+{
+    "dapp_name": "AlienDEX",
+    "total_func": 22,
+    "analyzed_func": 3,
+    "block_num": 11341108,
+    "address": "0xC647aE7BF53fB84277E4e4683e753Ee6d0B516CA",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x6fc3eaec": {
+            "0x1522": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x1565": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ],
+            "0x15a8": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "bvudiv_i(IH_b, 3)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            197964522120603144
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

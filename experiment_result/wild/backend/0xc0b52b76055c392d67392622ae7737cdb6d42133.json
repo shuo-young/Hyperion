@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Wallie - 1.44%",
+    "total_func": 11,
+    "analyzed_func": 1,
+    "block_num": 18662039,
+    "address": "0xc0b52b76055c392d67392622ae7737cdb6d42133",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x00000000": {
+            "0x5dd": [
+                [
+                    "Is",
+                    "bvudiv_i((IH_i +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_26-)*\n         bvudiv_i(144*Ia_store-some_var_1-, 10000),\n         5900)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

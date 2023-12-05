@@ -1,0 +1,52 @@
+{
+    "dapp_name": "Floki CEO",
+    "total_func": 35,
+    "analyzed_func": 4,
+    "block_num": 34078220,
+    "address": "0x45289007706E7Ee7B42b1fA506661d97740Edfb4",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            420000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x441b1d30": {
+            "0xfdcS0x3f2": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0xa9059cbb": {
+            "0x2fb7S0x2525": [
+                [
+                    "Concat(0,\n       Extract(159,\n               0,\n               bvudiv_i(Ia_store-13-,\n                        If(ULE(mem_mem_64,\n                               If(mem_mem_64 == 0, 0, 1)),\n                           0,\n                           1))))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x2fb7S0x2525": [
+                [
+                    "Concat(0,\n       Extract(159,\n               0,\n               bvudiv_i(Ia_store-13-,\n                        If(ULE(mem_mem_64,\n                               If(mem_mem_64 == 0, 0, 1)),\n                           0,\n                           1))))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Clash of Coins",
+    "total_func": 27,
+    "analyzed_func": 6,
+    "block_num": 18672187,
+    "address": "0x2F537D254bD9d94133e98E065C66A2a499451f95",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

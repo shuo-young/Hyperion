@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Yuzumax",
+    "total_func": 34,
+    "analyzed_func": 2,
+    "block_num": 34078219,
+    "address": "0x5318Ae72F0080d2de2fD3E9E39b4066F1D759E5D",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            500000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

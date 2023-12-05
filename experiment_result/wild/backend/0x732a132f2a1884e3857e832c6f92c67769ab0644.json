@@ -1,0 +1,25 @@
+{
+    "dapp_name": "DARK FOREST",
+    "total_func": 35,
+    "analyzed_func": 4,
+    "block_num": 18672445,
+    "address": "0x732a132f2a1884e3857e832c6f92c67769ab0644",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Cryptic Conjure",
+    "total_func": 54,
+    "analyzed_func": 5,
+    "block_num": 18670591,
+    "address": "0xd70054fe7406d35a632d3ce52af75a3e59862660",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0x10c4S0x533": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

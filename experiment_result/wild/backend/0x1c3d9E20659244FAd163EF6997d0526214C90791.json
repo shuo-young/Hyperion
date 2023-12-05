@@ -1,0 +1,43 @@
+{
+    "dapp_name": "Farsite",
+    "total_func": 24,
+    "analyzed_func": 3,
+    "block_num": 18673685,
+    "address": "0x1c3d9E20659244FAd163EF6997d0526214C90791",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x97cbbc06": {
+            "0x1a83S0x1182": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "Id_2*bvudiv_i(100*Ia_store-1 + some_var_1-, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            3490
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xf44b79b3": {
+            "0x1a83S0x1926S0xb02": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

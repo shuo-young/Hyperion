@@ -1,0 +1,79 @@
+{
+    "dapp_name": "CREAM",
+    "total_func": 81,
+    "analyzed_func": 2,
+    "block_num": 18648300,
+    "address": "0x4eCEDdF62277eD78623f9A94995c680f8fd6C00e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.0101
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x6810dfa6": {
+            "0x568d": [
+                [
+                    "0x2ba592f78db6436527729929aaf6c908497cb200",
+                    "bvudiv_i(mem_mem_64*mem_mem_64,\n         1000000000000000000000000000000000000) +\nIa_store-some_var_42-"
+                ],
+                [
+                    "0x2ba592f78db6436527729929aaf6c908497cb200",
+                    "bvudiv_i(mem_mem_64*mem_mem_64,\n         1000000000000000000000000000000000000) +\nIa_store-some_var_126-"
+                ],
+                [
+                    "0x2ba592f78db6436527729929aaf6c908497cb200",
+                    "bvudiv_i(mem_mem_64*mem_mem_64,\n         1000000000000000000000000000000000000) +\nIa_store-some_var_36-"
+                ],
+                [
+                    "0x2ba592f78db6436527729929aaf6c908497cb200",
+                    "bvudiv_i(mem_mem_64*mem_mem_64,\n         1000000000000000000000000000000000000) +\nIa_store-some_var_31-"
+                ],
+                [
+                    "0x2ba592f78db6436527729929aaf6c908497cb200",
+                    "bvudiv_i(mem_mem_64*\n         bvudiv_i(mem_mem_64*\n                  bvudiv_i(1000000000000000000*mem_mem_64,\n                           mem_mem_64),\n                  mem_mem_64),\n         1000000000000000000000000000000000000) +\nIa_store-some_var_312-"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            43610
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "dapp_name": "Clash of Coins",
+    "total_func": 26,
+    "analyzed_func": 3,
+    "block_num": 18672184,
+    "address": "0xbbbc9319f53dcdba120d4fcdc16fe653b2ed6df3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xdf3e9813": {
+            "0x1f2d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_2-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_3-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_4-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_5-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_6-, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

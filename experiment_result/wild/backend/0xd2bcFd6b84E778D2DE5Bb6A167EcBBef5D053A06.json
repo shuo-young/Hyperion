@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Arbidex",
+    "total_func": 37,
+    "analyzed_func": 3,
+    "block_num": 153695306,
+    "address": "0xd2bcFd6b84E778D2DE5Bb6A167EcBBef5D053A06",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe2bbb158": {
+            "0x18af0x195eS0x153e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x18af0x17d5S0x1520": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x441a3e70": {
+            "0x18af0x195eS0x153e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x18af0x17d5S0x1520": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

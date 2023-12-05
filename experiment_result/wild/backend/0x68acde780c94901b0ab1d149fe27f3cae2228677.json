@@ -1,0 +1,33 @@
+{
+    "dapp_name": "BNBFactor",
+    "total_func": 30,
+    "analyzed_func": 2,
+    "block_num": 33856213,
+    "address": "0x68acde780c94901b0ab1d149fe27f3cae2228677",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0xc67": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-5-))",
+                    "bvudiv_i(100*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

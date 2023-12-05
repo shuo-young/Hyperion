@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Elk Finance",
+    "total_func": 29,
+    "analyzed_func": 0,
+    "block_num": 33848022,
+    "address": "0xeEeEEb57642040bE42185f49C52F7E9B38f8eeeE",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            42424242000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

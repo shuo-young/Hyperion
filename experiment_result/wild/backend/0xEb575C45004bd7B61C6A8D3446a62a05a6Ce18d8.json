@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Battle Showdown by Ethlas",
+    "total_func": 14,
+    "analyzed_func": 2,
+    "block_num": 18642402,
+    "address": "0xEb575C45004bd7B61C6A8D3446a62a05a6Ce18d8",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            350000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

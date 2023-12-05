@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Tranche Finance",
+    "total_func": 41,
+    "analyzed_func": 4,
+    "block_num": 18672003,
+    "address": "0xC3777A4Ab9d62403d08550193F74C769986Bff6c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0x24600fc3": {
+            "0xa80S0x3a5": [
+                [
+                    "Is",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_2- +\n               Ia_store-201-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ],
+                [
+                    "Is",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            270665390983766509892977
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

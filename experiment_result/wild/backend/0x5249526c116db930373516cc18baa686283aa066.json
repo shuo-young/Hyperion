@@ -1,0 +1,39 @@
+{
+    "dapp_name": "BLCR",
+    "total_func": 25,
+    "analyzed_func": 4,
+    "block_num": 33775904,
+    "address": "0x5249526c116db930373516cc18baa686283aa066",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2da97a68": {
+            "0x23a9S0x1e4eS0x1b0bS0x17860x7f0B0x245": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x8afS0x245": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Archly",
+    "total_func": 59,
+    "analyzed_func": 9,
+    "block_num": 33781799,
+    "address": "0xf070654b08595f8F358Ff90170829892F3254C67",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            716
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

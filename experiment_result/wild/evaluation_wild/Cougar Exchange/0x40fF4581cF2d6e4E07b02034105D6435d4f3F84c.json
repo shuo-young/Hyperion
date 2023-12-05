@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Cougar Exchange",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 11308246,
+    "address": "0x40fF4581cF2d6e4E07b02034105D6435d4f3F84c",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            6020386458629717350207321021186
+        ],
+        "unlimited": true,
+        "ui": [
+            5599589883667
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

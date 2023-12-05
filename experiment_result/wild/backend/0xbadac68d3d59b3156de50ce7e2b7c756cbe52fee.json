@@ -1,0 +1,45 @@
+{
+    "dapp_name": "Stake Them ALL",
+    "total_func": 27,
+    "analyzed_func": 1,
+    "block_num": 18673853,
+    "address": "0xbadac68d3d59b3156de50ce7e2b7c756cbe52fee",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xbd679ab2": {
+            "0xe45S0x4b8": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_2-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_3- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_3-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_5- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_5-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Stargate",
+    "total_func": 24,
+    "analyzed_func": 3,
+    "block_num": 18657038,
+    "address": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe2bbb158": {
+            "0x14feS0x13dcS0x132bS0x1279B0x1242": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x441a3e70": {
+            "0x14feS0x13dcS0x132bS0x1279B0x1242": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

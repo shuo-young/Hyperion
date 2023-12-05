@@ -1,0 +1,54 @@
+{
+    "dapp_name": "Amplify Protocol",
+    "total_func": 20,
+    "analyzed_func": 0,
+    "block_num": 18670401,
+    "address": "0xe5c4a238c7c80c1c312e8f36e21d5f0aba40c5b7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "rewards": 0.06,
+            "roi": 0.06
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

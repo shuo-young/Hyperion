@@ -1,0 +1,111 @@
+{
+    "dapp_name": "CroKing",
+    "total_func": 37,
+    "analyzed_func": 4,
+    "block_num": 11341128,
+    "address": "0x588f9ae41d7eb85be15822df7a89d9d101de2c32",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xe30443bc": {
+            "0x223e": [
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_9- +\n               Ia_store-6-*Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_8-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_9-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_8-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_17- +\n               Ia_store-6-*Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_16-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_17-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_16-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-6-*Ia_store-some_var_2- +\n               Ia_store-some_var_24-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_30-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-6-*Ia_store-some_var_2- +\n               Ia_store-some_var_24-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_34-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_44- +\n               Ia_store-6-*Ia_store-some_var_38-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_43-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_44-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_43-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_53- +\n               Ia_store-6-*Ia_store-some_var_38-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_52-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_53-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_52-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-6-*\n               (Ia_store-some_var_38- +\n                115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                Id_2) +\n               Ia_store-some_var_60- +\n               Ia_store-6-*Id_2)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_65-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-6-*\n               (Ia_store-some_var_38- +\n                115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                Id_2) +\n               Ia_store-some_var_60- +\n               Ia_store-6-*Id_2)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_70-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_103- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-6-*\n               (Id_2 +\n                115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                Ia_store-some_var_38-) +\n               Ia_store-6-*Id_2)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_108-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_103- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-6-*\n               (Id_2 +\n                115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                Ia_store-some_var_38-) +\n               Ia_store-6-*Id_2)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_113-"
+                ]
+            ]
+        },
+        "0xbc4c4b37": {
+            "0x223e": [
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_2- +\n               Ia_store-6-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ]
+            ]
+        },
+        "0xffb2c479": {
+            "0x223e": [
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_27- +\n               Ia_store-6-*Ia_store-some_var_28-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_27-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            426507244787053013280832
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

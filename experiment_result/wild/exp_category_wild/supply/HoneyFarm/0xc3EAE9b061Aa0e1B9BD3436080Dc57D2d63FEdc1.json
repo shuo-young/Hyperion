@@ -1,0 +1,58 @@
+{
+    "dapp_name": "HoneyFarm",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 33809942,
+    "address": "0xc3EAE9b061Aa0e1B9BD3436080Dc57D2d63FEdc1",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "profit": 0.6,
+            "roi": 0.6
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            34061525788963724402590
+        ],
+        "unlimited": true,
+        "ui": [
+            1258682
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

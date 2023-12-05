@@ -1,0 +1,36 @@
+{
+    "dapp_name": "ArtemisX",
+    "total_func": 61,
+    "analyzed_func": 4,
+    "block_num": 34078970,
+    "address": "0x8284a4f75ed5cc56e0107a345bab682ed3a95be6",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            5000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x18ce6427": {
+            "0x12daS0x4ee": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

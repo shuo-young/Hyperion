@@ -1,0 +1,25 @@
+{
+    "dapp_name": "ATLAS",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33855187,
+    "address": "0xC4ED48F10E4cD1B3861cD7c9aCE2Da50dF1e3Fe8",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

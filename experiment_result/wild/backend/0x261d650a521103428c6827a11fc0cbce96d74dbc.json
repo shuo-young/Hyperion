@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SnailThrone",
+    "total_func": 43,
+    "analyzed_func": 1,
+    "block_num": 18660474,
+    "address": "0x261d650a521103428c6827a11fc0cbce96d74dbc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,101 @@
+{
+    "dapp_name": "BNB Daily Finance",
+    "total_func": 45,
+    "analyzed_func": 5,
+    "block_num": 34078369,
+    "address": "0xbecFD0BB03B34D973c0eE577d20A7F363A0E2094",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0xca7dd835": {
+            "0x3409S0xd87": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-5 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(5*Ia_store-5 + some_var_1-, 100)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            0.04,
+            0.01,
+            0.03,
+            0.02
+        ],
+        "0xca7dd835": {
+            "0x3280S0xd87": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(40*Ia_store-5 + some_var_1-, 1000)"
+                ]
+            ],
+            "0x3337S0xd87": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "bvudiv_i(10*Ia_store-5 + some_var_1-, 1000)"
+                ]
+            ]
+        },
+        "0x3f9c793": {
+            "0x13c4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(30*Iv, 1000)"
+                ]
+            ],
+            "0x147b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "bvudiv_i(20*Iv, 1000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xd0c857e3": {
+            "0x35f5S0xd9e": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-7-))",
+                    "balance_2"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

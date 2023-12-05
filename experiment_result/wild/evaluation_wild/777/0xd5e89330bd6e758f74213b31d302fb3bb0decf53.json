@@ -1,0 +1,61 @@
+{
+    "dapp_name": "777",
+    "total_func": 28,
+    "analyzed_func": 3,
+    "block_num": 154577047,
+    "address": "0xd5e89330bd6e758f74213b31d302fb3bb0decf53",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x364333f4": {
+            "0xb64S0x343": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

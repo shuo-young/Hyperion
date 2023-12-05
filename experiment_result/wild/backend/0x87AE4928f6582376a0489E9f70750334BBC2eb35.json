@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Chicken Finance",
+    "total_func": 27,
+    "analyzed_func": 3,
+    "block_num": 18670408,
+    "address": "0x87AE4928f6582376a0489E9f70750334BBC2eb35",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0x12f7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0x12f7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

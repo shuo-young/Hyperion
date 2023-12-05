@@ -1,0 +1,127 @@
+{
+    "dapp_name": "IMVU powered by MetaJuice",
+    "total_func": 82,
+    "analyzed_func": 5,
+    "block_num": 18642530,
+    "address": "0x96cA324B6b5b0eA6ef73F153024B5B9a629fCA1b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x8a78bdf6": {
+            "0x251a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "Ia_store-35-*Id_5"
+                ]
+            ]
+        },
+        "0xfe939263": {
+            "0x2edb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "Ia_store-35-*Id_2"
+                ]
+            ]
+        },
+        "0x20cbf5f9": {
+            "0x16a1": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "Ia_store-35-*Id_2"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x1a76": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-1 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-2 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-3 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-4 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-5 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-6 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-7 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-8 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-9 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-10 + some_var_1-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11 + some_var_2-))",
+                    "bvudiv_i(IH_b*Ia_store-11 + some_var_1-, 10000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": true,
+        "metadata": false
+    }
+}

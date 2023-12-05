@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Fantohm",
+    "total_func": 25,
+    "analyzed_func": 4,
+    "block_num": 71406891,
+    "address": "0xfa1FBb8Ef55A4855E5688C0eE13aC3f202486286",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            2234102254377392
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

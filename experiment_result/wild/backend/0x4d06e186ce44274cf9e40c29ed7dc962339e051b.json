@@ -1,0 +1,25 @@
+{
+    "dapp_name": "HyperDragons",
+    "total_func": 9,
+    "analyzed_func": 1,
+    "block_num": 18671363,
+    "address": "0x4d06e186ce44274cf9e40c29ed7dc962339e051b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

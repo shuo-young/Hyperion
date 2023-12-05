@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Liquity",
+    "total_func": 22,
+    "analyzed_func": 2,
+    "block_num": 18651729,
+    "address": "0x4f9Fbb3f1E99B56e0Fe2892e623Ed36A76Fc605d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xa694fc3a": {
+            "0xd32": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-some_var_5-*\n         (Ia_store-4- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-1 + some_var_4-),\n         1000000000000000000)"
+                ]
+            ],
+            "0x10e6": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-some_var_5-*\n         (Ia_store-3- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_4-),\n         1000000000000000000)"
+                ]
+            ]
+        },
+        "0x2e17de78": {
+            "0x7e3": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-some_var_3-*\n         (Ia_store-4- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-1 + some_var_2-),\n         1000000000000000000)"
+                ]
+            ],
+            "0x10e6": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-some_var_3-*\n         (Ia_store-3- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_2-),\n         1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

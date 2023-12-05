@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Phunks",
+    "total_func": 40,
+    "analyzed_func": 7,
+    "block_num": 18642139,
+    "address": "0xf07468ead8cf26c752c676e43c814fee9c8cf402",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xac446002": {
+            "0x162bS0x583": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

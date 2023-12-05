@@ -1,0 +1,59 @@
+{
+    "dapp_name": "BuyTheFloor NFT Exchange",
+    "total_func": 15,
+    "analyzed_func": 1,
+    "block_num": 18670403,
+    "address": "0x20eb324ab10fb83ebe90a3f5d863068faba10124",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xcc3f33a1": {
+            "0x142a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(Ia_store-3-*Id_6, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

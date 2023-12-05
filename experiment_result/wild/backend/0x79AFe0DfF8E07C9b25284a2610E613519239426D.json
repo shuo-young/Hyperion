@@ -1,0 +1,39 @@
+{
+    "dapp_name": "motoDEX",
+    "total_func": 70,
+    "analyzed_func": 2,
+    "block_num": 50341112,
+    "address": "0x79AFe0DfF8E07C9b25284a2610E613519239426D",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x91e74b99": {
+            "0x301f": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ],
+            "0x4b70": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

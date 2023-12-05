@@ -1,0 +1,47 @@
+{
+    "dapp_name": "Knight Story",
+    "total_func": 14,
+    "analyzed_func": 2,
+    "block_num": 18673744,
+    "address": "0xcB8149cCB561C94DfD648a0e8494ea316E5815C1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xcd3c8781": {
+            "0xb5a": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-4-*Ip"
+                ]
+            ],
+            "0xb0a": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10000000000*Ia_store-4-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x4e7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

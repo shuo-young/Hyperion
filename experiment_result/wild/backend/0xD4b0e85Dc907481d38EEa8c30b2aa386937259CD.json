@@ -1,0 +1,33 @@
+{
+    "dapp_name": "ATLAS",
+    "total_func": 7,
+    "analyzed_func": 1,
+    "block_num": 33855178,
+    "address": "0xD4b0e85Dc907481d38EEa8c30b2aa386937259CD",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xca654dd3": {
+            "0x469S0xd9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

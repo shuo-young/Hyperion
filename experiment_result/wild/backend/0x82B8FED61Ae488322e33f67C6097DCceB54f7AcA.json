@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Summoners Arena",
+    "total_func": 32,
+    "analyzed_func": 1,
+    "block_num": 33775760,
+    "address": "0x82B8FED61Ae488322e33f67C6097DCceB54f7AcA",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x406d382a": {
+            "0x38a2S0x37c7S0x3440S0x2d0b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639930 +\n8*Ia_store-some_var_2- +\nsome_var_3-*\nId_2"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

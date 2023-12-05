@@ -1,0 +1,97 @@
+{
+    "dapp_name": "BNBHive",
+    "total_func": 74,
+    "analyzed_func": 12,
+    "block_num": 33852112,
+    "address": "0xd930fBaE6E63331F08849C949168983CD496b1Fa",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x00000000": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xf340fa01": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x46a83785": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xbfaed58a": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x6198e339": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x542061e": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x5b373092": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x2e1a7d4d": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xe5225381": {
+            "0x54c2S0x2ee6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

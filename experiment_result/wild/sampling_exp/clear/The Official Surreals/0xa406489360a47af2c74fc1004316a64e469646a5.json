@@ -1,0 +1,61 @@
+{
+    "dapp_name": "The Official Surreals",
+    "total_func": 39,
+    "analyzed_func": 4,
+    "block_num": 18623746,
+    "address": "0xa406489360a47af2c74fc1004316a64e469646a5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xe086e5ec": {
+            "0x1f36S0x6b8": [
+                [
+                    "0xe20a4f1e92dc89c17388886d37b2ed58f07e2f29",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

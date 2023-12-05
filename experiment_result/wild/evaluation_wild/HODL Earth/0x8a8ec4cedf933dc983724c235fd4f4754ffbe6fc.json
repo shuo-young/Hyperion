@@ -1,0 +1,66 @@
+{
+    "dapp_name": "HODL Earth",
+    "total_func": 39,
+    "analyzed_func": 4,
+    "block_num": 18671343,
+    "address": "0x8a8ec4cedf933dc983724c235fd4f4754ffbe6fc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            9337
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "31 days",
+                "31 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xd30": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "balance_1"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": true,
+        "metadata": false
+    }
+}

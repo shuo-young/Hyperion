@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Eidoo",
+    "total_func": 11,
+    "analyzed_func": 2,
+    "block_num": 18670847,
+    "address": "0xF4BA4C2AA5BC3C373537EC85F61A02AFDB697106",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x38e4f064": {
+            "0xac4": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ],
+            "0x2ce": [
+                [
+                    "Is",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Yoshi Exchange",
+    "total_func": 26,
+    "analyzed_func": 1,
+    "block_num": 71594629,
+    "address": "0x3dc57B391262e3aAe37a08D91241f9bA9d58b570",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            132999999999999999949668362
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

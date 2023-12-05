@@ -1,0 +1,45 @@
+{
+    "dapp_name": "Synapse",
+    "total_func": 26,
+    "analyzed_func": 5,
+    "block_num": 18657883,
+    "address": "0xd10eF2A513cEE0Db54E959eF16cAc711470B62cF",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xd1abb907": {
+            "0x1da90x1d27": [
+                [
+                    "0xf2d719407fdbeff09d87557abb7232601fd9f29",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_3-"
+                ],
+                [
+                    "0xf2d719407fdbeff09d87557abb7232601fd9f29",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_42-"
+                ]
+            ]
+        },
+        "0x18fccc76": {
+            "0x1da90x1d27": [
+                [
+                    "0xf2d719407fdbeff09d87557abb7232601fd9f29",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_15-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

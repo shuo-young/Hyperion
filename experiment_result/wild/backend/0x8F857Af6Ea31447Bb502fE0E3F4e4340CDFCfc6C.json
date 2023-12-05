@@ -1,0 +1,27 @@
+{
+    "dapp_name": "IcyCRO",
+    "total_func": 21,
+    "analyzed_func": 1,
+    "block_num": 11341184,
+    "address": "0x8F857Af6Ea31447Bb502fE0E3F4e4340CDFCfc6C",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

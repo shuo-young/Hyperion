@@ -1,0 +1,74 @@
+{
+    "dapp_name": "HOKKEN BRIDGE",
+    "total_func": 52,
+    "analyzed_func": 2,
+    "block_num": 33855391,
+    "address": "0x3d02B82ACBC64dAD2c4d82768dfA42B12E26a74a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.0725,
+                0.025
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            50000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            12
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xa9059cbb": {
+            "0x2430S0x1cc0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1)"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x2430S0x1cc0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "mem_mem_64*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1)"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "FAB",
+    "total_func": 16,
+    "analyzed_func": 0,
+    "block_num": 11341182,
+    "address": "0xaee3d67f3b9c1c175726b7a8a59de93bc234a03d",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

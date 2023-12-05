@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Maticfarms",
+    "total_func": 36,
+    "analyzed_func": 2,
+    "block_num": 50451697,
+    "address": "0x570Aaf85ba7a4651e199cEEaEEF469d12aa5Ea39",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0xe6fS0x46e": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-0-))",
+                    "bvudiv_i(190*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

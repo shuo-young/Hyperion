@@ -1,0 +1,59 @@
+{
+    "dapp_name": "Harvest Finance",
+    "total_func": 38,
+    "analyzed_func": 5,
+    "block_num": 18650623,
+    "address": "0xB19EbFB37A936cCe783142955D39Ca70Aa29D43c",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x27dbS0x222a": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Id_1*mem_mem_64, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x7d7c2a1c": {
+            "0x27dbS0x222a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(2*Ia_store-11-*mem_mem_64, Ia_store-12-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_mem_64"
+                ]
+            ]
+        },
+        "0x4fa5d854": {
+            "0x27dbS0x222a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(2*Ia_store-11-*mem_mem_64, Ia_store-12-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_mem_64"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            320185165680633358
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

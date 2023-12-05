@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Hodler",
+    "total_func": 20,
+    "analyzed_func": 2,
+    "block_num": 18673698,
+    "address": "0xdd3796d089193e2bef96c5909d1d48353b017c98",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

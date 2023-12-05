@@ -1,0 +1,25 @@
+{
+    "dapp_name": "The Memes by 6529",
+    "total_func": 2,
+    "analyzed_func": 0,
+    "block_num": 18641378,
+    "address": "0x33fd426905f149f8376e227d0c9d3340aad17af1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

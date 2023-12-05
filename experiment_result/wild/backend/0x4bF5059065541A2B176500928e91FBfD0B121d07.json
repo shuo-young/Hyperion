@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Mushrooms Finance",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 18652217,
+    "address": "0x4bF5059065541A2B176500928e91FBfD0B121d07",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

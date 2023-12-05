@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CREAM",
+    "total_func": 50,
+    "analyzed_func": 0,
+    "block_num": 18648284,
+    "address": "0x48759F220ED983dB51fA7A8C0D2AAb8f3ce4166a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            84059888080626186
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

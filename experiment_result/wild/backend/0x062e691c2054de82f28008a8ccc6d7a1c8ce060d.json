@@ -1,0 +1,43 @@
+{
+    "dapp_name": "PudgyPresent",
+    "total_func": 39,
+    "analyzed_func": 6,
+    "block_num": 18641793,
+    "address": "0x062e691c2054de82f28008a8ccc6d7a1c8ce060d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x853828b6": {
+            "0x2554": [
+                [
+                    "0xcbcc84766f2950cf867f42d766c43fb2d2ba3256",
+                    "bvudiv_i(35*IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            7399
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x2554": [
+                [
+                    "0x6f84fa72ca4554e0eefcb9032e5a4f1fb41b726c",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}

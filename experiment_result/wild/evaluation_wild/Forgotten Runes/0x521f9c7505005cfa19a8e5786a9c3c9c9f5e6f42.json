@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Forgotten Runes",
+    "total_func": 42,
+    "analyzed_func": 7,
+    "block_num": 18640899,
+    "address": "0x521f9c7505005cfa19a8e5786a9c3c9c9f5e6f42",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            9311
+        ],
+        "unlimited": false,
+        "ui": [
+            200000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0xf4bS0x568": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": true
+    }
+}

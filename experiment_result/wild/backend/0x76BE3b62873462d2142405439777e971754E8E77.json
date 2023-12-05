@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Parallel",
+    "total_func": 29,
+    "analyzed_func": 0,
+    "block_num": 18642331,
+    "address": "0x76BE3b62873462d2142405439777e971754E8E77",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,84 @@
+{
+    "dapp_name": "Libera Financial",
+    "total_func": 97,
+    "analyzed_func": 5,
+    "block_num": 34078287,
+    "address": "0x3a806a3315e35b3f5f46111adb6e2baf4b14a70d",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.01,
+                0.1
+            ],
+            "fees": {
+                "buy": 0.01,
+                "sell": 0.1
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            50000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x7940eca8": {
+            "0x1c39S0xc9b": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xac4ddd9f": {
+            "0x231cS0xef7": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x42caf79a": {
+            "0x406bS0x3711": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_4-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

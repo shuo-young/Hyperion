@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Checks - VV Originals",
+    "total_func": 31,
+    "analyzed_func": 7,
+    "block_num": 18641148,
+    "address": "0x036721e5a769cc48b3189efbb9cce4471e8a48b1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            30921089766077038035231320427
+        ],
+        "unlimited": true,
+        "ui": [
+            16031
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "DopeRaider",
+    "total_func": 52,
+    "analyzed_func": 5,
+    "block_num": 18670823,
+    "address": "0xe8c7ecb55a88bfd682fb3ad67eb68e3c88840334",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

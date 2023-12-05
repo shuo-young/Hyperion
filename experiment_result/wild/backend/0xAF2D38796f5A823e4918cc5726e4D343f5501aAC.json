@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Soda",
+    "total_func": 9,
+    "analyzed_func": 2,
+    "block_num": 18671857,
+    "address": "0xAF2D38796f5A823e4918cc5726e4D343f5501aAC",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9e281a98": {
+            "0x99b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

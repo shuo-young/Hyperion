@@ -1,0 +1,107 @@
+{
+    "dapp_name": "KeeperDAO",
+    "total_func": 35,
+    "analyzed_func": 6,
+    "block_num": 18671390,
+    "address": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x6e2246a7": {
+            "0x2da8S0x264b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-216-))",
+                    "bvudiv_i(0, Ia_store-214-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xce5494bb": {
+            "0x1fb0": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_8"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_16"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_24"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_32"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_40"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_48"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_56"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_72"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_80"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_109"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_168"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_176"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_205"
+                ]
+            ]
+        },
+        "0x16114acd": {
+            "0x2da8S0x264b0x296": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0xaa1": [
+                [
+                    "Is",
+                    "balance_13"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

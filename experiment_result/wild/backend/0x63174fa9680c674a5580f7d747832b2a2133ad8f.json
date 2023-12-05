@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Charged Particles",
+    "total_func": 48,
+    "analyzed_func": 12,
+    "block_num": 18670405,
+    "address": "0x63174fa9680c674a5580f7d747832b2a2133ad8f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            764
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x522f6815": {
+            "0x2624": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Forest Knight",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 50336269,
+    "address": "0x3585fad0b4a920dd4ea98907820f8de81b27bdb6",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

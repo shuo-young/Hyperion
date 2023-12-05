@@ -1,0 +1,25 @@
+{
+    "dapp_name": "motoDEX",
+    "total_func": 4,
+    "analyzed_func": 0,
+    "block_num": 50341153,
+    "address": "0x1c050ea3673fad2Ac2f8559c81f2CD23a9Ec195e",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

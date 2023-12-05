@@ -1,0 +1,75 @@
+{
+    "dapp_name": "Arbi Chill Inu",
+    "total_func": 54,
+    "analyzed_func": 3,
+    "block_num": 154577059,
+    "address": "0x18654F7ccb90EcfCe0E808cC0b929cE627632AD3",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.03287671232876712
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.05,
+                0.05,
+                0.05
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            100000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            100000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xf9d0831a": {
+            "0x1a9bS0xa33": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x19b9S0xa33": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

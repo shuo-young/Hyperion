@@ -1,0 +1,82 @@
+{
+    "dapp_name": "HUXLEY Comics",
+    "total_func": 44,
+    "analyzed_func": 5,
+    "block_num": 18622898,
+    "address": "0x42fe737749683595e4315b443eadcc9346a994d9",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x2db11544": {
+            "0x2744S0x1fe0S0x1167B0x47a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(85*Iv, 100)"
+                ]
+            ],
+            "0x2815S0x1fe0S0x1167B0x47a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(85*Iv, 100)"
+                ]
+            ]
+        },
+        "0xc81a4c1f": {
+            "0x2744S0x1fe0S0x17a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "bvudiv_i(85*Iv, 100)"
+                ]
+            ],
+            "0x2815S0x1fe0S0x17a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(85*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            49415,
+            5978
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": null,
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Curve",
+    "total_func": 44,
+    "analyzed_func": 2,
+    "block_num": 18649514,
+    "address": "0x4f062658EaAF2C1ccf8C8e36D6824CDf41167956",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

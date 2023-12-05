@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Neon District (Ethereum)",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18673795,
+    "address": "0xc328520a8b1cead2489d59c16b7752cb60ebb53d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

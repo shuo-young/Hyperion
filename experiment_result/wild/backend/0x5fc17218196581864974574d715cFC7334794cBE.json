@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Fiat24",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18661863,
+    "address": "0x5fc17218196581864974574d715cFC7334794cBE",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

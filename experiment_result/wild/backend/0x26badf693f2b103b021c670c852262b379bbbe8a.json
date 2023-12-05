@@ -1,0 +1,35 @@
+{
+    "dapp_name": "IlluminatiNFT",
+    "total_func": 43,
+    "analyzed_func": 5,
+    "block_num": 18641713,
+    "address": "0x26badf693f2b103b021c670c852262b379bbbe8a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            8128
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x10fdS0x4ef": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

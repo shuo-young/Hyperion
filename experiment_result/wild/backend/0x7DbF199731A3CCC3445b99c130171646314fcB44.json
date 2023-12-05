@@ -1,0 +1,27 @@
+{
+    "dapp_name": "PepePal PepeDex",
+    "total_func": 26,
+    "analyzed_func": 2,
+    "block_num": 18654177,
+    "address": "0x7DbF199731A3CCC3445b99c130171646314fcB44",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            6666666000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

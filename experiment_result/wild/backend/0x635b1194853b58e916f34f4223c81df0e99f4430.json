@@ -1,0 +1,35 @@
+{
+    "dapp_name": "EMONT Frenzy Collect EMONT!",
+    "total_func": 53,
+    "analyzed_func": 5,
+    "block_num": 18670849,
+    "address": "0x635b1194853b58e916f34f4223c81df0e99f4430",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xa1e564b1": {
+            "0x2bec": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-8-*\n         (Ia_store-1 + some_var_2- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-6-),\n         100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            106
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

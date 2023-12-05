@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Redluna",
+    "total_func": 47,
+    "analyzed_func": 3,
+    "block_num": 34078814,
+    "address": "0x376c4773c3280a8f029aeb674acafdce9b20d26b",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": true,
+        "0xe083e922": {
+            "0x320d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x484ed334": {
+            "0x1cbfS0x7b4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

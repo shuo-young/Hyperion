@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Killer GF",
+    "total_func": 34,
+    "analyzed_func": 1,
+    "block_num": 18640892,
+    "address": "0x6be69b2a9b153737887cfcdca7781ed1511c7e36",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            7777
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

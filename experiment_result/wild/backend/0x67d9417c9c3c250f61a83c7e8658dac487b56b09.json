@@ -1,0 +1,25 @@
+{
+    "dapp_name": "PhantaBear",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18640688,
+    "address": "0x67d9417c9c3c250f61a83c7e8658dac487b56b09",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

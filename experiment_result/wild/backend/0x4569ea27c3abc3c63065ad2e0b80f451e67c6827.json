@@ -1,0 +1,25 @@
+{
+    "dapp_name": "TokenWarriors",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18674553,
+    "address": "0x4569ea27c3abc3c63065ad2e0b80f451e67c6827",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Planet",
+    "total_func": 28,
+    "analyzed_func": 8,
+    "block_num": 33825028,
+    "address": "0xB87F7016585510505478D1d160BDf76c1f41b53d",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x5312ea8e": {
+            "0x38ccS0x375cS0x366dS0x3183B0x17a7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_3-*mem_mem_64, mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, mem_mem_64)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0x3070": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0x3070": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xc6d758cb": {
+            "0x38ccS0x375cS0x366dS0x3183B0x27aa": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

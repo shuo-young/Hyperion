@@ -1,0 +1,57 @@
+{
+    "dapp_name": "DEER PROTOCOL",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 154577441,
+    "address": "0xfD2d183C2402F117BA622195a75686663f4d55Ad",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.15
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            250000000000000000000000
+        ],
+        "unlimited": true,
+        "ui": [
+            250000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

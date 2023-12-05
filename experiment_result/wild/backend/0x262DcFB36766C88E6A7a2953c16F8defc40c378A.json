@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Yeti Swap",
+    "total_func": 25,
+    "analyzed_func": 17,
+    "block_num": 38292037,
+    "address": "0x262DcFB36766C88E6A7a2953c16F8defc40c378A",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9fc27226": {
+            "0x34920x17a3S0x22e7": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x73bc79cf": {
+            "0x34920x672": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

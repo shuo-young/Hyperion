@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Shiba Floki",
+    "total_func": 40,
+    "analyzed_func": 2,
+    "block_num": 33855488,
+    "address": "0x330540a9d998442dcbc396165d3ddc5052077bb1",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": true,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": true,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

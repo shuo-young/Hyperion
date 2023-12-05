@@ -1,0 +1,41 @@
+{
+    "dapp_name": "hausphases by Haus",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 18641185,
+    "address": "0x5be99338289909d6dbbc57bb791140ef85ccbcab",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3ccfd60b": {
+            "0x10c4S0x407": [
+                [
+                    "0xb386e92acf9279cebb13389811c22b77cc649bd6",
+                    "bvudiv_i(850*IH_b, 1000)"
+                ]
+            ],
+            "0x1189S0x407": [
+                [
+                    "0x433e7f8e28cdd827016f656b25ce9ef46558844a",
+                    "bvudiv_i(150*IH_b, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            7777
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

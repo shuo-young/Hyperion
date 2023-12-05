@@ -1,0 +1,35 @@
+{
+    "dapp_name": "KP2R.Network",
+    "total_func": 93,
+    "analyzed_func": 15,
+    "block_num": 18671432,
+    "address": "0x9BdE098Be22658d057C3F1F185e3Fd4653E2fbD1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x6dab5dcf": {
+            "0x323d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-32-))",
+                    "bvudiv_i(30*Iv, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            90195700000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

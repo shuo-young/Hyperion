@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Very Nifty",
+    "total_func": 13,
+    "analyzed_func": 1,
+    "block_num": 18674632,
+    "address": "0x4716ca6701f585ddb228a660e1683b8dc6eb4783",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9051cce9": {
+            "0xc60": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

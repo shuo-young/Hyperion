@@ -1,0 +1,27 @@
+{
+    "dapp_name": "ACryptoS",
+    "total_func": 16,
+    "analyzed_func": 1,
+    "block_num": 33847900,
+    "address": "0x5b17b4d5e4009B5C43e3e3d63A5229F794cBA389",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1714753992492778932583102
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

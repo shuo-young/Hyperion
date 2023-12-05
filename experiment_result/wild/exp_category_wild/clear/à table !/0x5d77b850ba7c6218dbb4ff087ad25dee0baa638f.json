@@ -1,0 +1,65 @@
+{
+    "dapp_name": "\u00e0 table !",
+    "total_func": 26,
+    "analyzed_func": 2,
+    "block_num": 18674644,
+    "address": "0x5d77b850ba7c6218dbb4ff087ad25dee0baa638f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            8
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xe77145a1": {
+            "0x1c64": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_3"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_5"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": true,
+        "metadata": false
+    }
+}

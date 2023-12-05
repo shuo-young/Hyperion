@@ -1,0 +1,25 @@
+{
+    "dapp_name": "The Train",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18662037,
+    "address": "0x7e260c27f94ef8c910b8130ed0b13c1da4e4bacf",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

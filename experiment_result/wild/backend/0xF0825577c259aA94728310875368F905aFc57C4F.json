@@ -1,0 +1,93 @@
+{
+    "dapp_name": "ONESWAP",
+    "total_func": 11,
+    "analyzed_func": 7,
+    "block_num": 18671587,
+    "address": "0xF0825577c259aA94728310875368F905aFc57C4F",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x72b16619": {
+            "0x1988": [
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_27-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_27-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ]
+            ]
+        },
+        "0x5aea4f4b": {
+            "0x1988": [
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ]
+            ]
+        },
+        "0xfce2c454": {
+            "0x1988": [
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_2) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_1-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_2) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_1-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ]
+            ]
+        },
+        "0xa9527d7a": {
+            "0x1988": [
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_7) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_4-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_7) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_4-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ]
+            ]
+        },
+        "0x2b865a2a": {
+            "0x1988": [
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-))"
+                ],
+                [
+                    "0xb342c51d1592c41068d5d4b4da4a68c0a04d5a4",
+                    "Concat(0,\n       Extract(111, 0, Id_9) +\n       5192296858534827628530496329220095*\n       Extract(255, 144, Ia_store-some_var_7-) +\n       Extract(111, 0, mem_64 + mem_64))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

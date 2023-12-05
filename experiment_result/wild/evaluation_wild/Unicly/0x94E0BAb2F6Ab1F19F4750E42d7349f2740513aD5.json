@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Unicly",
+    "total_func": 29,
+    "analyzed_func": 3,
+    "block_num": 18660316,
+    "address": "0x94E0BAb2F6Ab1F19F4750E42d7349f2740513aD5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            464708279121216980889161
+        ],
+        "unlimited": false,
+        "ui": [
+            1
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "My Crypto Heroes",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 18660413,
+    "address": "0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0,
+            3961408125713216879677197516831527010000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

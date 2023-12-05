@@ -1,0 +1,25 @@
+{
+    "dapp_name": "DDDX Protocol",
+    "total_func": 44,
+    "analyzed_func": 0,
+    "block_num": 33805154,
+    "address": "0xAd8Ab2C2270Ab0603CFC674d28fd545495369f31",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

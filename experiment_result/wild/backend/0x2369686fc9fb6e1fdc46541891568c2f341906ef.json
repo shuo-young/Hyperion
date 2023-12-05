@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Drakons",
+    "total_func": 55,
+    "analyzed_func": 7,
+    "block_num": 18672481,
+    "address": "0x2369686fc9fb6e1fdc46541891568c2f341906ef",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            484431310645515362350524924
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

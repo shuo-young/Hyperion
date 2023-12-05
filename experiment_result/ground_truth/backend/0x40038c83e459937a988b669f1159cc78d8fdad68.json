@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Retro DeFi",
+    "total_func": 61,
+    "analyzed_func": 3,
+    "block_num": 50756886,
+    "address": "0x40038c83e459937a988b669f1159cc78d8fdad68",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            4967014119674893384040230
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xa9059cbb": {
+            "0x2f51": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x2f51": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

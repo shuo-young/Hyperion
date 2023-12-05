@@ -1,0 +1,27 @@
+{
+    "dapp_name": "XCOPY",
+    "total_func": 32,
+    "analyzed_func": 1,
+    "block_num": 18641495,
+    "address": "0x211899f45856e22df75623a2c6abe7997802ebc3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            20
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

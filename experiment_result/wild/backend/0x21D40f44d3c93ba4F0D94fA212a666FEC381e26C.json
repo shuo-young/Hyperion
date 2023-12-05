@@ -1,0 +1,25 @@
+{
+    "dapp_name": "FinNexus",
+    "total_func": 15,
+    "analyzed_func": 0,
+    "block_num": 18671326,
+    "address": "0x21D40f44d3c93ba4F0D94fA212a666FEC381e26C",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

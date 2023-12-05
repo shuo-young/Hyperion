@@ -1,0 +1,25 @@
+{
+    "dapp_name": "LIDO",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18651707,
+    "address": "0x442af784A788A5bd6F42A01Ebe9F287a871243fb",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

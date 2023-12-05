@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Dfyn Network",
+    "total_func": 30,
+    "analyzed_func": 18,
+    "block_num": 50379270,
+    "address": "0xA102072A4C07F06EC3B4900FDC4C7B80b6c57429",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5b0d5984": {
+            "0x42b50x2d75S0x20f6": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xaf2979eb": {
+            "0x42b50xbe1": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

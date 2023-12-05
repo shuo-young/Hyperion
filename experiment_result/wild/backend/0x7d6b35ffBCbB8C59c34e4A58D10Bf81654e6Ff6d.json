@@ -1,0 +1,25 @@
+{
+    "dapp_name": "MATRIX TOKEN",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33855415,
+    "address": "0x7d6b35ffBCbB8C59c34e4A58D10Bf81654e6Ff6d",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,49 @@
+{
+    "dapp_name": "Interport Finance",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 18651388,
+    "address": "0x5f51a04c271c395994f156172cde451a0188ca75",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0x7fd7d062": {
+            "0x1dd7S0x1b66S0x18e60x1141": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_2-, 1000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_6-, 1000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_10-, 1000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_31-, 1000000000000000000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_76-, 1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

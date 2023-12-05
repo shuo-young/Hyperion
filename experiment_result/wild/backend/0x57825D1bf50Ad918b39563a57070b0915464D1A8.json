@@ -1,0 +1,25 @@
+{
+    "dapp_name": "UMA",
+    "total_func": 10,
+    "analyzed_func": 0,
+    "block_num": 18658181,
+    "address": "0x57825D1bf50Ad918b39563a57070b0915464D1A8",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

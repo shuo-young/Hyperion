@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Realms (for Adventurers)",
+    "total_func": 39,
+    "analyzed_func": 8,
+    "block_num": 18641871,
+    "address": "0x7afe30cb3e53dba6801aa0ea647a0ecea7cbe18d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            8000
+        ],
+        "unlimited": true,
+        "ui": [
+            8000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "9 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x1710S0x59e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": true
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

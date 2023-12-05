@@ -1,0 +1,63 @@
+{
+    "dapp_name": "Apocalyptic Apes",
+    "total_func": 41,
+    "analyzed_func": 4,
+    "block_num": 18641386,
+    "address": "0xf793a77e32a0e5c0cd28383e1e04bbc66ee52438",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            8888
+        ],
+        "unlimited": false,
+        "ui": [
+            8888
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3a6a4d2e": {
+            "0xe8dS0x4bd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

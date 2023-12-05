@@ -1,0 +1,63 @@
+{
+    "dapp_name": "FOMO MOFOS",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 18641782,
+    "address": "0x818a19a6d3f0859b68e8490a6e945a51060caad1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            8008
+        ],
+        "unlimited": false,
+        "ui": [
+            8008
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x21d4S0x12d0S0x5df": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

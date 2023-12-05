@@ -1,0 +1,69 @@
+{
+    "dapp_name": "My Shiba Inu",
+    "total_func": 34,
+    "analyzed_func": 1,
+    "block_num": 33853045,
+    "address": "0xEDd822B00c48D8A1C416ee17507bEFC2ad71d8c4",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.01
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            3150000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "0 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0xc0fe1af8": {
+            "0xc0fS0x53d": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

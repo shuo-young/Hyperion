@@ -1,0 +1,93 @@
+{
+    "dapp_name": "KIWAMI Genesis",
+    "total_func": 62,
+    "analyzed_func": 7,
+    "block_num": 18640883,
+    "address": "0x701a038af4bd0fc9b69a829ddcb2f61185a49568",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0xefb4031d": {
+            "0x1fa2S0xa73": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-18-))",
+                    "bvudiv_i(15*IH_b, 100)"
+                ]
+            ],
+            "0x2027S0xa73": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-19-))",
+                    "bvudiv_i(35*IH_b, 100)"
+                ]
+            ],
+            "0x20aeS0xa73": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(50*IH_b, 100)"
+                ]
+            ]
+        },
+        "0xd627349f": {
+            "0x1d26S0x995": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-18-))",
+                    "bvudiv_i(15*Ia_store-16-*Ia_store-17- +\n         1200*\n         bvudiv_i(Ia_store-16-, 100)*\n         Concat(0, Extract(15, 0, Ia_store-18-)),\n         100)"
+                ]
+            ],
+            "0x1dabS0x995": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-19-))",
+                    "bvudiv_i(35*Ia_store-16-*Ia_store-17- +\n         2800*\n         bvudiv_i(Ia_store-16-, 100)*\n         Concat(0, Extract(15, 0, Ia_store-18-)),\n         100)"
+                ]
+            ],
+            "0x1e32S0x995": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(50*Ia_store-16-*Ia_store-17- +\n         4000*\n         bvudiv_i(Ia_store-16-, 100)*\n         Concat(0, Extract(15, 0, Ia_store-18-)),\n         100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

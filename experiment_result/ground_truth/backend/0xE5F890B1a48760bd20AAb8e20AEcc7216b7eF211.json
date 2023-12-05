@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Yeetoshi Minter Machina",
+    "total_func": 17,
+    "analyzed_func": 3,
+    "block_num": 34078214,
+    "address": "0xE5F890B1a48760bd20AAb8e20AEcc7216b7eF211",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            2100000000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x616eb638": {
+            "0x8b3S0x333": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

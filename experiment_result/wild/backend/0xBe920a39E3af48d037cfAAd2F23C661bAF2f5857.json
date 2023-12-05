@@ -1,0 +1,107 @@
+{
+    "dapp_name": "BNB Raiser",
+    "total_func": 42,
+    "analyzed_func": 3,
+    "block_num": 33855204,
+    "address": "0xBe920a39E3af48d037cfAAd2F23C661bAF2f5857",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x26476204": {
+            "0xb5c": [
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-5 + some_var_4-*Iv, 1000)*\n         Concat(0, Extract(15, 0, Ia_store-4 + some_var_2-)),\n         1000)"
+                ]
+            ],
+            "0xe54": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-6 + some_var_11-*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x26476204": {
+            "0x8cd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "bvudiv_i(40*Iv, 1000)"
+                ]
+            ],
+            "0x908": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "bvudiv_i(40*Iv, 1000)"
+                ]
+            ],
+            "0x943": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(15*Iv, 1000)"
+                ]
+            ],
+            "0x97e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "bvudiv_i(5*Iv, 1000)"
+                ]
+            ],
+            "0xc54": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-3 + some_var_5-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-2 + some_var_5-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-1 + some_var_5-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-some_var_5-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5 + some_var_4-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-3 + some_var_6-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-2 + some_var_6-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-1 + some_var_6-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-some_var_6-*Iv, 1000)"
+                ],
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5 + some_var_4-*Iv, 1000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(bvudiv_i(Ia_store-5 + some_var_4-*Iv, 1000)*\n         Concat(0, Extract(15, 0, Ia_store-4 + some_var_2-)),\n         1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

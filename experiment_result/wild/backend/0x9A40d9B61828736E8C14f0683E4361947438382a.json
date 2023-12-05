@@ -1,0 +1,25 @@
+{
+    "dapp_name": "AppleSwap.AI",
+    "total_func": 10,
+    "analyzed_func": 0,
+    "block_num": 18643560,
+    "address": "0x9A40d9B61828736E8C14f0683E4361947438382a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

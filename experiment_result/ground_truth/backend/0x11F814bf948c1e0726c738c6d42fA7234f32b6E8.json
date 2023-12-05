@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Milkyway",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 34078118,
+    "address": "0x11F814bf948c1e0726c738c6d42fA7234f32b6E8",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            1707843662209523809523805938
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

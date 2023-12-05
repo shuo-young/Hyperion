@@ -1,0 +1,41 @@
+{
+    "dapp_name": "MaticBetsMaster",
+    "total_func": 34,
+    "analyzed_func": 3,
+    "block_num": 50451672,
+    "address": "0x3E6B4852f3defAAD3d8286f16a9836eD12EB1EDd",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3f9c793": {
+            "0xb83": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-17-))",
+                    "bvudiv_i(150*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x17f6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Chronos",
+    "total_func": 27,
+    "analyzed_func": 16,
+    "block_num": 153851976,
+    "address": "0xE708aA9E887980750C040a6A2Cb901c37Aa34f3b",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xb7e0d4c0": {
+            "0x25fe": [
+                [
+                    "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+                    "bvudiv_i(Id_3*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xfe411f14": {
+            "0x37c10x2a49": [
+                [
+                    "Concat(0, Extract(159, 0, Id_6))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Torpedo LAUNCH",
+    "total_func": 33,
+    "analyzed_func": 1,
+    "block_num": 18674557,
+    "address": "0x9a98e1b91302665a9b71bd4409e52bb0ad39731f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xbd679ab2": {
+            "0x10edS0x537": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

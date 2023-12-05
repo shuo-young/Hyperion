@@ -1,0 +1,35 @@
+{
+    "dapp_name": "ShibaSwap",
+    "total_func": 53,
+    "analyzed_func": 5,
+    "block_num": 18656033,
+    "address": "0x02c5cE497ca02602c68407BfaB624996437c09B7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xccd4daac": {
+            "0x3772S0x10cc": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

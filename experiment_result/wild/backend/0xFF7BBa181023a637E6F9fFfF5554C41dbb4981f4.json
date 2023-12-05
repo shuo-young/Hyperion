@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Fulcrom Finance",
+    "total_func": 11,
+    "analyzed_func": 2,
+    "block_num": 11312737,
+    "address": "0xFF7BBa181023a637E6F9fFfF5554C41dbb4981f4",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x74a8f103": {
+            "0xf6aS0xe72S0xd65": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Ia_store-5 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(mem_160 + mem_64*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  mem_32 + mem_64,\n                  mem_96 + mem_64),\n         mem_128 + mem_64)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

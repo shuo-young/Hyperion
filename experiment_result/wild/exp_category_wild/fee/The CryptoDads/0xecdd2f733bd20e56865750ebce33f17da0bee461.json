@@ -1,0 +1,69 @@
+{
+    "dapp_name": "The CryptoDads",
+    "total_func": 43,
+    "analyzed_func": 7,
+    "block_num": 18641139,
+    "address": "0xecdd2f733bd20e56865750ebce33f17da0bee461",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x853828b6": {
+            "0x2469": [
+                [
+                    "0xd7bc08fa2852ad76138b7757740a3934ce5f0a45",
+                    "bvudiv_i(15*IH_b, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x2469": [
+                [
+                    "0x501cae10986556f99e28edf50e213e4ca871d600",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

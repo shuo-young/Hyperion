@@ -1,0 +1,35 @@
+{
+    "dapp_name": "wDogecoin",
+    "total_func": 33,
+    "analyzed_func": 1,
+    "block_num": 33853295,
+    "address": "0xf40c1f421ee02a550afdd8712ef34dce97eec6f2",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xc0fe1af8": {
+            "0x120fS0x6ad": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

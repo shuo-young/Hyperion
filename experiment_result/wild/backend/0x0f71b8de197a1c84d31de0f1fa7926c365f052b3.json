@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Arcona X-Reality Universe",
+    "total_func": 62,
+    "analyzed_func": 6,
+    "block_num": 18672083,
+    "address": "0x0f71b8de197a1c84d31de0f1fa7926c365f052b3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            15181707013085449769117250
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

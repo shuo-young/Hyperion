@@ -1,0 +1,97 @@
+{
+    "dapp_name": "SuperPlayer",
+    "total_func": 17,
+    "analyzed_func": 3,
+    "block_num": 18673860,
+    "address": "0xe98ceaca54a44b197f7248dd96eebade1cf7f399",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xc1c44e82": {
+            "0x12850x45f": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_12-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_17-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_22-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_27-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_32-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_37-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_42-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_47-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_52-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_57-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_62-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_67-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_72-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_77-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_82-))",
+                    "bvudiv_i(Ia_store-7-*Ia_store-8-, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x51cff8d9": {
+            "0xab2": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

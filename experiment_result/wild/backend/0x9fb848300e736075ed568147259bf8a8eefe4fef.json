@@ -1,0 +1,25 @@
+{
+    "dapp_name": "OptiNames",
+    "total_func": 7,
+    "analyzed_func": 0,
+    "block_num": 18661991,
+    "address": "0x9fb848300e736075ed568147259bf8a8eefe4fef",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,75 @@
+{
+    "dapp_name": "Clash of Coins",
+    "total_func": 23,
+    "analyzed_func": 3,
+    "block_num": 18672198,
+    "address": "0xab31E41d41d185AB3420b0A6C5ee048154A5F89a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xdf3e9813": {
+            "0x1d9f": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_2-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_3-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_4-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_5-, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4 + some_var_1-))",
+                    "bvudiv_i(Ia_store-5-*Ia_store-some_var_6-, 10000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

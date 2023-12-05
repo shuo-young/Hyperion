@@ -1,0 +1,25 @@
+{
+    "dapp_name": "LatteSwap",
+    "total_func": 9,
+    "analyzed_func": 0,
+    "block_num": 33813073,
+    "address": "0x02AF4337792a44aFb4005d57c36f9C3Bea6209bb",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

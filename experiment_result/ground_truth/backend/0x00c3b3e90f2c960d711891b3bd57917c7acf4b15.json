@@ -1,0 +1,42 @@
+{
+    "dapp_name": "DogeBets",
+    "total_func": 55,
+    "analyzed_func": 5,
+    "block_num": 34078343,
+    "address": "0x00c3b3e90f2c960d711891b3bd57917c7acf4b15",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x8df3f826": {
+            "0x4c35": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0x1b0f90c0": {
+            "0x4c35": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

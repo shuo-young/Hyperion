@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SmartSwap - Rigelprotocol",
+    "total_func": 28,
+    "analyzed_func": 4,
+    "block_num": 33830719,
+    "address": "0x9218BFB996A9385C3b9633f87e9D68304Ef5a1e5",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            715049716583799106971
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

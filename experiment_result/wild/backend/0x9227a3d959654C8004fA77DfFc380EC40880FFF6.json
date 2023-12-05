@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Spells of Genesis",
+    "total_func": 24,
+    "analyzed_func": 3,
+    "block_num": 18673844,
+    "address": "0x9227a3d959654C8004fA77DfFc380EC40880FFF6",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1361
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

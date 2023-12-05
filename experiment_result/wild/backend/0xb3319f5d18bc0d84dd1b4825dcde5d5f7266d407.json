@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Compound",
+    "total_func": 47,
+    "analyzed_func": 8,
+    "block_num": 18647935,
+    "address": "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            33534228933998150
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

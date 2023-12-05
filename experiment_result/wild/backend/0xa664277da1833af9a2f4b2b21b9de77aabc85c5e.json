@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SuperPlayer",
+    "total_func": 13,
+    "analyzed_func": 0,
+    "block_num": 18673855,
+    "address": "0xa664277da1833af9a2f4b2b21b9de77aabc85c5e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

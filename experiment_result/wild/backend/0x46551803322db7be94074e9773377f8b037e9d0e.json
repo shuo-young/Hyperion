@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Baby-shark.Finance",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 33855191,
+    "address": "0x46551803322db7be94074e9773377f8b037e9d0e",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

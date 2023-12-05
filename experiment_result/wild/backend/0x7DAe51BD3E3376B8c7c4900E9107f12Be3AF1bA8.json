@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Mdex",
+    "total_func": 32,
+    "analyzed_func": 17,
+    "block_num": 33813754,
+    "address": "0x7DAe51BD3E3376B8c7c4900E9107f12Be3AF1bA8",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xaf2979eb": {
+            "0x3d7b0xa3e": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x5b0d5984": {
+            "0x3d7b0x2a73S0x1c3f": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

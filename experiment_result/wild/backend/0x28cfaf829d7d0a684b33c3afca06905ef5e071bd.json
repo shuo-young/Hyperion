@@ -1,0 +1,35 @@
+{
+    "dapp_name": "The Ledger of Szabo",
+    "total_func": 45,
+    "analyzed_func": 5,
+    "block_num": 18673879,
+    "address": "0x28cfaf829d7d0a684b33c3afca06905ef5e071bd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            198
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x178f": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": "ipfs"
+}

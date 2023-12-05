@@ -1,0 +1,35 @@
+{
+    "dapp_name": "The Tap Platform",
+    "total_func": 44,
+    "analyzed_func": 5,
+    "block_num": 18674510,
+    "address": "0x3caED19b6f5D3b879e6C0de6FbE9928bBf433c09",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            183
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xa0ef91df": {
+            "0x295cS0xde5": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Comodo Finance",
+    "total_func": 15,
+    "analyzed_func": 1,
+    "block_num": 33856948,
+    "address": "0x8ddd62949700937458a5c6535d1ee5dbebe62b77",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

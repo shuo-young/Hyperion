@@ -1,0 +1,91 @@
+{
+    "dapp_name": "BNB Chain",
+    "total_func": 17,
+    "analyzed_func": 3,
+    "block_num": 33626390,
+    "address": "0x660Df66F5953b2E16776c349B4F338f5fD430d0c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xf340fa01": {
+            "0x843": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(Iv, 50)"
+                ]
+            ],
+            "0x883": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(3*Iv, 100)"
+                ]
+            ]
+        },
+        "0x00000000": {
+            "0x843": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(Iv, 50)"
+                ]
+            ],
+            "0x883": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(3*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.21
+            ],
+            "fees": {
+                "trade": 0.21
+            }
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xc13S0x1d3": [
+                [
+                    "Is",
+                    "balance_1"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

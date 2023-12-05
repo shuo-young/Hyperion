@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Trader Joe",
+    "total_func": 25,
+    "analyzed_func": 17,
+    "block_num": 18658075,
+    "address": "0x89Fa1974120d2a7F83a0cb80df3654721c6a38Cd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x73bc79cf": {
+            "0x332a0x62a": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x9fc27226": {
+            "0x332a0x1723S0x2232": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

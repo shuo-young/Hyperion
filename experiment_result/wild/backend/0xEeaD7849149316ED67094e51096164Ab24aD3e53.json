@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Infinity Star",
+    "total_func": 37,
+    "analyzed_func": 3,
+    "block_num": 18673705,
+    "address": "0xEeaD7849149316ED67094e51096164Ab24aD3e53",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x372b4bc1": {
+            "0x431f": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-some_var_3-))",
+                    "bvudiv_i(Iv*Concat(0, Extract(31, 0, Ia_store-some_var_3-)),\n         10000)"
+                ]
+            ]
+        },
+        "0x46f36bd4": {
+            "0x431f": [
+                [
+                    "Concat(0, Extract(191, 32, Ia_store-some_var_9-))",
+                    "bvudiv_i(Iv*Concat(0, Extract(31, 0, Ia_store-some_var_9-)),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,57 @@
+{
+    "dapp_name": "Bankster Farming IDLE",
+    "total_func": 27,
+    "analyzed_func": 3,
+    "block_num": 18660508,
+    "address": "0x6cd6215a23890630f39400ce37e3cb5d31304b8c",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x3955f0fe": {
+            "0xa41S0x30c": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_4,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_6,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3955f0fe": {
+            "0x9f1S0x30c": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        },
+        "0x4f74acfe": {
+            "0x102c": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

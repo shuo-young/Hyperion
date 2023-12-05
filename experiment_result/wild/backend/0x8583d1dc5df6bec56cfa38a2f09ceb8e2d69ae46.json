@@ -1,0 +1,25 @@
+{
+    "dapp_name": "0xWarriors",
+    "total_func": 6,
+    "analyzed_func": 1,
+    "block_num": 18672080,
+    "address": "0x8583d1dc5df6bec56cfa38a2f09ceb8e2d69ae46",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

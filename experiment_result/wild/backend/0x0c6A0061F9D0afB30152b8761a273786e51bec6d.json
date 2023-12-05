@@ -1,0 +1,25 @@
+{
+    "dapp_name": "HunnySwap",
+    "total_func": 10,
+    "analyzed_func": 0,
+    "block_num": 38236906,
+    "address": "0x0c6A0061F9D0afB30152b8761a273786e51bec6d",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

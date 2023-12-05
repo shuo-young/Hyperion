@@ -1,0 +1,67 @@
+{
+    "dapp_name": "MGP_Matic Game Player",
+    "total_func": 29,
+    "analyzed_func": 4,
+    "block_num": 50451739,
+    "address": "0x40c84a6ADe88112A7cd1d970fA0774052823c655",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "0x3ccfd60b": {
+            "0x10d6S0x2a5": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-1 + some_var_1- +\nIa_store-2 + some_var_1- +\nIa_store-4 + some_var_1- +\nIa_store-7 + some_var_1- +\nIa_store-8 + some_var_1- +\nIa_store-6 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(700*Ia_store-1 + some_var_1- +\n         700*Ia_store-2 + some_var_1- +\n         700*Ia_store-4 + some_var_1- +\n         700*Ia_store-7 + some_var_1- +\n         700*Ia_store-8 + some_var_1-,\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(300*Ia_store-1 + some_var_1- +\n         300*Ia_store-2 + some_var_1- +\n         300*Ia_store-4 + some_var_1- +\n         300*Ia_store-7 + some_var_1- +\n         300*Ia_store-8 + some_var_1-,\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(3000*Ia_store-1 + some_var_1- +\n         3000*Ia_store-2 + some_var_1- +\n         3000*Ia_store-4 + some_var_1- +\n         3000*Ia_store-7 + some_var_1- +\n         3000*Ia_store-8 + some_var_1- +\n         3000*Ia_store-6 + some_var_1- +\n         115792089237316195423570985008687907853269984665640564039457584007913129636936*\n         bvudiv_i(700*Ia_store-1 + some_var_1- +\n                  700*Ia_store-2 + some_var_1- +\n                  700*Ia_store-4 + some_var_1- +\n                  700*Ia_store-7 + some_var_1- +\n                  700*Ia_store-8 + some_var_1-,\n                  10000) +\n         115792089237316195423570985008687907853269984665640564039457584007913129636936*\n         bvudiv_i(300*Ia_store-1 + some_var_1- +\n                  300*Ia_store-2 + some_var_1- +\n                  300*Ia_store-4 + some_var_1- +\n                  300*Ia_store-7 + some_var_1- +\n                  300*Ia_store-8 + some_var_1-,\n                  10000),\n         10000) +\nIa_store-some_var_1-"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3ccfd60b": {
+            "0xf1dS0x2a5": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-74-))",
+                    "bvudiv_i(700*Ia_store-1 + some_var_1- +\n         700*Ia_store-2 + some_var_1- +\n         700*Ia_store-4 + some_var_1- +\n         700*Ia_store-7 + some_var_1- +\n         700*Ia_store-8 + some_var_1-,\n         10000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

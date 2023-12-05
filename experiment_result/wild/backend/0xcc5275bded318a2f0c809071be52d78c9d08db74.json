@@ -1,0 +1,27 @@
+{
+    "dapp_name": "IndiGG",
+    "total_func": 31,
+    "analyzed_func": 1,
+    "block_num": 50437833,
+    "address": "0xcc5275bded318a2f0c809071be52d78c9d08db74",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            56502
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

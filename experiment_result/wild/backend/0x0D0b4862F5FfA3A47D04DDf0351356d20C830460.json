@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Solarbeam",
+    "total_func": 11,
+    "analyzed_func": 1,
+    "block_num": 5615655,
+    "address": "0x0D0b4862F5FfA3A47D04DDf0351356d20C830460",
+    "platform": "Moonriver",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

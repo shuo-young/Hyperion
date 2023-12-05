@@ -1,0 +1,39 @@
+{
+    "dapp_name": "ShibaSwap",
+    "total_func": 15,
+    "analyzed_func": 2,
+    "block_num": 18656023,
+    "address": "0xa57d319b3cf3ad0e4d19770f71e63cf847263a0b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x67dfd4c9": {
+            "0x6620x246": [
+                [
+                    "0x27c70cd1946795b66be9d954418546998b546634",
+                    "bvudiv_i(Id_1*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "0x27c70cd1946795b66be9d954418546998b546634",
+                    "bvudiv_i(0, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            15875946509668972045541
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Thoreum",
+    "total_func": 53,
+    "analyzed_func": 0,
+    "block_num": 34078819,
+    "address": "0x580dE58c1BD593A43DaDcF0A739d504621817c05",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            5000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

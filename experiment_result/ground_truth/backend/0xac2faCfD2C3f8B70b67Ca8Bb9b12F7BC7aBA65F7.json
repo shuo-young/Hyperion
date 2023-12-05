@@ -1,0 +1,34 @@
+{
+    "dapp_name": "Matrix Pro",
+    "total_func": 60,
+    "analyzed_func": 11,
+    "block_num": 34078062,
+    "address": "0xac2faCfD2C3f8B70b67Ca8Bb9b12F7BC7aBA65F7",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x8853b53e": {
+            "0x57d2": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

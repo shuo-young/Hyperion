@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Diamond Boyz Coin",
+    "total_func": 36,
+    "analyzed_func": 0,
+    "block_num": 33856955,
+    "address": "0x7a983559e130723B70e45bd637773DbDfD3F71Db",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,49 @@
+{
+    "dapp_name": "MCVerse",
+    "total_func": 16,
+    "analyzed_func": 4,
+    "block_num": 38184918,
+    "address": "0x46EA00Ab1010a20814eA4F3eA67283845e8919b9",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": true,
+        "0xe85d0daf": {
+            "0x8d60x2b4": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1 + some_var_4- +\n         mem_mem_64 +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         Ia_store-some_var_4-,\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_11-"
+                ]
+            ]
+        },
+        "0xa9d0125e": {
+            "0x8d60x6d3": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1 + some_var_4- +\n         mem_mem_64 +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         Ia_store-some_var_4-,\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_11-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x6ff1c9bc": {
+            "0x5acS0x1d9": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,81 @@
+{
+    "dapp_name": "Network 51",
+    "total_func": 12,
+    "analyzed_func": 1,
+    "block_num": 18610175,
+    "address": "0x3f11c993d3ced0790630beee1bb543fde165f614",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x00000000": {
+            "0x762": [
+                [
+                    "Is",
+                    "bvudiv_i(5*Iv, 100)"
+                ]
+            ],
+            "0x19d": [
+                [
+                    "Is",
+                    "bvudiv_i((IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_3-)*\n         bvudiv_i(3*Ia_store-some_var_3-, 100),\n         86400)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i((IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_3-)*\n         bvudiv_i(2*Ia_store-some_var_3-, 100),\n         86400)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i((IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_3-)*\n         bvudiv_i(4*Ia_store-some_var_3-, 100),\n         86400)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x00000000": {
+            "0x59f": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(10*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

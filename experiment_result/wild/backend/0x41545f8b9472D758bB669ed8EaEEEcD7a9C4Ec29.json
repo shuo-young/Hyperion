@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Forta",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18661904,
+    "address": "0x41545f8b9472D758bB669ed8EaEEEcD7a9C4Ec29",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

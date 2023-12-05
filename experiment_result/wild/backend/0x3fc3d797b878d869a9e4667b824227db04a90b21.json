@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Crypto Derby",
+    "total_func": 18,
+    "analyzed_func": 2,
+    "block_num": 18672291,
+    "address": "0x3fc3d797b878d869a9e4667b824227db04a90b21",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

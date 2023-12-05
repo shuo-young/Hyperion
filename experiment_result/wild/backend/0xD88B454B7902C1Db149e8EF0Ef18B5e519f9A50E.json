@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Token Fighter",
+    "total_func": 39,
+    "analyzed_func": 6,
+    "block_num": 18674536,
+    "address": "0xD88B454B7902C1Db149e8EF0Ef18B5e519f9A50E",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1259850000070000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

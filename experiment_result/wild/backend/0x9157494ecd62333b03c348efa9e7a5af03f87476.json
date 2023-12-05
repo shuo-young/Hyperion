@@ -1,0 +1,41 @@
+{
+    "dapp_name": "ETHERKNIGHT",
+    "total_func": 22,
+    "analyzed_func": 2,
+    "block_num": 18673679,
+    "address": "0x9157494ecd62333b03c348efa9e7a5af03f87476",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0x5a9e426b": {
+            "0xdd4S0x342": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-2 + some_var_1-*Ia_store-3 + some_var_4- +\nIa_store-2 + some_var_1-*Ia_store-2 + some_var_4- +\nIa_store-1 + some_var_4-*Ia_store-2 + some_var_1- +\nIa_store-2 + some_var_1-*Ia_store-some_var_4-"
+                ]
+            ]
+        },
+        "0xbd679ab2": {
+            "0x17c3S0x591": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_2-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

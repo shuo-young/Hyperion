@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Crypto Dynasty (ETH)",
+    "total_func": 9,
+    "analyzed_func": 1,
+    "block_num": 18672299,
+    "address": "0x930a6Dd3Ccf6cA232a1e56371DB60A53d796bBb1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe5225381": {
+            "0x707S0x199": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

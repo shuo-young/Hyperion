@@ -1,0 +1,41 @@
+{
+    "dapp_name": "AppleSwap.AI",
+    "total_func": 21,
+    "analyzed_func": 6,
+    "block_num": 18643567,
+    "address": "0x94F8b11339d2630A522Ff6410B7e145DFbE41f79",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xcd05134e": {
+            "0x1b23": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-1-*Iv, 10000)"
+                ]
+            ]
+        },
+        "0xb3bbba51": {
+            "0x1b23": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-1-*Iv, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

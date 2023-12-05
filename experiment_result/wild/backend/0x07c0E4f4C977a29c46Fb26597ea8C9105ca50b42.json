@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Badger.Finance",
+    "total_func": 20,
+    "analyzed_func": 3,
+    "block_num": 18644826,
+    "address": "0x07c0E4f4C977a29c46Fb26597ea8C9105ca50b42",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x86d1a69f": {
+            "0x1becS0x1aa3S0x18c0S0x1716S0x112c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-102-))",
+                    "bvudiv_i((Ia_store-106- + mem_mem_64)*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-104-),\n         Ia_store-105-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-106-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-102-))",
+                    "bvudiv_i(0, Ia_store-105-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-106-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x32f289cf": {
+            "0x730": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-102-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x55291dbd": {
+            "0xaea": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-102-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

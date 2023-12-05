@@ -1,0 +1,25 @@
+{
+    "dapp_name": "ETG Finance",
+    "total_func": 10,
+    "analyzed_func": 4,
+    "block_num": 18670857,
+    "address": "0x8E4D251365aab1bAb38533FBe59943D389303646",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

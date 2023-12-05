@@ -1,0 +1,53 @@
+{
+    "dapp_name": "RedVsBlue",
+    "total_func": 10,
+    "analyzed_func": 1,
+    "block_num": 18673821,
+    "address": "0x7bd57F8804192b22ED70A0DA5b11545c8374e4EA",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 1.0
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

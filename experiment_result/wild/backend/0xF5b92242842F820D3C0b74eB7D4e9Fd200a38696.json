@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Planet",
+    "total_func": 65,
+    "analyzed_func": 6,
+    "block_num": 33823654,
+    "address": "0xF5b92242842F820D3C0b74eB7D4e9Fd200a38696",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xd389800f": {
+            "0x3194S0x3071S0x2ec4S0x27a4B0x2cd3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "bvudiv_i(Ia_store-17-*mem_mem_64, 10000)"
+                ]
+            ],
+            "0x3194S0x3071S0x2ec4S0x27a4B0x2c51B0x1b54S0x75b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-19-))",
+                    "bvudiv_i(Ia_store-16-*mem_mem_64, 10000)"
+                ]
+            ]
+        },
+        "0xf3fef3a3": {
+            "0x214c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "bvudiv_i((10000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-23-)*\n         bvudiv_i(Ia_store-23-*Id_2, 10000),\n         10000)"
+                ]
+            ]
+        },
+        "0x47e7ef24": {
+            "0xd04": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(Id_2*\n         (10000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-22-),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

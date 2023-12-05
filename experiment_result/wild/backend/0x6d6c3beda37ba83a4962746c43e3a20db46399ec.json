@@ -1,0 +1,149 @@
+{
+    "dapp_name": "Cheeze Wizards",
+    "total_func": 43,
+    "analyzed_func": 2,
+    "block_num": 18672146,
+    "address": "0x6d6c3beda37ba83a4962746c43e3a20db46399ec",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xcc4db960": {
+            "0x31cc": [
+                [
+                    "Is",
+                    "bvudiv_i(balance_8*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_10*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_12*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_14*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_16*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_18*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_20*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_22*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_24*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_26*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_28*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_30*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_32*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_34*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_36*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_38*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_40*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_42*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_44*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_46*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_48*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_50*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_52*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_51-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_54*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_53-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_51-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_56*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_55-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_53-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_51-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_58*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_57-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_55-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_53-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_51-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_60*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_59-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_57-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_55-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_53-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_51-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_49-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_47-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_45-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_43-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_41-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_39-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_37-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_35-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_33-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_31-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_29-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_27-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_25-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_23-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_21-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_19-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_17-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_15-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_13-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_11-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_9-)) +\n         Concat(0, Extract(87, 0, Ia_store-some_var_7-)))"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(balance_65*\n         Concat(0, Extract(87, 0, Ia_store-some_var_1-)),\n         Concat(0, Extract(87, 0, Ia_store-some_var_64-)))"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xda0cb2ae": {
+            "0x37ce": [
+                [
+                    "Is",
+                    "balance_6"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "StarsMatic",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 50452704,
+    "address": "0xfFaA18630499FbDF455B5696B81B5fC3722457B2",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "0xd99f6668": {
+            "0x19b8S0x8de": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-51-*Ia_store-some_var_1-, 10000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

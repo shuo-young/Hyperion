@@ -1,0 +1,33 @@
+{
+    "dapp_name": "The Tap Platform",
+    "total_func": 15,
+    "analyzed_func": 4,
+    "block_num": 18674512,
+    "address": "0x665a9e14d8bee10c71ea41c4e7e00a4449bbdb95",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xbd97b375": {
+            "0x1b56S0xcea": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(mem_mem_64*mem_mem_64, mem_mem_64)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

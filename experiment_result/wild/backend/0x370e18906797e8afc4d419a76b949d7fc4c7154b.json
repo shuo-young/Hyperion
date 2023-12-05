@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Mini Utopia",
+    "total_func": 18,
+    "analyzed_func": 1,
+    "block_num": 50451743,
+    "address": "0x370e18906797e8afc4d419a76b949d7fc4c7154b",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

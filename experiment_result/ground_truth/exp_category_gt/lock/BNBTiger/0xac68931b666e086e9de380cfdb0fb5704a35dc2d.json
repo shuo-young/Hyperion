@@ -1,0 +1,85 @@
+{
+    "dapp_name": "BNBTiger",
+    "total_func": 63,
+    "analyzed_func": 3,
+    "block_num": 34078228,
+    "address": "0xac68931b666e086e9de380cfdb0fb5704a35dc2d",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true,
+        "rate": [],
+        "0xa9059cbb": {
+            "0x23e5S0x1ff5": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+                ]
+            ],
+            "0x23e5S0x1fd4": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-5-))",
+                    "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b*Ia_store-19-, Ia_store-some_var_2-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x23e5S0x1ff5": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+                ]
+            ],
+            "0x23e5S0x1fd4": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-5-))",
+                    "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b*Ia_store-19-, Ia_store-some_var_2-) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-21-*Ia_store-some_var_2-,\n         Ia_store-some_var_2-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.09,
+                0.02
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10000000000000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": true,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": true,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Ether Legends",
+    "total_func": 24,
+    "analyzed_func": 1,
+    "block_num": 18673598,
+    "address": "0x4f65C5F0F89BE0305Dd9F07FF9cD1390C614f21a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

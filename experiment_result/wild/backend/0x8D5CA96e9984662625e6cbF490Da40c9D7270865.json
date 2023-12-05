@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Tewkenaire (ETH)",
+    "total_func": 35,
+    "analyzed_func": 6,
+    "block_num": 18661170,
+    "address": "0x8D5CA96e9984662625e6cbF490Da40c9D7270865",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xe4849b32": {
+            "0x1d2b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-14-*Id_1, 100000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*bvudiv_i(Ia_store-14-*Id_1, 100000000), 100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1431380283636188
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

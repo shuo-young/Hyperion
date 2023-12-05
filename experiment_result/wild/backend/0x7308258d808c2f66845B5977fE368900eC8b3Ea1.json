@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Usdtseed",
+    "total_func": 34,
+    "analyzed_func": 2,
+    "block_num": 33855775,
+    "address": "0x7308258d808c2f66845B5977fE368900eC8b3Ea1",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xfba05279": {
+            "0xfc7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(80*Id_2, 1000)"
+                ]
+            ],
+            "0x1043": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "bvudiv_i(20*Id_2, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

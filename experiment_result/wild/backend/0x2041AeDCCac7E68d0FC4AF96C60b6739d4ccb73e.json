@@ -1,0 +1,53 @@
+{
+    "dapp_name": "BitCereal",
+    "total_func": 21,
+    "analyzed_func": 4,
+    "block_num": 50450897,
+    "address": "0x2041AeDCCac7E68d0FC4AF96C60b6739d4ccb73e",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xf7b66f5e": {
+            "0x220b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(Concat(0, Extract(215, 200, Ia_store-10-))*\n         bvudiv_i(Iv*\n                  Concat(0, Extract(175, 168, Ia_store-10-)),\n                  100),\n         100)"
+                ]
+            ],
+            "0x2274": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(Concat(0, Extract(231, 216, Ia_store-10-))*\n         bvudiv_i(Iv*\n                  Concat(0, Extract(175, 168, Ia_store-10-)),\n                  100),\n         100)"
+                ]
+            ],
+            "0x22dd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(Concat(0, Extract(191, 184, Ia_store-10-))*\n         bvudiv_i(Iv*\n                  Concat(0, Extract(175, 168, Ia_store-10-)),\n                  100),\n         100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2ffa5baf": {
+            "0x6e9S0x177": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

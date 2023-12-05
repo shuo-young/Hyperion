@@ -1,0 +1,69 @@
+{
+    "dapp_name": "100k Passive",
+    "total_func": 39,
+    "analyzed_func": 5,
+    "block_num": 33851637,
+    "address": "0x142131c3d0588ebEC6764e2e7076D4b4B05F2997",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x88f9c81b": {
+            "0x156bS0x37d": [
+                [
+                    "Is",
+                    "Ia_store-8 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9 + some_var_1-"
+                ]
+            ],
+            "0x147aS0x37d": [
+                [
+                    "Is",
+                    "Ia_store-10 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-11 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xb9b8c246": {
+            "0x18ff": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Ia_store-9-*Id_2, 100000)"
+                ]
+            ],
+            "0x19a5": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-10-*Id_2, 100000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2f1f0bcc": {
+            "0xa67S0x2e0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0xc506e96": {
+            "0x734S0x29d": [
+                [
+                    "Is",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

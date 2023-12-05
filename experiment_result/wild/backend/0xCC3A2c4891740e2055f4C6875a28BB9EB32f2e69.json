@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Yield Wars",
+    "total_func": 32,
+    "analyzed_func": 6,
+    "block_num": 18672065,
+    "address": "0xCC3A2c4891740e2055f4C6875a28BB9EB32f2e69",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            90345
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xeb9253c0": {
+            "0x1602S0x12c7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "MoonCryptoPolis",
+    "total_func": 17,
+    "analyzed_func": 2,
+    "block_num": 18673787,
+    "address": "0x6515586ce83293cec425c46d5e5bf28591ec013e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xf44b79b3": {
+            "0xa6fS0xa2cS0x2b3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

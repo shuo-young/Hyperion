@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Glitch Goons ETH",
+    "total_func": 44,
+    "analyzed_func": 8,
+    "block_num": 18673694,
+    "address": "0xae42410c62e8254429e0fa06a4f965ee7d123eb5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            32
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

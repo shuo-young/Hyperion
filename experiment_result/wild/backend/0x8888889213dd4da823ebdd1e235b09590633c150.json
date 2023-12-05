@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Marble.Cards",
+    "total_func": 36,
+    "analyzed_func": 7,
+    "block_num": 18673776,
+    "address": "0x8888889213dd4da823ebdd1e235b09590633c150",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xdc39d06d": {
+            "0x132c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

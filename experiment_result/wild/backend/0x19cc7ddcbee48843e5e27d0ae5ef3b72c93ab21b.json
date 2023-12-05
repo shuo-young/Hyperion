@@ -1,0 +1,25 @@
+{
+    "dapp_name": "HogSmash",
+    "total_func": 57,
+    "analyzed_func": 4,
+    "block_num": 18671345,
+    "address": "0x19cc7ddcbee48843e5e27d0ae5ef3b72c93ab21b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

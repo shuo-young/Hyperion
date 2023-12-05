@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Yield Fields",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 33847846,
+    "address": "0xEdfa7006F8dcaE3C356369268319f0788dc6a6F4",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            107549030281400821415952400
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe38a3895": {
+            "0x121f": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Ember Sword - Polygon",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 50336122,
+    "address": "0xE7e16f2Da731265778f87cB8D7850E31b84b7b86",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

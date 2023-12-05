@@ -1,0 +1,69 @@
+{
+    "dapp_name": "SmartHash",
+    "total_func": 9,
+    "analyzed_func": 1,
+    "block_num": 18661118,
+    "address": "0xb10ea0d397db942a1083a4af9c6074ab63bc8c8b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x00000000": {
+            "0xfb": [
+                [
+                    "0xd0396aaecb5547776852ab8682ba72e1209b536d",
+                    "bvudiv_i(10*Iv, 100)"
+                ]
+            ],
+            "0x13d": [
+                [
+                    "0xb5a885c796dbd4656345551cc41d3e8844ac8c04",
+                    "bvudiv_i(5*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.21
+            ],
+            "fees": {
+                "trade": 0.21
+            }
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

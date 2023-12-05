@@ -1,0 +1,33 @@
+{
+    "dapp_name": "WePiggy",
+    "total_func": 12,
+    "analyzed_func": 1,
+    "block_num": 18659840,
+    "address": "0x2a8Cd78bFb91ACF53f589961D213d87c956e0d7f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9ce393f7": {
+            "0x6c5": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "EarnTube",
+    "total_func": 20,
+    "analyzed_func": 0,
+    "block_num": 50445341,
+    "address": "0x11388D05554eB091EDdaFaF4b3B83DA5119826f9",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            20000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

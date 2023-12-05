@@ -1,0 +1,27 @@
+{
+    "dapp_name": "ChickenHunt",
+    "total_func": 72,
+    "analyzed_func": 9,
+    "block_num": 18670408,
+    "address": "0x1ed3d2c916cab00631cce4b08a7f880d4badae94",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            3607966000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

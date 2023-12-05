@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Eidoo",
+    "total_func": 19,
+    "analyzed_func": 3,
+    "block_num": 18670846,
+    "address": "0xCeD4E93198734dDaFf8492d525Bd258D49eb388E",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            59634176067251733426111713
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

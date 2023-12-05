@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Compoundex",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18661769,
+    "address": "0x04ee4af9082746db738e7e5b49b733493a6bd81f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

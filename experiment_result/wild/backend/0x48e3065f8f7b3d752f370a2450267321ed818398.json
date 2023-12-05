@@ -1,0 +1,25 @@
+{
+    "dapp_name": "KittyPillar",
+    "total_func": 27,
+    "analyzed_func": 2,
+    "block_num": 18673742,
+    "address": "0x48e3065f8f7b3d752f370a2450267321ed818398",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

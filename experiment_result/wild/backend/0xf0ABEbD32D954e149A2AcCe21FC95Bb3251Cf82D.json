@@ -1,0 +1,25 @@
+{
+    "dapp_name": "ThorusFi",
+    "total_func": 13,
+    "analyzed_func": 1,
+    "block_num": 38278899,
+    "address": "0xf0ABEbD32D954e149A2AcCe21FC95Bb3251Cf82D",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Habibiz V2",
+    "total_func": 41,
+    "analyzed_func": 5,
+    "block_num": 18642198,
+    "address": "0x98a0227e99e7af0f1f0d51746211a245c3b859c2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            4900
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xb8dS0x402": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Chronos",
+    "total_func": 16,
+    "analyzed_func": 3,
+    "block_num": 153851931,
+    "address": "0x9b036DBB4DEE6B1fC62eB7d4fCae2530200c90F6",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

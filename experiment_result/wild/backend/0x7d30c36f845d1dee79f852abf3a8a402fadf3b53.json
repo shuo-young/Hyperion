@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CroMoon",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 11341155,
+    "address": "0x7d30c36f845d1dee79f852abf3a8a402fadf3b53",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

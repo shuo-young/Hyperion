@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Stader(SD)",
+    "total_func": 25,
+    "analyzed_func": 2,
+    "block_num": 18656193,
+    "address": "0x30d20208d987713f46dfd34ef128bb16c404d10f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.2
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            150000000000000000000000000
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

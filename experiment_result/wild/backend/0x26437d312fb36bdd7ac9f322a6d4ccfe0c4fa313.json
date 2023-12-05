@@ -1,0 +1,35 @@
+{
+    "dapp_name": "ASM AIFA Genesis",
+    "total_func": 34,
+    "analyzed_func": 6,
+    "block_num": 18641170,
+    "address": "0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xfa09e630": {
+            "0x1730S0x63c": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

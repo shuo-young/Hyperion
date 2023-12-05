@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Crypto Ninja",
+    "total_func": 26,
+    "analyzed_func": 3,
+    "block_num": 18670633,
+    "address": "0xa13db2f412cef4b4186ed1d2d12c9ec16bde82f4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xc6786e5a": {
+            "0x3832": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

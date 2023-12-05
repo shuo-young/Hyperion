@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Crypto Barons",
+    "total_func": 28,
+    "analyzed_func": 4,
+    "block_num": 18670611,
+    "address": "0x5ce82786d2e00748073f396a941d3e55c0a1b3d2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            250000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x1185S0x3c6": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

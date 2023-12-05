@@ -1,0 +1,27 @@
+{
+    "dapp_name": "PopCorn Claims",
+    "total_func": 46,
+    "analyzed_func": 5,
+    "block_num": 154581475,
+    "address": "0x3aB2B311BEB912FDc10a9C1B9FCC792833903326",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            3324324324357000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

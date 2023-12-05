@@ -1,0 +1,65 @@
+{
+    "dapp_name": "ETH Dinosaur Farmer",
+    "total_func": 24,
+    "analyzed_func": 2,
+    "block_num": 18660576,
+    "address": "0xd9913f9823fa526840869f1cb8f515bb69e6a51c",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x3955f0fe": {
+            "0x9d7S0x2d7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_4,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_4,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_6,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2-*balance_6,\n         Ia_store-3- +\n         bvudiv_i(Ia_store-2-*Ia_store-9- +\n                  Ia_store-3-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-))"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x4f74acfe": {
+            "0xfc2": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
+        "0x3955f0fe": {
+            "0x987S0x2d7": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_4,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

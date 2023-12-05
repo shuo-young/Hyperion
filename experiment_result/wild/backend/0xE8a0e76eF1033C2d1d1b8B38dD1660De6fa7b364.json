@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Auragi",
+    "total_func": 18,
+    "analyzed_func": 1,
+    "block_num": 153728627,
+    "address": "0xE8a0e76eF1033C2d1d1b8B38dD1660De6fa7b364",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xed29fc11": {
+            "0xaad": [
+                [
+                    "0xff191514a9baba76bfd19e3943a4d37e8ec9a111",
+                    "bvudiv_i(30*\n         Concat(0,\n                Extract(255,\n                        1,\n                        bvudiv_i(mem_mem_64*\n                                 bvudiv_i(mem_mem_64*\n                                        bvudiv_i(mem_mem_64*\n                                        bvudiv_i(990*\n                                        Ia_store-0-,\n                                        1000),\n                                        mem_mem_64),\n                                        mem_mem_64),\n                                 mem_mem_64))) +\n         30*bvudiv_i(990*Ia_store-0-, 1000),\n         970)"
+                ]
+            ],
+            "0xb69": [
+                [
+                    "0xff191514a9baba76bfd19e3943a4d37e8ec9a111",
+                    "Concat(0,\n       Extract(255,\n               1,\n               bvudiv_i(mem_mem_64*\n                        bvudiv_i(mem_mem_64*\n                                 bvudiv_i(mem_mem_64*\n                                        bvudiv_i(990*\n                                        Ia_store-0-,\n                                        1000),\n                                        mem_mem_64),\n                                 mem_mem_64),\n                        mem_mem_64)))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

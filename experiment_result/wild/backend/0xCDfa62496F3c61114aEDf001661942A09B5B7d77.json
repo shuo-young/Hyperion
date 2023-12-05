@@ -1,0 +1,25 @@
+{
+    "dapp_name": "EGGRYPTO",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18673516,
+    "address": "0xCDfa62496F3c61114aEDf001661942A09B5B7d77",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

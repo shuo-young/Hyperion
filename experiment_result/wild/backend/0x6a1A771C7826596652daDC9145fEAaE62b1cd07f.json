@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Moonwell Apollo",
+    "total_func": 49,
+    "analyzed_func": 4,
+    "block_num": 5611583,
+    "address": "0x6a1A771C7826596652daDC9145fEAaE62b1cd07f",
+    "platform": "Moonriver",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            569227267436272
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

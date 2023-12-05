@@ -1,0 +1,81 @@
+{
+    "dapp_name": "BNB2X",
+    "total_func": 20,
+    "analyzed_func": 3,
+    "block_num": 33853704,
+    "address": "0x696062bF186A6d9479F520574ff26AfBB955Eec7",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "return": 1.0,
+            "roi": 0.005479452054794521
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xab94d950": {
+            "0x1105": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "bvudiv_i(Iv, 50)"
+                ]
+            ],
+            "0x117a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(Iv, 50)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "7 days",
+                "7 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x2f65e816": {
+            "0x82dS0x1aa": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

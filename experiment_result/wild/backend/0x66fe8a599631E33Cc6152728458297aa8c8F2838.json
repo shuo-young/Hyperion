@@ -1,0 +1,47 @@
+{
+    "dapp_name": "Last Sender",
+    "total_func": 11,
+    "analyzed_func": 1,
+    "block_num": 154579038,
+    "address": "0x66fe8a599631E33Cc6152728458297aa8c8F2838",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": true,
+        "0x426e346a": {
+            "0xbf7S0x26fS0x123": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x426e346a": {
+            "0xbb0S0x26fS0x123": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(15*IH_b, 100)"
+                ]
+            ],
+            "0xb45S0x26fS0x123": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(80*IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

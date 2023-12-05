@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Profit Circus",
+    "total_func": 21,
+    "analyzed_func": 4,
+    "block_num": 18673811,
+    "address": "0x885242256456f5EDbA66e4e01eb298097449A924",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,67 @@
+{
+    "dapp_name": "hausphases by Haus",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 18619900,
+    "address": "0x5be99338289909d6dbbc57bb791140ef85ccbcab",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3ccfd60b": {
+            "0x10c4S0x407": [
+                [
+                    "0xb386e92acf9279cebb13389811c22b77cc649bd6",
+                    "bvudiv_i(850*IH_b, 1000)"
+                ]
+            ],
+            "0x1189S0x407": [
+                [
+                    "0x433e7f8e28cdd827016f656b25ce9ef46558844a",
+                    "bvudiv_i(150*IH_b, 1000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            7777
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Ape Mines",
+    "total_func": 24,
+    "analyzed_func": 3,
+    "block_num": 34077935,
+    "address": "0xc51fb45c6497231772ba133b8011a999b1cb759a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

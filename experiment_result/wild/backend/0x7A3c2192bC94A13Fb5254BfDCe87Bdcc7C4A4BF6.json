@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SafeREIX",
+    "total_func": 46,
+    "analyzed_func": 0,
+    "block_num": 33857142,
+    "address": "0x7A3c2192bC94A13Fb5254BfDCe87Bdcc7C4A4BF6",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

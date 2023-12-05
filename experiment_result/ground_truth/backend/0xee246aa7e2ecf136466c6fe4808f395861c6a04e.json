@@ -1,0 +1,28 @@
+{
+    "dapp_name": "PunkPanda",
+    "total_func": 44,
+    "analyzed_func": 3,
+    "block_num": 34025310,
+    "address": "0xee246aa7e2ecf136466c6fe4808f395861c6a04e",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            130473800000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

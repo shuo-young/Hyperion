@@ -1,0 +1,62 @@
+{
+    "dapp_name": "My Crypto Heroes",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 18660413,
+    "address": "0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.1,
+            "rewards": 0.1,
+            "team reward": 0.1
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.5
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            0,
+            3961408125713216879677197516831527010000000000000000000
+        ],
+        "unlimited": true,
+        "ui": [
+            50000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

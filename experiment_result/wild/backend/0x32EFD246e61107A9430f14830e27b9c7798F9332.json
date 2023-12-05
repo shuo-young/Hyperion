@@ -1,0 +1,53 @@
+{
+    "dapp_name": "CosmoSwap",
+    "total_func": 13,
+    "analyzed_func": 3,
+    "block_num": 18670569,
+    "address": "0x32EFD246e61107A9430f14830e27b9c7798F9332",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x1091": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (bvudiv_i(1000000000000*\n                   Ia_store-7-*\n                   (IH_i +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   mem_mem_64) +\n          Ia_store-12-),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (bvudiv_i(1000000000000*\n                   Ia_store-7-*\n                   Ia_store-9-*\n                   (IH_i +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   mem_mem_64) +\n          Ia_store-12-),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (bvudiv_i(1000000000000*\n                   Ia_store-7-*\n                   (Ia_store-10- +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   mem_mem_64) +\n          Ia_store-12-),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        },
+        "0xb6b55f25": {
+            "0x1091": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (bvudiv_i(1000000000000*\n                   Ia_store-7-*\n                   (IH_i +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   mem_mem_64) +\n          Ia_store-12-),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (bvudiv_i(1000000000000*\n                   Ia_store-7-*\n                   Ia_store-9-*\n                   (IH_i +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   mem_mem_64) +\n          Ia_store-12-),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Arcade Land",
+    "total_func": 52,
+    "analyzed_func": 16,
+    "block_num": 18640840,
+    "address": "0x4a8c9d751eeabc5521a68fb080dd7e72e46462af",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x51cff8d9": {
+            "0xcd4S0x558": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

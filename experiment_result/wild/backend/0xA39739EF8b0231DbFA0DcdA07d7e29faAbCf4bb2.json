@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Liquity",
+    "total_func": 79,
+    "analyzed_func": 0,
+    "block_num": 18651781,
+    "address": "0xA39739EF8b0231DbFA0DcdA07d7e29faAbCf4bb2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

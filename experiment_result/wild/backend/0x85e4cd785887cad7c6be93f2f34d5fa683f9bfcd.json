@@ -1,0 +1,49 @@
+{
+    "dapp_name": "apexONE",
+    "total_func": 29,
+    "analyzed_func": 3,
+    "block_num": 18661728,
+    "address": "0x85e4cd785887cad7c6be93f2f34d5fa683f9bfcd",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xae77c237": {
+            "0xeb5": [
+                [
+                    "Is",
+                    "Ia_store-3-*bvudiv_i(Ia_store-13 + 6*Id_1-, Ia_store-0-)"
+                ],
+                [
+                    "Is",
+                    "Ia_store-3-*\nbvudiv_i(Ia_store-14 + 6*Id_1- +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i((IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-16 + 6*Id_1-)*\n                  (Ia_store-14 + 6*Id_1- +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-13 + 6*Id_1-),\n                  Ia_store-15 + 6*Id_1-),\n         Ia_store-0-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xae77c237": {
+            "0xf70": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Ia_store-4-*bvudiv_i(Ia_store-13 + 6*Id_1-, Ia_store-0-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Ia_store-4-*\nbvudiv_i(Ia_store-14 + 6*Id_1- +\n         115792089237316195423570985008687907853269984665640564039457584007913129639935*\n         bvudiv_i((IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-16 + 6*Id_1-)*\n                  (Ia_store-14 + 6*Id_1- +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-13 + 6*Id_1-),\n                  Ia_store-15 + 6*Id_1-),\n         Ia_store-0-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

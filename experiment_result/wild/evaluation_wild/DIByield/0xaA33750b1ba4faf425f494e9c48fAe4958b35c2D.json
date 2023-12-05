@@ -1,0 +1,64 @@
+{
+    "dapp_name": "DIByield",
+    "total_func": 36,
+    "analyzed_func": 3,
+    "block_num": 154577707,
+    "address": "0xaA33750b1ba4faf425f494e9c48fAe4958b35c2D",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.05,
+            "farming rewards": 0.05
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            10
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0x1dd5": [
+                [
+                    "0x99a8a7a45f1435aa6bfe099320a0ebdec2beac03",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

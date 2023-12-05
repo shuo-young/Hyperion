@@ -1,0 +1,56 @@
+{
+    "dapp_name": "Freeliquid",
+    "total_func": 41,
+    "analyzed_func": 2,
+    "block_num": 18671331,
+    "address": "0x1a48B6151012a27A4ab2a8c1b8Ec108bAB9eF49c",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x3d18b912": {
+            "0x205eS0x1a4fS0xc79": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(0, 1000000000000000000*some_var_5) +\n          bvudiv_i(1000000000000000000*\n                   some_var_1*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-68-),\n                   1000000000000000000*some_var_1) +\n          Ia_store-69-),\n         10942)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(0, 1000000000000000000*some_var_15) +\n          bvudiv_i(1000000000000000000*\n                   some_var_1*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-68-),\n                   1000000000000000000*some_var_1) +\n          Ia_store-69-),\n         10942)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(0, 1000000000000000000*some_var_1) +\n          Ia_store-69-),\n         10942)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(0, Ia_store-54-)*\n         (bvudiv_i(1000000000000000000*\n                   some_var_1*\n                   (Ia_store-66- +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-68-),\n                   1000000000000000000*some_var_1) +\n          Ia_store-69-),\n         10942)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(Ia_store-some_var_44-, Ia_store-54-)*\n         (bvudiv_i(1000000000000000000*\n                   some_var_42*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-68-),\n                   1000000000000000000*some_var_42) +\n          Ia_store-69-),\n         10942)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "10985 +\nbvudiv_i(bvudiv_i(Ia_store-some_var_64-, Ia_store-54-)*\n         (bvudiv_i(1000000000000000000*\n                   some_var_42*\n                   (Ia_store-66- +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-68-),\n                   1000000000000000000*some_var_42) +\n          Ia_store-69-),\n         10942)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            4,
+            1000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

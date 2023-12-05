@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Choose your side",
+    "total_func": 4,
+    "analyzed_func": 0,
+    "block_num": 18672181,
+    "address": "0x2ef05e5cc8cea6d453175f43d0ef7170b5825e54",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,61 @@
+{
+    "dapp_name": "Iron Bank",
+    "total_func": 12,
+    "analyzed_func": 1,
+    "block_num": 112675278,
+    "address": "0x35F70CE60f049A8c21721C53a1dFCcB5bF4a1Ea8",
+    "platform": "Optimism",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.0371
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xeb9253c0": {
+            "0xc08S0xb0eS0xa3cS0x9e5S0x88e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

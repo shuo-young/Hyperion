@@ -1,0 +1,77 @@
+{
+    "dapp_name": "The Flower Girls",
+    "total_func": 38,
+    "analyzed_func": 7,
+    "block_num": 18642210,
+    "address": "0x2efa07cac3395599db83035d196f2a0e7263f766",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x853828b6": {
+            "0xf70S0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "5*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0xfb5S0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "5*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0xffaS0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "10*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0x103fS0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "5*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0x1084S0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-15-))",
+                    "5*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0x10c9S0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "45*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0x110eS0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-17-))",
+                    "20*bvudiv_i(IH_b, 100)"
+                ]
+            ],
+            "0x1153S0x4a4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-18-))",
+                    "5*bvudiv_i(IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

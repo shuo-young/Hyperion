@@ -1,0 +1,62 @@
+{
+    "dapp_name": "MYST Finance",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 33853053,
+    "address": "0xC302fFda1A64a2339A1720F0E238349F3c941E12",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.03,
+                0.0075,
+                0.03
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            500
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "28 days",
+                "60 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "dapp_name": "PepePal PepeDex",
+    "total_func": 25,
+    "analyzed_func": 17,
+    "block_num": 18654182,
+    "address": "0x724F7c8a9Cb973Ee7C0689a643D29908bC3865b5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            6666666
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "30 days",
+                "30 days",
+                "30 days",
+                "30 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x5b0d5984": {
+            "0x31200x2033S0x1649": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xaf2979eb": {
+            "0x31200x91c": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

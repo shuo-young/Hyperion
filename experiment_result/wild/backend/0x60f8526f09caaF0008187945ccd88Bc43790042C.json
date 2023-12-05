@@ -1,0 +1,41 @@
+{
+    "dapp_name": "DeversiFi",
+    "total_func": 25,
+    "analyzed_func": 5,
+    "block_num": 18660315,
+    "address": "0x60f8526f09caaF0008187945ccd88Bc43790042C",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            109419367166001644579
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xd9ee369a": {
+            "0xfde": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0xef2": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

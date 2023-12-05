@@ -1,0 +1,33 @@
+{
+    "dapp_name": "CryptoMibs",
+    "total_func": 17,
+    "analyzed_func": 2,
+    "block_num": 18672361,
+    "address": "0xd5433b0bb67661f63c10fc127a9b0c895c10e76f",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x50fS0x185": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

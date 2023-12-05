@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Dimension X",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18642220,
+    "address": "0x8918ba30e2e76b503e83d55eb08936b0f979eec4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

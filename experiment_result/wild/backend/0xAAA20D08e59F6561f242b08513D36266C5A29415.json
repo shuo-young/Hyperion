@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Ramses Exchange",
+    "total_func": 7,
+    "analyzed_func": 0,
+    "block_num": 154275985,
+    "address": "0xAAA20D08e59F6561f242b08513D36266C5A29415",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

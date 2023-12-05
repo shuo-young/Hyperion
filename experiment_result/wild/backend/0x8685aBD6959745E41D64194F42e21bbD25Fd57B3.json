@@ -1,0 +1,41 @@
+{
+    "dapp_name": "HunnySwap",
+    "total_func": 30,
+    "analyzed_func": 17,
+    "block_num": 38236611,
+    "address": "0x8685aBD6959745E41D64194F42e21bbD25Fd57B3",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xaf2979eb": {
+            "0x33a20x9c5": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x5b0d5984": {
+            "0x33a20x2209S0x1710": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

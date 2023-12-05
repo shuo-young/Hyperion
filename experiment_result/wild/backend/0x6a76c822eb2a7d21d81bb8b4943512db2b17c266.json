@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Dozerbird",
+    "total_func": 8,
+    "analyzed_func": 1,
+    "block_num": 18672450,
+    "address": "0x6a76c822eb2a7d21d81bb8b4943512db2b17c266",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x3f3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

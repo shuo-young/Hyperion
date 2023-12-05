@@ -1,0 +1,65 @@
+{
+    "dapp_name": "Pololinks",
+    "total_func": 9,
+    "analyzed_func": 2,
+    "block_num": 50451803,
+    "address": "0x71502c52e46b364227d57b6e7b502256179e6704",
+    "platform": "Polygon",
+    "reward": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x77e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(231481*\n         Ia_store-some_var_1-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_1-),\n         10000000000000)"
+                ]
+            ],
+            "0x50d": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "2*Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        },
+        "0xa0ffed2f": {
+            "0x77e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(231481*\n         Ia_store-some_var_1-*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_1-),\n         10000000000000)"
+                ]
+            ],
+            "0x50d": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "2*Ia_store-some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xa0ffed2f": {
+            "0x1418S0x11a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(7*Id_1, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(3*Id_1, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

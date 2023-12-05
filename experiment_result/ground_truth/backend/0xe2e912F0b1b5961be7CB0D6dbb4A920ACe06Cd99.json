@@ -1,0 +1,26 @@
+{
+    "dapp_name": "BNB Casino",
+    "total_func": 21,
+    "analyzed_func": 3,
+    "block_num": 34078344,
+    "address": "0xe2e912F0b1b5961be7CB0D6dbb4A920ACe06Cd99",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Dark Country",
+    "total_func": 30,
+    "analyzed_func": 3,
+    "block_num": 18672437,
+    "address": "0x9443C1baADf34ABD84B8509EE1f4104DC1E5D2aE",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            45
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

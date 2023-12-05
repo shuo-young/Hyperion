@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Art Gobblers",
+    "total_func": 65,
+    "analyzed_func": 1,
+    "block_num": 18640730,
+    "address": "0x60bb1e2AA1c9ACAfB4d34F71585D7e959f387769",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Trader Joe",
+    "total_func": 26,
+    "analyzed_func": 9,
+    "block_num": 18658069,
+    "address": "0x9A93a421b74F1c5755b83dD2C211614dC419C44b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

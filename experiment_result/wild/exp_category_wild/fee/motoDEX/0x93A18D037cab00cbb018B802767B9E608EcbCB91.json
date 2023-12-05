@@ -1,0 +1,93 @@
+{
+    "dapp_name": "motoDEX",
+    "total_func": 96,
+    "analyzed_func": 15,
+    "block_num": 50339959,
+    "address": "0x93A18D037cab00cbb018B802767B9E608EcbCB91",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x1f274fc0": {
+            "0x3782": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-11-))",
+                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_39-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_77-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_115-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_143-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_171-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_199-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_227-))",
+                    "bvudiv_i(Ia_store-12-*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            4
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": true,
+        "metadata": false
+    }
+}

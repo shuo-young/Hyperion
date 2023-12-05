@@ -1,0 +1,45 @@
+{
+    "dapp_name": "Uniswap V3",
+    "total_func": 27,
+    "analyzed_func": 4,
+    "block_num": 18659673,
+    "address": "0x9a772018FbD77fcD2d25657e5C547BAfF3Fd7D16",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x128acb08": {
+            "0x3c35": [
+                [
+                    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_32 + mem_64"
+                ],
+                [
+                    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nId_3 +\nmem_mem_64"
+                ],
+                [
+                    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_32 + mem_64"
+                ],
+                [
+                    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+                    "115792089237316195423570985008687907853269984665640564039457584007913129639935*\nId_3 +\nmem_mem_64"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

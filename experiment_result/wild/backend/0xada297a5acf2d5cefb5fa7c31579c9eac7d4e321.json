@@ -1,0 +1,35 @@
+{
+    "dapp_name": "CreasureQuest",
+    "total_func": 21,
+    "analyzed_func": 1,
+    "block_num": 18672232,
+    "address": "0xada297a5acf2d5cefb5fa7c31579c9eac7d4e321",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xdc39d06d": {
+            "0x14e1": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

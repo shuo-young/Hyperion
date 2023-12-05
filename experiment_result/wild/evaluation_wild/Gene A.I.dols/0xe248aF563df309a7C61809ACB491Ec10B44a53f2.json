@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Gene A.I.dols",
+    "total_func": 27,
+    "analyzed_func": 2,
+    "block_num": 18673693,
+    "address": "0xe248aF563df309a7C61809ACB491Ec10B44a53f2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x00000000": {
+            "0x3d6": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "Ia_store-2-*bvudiv_i(Iv, Ia_store-2-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xc0ee0b8a": {
+            "0x147d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "dapp_name": "XY Finance",
+    "total_func": 19,
+    "analyzed_func": 2,
+    "block_num": 33848026,
+    "address": "0x666666661f9B6D8c581602AAa2f76cbead06C401",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.37
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            28337293479280430780440
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "3 years",
+                "2 years",
+                "1.5 years",
+                "3 years",
+                "3 years"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

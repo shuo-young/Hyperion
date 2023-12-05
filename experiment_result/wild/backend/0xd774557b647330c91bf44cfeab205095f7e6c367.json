@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Nakamigos",
+    "total_func": 70,
+    "analyzed_func": 4,
+    "block_num": 18640730,
+    "address": "0xd774557b647330c91bf44cfeab205095f7e6c367",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0,
+            20000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x13d6S0x6c7": [
+                [
+                    "0xfca634387cd89128116b80e04c6352a4e7c5a40c",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Gutter Rats",
+    "total_func": 26,
+    "analyzed_func": 2,
+    "block_num": 18622343,
+    "address": "0xd7b397edad16ca8111ca4a3b832d0a5e3ae2438c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xab7S0x27b": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x17ffc320": {
+            "0x78fS0x235": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

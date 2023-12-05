@@ -1,0 +1,25 @@
+{
+    "dapp_name": "BondAppetit",
+    "total_func": 10,
+    "analyzed_func": 2,
+    "block_num": 18670402,
+    "address": "0x37d3faca3177d7136701aeb946a5a62104064056",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

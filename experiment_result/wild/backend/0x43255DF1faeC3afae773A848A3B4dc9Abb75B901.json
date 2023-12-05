@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Defira",
+    "total_func": 43,
+    "analyzed_func": 2,
+    "block_num": 11296030,
+    "address": "0x43255DF1faeC3afae773A848A3B4dc9Abb75B901",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

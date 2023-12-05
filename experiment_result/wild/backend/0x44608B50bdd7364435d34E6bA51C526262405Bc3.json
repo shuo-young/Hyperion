@@ -1,0 +1,63 @@
+{
+    "dapp_name": "BNB FarmX",
+    "total_func": 31,
+    "analyzed_func": 2,
+    "block_num": 33855203,
+    "address": "0x44608B50bdd7364435d34E6bA51C526262405Bc3",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0x16deS0xaaa": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "bvudiv_i(40*Iv, 1000)"
+                ]
+            ],
+            "0x1719S0xaaa": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(40*Iv, 1000)"
+                ]
+            ],
+            "0x1754S0xaaa": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(40*Iv, 1000)"
+                ]
+            ],
+            "0xee4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "bvudiv_i(bvudiv_i(80*Iv, 1000), 3)"
+                ]
+            ],
+            "0xf27": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(bvudiv_i(80*Iv, 1000), 3)"
+                ]
+            ],
+            "0xf6a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(bvudiv_i(80*Iv, 1000), 3)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "TreeDefi",
+    "total_func": 35,
+    "analyzed_func": 3,
+    "block_num": 33838924,
+    "address": "0xa9a438b8b2e41b3bf322dba139af9490dc226953",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x441a3e70": {
+            "0x2cff": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

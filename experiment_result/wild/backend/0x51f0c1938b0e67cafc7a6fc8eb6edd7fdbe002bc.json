@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Fragments By James Jean",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18641868,
+    "address": "0x51f0c1938b0e67cafc7a6fc8eb6edd7fdbe002bc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

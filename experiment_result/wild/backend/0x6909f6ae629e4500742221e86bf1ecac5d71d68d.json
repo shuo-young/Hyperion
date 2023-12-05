@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Ether Legends",
+    "total_func": 65,
+    "analyzed_func": 7,
+    "block_num": 18673554,
+    "address": "0x6909f6ae629e4500742221e86bf1ecac5d71d68d",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x5e5144eb": {
+            "0x3dc0": [
+                [
+                    "Is",
+                    "bvudiv_i(mem_mem_64*Concat(0, Extract(63, 0, some_var_29)),\n         1000000)"
+                ]
+            ]
+        },
+        "0x2a2e2f0c": {
+            "0x3dc0": [
+                [
+                    "Is",
+                    "bvudiv_i(mem_mem_64*Concat(0, Extract(63, 0, some_var_29)),\n         1000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

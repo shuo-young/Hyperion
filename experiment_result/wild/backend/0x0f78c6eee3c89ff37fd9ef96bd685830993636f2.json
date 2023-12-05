@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Nuclear Nerds V2",
+    "total_func": 48,
+    "analyzed_func": 4,
+    "block_num": 18642133,
+    "address": "0x0f78c6eee3c89ff37fd9ef96bd685830993636f2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            8999
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x10bcS0x4db": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

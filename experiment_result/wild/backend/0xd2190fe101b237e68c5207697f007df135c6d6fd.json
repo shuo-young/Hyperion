@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Cubego",
+    "total_func": 34,
+    "analyzed_func": 2,
+    "block_num": 18672431,
+    "address": "0xd2190fe101b237e68c5207697f007df135c6d6fd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Envelop wrapper",
+    "total_func": 3,
+    "analyzed_func": 1,
+    "block_num": 18661854,
+    "address": "0x6664c8118284b3F5ECB47c2105cAa544Ab0Cf75B",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x28012aef": {
+            "0x46fS0x37eS0x2a7S0x247": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_3 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_3*Id_4, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

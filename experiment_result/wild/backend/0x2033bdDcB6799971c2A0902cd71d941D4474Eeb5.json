@@ -1,0 +1,35 @@
+{
+    "dapp_name": "BitCereal",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 50450964,
+    "address": "0x2033bdDcB6799971c2A0902cd71d941D4474Eeb5",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "0x5b88349d": {
+            "0x13e3S0x471": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(150000000000000000000000*Iv, 1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            50000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

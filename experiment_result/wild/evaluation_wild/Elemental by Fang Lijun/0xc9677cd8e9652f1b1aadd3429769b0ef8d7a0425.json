@@ -1,0 +1,55 @@
+{
+    "dapp_name": "Elemental by Fang Lijun",
+    "total_func": 60,
+    "analyzed_func": 5,
+    "block_num": 18641807,
+    "address": "0xc9677cd8e9652f1b1aadd3429769b0ef8d7a0425",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            2022
+        ],
+        "unlimited": false,
+        "ui": [
+            2022
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

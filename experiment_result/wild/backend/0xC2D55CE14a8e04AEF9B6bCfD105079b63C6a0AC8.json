@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Value DeFi Protocol",
+    "total_func": 59,
+    "analyzed_func": 5,
+    "block_num": 18672025,
+    "address": "0xC2D55CE14a8e04AEF9B6bCfD105079b63C6a0AC8",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

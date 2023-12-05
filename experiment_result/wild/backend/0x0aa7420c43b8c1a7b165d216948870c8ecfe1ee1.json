@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Thingdoms NFT Official",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18641907,
+    "address": "0x0aa7420c43b8c1a7b165d216948870c8ecfe1ee1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

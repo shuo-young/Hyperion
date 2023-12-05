@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Samurai Quest",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18662034,
+    "address": "0xfb0c615d6ff3ba8079574592c70de9a95c0429c4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

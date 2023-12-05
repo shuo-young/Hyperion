@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SnailTree",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 18662035,
+    "address": "0x1199e1c21c89bf9653dc2996fed7168a6b587655",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

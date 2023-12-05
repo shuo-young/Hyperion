@@ -1,0 +1,47 @@
+{
+    "dapp_name": "Saffron",
+    "total_func": 43,
+    "analyzed_func": 5,
+    "block_num": 18671677,
+    "address": "0x70D8682DDdD33571722D14aa327049DaD869AEE9",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2b666fcf": {
+            "0x4cbcS0x4b3aS0x4932S0x4693B0x193d": [
+                [
+                    "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x1681a62": {
+            "0x4cbcS0x4b3aS0x4932S0x4693B0xa35": [
+                [
+                    "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x4cbcS0x4b3aS0x4932S0x4693B0xafa": [
+                [
+                    "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

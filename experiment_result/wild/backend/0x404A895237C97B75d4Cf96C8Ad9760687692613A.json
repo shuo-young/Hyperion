@@ -1,0 +1,25 @@
+{
+    "dapp_name": "KwikSwap Protocol",
+    "total_func": 20,
+    "analyzed_func": 12,
+    "block_num": 18651529,
+    "address": "0x404A895237C97B75d4Cf96C8Ad9760687692613A",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

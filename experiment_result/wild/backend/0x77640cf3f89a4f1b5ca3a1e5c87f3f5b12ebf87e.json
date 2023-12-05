@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Angry Ape Army",
+    "total_func": 44,
+    "analyzed_func": 8,
+    "block_num": 18642041,
+    "address": "0x77640cf3f89a4f1b5ca3a1e5c87f3f5b12ebf87e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x853828b6": {
+            "0x14a2S0x611": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "bvudiv_i(9000*IH_b, 10000)"
+                ]
+            ],
+            "0x1545S0x611": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(9000*IH_b, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            3333
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

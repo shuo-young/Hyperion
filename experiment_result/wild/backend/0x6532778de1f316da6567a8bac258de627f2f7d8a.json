@@ -1,0 +1,25 @@
+{
+    "dapp_name": "HyperSnakes",
+    "total_func": 4,
+    "analyzed_func": 0,
+    "block_num": 18673699,
+    "address": "0x6532778de1f316da6567a8bac258de627f2f7d8a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

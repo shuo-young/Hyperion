@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Universo Ancestral",
+    "total_func": 8,
+    "analyzed_func": 1,
+    "block_num": 33857395,
+    "address": "0x1e3215c61cb254393620c31dd15e67d278466ab3",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x86d1a69f": {
+            "0x697S0x5a6S0x4d4S0x42dS0x31c": [
+                [
+                    "0xb45f9d19b909b3aca532726732efe390e988360",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

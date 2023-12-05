@@ -1,0 +1,33 @@
+{
+    "dapp_name": "GMX",
+    "total_func": 39,
+    "analyzed_func": 4,
+    "block_num": 38232284,
+    "address": "0xB70B91CE0771d3f4c81D87660f71Da31d48eB3B3",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": true,
+        "0x30b70002": {
+            "0x3ce2": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "2*mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

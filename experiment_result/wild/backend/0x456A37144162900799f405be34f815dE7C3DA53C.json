@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Maverick Protocol",
+    "total_func": 13,
+    "analyzed_func": 0,
+    "block_num": 18651827,
+    "address": "0x456A37144162900799f405be34f815dE7C3DA53C",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

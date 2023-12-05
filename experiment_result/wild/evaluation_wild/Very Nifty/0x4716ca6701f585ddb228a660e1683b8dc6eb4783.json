@@ -1,0 +1,65 @@
+{
+    "dapp_name": "Very Nifty",
+    "total_func": 13,
+    "analyzed_func": 1,
+    "block_num": 18674632,
+    "address": "0x4716ca6701f585ddb228a660e1683b8dc6eb4783",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "several days",
+                "several days",
+                "3-5 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x9051cce9": {
+            "0xc60": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

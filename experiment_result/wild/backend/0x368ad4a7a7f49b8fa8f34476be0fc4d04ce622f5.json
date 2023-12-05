@@ -1,0 +1,35 @@
+{
+    "dapp_name": "OG:Crystals",
+    "total_func": 43,
+    "analyzed_func": 7,
+    "block_num": 18642191,
+    "address": "0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10301
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x10daS0x4fc": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

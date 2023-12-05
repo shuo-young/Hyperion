@@ -1,0 +1,43 @@
+{
+    "dapp_name": "yearn.finance (YFI)",
+    "total_func": 35,
+    "analyzed_func": 5,
+    "block_num": 18659860,
+    "address": "0xb01419E74D8a2abb1bbAD82925b19c36C191A701",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x3d18b912": {
+            "0x2a81S0x24b7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_3-*\n         (Ia_store-12- +\n          bvudiv_i(1000000000000000000*\n                   Ia_store-10-*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   Ia_store-1-) +\n          bvudiv_i(0, Ia_store-1-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_2-),\n         1000000000000000000) +\nIa_store-some_var_1-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_20-*\n         (Ia_store-12- +\n          bvudiv_i(1000000000000000000*\n                   Ia_store-10-*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   Ia_store-1-) +\n          bvudiv_i(0, Ia_store-1-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_19-),\n         1000000000000000000) +\nIa_store-some_var_18-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_33-*bvudiv_i(0, Ia_store-1-),\n         1000000000000000000) +\nbvudiv_i(Ia_store-some_var_33-*\n         (Ia_store-12- +\n          bvudiv_i(1000000000000000000*\n                   Ia_store-10-*\n                   (IH_s +\n                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                    Ia_store-11-),\n                   Ia_store-1-) +\n          bvudiv_i(0, Ia_store-1-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-some_var_32-),\n         1000000000000000000) +\nIa_store-some_var_31-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            8126490793627619726
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

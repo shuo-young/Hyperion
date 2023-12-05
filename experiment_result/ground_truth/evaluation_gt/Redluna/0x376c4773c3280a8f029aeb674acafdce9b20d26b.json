@@ -1,0 +1,81 @@
+{
+    "dapp_name": "Redluna",
+    "total_func": 47,
+    "analyzed_func": 3,
+    "block_num": 34078814,
+    "address": "0x376c4773c3280a8f029aeb674acafdce9b20d26b",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.13,
+                0.1,
+                0.03,
+                0.03,
+                0.1,
+                0.03
+            ],
+            "fees": {
+                "buy": 0.13,
+                "sell": 0.1,
+                "dev": 0.03
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": true,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0xe083e922": {
+            "0x320d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x484ed334": {
+            "0x1cbfS0x7b4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": true,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

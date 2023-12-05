@@ -1,0 +1,33 @@
+{
+    "dapp_name": "RomeDAO",
+    "total_func": 36,
+    "analyzed_func": 3,
+    "block_num": 5615540,
+    "address": "0xE2F71c68db7ECC0c9A907AD2E40E2394c5CAc367",
+    "platform": "Moonriver",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x1feed31f": {
+            "0x1f6a": [
+                [
+                    "0x4a436073552044d5f2f49b176853ad3ad473d9d6",
+                    "bvudiv_i(mem_mem_64*\n         bvudiv_i(10000*IH_i +\n                  115792089237316195423570985008687907853269984665640564039457584007913129629936*\n                  Ia_store-2 + some_var_1-,\n                  mem_32 + mem_64),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

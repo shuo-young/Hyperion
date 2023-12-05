@@ -1,0 +1,25 @@
+{
+    "dapp_name": "PerlinX",
+    "total_func": 52,
+    "analyzed_func": 5,
+    "block_num": 18654190,
+    "address": "0x5Fa19F612dfd39e6754Bb2E8300E681d1C589Dd4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

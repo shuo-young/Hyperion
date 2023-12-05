@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Synapse",
+    "total_func": 13,
+    "analyzed_func": 0,
+    "block_num": 18657898,
+    "address": "0x809DC529f07651bD43A172e8dB6f4a7a0d771036",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

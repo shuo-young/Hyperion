@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Token Locker",
+    "total_func": 8,
+    "analyzed_func": 5,
+    "block_num": 18671972,
+    "address": "0x4ADFF2F8Da3FCDc80dc2f1e6f32c2B26baA27048",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0x949083b": {
+            "0x260": [
+                [
+                    "Is",
+                    "Ia_store-some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-3 + some_var_2-*\nbvudiv_i(Ia_store-some_var_2-, 100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

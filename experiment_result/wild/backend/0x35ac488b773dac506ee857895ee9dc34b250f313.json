@@ -1,0 +1,27 @@
+{
+    "dapp_name": "SGEM",
+    "total_func": 48,
+    "analyzed_func": 7,
+    "block_num": 18673838,
+    "address": "0x35ac488b773dac506ee857895ee9dc34b250f313",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": true
+    },
+    "supply": {
+        "amount": [
+            800000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

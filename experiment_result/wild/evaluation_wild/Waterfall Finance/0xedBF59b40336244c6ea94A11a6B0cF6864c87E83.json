@@ -1,0 +1,71 @@
+{
+    "dapp_name": "Waterfall Finance",
+    "total_func": 46,
+    "analyzed_func": 4,
+    "block_num": 154582031,
+    "address": "0xedBF59b40336244c6ea94A11a6B0cF6864c87E83",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x23b872dd": {
+            "0x3c40": [
+                [
+                    "0x568e084dcb739ebae4d1b547b84dfdeec06ebbb",
+                    "bvudiv_i(20*IH_b, 100)"
+                ]
+            ]
+        },
+        "0xa9059cbb": {
+            "0x3c40": [
+                [
+                    "0x568e084dcb739ebae4d1b547b84dfdeec06ebbb",
+                    "bvudiv_i(20*IH_b, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            80000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": [
+            70954
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

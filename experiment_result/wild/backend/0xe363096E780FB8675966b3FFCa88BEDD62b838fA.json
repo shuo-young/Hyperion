@@ -1,0 +1,27 @@
+{
+    "dapp_name": "TukTuk Finance",
+    "total_func": 41,
+    "analyzed_func": 3,
+    "block_num": 33839015,
+    "address": "0xe363096E780FB8675966b3FFCa88BEDD62b838fA",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            22072677740885480324153924
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

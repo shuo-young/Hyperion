@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Linear Finance",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 18671542,
+    "address": "0xeEA988387700dB4e163cd72D8d4A6994af31EeB1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

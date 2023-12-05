@@ -1,0 +1,35 @@
+{
+    "dapp_name": "PoWEth",
+    "total_func": 36,
+    "analyzed_func": 1,
+    "block_num": 18660979,
+    "address": "0x2ee6d1a3ba4e80a61bdfb48a90d40a5cef455326",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xdc39d06d": {
+            "0x1b43": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

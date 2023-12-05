@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Something Token",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18641930,
+    "address": "0x05e7f2499ff153fea2f20bbde0b5584c911c0af1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

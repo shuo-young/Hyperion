@@ -1,0 +1,41 @@
+{
+    "dapp_name": "Galaxy.Credit",
+    "total_func": 27,
+    "analyzed_func": 3,
+    "block_num": 18671337,
+    "address": "0xA264b1ba331b5b4708b887517C13d9Af16082e43",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe2bbb158": {
+            "0x2434": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x441a3e70": {
+            "0x2434": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

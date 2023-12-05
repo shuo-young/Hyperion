@@ -1,0 +1,97 @@
+{
+    "dapp_name": "Yield Farming Wallet",
+    "total_func": 15,
+    "analyzed_func": 4,
+    "block_num": 33857407,
+    "address": "0x2a816D9A8C33c78A2f6d093f3A868F4Bdd958235",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x00000000": {
+            "0x609": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Iv*some_var_2, Ia_store-4-)"
+                ]
+            ],
+            "0xc11": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvurem_i(Iv*some_var_3, Ia_store-4-)"
+                ]
+            ]
+        },
+        "0x7e72fb52": {
+            "0x609": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Iv*some_var_2, Ia_store-4-)"
+                ]
+            ],
+            "0xc11": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvurem_i(Iv*some_var_3, Ia_store-4-)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            800000000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x9b9S0x144": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0x853828b6": {
+            "0xad9S0x1f4": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

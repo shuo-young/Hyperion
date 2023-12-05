@@ -1,0 +1,28 @@
+{
+    "dapp_name": "baby bnb tiger",
+    "total_func": 63,
+    "analyzed_func": 3,
+    "block_num": 34078230,
+    "address": "0x5a04565ee1c90c84061ad357ae9e2f1c32d57dc6",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000000000000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

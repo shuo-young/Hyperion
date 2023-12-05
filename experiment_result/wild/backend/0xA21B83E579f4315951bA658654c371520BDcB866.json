@@ -1,0 +1,41 @@
+{
+    "dapp_name": "GMX",
+    "total_func": 44,
+    "analyzed_func": 7,
+    "block_num": 38232041,
+    "address": "0xA21B83E579f4315951bA658654c371520BDcB866",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xb32755de": {
+            "0x4c42S0x4a23S0x43ccS0x38eb0x975": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Iv*\n         (10000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-7-),\n         10000)"
+                ]
+            ]
+        },
+        "0xb7ddc992": {
+            "0x4c42S0x4a23S0x43ccS0x38eb0xa38": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Id_4*\n         (10000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-7-),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,76 @@
+{
+    "dapp_name": "Los Muertos (Collection)",
+    "total_func": 39,
+    "analyzed_func": 4,
+    "block_num": 18641746,
+    "address": "0xc878671ff88f1374d2186127573e4a63931370fc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x3ccfd60b": {
+            "0xceeS0x3a1": [
+                [
+                    "0x41cb566727d7531658e5993cd61dd75581716851",
+                    "bvudiv_i(94*IH_b, 100)"
+                ]
+            ],
+            "0xda0S0x3a1": [
+                [
+                    "0x44230c74e406d5690333ba81b198441bcf02cec8",
+                    "bvudiv_i(3*IH_b, 100)"
+                ]
+            ],
+            "0xe52S0x3a1": [
+                [
+                    "0xfa9a358b821f4b4a1b5ac2e0c594bb3f860afbd8",
+                    "bvudiv_i(3*IH_b, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10001,
+            0
+        ],
+        "unlimited": false,
+        "ui": [
+            10000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "ipfs",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

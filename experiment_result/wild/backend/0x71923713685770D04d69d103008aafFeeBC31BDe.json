@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Ferro Protocol",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 11312473,
+    "address": "0x71923713685770D04d69d103008aafFeeBC31BDe",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

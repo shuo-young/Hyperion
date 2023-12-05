@@ -1,0 +1,57 @@
+{
+    "dapp_name": "Sweat Economy",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18643192,
+    "address": "0xb4b9dc1c77bdbb135ea907fd5a08094d98883a35",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            10300000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "3 years"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

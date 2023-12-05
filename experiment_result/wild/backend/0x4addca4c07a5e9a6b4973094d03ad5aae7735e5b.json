@@ -1,0 +1,35 @@
+{
+    "dapp_name": "(B)APETAVERSE",
+    "total_func": 50,
+    "analyzed_func": 3,
+    "block_num": 18641409,
+    "address": "0x4addca4c07a5e9a6b4973094d03ad5aae7735e5b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x12c7S0x56f": [
+                [
+                    "0xfc4bf9d0ab489e7684ab0e06d33b8e2257d8ff60",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

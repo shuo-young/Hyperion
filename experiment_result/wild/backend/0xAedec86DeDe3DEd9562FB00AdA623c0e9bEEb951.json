@@ -1,0 +1,33 @@
+{
+    "dapp_name": "PieDAO",
+    "total_func": 31,
+    "analyzed_func": 6,
+    "block_num": 18671653,
+    "address": "0xAedec86DeDe3DEd9562FB00AdA623c0e9bEEb951",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x896f1a95": {
+            "0x1539S0x555": [
+                [
+                    "0xaf2fe0d4fe879066b2baa68d9e56cc375df22815",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

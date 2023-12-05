@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Chain Games",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18672120,
+    "address": "0xeD41E80558419f4aEA0fba8873664C35da1096d3",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

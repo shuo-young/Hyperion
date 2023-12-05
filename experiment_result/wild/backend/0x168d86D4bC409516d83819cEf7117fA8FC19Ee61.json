@@ -1,0 +1,57 @@
+{
+    "dapp_name": "Bad Idea AI",
+    "total_func": 19,
+    "analyzed_func": 2,
+    "block_num": 18661732,
+    "address": "0x168d86D4bC409516d83819cEf7117fA8FC19Ee61",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xad24528": {
+            "0xb1f": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-1 + 7*Id_1 + some_var_4-*\n         Ia_store-8-*\n         some_var_12*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-7*Id_1 + some_var_4-)*\n         Concat(0, Extract(191, 176, Ia_store-3-)),\n         3153600000*Ia_store-7-*some_var_8)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-1 + 7*Id_1 + some_var_4-*\n         Ia_store-8-*\n         some_var_48*\n         (IH_s +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-7*Id_1 + some_var_4-)*\n         Concat(0, Extract(191, 176, Ia_store-3-)),\n         3153600000*Ia_store-7-*some_var_44)"
+                ]
+            ],
+            "0x928": [
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-1 + 7*Id_1 + some_var_4-*\n                  (IH_s +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-7*Id_1 + some_var_4-)*\n                  Concat(0, Extract(175, 160, Ia_store-3-)),\n                  100),\n         31536000)"
+                ]
+            ],
+            "0x531": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-1 + 7*Id_1 + some_var_2- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-1 + 7*Id_1 + some_var_2-*\n         Concat(0, Extract(7, 0, Ia_store-5-)),\n         100)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xad24528": {
+            "0x5ce": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(Ia_store-1 + 7*Id_1 + some_var_2-*\n         Concat(0, Extract(7, 0, Ia_store-5-)),\n         100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,35 @@
+{
+    "dapp_name": "CryptoNinjaPartners",
+    "total_func": 64,
+    "analyzed_func": 3,
+    "block_num": 18641944,
+    "address": "0x138a5c693279b6cd82f48d4bef563251bc15adce",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            26667
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x1292": [
+                [
+                    "0xa2c099044c088a431b78a0d6bb5a137a5663297",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,61 @@
+{
+    "dapp_name": "POLYTRUSTV2",
+    "total_func": 33,
+    "analyzed_func": 3,
+    "block_num": 50452437,
+    "address": "0xF595DDe689d4Ce4e5928F140a4539e31c0D6BDfa",
+    "platform": "Polygon",
+    "reward": {
+        "warning": true,
+        "0x372500ab": {
+            "0xc89": [
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-102407538280218558175650617366741421990572744813161403407894353239866642134028-*\n                  Ia_store-16-,\n                  100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(Ia_store-some_var_3- +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-16-*Ia_store-some_var_10-, 100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(Ia_store-some_var_3- +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-15-*\n                  Ia_store-92458281274488595289803937127152923398167637295201432141969818930235769911599-,\n                  100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(Ia_store-some_var_3- +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-102407538280218558175650617366741421990572744813161403407894353239866642134028-*\n                  Ia_store-16-,\n                  100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(IH_s +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-16-*Ia_store-some_var_19-, 100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(IH_s +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-15-*\n                  Ia_store-92458281274488595289803937127152923398167637295201432141969818930235769911599-,\n                  100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(IH_s +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-16-*Ia_store-some_var_29-, 100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(IH_s +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(bvudiv_i(Ia_store-16-*Ia_store-some_var_38-, 100)*\n         bvudiv_i(bvudiv_i(bvudiv_i(Ia_store-some_var_3- +\n                                    115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                                    Ia_store-some_var_2-,\n                                    60),\n                           60),\n                  24),\n         1000) +\nIa_store-4 + some_var_1-"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

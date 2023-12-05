@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Dypius",
+    "total_func": 51,
+    "analyzed_func": 6,
+    "block_num": 18672701,
+    "address": "0x8A30Be7B2780b503ff27dBeaCdecC4Fe2587Af5d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

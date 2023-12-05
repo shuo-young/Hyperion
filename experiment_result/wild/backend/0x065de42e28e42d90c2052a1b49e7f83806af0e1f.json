@@ -1,0 +1,43 @@
+{
+    "dapp_name": "CroKing",
+    "total_func": 62,
+    "analyzed_func": 4,
+    "block_num": 11341152,
+    "address": "0x065de42e28e42d90c2052a1b49e7f83806af0e1f",
+    "platform": "Cronos",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            970000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xa9059cbb": {
+            "0x5776S0x45d9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x23b872dd": {
+            "0x5776S0x45d9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

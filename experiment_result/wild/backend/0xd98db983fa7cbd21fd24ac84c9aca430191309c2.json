@@ -1,0 +1,25 @@
+{
+    "dapp_name": "0xRacers",
+    "total_func": 6,
+    "analyzed_func": 1,
+    "block_num": 18672071,
+    "address": "0xd98db983fa7cbd21fd24ac84c9aca430191309c2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

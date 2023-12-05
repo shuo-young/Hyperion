@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Floki Shiba",
+    "total_func": 42,
+    "analyzed_func": 2,
+    "block_num": 33855368,
+    "address": "0x3dab450ee6451762e72647a05a205dd5697c5c2c",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": true,
+        "0x48c54b9d": {
+            "0x1a26S0x714": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Cubfinance",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 33804287,
+    "address": "0x50D809c74e0B8e49e7B4c65BB3109AbE3Ff4C1C1",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            31757405008993560089150220
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

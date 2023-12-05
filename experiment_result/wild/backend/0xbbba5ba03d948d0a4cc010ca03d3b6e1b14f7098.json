@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Crypto Multisender",
+    "total_func": 61,
+    "analyzed_func": 11,
+    "block_num": 18661771,
+    "address": "0xbbba5ba03d948d0a4cc010ca03d3b6e1b14f7098",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x24600fc3": {
+            "0xd4c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

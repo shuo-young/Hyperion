@@ -1,0 +1,41 @@
+{
+    "dapp_name": "DCup",
+    "total_func": 11,
+    "analyzed_func": 2,
+    "block_num": 18670703,
+    "address": "0x63901b3ce1e41b7e3eab6c16e025b357e28b8b2c",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xd2f7265a": {
+            "0xcfd": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-3-*mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x6fd42b32": {
+            "0x63b": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

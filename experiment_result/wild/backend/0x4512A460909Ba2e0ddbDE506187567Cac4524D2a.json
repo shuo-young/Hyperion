@@ -1,0 +1,69 @@
+{
+    "dapp_name": "Planet",
+    "total_func": 65,
+    "analyzed_func": 7,
+    "block_num": 33823601,
+    "address": "0x4512A460909Ba2e0ddbDE506187567Cac4524D2a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x36e9332d": {
+            "0x34b9S0x3396S0x31e9S0x2b2cB0x27cd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(Ia_store-17-*mem_mem_64, 10000)"
+                ]
+            ]
+        },
+        "0xd389800f": {
+            "0x34b9S0x3396S0x31e9S0x2b2cB0x2ff8": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-19-))",
+                    "bvudiv_i(Ia_store-18-*mem_mem_64, 10000)"
+                ]
+            ],
+            "0x34b9S0x3396S0x31e9S0x2b2cB0x27cd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(Ia_store-17-*mem_mem_64, 10000)"
+                ]
+            ]
+        },
+        "0xf3fef3a3": {
+            "0x34b9S0x3396S0x31e9S0x2b2cB0x27cd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(Ia_store-17-*mem_mem_64, 10000)"
+                ]
+            ]
+        },
+        "0x47e7ef24": {
+            "0x34b9S0x3396S0x31e9S0x2b2cB0x27cd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(Ia_store-17-*mem_mem_64, 10000)"
+                ]
+            ],
+            "0xd88": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "bvudiv_i(Id_2*\n         (10000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-23-),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

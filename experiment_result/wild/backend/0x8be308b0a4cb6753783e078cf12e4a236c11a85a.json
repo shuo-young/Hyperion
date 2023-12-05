@@ -1,0 +1,27 @@
+{
+    "dapp_name": "ShuttleOne",
+    "total_func": 40,
+    "analyzed_func": 1,
+    "block_num": 18671708,
+    "address": "0x8be308b0a4cb6753783e078cf12e4a236c11a85a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            86
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

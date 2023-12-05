@@ -1,0 +1,75 @@
+{
+    "dapp_name": "Bnbabylon",
+    "total_func": 11,
+    "analyzed_func": 3,
+    "block_num": 33855211,
+    "address": "0xbA1c2E3DbF96544A62Fe8A29Edf1baBe38C1c318",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x2e1a7d4d": {
+            "0x1268S0x137": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-9-*mem_mem_64, Ia_store-10-)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x6e553f65": {
+            "0x847S0x139aS0x195": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(Ia_store-7-*Iv, Ia_store-8-)"
+                ]
+            ]
+        },
+        "0x00000000": {
+            "0x847S0x37d6": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(Ia_store-7-*Iv, Ia_store-8-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Estfor Kingdom",
+    "total_func": 30,
+    "analyzed_func": 4,
+    "block_num": 71264716,
+    "address": "0x85dec8c4B2680793661bCA91a8F129607571863d",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            357824903534621411296415744
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

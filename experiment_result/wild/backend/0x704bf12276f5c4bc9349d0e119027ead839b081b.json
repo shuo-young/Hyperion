@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Timeless NFTs",
+    "total_func": 28,
+    "analyzed_func": 0,
+    "block_num": 18641918,
+    "address": "0x704bf12276f5c4bc9349d0e119027ead839b081b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

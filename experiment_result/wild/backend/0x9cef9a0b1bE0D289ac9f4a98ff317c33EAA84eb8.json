@@ -1,0 +1,67 @@
+{
+    "dapp_name": "Stargate",
+    "total_func": 62,
+    "analyzed_func": 8,
+    "block_num": 18656405,
+    "address": "0x9cef9a0b1bE0D289ac9f4a98ff317c33EAA84eb8",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x986b61a": {
+            "0x2c72": [
+                [
+                    "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+                    "1000000000000*\nbvudiv_i(Ia_store-14-*\n         bvudiv_i(Ia_store-21-*Ia_store-4-, Ia_store-14-),\n         Ia_store-4-)"
+                ]
+            ]
+        },
+        "0xbe310294": {
+            "0x2c72": [
+                [
+                    "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+                    "1000000000000*Ia_store-17-"
+                ]
+            ]
+        },
+        "0x902b8ab7": {
+            "0x2c72": [
+                [
+                    "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+                    "1000000000000*mem_64 + mem_64 + 1000000000000*mem_mem_64"
+                ]
+            ]
+        },
+        "0xb30daeac": {
+            "0x2c72": [
+                [
+                    "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+                    "1000000000000*Id_4"
+                ]
+            ]
+        },
+        "0x476efe40": {
+            "0x2c72": [
+                [
+                    "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+                    "1000000000000*Ia_store-18-"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            2379418328
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

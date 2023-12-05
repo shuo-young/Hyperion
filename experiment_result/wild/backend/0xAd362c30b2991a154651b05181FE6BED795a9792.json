@@ -1,0 +1,41 @@
+{
+    "dapp_name": "ScarySwap",
+    "total_func": 25,
+    "analyzed_func": 17,
+    "block_num": 71519071,
+    "address": "0xAd362c30b2991a154651b05181FE6BED795a9792",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xaf2979eb": {
+            "0x30740x8dc": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x5b0d5984": {
+            "0x30740x1fabS0x15e5": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

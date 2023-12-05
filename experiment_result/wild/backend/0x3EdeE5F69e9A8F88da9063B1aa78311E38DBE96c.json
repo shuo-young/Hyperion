@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Mushrooms Finance",
+    "total_func": 65,
+    "analyzed_func": 8,
+    "block_num": 18651952,
+    "address": "0x3EdeE5F69e9A8F88da9063B1aa78311E38DBE96c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xd389800f": {
+            "0x32e4S0x3200S0x30eaS0x2a04B0x1e54B0x905": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "bvudiv_i(Ia_store-9-*mem_mem_64, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            296913661176
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

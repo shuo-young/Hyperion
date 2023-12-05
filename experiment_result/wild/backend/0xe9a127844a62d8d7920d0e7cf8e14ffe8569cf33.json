@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Reality Clash",
+    "total_func": 51,
+    "analyzed_func": 7,
+    "block_num": 18673816,
+    "address": "0xe9a127844a62d8d7920d0e7cf8e14ffe8569cf33",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

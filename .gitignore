@@ -171,3 +171,5 @@ nlp/dataset
 /nlp/result
 
 hyperion_result
+
+.DS_Store

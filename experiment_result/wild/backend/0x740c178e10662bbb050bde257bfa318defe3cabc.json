@@ -1,0 +1,28 @@
+{
+    "dapp_name": "8liens NFT",
+    "total_func": 37,
+    "analyzed_func": 2,
+    "block_num": 18642187,
+    "address": "0x740c178e10662bbb050bde257bfa318defe3cabc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            10001,
+            206
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": null
+}

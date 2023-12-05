@@ -1,0 +1,47 @@
+{
+    "dapp_name": "PandExchange",
+    "total_func": 11,
+    "analyzed_func": 4,
+    "block_num": 154580035,
+    "address": "0xbeF28Aab3e70dFc5C69587eDf85694aD3138c187",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": true,
+        "0xc01907c8": {
+            "0x1580": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(100000*mem_256 + mem_64*mem_96 + mem_64,\n         10000000000)"
+                ]
+            ],
+            "0x14cd": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(100000*mem_256 + mem_64*mem_96 + mem_64,\n         10000000000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x963fa412": {
+            "0x1580": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(50000000*mem_32 + mem_64*mem_96 + mem_64,\n         10000000000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

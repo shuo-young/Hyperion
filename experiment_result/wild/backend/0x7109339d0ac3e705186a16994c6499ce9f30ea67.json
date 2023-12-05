@@ -1,0 +1,59 @@
+{
+    "dapp_name": "Unifi Protocol",
+    "total_func": 70,
+    "analyzed_func": 10,
+    "block_num": 18658481,
+    "address": "0x7109339d0ac3e705186a16994c6499ce9f30ea67",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0x8ed05978": {
+            "0x2a95": [
+                [
+                    "Is",
+                    "bvudiv_i(Id_1*balance_1, Id_1 + mem_mem_64) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-10-*\n         bvudiv_i(Id_1*balance_1, Id_1 + mem_mem_64),\n         Ia_store-14-)"
+                ]
+            ]
+        },
+        "0x2ef637a8": {
+            "0x1b29": [
+                [
+                    "Is",
+                    "bvudiv_i(Id_1*balance_2, Ia_store-28-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x2ef637a8": {
+            "0x1a5b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-21-*balance_2, Ia_store-14-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            923556280
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x19aa57e8": {
+            "0x10f0S0x49a": [
+                [
+                    "Is",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

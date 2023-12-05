@@ -1,0 +1,35 @@
+{
+    "dapp_name": "PREMINT Collector Pass",
+    "total_func": 43,
+    "analyzed_func": 4,
+    "block_num": 18641039,
+    "address": "0xe0176ba60efddb29cac5b15338c9962daee9de0c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0x9f93f779": {
+            "0x2569": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-16-))",
+                    "Ia_store-26-*Id_2"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": "http"
+}

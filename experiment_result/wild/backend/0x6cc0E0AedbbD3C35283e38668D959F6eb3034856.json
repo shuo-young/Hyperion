@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Dark Knight",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 71595174,
+    "address": "0x6cc0E0AedbbD3C35283e38668D959F6eb3034856",
+    "platform": "Fantom",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            267040414714465037009317652
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

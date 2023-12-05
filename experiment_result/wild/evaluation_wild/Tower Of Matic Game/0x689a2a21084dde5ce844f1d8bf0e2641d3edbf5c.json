@@ -1,0 +1,57 @@
+{
+    "dapp_name": "Tower Of Matic Game",
+    "total_func": 27,
+    "analyzed_func": 5,
+    "block_num": 50452890,
+    "address": "0x689a2a21084dde5ce844f1d8bf0e2641d3edbf5c",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "return": 0.15
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "0 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

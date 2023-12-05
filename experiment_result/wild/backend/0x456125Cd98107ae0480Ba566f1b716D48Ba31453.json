@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Ultimate Champions",
+    "total_func": 31,
+    "analyzed_func": 3,
+    "block_num": 18643233,
+    "address": "0x456125Cd98107ae0480Ba566f1b716D48Ba31453",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

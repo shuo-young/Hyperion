@@ -1,0 +1,149 @@
+{
+    "dapp_name": "The Sandbox",
+    "total_func": 18,
+    "analyzed_func": 3,
+    "block_num": 18674418,
+    "address": "0x6ce6267Fc45ABc6051aCee92BF2CC63DcC860A95",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xfb903fe4": {
+            "0xe8f": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7, mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0, mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7, mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0, mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0, mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0, mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(0,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ]
+            ]
+        },
+        "0x6e006a69": {
+            "0x7b1": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7, 1000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

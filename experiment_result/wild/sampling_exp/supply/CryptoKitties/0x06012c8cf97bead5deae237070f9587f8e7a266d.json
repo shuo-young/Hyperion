@@ -1,0 +1,68 @@
+{
+    "dapp_name": "CryptoKitties",
+    "total_func": 60,
+    "analyzed_func": 5,
+    "block_num": 18620624,
+    "address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x5fd8c710": {
+            "0x163fS0x6ba": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-14-*\n(1 + Ia_store-15-)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            2023476
+        ],
+        "unlimited": true,
+        "ui": [
+            2023384
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "1 month",
+                "Last Month"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": true,
+        "metadata": false
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "HedgePay",
+    "total_func": 53,
+    "analyzed_func": 4,
+    "block_num": 34078353,
+    "address": "0xc75aa1fa199eac5adabc832ea4522cff6dfd521a",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            145560668551870149733490335
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Move Stake",
+    "total_func": 20,
+    "analyzed_func": 4,
+    "block_num": 18660819,
+    "address": "0xb584D4bE1A5470CA1a8778E9B86c81e165204599",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9a21c64c": {
+            "0x1152S0xb72S0x385": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

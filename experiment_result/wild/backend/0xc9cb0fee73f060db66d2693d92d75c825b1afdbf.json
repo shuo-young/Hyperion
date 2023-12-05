@@ -1,0 +1,35 @@
+{
+    "dapp_name": "First First NFTs",
+    "total_func": 32,
+    "analyzed_func": 1,
+    "block_num": 18642169,
+    "address": "0xc9cb0fee73f060db66d2693d92d75c825b1afdbf",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            5000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xed88c68e": {
+            "0x4ebdS0x867": [
+                [
+                    "0xc7464dbca260a8faf033460622b23467df5aea42",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "base64"
+}

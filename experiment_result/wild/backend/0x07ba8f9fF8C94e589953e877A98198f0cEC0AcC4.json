@@ -1,0 +1,25 @@
+{
+    "dapp_name": "MCVerse",
+    "total_func": 50,
+    "analyzed_func": 3,
+    "block_num": 38184876,
+    "address": "0x07ba8f9fF8C94e589953e877A98198f0cEC0AcC4",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Shareverse",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 33779029,
+    "address": "0x9677bE3ca5ee3F5973D91FF053F0BA1eCa59809F",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

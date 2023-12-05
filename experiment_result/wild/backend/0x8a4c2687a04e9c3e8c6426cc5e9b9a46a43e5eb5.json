@@ -1,0 +1,27 @@
+{
+    "dapp_name": "0xMultiply",
+    "total_func": 13,
+    "analyzed_func": 2,
+    "block_num": 18661655,
+    "address": "0x8a4c2687a04e9c3e8c6426cc5e9b9a46a43e5eb5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

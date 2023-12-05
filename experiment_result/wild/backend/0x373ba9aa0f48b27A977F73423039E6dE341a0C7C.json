@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Connext",
+    "total_func": 13,
+    "analyzed_func": 0,
+    "block_num": 18647997,
+    "address": "0x373ba9aa0f48b27A977F73423039E6dE341a0C7C",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

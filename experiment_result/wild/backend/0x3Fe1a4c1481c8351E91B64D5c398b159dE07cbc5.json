@@ -1,0 +1,25 @@
+{
+    "dapp_name": "SupDucks",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18640735,
+    "address": "0x3Fe1a4c1481c8351E91B64D5c398b159dE07cbc5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

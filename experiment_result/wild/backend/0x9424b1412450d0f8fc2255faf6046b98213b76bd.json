@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Balancer",
+    "total_func": 7,
+    "analyzed_func": 1,
+    "block_num": 18646652,
+    "address": "0x9424b1412450d0f8fc2255faf6046b98213b76bd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x6ec16f8": {
+            "0x2aa": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

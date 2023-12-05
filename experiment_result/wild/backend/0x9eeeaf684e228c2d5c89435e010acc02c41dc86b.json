@@ -1,0 +1,35 @@
+{
+    "dapp_name": "Bricktopians V2",
+    "total_func": 51,
+    "analyzed_func": 9,
+    "block_num": 18642148,
+    "address": "0x9eeeaf684e228c2d5c89435e010acc02c41dc86b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            8324
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xb73c6ce9": {
+            "0x170dS0x785": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

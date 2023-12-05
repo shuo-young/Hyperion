@@ -1,0 +1,56 @@
+{
+    "dapp_name": "Lastland V2",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18661917,
+    "address": "0xb8e6D31e7B212b2b7250EE9c26C56cEBBFBe6B23",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "roi": 0.025,
+            "reward": 0.05
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            10600
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

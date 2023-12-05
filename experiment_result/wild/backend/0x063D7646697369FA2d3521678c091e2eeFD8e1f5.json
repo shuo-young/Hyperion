@@ -1,0 +1,35 @@
+{
+    "dapp_name": "SnowSwap",
+    "total_func": 35,
+    "analyzed_func": 6,
+    "block_num": 18671757,
+    "address": "0x063D7646697369FA2d3521678c091e2eeFD8e1f5",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            6805428238347933836096
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x8980f11f": {
+            "0x1b68S0x19c7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

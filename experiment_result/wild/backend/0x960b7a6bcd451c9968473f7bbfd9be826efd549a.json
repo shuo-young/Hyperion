@@ -1,0 +1,27 @@
+{
+    "dapp_name": "OnChainMonkey",
+    "total_func": 25,
+    "analyzed_func": 5,
+    "block_num": 18640989,
+    "address": "0x960b7a6bcd451c9968473f7bbfd9be826efd549a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            9500
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "base64"
+}

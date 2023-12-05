@@ -1,0 +1,53 @@
+{
+    "dapp_name": "Twindex",
+    "total_func": 10,
+    "analyzed_func": 0,
+    "block_num": 33839061,
+    "address": "0x4e66fda7820c53c1a2f601f84918c375205eac3e",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "profit": 0.2
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

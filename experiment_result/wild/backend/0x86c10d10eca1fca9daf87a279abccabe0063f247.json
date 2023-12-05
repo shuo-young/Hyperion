@@ -1,0 +1,33 @@
+{
+    "dapp_name": "Cool Pets NFT",
+    "total_func": 48,
+    "analyzed_func": 1,
+    "block_num": 18640696,
+    "address": "0x86c10d10eca1fca9daf87a279abccabe0063f247",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xc10S0x3d8": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}

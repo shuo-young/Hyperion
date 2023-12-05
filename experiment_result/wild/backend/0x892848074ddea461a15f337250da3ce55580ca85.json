@@ -1,0 +1,36 @@
+{
+    "dapp_name": "CyberBrokers",
+    "total_func": 34,
+    "analyzed_func": 4,
+    "block_num": 18640688,
+    "address": "0x892848074ddea461a15f337250da3ce55580ca85",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0,
+            10001
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x7d0S0x2d8": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,53 @@
+{
+    "dapp_name": "DDDX Protocol",
+    "total_func": 46,
+    "analyzed_func": 4,
+    "block_num": 33805898,
+    "address": "0x27d1ADf205872b13E9091d3E5EFCe6D975e3c1c4",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xbc25cf77": {
+            "0x232b0x6f6": [
+                [
+                    "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+                    "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-8-"
+                ]
+            ],
+            "0x232b0x1bf9S0x1c49": [
+                [
+                    "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+                    "mem_mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-"
+                ]
+            ]
+        },
+        "0x89afcb44": {
+            "0x232b0x227b": [
+                [
+                    "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            62100349415619489
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

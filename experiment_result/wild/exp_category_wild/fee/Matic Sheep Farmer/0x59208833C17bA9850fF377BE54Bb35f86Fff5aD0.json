@@ -1,0 +1,75 @@
+{
+    "dapp_name": "Matic Sheep Farmer",
+    "total_func": 26,
+    "analyzed_func": 2,
+    "block_num": 50451588,
+    "address": "0x59208833C17bA9850fF377BE54Bb35f86Fff5aD0",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false,
+        "0x54876921": {
+            "0x1444": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "1000000000000000*Id_1"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xf9b19733": {
+            "0x352bS0x23ce": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x54876921": {
+            "0x1444": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

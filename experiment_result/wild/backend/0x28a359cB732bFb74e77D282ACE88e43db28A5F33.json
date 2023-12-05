@@ -1,0 +1,25 @@
+{
+    "dapp_name": "ONESWAP",
+    "total_func": 11,
+    "analyzed_func": 1,
+    "block_num": 18671584,
+    "address": "0x28a359cB732bFb74e77D282ACE88e43db28A5F33",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

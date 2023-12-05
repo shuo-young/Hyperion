@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Chainbreakers",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 18672123,
+    "address": "0x23766996636058b41a041d441ce1217c694f5aa9",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

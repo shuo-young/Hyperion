@@ -1,0 +1,98 @@
+{
+    "dapp_name": "BullrunV3BSC",
+    "total_func": 60,
+    "analyzed_func": 11,
+    "block_num": 33855327,
+    "address": "0x1AdF0fBEE8D82c2Afc3DeEbb2A96bCDD30105450",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            300
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "10 days",
+                "10 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": true,
+        "0x8853b53e": {
+            "0x578b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_6"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_11"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_15"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_19"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_22"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_25"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_28"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_31"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_34"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}

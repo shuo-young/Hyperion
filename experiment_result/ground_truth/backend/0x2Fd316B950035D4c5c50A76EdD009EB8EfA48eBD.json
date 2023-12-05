@@ -1,0 +1,42 @@
+{
+    "dapp_name": "BUSD miner",
+    "total_func": 70,
+    "analyzed_func": 5,
+    "block_num": 34082149,
+    "address": "0x2Fd316B950035D4c5c50A76EdD009EB8EfA48eBD",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x412664ae": {
+            "0x1394S0x62b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-26-))",
+                    "Id_2"
+                ]
+            ]
+        },
+        "0x50baa622": {
+            "0x1dd5S0x70c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-26-))",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,27 @@
+{
+    "dapp_name": "CompliFi",
+    "total_func": 49,
+    "analyzed_func": 5,
+    "block_num": 18670446,
+    "address": "0xB9458b217214BedCdb0871d1B80865c6Fc6F6Fd0",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            246093895459321002506
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

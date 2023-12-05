@@ -1,0 +1,27 @@
+{
+    "dapp_name": "ZEDXION",
+    "total_func": 13,
+    "analyzed_func": 2,
+    "block_num": 18672071,
+    "address": "0xfbc4f3f645c4003a2e4f4e9b51077d2daa9a9341",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            4897558037000000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

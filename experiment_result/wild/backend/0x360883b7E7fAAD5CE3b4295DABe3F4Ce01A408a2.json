@@ -1,0 +1,35 @@
+{
+    "dapp_name": "NFT Solar",
+    "total_func": 34,
+    "analyzed_func": 1,
+    "block_num": 18670401,
+    "address": "0x360883b7E7fAAD5CE3b4295DABe3F4Ce01A408a2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            100000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xaa153bc9": {
+            "0xbf3S0x527": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

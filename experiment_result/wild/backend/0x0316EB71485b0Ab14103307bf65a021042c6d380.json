@@ -1,0 +1,27 @@
+{
+    "dapp_name": "H-Tokens",
+    "total_func": 25,
+    "analyzed_func": 2,
+    "block_num": 18650911,
+    "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1310136405509203350337200443017017656431716576843
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

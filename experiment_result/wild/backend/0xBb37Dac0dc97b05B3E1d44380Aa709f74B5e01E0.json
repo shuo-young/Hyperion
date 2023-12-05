@@ -1,0 +1,27 @@
+{
+    "dapp_name": "Soda",
+    "total_func": 29,
+    "analyzed_func": 2,
+    "block_num": 18671861,
+    "address": "0xBb37Dac0dc97b05B3E1d44380Aa709f74B5e01E0",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

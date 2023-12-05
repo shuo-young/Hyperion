@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Flip Coin",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 33852285,
+    "address": "0x2058f45afbf6dd9be1fff235ed8d24e04147aa7d",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

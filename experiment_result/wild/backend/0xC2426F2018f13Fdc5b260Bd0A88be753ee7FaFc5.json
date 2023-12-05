@@ -1,0 +1,49 @@
+{
+    "dapp_name": "Pandora Digital",
+    "total_func": 34,
+    "analyzed_func": 17,
+    "block_num": 33821418,
+    "address": "0xC2426F2018f13Fdc5b260Bd0A88be753ee7FaFc5",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xf305d719": {
+            "0x2537": [
+                [
+                    "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                    "bvudiv_i(Id_2*Concat(0, Extract(111, 0, mem_mem_64)),\n         Concat(0, Extract(111, 0, mem_mem_64)))"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xaf2979eb": {
+            "0x29c50x1923": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x5b0d5984": {
+            "0x29c50x1923": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Splinterlands",
+    "total_func": 29,
+    "analyzed_func": 1,
+    "block_num": 34078214,
+    "address": "0x1633b7157e7638c4d6593436111bf125ee74703f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            1227715525609880508815880000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

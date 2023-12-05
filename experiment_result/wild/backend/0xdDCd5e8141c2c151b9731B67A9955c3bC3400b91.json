@@ -1,0 +1,33 @@
+{
+    "dapp_name": "20lab - ERC-20 token generator",
+    "total_func": 22,
+    "analyzed_func": 1,
+    "block_num": 18661687,
+    "address": "0xdDCd5e8141c2c151b9731B67A9955c3bC3400b91",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x5ffS0x201": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-51-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

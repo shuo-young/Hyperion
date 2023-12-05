@@ -1,0 +1,73 @@
+{
+    "dapp_name": "Radiant",
+    "total_func": 63,
+    "analyzed_func": 6,
+    "block_num": 33847876,
+    "address": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x695ef6bf": {
+            "0x2b15S0x6f7": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-13-))",
+                    "bvudiv_i(Ia_store-14-*\n         bvudiv_i(1000000000000000000*\n                  bvudiv_i(Id_4*mem_mem_64, some_var_7),\n                  1000000000000000000),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-13-))",
+                    "bvudiv_i(Ia_store-14-*\n         bvudiv_i(1000000000000000000*Id_4*mem_mem_64,\n                  1000000000000000000),\n         10000)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.1
+            ],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            88055203778232340000000000
+        ],
+        "unlimited": true,
+        "ui": [
+            1000000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "12 months"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": true,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": true,
+        "metadata": false
+    }
+}

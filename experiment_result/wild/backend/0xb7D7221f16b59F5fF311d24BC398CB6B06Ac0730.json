@@ -1,0 +1,101 @@
+{
+    "dapp_name": "Canary Exchange",
+    "total_func": 21,
+    "analyzed_func": 2,
+    "block_num": 38212764,
+    "address": "0xb7D7221f16b59F5fF311d24BC398CB6B06Ac0730",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x796cd9ba": {
+            "0xbdc": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_3-*\nbvudiv_i(Ia_store-10-, Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_8-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_7- + Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_13-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_18-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_23-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_28-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_33-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_32- +\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_38-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_37- +\n         Ia_store-some_var_32- +\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_43-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_42- +\n         Ia_store-some_var_37- +\n         Ia_store-some_var_32- +\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_48-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_47- +\n         Ia_store-some_var_42- +\n         Ia_store-some_var_37- +\n         Ia_store-some_var_32- +\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1 + Id_1-))",
+                    "Ia_store-some_var_53-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_52- +\n         Ia_store-some_var_47- +\n         Ia_store-some_var_42- +\n         Ia_store-some_var_37- +\n         Ia_store-some_var_32- +\n         Ia_store-some_var_27- +\n         Ia_store-some_var_22- +\n         Ia_store-some_var_17- +\n         Ia_store-some_var_12- +\n         Ia_store-some_var_7- +\n         Ia_store-some_var_2-)"
+                ]
+            ]
+        },
+        "0x9ab1b484": {
+            "0xf0c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Ia_store-some_var_2-*\nbvudiv_i(Ia_store-10-, Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_1-))",
+                    "Ia_store-some_var_6-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_6- + Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Ia_store-some_var_2-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_6- + Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2 + some_var_1-))",
+                    "Ia_store-some_var_19-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_19- +\n         Ia_store-some_var_6- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_1-))",
+                    "Ia_store-some_var_6-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_19- +\n         Ia_store-some_var_6- +\n         Ia_store-some_var_2-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Ia_store-some_var_2-*\nbvudiv_i(Ia_store-10-,\n         Ia_store-some_var_19- +\n         Ia_store-some_var_6- +\n         Ia_store-some_var_2-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,36 @@
+{
+    "dapp_name": "WVRPS by WarpSound (Official)",
+    "total_func": 68,
+    "analyzed_func": 7,
+    "block_num": 18642121,
+    "address": "0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            0,
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x9456fbcc": {
+            "0x1a77S0x8bd": [
+                [
+                    "Concat(0, Extract(159, 0, Id_2))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

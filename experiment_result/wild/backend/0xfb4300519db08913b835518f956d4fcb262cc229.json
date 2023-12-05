@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Footbattle",
+    "total_func": 12,
+    "analyzed_func": 2,
+    "block_num": 18673692,
+    "address": "0xfb4300519db08913b835518f956d4fcb262cc229",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

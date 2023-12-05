@@ -1,0 +1,25 @@
+{
+    "dapp_name": "Hunny",
+    "total_func": 30,
+    "analyzed_func": 4,
+    "block_num": 33810137,
+    "address": "0x434af79fd4e96b5985719e3f5f766619dc185eae",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

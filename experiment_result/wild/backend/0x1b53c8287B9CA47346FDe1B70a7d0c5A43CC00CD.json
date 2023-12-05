@@ -1,0 +1,25 @@
+{
+    "dapp_name": "OrbCity",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 50341178,
+    "address": "0x1b53c8287B9CA47346FDe1B70a7d0c5A43CC00CD",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

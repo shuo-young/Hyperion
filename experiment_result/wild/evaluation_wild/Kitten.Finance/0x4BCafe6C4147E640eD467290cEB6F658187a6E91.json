@@ -1,0 +1,93 @@
+{
+    "dapp_name": "Kitten.Finance",
+    "total_func": 17,
+    "analyzed_func": 5,
+    "block_num": 18671416,
+    "address": "0x4BCafe6C4147E640eD467290cEB6F658187a6E91",
+    "platform": "ETH",
+    "reward": {
+        "warning": true,
+        "0xc717978f": {
+            "0x2401S0x1b94": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0, Extract(95, 0, mem_32 + mem_64))*\nConcat(0, Extract(31, 0, Id_2))"
+                ]
+            ],
+            "0x17c8": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n         Concat(0, Extract(31, 0, Id_2))*\n         Concat(0,\n                Extract(55, 32, Ia_store-some_var_2 + Id_4-)),\n         Concat(0, Extract(95, 0, mem_64 + mem_64))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Concat(0, Extract(15, 0, mem_96 + mem_64))*\n         bvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n                  Concat(0, Extract(31, 0, Id_2))*\n                  Concat(0,\n                         Extract(55,\n                                 32,\n                                 Ia_store-some_var_2 + Id_4-)),\n                  Concat(0, Extract(95, 0, mem_64 + mem_64))),\n         10000)"
+                ]
+            ]
+        },
+        "0xa0eefff0": {
+            "0x2401S0x1b94": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0, Extract(95, 0, mem_32 + mem_64))*\nConcat(0, Extract(31, 0, Ia_store-some_var_2 + Id_5-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(95, 0, mem_32 + mem_64))*\nConcat(0, Extract(31, 0, Id_2))"
+                ]
+            ],
+            "0x118b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n         Concat(0,\n                Extract(31, 0, Ia_store-some_var_2 + Id_5-))*\n         (Concat(0,\n                 Extract(79,\n                         56,\n                         Ia_store-some_var_2 + Id_5-)) +\n          Concat(0,\n                 Extract(55,\n                         32,\n                         Ia_store-some_var_2 + Id_5-))),\n         Concat(0, 2*Extract(95, 0, mem_64 + mem_64))) +\nIv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n         Concat(0, Extract(31, 0, Id_2))*\n         (Concat(0, Extract(23, 0, Id_3)) +\n          Concat(0, Extract(23, 0, Id_4))),\n         Concat(0, 2*Extract(95, 0, mem_64 + mem_64)))"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xc717978f": {
+            "0x190b": [
+                [
+                    "Concat(0, Extract(239, 80, Ia_store-some_var_2 + Id_4-))",
+                    "bvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n         Concat(0, Extract(31, 0, Id_2))*\n         Concat(0,\n                Extract(55, 32, Ia_store-some_var_2 + Id_4-)),\n         Concat(0, Extract(95, 0, mem_64 + mem_64))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Concat(0, Extract(15, 0, mem_96 + mem_64))*\n         bvudiv_i(Concat(0, Extract(95, 0, mem_32 + mem_64))*\n                  Concat(0, Extract(31, 0, Id_2))*\n                  Concat(0,\n                         Extract(55,\n                                 32,\n                                 Ia_store-some_var_2 + Id_4-)),\n                  Concat(0, Extract(95, 0, mem_64 + mem_64))),\n         10000)"
+                ]
+            ],
+            "0x2401S0x1aef": [
+                [
+                    "Concat(0, Extract(239, 80, Ia_store-some_var_2 + Id_4-))",
+                    "Concat(0, Extract(95, 0, mem_32 + mem_64))*\nConcat(0, Extract(31, 0, Id_2))"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

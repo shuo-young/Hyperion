@@ -1,0 +1,33 @@
+{
+    "dapp_name": "SuperCountries",
+    "total_func": 62,
+    "analyzed_func": 4,
+    "block_num": 18671863,
+    "address": "0x6ddaaee7f5a3eb5a0dd30eafb70835f9f68db8d2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x2684S0x71d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

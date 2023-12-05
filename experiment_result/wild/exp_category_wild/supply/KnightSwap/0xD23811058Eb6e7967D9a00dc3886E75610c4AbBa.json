@@ -1,0 +1,55 @@
+{
+    "dapp_name": "KnightSwap",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 33847904,
+    "address": "0xD23811058Eb6e7967D9a00dc3886E75610c4AbBa",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            223772418085223564781758613
+        ],
+        "unlimited": true,
+        "ui": [
+            4
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

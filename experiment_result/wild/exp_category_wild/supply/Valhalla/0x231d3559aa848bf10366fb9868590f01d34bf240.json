@@ -1,0 +1,73 @@
+{
+    "dapp_name": "Valhalla",
+    "total_func": 71,
+    "analyzed_func": 7,
+    "block_num": 18641110,
+    "address": "0x231d3559aa848bf10366fb9868590f01d34bf240",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0xfe67a54b": {
+            "0x2d8d0xe39": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-24-))",
+                    "Concat(0, Extract(191, 0, Ia_store-25-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(191, 0, Ia_store-33-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-26-))",
+                    "Concat(0, Extract(191, 0, Ia_store-27-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(191, 0, Ia_store-33-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-28-))",
+                    "Concat(0, Extract(191, 0, Ia_store-29-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(191, 0, Ia_store-33-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-30-))",
+                    "Concat(0, Extract(191, 0, Ia_store-31-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nConcat(0, Extract(191, 0, Ia_store-33-))"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            9001
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "http",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": true,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": true
+    }
+}

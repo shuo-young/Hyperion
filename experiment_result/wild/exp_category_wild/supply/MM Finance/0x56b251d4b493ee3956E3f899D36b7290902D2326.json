@@ -1,0 +1,57 @@
+{
+    "dapp_name": "MM Finance",
+    "total_func": 26,
+    "analyzed_func": 3,
+    "block_num": 154467533,
+    "address": "0x56b251d4b493ee3956E3f899D36b7290902D2326",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "pool rewards": 0.8875
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            52162582898462650693448452
+        ],
+        "unlimited": true,
+        "ui": [
+            1000000000
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

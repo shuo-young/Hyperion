@@ -1,0 +1,25 @@
+{
+    "dapp_name": "BoringDAO",
+    "total_func": 50,
+    "analyzed_func": 3,
+    "block_num": 18646967,
+    "address": "0x258a1eb6537Ae84Cf612f06B557B6d53f49cC9A1",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

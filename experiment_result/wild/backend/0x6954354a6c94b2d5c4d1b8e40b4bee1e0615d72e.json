@@ -1,0 +1,33 @@
+{
+    "dapp_name": "EtherLoot",
+    "total_func": 31,
+    "analyzed_func": 6,
+    "block_num": 18670865,
+    "address": "0x6954354a6c94b2d5c4d1b8e40b4bee1e0615d72e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x5fd8c710": {
+            "0xeb0S0x3dd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": true,
+    "metadata": ""
+}

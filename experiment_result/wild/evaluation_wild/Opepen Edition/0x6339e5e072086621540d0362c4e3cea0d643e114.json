@@ -1,0 +1,54 @@
+{
+    "dapp_name": "Opepen Edition",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18640688,
+    "address": "0x6339e5e072086621540d0362c4e3cea0d643e114",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "reward": 0.1,
+            "maximum reward": 0.1
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

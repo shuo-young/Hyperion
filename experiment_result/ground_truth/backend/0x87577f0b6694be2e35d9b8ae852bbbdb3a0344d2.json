@@ -1,0 +1,94 @@
+{
+    "dapp_name": "BNB Ultra",
+    "total_func": 25,
+    "analyzed_func": 2,
+    "block_num": 34077935,
+    "address": "0x87577f0b6694be2e35d9b8ae852bbbdb3a0344d2",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x3955f0fe": {
+            "0xabbS0x270": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1-*balance_4,\n         Ia_store-2- +\n         bvudiv_i(Ia_store-1-*Ia_store-12- +\n                  Ia_store-2-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639930*\nbvudiv_i(bvudiv_i(Ia_store-1-*balance_4,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-12- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1-*balance_4,\n         Ia_store-2- +\n         bvudiv_i(Ia_store-1-*Ia_store-12- +\n                  Ia_store-2-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_3-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_3-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1-*balance_6,\n         Ia_store-2- +\n         bvudiv_i(Ia_store-1-*Ia_store-12- +\n                  Ia_store-2-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639930*\nbvudiv_i(bvudiv_i(Ia_store-1-*balance_6,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-12- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-1-*balance_6,\n         Ia_store-2- +\n         bvudiv_i(Ia_store-1-*Ia_store-12- +\n                  Ia_store-2-*\n                  (Ia_store-some_var_1- +\n                   Ia_store-0-*Ia_store-some_var_5-),\n                  Ia_store-some_var_1- +\n                  Ia_store-0-*Ia_store-some_var_5-))"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            2.5
+        ],
+        "0x3955f0fe": {
+            "0x984S0x270": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(25*\n         bvudiv_i(bvudiv_i(Ia_store-1-*balance_4,\n                           Ia_store-2- +\n                           bvudiv_i(Ia_store-1-*Ia_store-12- +\n                                    Ia_store-2-*\n                                    (Ia_store-some_var_1- +\n                                     Ia_store-0-*\n                                     Ia_store-some_var_3-),\n                                    Ia_store-some_var_1- +\n                                    Ia_store-0-*\n                                    Ia_store-some_var_3-)),\n                  100),\n         10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(25*\n         bvudiv_i(bvudiv_i(Ia_store-1-*balance_6,\n                           Ia_store-2- +\n                           bvudiv_i(Ia_store-1-*Ia_store-12- +\n                                    Ia_store-2-*\n                                    (Ia_store-some_var_1- +\n                                     Ia_store-0-*\n                                     Ia_store-some_var_5-),\n                                    Ia_store-some_var_1- +\n                                    Ia_store-0-*\n                                    Ia_store-some_var_5-)),\n                  100),\n         10)"
+                ]
+            ],
+            "0x9fcS0x270": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(25*\n         bvudiv_i(bvudiv_i(Ia_store-1-*balance_4,\n                           Ia_store-2- +\n                           bvudiv_i(Ia_store-1-*Ia_store-12- +\n                                    Ia_store-2-*\n                                    (Ia_store-some_var_1- +\n                                     Ia_store-0-*\n                                     Ia_store-some_var_3-),\n                                    Ia_store-some_var_1- +\n                                    Ia_store-0-*\n                                    Ia_store-some_var_3-)),\n                  100),\n         10)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(25*\n         bvudiv_i(bvudiv_i(Ia_store-1-*balance_6,\n                           Ia_store-2- +\n                           bvudiv_i(Ia_store-1-*Ia_store-12- +\n                                    Ia_store-2-*\n                                    (Ia_store-some_var_1- +\n                                     Ia_store-0-*\n                                     Ia_store-some_var_5-),\n                                    Ia_store-some_var_1- +\n                                    Ia_store-0-*\n                                    Ia_store-some_var_5-)),\n                  100),\n         10)"
+                ]
+            ],
+            "0xa68S0x270": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(bvudiv_i(Ia_store-1-*balance_4,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-12- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_3-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_3-)),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(bvudiv_i(Ia_store-1-*balance_6,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-12- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        },
+        "0xdb663865": {
+            "0x127eS0x6f0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "5*bvudiv_i(Iv, 100)"
+                ]
+            ],
+            "0x12eaS0x6f0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(Iv, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

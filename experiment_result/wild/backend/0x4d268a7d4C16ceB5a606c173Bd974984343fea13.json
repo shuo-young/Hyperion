@@ -1,0 +1,27 @@
+{
+    "dapp_name": "GMX",
+    "total_func": 48,
+    "analyzed_func": 7,
+    "block_num": 38232136,
+    "address": "0x4d268a7d4C16ceB5a606c173Bd974984343fea13",
+    "platform": "Avalanche",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [
+            1045078592520011397308793
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

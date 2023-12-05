@@ -1,0 +1,53 @@
+{
+    "dapp_name": "BNBPlus",
+    "total_func": 48,
+    "analyzed_func": 2,
+    "block_num": 33855317,
+    "address": "0xDd195E6Bdc993F37E7A70D50ded3ADbA117867B4",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x581c5ae6": {
+            "0x1328": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "bvudiv_i(65*Iv, 1000)"
+                ]
+            ],
+            "0x1363": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-11-))",
+                    "bvudiv_i(35*Iv, 1000)"
+                ]
+            ],
+            "0x2317S0x13d6": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "bvudiv_i(2*Iv, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x10b1": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

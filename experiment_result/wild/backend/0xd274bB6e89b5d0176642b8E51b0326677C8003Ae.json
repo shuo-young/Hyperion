@@ -1,0 +1,143 @@
+{
+    "dapp_name": "Rock Finance",
+    "total_func": 43,
+    "analyzed_func": 8,
+    "block_num": 33857139,
+    "address": "0xd274bB6e89b5d0176642b8E51b0326677C8003Ae",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x00000000": {
+            "0x1154": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2 + some_var_1-*\n         (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                   Ia_store-2 + some_var_1-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-8-),\n         Ia_store-1 + some_var_1-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-1 + some_var_1-)"
+                ]
+            ]
+        },
+        "0xd0febe4c": {
+            "0x1154": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-2 + some_var_1-*\n         (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                   Ia_store-2 + some_var_1-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-8-),\n         Ia_store-1 + some_var_1-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-1 + some_var_1-)"
+                ]
+            ]
+        },
+        "0x26ae15d7": {
+            "0x1d58": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-16-*\n         (bvudiv_i(Ia_store-15-*Iv, Ia_store-16-) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-10-),\n         Ia_store-15-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-15-)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "0x00000000": {
+            "0x106e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(Ia_store-2 + some_var_1-*\n                  (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                            Ia_store-2 + some_var_1-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-8-),\n                  Ia_store-1 + some_var_1-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(0, Ia_store-1 + some_var_1-),\n         100)"
+                ]
+            ],
+            "0x10fd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(Ia_store-2 + some_var_1-*\n                  (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                            Ia_store-2 + some_var_1-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-8-),\n                  Ia_store-1 + some_var_1-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(0, Ia_store-1 + some_var_1-),\n         100)"
+                ]
+            ]
+        },
+        "0xd0febe4c": {
+            "0x106e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(Ia_store-2 + some_var_1-*\n                  (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                            Ia_store-2 + some_var_1-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-8-),\n                  Ia_store-1 + some_var_1-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(0, Ia_store-1 + some_var_1-),\n         100)"
+                ]
+            ],
+            "0x10fd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(Ia_store-2 + some_var_1-*\n                  (bvudiv_i(Ia_store-1 + some_var_1-*Iv,\n                            Ia_store-2 + some_var_1-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-8-),\n                  Ia_store-1 + some_var_1-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(0, Ia_store-1 + some_var_1-),\n         100)"
+                ]
+            ]
+        },
+        "0x26ae15d7": {
+            "0x1c72": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(Ia_store-16-*\n                  (bvudiv_i(Ia_store-15-*Iv, Ia_store-16-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-10-),\n                  Ia_store-15-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(30*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639906*\n         bvudiv_i(0, Ia_store-15-),\n         100)"
+                ]
+            ],
+            "0x1d01": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(Ia_store-16-*\n                  (bvudiv_i(Ia_store-15-*Iv, Ia_store-16-) +\n                   115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                   Ia_store-10-),\n                  Ia_store-15-),\n         100)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "bvudiv_i(70*Iv +\n         115792089237316195423570985008687907853269984665640564039457584007913129639866*\n         bvudiv_i(0, Ia_store-15-),\n         100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x1e2f395e": {
+            "0x5016S0x4effS0x4c01S0x44d2B0x1681B0x30e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x23a7S0x46a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-20-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

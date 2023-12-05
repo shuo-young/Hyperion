@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Miracle BUSD Gems ROI Miner",
+    "total_func": 64,
+    "analyzed_func": 3,
+    "block_num": 34077935,
+    "address": "0xdf39205c9503c9217c8a139703636540595740f9",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

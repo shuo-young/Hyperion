@@ -1,0 +1,41 @@
+{
+    "dapp_name": "CryptoPets",
+    "total_func": 20,
+    "analyzed_func": 4,
+    "block_num": 18670645,
+    "address": "0x336737d7c738bec8cb6d7b50547e888f20bf93f8",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x78053700": {
+            "0x12ba": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x908S0x246": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

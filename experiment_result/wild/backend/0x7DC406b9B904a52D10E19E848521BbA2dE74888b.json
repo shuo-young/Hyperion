@@ -1,0 +1,39 @@
+{
+    "dapp_name": "Chronos",
+    "total_func": 47,
+    "analyzed_func": 4,
+    "block_num": 153881798,
+    "address": "0x7DC406b9B904a52D10E19E848521BbA2dE74888b",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "0x89afcb44": {
+            "0x23cb0x2319": [
+                [
+                    "0xde1e704dae0b4051e80dabb26ab6ad6c12262da0",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ],
+                [
+                    "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+                    "bvudiv_i(Ia_store-some_var_7-*mem_mem_64, Ia_store-2-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            25149979553073747996
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}
