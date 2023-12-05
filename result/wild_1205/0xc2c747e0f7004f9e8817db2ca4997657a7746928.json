@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Hashmasks",
+    "total_func": 36,
+    "analyzed_func": 6,
+    "block_num": 18718896,
+    "address": "0xc2c747e0f7004f9e8817db2ca4997657a7746928",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            16384
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x15ebS0x5f3": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

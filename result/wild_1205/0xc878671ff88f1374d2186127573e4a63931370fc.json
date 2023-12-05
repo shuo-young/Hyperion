@@ -1,0 +1,52 @@
+{
+    "dapp_name": "Los Muertos (Collection)",
+    "total_func": 39,
+    "analyzed_func": 4,
+    "block_num": 18719946,
+    "address": "0xc878671ff88f1374d2186127573e4a63931370fc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            0.94,
+            0.03
+        ],
+        "0x3ccfd60b": {
+            "0xceeS0x3a1": [
+                [
+                    "0x41cb566727d7531658e5993cd61dd75581716851",
+                    "bvudiv_i(94*IH_b, 100)"
+                ]
+            ],
+            "0xda0S0x3a1": [
+                [
+                    "0x44230c74e406d5690333ba81b198441bcf02cec8",
+                    "bvudiv_i(3*IH_b, 100)"
+                ]
+            ],
+            "0xe52S0x3a1": [
+                [
+                    "0xfa9a358b821f4b4a1b5ac2e0c594bb3f860afbd8",
+                    "bvudiv_i(3*IH_b, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            10001,
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

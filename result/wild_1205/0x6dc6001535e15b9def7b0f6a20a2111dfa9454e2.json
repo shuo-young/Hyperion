@@ -1,0 +1,28 @@
+{
+    "dapp_name": "MetaHero Universe: Generative",
+    "total_func": 34,
+    "analyzed_func": 6,
+    "block_num": 18719055,
+    "address": "0x6dc6001535e15b9def7b0f6a20a2111dfa9454e2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            7975
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": "ipfs"
+}

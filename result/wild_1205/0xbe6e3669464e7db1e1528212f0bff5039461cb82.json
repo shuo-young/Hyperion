@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Wicked Ape Bone Club",
+    "total_func": 42,
+    "analyzed_func": 7,
+    "block_num": 18719638,
+    "address": "0xbe6e3669464e7db1e1528212f0bff5039461cb82",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x1ef4S0x6fe": [
+                [
+                    "0x8f4e56e3f90bc938e6ea9861f94be2d56fc95db1",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0xdb2e21bc": {
+            "0x3174S0x107f": [
+                [
+                    "0x8f4e56e3f90bc938e6ea9861f94be2d56fc95db1",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

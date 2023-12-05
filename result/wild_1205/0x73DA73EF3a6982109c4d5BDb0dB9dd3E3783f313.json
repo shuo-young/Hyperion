@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Curio Cards",
+    "total_func": 20,
+    "analyzed_func": 4,
+    "block_num": 18718891,
+    "address": "0x73DA73EF3a6982109c4d5BDb0dB9dd3E3783f313",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

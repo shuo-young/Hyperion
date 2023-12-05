@@ -1,0 +1,42 @@
+{
+    "dapp_name": "Kratos Studios",
+    "total_func": 9,
+    "analyzed_func": 4,
+    "block_num": 50773004,
+    "address": "0x4494d12D4a63DD8A4FEe1978DB5Ee9DED9f59643",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xf4f3b200": {
+            "0x521S0x137": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x5a18664c": {
+            "0x29bS0xfb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

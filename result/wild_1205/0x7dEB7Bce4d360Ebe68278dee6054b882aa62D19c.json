@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Inhabitants: United Planets",
+    "total_func": 45,
+    "analyzed_func": 2,
+    "block_num": 18719387,
+    "address": "0x7dEB7Bce4d360Ebe68278dee6054b882aa62D19c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": true,
+    "metadata": ""
+}

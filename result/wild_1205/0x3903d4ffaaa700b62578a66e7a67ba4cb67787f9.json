@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Quirkies Originals",
+    "total_func": 41,
+    "analyzed_func": 4,
+    "block_num": 18719158,
+    "address": "0x3903d4ffaaa700b62578a66e7a67ba4cb67787f9",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            5000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xf18S0x3a9": [
+                [
+                    "0x816639f88d7f5405b0ccb0582908b388a1e2c8bd",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

@@ -1,0 +1,84 @@
+{
+    "dapp_name": "Lil Pudgys",
+    "total_func": 50,
+    "analyzed_func": 7,
+    "block_num": 18719341,
+    "address": "0x524cab2ec69124574082676e6f654a18df49a048",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0xcc0bbb6f": {
+            "0x2433S0x8bd": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-33 + some_var_90-))",
+                    "bvudiv_i(Ia_store-35 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-29 + some_var_90-))",
+                    "bvudiv_i(Ia_store-31 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-25 + some_var_90-))",
+                    "bvudiv_i(Ia_store-27 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21 + some_var_90-))",
+                    "bvudiv_i(Ia_store-23 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-17 + some_var_90-))",
+                    "bvudiv_i(Ia_store-19 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13 + some_var_90-))",
+                    "bvudiv_i(Ia_store-15 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9 + some_var_90-))",
+                    "bvudiv_i(Ia_store-11 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5 + some_var_90-))",
+                    "bvudiv_i(Ia_store-7 + some_var_90-*mem_mem_64, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1 + some_var_90-))",
+                    "bvudiv_i(Ia_store-3 + some_var_90-*mem_mem_64, 10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            91664046227756
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x21c34fcb": {
+            "0x26c30xe8d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x339a75bf": {
+            "0x26c30xe8d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

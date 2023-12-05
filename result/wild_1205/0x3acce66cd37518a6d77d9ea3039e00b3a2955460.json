@@ -1,0 +1,36 @@
+{
+    "dapp_name": "WonderPals",
+    "total_func": 34,
+    "analyzed_func": 4,
+    "block_num": 18719488,
+    "address": "0x3acce66cd37518a6d77d9ea3039e00b3a2955460",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10001
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xaa3S0x303": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

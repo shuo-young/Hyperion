@@ -1,0 +1,37 @@
+{
+    "dapp_name": "RENGA Black Box",
+    "total_func": 48,
+    "analyzed_func": 4,
+    "block_num": 18720052,
+    "address": "0x64ad353bc90a04361c4810ae7b3701f3beb48d7e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10001,
+            8916
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x116dS0x52b": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}

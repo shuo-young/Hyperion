@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the path to the CSV file
-csv_file_path="dataset/wild/dataset.csv"
+csv_file_path="dataset/ground_truth/dataset.csv"
 
 # Check if the file exists
 if [[ ! -f "$csv_file_path" ]]; then
@@ -17,7 +17,7 @@ max_concurrent_processes=16
 while IFS=, read -r name address platform
 do
     # Run the Python command with the extracted address and platform, and log the output
-    python3 main.py -a "$address" -bp "$platform" -d "result/wild" -n "$name" -v > "experiment_logset/wild/${address}.log" 2>&1 &
+    python3 main.py -a "$address" -bp "$platform" -d "result/gt_1205" -n "$name" -v > "experiment_logset/gt_1205/${address}.log" 2>&1 &
     let active_processes+=1
 
     # Check if the maximum number of concurrent processes is reached

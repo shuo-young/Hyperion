@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Monkey Bet DAO",
+    "total_func": 27,
+    "analyzed_func": 5,
+    "block_num": 18720191,
+    "address": "0x9261b6239a85348e066867c366d3942648e24511",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "0xd96a094a": {
+            "0x179eS0x595": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Ia_store-19-*Id_1"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x8d8f2adb": {
+            "0x118aS0x465": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-17-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Project NANOPASS",
+    "total_func": 58,
+    "analyzed_func": 5,
+    "block_num": 18719014,
+    "address": "0xf54cc94f1f2f5de012b6aa51f1e7ebdc43ef5afc",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            5555
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x191bS0x740": [
+                [
+                    "0x5bb1396e3ec5e31e12dc7846c4c94eea25083f35",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

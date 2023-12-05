@@ -1,0 +1,37 @@
+{
+    "dapp_name": "KPR",
+    "total_func": 57,
+    "analyzed_func": 5,
+    "block_num": 18719614,
+    "address": "0x05da517b1bf9999b7762eaefa8372341a1a47559",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000,
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3a4fda8f": {
+            "0x19b8S0x5cc": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

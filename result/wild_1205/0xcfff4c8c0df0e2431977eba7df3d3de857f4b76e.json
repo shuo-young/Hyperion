@@ -1,0 +1,26 @@
+{
+    "dapp_name": "RiverMen",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18720190,
+    "address": "0xcfff4c8c0df0e2431977eba7df3d3de857f4b76e",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

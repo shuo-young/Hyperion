@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Decentral Games",
+    "total_func": 21,
+    "analyzed_func": 2,
+    "block_num": 18719423,
+    "address": "0x4f81c790581b240a5c948afd173620ecc8c71c8d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0xc9a48e6f": {
+            "0x5feS0x2bb": [
+                [
+                    "0x4b520c812e8430659fc9f12f6d0c39026c83588d",
+                    "bvudiv_i(Id_1*mem_mem_64, Ia_store-3-)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            438172981563920971396311496
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

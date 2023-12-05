@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Crypto Unicorns",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 50767015,
+    "address": "0x99A558BDBdE247C2B2716f0D4cFb0E246DFB697D",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

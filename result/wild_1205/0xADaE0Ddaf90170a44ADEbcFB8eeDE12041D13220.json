@@ -1,0 +1,34 @@
+{
+    "dapp_name": "Pixelmon",
+    "total_func": 30,
+    "analyzed_func": 1,
+    "block_num": 18719057,
+    "address": "0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xb9eS0x2e2": [
+                [
+                    "0x813f10aba9624d2f4b3130a1ecd26da2bb2d09d4",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Bloot (not for Weaks)",
+    "total_func": 29,
+    "analyzed_func": 4,
+    "block_num": 18719530,
+    "address": "0x4f8730e0b32b04beaa5757e5aea3aef970e5b613",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            8008
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "base64"
+}

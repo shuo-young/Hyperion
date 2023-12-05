@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Mirandus",
+    "total_func": 29,
+    "analyzed_func": 0,
+    "block_num": 18718934,
+    "address": "0xc36cF0cFcb5d905B8B513860dB0CFE63F6Cf9F5c",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

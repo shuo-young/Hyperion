@@ -1,0 +1,36 @@
+{
+    "dapp_name": "The Greats V3",
+    "total_func": 64,
+    "analyzed_func": 4,
+    "block_num": 18719896,
+    "address": "0xe0fa9fb0e30ca86513642112bee1cbbaa2a0580d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            2608
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x1333S0x618": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "base64"
+}

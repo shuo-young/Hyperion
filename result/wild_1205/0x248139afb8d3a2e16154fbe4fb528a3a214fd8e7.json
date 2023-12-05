@@ -1,0 +1,37 @@
+{
+    "dapp_name": "Boki - NFT",
+    "total_func": 44,
+    "analyzed_func": 5,
+    "block_num": 18719944,
+    "address": "0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            7777,
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x24600fc3": {
+            "0xa8cS0x39b": [
+                [
+                    "0x6108702e2e5e7e2df587d6b15136239d92c4000c",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

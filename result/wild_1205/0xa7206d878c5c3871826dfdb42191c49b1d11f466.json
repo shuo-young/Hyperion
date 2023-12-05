@@ -1,0 +1,26 @@
+{
+    "dapp_name": "LOSTPOETS",
+    "total_func": 39,
+    "analyzed_func": 1,
+    "block_num": 18718891,
+    "address": "0xa7206d878c5c3871826dfdb42191c49b1d11f466",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

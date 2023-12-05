@@ -1,0 +1,28 @@
+{
+    "dapp_name": "a KID called BEAST",
+    "total_func": 40,
+    "analyzed_func": 7,
+    "block_num": 18719437,
+    "address": "0x77372a4cc66063575b05b44481F059BE356964A4",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            2027503875145655277166082701344217426317332151543918700870660
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Slotie NFT",
+    "total_func": 49,
+    "analyzed_func": 1,
+    "block_num": 18719579,
+    "address": "0x5fdb2b0c56afa73b8ca2228e6ab92be90325961d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            9954
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,26 @@
+{
+    "dapp_name": "oncyber labs",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18719097,
+    "address": "0x226bf5293692610692e2c996c9875c914d2a7f73",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

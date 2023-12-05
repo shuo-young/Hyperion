@@ -1,0 +1,45 @@
+{
+    "dapp_name": "Momoguro: Holoself",
+    "total_func": 43,
+    "analyzed_func": 4,
+    "block_num": 18720119,
+    "address": "0x59ad67e9c6a84e602bc73b3a606f731cc6df210d",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            0.055
+        ],
+        "0x3ccfd60b": {
+            "0xac4S0x43c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(55000000000000000000*IH_b, 1000000000000000000000)"
+                ]
+            ],
+            "0xb38S0x43c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(55000000000000000000*IH_b, 1000000000000000000000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            8889,
+            0
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

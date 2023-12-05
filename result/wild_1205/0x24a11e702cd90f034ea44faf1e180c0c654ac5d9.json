@@ -1,0 +1,76 @@
+{
+    "dapp_name": "Collect Trump Cards",
+    "total_func": 48,
+    "analyzed_func": 9,
+    "block_num": 50767963,
+    "address": "0x24a11e702cd90f034ea44faf1e180c0c654ac5d9",
+    "platform": "Polygon",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0x58d089b3": {
+            "0x1d9cS0x608": [
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-1 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-1 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-2 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-2 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-3 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-3 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-4 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-4 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-5 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-5 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-6 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-6 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-7 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-7 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-8 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-8 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-9 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0, Extract(15, 0, Ia_store-9 + some_var_1-)),\n         1000)"
+                ],
+                [
+                    "Concat(0, Extract(175, 16, Ia_store-10 + some_var_1-))",
+                    "bvudiv_i(IH_b*\n         Concat(0,\n                Extract(15, 0, Ia_store-10 + some_var_1-)),\n         1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [
+            45000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

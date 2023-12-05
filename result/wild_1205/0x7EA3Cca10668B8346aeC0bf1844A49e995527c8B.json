@@ -1,0 +1,36 @@
+{
+    "dapp_name": "CyberKongz VX",
+    "total_func": 45,
+    "analyzed_func": 4,
+    "block_num": 18718891,
+    "address": "0x7EA3Cca10668B8346aeC0bf1844A49e995527c8B",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            14846
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xef75fdc1": {
+            "0x16f2S0x725": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

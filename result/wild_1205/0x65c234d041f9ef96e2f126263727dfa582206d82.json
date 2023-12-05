@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Playboy Rabbitars Official",
+    "total_func": 0,
+    "analyzed_func": 0,
+    "block_num": 18720192,
+    "address": "0x65c234d041f9ef96e2f126263727dfa582206d82",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Rektguy",
+    "total_func": 38,
+    "analyzed_func": 0,
+    "block_num": 18719159,
+    "address": "0xB852c6b5892256C264Cc2C888eA462189154D8d7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

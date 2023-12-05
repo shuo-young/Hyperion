@@ -1,0 +1,36 @@
+{
+    "dapp_name": "the littles NFT",
+    "total_func": 52,
+    "analyzed_func": 4,
+    "block_num": 18719269,
+    "address": "0xc6ec80029cd2aa4b0021ceb11248c07b25d2de34",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xe1bS0x473": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-14-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

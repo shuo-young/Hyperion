@@ -1,0 +1,26 @@
+{
+    "dapp_name": "The Boring Ape Chronicles",
+    "total_func": 47,
+    "analyzed_func": 0,
+    "block_num": 18720117,
+    "address": "0x7cc7add921e2222738561d03c89589929cefcf21",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

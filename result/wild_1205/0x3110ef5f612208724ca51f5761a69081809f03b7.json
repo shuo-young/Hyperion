@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Impostors Genesis Aliens",
+    "total_func": 27,
+    "analyzed_func": 0,
+    "block_num": 18718999,
+    "address": "0x3110ef5f612208724ca51f5761a69081809f03b7",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10421
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

@@ -1,0 +1,37 @@
+{
+    "dapp_name": "Tubby cats by tubby collective",
+    "total_func": 40,
+    "analyzed_func": 4,
+    "block_num": 18719165,
+    "address": "0xca7ca7bcc765f77339be2d648ba53ce9c8a262bd",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            20000,
+            0
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x2ad22052": {
+            "0xfd5S0x460": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "ipfs"
+}

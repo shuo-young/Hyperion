@@ -1,0 +1,36 @@
+{
+    "dapp_name": "DracooMaster",
+    "total_func": 40,
+    "analyzed_func": 4,
+    "block_num": 34089185,
+    "address": "0x91BADA88537EE66c2612e986D84A3D346DDEd2DB",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            5000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x554a4894": {
+            "0x1dedS0x1d21S0x1972S0x3aa3B0x8caB0x375": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}

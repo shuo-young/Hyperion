@@ -1,0 +1,28 @@
+{
+    "dapp_name": "CryptoArte",
+    "total_func": 25,
+    "analyzed_func": 2,
+    "block_num": 18720087,
+    "address": "0xbace7e22f06554339911a03b8e0ae28203da9598",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            9895
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

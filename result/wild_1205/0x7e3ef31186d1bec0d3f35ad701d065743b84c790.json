@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Antonym: GENESIS",
+    "total_func": 50,
+    "analyzed_func": 4,
+    "block_num": 18719645,
+    "address": "0x7e3ef31186d1bec0d3f35ad701d065743b84c790",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            8888
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3c68eb81": {
+            "0xebdS0x5cb": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-15-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

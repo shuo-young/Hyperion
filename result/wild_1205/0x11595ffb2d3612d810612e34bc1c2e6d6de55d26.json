@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Tom Sachs Rocket Factory",
+    "total_func": 49,
+    "analyzed_func": 4,
+    "block_num": 18719392,
+    "address": "0x11595ffb2d3612d810612e34bc1c2e6d6de55d26",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            273
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0x134aS0x50a": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": null
+}

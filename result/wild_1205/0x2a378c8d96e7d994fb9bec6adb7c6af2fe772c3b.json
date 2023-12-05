@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Somnium Space",
+    "total_func": 26,
+    "analyzed_func": 3,
+    "block_num": 18719631,
+    "address": "0x2a378c8d96e7d994fb9bec6adb7c6af2fe772c3b",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            284
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

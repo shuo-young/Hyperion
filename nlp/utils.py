@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from text_analyzer import FrontEndSpecsExtractor
 
-excel_file = "dataset/wild_out.xlsx"
+excel_file = "dataset/test.xlsx"
 df = pd.read_excel(excel_file)
 
 results = {}
@@ -79,5 +79,5 @@ for index, row in df.iterrows():
 for index, row in df.iterrows():
     process_output_1(row)
 
-with open("result/output_wild.json", "w") as json_file:
+with open("result/test.json", "w") as json_file:
     json.dump(results, json_file, indent=4)

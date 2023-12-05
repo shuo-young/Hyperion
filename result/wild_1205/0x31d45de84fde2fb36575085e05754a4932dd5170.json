@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Rare Apepes",
+    "total_func": 37,
+    "analyzed_func": 5,
+    "block_num": 18720018,
+    "address": "0x31d45de84fde2fb36575085e05754a4932dd5170",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xe23S0x446": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-16-))",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}

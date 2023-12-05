@@ -1,0 +1,26 @@
+{
+    "dapp_name": "Honor World",
+    "total_func": 6,
+    "analyzed_func": 0,
+    "block_num": 157119398,
+    "address": "0x4f8A472636EcB3BEc74F8E0D17ec035C9Bd1c4Cc",
+    "platform": "Arbitrum",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

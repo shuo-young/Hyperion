@@ -1,0 +1,28 @@
+{
+    "dapp_name": "The Sevens (Official)",
+    "total_func": 43,
+    "analyzed_func": 7,
+    "block_num": 18719275,
+    "address": "0xf497253c2bb7644ebb99e4d9ecc104ae7a79187a",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            7000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": "http"
+}

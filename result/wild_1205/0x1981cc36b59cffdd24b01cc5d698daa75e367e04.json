@@ -1,0 +1,36 @@
+{
+    "dapp_name": "Crypto.Chicks",
+    "total_func": 48,
+    "analyzed_func": 7,
+    "block_num": 18719387,
+    "address": "0x1981cc36b59cffdd24b01cc5d698daa75e367e04",
+    "platform": "ETH",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            10000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x853828b6": {
+            "0x2ebbS0x1af0S0x702": [
+                [
+                    "0xcc47385c67e2c3c42c8f622048b82a481bd47c71",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": "http"
+}
