@@ -1,4 +1,5 @@
 import errno
+import re
 import signal
 from symbolic_execution.ir_basic_blocks import *
 from z3 import *
@@ -1725,7 +1726,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                     log.info(recipient)
                     log.info(transfer_amount)
                     # for tax, judge the modifiable status of tax-related vars
-                    if contains_mul_or_div(transfer_amount):
+                    if contains_mul_or_div(
+                        transfer_amount
+                    ) and not is_subtracted_from_iv_or_balance(transfer_amount):
                         if is_expr(transfer_amount):
                             amount_vars = get_vars(transfer_amount)
                             for var in amount_vars:
@@ -1737,13 +1740,9 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                             in target_params.state_dependency_info.slot_dependency_map.keys()
                                         ):  # judge whether tax-related state vars can be modified by other through storage dependency
                                             result["fee"]["modifiable"] = True
-                    # try:
-                    #     expr = state_extractor.compute_coefficient(str(res[ident][1]))
-                    #     if expr:
-                    #         log.info(expr)
-                    # except:
-                    #     pass
-                    if contains_mul_or_div(transfer_amount):
+                    if contains_mul_or_div(
+                        transfer_amount
+                    ) and not is_subtracted_from_iv_or_balance(transfer_amount):
                         if target_params.funcSign not in result["fee"].keys():
                             result["fee"][target_params.funcSign] = {}
                         # bypass the 0 value
@@ -1763,7 +1762,12 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                     result["fee"][target_params.funcSign][ident].append(
                                         res[ident]
                                     )
-                            result["fee"]["warning"] = True
+                            fee_rate = state_extractor.compute_fee_rate(transfer_amount)
+                            if fee_rate:
+                                log.info(fee_rate)
+                                result["fee"]["warning"] = True
+                                if fee_rate not in result["fee"]["rate"]:
+                                    result["fee"]["rate"].append(fee_rate)
                 else:
                     receiver_vars = get_vars(recipient)
                     for var in receiver_vars:
@@ -1773,7 +1777,7 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                             # in addition, iv-x is a refund logic, filter out
                             if contains_mul_or_div(
                                 transfer_amount
-                            ) and not is_subtracted_from_IV(transfer_amount):
+                            ) and not is_subtracted_from_iv_or_balance(transfer_amount):
                                 amount_vars = get_vars(transfer_amount)
                                 for var in amount_vars:
                                     if (
@@ -1811,26 +1815,21 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                             log.info(recipient)
                             log.info(transfer_amount)
                             # try to get coefficient
-                            # try:
-                            #     expr = state_extractor.compute_coefficient(
-                            #         str(res[ident][1])
-                            #     )
-                            #     if expr:
-                            #         log.info(expr)
-                            # except:
-                            #     pass
-                            if is_expr(transfer_amount):
-                                amount_vars = get_vars(transfer_amount)
-                                for var in amount_vars:
-                                    if is_storage_var(var):
-                                        pos = get_storage_position(var)
-                                        if isinstance(pos, int):
-                                            if (
-                                                hex(pos)
-                                                in target_params.state_dependency_info.slot_dependency_map.keys()
-                                            ):
-                                                result["fee"]["modifiable"] = True
-                            if contains_mul_or_div(transfer_amount):
+                            if contains_mul_or_div(
+                                transfer_amount
+                            ) and not is_subtracted_from_iv_or_balance(transfer_amount):
+                                if is_expr(transfer_amount):
+                                    amount_vars = get_vars(transfer_amount)
+                                    for var in amount_vars:
+                                        if is_storage_var(var):
+                                            pos = get_storage_position(var)
+                                            if isinstance(pos, int):
+                                                if (
+                                                    hex(pos)
+                                                    in target_params.state_dependency_info.slot_dependency_map.keys()
+                                                ):
+                                                    result["fee"]["modifiable"] = True
+                                log.info(transfer_amount)
                                 if target_params.funcSign not in result["fee"].keys():
                                     result["fee"][target_params.funcSign] = {}
                                     # bypass the 0 value
@@ -1854,7 +1853,15 @@ def sym_exec_ins(params, block, statement, func_call, current_func_name):
                                             result["fee"][target_params.funcSign][
                                                 ident
                                             ].append(res[ident])
-                                    result["fee"]["warning"] = True
+
+                                    fee_rate = state_extractor.compute_fee_rate(
+                                        transfer_amount
+                                    )
+                                    if fee_rate:
+                                        log.info(fee_rate)
+                                        result["fee"]["warning"] = True
+                                        if fee_rate not in result["fee"]["rate"]:
+                                            result["fee"]["rate"].append(fee_rate)
         # we default set the call return as 1 as we do not consider the reentrancy pattern
         var_to_source[defs[0]] = 1
 
@@ -2164,7 +2171,7 @@ def run(inputs, state):
         "address": "",
         "platform": "",
         "reward": {"warning": False},
-        "fee": {"warning": False, "modifiable": False},
+        "fee": {"warning": False, "modifiable": False, "rate": []},
         "supply": {"amount": None, "unlimited": False},
         "lock": False,
         "clear": {"warning": False},

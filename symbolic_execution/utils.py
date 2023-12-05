@@ -1,11 +1,3 @@
-import csv
-import difflib
-import json
-import mmap
-import re
-import shlex
-import subprocess
-
 import six
 from z3 import *
 from z3.z3util import get_vars
@@ -134,10 +126,12 @@ def contains_mul_or_div(expr):
     return False
 
 
-def is_subtracted_from_IV(expr):
+def is_subtracted_from_iv_or_balance(expr):
     if is_expr(expr) and expr.decl().kind() == Z3_OP_BADD:
         minuend = expr.arg(0)  # Get the first operand (minuend)
-        if is_expr(minuend) and minuend.decl().name() == "Iv":
+        if is_expr(minuend) and (
+            minuend.decl().name() == "Iv" or is_balance_var(minuend.decl().name())
+        ):
             return True
     return False
 
@@ -245,158 +239,3 @@ def rename_vars(pcs, global_states):
         ret_gs[storage_addr] = expr
 
     return ret_pcs, ret_gs
-
-
-# split a file into smaller files
-def split_dicts(filename, nsub=500):
-    with open(filename) as json_file:
-        c = json.load(json_file)
-        current_file = {}
-        file_index = 1
-        for u, v in c.iteritems():
-            current_file[u] = v
-            if len(current_file) == nsub:
-                with open(
-                    filename.split(".")[0] + "_" + str(file_index) + ".json", "w"
-                ) as outfile:
-                    json.dump(current_file, outfile)
-                    file_index += 1
-                    current_file.clear()
-        if len(current_file):
-            with open(
-                filename.split(".")[0] + "_" + str(file_index) + ".json", "w"
-            ) as outfile:
-                json.dump(current_file, outfile)
-                current_file.clear()
-
-
-def do_split_dicts():
-    for i in range(11):
-        split_dicts("contract" + str(i) + ".json")
-        os.remove("contract" + str(i) + ".json")
-
-
-def run_re_file(re_str, fn):
-    size = os.stat(fn).st_size
-    with open(fn, "r") as tf:
-        data = mmap.mmap(tf.fileno(), size, access=mmap.ACCESS_READ)
-        return re.findall(re_str, data)
-
-
-def get_contract_info(contract_addr):
-    six.print_("Getting info for contracts... " + contract_addr)
-    file_name1 = "tmp/" + contract_addr + "_txs.html"
-    file_name2 = "tmp/" + contract_addr + ".html"
-    # get number of txs
-    txs = "unknown"
-    value = "unknown"
-    re_txs_value = r"<span>A total of (.+?) transactions found for address</span>"
-    re_str_value = r"<td>ETH Balance:\n<\/td>\n<td>\n(.+?)\n<\/td>"
-    try:
-        txs = run_re_file(re_txs_value, file_name1)
-        value = run_re_file(re_str_value, file_name2)
-    except Exception as e:
-        try:
-            os.system(
-                "wget -O %s http://etherscan.io/txs?a=%s" % (file_name1, contract_addr)
-            )
-            re_txs_value = (
-                r"<span>A total of (.+?) transactions found for address</span>"
-            )
-            txs = run_re_file(re_txs_value, file_name1)
-
-            # get balance
-            re_str_value = r"<td>ETH Balance:\n<\/td>\n<td>\n(.+?)\n<\/td>"
-            os.system(
-                "wget -O %s https://etherscan.io/address/%s"
-                % (file_name2, contract_addr)
-            )
-            value = run_re_file(re_str_value, file_name2)
-        except Exception as e:
-            pass
-    return txs, value
-
-
-def get_contract_stats(list_of_contracts):
-    with open("concurr.csv", "w") as stats_file:
-        fp = csv.writer(stats_file, delimiter=",")
-        fp.writerow(
-            [
-                "Contract address",
-                "No. of paths",
-                "No. of concurrency pairs",
-                "Balance",
-                "No. of TXs",
-                "Note",
-            ]
-        )
-        with open(list_of_contracts, "r") as f:
-            for contract in f.readlines():
-                contract_addr = contract.split()[0]
-                value, txs = get_contract_info(contract_addr)
-                fp.writerow(
-                    [
-                        contract_addr,
-                        contract.split()[1],
-                        contract.split()[2],
-                        value,
-                        txs,
-                        contract.split()[3:],
-                    ]
-                )
-
-
-def get_distinct_contracts(list_of_contracts="concurr.csv"):
-    flag = []
-    with open(list_of_contracts, "rb") as csvfile:
-        contracts = csvfile.readlines()[1:]
-        n = len(contracts)
-        for i in range(n):
-            flag.append(i)  # mark which contract is similar to contract_i
-        for i in range(n):
-            if flag[i] != i:
-                continue
-            contract_i = contracts[i].split(",")[0]
-            npath_i = int(contracts[i].split(",")[1])
-            npair_i = int(contracts[i].split(",")[2])
-            file_i = "stats/tmp_" + contract_i + ".evm"
-            six.print_(" reading file " + file_i)
-            for j in range(i + 1, n):
-                if flag[j] != j:
-                    continue
-                contract_j = contracts[j].split(",")[0]
-                npath_j = int(contracts[j].split(",")[1])
-                npair_j = int(contracts[j].split(",")[2])
-                if (npath_i == npath_j) and (npair_i == npair_j):
-                    file_j = "stats/tmp_" + contract_j + ".evm"
-
-                    with open(file_i, "r") as f1, open(file_j, "r") as f2:
-                        code_i = f1.readlines()
-                        code_j = f2.readlines()
-                        if abs(len(code_i) - len(code_j)) >= 5:
-                            continue
-                        diff = difflib.ndiff(code_i, code_j)
-                        ndiff = 0
-                        for line in diff:
-                            if line.startswith("+") or line.startswith("-"):
-                                ndiff += 1
-                        if ndiff < 10:
-                            flag[j] = i
-    six.print_(flag)
-
-
-def run_command(cmd):
-    FNULL = open(os.devnull, "w")
-    solc_p = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE, stderr=FNULL)
-    return solc_p.communicate()[0].decode("utf-8", "strict")
-
-
-def run_command_with_err(cmd):
-    FNULL = open(os.devnull, "w")
-    solc_p = subprocess.Popen(
-        shlex.split(cmd), stdout=subprocess.PIPE, stderr=subprocess.PIPE
-    )
-    out, err = solc_p.communicate()
-    out = out.decode("utf-8", "strict")
-    err = err.decode("utf-8", "strict")
-    return out, err

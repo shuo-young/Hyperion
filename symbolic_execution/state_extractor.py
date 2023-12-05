@@ -90,3 +90,70 @@ class StateExtractor:
             storage_value = w3.eth.get_storage_at(contract_address, slot_number)
             return int(storage_value.hex(), 16)
         return None
+
+    def compute_fee_rate(self, expr):
+        if not is_expr(expr):
+            log.info("not experssion")
+            return None
+        if not expr.decl().kind() == Z3_OP_BUDIV_I:
+            log.info("not div")
+            if expr.decl().kind() == Z3_OP_CONCAT:
+                log.info("is concat")
+                second_element = expr.arg(1)
+                log.info(second_element)
+                if second_element.decl().kind() == Z3_OP_EXTRACT:
+                    try:
+                        expr = second_element.arg(0)
+                        log.info(expr)
+                    except:
+                        pass
+            else:
+                return None
+        # sample: bvudiv_i(5 * Iv, 100)
+        factor = self.obtain_factor_value(expr.arg(0))
+        denominator = self.obtain_denominator_value(expr.arg(1))  # 100
+        log.info(factor)
+        log.info(denominator)
+        if factor and denominator:
+            fee_rate = float(factor / denominator)  # 5/100
+            return fee_rate
+        return None
+
+    def obtain_factor_value(self, expr):
+        if not is_expr(expr):
+            return None
+        if not expr.decl().kind() == Z3_OP_BMUL:
+            return None
+        factor = expr.arg(0)  # 5
+        log.info("factor")
+        log.info(factor)
+        var = expr.arg(1)
+        log.info(var)
+        # loose constraint
+        # if not self.is_msgvalue_or_datavar(var):
+        #     return None
+        if is_bv_value(factor):
+            return factor.as_long()
+        elif is_storage_var(factor):
+            try:
+                return self.get_chain_value(factor)
+            except:
+                return None
+        return None
+
+    def obtain_denominator_value(self, var):
+        if is_bv_value(var):
+            return var.as_long()
+        elif is_storage_var(var):
+            try:
+                return self.get_chain_value(var)
+            except:
+                return None
+        return None
+
+    def is_msgvalue_or_datavar(self, var):
+        if not is_expr(var):
+            return False
+        if not isinstance(var, str):
+            var = var.decl().name()
+        return var == "Iv" or var.startswith("Id_")
