@@ -2,7 +2,7 @@
     "dapp_name": "WVRPS by WarpSound (Official)",
     "total_func": 68,
     "analyzed_func": 7,
-    "block_num": 18642121,
+    "block_num": 18724434,
     "address": "0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

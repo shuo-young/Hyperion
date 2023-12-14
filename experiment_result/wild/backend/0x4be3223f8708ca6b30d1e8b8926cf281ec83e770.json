@@ -2,7 +2,7 @@
     "dapp_name": "Party Degenerates",
     "total_func": 44,
     "analyzed_func": 6,
-    "block_num": 18641038,
+    "block_num": 18724000,
     "address": "0x4be3223f8708ca6b30d1e8b8926cf281ec83e770",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

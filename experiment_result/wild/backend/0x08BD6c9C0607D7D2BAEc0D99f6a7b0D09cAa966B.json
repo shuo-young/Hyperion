@@ -2,7 +2,7 @@
     "dapp_name": "Flip Coin",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33852290,
+    "block_num": 34143760,
     "address": "0x08BD6c9C0607D7D2BAEc0D99f6a7b0D09cAa966B",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -1,1 +1,0 @@
- Error: OwnerErrorMessage: Oops! You've pointed www.thedevnft.com to Bubble, but we don't have an application associated with this domain yet!Code: 1696735567328x552564942341610560 

@@ -2,7 +2,7 @@
     "dapp_name": "SwapBased",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 7118078,
+    "block_num": 7568548,
     "address": "0x33587D41F956AAEC739A79aB174B1e66C3B2371C",
     "platform": "Base",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

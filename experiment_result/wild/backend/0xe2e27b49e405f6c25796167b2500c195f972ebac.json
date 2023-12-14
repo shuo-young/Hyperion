@@ -2,7 +2,7 @@
     "dapp_name": "Owls",
     "total_func": 32,
     "analyzed_func": 2,
-    "block_num": 18641908,
+    "block_num": 18724333,
     "address": "0xe2e27b49e405f6c25796167b2500c195f972ebac",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

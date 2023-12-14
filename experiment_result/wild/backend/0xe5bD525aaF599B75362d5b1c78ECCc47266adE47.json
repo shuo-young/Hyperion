@@ -2,7 +2,7 @@
     "dapp_name": "NFT Brawl ETH",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 18673802,
+    "block_num": 18736401,
     "address": "0xe5bD525aaF599B75362d5b1c78ECCc47266adE47",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

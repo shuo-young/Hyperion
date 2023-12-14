@@ -1,0 +1,28 @@
+{
+    "dapp_name": "BenSwap",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 34114809,
+    "address": "0x8173dDa13Fd405e5BcA84Bd7F64e58cAF4810A32",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            33628868840088273319060019
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

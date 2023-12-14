@@ -2,7 +2,7 @@
     "dapp_name": "Genuine Undead",
     "total_func": 46,
     "analyzed_func": 4,
-    "block_num": 18641521,
+    "block_num": 18724198,
     "address": "0x209e639a0ec166ac7a1a4ba41968fa967db30221",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

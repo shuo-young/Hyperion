@@ -2,7 +2,7 @@
     "dapp_name": "Quirkies Originals",
     "total_func": 41,
     "analyzed_func": 4,
-    "block_num": 18640955,
+    "block_num": 18723965,
     "address": "0x3903d4ffaaa700b62578a66e7a67ba4cb67787f9",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

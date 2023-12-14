@@ -2,7 +2,7 @@
     "dapp_name": "CryptoNinjaPartners",
     "total_func": 64,
     "analyzed_func": 3,
-    "block_num": 18641944,
+    "block_num": 18724363,
     "address": "0x138a5c693279b6cd82f48d4bef563251bc15adce",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

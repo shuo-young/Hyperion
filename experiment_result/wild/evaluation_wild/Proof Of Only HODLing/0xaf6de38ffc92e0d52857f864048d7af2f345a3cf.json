@@ -2,7 +2,7 @@
     "dapp_name": "Proof Of Only HODLing",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18661092,
+    "block_num": 18733723,
     "address": "0xaf6de38ffc92e0d52857f864048d7af2f345a3cf",
     "platform": "ETH",
     "reward": {
@@ -44,6 +44,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

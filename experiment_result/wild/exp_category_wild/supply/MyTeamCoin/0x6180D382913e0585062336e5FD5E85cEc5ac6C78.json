@@ -2,7 +2,7 @@
     "dapp_name": "MyTeamCoin",
     "total_func": 15,
     "analyzed_func": 4,
-    "block_num": 33857125,
+    "block_num": 34146265,
     "address": "0x6180D382913e0585062336e5FD5E85cEc5ac6C78",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

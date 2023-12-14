@@ -2,7 +2,7 @@
     "dapp_name": "Light Trail Rush - LTR",
     "total_func": 64,
     "analyzed_func": 2,
-    "block_num": 18673745,
+    "block_num": 18736367,
     "address": "0x5ee0900fa78dc40279cc7372884f1a2ee515f876",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

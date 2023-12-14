@@ -2,7 +2,7 @@
     "dapp_name": "BNB Chain",
     "total_func": 17,
     "analyzed_func": 3,
-    "block_num": 33851869,
+    "block_num": 34143503,
     "address": "0x660Df66F5953b2E16776c349B4F338f5fD430d0c",
     "platform": "BSC",
     "reward": {
@@ -12,7 +12,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xf340fa01": {
+        "rate": [
+            0.03
+        ],
+        "0x00000000": {
             "0x843": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-0-))",
@@ -26,7 +29,7 @@
                 ]
             ]
         },
-        "0x00000000": {
+        "0xf340fa01": {
             "0x843": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-0-))",
@@ -81,7 +84,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": true,

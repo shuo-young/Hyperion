@@ -2,7 +2,7 @@
     "dapp_name": "Dr. ETHvil's 3D FrankenPunks",
     "total_func": 64,
     "analyzed_func": 4,
-    "block_num": 18641921,
+    "block_num": 18724338,
     "address": "0x1fec856e25f757fed06eb90548b0224e91095738",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "The Wanderers",
     "total_func": 31,
     "analyzed_func": 7,
-    "block_num": 18642049,
+    "block_num": 18724400,
     "address": "0x8184a482a5038b124d933b779e0ea6e0fb72f54e",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

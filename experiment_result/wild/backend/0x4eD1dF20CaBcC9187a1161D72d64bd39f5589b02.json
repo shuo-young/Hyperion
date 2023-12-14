@@ -2,23 +2,13 @@
     "dapp_name": "PancakeFork Finance",
     "total_func": 32,
     "analyzed_func": 4,
-    "block_num": 33818010,
+    "block_num": 34126589,
     "address": "0x4eD1dF20CaBcC9187a1161D72d64bd39f5589b02",
     "platform": "BSC",
     "reward": {
         "warning": true,
-        "0x2e1a7d4d": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0xc6a": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-14-*Id_1, 10000)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-15-*Id_1, 10000)"
-                ]
-            ],
-            "0x2a5dS0x2946S0x2857S0x23a3B0xa8b": [
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x16ec": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
@@ -37,8 +27,18 @@
                 ]
             ]
         },
-        "0xb6b55f25": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0x16ec": [
+        "0x2e1a7d4d": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0xc6a": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-14-*Id_1, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-15-*Id_1, 10000)"
+                ]
+            ],
+            "0x2a5dS0x2946S0x2857S0x23a3B0xa8b": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
@@ -49,15 +49,15 @@
     "fee": {
         "warning": true,
         "modifiable": true,
-        "0x2e1a7d4d": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0xbe2": [
+        "rate": [
+            0.04,
+            0.03
+        ],
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x1827": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-12-))",
-                    "bvudiv_i(Ia_store-14-*Id_1, 10000)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-12-))",
-                    "bvudiv_i(Ia_store-15-*Id_1, 10000)"
+                    "bvudiv_i(Ia_store-13-*Id_1, 10000)"
                 ]
             ]
         },
@@ -73,11 +73,15 @@
                 ]
             ]
         },
-        "0xb6b55f25": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0x1827": [
+        "0x2e1a7d4d": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0xbe2": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-12-))",
-                    "bvudiv_i(Ia_store-13-*Id_1, 10000)"
+                    "bvudiv_i(Ia_store-14-*Id_1, 10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-15-*Id_1, 10000)"
                 ]
             ]
         }

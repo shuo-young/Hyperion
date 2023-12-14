@@ -2,7 +2,7 @@
     "dapp_name": "ETHMINER",
     "total_func": 22,
     "analyzed_func": 3,
-    "block_num": 154578016,
+    "block_num": 157757975,
     "address": "0xb242e3933AdA226968BdD9DA6a0734d0F5C84646",
     "platform": "Arbitrum",
     "reward": {
@@ -35,6 +35,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1
+        ],
         "0x3c5f07cb": {
             "0x8b5": [
                 [
@@ -96,7 +99,7 @@
     },
     "inconsistency": {
         "reward": true,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

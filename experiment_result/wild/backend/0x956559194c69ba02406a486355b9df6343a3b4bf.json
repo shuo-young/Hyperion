@@ -2,7 +2,7 @@
     "dapp_name": "MoonCryptoPolis",
     "total_func": 30,
     "analyzed_func": 3,
-    "block_num": 18673788,
+    "block_num": 18736395,
     "address": "0x956559194c69ba02406a486355b9df6343a3b4bf",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

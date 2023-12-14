@@ -2,7 +2,7 @@
     "dapp_name": "HOKKEN BRIDGE",
     "total_func": 52,
     "analyzed_func": 2,
-    "block_num": 33855391,
+    "block_num": 34145401,
     "address": "0x3d02B82ACBC64dAD2c4d82768dfA42B12E26a74a",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
@@ -21,7 +22,7 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xa9059cbb": {
+        "0x23b872dd": {
             "0x2430S0x1cc0": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-8-))",
@@ -29,7 +30,7 @@
                 ]
             ]
         },
-        "0x23b872dd": {
+        "0xa9059cbb": {
             "0x2430S0x1cc0": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-8-))",

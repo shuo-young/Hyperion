@@ -2,7 +2,7 @@
     "dapp_name": "OpenSwap",
     "total_func": 27,
     "analyzed_func": 0,
-    "block_num": 33816377,
+    "block_num": 34125174,
     "address": "0xE31e10f0f3f65a4aFe510C460Cda0f9392Fb0e99",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

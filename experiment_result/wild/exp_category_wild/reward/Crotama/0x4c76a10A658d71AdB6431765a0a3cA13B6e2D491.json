@@ -2,7 +2,7 @@
     "dapp_name": "Crotama",
     "total_func": 63,
     "analyzed_func": 4,
-    "block_num": 11341160,
+    "block_num": 11495331,
     "address": "0x4c76a10A658d71AdB6431765a0a3cA13B6e2D491",
     "platform": "Cronos",
     "reward": {
@@ -22,6 +22,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

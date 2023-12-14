@@ -2,15 +2,16 @@
     "dapp_name": "Infinity Star",
     "total_func": 31,
     "analyzed_func": 2,
-    "block_num": 18673714,
+    "block_num": 18736340,
     "address": "0xbe68a0e5a084d36f248ad97189c03d2e70457dd8",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x372b4bc1": {
             "0x3101S0x13ab": [
                 [

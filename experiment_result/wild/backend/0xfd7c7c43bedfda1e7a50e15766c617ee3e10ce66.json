@@ -2,7 +2,7 @@
     "dapp_name": "Ether Shrimp Farm",
     "total_func": 40,
     "analyzed_func": 5,
-    "block_num": 18660617,
+    "block_num": 18733512,
     "address": "0xfd7c7c43bedfda1e7a50e15766c617ee3e10ce66",
     "platform": "ETH",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x4f74acfe": {
             "0x9d0": [
                 [
@@ -53,19 +56,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xcf99d935": {
-            "0xd9b": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-17-))",
-                    "balance_1"
-                ]
-            ]
-        },
         "0x421a5727": {
             "0xd9b": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-17-))",
                     "balance_11"
+                ]
+            ]
+        },
+        "0xcf99d935": {
+            "0xd9b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-17-))",
+                    "balance_1"
                 ]
             ]
         }

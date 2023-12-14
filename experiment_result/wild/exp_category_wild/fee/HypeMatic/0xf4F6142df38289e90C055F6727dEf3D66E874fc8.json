@@ -2,7 +2,7 @@
     "dapp_name": "HypeMatic",
     "total_func": 29,
     "analyzed_func": 3,
-    "block_num": 50451342,
+    "block_num": 50851272,
     "address": "0xf4F6142df38289e90C055F6727dEf3D66E874fc8",
     "platform": "Polygon",
     "reward": {
@@ -20,6 +20,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.06
+        ],
         "0x581c5ae6": {
             "0x14a4": [
                 [

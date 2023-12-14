@@ -2,7 +2,7 @@
     "dapp_name": "Dooplicator",
     "total_func": 40,
     "analyzed_func": 2,
-    "block_num": 18641356,
+    "block_num": 18724136,
     "address": "0x466CFcD0525189b573E794F554b8A751279213Ac",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

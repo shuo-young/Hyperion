@@ -2,7 +2,7 @@
     "dapp_name": "Torpedo LAUNCH",
     "total_func": 33,
     "analyzed_func": 1,
-    "block_num": 18674557,
+    "block_num": 18736899,
     "address": "0x9a98e1b91302665a9b71bd4409e52bb0ad39731f",
     "platform": "ETH",
     "reward": {
@@ -18,7 +18,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

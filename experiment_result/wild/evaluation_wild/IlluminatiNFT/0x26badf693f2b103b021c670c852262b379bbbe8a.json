@@ -2,7 +2,7 @@
     "dapp_name": "IlluminatiNFT",
     "total_func": 43,
     "analyzed_func": 5,
-    "block_num": 18641713,
+    "block_num": 18724231,
     "address": "0x26badf693f2b103b021c670c852262b379bbbe8a",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

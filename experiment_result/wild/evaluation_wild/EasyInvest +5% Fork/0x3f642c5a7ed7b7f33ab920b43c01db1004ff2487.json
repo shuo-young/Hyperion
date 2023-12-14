@@ -2,7 +2,7 @@
     "dapp_name": "EasyInvest +5% Fork",
     "total_func": 3,
     "analyzed_func": 1,
-    "block_num": 18661836,
+    "block_num": 18734121,
     "address": "0x3f642c5a7ed7b7f33ab920b43c01db1004ff2487",
     "platform": "ETH",
     "reward": {
@@ -20,6 +20,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

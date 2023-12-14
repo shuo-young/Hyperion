@@ -2,7 +2,7 @@
     "dapp_name": "Jadu Hoverboard V1",
     "total_func": 34,
     "analyzed_func": 5,
-    "block_num": 18641750,
+    "block_num": 18724265,
     "address": "0xeda3b617646b5fc8c9c696e0356390128ce900f8",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

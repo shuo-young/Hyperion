@@ -1,0 +1,54 @@
+{
+    "dapp_name": "Xpansion",
+    "total_func": 14,
+    "analyzed_func": 2,
+    "block_num": 34107544,
+    "address": "0x4f745c0c7da552a348C384dA1a5BaEb28f2C607C",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000000
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

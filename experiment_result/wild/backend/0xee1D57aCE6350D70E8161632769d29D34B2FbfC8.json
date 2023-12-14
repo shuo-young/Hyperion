@@ -2,16 +2,17 @@
     "dapp_name": "Arbidex",
     "total_func": 67,
     "analyzed_func": 8,
-    "block_num": 153694999,
+    "block_num": 157328749,
     "address": "0xee1D57aCE6350D70E8161632769d29D34B2FbfC8",
     "platform": "Arbitrum",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
-        "0x853828b6": {
+        "rate": [],
+        "0x2e1a7d4d": {
             "0x2f11S0x2e88S0x2869S0x4db5": [
                 [
                     "0xd5954c3084a1ccd70b4da011e67760b8e78aee84",
@@ -27,7 +28,7 @@
                 ]
             ]
         },
-        "0x2e1a7d4d": {
+        "0x853828b6": {
             "0x2f11S0x2e88S0x2869S0x4db5": [
                 [
                     "0xd5954c3084a1ccd70b4da011e67760b8e78aee84",

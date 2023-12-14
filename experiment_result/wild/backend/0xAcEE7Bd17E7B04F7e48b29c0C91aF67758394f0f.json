@@ -2,7 +2,7 @@
     "dapp_name": "Tetu",
     "total_func": 3,
     "analyzed_func": 0,
-    "block_num": 50423914,
+    "block_num": 50838142,
     "address": "0xAcEE7Bd17E7B04F7e48b29c0C91aF67758394f0f",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

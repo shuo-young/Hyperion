@@ -2,7 +2,7 @@
     "dapp_name": "MeowSwap",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 33857117,
+    "block_num": 34146252,
     "address": "0xe8658b07c555e9604329a6a0a82ff6d9c6f68d2f",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

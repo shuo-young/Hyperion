@@ -2,7 +2,7 @@
     "dapp_name": "CardsFarm",
     "total_func": 11,
     "analyzed_func": 0,
-    "block_num": 33856942,
+    "block_num": 34145977,
     "address": "0x7aacaf275c7fe3d95aa6328900638dd95ff2668d",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

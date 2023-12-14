@@ -2,7 +2,7 @@
     "dapp_name": "Meebits",
     "total_func": 44,
     "analyzed_func": 4,
-    "block_num": 18660425,
+    "block_num": 18733413,
     "address": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            4133597883597.884
+        ],
         "0x1249c58b": {
             "0x2860": [
                 [

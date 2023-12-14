@@ -2,15 +2,16 @@
     "dapp_name": "Lil Pudgys",
     "total_func": 50,
     "analyzed_func": 7,
-    "block_num": 18641118,
+    "block_num": 18724042,
     "address": "0x524cab2ec69124574082676e6f654a18df49a048",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xcc0bbb6f": {
             "0x2433S0x8bd": [
                 [
@@ -54,14 +55,14 @@
     },
     "supply": {
         "amount": [
-            91389168320812
+            91668341195052
         ],
         "unlimited": true
     },
     "lock": false,
     "clear": {
         "warning": true,
-        "0x339a75bf": {
+        "0x21c34fcb": {
             "0x26c30xe8d": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-6-))",
@@ -69,7 +70,7 @@
                 ]
             ]
         },
-        "0x21c34fcb": {
+        "0x339a75bf": {
             "0x26c30xe8d": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-6-))",

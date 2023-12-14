@@ -2,7 +2,7 @@
     "dapp_name": "Bricktopians V2",
     "total_func": 51,
     "analyzed_func": 9,
-    "block_num": 18642148,
+    "block_num": 18724450,
     "address": "0x9eeeaf684e228c2d5c89435e010acc02c41dc86b",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

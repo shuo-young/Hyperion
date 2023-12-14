@@ -2,7 +2,7 @@
     "dapp_name": "BNB Bank",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855201,
+    "block_num": 34145186,
     "address": "0x87b9238a03b42a885d16186495b8f717eec7f4d8",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

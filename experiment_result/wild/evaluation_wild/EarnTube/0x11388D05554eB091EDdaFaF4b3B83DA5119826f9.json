@@ -2,7 +2,7 @@
     "dapp_name": "EarnTube",
     "total_func": 20,
     "analyzed_func": 0,
-    "block_num": 50445341,
+    "block_num": 50848035,
     "address": "0x11388D05554eB091EDdaFaF4b3B83DA5119826f9",
     "platform": "Polygon",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

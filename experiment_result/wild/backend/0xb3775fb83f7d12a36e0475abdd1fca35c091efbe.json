@@ -2,7 +2,7 @@
     "dapp_name": "PoWH 3D",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18660980,
+    "block_num": 18733657,
     "address": "0xb3775fb83f7d12a36e0475abdd1fca35c091efbe",
     "platform": "ETH",
     "reward": {
@@ -42,11 +42,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            475234203577734914782928
+            475196651057404576208925
         ],
         "unlimited": false
     },

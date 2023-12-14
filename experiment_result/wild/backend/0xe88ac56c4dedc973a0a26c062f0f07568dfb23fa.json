@@ -2,7 +2,7 @@
     "dapp_name": "BOOM",
     "total_func": 21,
     "analyzed_func": 0,
-    "block_num": 50451208,
+    "block_num": 50851224,
     "address": "0xe88ac56c4dedc973a0a26c062f0f07568dfb23fa",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

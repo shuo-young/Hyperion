@@ -2,7 +2,7 @@
     "dapp_name": "Bnbabylon",
     "total_func": 11,
     "analyzed_func": 3,
-    "block_num": 33855211,
+    "block_num": 34145253,
     "address": "0xbA1c2E3DbF96544A62Fe8A29Edf1baBe38C1c318",
     "platform": "BSC",
     "reward": {
@@ -19,16 +19,19 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0x6e553f65": {
-            "0x847S0x139aS0x195": [
+        "rate": [
+            0.12
+        ],
+        "0x00000000": {
+            "0x847S0x37d6": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-6-))",
                     "bvudiv_i(Ia_store-7-*Iv, Ia_store-8-)"
                 ]
             ]
         },
-        "0x00000000": {
-            "0x847S0x37d6": [
+        "0x6e553f65": {
+            "0x847S0x139aS0x195": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-6-))",
                     "bvudiv_i(Ia_store-7-*Iv, Ia_store-8-)"

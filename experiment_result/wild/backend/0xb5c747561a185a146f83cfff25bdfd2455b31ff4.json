@@ -2,7 +2,7 @@
     "dapp_name": "Boss Beauties",
     "total_func": 48,
     "analyzed_func": 7,
-    "block_num": 18640958,
+    "block_num": 18723967,
     "address": "0xb5c747561a185a146f83cfff25bdfd2455b31ff4",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

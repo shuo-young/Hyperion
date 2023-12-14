@@ -2,7 +2,7 @@
     "dapp_name": "Baby Doge Swap",
     "total_func": 11,
     "analyzed_func": 6,
-    "block_num": 33785386,
+    "block_num": 34109987,
     "address": "0x9869674E80D632F93c338bd398408273D20a6C8e",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -33,7 +34,29 @@
                 ]
             ]
         },
+        "0xe8e33700": {
+            "0x11f9": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ],
+            "0x12df": [
+                [
+                    "Is",
+                    "mem_mem_64"
+                ]
+            ]
+        },
         "0xded9382a": {
+            "0x6dd": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x2751cec": {
             "0x6dd": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
@@ -51,28 +74,6 @@
             "0xcbe": [
                 [
                     "Concat(0, Extract(159, 0, Id_6))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x2751cec": {
-            "0x6dd": [
-                [
-                    "Concat(0, Extract(159, 0, Id_5))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0xe8e33700": {
-            "0x11f9": [
-                [
-                    "Is",
-                    "mem_mem_64"
-                ]
-            ],
-            "0x12df": [
-                [
-                    "Is",
                     "mem_mem_64"
                 ]
             ]

@@ -2,7 +2,7 @@
     "dapp_name": "Eth Dragon Ball Z Farm",
     "total_func": 50,
     "analyzed_func": 3,
-    "block_num": 18660585,
+    "block_num": 18733498,
     "address": "0xd7408546678406f239410acc4f5ac5ca1b633ce5",
     "platform": "ETH",
     "reward": {
@@ -39,14 +39,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xe2c1f02c": {
-            "0x2593": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(2*Iv, 100)"
-                ]
-            ]
-        },
+        "rate": [
+            179311895812788.2
+        ],
         "0x827cc452": {
             "0x1aedS0x89c": [
                 [

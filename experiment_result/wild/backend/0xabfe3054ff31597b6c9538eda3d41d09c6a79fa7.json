@@ -2,7 +2,7 @@
     "dapp_name": "CryptoFights",
     "total_func": 16,
     "analyzed_func": 2,
-    "block_num": 18672358,
+    "block_num": 18735818,
     "address": "0xabfe3054ff31597b6c9538eda3d41d09c6a79fa7",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

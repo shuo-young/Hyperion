@@ -2,7 +2,7 @@
     "dapp_name": "Charged Particles",
     "total_func": 48,
     "analyzed_func": 12,
-    "block_num": 18670405,
+    "block_num": 18734979,
     "address": "0x63174fa9680c674a5580f7d747832b2a2133ad8f",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

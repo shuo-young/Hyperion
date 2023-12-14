@@ -2,7 +2,7 @@
     "dapp_name": "Alligator",
     "total_func": 15,
     "analyzed_func": 2,
-    "block_num": 38190711,
+    "block_num": 38677923,
     "address": "0x32A948F018870548bEd7e888Cd97a257b700D4c6",
     "platform": "Avalanche",
     "reward": {
@@ -26,6 +26,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

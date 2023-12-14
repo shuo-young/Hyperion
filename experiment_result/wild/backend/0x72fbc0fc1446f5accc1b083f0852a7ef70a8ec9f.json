@@ -2,7 +2,7 @@
     "dapp_name": "Novabox",
     "total_func": 16,
     "analyzed_func": 1,
-    "block_num": 18661990,
+    "block_num": 18734199,
     "address": "0x72fbc0fc1446f5accc1b083f0852a7ef70a8ec9f",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

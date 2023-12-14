@@ -2,7 +2,7 @@
     "dapp_name": "ASM Brains",
     "total_func": 31,
     "analyzed_func": 4,
-    "block_num": 18641442,
+    "block_num": 18724185,
     "address": "0xd0318da435dbce0b347cc6faa330b5a9889e3585",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            9259
+            9261
         ],
         "unlimited": true,
         "ui": []

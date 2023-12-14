@@ -2,7 +2,7 @@
     "dapp_name": "Zeeverse",
     "total_func": 14,
     "analyzed_func": 2,
-    "block_num": 18642380,
+    "block_num": 18724566,
     "address": "0x7616113782AaDAB041d7B10d474F8A0c04EFf258",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

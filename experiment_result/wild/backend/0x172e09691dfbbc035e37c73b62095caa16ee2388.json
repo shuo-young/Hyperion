@@ -2,37 +2,13 @@
     "dapp_name": "Synthetix",
     "total_func": 53,
     "analyzed_func": 10,
-    "block_num": 18657919,
+    "block_num": 18732369,
     "address": "0x172e09691dfbbc035e37c73b62095caa16ee2388",
     "platform": "ETH",
     "reward": {
         "warning": true,
-        "0x7a2a6526": {
-            "0x1e8f": [
-                [
-                    "Is",
-                    "bvudiv_i(1000000000000000000*mem_mem_64, Ia_store-12-)"
-                ],
-                [
-                    "Is",
-                    "bvudiv_i(0, Ia_store-12-)"
-                ]
-            ]
-        },
         "0x5b7b5b35": {
             "0x122a": [
-                [
-                    "Is",
-                    "bvudiv_i(1000000000000000000*mem_mem_64, Ia_store-12-)"
-                ],
-                [
-                    "Is",
-                    "bvudiv_i(0, Ia_store-12-)"
-                ]
-            ]
-        },
-        "0x7d43c206": {
-            "0x1e8f": [
                 [
                     "Is",
                     "bvudiv_i(1000000000000000000*mem_mem_64, Ia_store-12-)"
@@ -54,11 +30,36 @@
                     "bvudiv_i(0, Ia_store-12-)"
                 ]
             ]
+        },
+        "0x7a2a6526": {
+            "0x1e8f": [
+                [
+                    "Is",
+                    "bvudiv_i(1000000000000000000*mem_mem_64, Ia_store-12-)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(0, Ia_store-12-)"
+                ]
+            ]
+        },
+        "0x7d43c206": {
+            "0x1e8f": [
+                [
+                    "Is",
+                    "bvudiv_i(1000000000000000000*mem_mem_64, Ia_store-12-)"
+                ],
+                [
+                    "Is",
+                    "bvudiv_i(0, Ia_store-12-)"
+                ]
+            ]
         }
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

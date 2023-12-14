@@ -2,15 +2,16 @@
     "dapp_name": "Contract Servant",
     "total_func": 24,
     "analyzed_func": 6,
-    "block_num": 18672228,
+    "block_num": 18735790,
     "address": "0xae1E3E7C920F7ED0F850701988059Dc209d60257",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x454a2ab3": {
             "0x196eS0x199": [
                 [
@@ -27,19 +28,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x878eb368": {
-            "0x15a00x1a1b": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
-                    "Id_1"
-                ]
-            ]
-        },
         "0x5fd8c710": {
             "0xc5bS0x21b": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-2-))",
                     "balance_1"
+                ]
+            ]
+        },
+        "0x878eb368": {
+            "0x15a00x1a1b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Id_1"
                 ]
             ]
         }

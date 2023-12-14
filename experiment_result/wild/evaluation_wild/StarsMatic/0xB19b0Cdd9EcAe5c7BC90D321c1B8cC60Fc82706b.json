@@ -2,7 +2,7 @@
     "dapp_name": "StarsMatic",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 50452745,
+    "block_num": 50852084,
     "address": "0xB19b0Cdd9EcAe5c7BC90D321c1B8cC60Fc82706b",
     "platform": "Polygon",
     "reward": {
@@ -22,6 +22,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

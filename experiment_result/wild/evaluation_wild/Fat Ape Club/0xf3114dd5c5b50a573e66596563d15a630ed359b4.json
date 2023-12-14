@@ -2,7 +2,7 @@
     "dapp_name": "Fat Ape Club",
     "total_func": 61,
     "analyzed_func": 6,
-    "block_num": 18641559,
+    "block_num": 18724210,
     "address": "0xf3114dd5c5b50a573e66596563d15a630ed359b4",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

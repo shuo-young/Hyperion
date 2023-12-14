@@ -2,7 +2,7 @@
     "dapp_name": "\u00e0 table !",
     "total_func": 26,
     "analyzed_func": 2,
-    "block_num": 18674644,
+    "block_num": 18736915,
     "address": "0x5d77b850ba7c6218dbb4ff087ad25dee0baa638f",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

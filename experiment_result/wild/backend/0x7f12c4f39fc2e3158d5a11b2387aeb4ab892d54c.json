@@ -2,7 +2,7 @@
     "dapp_name": "Kingdoms Beyond",
     "total_func": 14,
     "analyzed_func": 2,
-    "block_num": 18673740,
+    "block_num": 18736364,
     "address": "0x7f12c4f39fc2e3158d5a11b2387aeb4ab892d54c",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

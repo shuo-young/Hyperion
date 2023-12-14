@@ -2,7 +2,7 @@
     "dapp_name": "TwinShiba",
     "total_func": 77,
     "analyzed_func": 3,
-    "block_num": 33857187,
+    "block_num": 34146422,
     "address": "0x01bA62848C029EA6f41F7b7c6782B213d28425b0",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

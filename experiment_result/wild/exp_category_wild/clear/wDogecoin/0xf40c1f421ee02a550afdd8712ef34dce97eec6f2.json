@@ -2,7 +2,7 @@
     "dapp_name": "wDogecoin",
     "total_func": 33,
     "analyzed_func": 1,
-    "block_num": 33853295,
+    "block_num": 34144244,
     "address": "0xf40c1f421ee02a550afdd8712ef34dce97eec6f2",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

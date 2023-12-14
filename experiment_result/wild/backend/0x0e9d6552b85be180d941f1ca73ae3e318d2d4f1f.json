@@ -2,7 +2,7 @@
     "dapp_name": "Metroverse",
     "total_func": 42,
     "analyzed_func": 3,
-    "block_num": 18640777,
+    "block_num": 18723927,
     "address": "0x0e9d6552b85be180d941f1ca73ae3e318d2d4f1f",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

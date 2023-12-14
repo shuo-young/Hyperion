@@ -2,7 +2,7 @@
     "dapp_name": "BAEX",
     "total_func": 44,
     "analyzed_func": 2,
-    "block_num": 18670401,
+    "block_num": 18734947,
     "address": "0x1DA709d9c2A25BE7427618cDd3e581a14dDff44b",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

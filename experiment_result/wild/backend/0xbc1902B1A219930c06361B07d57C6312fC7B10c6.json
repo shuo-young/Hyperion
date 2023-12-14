@@ -2,7 +2,7 @@
     "dapp_name": "Balancer",
     "total_func": 66,
     "analyzed_func": 12,
-    "block_num": 18646684,
+    "block_num": 18726543,
     "address": "0xbc1902B1A219930c06361B07d57C6312fC7B10c6",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

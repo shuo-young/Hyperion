@@ -2,7 +2,7 @@
     "dapp_name": "333ETH",
     "total_func": 26,
     "analyzed_func": 3,
-    "block_num": 18601235,
+    "block_num": 18733452,
     "address": "0x215ce36e90b1b64e6fa2e358305177f8fe5daf25",
     "platform": "ETH",
     "reward": {
@@ -20,6 +20,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.075,
+            0.05
+        ],
         "0xd82fa3f1": {
             "0x9a8": [
                 [

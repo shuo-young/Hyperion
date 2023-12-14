@@ -2,7 +2,7 @@
     "dapp_name": "NICEE",
     "total_func": 33,
     "analyzed_func": 3,
-    "block_num": 18671575,
+    "block_num": 18735520,
     "address": "0x669Bffac935Be666219c68D20931CBf677b8Fa1C",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

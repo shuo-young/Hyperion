@@ -2,7 +2,7 @@
     "dapp_name": "Instadapp",
     "total_func": 8,
     "analyzed_func": 0,
-    "block_num": 18651229,
+    "block_num": 18728766,
     "address": "0x6f40d4a6237c257fff2db00fa0510deeecd303eb",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

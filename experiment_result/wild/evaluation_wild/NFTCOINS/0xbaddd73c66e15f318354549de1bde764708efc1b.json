@@ -2,7 +2,7 @@
     "dapp_name": "NFTCOINS",
     "total_func": 16,
     "analyzed_func": 0,
-    "block_num": 33855418,
+    "block_num": 34145425,
     "address": "0xbaddd73c66e15f318354549de1bde764708efc1b",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

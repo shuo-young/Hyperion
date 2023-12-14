@@ -2,7 +2,7 @@
     "dapp_name": "BaconSwap",
     "total_func": 29,
     "analyzed_func": 3,
-    "block_num": 18670401,
+    "block_num": 18734942,
     "address": "0x5DB53185393E3ccaCd4Bb95733C012AE292758D7",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Reflect Doge - RFLCTMINE",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855483,
+    "block_num": 34145443,
     "address": "0xbe8F2dC7329D24B47FD449303594b4bD961E3162",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

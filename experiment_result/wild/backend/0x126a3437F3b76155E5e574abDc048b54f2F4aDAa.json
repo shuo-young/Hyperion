@@ -2,7 +2,7 @@
     "dapp_name": "The Sandbox",
     "total_func": 22,
     "analyzed_func": 3,
-    "block_num": 18673882,
+    "block_num": 18736427,
     "address": "0x126a3437F3b76155E5e574abDc048b54f2F4aDAa",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.0144
+        ],
         "0x3be3b0e2": {
             "0x18b4": [
                 [
@@ -27,6 +30,14 @@
                 ]
             ]
         },
+        "0xc2bddf26": {
+            "0x1df9S0x11b3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "bvudiv_i(14400000000000000*Id_7, mem_mem_mem_mem_64)"
+                ]
+            ]
+        },
         "0xe0a1f1c7": {
             "0x18b4": [
                 [
@@ -36,14 +47,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-10-))",
                     "Id_7 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_7*mem_160 + mem_mem_mem_mem_mem_64, 10000)"
-                ]
-            ]
-        },
-        "0xc2bddf26": {
-            "0x1df9S0x11b3": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-10-))",
-                    "bvudiv_i(14400000000000000*Id_7, mem_mem_mem_mem_64)"
                 ]
             ]
         }

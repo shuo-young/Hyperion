@@ -2,7 +2,7 @@
     "dapp_name": "POLYTRUSTV2",
     "total_func": 33,
     "analyzed_func": 3,
-    "block_num": 50452438,
+    "block_num": 50851924,
     "address": "0xB9A1130C5B08d677975223C2040e80d30801F3B1",
     "platform": "Polygon",
     "reward": {
@@ -46,7 +46,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

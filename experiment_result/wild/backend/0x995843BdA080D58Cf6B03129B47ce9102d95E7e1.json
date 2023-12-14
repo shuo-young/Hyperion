@@ -2,7 +2,7 @@
     "dapp_name": "Auragi",
     "total_func": 5,
     "analyzed_func": 0,
-    "block_num": 153729612,
+    "block_num": 157340881,
     "address": "0x995843BdA080D58Cf6B03129B47ce9102d95E7e1",
     "platform": "Arbitrum",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Llamaverse Genesis",
     "total_func": 42,
     "analyzed_func": 1,
-    "block_num": 18641713,
+    "block_num": 18724230,
     "address": "0x9df8aa7c681f33e442a0d57b838555da863504f3",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

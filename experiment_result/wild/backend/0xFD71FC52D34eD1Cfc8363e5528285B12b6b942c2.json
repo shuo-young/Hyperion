@@ -2,7 +2,7 @@
     "dapp_name": "DuckyDeFi",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 11312142,
+    "block_num": 11480886,
     "address": "0xFD71FC52D34eD1Cfc8363e5528285B12b6b942c2",
     "platform": "Cronos",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            90354694390727441995203632
+            90475283561759041650927224
         ],
         "unlimited": true
     },

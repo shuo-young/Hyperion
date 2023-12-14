@@ -2,7 +2,7 @@
     "dapp_name": "Creepz Reptile Armoury",
     "total_func": 48,
     "analyzed_func": 2,
-    "block_num": 18641709,
+    "block_num": 18724223,
     "address": "0x5f4a54e29ccb8a02cdf7d7bfa8a0999a8330cced",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

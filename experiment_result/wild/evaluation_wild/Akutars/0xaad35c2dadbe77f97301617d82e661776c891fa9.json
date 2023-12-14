@@ -2,7 +2,7 @@
     "dapp_name": "Akutars",
     "total_func": 32,
     "analyzed_func": 1,
-    "block_num": 18641136,
+    "block_num": 18724042,
     "address": "0xaad35c2dadbe77f97301617d82e661776c891fa9",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "VOX Collectibles: Town Star",
     "total_func": 32,
     "analyzed_func": 6,
-    "block_num": 18640691,
+    "block_num": 18723926,
     "address": "0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

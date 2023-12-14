@@ -2,7 +2,7 @@
     "dapp_name": "Double Ether",
     "total_func": 30,
     "analyzed_func": 5,
-    "block_num": 18661778,
+    "block_num": 18734120,
     "address": "0x9d1cbf4ef833340120e721e5028c326ec1066c7e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Kratos Studios",
     "total_func": 23,
     "analyzed_func": 0,
-    "block_num": 50339686,
+    "block_num": 50795806,
     "address": "0x9830f57199790F0E6c62719FCae66885D1c3e70d",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Unicly",
     "total_func": 29,
     "analyzed_func": 3,
-    "block_num": 18660316,
+    "block_num": 18733360,
     "address": "0x94E0BAb2F6Ab1F19F4750E42d7349f2740513aD5",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

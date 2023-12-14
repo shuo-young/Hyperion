@@ -2,7 +2,7 @@
     "dapp_name": "BMP WORLD CUP",
     "total_func": 51,
     "analyzed_func": 3,
-    "block_num": 33851828,
+    "block_num": 34143452,
     "address": "0xF74273C6716Ce3CD13Eea88ab982bb2d4AaC6Aeb",
     "platform": "BSC",
     "reward": {
@@ -51,6 +51,47 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.025
+        ],
+        "0xdb663865": {
+            "0x373e": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-3-))",
+                    "5*bvudiv_i(25*Iv, 1000)"
+                ]
+            ],
+            "0x37a7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(25*Iv, 1000)"
+                ]
+            ],
+            "0x3810": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "bvudiv_i(25*Iv, 1000)"
+                ]
+            ],
+            "0x3879": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(25*Iv, 1000)"
+                ]
+            ],
+            "0x38e2": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(25*Iv, 1000)"
+                ]
+            ],
+            "0x394b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "bvudiv_i(25*Iv, 1000)"
+                ]
+            ]
+        },
         "0x3955f0fe": {
             "0x24a0": [
                 [
@@ -278,44 +319,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-8-))",
                     "bvudiv_i(25*\n         bvudiv_i(Ia_store-1-*balance_55,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-21- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_46- +\n                            Ia_store-0-*\n                            Ia_store-some_var_54-),\n                           Ia_store-some_var_46- +\n                           Ia_store-0-*Ia_store-some_var_54-)),\n         1000)"
-                ]
-            ]
-        },
-        "0xdb663865": {
-            "0x373e": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-3-))",
-                    "5*bvudiv_i(25*Iv, 1000)"
-                ]
-            ],
-            "0x37a7": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-4-))",
-                    "bvudiv_i(25*Iv, 1000)"
-                ]
-            ],
-            "0x3810": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-5-))",
-                    "bvudiv_i(25*Iv, 1000)"
-                ]
-            ],
-            "0x3879": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-6-))",
-                    "bvudiv_i(25*Iv, 1000)"
-                ]
-            ],
-            "0x38e2": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-7-))",
-                    "bvudiv_i(25*Iv, 1000)"
-                ]
-            ],
-            "0x394b": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-8-))",
-                    "bvudiv_i(25*Iv, 1000)"
                 ]
             ]
         }

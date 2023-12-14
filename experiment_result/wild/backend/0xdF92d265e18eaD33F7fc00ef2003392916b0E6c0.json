@@ -2,16 +2,16 @@
     "dapp_name": "PYRA",
     "total_func": 29,
     "analyzed_func": 7,
-    "block_num": 33853065,
+    "block_num": 34144182,
     "address": "0xdF92d265e18eaD33F7fc00ef2003392916b0E6c0",
     "platform": "BSC",
     "reward": {
         "warning": false,
-        "0x3ccfd60b": {
+        "0xa9059cbb": {
             "0x13d9": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
                 ]
             ]
         },
@@ -31,18 +31,19 @@
                 ]
             ]
         },
-        "0xa9059cbb": {
+        "0x3ccfd60b": {
             "0x13d9": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
                 ]
             ]
         }
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

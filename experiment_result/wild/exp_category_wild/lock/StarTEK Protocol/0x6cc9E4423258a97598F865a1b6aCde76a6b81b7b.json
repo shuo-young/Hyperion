@@ -2,7 +2,7 @@
     "dapp_name": "StarTEK Protocol",
     "total_func": 38,
     "analyzed_func": 1,
-    "block_num": 33857155,
+    "block_num": 34146419,
     "address": "0x6cc9E4423258a97598F865a1b6aCde76a6b81b7b",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

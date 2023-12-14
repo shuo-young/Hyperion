@@ -2,7 +2,7 @@
     "dapp_name": "UMA",
     "total_func": 15,
     "analyzed_func": 1,
-    "block_num": 18658144,
+    "block_num": 18732436,
     "address": "0x592349F7DeDB2b75f9d4F194d4b7C16D82E507Dc",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

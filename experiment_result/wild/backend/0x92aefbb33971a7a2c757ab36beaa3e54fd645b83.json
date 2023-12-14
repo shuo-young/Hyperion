@@ -2,7 +2,7 @@
     "dapp_name": "Hodl St",
     "total_func": 21,
     "analyzed_func": 2,
-    "block_num": 18673696,
+    "block_num": 18736322,
     "address": "0x92aefbb33971a7a2c757ab36beaa3e54fd645b83",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": true
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

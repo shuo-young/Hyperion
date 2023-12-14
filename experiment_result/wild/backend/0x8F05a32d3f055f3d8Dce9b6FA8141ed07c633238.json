@@ -2,7 +2,7 @@
     "dapp_name": "BooBank",
     "total_func": 32,
     "analyzed_func": 3,
-    "block_num": 18670403,
+    "block_num": 18734977,
     "address": "0x8F05a32d3f055f3d8Dce9b6FA8141ed07c633238",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

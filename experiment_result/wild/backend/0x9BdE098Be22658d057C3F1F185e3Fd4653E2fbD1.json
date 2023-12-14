@@ -2,7 +2,7 @@
     "dapp_name": "KP2R.Network",
     "total_func": 93,
     "analyzed_func": 15,
-    "block_num": 18671432,
+    "block_num": 18735465,
     "address": "0x9BdE098Be22658d057C3F1F185e3Fd4653E2fbD1",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.003
+        ],
         "0x6dab5dcf": {
             "0x323d": [
                 [

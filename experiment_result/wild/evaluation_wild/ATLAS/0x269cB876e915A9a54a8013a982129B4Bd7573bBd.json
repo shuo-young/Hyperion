@@ -1,0 +1,106 @@
+{
+    "dapp_name": "ATLAS",
+    "total_func": 89,
+    "analyzed_func": 5,
+    "block_num": 34145171,
+    "address": "0x269cB876e915A9a54a8013a982129B4Bd7573bBd",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0xa94b2fb": {
+            "0x15e9": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_12-*mem_mem_64, mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_12-*mem_mem_64, mem_64 + mem_64) +\nbvudiv_i(Ia_store-some_var_28-*mem_mem_64, mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_12-*mem_mem_64, mem_64 + mem_64) +\nbvudiv_i(0, mem_64 + mem_64)"
+                ]
+            ]
+        },
+        "0x580e1c7": {
+            "0x1302": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_9-*mem_mem_64, mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(2*Ia_store-some_var_28-*mem_mem_64,\n         mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(3*Ia_store-some_var_47-*mem_mem_64,\n         mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(4*Ia_store-some_var_66-*mem_mem_64,\n         mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(5*Ia_store-some_var_85-*mem_mem_64,\n         mem_64 + mem_64)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(6*Ia_store-some_var_104-*mem_mem_64,\n         mem_64 + mem_64)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "180 days",
+                "180 days",
+                "10 years"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

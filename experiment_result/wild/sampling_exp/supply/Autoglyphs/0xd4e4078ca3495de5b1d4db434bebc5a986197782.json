@@ -2,7 +2,7 @@
     "dapp_name": "Autoglyphs",
     "total_func": 25,
     "analyzed_func": 1,
-    "block_num": 18619592,
+    "block_num": 18723969,
     "address": "0xd4e4078ca3495de5b1d4db434bebc5a986197782",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

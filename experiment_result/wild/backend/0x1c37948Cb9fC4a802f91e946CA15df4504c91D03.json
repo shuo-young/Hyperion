@@ -2,7 +2,7 @@
     "dapp_name": "Hippo Dash by Gameta",
     "total_func": 18,
     "analyzed_func": 1,
-    "block_num": 33776358,
+    "block_num": 34106422,
     "address": "0x1c37948Cb9fC4a802f91e946CA15df4504c91D03",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

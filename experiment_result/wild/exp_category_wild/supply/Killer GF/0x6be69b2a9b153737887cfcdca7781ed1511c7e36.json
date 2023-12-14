@@ -2,7 +2,7 @@
     "dapp_name": "Killer GF",
     "total_func": 34,
     "analyzed_func": 1,
-    "block_num": 18640892,
+    "block_num": 18723956,
     "address": "0x6be69b2a9b153737887cfcdca7781ed1511c7e36",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

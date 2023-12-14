@@ -2,7 +2,7 @@
     "dapp_name": "World of Women Galaxy",
     "total_func": 67,
     "analyzed_func": 8,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0xf61f24c2d93bf2de187546b14425bf631f28d6dc",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            21463
+            21464
         ],
         "unlimited": false,
         "ui": []

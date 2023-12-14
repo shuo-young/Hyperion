@@ -2,7 +2,7 @@
     "dapp_name": "FEWOCiOUS x RTFKT",
     "total_func": 32,
     "analyzed_func": 1,
-    "block_num": 18642118,
+    "block_num": 18724429,
     "address": "0x2250d7c238392f4b575bb26c672afe45f0adcb75",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

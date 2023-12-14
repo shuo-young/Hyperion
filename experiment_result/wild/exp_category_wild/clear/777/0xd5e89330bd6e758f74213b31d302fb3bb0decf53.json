@@ -2,7 +2,7 @@
     "dapp_name": "777",
     "total_func": 28,
     "analyzed_func": 3,
-    "block_num": 154577047,
+    "block_num": 157757192,
     "address": "0xd5e89330bd6e758f74213b31d302fb3bb0decf53",
     "platform": "Arbitrum",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

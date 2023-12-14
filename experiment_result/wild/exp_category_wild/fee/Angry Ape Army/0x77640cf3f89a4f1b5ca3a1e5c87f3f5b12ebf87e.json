@@ -2,7 +2,7 @@
     "dapp_name": "Angry Ape Army",
     "total_func": 44,
     "analyzed_func": 8,
-    "block_num": 18642041,
+    "block_num": 18724395,
     "address": "0x77640cf3f89a4f1b5ca3a1e5c87f3f5b12ebf87e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.9
+        ],
         "0x853828b6": {
             "0x14a2S0x611": [
                 [

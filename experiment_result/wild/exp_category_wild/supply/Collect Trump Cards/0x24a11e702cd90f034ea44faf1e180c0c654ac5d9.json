@@ -2,7 +2,7 @@
     "dapp_name": "Collect Trump Cards",
     "total_func": 48,
     "analyzed_func": 9,
-    "block_num": 50332176,
+    "block_num": 50792586,
     "address": "0x24a11e702cd90f034ea44faf1e180c0c654ac5d9",
     "platform": "Polygon",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x58d089b3": {
             "0x1d9cS0x608": [
                 [
@@ -93,7 +94,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": true,
         "lock": false,
         "clear": false,

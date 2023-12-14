@@ -2,7 +2,7 @@
     "dapp_name": "PORSCH\u87a2 911",
     "total_func": 39,
     "analyzed_func": 4,
-    "block_num": 18641944,
+    "block_num": 18724351,
     "address": "0xccdf1373040d9ca4b5be1392d1945c1dae4a862c",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

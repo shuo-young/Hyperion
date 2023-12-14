@@ -2,7 +2,7 @@
     "dapp_name": "3Landers",
     "total_func": 94,
     "analyzed_func": 6,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0xb4d06d46a8285f4ec79fd294f78a881799d8ced9",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

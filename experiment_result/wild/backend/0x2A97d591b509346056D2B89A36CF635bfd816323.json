@@ -2,7 +2,7 @@
     "dapp_name": "PipeFlare",
     "total_func": 29,
     "analyzed_func": 1,
-    "block_num": 50341184,
+    "block_num": 50795965,
     "address": "0x2A97d591b509346056D2B89A36CF635bfd816323",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

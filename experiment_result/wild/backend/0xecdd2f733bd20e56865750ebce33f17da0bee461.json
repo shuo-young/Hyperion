@@ -2,7 +2,7 @@
     "dapp_name": "The CryptoDads",
     "total_func": 43,
     "analyzed_func": 7,
-    "block_num": 18641139,
+    "block_num": 18724044,
     "address": "0xecdd2f733bd20e56865750ebce33f17da0bee461",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.15
+        ],
         "0x853828b6": {
             "0x2469": [
                 [

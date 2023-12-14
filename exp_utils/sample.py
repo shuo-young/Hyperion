@@ -25,7 +25,14 @@ def copy_random_folders(src_dir, dest_dir, num_folders):
 
 
 # 示例用法
-copy_random_folders("exp_category_wild1123/clear", "sampling_exp/clear", 32)
-copy_random_folders("exp_category_wild1123/fee", "sampling_exp/fee", 28)
-copy_random_folders("exp_category_wild1123/supply", "sampling_exp/supply", 28)
-copy_random_folders("exp_category_wild1123/metadata", "sampling_exp/metadata", 29)
+copy_random_folders(
+    "exp_category_wild_1205/clear", "sampling_exp/clear", 67
+)  # 35+32=67
+copy_random_folders("exp_category_wild_1205/fee", "sampling_exp/fee", 44)  # 28+16=44
+copy_random_folders(
+    "exp_category_wild_1205/supply", "sampling_exp/supply", 60
+)  # 28+32=60
+copy_random_folders(
+    "exp_category_wild_1205/metadata", "sampling_exp/metadata", 49
+)  # 29+20=49
+copy_random_folders("exp_category_wild_1205/pause", "sampling_exp/pause", 34)

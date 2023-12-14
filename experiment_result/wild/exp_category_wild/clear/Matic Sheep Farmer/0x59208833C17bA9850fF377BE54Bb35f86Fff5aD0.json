@@ -2,7 +2,7 @@
     "dapp_name": "Matic Sheep Farmer",
     "total_func": 26,
     "analyzed_func": 2,
-    "block_num": 50451588,
+    "block_num": 50851382,
     "address": "0x59208833C17bA9850fF377BE54Bb35f86Fff5aD0",
     "platform": "Polygon",
     "reward": {
@@ -20,6 +20,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0xf9b19733": {
             "0x352bS0x23ce": [
                 [

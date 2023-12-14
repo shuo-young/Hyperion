@@ -2,7 +2,7 @@
     "dapp_name": "Momoguro: Holoself",
     "total_func": 43,
     "analyzed_func": 4,
-    "block_num": 18641930,
+    "block_num": 18724348,
     "address": "0x59ad67e9c6a84e602bc73b3a606f731cc6df210d",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.055
+        ],
         "0x3ccfd60b": {
             "0xac4S0x43c": [
                 [

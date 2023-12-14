@@ -2,7 +2,7 @@
     "dapp_name": "Treeverse",
     "total_func": 38,
     "analyzed_func": 6,
-    "block_num": 18640861,
+    "block_num": 18723952,
     "address": "0x1B829B926a14634d36625e60165c0770C09D02b2",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

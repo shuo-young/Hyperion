@@ -2,7 +2,7 @@
     "dapp_name": "the littles NFT",
     "total_func": 52,
     "analyzed_func": 4,
-    "block_num": 18641064,
+    "block_num": 18724009,
     "address": "0xc6ec80029cd2aa4b0021ceb11248c07b25d2de34",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

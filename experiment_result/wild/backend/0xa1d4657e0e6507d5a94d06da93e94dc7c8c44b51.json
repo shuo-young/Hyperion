@@ -2,7 +2,7 @@
     "dapp_name": "Worldwide Webb Land",
     "total_func": 59,
     "analyzed_func": 12,
-    "block_num": 18640708,
+    "block_num": 18723926,
     "address": "0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Xiasi inu",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 33857406,
+    "block_num": 34146542,
     "address": "0x0e20E3216EA172fcf9eAa19723b119e090fD353f",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

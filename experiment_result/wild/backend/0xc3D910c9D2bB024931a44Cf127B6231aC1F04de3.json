@@ -1,0 +1,86 @@
+{
+    "dapp_name": "HoneyFarm",
+    "total_func": 40,
+    "analyzed_func": 4,
+    "block_num": 34121701,
+    "address": "0xc3D910c9D2bB024931a44Cf127B6231aC1F04de3",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0x5312ea8e": {
+            "0x2edaS0x2db7S0x2d06S0x2b73B0x164b": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(15, 0, Ia_store-some_var_12-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(31, 16, Ia_store-some_var_59-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(47, 32, Ia_store-some_var_105-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(63, 48, Ia_store-some_var_116-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(79, 64, Ia_store-some_var_127-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(95, 80, Ia_store-some_var_138-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0, Extract(111, 96, Ia_store-some_var_149-)),\n         10000)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(mem_mem_64*\n         Concat(0,\n                Extract(127, 112, Ia_store-some_var_160-)),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xc6d758cb": {
+            "0x2edaS0x2db7S0x2d06S0x2b73B0x21ea": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        },
+        "0x8dbdbe6d": {
+            "0x2899": [
+                [
+                    "0xc3eae9b061aa0e1b9bd3436080dc57d2d63fedc1",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x441a3e70": {
+            "0x2899": [
+                [
+                    "0xc3eae9b061aa0e1b9bd3436080dc57d2d63fedc1",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

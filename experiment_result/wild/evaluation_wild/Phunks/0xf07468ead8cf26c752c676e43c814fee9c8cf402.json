@@ -2,7 +2,7 @@
     "dapp_name": "Phunks",
     "total_func": 40,
     "analyzed_func": 7,
-    "block_num": 18642139,
+    "block_num": 18724442,
     "address": "0xf07468ead8cf26c752c676e43c814fee9c8cf402",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "PandExchange",
     "total_func": 11,
     "analyzed_func": 4,
-    "block_num": 154580035,
+    "block_num": 157759089,
     "address": "0xbeF28Aab3e70dFc5C69587eDf85694aD3138c187",
     "platform": "Arbitrum",
     "reward": {
@@ -25,6 +25,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.005
+        ],
         "0x963fa412": {
             "0x1580": [
                 [

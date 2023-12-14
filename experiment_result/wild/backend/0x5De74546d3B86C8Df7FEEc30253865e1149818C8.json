@@ -2,7 +2,7 @@
     "dapp_name": "Firebird Finance",
     "total_func": 14,
     "analyzed_func": 0,
-    "block_num": 33806683,
+    "block_num": 34120951,
     "address": "0x5De74546d3B86C8Df7FEEc30253865e1149818C8",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,15 +2,16 @@
     "dapp_name": "Badger.Finance",
     "total_func": 20,
     "analyzed_func": 3,
-    "block_num": 18644826,
+    "block_num": 18725545,
     "address": "0x07c0E4f4C977a29c46Fb26597ea8C9105ca50b42",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x86d1a69f": {
             "0x1becS0x1aa3S0x18c0S0x1716S0x112c": [
                 [
@@ -31,19 +32,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x32f289cf": {
-            "0x730": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-102-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
         "0x55291dbd": {
             "0xaea": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-102-))",
                     "IH_b"
+                ]
+            ]
+        },
+        "0x32f289cf": {
+            "0x730": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-102-))",
+                    "mem_mem_64"
                 ]
             ]
         }

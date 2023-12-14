@@ -2,7 +2,7 @@
     "dapp_name": "The Humanoids",
     "total_func": 34,
     "analyzed_func": 4,
-    "block_num": 18640997,
+    "block_num": 18723989,
     "address": "0x3a5051566b2241285be871f650c445a88a970edd",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

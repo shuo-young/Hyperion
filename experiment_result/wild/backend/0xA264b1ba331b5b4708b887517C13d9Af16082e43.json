@@ -2,7 +2,7 @@
     "dapp_name": "Galaxy.Credit",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18671337,
+    "block_num": 18735444,
     "address": "0xA264b1ba331b5b4708b887517C13d9Af16082e43",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

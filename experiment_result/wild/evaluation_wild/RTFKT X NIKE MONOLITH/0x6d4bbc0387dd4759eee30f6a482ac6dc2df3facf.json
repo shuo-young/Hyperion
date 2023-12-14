@@ -2,7 +2,7 @@
     "dapp_name": "RTFKT X NIKE MONOLITH",
     "total_func": 19,
     "analyzed_func": 0,
-    "block_num": 18641709,
+    "block_num": 18724223,
     "address": "0x6d4bbc0387dd4759eee30f6a482ac6dc2df3facf",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

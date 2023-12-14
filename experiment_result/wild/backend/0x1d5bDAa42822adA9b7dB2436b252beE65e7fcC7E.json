@@ -2,7 +2,7 @@
     "dapp_name": "Canary Exchange",
     "total_func": 16,
     "analyzed_func": 1,
-    "block_num": 38212747,
+    "block_num": 38688851,
     "address": "0x1d5bDAa42822adA9b7dB2436b252beE65e7fcC7E",
     "platform": "Avalanche",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

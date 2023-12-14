@@ -2,7 +2,7 @@
     "dapp_name": "Zipcy's SuperNormal",
     "total_func": 44,
     "analyzed_func": 4,
-    "block_num": 18640771,
+    "block_num": 18723927,
     "address": "0xd532b88607b1877fe20c181cba2550e3bbd6b31c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

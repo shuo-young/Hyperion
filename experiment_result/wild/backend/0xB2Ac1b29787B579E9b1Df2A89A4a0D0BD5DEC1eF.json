@@ -2,7 +2,7 @@
     "dapp_name": "Arbitrum Miner",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 154577309,
+    "block_num": 157757433,
     "address": "0xB2Ac1b29787B579E9b1Df2A89A4a0D0BD5DEC1eF",
     "platform": "Arbitrum",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x3955f0fe": {
             "0xab9": [
                 [

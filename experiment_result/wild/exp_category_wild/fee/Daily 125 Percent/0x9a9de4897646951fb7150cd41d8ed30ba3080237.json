@@ -2,11 +2,19 @@
     "dapp_name": "Daily 125 Percent",
     "total_func": 15,
     "analyzed_func": 4,
-    "block_num": 18660548,
+    "block_num": 18733486,
     "address": "0x9a9de4897646951fb7150cd41d8ed30ba3080237",
     "platform": "ETH",
     "reward": {
         "warning": true,
+        "0x3ccfd60b": {
+            "0xa8e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-4-*Ia_store-some_var_2-, 100)*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  Ia_store-some_var_1-,\n                  60),\n         1440) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_3-"
+                ]
+            ]
+        },
         "0xf088d547": {
             "0xa8e": [
                 [
@@ -27,19 +35,14 @@
                 ]
             ]
         },
-        "0x3ccfd60b": {
-            "0xa8e": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(bvudiv_i(Ia_store-4-*Ia_store-some_var_2-, 100)*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  Ia_store-some_var_1-,\n                  60),\n         1440) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_3-"
-                ]
-            ]
-        },
         "ui": {}
     },
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xf088d547": {
             "0x7e7": [
                 [

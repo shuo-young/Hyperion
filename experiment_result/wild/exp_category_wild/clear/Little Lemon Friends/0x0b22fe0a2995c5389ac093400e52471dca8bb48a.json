@@ -2,7 +2,7 @@
     "dapp_name": "Little Lemon Friends",
     "total_func": 50,
     "analyzed_func": 6,
-    "block_num": 18641718,
+    "block_num": 18724246,
     "address": "0x0b22fe0a2995c5389ac093400e52471dca8bb48a",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

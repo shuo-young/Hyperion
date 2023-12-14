@@ -2,7 +2,7 @@
     "dapp_name": "Arcade Land",
     "total_func": 52,
     "analyzed_func": 16,
-    "block_num": 18640840,
+    "block_num": 18723941,
     "address": "0x4a8c9d751eeabc5521a68fb080dd7e72e46462af",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

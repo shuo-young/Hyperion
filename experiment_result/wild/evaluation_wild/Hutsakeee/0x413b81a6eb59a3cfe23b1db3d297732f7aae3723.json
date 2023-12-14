@@ -2,7 +2,7 @@
     "dapp_name": "Hutsakeee",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855400,
+    "block_num": 34145418,
     "address": "0x413b81a6eb59a3cfe23b1db3d297732f7aae3723",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

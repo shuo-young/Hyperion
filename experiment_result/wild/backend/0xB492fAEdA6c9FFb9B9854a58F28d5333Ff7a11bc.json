@@ -2,7 +2,7 @@
     "dapp_name": "Harvest Finance",
     "total_func": 30,
     "analyzed_func": 5,
-    "block_num": 18650716,
+    "block_num": 18728351,
     "address": "0xB492fAEdA6c9FFb9B9854a58F28d5333Ff7a11bc",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

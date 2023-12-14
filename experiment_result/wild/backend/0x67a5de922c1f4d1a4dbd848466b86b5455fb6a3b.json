@@ -2,15 +2,16 @@
     "dapp_name": "HyperDragons",
     "total_func": 19,
     "analyzed_func": 6,
-    "block_num": 18671371,
+    "block_num": 18735453,
     "address": "0x67a5de922c1f4d1a4dbd848466b86b5455fb6a3b",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x454a2ab3": {
             "0x1241S0x18b": [
                 [
@@ -27,19 +28,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x5fd8c710": {
-            "0x8ee": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-1-))",
-                    "balance_1"
-                ]
-            ]
-        },
         "0x878eb368": {
             "0x1413": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
                     "Id_1"
+                ]
+            ]
+        },
+        "0x5fd8c710": {
+            "0x8ee": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
                 ]
             ]
         }

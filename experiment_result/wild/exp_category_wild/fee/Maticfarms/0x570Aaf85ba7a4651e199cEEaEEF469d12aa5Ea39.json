@@ -2,7 +2,7 @@
     "dapp_name": "Maticfarms",
     "total_func": 36,
     "analyzed_func": 2,
-    "block_num": 50451697,
+    "block_num": 50851446,
     "address": "0x570Aaf85ba7a4651e199cEEaEEF469d12aa5Ea39",
     "platform": "Polygon",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.19
+        ],
         "0x581c5ae6": {
             "0xe6fS0x46e": [
                 [

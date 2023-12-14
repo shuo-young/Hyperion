@@ -2,7 +2,7 @@
     "dapp_name": "RotoHive",
     "total_func": 22,
     "analyzed_func": 0,
-    "block_num": 18673837,
+    "block_num": 18736409,
     "address": "0x0e3129b3fde4a458b7910a2602e92ac533b9400e",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

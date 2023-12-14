@@ -2,19 +2,11 @@
     "dapp_name": "PoJ",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18660955,
+    "block_num": 18733643,
     "address": "0xe1c9a03cf690256ff7738cbd508c88cf5238a535",
     "platform": "ETH",
     "reward": {
         "warning": false,
-        "0xa9059cbb": {
-            "0x13b9": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
-                ]
-            ]
-        },
         "0x3ccfd60b": {
             "0x13b9": [
                 [
@@ -39,11 +31,20 @@
                 ]
             ]
         },
+        "0xa9059cbb": {
+            "0x13b9": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
+                ]
+            ]
+        },
         "ui": {}
     },
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

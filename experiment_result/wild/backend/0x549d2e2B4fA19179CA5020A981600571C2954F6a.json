@@ -2,7 +2,7 @@
     "dapp_name": "Pancake Bunny",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33817117,
+    "block_num": 34125671,
     "address": "0x549d2e2B4fA19179CA5020A981600571C2954F6a",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

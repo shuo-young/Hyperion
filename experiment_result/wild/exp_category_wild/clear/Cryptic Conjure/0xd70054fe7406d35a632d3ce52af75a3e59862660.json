@@ -2,7 +2,7 @@
     "dapp_name": "Cryptic Conjure",
     "total_func": 54,
     "analyzed_func": 5,
-    "block_num": 18670591,
+    "block_num": 18735020,
     "address": "0xd70054fe7406d35a632d3ce52af75a3e59862660",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

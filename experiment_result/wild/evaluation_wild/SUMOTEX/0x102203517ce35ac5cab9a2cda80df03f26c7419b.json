@@ -2,7 +2,7 @@
     "dapp_name": "SUMOTEX",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18661157,
+    "block_num": 18733761,
     "address": "0x102203517ce35ac5cab9a2cda80df03f26c7419b",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

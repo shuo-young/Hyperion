@@ -2,19 +2,11 @@
     "dapp_name": "POID",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18660911,
+    "block_num": 18733628,
     "address": "0x90a313b6c34ad1ad8b98703d307a1b8d095529c6",
     "platform": "ETH",
     "reward": {
         "warning": false,
-        "0x3ccfd60b": {
-            "0x13b9": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
-                ]
-            ]
-        },
         "0xe9fad8ee": {
             "0x13b9": [
                 [
@@ -31,6 +23,14 @@
                 ]
             ]
         },
+        "0x3ccfd60b": {
+            "0x13b9": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
+                ]
+            ]
+        },
         "0xa9059cbb": {
             "0x13b9": [
                 [
@@ -42,7 +42,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

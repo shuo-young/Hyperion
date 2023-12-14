@@ -2,7 +2,7 @@
     "dapp_name": "Fantasy Football Fund",
     "total_func": 39,
     "analyzed_func": 3,
-    "block_num": 18670951,
+    "block_num": 18735234,
     "address": "0xb10aab26c15fb8fe7a90d7c5bfb0ec6ac4fbe609",
     "platform": "ETH",
     "reward": {
@@ -19,6 +19,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x11f3eecd": {
             "0x1acdS0x340": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "Ether Legends",
     "total_func": 29,
     "analyzed_func": 2,
-    "block_num": 18673664,
+    "block_num": 18736300,
     "address": "0x7d72da80084359751122a11af5305f38df18e246",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

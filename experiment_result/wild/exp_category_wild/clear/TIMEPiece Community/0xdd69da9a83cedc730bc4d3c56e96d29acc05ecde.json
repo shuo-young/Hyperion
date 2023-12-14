@@ -2,7 +2,7 @@
     "dapp_name": "TIMEPiece Community",
     "total_func": 37,
     "analyzed_func": 5,
-    "block_num": 18641379,
+    "block_num": 18724144,
     "address": "0xdd69da9a83cedc730bc4d3c56e96d29acc05ecde",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

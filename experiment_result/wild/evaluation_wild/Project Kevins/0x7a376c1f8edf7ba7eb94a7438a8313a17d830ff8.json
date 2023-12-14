@@ -2,7 +2,7 @@
     "dapp_name": "Project Kevins",
     "total_func": 43,
     "analyzed_func": 4,
-    "block_num": 18641421,
+    "block_num": 18724175,
     "address": "0x7a376c1f8edf7ba7eb94a7438a8313a17d830ff8",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Egyptian Mau",
     "total_func": 11,
     "analyzed_func": 0,
-    "block_num": 33857101,
+    "block_num": 34146213,
     "address": "0xfab98b45593e94c2513ba028c43187fd6e3453ed",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,31 +2,16 @@
     "dapp_name": "ETH Fighter",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 18673518,
+    "block_num": 18736215,
     "address": "0xe590f58B06AB5b5f283bA3f72e750B9D1DD574cE",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x3bc8bef9": {
-            "0x18300x40d": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-3-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-*\nbvudiv_i(Ia_store-5 + some_var_2-, Ia_store-10-)"
-                ]
-            ]
-        },
-        "0xbadd3967": {
-            "0x18300x12c3S0x2371": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-3-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-*\nbvudiv_i(Ia_store-5 + some_var_20-, Ia_store-10-)"
-                ]
-            ]
-        }
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,17 +2,32 @@
     "dapp_name": "KyberSwap Classic",
     "total_func": 25,
     "analyzed_func": 19,
-    "block_num": 18651555,
+    "block_num": 18728916,
     "address": "0x1c87257f5e8609940bc751a07bb085bb7f8cdbe6",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xd72c1447": {
             "0x5d27S0x5b2cS0x5715S0x4842B0x38790xfbb": [
+                [
+                    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "bvudiv_i(Id_3*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
+                ]
+            ]
+        },
+        "0x7d41a422": {
+            "0x5d27S0x5b2cS0x5715S0x47a7B0x37d60x3706": [
+                [
+                    0,
+                    "bvudiv_i(Iv*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
+                ]
+            ],
+            "0x5d27S0x5b2cS0x5715S0x4842B0x38790x3706": [
                 [
                     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
                     "bvudiv_i(Id_3*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
@@ -30,20 +45,6 @@
                 [
                     0,
                     "bvudiv_i(Id_4*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
-                ]
-            ]
-        },
-        "0x7d41a422": {
-            "0x5d27S0x5b2cS0x5715S0x47a7B0x37d60x3706": [
-                [
-                    0,
-                    "bvudiv_i(Iv*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
-                ]
-            ],
-            "0x5d27S0x5b2cS0x5715S0x4842B0x38790x3706": [
-                [
-                    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-                    "bvudiv_i(Id_3*Concat(0, Extract(111, 0, mem_32 + mem_64)),\n         Concat(0, Extract(111, 0, mem_32 + mem_64)))"
                 ]
             ]
         }

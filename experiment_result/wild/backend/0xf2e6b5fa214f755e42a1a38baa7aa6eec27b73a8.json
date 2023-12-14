@@ -2,7 +2,7 @@
     "dapp_name": "RiotCats",
     "total_func": 24,
     "analyzed_func": 7,
-    "block_num": 18673830,
+    "block_num": 18736407,
     "address": "0xf2e6b5fa214f755e42a1a38baa7aa6eec27b73a8",
     "platform": "ETH",
     "reward": {
@@ -17,8 +17,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x220966c3": {
             "0x13ccS0x15c": [
                 [

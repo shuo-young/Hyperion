@@ -2,7 +2,7 @@
     "dapp_name": "Planet",
     "total_func": 28,
     "analyzed_func": 8,
-    "block_num": 33825028,
+    "block_num": 34129714,
     "address": "0xB87F7016585510505478D1d160BDf76c1f41b53d",
     "platform": "BSC",
     "reward": {
@@ -22,7 +22,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -31,6 +32,14 @@
     "lock": false,
     "clear": {
         "warning": true,
+        "0xc6d758cb": {
+            "0x38ccS0x375cS0x366dS0x3183B0x27aa": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2"
+                ]
+            ]
+        },
         "0x441a3e70": {
             "0x3070": [
                 [
@@ -44,14 +53,6 @@
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "mem_mem_64"
-                ]
-            ]
-        },
-        "0xc6d758cb": {
-            "0x38ccS0x375cS0x366dS0x3183B0x27aa": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Id_2"
                 ]
             ]
         }

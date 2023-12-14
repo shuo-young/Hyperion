@@ -2,7 +2,7 @@
     "dapp_name": "LatteSwap",
     "total_func": 25,
     "analyzed_func": 17,
-    "block_num": 33812942,
+    "block_num": 34123964,
     "address": "0x4Ec82EcD19529ff50a467F522029f69459bf071d",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,16 +20,16 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x5b0d5984": {
-            "0x30430x1f7fS0x15dd": [
+        "0xaf2979eb": {
+            "0x30430x8dc": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"
                 ]
             ]
         },
-        "0xaf2979eb": {
-            "0x30430x8dc": [
+        "0x5b0d5984": {
+            "0x30430x1f7fS0x15dd": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"

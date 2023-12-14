@@ -2,7 +2,7 @@
     "dapp_name": "Lazy Lions",
     "total_func": 39,
     "analyzed_func": 6,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x8943C7bAC1914C9A7ABa750Bf2B6B09Fd21037E0",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

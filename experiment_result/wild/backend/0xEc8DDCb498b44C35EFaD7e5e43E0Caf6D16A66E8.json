@@ -2,7 +2,7 @@
     "dapp_name": "Interport Finance",
     "total_func": 59,
     "analyzed_func": 8,
-    "block_num": 18651492,
+    "block_num": 18728891,
     "address": "0xEc8DDCb498b44C35EFaD7e5e43E0Caf6D16A66E8",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            2012201111717
+            1875199011717
         ],
         "unlimited": true
     },

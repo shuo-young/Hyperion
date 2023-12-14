@@ -2,7 +2,7 @@
     "dapp_name": "BNBPARK",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 33852149,
+    "block_num": 34143605,
     "address": "0x3837155448d85E9FE132a9fc721c5C417a7FFB07",
     "platform": "BSC",
     "reward": {
@@ -23,6 +23,9 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.05
+        ],
         "0xdb663865": {
             "0x969S0x3c6": [
                 [

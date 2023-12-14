@@ -2,7 +2,7 @@
     "dapp_name": "WonderPals",
     "total_func": 34,
     "analyzed_func": 4,
-    "block_num": 18641295,
+    "block_num": 18724124,
     "address": "0x3acce66cd37518a6d77d9ea3039e00b3a2955460",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "CryptoBeasties",
     "total_func": 41,
     "analyzed_func": 1,
-    "block_num": 18672328,
+    "block_num": 18735815,
     "address": "0xffdf17652cca46eb98a214cb3e413c8661241e49",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

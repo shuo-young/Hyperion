@@ -2,15 +2,16 @@
     "dapp_name": "CryptoPepes",
     "total_func": 19,
     "analyzed_func": 5,
-    "block_num": 18672404,
+    "block_num": 18735826,
     "address": "0xe2c43d2c6d6875c8f24855054d77b5664c7e810f",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0xa6da467c": {
             "0x98a": [
                 [

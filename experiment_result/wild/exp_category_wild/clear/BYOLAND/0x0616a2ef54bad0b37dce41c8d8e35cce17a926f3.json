@@ -2,7 +2,7 @@
     "dapp_name": "BYOLAND",
     "total_func": 45,
     "analyzed_func": 4,
-    "block_num": 18641720,
+    "block_num": 18724248,
     "address": "0x0616a2ef54bad0b37dce41c8d8e35cce17a926f3",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

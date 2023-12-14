@@ -2,7 +2,7 @@
     "dapp_name": "Beat Maker Token",
     "total_func": 55,
     "analyzed_func": 2,
-    "block_num": 33851757,
+    "block_num": 34143328,
     "address": "0x7ac61c43681f8f746395d47d5d904eef7e069ba6",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -31,7 +32,7 @@
     },
     "clear": {
         "warning": true,
-        "0x23b872dd": {
+        "0xa9059cbb": {
             "0x2c2eS0x231c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-8-))",
@@ -39,7 +40,7 @@
                 ]
             ]
         },
-        "0xa9059cbb": {
+        "0x23b872dd": {
             "0x2c2eS0x231c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-8-))",

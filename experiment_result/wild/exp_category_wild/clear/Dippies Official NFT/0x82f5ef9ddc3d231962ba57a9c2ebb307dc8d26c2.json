@@ -2,7 +2,7 @@
     "dapp_name": "Dippies Official NFT",
     "total_func": 39,
     "analyzed_func": 3,
-    "block_num": 18641641,
+    "block_num": 18724215,
     "address": "0x82f5ef9ddc3d231962ba57a9c2ebb307dc8d26c2",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

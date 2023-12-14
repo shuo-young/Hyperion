@@ -2,7 +2,7 @@
     "dapp_name": "Azuki Elemental Beans",
     "total_func": 69,
     "analyzed_func": 9,
-    "block_num": 18641260,
+    "block_num": 18724105,
     "address": "0x3af2a97414d1101e2107a70e7f33955da1346305",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            14299,
+            14418,
             19899
         ],
         "unlimited": true

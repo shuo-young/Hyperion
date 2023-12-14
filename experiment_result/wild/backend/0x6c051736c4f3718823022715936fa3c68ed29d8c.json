@@ -2,7 +2,7 @@
     "dapp_name": "JOJO",
     "total_func": 37,
     "analyzed_func": 3,
-    "block_num": 33852328,
+    "block_num": 34143769,
     "address": "0x6c051736c4f3718823022715936fa3c68ed29d8c",
     "platform": "BSC",
     "reward": {
@@ -11,14 +11,10 @@
     "fee": {
         "warning": true,
         "modifiable": true,
-        "0x81e223b": {
-            "0x2becS0x2ac9S0x28bdS0x2a77B0x28a4": [
-                [
-                    "Concat(0,\n       Extract(159, 0, Ia_store-some_var_4 + mem_mem_64-))",
-                    "bvudiv_i(Ia_store-4-*\n         (Iv +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_4-),\n         10000) +\nIa_store-3 + some_var_4-"
-                ]
-            ]
-        },
+        "rate": [
+            0.4,
+            0.1
+        ],
         "0xa64f53b2": {
             "0x2becS0x2ac9S0x28bdS0x2a77B0x28a4": [
                 [
@@ -44,6 +40,14 @@
                 [
                     57005,
                     "bvudiv_i(Ia_store-5-*Ia_store-7 + some_var_1-, 10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-8-*\n         bvudiv_i(Ia_store-5-*Ia_store-7 + some_var_1-,\n                  10000),\n         10000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-9-*\n         bvudiv_i(Ia_store-5-*Ia_store-7 + some_var_1-,\n                  10000),\n         10000)"
+                ]
+            ]
+        },
+        "0x81e223b": {
+            "0x2becS0x2ac9S0x28bdS0x2a77B0x28a4": [
+                [
+                    "Concat(0,\n       Extract(159, 0, Ia_store-some_var_4 + mem_mem_64-))",
+                    "bvudiv_i(Ia_store-4-*\n         (Iv +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-3 + some_var_4-),\n         10000) +\nIa_store-3 + some_var_4-"
                 ]
             ]
         }

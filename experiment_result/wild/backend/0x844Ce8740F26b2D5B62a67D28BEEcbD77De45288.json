@@ -1,0 +1,60 @@
+{
+    "dapp_name": "Goldfinger",
+    "total_func": 30,
+    "analyzed_func": 2,
+    "block_num": 34145314,
+    "address": "0x844Ce8740F26b2D5B62a67D28BEEcbD77De45288",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xbec": [
+                [
+                    "Is",
+                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(50*IH_b, 1000)"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": false,
+        "rate": [
+            0.05
+        ],
+        "0x3ccfd60b": {
+            "0xb75": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(50*IH_b, 1000)"
+                ]
+            ]
+        },
+        "0x581c5ae6": {
+            "0xd48": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(50*Iv, 1000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xbec": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -2,7 +2,7 @@
     "dapp_name": "BNB INU",
     "total_func": 71,
     "analyzed_func": 3,
-    "block_num": 33855982,
+    "block_num": 34145700,
     "address": "0x58b9f5e4dc174b192f03fa3b39b38bef10ec27c2",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Sneaky Vampire Syndicate",
     "total_func": 52,
     "analyzed_func": 7,
-    "block_num": 18640733,
+    "block_num": 18723926,
     "address": "0x219b8ab790decc32444a6600971c7c3718252539",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

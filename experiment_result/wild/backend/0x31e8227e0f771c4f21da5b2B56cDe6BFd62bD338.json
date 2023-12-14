@@ -2,7 +2,7 @@
     "dapp_name": "Crypto.com DeFi Swap",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 18649457,
+    "block_num": 18727759,
     "address": "0x31e8227e0f771c4f21da5b2B56cDe6BFd62bD338",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

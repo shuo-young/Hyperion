@@ -2,11 +2,19 @@
     "dapp_name": "PancakeFork Finance",
     "total_func": 32,
     "analyzed_func": 4,
-    "block_num": 33818567,
+    "block_num": 34127019,
     "address": "0x38e9dE80A5881c2d21573E855f80625FBe497B28",
     "platform": "BSC",
     "reward": {
         "warning": true,
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x16ec": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
+                ]
+            ]
+        },
         "0xdb2e21bc": {
             "0x2a5dS0x2946S0x2857S0x23a3B0x1c38": [
                 [
@@ -36,19 +44,23 @@
                     "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
                 ]
             ]
-        },
-        "0xb6b55f25": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0x16ec": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(Ia_store-some_var_1-*\n         (Ia_store-7- +\n          bvudiv_i(1000000000000*\n                   bvudiv_i(Ia_store-3-*\n                            Ia_store-5-*\n                            (Ia_store-11- +\n                             115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                             Ia_store-6-),\n                            Ia_store-9-),\n                   mem_mem_64)),\n         1000000000000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-1 + some_var_1-"
-                ]
-            ]
         }
     },
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.04,
+            0.03
+        ],
+        "0xb6b55f25": {
+            "0x2a5dS0x2946S0x2857S0x23a3B0x1827": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-12-))",
+                    "bvudiv_i(Ia_store-13-*Id_1, 10000)"
+                ]
+            ]
+        },
         "0xdb2e21bc": {
             "0x2a5dS0x2946S0x2857S0x23a3B0x1bac": [
                 [
@@ -70,14 +82,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-12-))",
                     "bvudiv_i(Ia_store-15-*Id_1, 10000)"
-                ]
-            ]
-        },
-        "0xb6b55f25": {
-            "0x2a5dS0x2946S0x2857S0x23a3B0x1827": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-12-))",
-                    "bvudiv_i(Ia_store-13-*Id_1, 10000)"
                 ]
             ]
         }

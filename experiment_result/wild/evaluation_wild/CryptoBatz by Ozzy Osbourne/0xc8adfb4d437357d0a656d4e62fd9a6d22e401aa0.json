@@ -2,7 +2,7 @@
     "dapp_name": "CryptoBatz by Ozzy Osbourne",
     "total_func": 53,
     "analyzed_func": 7,
-    "block_num": 18640941,
+    "block_num": 18723959,
     "address": "0xc8adfb4d437357d0a656d4e62fd9a6d22e401aa0",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x853828b6": {
             "0x27cb": [
                 [
@@ -89,7 +90,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

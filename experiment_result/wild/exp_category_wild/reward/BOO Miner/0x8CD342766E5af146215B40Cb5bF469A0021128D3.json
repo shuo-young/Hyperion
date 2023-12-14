@@ -2,7 +2,7 @@
     "dapp_name": "BOO Miner",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 71614760,
+    "block_num": 72159879,
     "address": "0x8CD342766E5af146215B40Cb5bF469A0021128D3",
     "platform": "Fantom",
     "reward": {
@@ -42,6 +42,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x59cS0x21c": [
                 [
@@ -117,7 +120,7 @@
     },
     "inconsistency": {
         "reward": true,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

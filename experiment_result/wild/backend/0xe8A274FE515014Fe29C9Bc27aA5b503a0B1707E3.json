@@ -2,7 +2,7 @@
     "dapp_name": "POLYCASH GOLD",
     "total_func": 8,
     "analyzed_func": 0,
-    "block_num": 50452429,
+    "block_num": 50851905,
     "address": "0xe8A274FE515014Fe29C9Bc27aA5b503a0B1707E3",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

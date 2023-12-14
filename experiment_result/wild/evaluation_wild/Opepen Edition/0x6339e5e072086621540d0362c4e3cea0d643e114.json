@@ -2,7 +2,7 @@
     "dapp_name": "Opepen Edition",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x6339e5e072086621540d0362c4e3cea0d643e114",
     "platform": "ETH",
     "reward": {
@@ -15,6 +15,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

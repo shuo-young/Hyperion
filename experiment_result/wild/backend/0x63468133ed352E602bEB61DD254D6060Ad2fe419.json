@@ -2,7 +2,7 @@
     "dapp_name": "ThorusFi",
     "total_func": 46,
     "analyzed_func": 5,
-    "block_num": 38278240,
+    "block_num": 38723050,
     "address": "0x63468133ed352E602bEB61DD254D6060Ad2fe419",
     "platform": "Avalanche",
     "reward": {
@@ -11,15 +11,20 @@
     "fee": {
         "warning": true,
         "modifiable": true,
-        "0x2e1a7d4d": {
+        "rate": [
+            3.926002230295972e-24,
+            0.04,
+            0.0005
+        ],
+        "0x853828b6": {
             "0x36d1S0x35f6S0x352fS0x3007": [
                 [
                     "0xae4aa155d2987b454c29450ef4f862cf00907b61",
-                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-2-)"
+                    "bvudiv_i(2*Ia_store-some_var_1-*mem_mem_64, Ia_store-2-)"
                 ],
                 [
                     "0xae4aa155d2987b454c29450ef4f862cf00907b61",
-                    "bvudiv_i(Ia_store-13-*\n         bvudiv_i(2*Id_1*mem_mem_64, Ia_store-2-),\n         10000)"
+                    "bvudiv_i(Ia_store-13-*\n         bvudiv_i(2*Ia_store-some_var_1-*mem_mem_64,\n                  Ia_store-2-),\n         10000)"
                 ]
             ]
         },
@@ -35,15 +40,15 @@
                 ]
             ]
         },
-        "0x853828b6": {
+        "0x2e1a7d4d": {
             "0x36d1S0x35f6S0x352fS0x3007": [
                 [
                     "0xae4aa155d2987b454c29450ef4f862cf00907b61",
-                    "bvudiv_i(2*Ia_store-some_var_1-*mem_mem_64, Ia_store-2-)"
+                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-2-)"
                 ],
                 [
                     "0xae4aa155d2987b454c29450ef4f862cf00907b61",
-                    "bvudiv_i(Ia_store-13-*\n         bvudiv_i(2*Ia_store-some_var_1-*mem_mem_64,\n                  Ia_store-2-),\n         10000)"
+                    "bvudiv_i(Ia_store-13-*\n         bvudiv_i(2*Id_1*mem_mem_64, Ia_store-2-),\n         10000)"
                 ]
             ]
         }

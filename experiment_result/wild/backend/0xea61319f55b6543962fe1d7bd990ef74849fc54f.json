@@ -2,7 +2,7 @@
     "dapp_name": "Proof Of Craig Grant Coin",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18660997,
+    "block_num": 18733680,
     "address": "0xea61319f55b6543962fe1d7bd990ef74849fc54f",
     "platform": "ETH",
     "reward": {
@@ -23,14 +23,6 @@
                 ]
             ]
         },
-        "0x3ccfd60b": {
-            "0xc90": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
-                ]
-            ]
-        },
         "0xa9059cbb": {
             "0xc90": [
                 [
@@ -38,15 +30,24 @@
                     "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
                 ]
             ]
+        },
+        "0x3ccfd60b": {
+            "0xc90": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
+                ]
+            ]
         }
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            12593771539827923106811
+            12498172171379839344573
         ],
         "unlimited": false
     },

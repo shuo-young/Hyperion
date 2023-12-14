@@ -2,7 +2,7 @@
     "dapp_name": "Cropper Cup",
     "total_func": 48,
     "analyzed_func": 4,
-    "block_num": 11341157,
+    "block_num": 11495331,
     "address": "0x13895235432e3465787B9Cbf4857466CaAEa9f01",
     "platform": "Cronos",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x61b7735a": {
             "0xc140x230eS0x546": [
                 [
@@ -77,7 +78,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

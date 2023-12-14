@@ -2,7 +2,7 @@
     "dapp_name": "Paradise",
     "total_func": 4,
     "analyzed_func": 1,
-    "block_num": 18660848,
+    "block_num": 18733613,
     "address": "0x2980bd7128af03e0a99ae354d9be81dba22f8d6e",
     "platform": "ETH",
     "reward": {
@@ -12,8 +12,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x00000000": {
             "0x106S0x56": [
                 [
@@ -51,7 +52,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

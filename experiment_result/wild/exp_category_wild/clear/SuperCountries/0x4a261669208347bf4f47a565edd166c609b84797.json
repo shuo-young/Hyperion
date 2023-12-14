@@ -2,7 +2,7 @@
     "dapp_name": "SuperCountries",
     "total_func": 7,
     "analyzed_func": 1,
-    "block_num": 18671872,
+    "block_num": 18735643,
     "address": "0x4a261669208347bf4f47a565edd166c609b84797",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

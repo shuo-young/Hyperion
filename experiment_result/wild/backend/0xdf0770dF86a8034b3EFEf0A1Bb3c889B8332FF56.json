@@ -2,7 +2,7 @@
     "dapp_name": "Stargate",
     "total_func": 62,
     "analyzed_func": 8,
-    "block_num": 18656208,
+    "block_num": 18731494,
     "address": "0xdf0770dF86a8034b3EFEf0A1Bb3c889B8332FF56",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            1.0007582215608364
+        ],
         "0x986b61a": {
             "0x2c72": [
                 [
@@ -22,7 +25,7 @@
     },
     "supply": {
         "amount": [
-            43692555329505
+            35507995481109
         ],
         "unlimited": false
     },

@@ -2,7 +2,7 @@
     "dapp_name": "WardenSwap",
     "total_func": 13,
     "analyzed_func": 6,
-    "block_num": 33848029,
+    "block_num": 34141666,
     "address": "0x451ef8D6B645a60115EB8b8bEa76B39C0C761004",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,19 +20,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x4912dd14": {
-            "0x22f4S0x21abS0x209f0x1b7d": [
-                [
-                    "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
-                    "Id_2"
-                ]
-            ]
-        },
         "0x8f64d73a": {
             "0xb80S0x2db": [
                 [
                     "Is",
                     "Id_1"
+                ]
+            ]
+        },
+        "0x4912dd14": {
+            "0x22f4S0x21abS0x209f0x1b7d": [
+                [
+                    "Concat(2835717307, Extract(223, 0, mem_32 + mem_64))",
+                    "Id_2"
                 ]
             ]
         }

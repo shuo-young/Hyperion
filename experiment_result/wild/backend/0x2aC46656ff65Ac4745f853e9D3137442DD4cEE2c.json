@@ -2,7 +2,7 @@
     "dapp_name": "PopCorn Claims",
     "total_func": 30,
     "analyzed_func": 3,
-    "block_num": 154581549,
+    "block_num": 157759877,
     "address": "0x2aC46656ff65Ac4745f853e9D3137442DD4cEE2c",
     "platform": "Arbitrum",
     "reward": {
@@ -18,7 +18,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

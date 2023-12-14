@@ -2,7 +2,7 @@
     "dapp_name": "X2 555ETH",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18662039,
+    "block_num": 18734215,
     "address": "0xc3ca8b034e0ecdb124f295cd394d4e6fcb7b6c2d",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

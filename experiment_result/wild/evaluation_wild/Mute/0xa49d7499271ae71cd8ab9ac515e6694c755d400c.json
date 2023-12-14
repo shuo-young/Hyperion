@@ -2,7 +2,7 @@
     "dapp_name": "Mute",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18652366,
+    "block_num": 18729140,
     "address": "0xa49d7499271ae71cd8ab9ac515e6694c755d400c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

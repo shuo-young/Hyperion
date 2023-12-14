@@ -2,7 +2,7 @@
     "dapp_name": "CosmoSwap",
     "total_func": 13,
     "analyzed_func": 4,
-    "block_num": 18670559,
+    "block_num": 18735005,
     "address": "0x295cf66df2d84623A639Ca298aE29ed9e4793968",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,7 +20,7 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x2e1a7d4d": {
+        "0xb6b55f25": {
             "0xfa3": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -27,7 +28,7 @@
                 ]
             ]
         },
-        "0xb6b55f25": {
+        "0x2e1a7d4d": {
             "0xfa3": [
                 [
                     "Concat(0, Extract(159, 0, Is))",

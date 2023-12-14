@@ -2,7 +2,7 @@
     "dapp_name": "Deafbeef",
     "total_func": 48,
     "analyzed_func": 5,
-    "block_num": 18642156,
+    "block_num": 18724453,
     "address": "0xd754937672300ae6708a51229112de4017810934",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

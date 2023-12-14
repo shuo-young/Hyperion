@@ -2,7 +2,7 @@
     "dapp_name": "Wave AirDrop",
     "total_func": 27,
     "analyzed_func": 0,
-    "block_num": 33855778,
+    "block_num": 34145591,
     "address": "0xcf5cb782633f527395d106a4388889e23ea13ddd",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "PEACE",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 18660850,
+    "block_num": 18733614,
     "address": "0x55d743f548490c837858de0e815b2c3a7d4c3198",
     "platform": "ETH",
     "reward": {
@@ -23,14 +23,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0x4f74acfe": {
-            "0x119d": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-4-))",
-                    "bvudiv_i(4*Iv, 100)"
-                ]
-            ]
-        },
+        "rate": [
+            0.04
+        ],
         "0x3955f0fe": {
             "0xb56S0x35a": [
                 [
@@ -40,6 +35,14 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-4-))",
                     "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
+                ]
+            ]
+        },
+        "0x4f74acfe": {
+            "0x119d": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
                 ]
             ]
         }

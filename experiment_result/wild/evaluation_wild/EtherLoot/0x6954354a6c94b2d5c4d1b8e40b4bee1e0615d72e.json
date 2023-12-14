@@ -2,7 +2,7 @@
     "dapp_name": "EtherLoot",
     "total_func": 31,
     "analyzed_func": 6,
-    "block_num": 18670865,
+    "block_num": 18735166,
     "address": "0x6954354a6c94b2d5c4d1b8e40b4bee1e0615d72e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

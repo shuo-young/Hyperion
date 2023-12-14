@@ -2,7 +2,7 @@
     "dapp_name": "Deimos Token",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855365,
+    "block_num": 34145309,
     "address": "0xb80a8edd3730d82a941a1cdd7547e843fd5ca65c",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

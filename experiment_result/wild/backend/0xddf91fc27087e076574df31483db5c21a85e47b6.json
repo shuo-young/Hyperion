@@ -2,7 +2,7 @@
     "dapp_name": "Synthetix",
     "total_func": 11,
     "analyzed_func": 0,
-    "block_num": 18657912,
+    "block_num": 18732367,
     "address": "0xddf91fc27087e076574df31483db5c21a85e47b6",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

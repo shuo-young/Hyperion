@@ -2,7 +2,7 @@
     "dapp_name": "Ethereum Cute Cat Farm",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 18660668,
+    "block_num": 18733534,
     "address": "0x67601d7a7cbbd77368785122c508503f168b1daa",
     "platform": "ETH",
     "reward": {
@@ -32,6 +32,17 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
+        "0x4f74acfe": {
+            "0xed9": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
         "0x3955f0fe": {
             "0x898S0x2eb": [
                 [
@@ -41,14 +52,6 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-4-))",
                     "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
-                ]
-            ]
-        },
-        "0x4f74acfe": {
-            "0xed9": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-4-))",
-                    "bvudiv_i(4*Iv, 100)"
                 ]
             ]
         },

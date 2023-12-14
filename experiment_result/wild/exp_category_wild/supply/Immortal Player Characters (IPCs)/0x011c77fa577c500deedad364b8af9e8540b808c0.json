@@ -2,7 +2,7 @@
     "dapp_name": "Immortal Player Characters (IPCs)",
     "total_func": 83,
     "analyzed_func": 11,
-    "block_num": 18673701,
+    "block_num": 18736329,
     "address": "0x011c77fa577c500deedad364b8af9e8540b808c0",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xd2479254": {
             "0x42ff": [
                 [
@@ -28,15 +29,11 @@
                 ]
             ]
         },
-        "0x40c04b65": {
-            "0x21c6S0x8aa": [
+        "0xc7afb8e2": {
+            "0x27150x3deaS0xdc2": [
                 [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
-                    "mem_mem_64*Concat(0, Extract(31, 0, Ia_store-some_var_1-))"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_8-))",
-                    "mem_mem_64*Concat(0, Extract(63, 32, Ia_store-some_var_1-))"
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "Ia_store-11-*mem_mem_64"
                 ]
             ]
         },
@@ -48,11 +45,15 @@
                 ]
             ]
         },
-        "0xc7afb8e2": {
-            "0x27150x3deaS0xdc2": [
+        "0x40c04b65": {
+            "0x21c6S0x8aa": [
                 [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "Ia_store-11-*mem_mem_64"
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_3-))",
+                    "mem_mem_64*Concat(0, Extract(31, 0, Ia_store-some_var_1-))"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_8-))",
+                    "mem_mem_64*Concat(0, Extract(63, 32, Ia_store-some_var_1-))"
                 ]
             ]
         },
@@ -211,7 +212,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": true,
         "lock": false,
         "clear": true,

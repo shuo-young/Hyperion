@@ -2,7 +2,7 @@
     "dapp_name": "ETHERKNIGHT",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 18673679,
+    "block_num": 18736308,
     "address": "0x9157494ecd62333b03c348efa9e7a5af03f87476",
     "platform": "ETH",
     "reward": {
@@ -26,7 +26,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

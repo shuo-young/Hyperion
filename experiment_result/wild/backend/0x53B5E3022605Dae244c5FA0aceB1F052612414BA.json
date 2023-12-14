@@ -2,7 +2,7 @@
     "dapp_name": "Tiny World",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33779093,
+    "block_num": 34107380,
     "address": "0x53B5E3022605Dae244c5FA0aceB1F052612414BA",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

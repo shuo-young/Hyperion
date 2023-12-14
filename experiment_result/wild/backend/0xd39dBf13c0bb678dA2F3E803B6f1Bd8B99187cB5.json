@@ -2,7 +2,7 @@
     "dapp_name": "Rabbit Finance",
     "total_func": 12,
     "analyzed_func": 3,
-    "block_num": 33830277,
+    "block_num": 34133532,
     "address": "0xd39dBf13c0bb678dA2F3E803B6f1Bd8B99187cB5",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,19 +20,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x1ec82cb8": {
-            "0xc1e": [
-                [
-                    "Concat(0, Extract(159, 0, Id_2))",
-                    "Id_3"
-                ]
-            ]
-        },
         "0xf48221a3": {
             "0x977": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "mem_mem_64"
+                ]
+            ]
+        },
+        "0x1ec82cb8": {
+            "0xc1e": [
+                [
+                    "Concat(0, Extract(159, 0, Id_2))",
+                    "Id_3"
                 ]
             ]
         }

@@ -2,7 +2,7 @@
     "dapp_name": "EtherTreasury",
     "total_func": 24,
     "analyzed_func": 3,
-    "block_num": 18670866,
+    "block_num": 18735182,
     "address": "0x835Ec866F943d17ad17B6482a6F8d4b1D06b4821",
     "platform": "ETH",
     "reward": {
@@ -24,7 +24,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

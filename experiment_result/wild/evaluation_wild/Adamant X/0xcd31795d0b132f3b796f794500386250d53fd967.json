@@ -2,7 +2,7 @@
     "dapp_name": "Adamant X",
     "total_func": 23,
     "analyzed_func": 5,
-    "block_num": 18670401,
+    "block_num": 18734941,
     "address": "0xcd31795d0b132f3b796f794500386250d53fd967",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

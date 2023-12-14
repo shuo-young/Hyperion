@@ -2,7 +2,7 @@
     "dapp_name": "AmpleSwap",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 33779677,
+    "block_num": 34107702,
     "address": "0xe889c835030a21b12656d7799de8326c1560198e",
     "platform": "BSC",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            23085243525674158659
+            31944766685596511896
         ],
         "unlimited": false
     },

@@ -2,23 +2,16 @@
     "dapp_name": "CryptantCrab",
     "total_func": 24,
     "analyzed_func": 4,
-    "block_num": 18672262,
+    "block_num": 18735802,
     "address": "0xd9d3a894e2926d6d3da9a26608be4a075d7c4071",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x68882b30": {
-            "0x8a5": [
-                [
-                    "Concat(0,\n       Extract(159, 0, Ia_store-2 + 3*Id_1 + some_var_1-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-some_var_3-*Iv, 100000) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-some_var_4-*Iv, 100000)"
-                ]
-            ]
-        }
+        "rate": []
     },
     "supply": {
         "amount": [],

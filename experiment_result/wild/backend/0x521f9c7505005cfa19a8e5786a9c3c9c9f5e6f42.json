@@ -2,7 +2,7 @@
     "dapp_name": "Forgotten Runes",
     "total_func": 42,
     "analyzed_func": 7,
-    "block_num": 18640899,
+    "block_num": 18723959,
     "address": "0x521f9c7505005cfa19a8e5786a9c3c9c9f5e6f42",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            9311
+            9310
         ],
         "unlimited": false
     },

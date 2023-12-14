@@ -2,7 +2,7 @@
     "dapp_name": "Ether Shrooms Farm",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 18660631,
+    "block_num": 18733528,
     "address": "0x18293de649fb8d8e1c8824abd214f7480c61e4a4",
     "platform": "ETH",
     "reward": {
@@ -47,6 +47,17 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
+        "0x4f74acfe": {
+            "0x732": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-3-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
         "0x3955f0fe": {
             "0x46eS0x1ef": [
                 [
@@ -64,14 +75,6 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-3-))",
                     "bvudiv_i(4*\n         bvudiv_i(Ia_store-1-*balance_8,\n                  bvudiv_i(Ia_store-2-*Ia_store-some_var_1- +\n                           Ia_store-1-*Ia_store-8-,\n                           Ia_store-some_var_1-) +\n                  Ia_store-2-),\n         100)"
-                ]
-            ]
-        },
-        "0x4f74acfe": {
-            "0x732": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-3-))",
-                    "bvudiv_i(4*Iv, 100)"
                 ]
             ]
         }

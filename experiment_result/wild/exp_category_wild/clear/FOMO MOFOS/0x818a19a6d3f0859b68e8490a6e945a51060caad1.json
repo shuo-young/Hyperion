@@ -2,7 +2,7 @@
     "dapp_name": "FOMO MOFOS",
     "total_func": 45,
     "analyzed_func": 4,
-    "block_num": 18641782,
+    "block_num": 18724279,
     "address": "0x818a19a6d3f0859b68e8490a6e945a51060caad1",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

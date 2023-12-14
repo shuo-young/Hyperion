@@ -2,7 +2,7 @@
     "dapp_name": "100k Passive",
     "total_func": 39,
     "analyzed_func": 5,
-    "block_num": 33851637,
+    "block_num": 34143305,
     "address": "0x142131c3d0588ebEC6764e2e7076D4b4B05F2997",
     "platform": "BSC",
     "reward": {
@@ -25,6 +25,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.27,
+            0.05
+        ],
         "0xb9b8c246": {
             "0x18ff": [
                 [
@@ -47,19 +51,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x2f1f0bcc": {
-            "0xa67S0x2e0": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-1-))",
-                    "Id_1"
-                ]
-            ]
-        },
         "0xc506e96": {
             "0x734S0x29d": [
                 [
                     "Is",
                     "Id_2"
+                ]
+            ]
+        },
+        "0x2f1f0bcc": {
+            "0xa67S0x2e0": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "Id_1"
                 ]
             ]
         }

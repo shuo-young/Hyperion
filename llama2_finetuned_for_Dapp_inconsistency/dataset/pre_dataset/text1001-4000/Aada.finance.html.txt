@@ -1,1 +1,0 @@
-WHAT'S NEW✖New Health Factor calculation accounting to token liquidityNew liquidation price suggestions on Dashboard and MarketImproved UI speed

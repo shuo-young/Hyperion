@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Barons",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 18670611,
+    "block_num": 18735022,
     "address": "0x5ce82786d2e00748073f396a941d3e55c0a1b3d2",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

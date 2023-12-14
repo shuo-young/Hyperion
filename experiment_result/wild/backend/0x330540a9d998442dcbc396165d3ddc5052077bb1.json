@@ -2,7 +2,7 @@
     "dapp_name": "Shiba Floki",
     "total_func": 40,
     "analyzed_func": 2,
-    "block_num": 33855488,
+    "block_num": 34145446,
     "address": "0x330540a9d998442dcbc396165d3ddc5052077bb1",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

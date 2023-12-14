@@ -2,7 +2,7 @@
     "dapp_name": "Project Godjira Gen 2",
     "total_func": 25,
     "analyzed_func": 0,
-    "block_num": 18623196,
+    "block_num": 18724335,
     "address": "0xedc3ad89f7b0963fe23d714b34185713706b815b",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

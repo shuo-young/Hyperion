@@ -2,7 +2,7 @@
     "dapp_name": "FANTOM MINER",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 71614851,
+    "block_num": 72159917,
     "address": "0x69e7d335e8da617e692d7379e03fef74ef295899",
     "platform": "Fantom",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xdb663865": {
             "0x883S0x37c": [
                 [

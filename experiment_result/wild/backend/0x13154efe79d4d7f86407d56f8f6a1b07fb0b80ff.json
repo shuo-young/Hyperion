@@ -2,7 +2,7 @@
     "dapp_name": "Claim",
     "total_func": 12,
     "analyzed_func": 0,
-    "block_num": 18670411,
+    "block_num": 18734988,
     "address": "0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

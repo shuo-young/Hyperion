@@ -2,7 +2,7 @@
     "dapp_name": "DecentraWeb",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18661772,
+    "block_num": 18734119,
     "address": "0x7aA1f1A3c2BBfB7802313b6f18a2fc408A030564",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

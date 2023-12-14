@@ -1,0 +1,44 @@
+{
+    "dapp_name": "Goose Token",
+    "total_func": 36,
+    "analyzed_func": 4,
+    "block_num": 34146221,
+    "address": "0x54b654E9855EB30a3680Ba62d95fa1413900931f",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            100000000000000000
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xe58fc54c": {
+            "0x2085": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x853828b6": {
+            "0x187cS0x620": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "balance_1"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

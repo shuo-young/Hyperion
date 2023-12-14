@@ -2,7 +2,7 @@
     "dapp_name": "Fulcrom Finance",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 11312730,
+    "block_num": 11481087,
     "address": "0x725c5AF8bb360816C8ad2Cca020f9C63B83ABccb",
     "platform": "Cronos",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

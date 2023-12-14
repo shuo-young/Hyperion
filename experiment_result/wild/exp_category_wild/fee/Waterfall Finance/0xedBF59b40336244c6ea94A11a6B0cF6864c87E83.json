@@ -2,7 +2,7 @@
     "dapp_name": "Waterfall Finance",
     "total_func": 46,
     "analyzed_func": 4,
-    "block_num": 154582031,
+    "block_num": 157760017,
     "address": "0xedBF59b40336244c6ea94A11a6B0cF6864c87E83",
     "platform": "Arbitrum",
     "reward": {
@@ -12,7 +12,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0x23b872dd": {
+        "rate": [
+            0.2
+        ],
+        "0xa9059cbb": {
             "0x3c40": [
                 [
                     "0x568e084dcb739ebae4d1b547b84dfdeec06ebbb",
@@ -20,7 +23,7 @@
                 ]
             ]
         },
-        "0xa9059cbb": {
+        "0x23b872dd": {
             "0x3c40": [
                 [
                     "0x568e084dcb739ebae4d1b547b84dfdeec06ebbb",

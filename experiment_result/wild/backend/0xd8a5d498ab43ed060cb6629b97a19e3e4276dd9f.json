@@ -2,7 +2,7 @@
     "dapp_name": "GENE_SIS: The Girls of Armament",
     "total_func": 43,
     "analyzed_func": 4,
-    "block_num": 18642157,
+    "block_num": 18724454,
     "address": "0xd8a5d498ab43ed060cb6629b97a19e3e4276dd9f",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Nine Chronicles",
     "total_func": 17,
     "analyzed_func": 2,
-    "block_num": 18643116,
+    "block_num": 18724801,
     "address": "0xf203ca1769ca8e9e8fe1da9d147db68b6c919817",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            167681321700000000002000000
+            166546154280000000002000000
         ],
         "unlimited": true
     },

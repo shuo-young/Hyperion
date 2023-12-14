@@ -2,7 +2,7 @@
     "dapp_name": "My Crypto Heroes",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18660413,
+    "block_num": 18733408,
     "address": "0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3",
     "platform": "ETH",
     "reward": {
@@ -16,6 +16,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

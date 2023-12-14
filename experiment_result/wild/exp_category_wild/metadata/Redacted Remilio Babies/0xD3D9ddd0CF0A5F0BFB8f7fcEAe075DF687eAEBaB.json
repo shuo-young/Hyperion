@@ -2,7 +2,7 @@
     "dapp_name": "Redacted Remilio Babies",
     "total_func": 37,
     "analyzed_func": 2,
-    "block_num": 18641304,
+    "block_num": 18724125,
     "address": "0xD3D9ddd0CF0A5F0BFB8f7fcEAe075DF687eAEBaB",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Rielcoin",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855486,
+    "block_num": 34145445,
     "address": "0x5232b3f532b58fbf96ec7cbdbf10c01cb0520c87",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "GEVOLs",
     "total_func": 43,
     "analyzed_func": 6,
-    "block_num": 18641257,
+    "block_num": 18724104,
     "address": "0x34b4Df75a17f8B3a6Eff6bBA477d39D701f5e92c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

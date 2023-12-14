@@ -2,7 +2,7 @@
     "dapp_name": "Tubby cats by tubby collective",
     "total_func": 40,
     "analyzed_func": 4,
-    "block_num": 18640964,
+    "block_num": 18723982,
     "address": "0xca7ca7bcc765f77339be2d648ba53ce9c8a262bd",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

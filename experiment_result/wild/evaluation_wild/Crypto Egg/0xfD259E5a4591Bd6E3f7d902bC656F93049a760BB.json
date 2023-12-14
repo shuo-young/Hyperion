@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Egg",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 33856948,
+    "block_num": 34145980,
     "address": "0xfD259E5a4591Bd6E3f7d902bC656F93049a760BB",
     "platform": "BSC",
     "reward": {
@@ -32,6 +32,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x4c6S0x21c": [
                 [
@@ -119,7 +122,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

@@ -2,7 +2,7 @@
     "dapp_name": "FinNexus",
     "total_func": 11,
     "analyzed_func": 0,
-    "block_num": 18671326,
+    "block_num": 18735432,
     "address": "0x5e5114738ff0e6a36c289ecddd46c1975cefc272",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

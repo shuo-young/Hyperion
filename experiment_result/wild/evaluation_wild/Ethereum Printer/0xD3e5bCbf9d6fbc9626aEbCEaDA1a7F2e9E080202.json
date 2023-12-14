@@ -1,0 +1,132 @@
+{
+    "dapp_name": "Ethereum Printer",
+    "total_func": 38,
+    "analyzed_func": 3,
+    "block_num": 34143751,
+    "address": "0xD3e5bCbf9d6fbc9626aEbCEaDA1a7F2e9E080202",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x98e1b410": {
+            "0x1afaS0xe9eS0x485": [
+                [
+                    "Is",
+                    "bvudiv_i(Ia_store-15-*mem_mem_64,\n         bvudiv_i(Ia_store-16-*\n                  (Ia_store-1-*Ia_store-some_var_3- +\n                   Ia_store-some_var_1-) +\n                  Ia_store-15-*Ia_store-2-,\n                  Ia_store-1-*Ia_store-some_var_3- +\n                  Ia_store-some_var_1-) +\n         Ia_store-16-)"
+                ]
+            ]
+        },
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0x98e1b410": {
+            "0x1728S0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(bvudiv_i(5*\n                  bvudiv_i(Ia_store-15-*mem_mem_64,\n                           bvudiv_i(Ia_store-16-*\n                                    (Ia_store-1-*\n                                     Ia_store-some_var_3- +\n                                     Ia_store-some_var_1-) +\n                                    Ia_store-15-*Ia_store-2-,\n                                    Ia_store-1-*\n                                    Ia_store-some_var_3- +\n                                    Ia_store-some_var_1-) +\n                           Ia_store-16-),\n                  100),\n         5)"
+                ]
+            ],
+            "0x17b2S0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(bvudiv_i(5*\n                  bvudiv_i(Ia_store-15-*mem_mem_64,\n                           bvudiv_i(Ia_store-16-*\n                                    (Ia_store-1-*\n                                     Ia_store-some_var_3- +\n                                     Ia_store-some_var_1-) +\n                                    Ia_store-15-*Ia_store-2-,\n                                    Ia_store-1-*\n                                    Ia_store-some_var_3- +\n                                    Ia_store-some_var_1-) +\n                           Ia_store-16-),\n                  100),\n         5)"
+                ]
+            ],
+            "0x183dS0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "bvudiv_i(bvudiv_i(5*\n                  bvudiv_i(Ia_store-15-*mem_mem_64,\n                           bvudiv_i(Ia_store-16-*\n                                    (Ia_store-1-*\n                                     Ia_store-some_var_3- +\n                                     Ia_store-some_var_1-) +\n                                    Ia_store-15-*Ia_store-2-,\n                                    Ia_store-1-*\n                                    Ia_store-some_var_3- +\n                                    Ia_store-some_var_1-) +\n                           Ia_store-16-),\n                  100),\n         5)"
+                ]
+            ],
+            "0x18c8S0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(bvudiv_i(5*\n                  bvudiv_i(Ia_store-15-*mem_mem_64,\n                           bvudiv_i(Ia_store-16-*\n                                    (Ia_store-1-*\n                                     Ia_store-some_var_3- +\n                                     Ia_store-some_var_1-) +\n                                    Ia_store-15-*Ia_store-2-,\n                                    Ia_store-1-*\n                                    Ia_store-some_var_3- +\n                                    Ia_store-some_var_1-) +\n                           Ia_store-16-),\n                  100),\n         5)"
+                ]
+            ],
+            "0x1953S0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "Concat(0,\n       Extract(255,\n               1,\n               bvudiv_i(bvudiv_i(5*\n                                 bvudiv_i(Ia_store-15-*\n                                        mem_mem_64,\n                                        bvudiv_i(Ia_store-16-*\n                                        (Ia_store-1-*\n                                        Ia_store-some_var_3- +\n                                        Ia_store-some_var_1-) +\n                                        Ia_store-15-*\n                                        Ia_store-2-,\n                                        Ia_store-1-*\n                                        Ia_store-some_var_3- +\n                                        Ia_store-some_var_1-) +\n                                        Ia_store-16-),\n                                 100),\n                        5)))"
+                ]
+            ],
+            "0x19deS0xe9eS0x485": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-8-))",
+                    "Concat(0,\n       Extract(255,\n               1,\n               bvudiv_i(bvudiv_i(5*\n                                 bvudiv_i(Ia_store-15-*\n                                        mem_mem_64,\n                                        bvudiv_i(Ia_store-16-*\n                                        (Ia_store-1-*\n                                        Ia_store-some_var_3- +\n                                        Ia_store-some_var_1-) +\n                                        Ia_store-15-*\n                                        Ia_store-2-,\n                                        Ia_store-1-*\n                                        Ia_store-some_var_3- +\n                                        Ia_store-some_var_1-) +\n                                        Ia_store-16-),\n                                 100),\n                        5)))"
+                ]
+            ]
+        },
+        "0x29e4d0ea": {
+            "0x13adS0xa21S0x302": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(bvudiv_i(5*Id_2, 100), 5)"
+                ]
+            ],
+            "0x1437S0xa21S0x302": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-4-))",
+                    "bvudiv_i(bvudiv_i(5*Id_2, 100), 5)"
+                ]
+            ],
+            "0x14c2S0xa21S0x302": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-5-))",
+                    "bvudiv_i(bvudiv_i(5*Id_2, 100), 5)"
+                ]
+            ],
+            "0x154dS0xa21S0x302": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(bvudiv_i(5*Id_2, 100), 5)"
+                ]
+            ],
+            "0x15d8S0xa21S0x302": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(bvudiv_i(5*Id_2, 100), 5)"
+                ]
+            ]
+        },
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false,
+        "ui": [
+            2023
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

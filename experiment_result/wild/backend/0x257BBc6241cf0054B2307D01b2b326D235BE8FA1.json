@@ -2,7 +2,7 @@
     "dapp_name": "Saffron",
     "total_func": 26,
     "analyzed_func": 2,
-    "block_num": 18671692,
+    "block_num": 18735578,
     "address": "0x257BBc6241cf0054B2307D01b2b326D235BE8FA1",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

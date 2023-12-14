@@ -2,7 +2,7 @@
     "dapp_name": "RomeDAO",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 5615541,
+    "block_num": 5687303,
     "address": "0x3718bC4389cC4d960CeDF9ff68e96c731BC8f685",
     "platform": "Moonriver",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

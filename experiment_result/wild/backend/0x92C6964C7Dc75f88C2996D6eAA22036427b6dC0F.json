@@ -2,7 +2,7 @@
     "dapp_name": "FTM Lat\u94c6n Global",
     "total_func": 38,
     "analyzed_func": 2,
-    "block_num": 71615130,
+    "block_num": 72160042,
     "address": "0x92C6964C7Dc75f88C2996D6eAA22036427b6dC0F",
     "platform": "Fantom",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.2
+        ],
         "0x581c5ae6": {
             "0xf05": [
                 [

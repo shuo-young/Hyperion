@@ -2,7 +2,7 @@
     "dapp_name": "Connext",
     "total_func": 27,
     "analyzed_func": 5,
-    "block_num": 18647980,
+    "block_num": 18727144,
     "address": "0x7E8F8B2dA3dc5Ad9c9Dfd1A832331A039d4f3f74",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "FTM Farmer",
     "total_func": 32,
     "analyzed_func": 2,
-    "block_num": 71615129,
+    "block_num": 72160028,
     "address": "0x01FeB8d0A8E6c966f72dD04e058fda1b00b004aa",
     "platform": "Fantom",
     "reward": {
@@ -14,6 +14,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.033
+        ],
         "0x581c5ae6": {
             "0xca8": [
                 [

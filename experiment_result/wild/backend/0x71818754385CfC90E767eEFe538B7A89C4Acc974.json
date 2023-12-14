@@ -2,7 +2,7 @@
     "dapp_name": "ICE MINER",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 71615189,
+    "block_num": 72160053,
     "address": "0x71818754385CfC90E767eEFe538B7A89C4Acc974",
     "platform": "Fantom",
     "reward": {
@@ -39,6 +39,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x5a0S0x21c": [
                 [

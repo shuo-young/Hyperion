@@ -2,7 +2,7 @@
     "dapp_name": "GetRichFaster",
     "total_func": 15,
     "analyzed_func": 4,
-    "block_num": 18660746,
+    "block_num": 18733565,
     "address": "0x863c99a51b39859e4fde2f38770749b5f6b36572",
     "platform": "ETH",
     "reward": {
@@ -40,6 +40,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x00000000": {
             "0x7e7": [
                 [

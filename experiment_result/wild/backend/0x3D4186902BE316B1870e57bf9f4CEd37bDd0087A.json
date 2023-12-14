@@ -2,7 +2,7 @@
     "dapp_name": "ThorusFi",
     "total_func": 44,
     "analyzed_func": 9,
-    "block_num": 38278240,
+    "block_num": 38723052,
     "address": "0x3D4186902BE316B1870e57bf9f4CEd37bDd0087A",
     "platform": "Avalanche",
     "reward": {
@@ -11,6 +11,18 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.004,
+            0.01
+        ],
+        "0xf082148a": {
+            "0x3b74S0x3a99S0x39d2S0x36e0": [
+                [
+                    "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+                    "bvudiv_i(Ia_store-8-*\n         bvudiv_i(Ia_store-some_var_1-, 1000000000000),\n         1000)"
+                ]
+            ]
+        },
         "0xa638f2e2": {
             "0x3b74S0x3a99S0x39d2S0x36e0": [
                 [
@@ -28,14 +40,6 @@
                 [
                     "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
                     "bvudiv_i(bvudiv_i(Ia_store-some_var_1-, 1000000000000)*\n         (1000 +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-7- +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-8-),\n         1000)"
-                ]
-            ]
-        },
-        "0xf082148a": {
-            "0x3b74S0x3a99S0x39d2S0x36e0": [
-                [
-                    "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
-                    "bvudiv_i(Ia_store-8-*\n         bvudiv_i(Ia_store-some_var_1-, 1000000000000),\n         1000)"
                 ]
             ]
         }

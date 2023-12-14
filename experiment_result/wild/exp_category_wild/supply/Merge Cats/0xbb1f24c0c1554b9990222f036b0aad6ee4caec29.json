@@ -2,7 +2,7 @@
     "dapp_name": "Merge Cats",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 18673779,
+    "block_num": 18736392,
     "address": "0xbb1f24c0c1554b9990222f036b0aad6ee4caec29",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

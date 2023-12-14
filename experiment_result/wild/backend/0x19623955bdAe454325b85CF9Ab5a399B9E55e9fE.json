@@ -2,12 +2,12 @@
     "dapp_name": "Divial Mutual",
     "total_func": 25,
     "analyzed_func": 4,
-    "block_num": 33856958,
+    "block_num": 34145985,
     "address": "0x19623955bdAe454325b85CF9Ab5a399B9E55e9fE",
     "platform": "BSC",
     "reward": {
         "warning": false,
-        "0x00000000": {
+        "0x64edfbf0": {
             "0x18b7S0x795": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -15,7 +15,7 @@
                 ]
             ]
         },
-        "0x64edfbf0": {
+        "0x00000000": {
             "0x18b7S0x795": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -26,7 +26,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

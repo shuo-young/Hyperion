@@ -2,7 +2,7 @@
     "dapp_name": "ShibaSwap",
     "total_func": 53,
     "analyzed_func": 5,
-    "block_num": 18656033,
+    "block_num": 18731413,
     "address": "0x02c5cE497ca02602c68407BfaB624996437c09B7",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

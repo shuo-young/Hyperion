@@ -2,7 +2,7 @@
     "dapp_name": "Mdex",
     "total_func": 43,
     "analyzed_func": 3,
-    "block_num": 33813745,
+    "block_num": 34124208,
     "address": "0xc48FE252Aa631017dF253578B1405ea399728A50",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -29,7 +30,7 @@
     },
     "clear": {
         "warning": true,
-        "0x441a3e70": {
+        "0xe2bbb158": {
             "0x32bc": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -37,7 +38,7 @@
                 ]
             ]
         },
-        "0xe2bbb158": {
+        "0x441a3e70": {
             "0x32bc": [
                 [
                     "Concat(0, Extract(159, 0, Is))",

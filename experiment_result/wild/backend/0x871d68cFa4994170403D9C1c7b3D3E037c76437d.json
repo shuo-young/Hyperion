@@ -2,7 +2,7 @@
     "dapp_name": "ThorusFi",
     "total_func": 21,
     "analyzed_func": 4,
-    "block_num": 38278240,
+    "block_num": 38723048,
     "address": "0x871d68cFa4994170403D9C1c7b3D3E037c76437d",
     "platform": "Avalanche",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,6 +20,14 @@
     "lock": false,
     "clear": {
         "warning": true,
+        "0x379607f5": {
+            "0x1952": [
+                [
+                    "0xae4aa155d2987b454c29450ef4f862cf00907b61",
+                    "mem_mem_64"
+                ]
+            ]
+        },
         "0x43a0d066": {
             "0x1952": [
                 [
@@ -28,14 +37,6 @@
             ]
         },
         "0x33cfcd3b": {
-            "0x1952": [
-                [
-                    "0xae4aa155d2987b454c29450ef4f862cf00907b61",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x379607f5": {
             "0x1952": [
                 [
                     "0xae4aa155d2987b454c29450ef4f862cf00907b61",

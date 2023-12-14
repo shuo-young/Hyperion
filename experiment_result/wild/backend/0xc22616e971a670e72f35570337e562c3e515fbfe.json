@@ -2,7 +2,7 @@
     "dapp_name": "Playing Arts Crypto Edition",
     "total_func": 28,
     "analyzed_func": 6,
-    "block_num": 18642184,
+    "block_num": 18724480,
     "address": "0xc22616e971a670e72f35570337e562c3e515fbfe",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

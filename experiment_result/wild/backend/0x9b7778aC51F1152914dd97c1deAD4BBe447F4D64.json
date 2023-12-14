@@ -2,7 +2,7 @@
     "dapp_name": "Tap Fantasy",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 33779045,
+    "block_num": 34107311,
     "address": "0x9b7778aC51F1152914dd97c1deAD4BBe447F4D64",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

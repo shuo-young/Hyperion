@@ -2,7 +2,7 @@
     "dapp_name": "Velodrome",
     "total_func": 20,
     "analyzed_func": 3,
-    "block_num": 112725467,
+    "block_num": 113168313,
     "address": "0x3c8b650257cfb5f272f799f5e2b4e65093a11a05",
     "platform": "Optimism",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            1276049483686412691229232144
+            1295163001293608521594060684
         ],
         "unlimited": true
     },

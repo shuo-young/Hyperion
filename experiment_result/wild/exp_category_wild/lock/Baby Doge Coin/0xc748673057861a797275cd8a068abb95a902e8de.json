@@ -2,7 +2,7 @@
     "dapp_name": "Baby Doge Coin",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 33851752,
+    "block_num": 34143325,
     "address": "0xc748673057861a797275cd8a068abb95a902e8de",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

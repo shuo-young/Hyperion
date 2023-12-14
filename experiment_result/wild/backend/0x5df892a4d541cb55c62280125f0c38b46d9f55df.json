@@ -2,7 +2,7 @@
     "dapp_name": "EMONT Frenzy Collect EMONT!",
     "total_func": 68,
     "analyzed_func": 6,
-    "block_num": 18670855,
+    "block_num": 18735159,
     "address": "0x5df892a4d541cb55c62280125f0c38b46d9f55df",
     "platform": "ETH",
     "reward": {
@@ -26,7 +26,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

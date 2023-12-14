@@ -2,7 +2,7 @@
     "dapp_name": "KingdomStarter LaunchPad",
     "total_func": 20,
     "analyzed_func": 3,
-    "block_num": 33854325,
+    "block_num": 34144722,
     "address": "0x87a2d9a9a6b2d61b2a57798f1b4b2ddd19458fb6",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

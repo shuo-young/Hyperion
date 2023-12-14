@@ -2,7 +2,7 @@
     "dapp_name": "InsurAce Protocol",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18651255,
+    "block_num": 18728778,
     "address": "0x4EE6f1266B55c9f3857Fb2CBE322B2Ba1f5856bd",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

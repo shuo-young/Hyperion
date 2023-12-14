@@ -2,7 +2,7 @@
     "dapp_name": "MYST Finance",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33853053,
+    "block_num": 34144171,
     "address": "0xC302fFda1A64a2339A1720F0E238349F3c941E12",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

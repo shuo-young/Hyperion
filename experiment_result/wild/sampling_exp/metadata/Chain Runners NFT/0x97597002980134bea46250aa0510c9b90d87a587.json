@@ -2,7 +2,7 @@
     "dapp_name": "Chain Runners NFT",
     "total_func": 44,
     "analyzed_func": 8,
-    "block_num": 18619167,
+    "block_num": 18723957,
     "address": "0x97597002980134bea46250aa0510c9b90d87a587",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

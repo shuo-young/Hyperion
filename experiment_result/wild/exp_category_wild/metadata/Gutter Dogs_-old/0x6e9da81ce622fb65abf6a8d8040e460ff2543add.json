@@ -2,7 +2,7 @@
     "dapp_name": "Gutter Dogs_-old",
     "total_func": 35,
     "analyzed_func": 7,
-    "block_num": 18641711,
+    "block_num": 18724225,
     "address": "0x6e9da81ce622fb65abf6a8d8040e460ff2543add",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

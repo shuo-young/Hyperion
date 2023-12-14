@@ -2,7 +2,7 @@
     "dapp_name": "LORDLESS",
     "total_func": 27,
     "analyzed_func": 4,
-    "block_num": 18673770,
+    "block_num": 18736387,
     "address": "0xb99b7c5bda13f5cc7c9eebc166bbc430a833acf3",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,19 +20,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x1b9a91a4": {
-            "0xcd4S0x395": [
-                [
-                    "Concat(0, Extract(159, 0, Id_1))",
-                    "balance_4"
-                ]
-            ]
-        },
         "0x1e33667": {
             "0x897S0x19c": [
                 [
                     "Concat(0, Extract(159, 0, Id_2))",
                     "mem_mem_64"
+                ]
+            ]
+        },
+        "0x1b9a91a4": {
+            "0xcd4S0x395": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "balance_4"
                 ]
             ]
         }

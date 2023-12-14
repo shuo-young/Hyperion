@@ -2,7 +2,7 @@
     "dapp_name": "PoWH4D - P4D",
     "total_func": 11,
     "analyzed_func": 0,
-    "block_num": 18661992,
+    "block_num": 18734205,
     "address": "0x1f3c3c8fe087f4c330b3c89d155c7265bcd9aba0",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

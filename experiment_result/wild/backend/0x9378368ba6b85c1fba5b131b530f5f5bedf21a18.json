@@ -2,7 +2,7 @@
     "dapp_name": "VeeFriends Series 2",
     "total_func": 41,
     "analyzed_func": 3,
-    "block_num": 18640736,
+    "block_num": 18723926,
     "address": "0x9378368ba6b85c1fba5b131b530f5f5bedf21a18",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

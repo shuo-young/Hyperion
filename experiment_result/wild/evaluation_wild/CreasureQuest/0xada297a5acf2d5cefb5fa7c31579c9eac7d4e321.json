@@ -2,7 +2,7 @@
     "dapp_name": "CreasureQuest",
     "total_func": 21,
     "analyzed_func": 1,
-    "block_num": 18672232,
+    "block_num": 18735790,
     "address": "0xada297a5acf2d5cefb5fa7c31579c9eac7d4e321",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

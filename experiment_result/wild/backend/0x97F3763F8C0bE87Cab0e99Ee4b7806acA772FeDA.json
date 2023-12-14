@@ -2,7 +2,7 @@
     "dapp_name": "WePiggy",
     "total_func": 4,
     "analyzed_func": 2,
-    "block_num": 18659847,
+    "block_num": 18733054,
     "address": "0x97F3763F8C0bE87Cab0e99Ee4b7806acA772FeDA",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

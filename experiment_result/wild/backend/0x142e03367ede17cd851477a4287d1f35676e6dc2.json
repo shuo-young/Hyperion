@@ -2,7 +2,7 @@
     "dapp_name": "Yogapetz",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18660419,
+    "block_num": 18733409,
     "address": "0x142e03367ede17cd851477a4287d1f35676e6dc2",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

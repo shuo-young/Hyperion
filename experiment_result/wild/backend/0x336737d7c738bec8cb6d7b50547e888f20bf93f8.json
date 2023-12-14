@@ -2,7 +2,7 @@
     "dapp_name": "CryptoPets",
     "total_func": 20,
     "analyzed_func": 4,
-    "block_num": 18670645,
+    "block_num": 18735043,
     "address": "0x336737d7c738bec8cb6d7b50547e888f20bf93f8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

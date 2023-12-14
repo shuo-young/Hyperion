@@ -2,7 +2,7 @@
     "dapp_name": "Fomo3D Reboot",
     "total_func": 28,
     "analyzed_func": 6,
-    "block_num": 18660728,
+    "block_num": 18733562,
     "address": "0x90eddce88d54dafd22ec724727ba1181bcfd23f0",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,82 +20,6 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xaa4d490b": {
-            "0x16f9": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_7"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_101"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_106"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_113"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_117"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_121"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_126"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_130"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_134"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_140"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_144"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_148"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_154"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_158"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_162"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_167"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_171"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_175"
-                ]
-            ]
-        },
         "0xc0942dfd": {
             "0x16f9": [
                 [
@@ -647,82 +572,6 @@
                 ]
             ]
         },
-        "0x745ea0c1": {
-            "0x16f9": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_7"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_101"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_106"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_113"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_117"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_121"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_126"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_130"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_134"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_140"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_144"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_148"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_154"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_158"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_162"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_167"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_171"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "balance_175"
-                ]
-            ]
-        },
         "0x685ffd83": {
             "0x16f9": [
                 [
@@ -964,6 +813,158 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-0-))",
                     "balance_423"
+                ]
+            ]
+        },
+        "0x745ea0c1": {
+            "0x16f9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_7"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_101"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_106"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_113"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_117"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_121"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_126"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_130"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_134"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_140"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_144"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_148"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_154"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_158"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_162"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_167"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_171"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_175"
+                ]
+            ]
+        },
+        "0xaa4d490b": {
+            "0x16f9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_7"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_101"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_106"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_113"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_117"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_121"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_126"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_130"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_134"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_140"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_144"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_148"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_154"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_158"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_162"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_167"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_171"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "balance_175"
                 ]
             ]
         }

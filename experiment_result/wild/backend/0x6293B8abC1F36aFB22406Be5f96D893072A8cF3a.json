@@ -2,7 +2,7 @@
     "dapp_name": "Rocket Pool",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 18655988,
+    "block_num": 18731389,
     "address": "0x6293B8abC1F36aFB22406Be5f96D893072A8cF3a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

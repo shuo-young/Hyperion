@@ -2,7 +2,7 @@
     "dapp_name": "Tewkenaire (ETH)",
     "total_func": 45,
     "analyzed_func": 10,
-    "block_num": 18661191,
+    "block_num": 18733778,
     "address": "0xd52dca990CFC3760e0Cb0A60D96BE0da43fEbf19",
     "platform": "ETH",
     "reward": {
@@ -38,7 +38,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

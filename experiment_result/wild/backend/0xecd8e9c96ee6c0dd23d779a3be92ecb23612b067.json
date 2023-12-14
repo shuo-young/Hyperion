@@ -2,15 +2,16 @@
     "dapp_name": "BNBFactor",
     "total_func": 31,
     "analyzed_func": 2,
-    "block_num": 33856201,
+    "block_num": 34145766,
     "address": "0xecd8e9c96ee6c0dd23d779a3be92ecb23612b067",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xe84cdabc": {
             "0x292cS0x2658": [
                 [

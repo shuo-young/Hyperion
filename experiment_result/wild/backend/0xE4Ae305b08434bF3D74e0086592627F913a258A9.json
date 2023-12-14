@@ -2,23 +2,11 @@
     "dapp_name": "Badger.Finance",
     "total_func": 39,
     "analyzed_func": 6,
-    "block_num": 18644788,
+    "block_num": 18725510,
     "address": "0xE4Ae305b08434bF3D74e0086592627F913a258A9",
     "platform": "ETH",
     "reward": {
         "warning": true,
-        "0x2e1a7d4d": {
-            "0x27d1S0x207eS0x1773B0x1bdd": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-53-)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(0, Ia_store-53-)"
-                ]
-            ]
-        },
         "0x853828b6": {
             "0x27d1S0x207eS0x1773B0x1bdd": [
                 [
@@ -30,11 +18,24 @@
                     "bvudiv_i(0, Ia_store-53-)"
                 ]
             ]
+        },
+        "0x2e1a7d4d": {
+            "0x27d1S0x207eS0x1773B0x1bdd": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-53-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-53-)"
+                ]
+            ]
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xd389800f": {
             "0x27d1S0x207eS0x1773B0xe75S0x607": [
                 [

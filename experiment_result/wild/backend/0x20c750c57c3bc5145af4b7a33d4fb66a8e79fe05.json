@@ -2,7 +2,7 @@
     "dapp_name": "OrbCity",
     "total_func": 49,
     "analyzed_func": 8,
-    "block_num": 50341183,
+    "block_num": 50795964,
     "address": "0x20c750c57c3bc5145af4b7a33d4fb66a8e79fe05",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

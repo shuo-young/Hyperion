@@ -2,7 +2,7 @@
     "dapp_name": "Ether Chicken Farm",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 18660600,
+    "block_num": 18733501,
     "address": "0xf448322a37793479045edc23d871b48913887e6b",
     "platform": "ETH",
     "reward": {
@@ -32,6 +32,17 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
+        "0x4f74acfe": {
+            "0xfc2": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
         "0x3955f0fe": {
             "0x987S0x2d7": [
                 [
@@ -41,14 +52,6 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-4-))",
                     "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
-                ]
-            ]
-        },
-        "0x4f74acfe": {
-            "0xfc2": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-4-))",
-                    "bvudiv_i(4*Iv, 100)"
                 ]
             ]
         },

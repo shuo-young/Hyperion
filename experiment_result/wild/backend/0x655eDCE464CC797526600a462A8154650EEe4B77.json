@@ -2,7 +2,7 @@
     "dapp_name": "Clipper DEX",
     "total_func": 46,
     "analyzed_func": 11,
-    "block_num": 18660321,
+    "block_num": 18733367,
     "address": "0x655eDCE464CC797526600a462A8154650EEe4B77",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            6307683526161931884890479
+            6287404750977229957537064
         ],
         "unlimited": true
     },

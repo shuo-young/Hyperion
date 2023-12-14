@@ -2,7 +2,7 @@
     "dapp_name": "WETH Miner",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 50453119,
+    "block_num": 50852146,
     "address": "0x3CE3406AA9af0288977D822d2cb6b9c6f2375B54",
     "platform": "Polygon",
     "reward": {
@@ -39,6 +39,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x59cS0x21c": [
                 [

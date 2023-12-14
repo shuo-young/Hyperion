@@ -2,7 +2,7 @@
     "dapp_name": "Ethereum Chicken Farm",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 18660665,
+    "block_num": 18733531,
     "address": "0x246a3cc8430909cb9b4ea2c55064045096656792",
     "platform": "ETH",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x3955f0fe": {
             "0x9ceS0x302": [
                 [

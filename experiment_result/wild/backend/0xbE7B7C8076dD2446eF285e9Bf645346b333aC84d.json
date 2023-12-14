@@ -2,7 +2,7 @@
     "dapp_name": "BeefSwap",
     "total_func": 32,
     "analyzed_func": 8,
-    "block_num": 33851796,
+    "block_num": 34143420,
     "address": "0xbE7B7C8076dD2446eF285e9Bf645346b333aC84d",
     "platform": "BSC",
     "reward": {
@@ -43,6 +43,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xe4849b32": {
             "0x1074": [
                 [
@@ -62,7 +65,7 @@
     },
     "supply": {
         "amount": [
-            279193843994488732998917
+            278809600962004146703405
         ],
         "unlimited": false
     },

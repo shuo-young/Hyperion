@@ -2,7 +2,7 @@
     "dapp_name": "PuffGo",
     "total_func": 28,
     "analyzed_func": 0,
-    "block_num": 33778861,
+    "block_num": 34107191,
     "address": "0x2c45D0187883D982A8Ee1F3e00860A938B9ee883",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

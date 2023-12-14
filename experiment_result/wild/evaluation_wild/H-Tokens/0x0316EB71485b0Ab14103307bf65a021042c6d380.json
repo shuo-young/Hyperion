@@ -2,7 +2,7 @@
     "dapp_name": "H-Tokens",
     "total_func": 25,
     "analyzed_func": 2,
-    "block_num": 18650911,
+    "block_num": 18728408,
     "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Twindex",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33839052,
+    "block_num": 34137843,
     "address": "0x40Ea52769FfaBa9a171d83f9f34972058314F223",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

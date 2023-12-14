@@ -2,7 +2,7 @@
     "dapp_name": "Dfyn Network",
     "total_func": 30,
     "analyzed_func": 18,
-    "block_num": 50379270,
+    "block_num": 50814535,
     "address": "0xA102072A4C07F06EC3B4900FDC4C7B80b6c57429",
     "platform": "Polygon",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

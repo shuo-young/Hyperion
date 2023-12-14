@@ -2,7 +2,7 @@
     "dapp_name": "dYdX",
     "total_func": 16,
     "analyzed_func": 0,
-    "block_num": 18650043,
+    "block_num": 18728210,
     "address": "0xD54f502e184B6B739d7D27a6410a67dc462D69c8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

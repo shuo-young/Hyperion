@@ -2,7 +2,7 @@
     "dapp_name": "The Doge Pound",
     "total_func": 42,
     "analyzed_func": 6,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0xF4ee95274741437636e748DdAc70818B4ED7d043",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.5
+        ],
         "0x3ccfd60b": {
             "0x114fS0x491": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "SushiSwap",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18657442,
+    "block_num": 18731958,
     "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,7 +20,7 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x441a3e70": {
+        "0xe2bbb158": {
             "0x1582": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -27,7 +28,7 @@
                 ]
             ]
         },
-        "0xe2bbb158": {
+        "0x441a3e70": {
             "0x1582": [
                 [
                     "Concat(0, Extract(159, 0, Is))",

@@ -2,7 +2,7 @@
     "dapp_name": "CATGIRL ACADEMIA",
     "total_func": 42,
     "analyzed_func": 4,
-    "block_num": 18640724,
+    "block_num": 18723926,
     "address": "0xa5d37c0364b9e6d96ee37e03964e7ad2b33a93f4",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

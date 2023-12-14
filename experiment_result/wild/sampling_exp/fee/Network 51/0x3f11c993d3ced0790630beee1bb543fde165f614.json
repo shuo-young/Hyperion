@@ -2,7 +2,7 @@
     "dapp_name": "Network 51",
     "total_func": 12,
     "analyzed_func": 1,
-    "block_num": 18610175,
+    "block_num": 18734170,
     "address": "0x3f11c993d3ced0790630beee1bb543fde165f614",
     "platform": "ETH",
     "reward": {
@@ -34,6 +34,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1
+        ],
         "0x00000000": {
             "0x59f": [
                 [

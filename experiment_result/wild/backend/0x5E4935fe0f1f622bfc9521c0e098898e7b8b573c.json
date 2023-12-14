@@ -2,16 +2,17 @@
     "dapp_name": "Freeliquid",
     "total_func": 46,
     "analyzed_func": 3,
-    "block_num": 18671334,
+    "block_num": 18735438,
     "address": "0x5E4935fe0f1f622bfc9521c0e098898e7b8b573c",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x56605475": {
+        "rate": [],
+        "0x3d18b912": {
             "0x3292S0x2f16S0x299e": [
                 [
                     "Concat(0, Extract(159, 0, bvudiv_i(0, Ia_store-54-)))",
@@ -19,7 +20,7 @@
                 ]
             ]
         },
-        "0x3d18b912": {
+        "0x56605475": {
             "0x3292S0x2f16S0x299e": [
                 [
                     "Concat(0, Extract(159, 0, bvudiv_i(0, Ia_store-54-)))",

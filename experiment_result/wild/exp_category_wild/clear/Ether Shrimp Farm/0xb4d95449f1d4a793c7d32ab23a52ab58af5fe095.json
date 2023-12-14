@@ -2,7 +2,7 @@
     "dapp_name": "Ether Shrimp Farm",
     "total_func": 46,
     "analyzed_func": 5,
-    "block_num": 18660617,
+    "block_num": 18733519,
     "address": "0xb4d95449f1d4a793c7d32ab23a52ab58af5fe095",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -40,30 +41,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-21-))",
                     "balance_1"
-                ]
-            ]
-        },
-        "0x421a5727": {
-            "0x1028": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-21-))",
-                    "balance_7"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-21-))",
-                    "balance_12"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-21-))",
-                    "balance_16"
-                ]
-            ]
-        },
-        "0x3955f0fe": {
-            "0x1028": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-21-))",
-                    "balance_17"
                 ]
             ]
         },
@@ -104,6 +81,30 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-21-))",
                     "balance_13"
+                ]
+            ]
+        },
+        "0x3955f0fe": {
+            "0x1028": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "balance_17"
+                ]
+            ]
+        },
+        "0x421a5727": {
+            "0x1028": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "balance_7"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "balance_12"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-21-))",
+                    "balance_16"
                 ]
             ]
         },

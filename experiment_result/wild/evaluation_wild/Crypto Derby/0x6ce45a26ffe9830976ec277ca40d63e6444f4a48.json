@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Derby",
     "total_func": 27,
     "analyzed_func": 6,
-    "block_num": 18672283,
+    "block_num": 18735811,
     "address": "0x6ce45a26ffe9830976ec277ca40d63e6444f4a48",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

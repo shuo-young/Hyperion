@@ -2,7 +2,7 @@
     "dapp_name": "EtherFarmDev Simulator",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 18660683,
+    "block_num": 18733537,
     "address": "0x32c4b55bfd8465d714caff08a9c177c09f16dcfe",
     "platform": "ETH",
     "reward": {
@@ -30,8 +30,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x4f74acfe": {
             "0xe75": [
                 [
@@ -81,7 +82,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

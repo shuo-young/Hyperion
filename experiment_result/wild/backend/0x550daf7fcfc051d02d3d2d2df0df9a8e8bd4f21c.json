@@ -2,7 +2,7 @@
     "dapp_name": "Summoners Arena",
     "total_func": 44,
     "analyzed_func": 4,
-    "block_num": 33775747,
+    "block_num": 34106155,
     "address": "0x550daf7fcfc051d02d3d2d2df0df9a8e8bd4f21c",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

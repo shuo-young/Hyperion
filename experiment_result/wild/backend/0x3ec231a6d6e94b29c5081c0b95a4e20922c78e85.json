@@ -2,7 +2,7 @@
     "dapp_name": "Treasure Hunt",
     "total_func": 47,
     "analyzed_func": 4,
-    "block_num": 33857165,
+    "block_num": 34146422,
     "address": "0x3ec231a6d6e94b29c5081c0b95a4e20922c78e85",
     "platform": "BSC",
     "reward": {
@@ -31,19 +31,14 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            495347885799759.4
+        ],
         "0x45a50ec5": {
             "0xc2b": [
                 [
                     "Concat(0, Extract(167, 8, Ia_store-10-))",
                     "bvudiv_i(Ia_store-11-*Id_1, 100)"
-                ]
-            ]
-        },
-        "0x558f319a": {
-            "0xd47": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-1-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(2*Iv, 100)"
                 ]
             ]
         }

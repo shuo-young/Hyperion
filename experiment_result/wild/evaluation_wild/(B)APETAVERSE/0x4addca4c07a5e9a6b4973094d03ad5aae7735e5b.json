@@ -2,7 +2,7 @@
     "dapp_name": "(B)APETAVERSE",
     "total_func": 50,
     "analyzed_func": 3,
-    "block_num": 18641409,
+    "block_num": 18724171,
     "address": "0x4addca4c07a5e9a6b4973094d03ad5aae7735e5b",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

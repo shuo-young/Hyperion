@@ -2,7 +2,7 @@
     "dapp_name": "Creepz by OVERLORD",
     "total_func": 50,
     "analyzed_func": 4,
-    "block_num": 18640697,
+    "block_num": 18723926,
     "address": "0xfE8C6d19365453D26af321D0e8c910428c23873F",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

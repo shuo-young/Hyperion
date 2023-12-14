@@ -2,7 +2,7 @@
     "dapp_name": "FTM Fantom Miner",
     "total_func": 21,
     "analyzed_func": 2,
-    "block_num": 71614897,
+    "block_num": 72160017,
     "address": "0x6F123C6347521325d3a6CF08517a73bD1D64F191",
     "platform": "Fantom",
     "reward": {
@@ -31,14 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xdb663865": {
-            "0xf75": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-3-))",
-                    "bvudiv_i(5*Iv, 100)"
-                ]
-            ]
-        },
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x894S0x29a": [
                 [
@@ -48,6 +43,14 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-3-))",
                     "bvudiv_i(5*\n         bvudiv_i(IH_b*Ia_store-1-,\n                  Ia_store-2- +\n                  bvudiv_i(Ia_store-1-*Ia_store-8- +\n                           Ia_store-2-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_4-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_4-)),\n         100)"
+                ]
+            ]
+        },
+        "0xdb663865": {
+            "0xf75": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-3-))",
+                    "bvudiv_i(5*Iv, 100)"
                 ]
             ]
         }

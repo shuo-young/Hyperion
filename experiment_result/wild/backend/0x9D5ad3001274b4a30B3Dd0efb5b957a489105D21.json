@@ -2,7 +2,7 @@
     "dapp_name": "HmmCoin",
     "total_func": 15,
     "analyzed_func": 1,
-    "block_num": 50451337,
+    "block_num": 50851270,
     "address": "0x9D5ad3001274b4a30B3Dd0efb5b957a489105D21",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

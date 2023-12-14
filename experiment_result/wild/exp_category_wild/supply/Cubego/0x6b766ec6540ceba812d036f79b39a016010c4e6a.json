@@ -2,7 +2,7 @@
     "dapp_name": "Cubego",
     "total_func": 24,
     "analyzed_func": 1,
-    "block_num": 18672434,
+    "block_num": 18735853,
     "address": "0x6b766ec6540ceba812d036f79b39a016010c4e6a",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

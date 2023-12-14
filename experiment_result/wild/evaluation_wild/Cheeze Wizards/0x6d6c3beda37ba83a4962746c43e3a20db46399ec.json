@@ -2,7 +2,7 @@
     "dapp_name": "Cheeze Wizards",
     "total_func": 43,
     "analyzed_func": 2,
-    "block_num": 18672146,
+    "block_num": 18735735,
     "address": "0x6d6c3beda37ba83a4962746c43e3a20db46399ec",
     "platform": "ETH",
     "reward": {
@@ -128,6 +128,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

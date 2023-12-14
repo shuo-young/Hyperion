@@ -2,7 +2,7 @@
     "dapp_name": "DEER PROTOCOL",
     "total_func": 31,
     "analyzed_func": 4,
-    "block_num": 154577441,
+    "block_num": 157757551,
     "address": "0xfD2d183C2402F117BA622195a75686663f4d55Ad",
     "platform": "Arbitrum",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

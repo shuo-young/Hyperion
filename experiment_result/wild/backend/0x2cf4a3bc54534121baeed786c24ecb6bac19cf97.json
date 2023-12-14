@@ -2,7 +2,7 @@
     "dapp_name": "BNB IOU",
     "total_func": 39,
     "analyzed_func": 3,
-    "block_num": 33856059,
+    "block_num": 34145716,
     "address": "0x2cf4a3bc54534121baeed786c24ecb6bac19cf97",
     "platform": "BSC",
     "reward": {
@@ -19,6 +19,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.06
+        ],
         "0x581c5ae6": {
             "0x1869": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "Jump.trade",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 50337968,
+    "block_num": 50795031,
     "address": "0xd555946e37098aC480cc3D0b56E94744ddC2F596",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Reality Clash",
     "total_func": 15,
     "analyzed_func": 5,
-    "block_num": 18673818,
+    "block_num": 18736405,
     "address": "0x15a45d4ace59de0a6c6a42fbf3e45e2c8895f362",
     "platform": "ETH",
     "reward": {
@@ -26,7 +26,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -35,11 +36,11 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xdc39d06d": {
-            "0x7ac": [
+        "0xa0ef91df": {
+            "0x6bf": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "Id_2"
+                    "balance_1"
                 ]
             ]
         },
@@ -51,11 +52,11 @@
                 ]
             ]
         },
-        "0xa0ef91df": {
-            "0x6bf": [
+        "0xdc39d06d": {
+            "0x7ac": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "balance_1"
+                    "Id_2"
                 ]
             ]
         }

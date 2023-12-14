@@ -2,7 +2,7 @@
     "dapp_name": "Stake Them ALL",
     "total_func": 27,
     "analyzed_func": 1,
-    "block_num": 18673853,
+    "block_num": 18736412,
     "address": "0xbadac68d3d59b3156de50ce7e2b7c756cbe52fee",
     "platform": "ETH",
     "reward": {
@@ -30,7 +30,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

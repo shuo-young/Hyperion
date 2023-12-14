@@ -2,7 +2,7 @@
     "dapp_name": "Valhalla",
     "total_func": 71,
     "analyzed_func": 7,
-    "block_num": 18641110,
+    "block_num": 18724035,
     "address": "0x231d3559aa848bf10366fb9868590f01d34bf240",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xfe67a54b": {
             "0x2d8d0xe39": [
                 [
@@ -63,7 +64,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": true,
         "lock": false,
         "clear": false,

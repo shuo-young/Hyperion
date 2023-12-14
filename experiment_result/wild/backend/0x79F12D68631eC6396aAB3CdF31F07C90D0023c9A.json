@@ -2,7 +2,7 @@
     "dapp_name": "Unifi Protocol",
     "total_func": 33,
     "analyzed_func": 19,
-    "block_num": 18658238,
+    "block_num": 18732472,
     "address": "0x79F12D68631eC6396aAB3CdF31F07C90D0023c9A",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,6 +20,22 @@
     "lock": false,
     "clear": {
         "warning": true,
+        "0xa0ef91df": {
+            "0x2d7dS0xa65": [
+                [
+                    "Concat(0, Extract(159, 0, mem_mem_64))",
+                    "IH_b"
+                ]
+            ]
+        },
+        "0x5b0d5984": {
+            "0x46350x2dccS0x1ec9": [
+                [
+                    "Concat(0, Extract(159, 0, Id_5))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
         "0x7673a1a9": {
             "0x2454": [
                 [
@@ -32,22 +49,6 @@
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"
-                ]
-            ]
-        },
-        "0x5b0d5984": {
-            "0x46350x2dccS0x1ec9": [
-                [
-                    "Concat(0, Extract(159, 0, Id_5))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0xa0ef91df": {
-            "0x2d7dS0xa65": [
-                [
-                    "Concat(0, Extract(159, 0, mem_mem_64))",
-                    "IH_b"
                 ]
             ]
         }

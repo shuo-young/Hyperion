@@ -2,15 +2,40 @@
     "dapp_name": "CroKing",
     "total_func": 37,
     "analyzed_func": 4,
-    "block_num": 11341128,
+    "block_num": 11495308,
     "address": "0x588f9ae41d7eb85be15822df7a89d9d101de2c32",
     "platform": "Cronos",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
+        "0xbc4c4b37": {
+            "0x223e": [
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_2- +\n               Ia_store-6-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
+                ]
+            ]
+        },
+        "0xffb2c479": {
+            "0x223e": [
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_27- +\n               Ia_store-6-*Ia_store-some_var_28-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
+                ],
+                [
+                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+                    "Concat(0, Extract(255, 128, Ia_store-some_var_27-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
+                ]
+            ]
+        },
         "0xe30443bc": {
             "0x223e": [
                 [
@@ -70,35 +95,11 @@
                     "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_103- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-6-*\n               (Id_2 +\n                115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                Ia_store-some_var_38-) +\n               Ia_store-6-*Id_2)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_113-"
                 ]
             ]
-        },
-        "0xbc4c4b37": {
-            "0x223e": [
-                [
-                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_2- +\n               Ia_store-6-*Ia_store-some_var_3-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
-                ],
-                [
-                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-                    "Concat(0, Extract(255, 128, Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
-                ]
-            ]
-        },
-        "0xffb2c479": {
-            "0x223e": [
-                [
-                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-                    "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-some_var_27- +\n               Ia_store-6-*Ia_store-some_var_28-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
-                ],
-                [
-                    "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-                    "Concat(0, Extract(255, 128, Ia_store-some_var_27-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_26-"
-                ]
-            ]
         }
     },
     "supply": {
         "amount": [
-            426507244787053013280832
+            426641917070825113986600
         ],
         "unlimited": true
     },

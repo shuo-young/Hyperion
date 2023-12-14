@@ -2,7 +2,7 @@
     "dapp_name": "50 Percent Daily",
     "total_func": 17,
     "analyzed_func": 4,
-    "block_num": 18660489,
+    "block_num": 18733454,
     "address": "0x6dfdec940b83e424c1433d08b2e6096809d3698b",
     "platform": "ETH",
     "reward": {
@@ -16,6 +16,18 @@
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "bvudiv_i(bvudiv_i(Ia_store-5-*Ia_store-some_var_12-, 100)*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  Ia_store-some_var_6-,\n                  60),\n         1440) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_13-"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0xb07": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(150*Ia_store-some_var_2-, 100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_3-"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(bvudiv_i(Ia_store-5-*Ia_store-some_var_7-, 100)*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  Ia_store-some_var_1-,\n                  60),\n         1440) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_8-"
                 ]
             ]
         },
@@ -39,23 +51,14 @@
                 ]
             ]
         },
-        "0x3ccfd60b": {
-            "0xb07": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(150*Ia_store-some_var_2-, 100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_3-"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(bvudiv_i(Ia_store-5-*Ia_store-some_var_7-, 100)*\n         bvudiv_i(IH_s +\n                  115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                  Ia_store-some_var_1-,\n                  60),\n         1440) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_8-"
-                ]
-            ]
-        },
         "ui": {}
     },
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x00000000": {
             "0x8ef": [
                 [

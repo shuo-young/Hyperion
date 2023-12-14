@@ -2,7 +2,7 @@
     "dapp_name": "RENGA Black Box",
     "total_func": 48,
     "analyzed_func": 4,
-    "block_num": 18622898,
+    "block_num": 18724317,
     "address": "0x64ad353bc90a04361c4810ae7b3701f3beb48d7e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -21,7 +22,7 @@
     "supply": {
         "amount": [
             10001,
-            8913
+            8917
         ],
         "unlimited": true,
         "ui": [

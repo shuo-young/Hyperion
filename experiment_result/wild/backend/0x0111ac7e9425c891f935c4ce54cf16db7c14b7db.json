@@ -2,7 +2,7 @@
     "dapp_name": "Chainbreakers",
     "total_func": 54,
     "analyzed_func": 6,
-    "block_num": 18672121,
+    "block_num": 18735731,
     "address": "0x0111ac7e9425c891f935c4ce54cf16db7c14b7db",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
@@ -21,22 +22,6 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x8d78c3c": {
-            "0x13cd0x1346S0x539": [
-                [
-                    "Is",
-                    "Id_1"
-                ]
-            ]
-        },
-        "0xd314b647": {
-            "0x204bS0xd65": [
-                [
-                    "Is",
-                    "balance_1"
-                ]
-            ]
-        },
         "0x63538dab": {
             "0x1981S0x8e5": [
                 [
@@ -50,6 +35,22 @@
                 [
                     "Is",
                     "mem_mem_64"
+                ]
+            ]
+        },
+        "0xd314b647": {
+            "0x204bS0xd65": [
+                [
+                    "Is",
+                    "balance_1"
+                ]
+            ]
+        },
+        "0x8d78c3c": {
+            "0x13cd0x1346S0x539": [
+                [
+                    "Is",
+                    "Id_1"
                 ]
             ]
         }

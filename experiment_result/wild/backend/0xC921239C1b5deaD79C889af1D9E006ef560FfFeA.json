@@ -2,16 +2,17 @@
     "dapp_name": "BakerySwap",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 33791696,
+    "block_num": 34113228,
     "address": "0xC921239C1b5deaD79C889af1D9E006ef560FfFeA",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
-        "0x2d296bf1": {
+        "rate": [],
+        "0xc0838afd": {
             "0x27f6S0x25faS0x20d7": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-some_var_4-))",
@@ -19,7 +20,7 @@
                 ]
             ]
         },
-        "0xc0838afd": {
+        "0x2d296bf1": {
             "0x27f6S0x25faS0x20d7": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-some_var_4-))",

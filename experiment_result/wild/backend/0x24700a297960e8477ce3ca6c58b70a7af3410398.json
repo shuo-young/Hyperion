@@ -2,7 +2,7 @@
     "dapp_name": "CryptoMon",
     "total_func": 24,
     "analyzed_func": 3,
-    "block_num": 18672363,
+    "block_num": 18735820,
     "address": "0x24700a297960e8477ce3ca6c58b70a7af3410398",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

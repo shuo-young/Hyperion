@@ -1,0 +1,66 @@
+{
+    "dapp_name": "SmartSwap - Rigelprotocol",
+    "total_func": 14,
+    "analyzed_func": 5,
+    "block_num": 34133843,
+    "address": "0x9D5b588E5DaAC8055886D055418425c96faF9F56",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "0x3610724e": {
+            "0x6df": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "1000000000000000000*Id_1"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": true,
+        "0xa4740ff": {
+            "0x332S0xd3": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x1d111d13": {
+            "0x549S0xfe": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "balance_1"
+                ]
+            ]
+        },
+        "0x5b0b8596": {
+            "0x8ebS0x194": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xdca46f6": {
+            "0x4b1S0xf9": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        }
+    },
+    "pause": false,
+    "metadata": ""
+}

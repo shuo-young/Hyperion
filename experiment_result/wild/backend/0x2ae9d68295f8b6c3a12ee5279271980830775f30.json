@@ -2,7 +2,7 @@
     "dapp_name": "Win ETH Free",
     "total_func": 3,
     "analyzed_func": 2,
-    "block_num": 18661226,
+    "block_num": 18733779,
     "address": "0x2ae9d68295f8b6c3a12ee5279271980830775f30",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1
+        ],
         "0x4557735c": {
             "0x10f7S0x68d": [
                 [

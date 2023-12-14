@@ -2,7 +2,7 @@
     "dapp_name": "PancakeSwap V3",
     "total_func": 48,
     "analyzed_func": 15,
-    "block_num": 18653198,
+    "block_num": 18729784,
     "address": "0x13f4EA83D0bd40E75C8222255bc855a974568Dd4",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

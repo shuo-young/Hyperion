@@ -2,7 +2,7 @@
     "dapp_name": "Nakamigos",
     "total_func": 70,
     "analyzed_func": 4,
-    "block_num": 18640730,
+    "block_num": 18723926,
     "address": "0xd774557b647330c91bf44cfeab205095f7e6c367",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,12 +2,12 @@
     "dapp_name": "QiDao",
     "total_func": 26,
     "analyzed_func": 4,
-    "block_num": 50411017,
+    "block_num": 50831361,
     "address": "0x574Fe4E8120C4Da1741b5Fd45584de7A5b521F0F",
     "platform": "Polygon",
     "reward": {
         "warning": false,
-        "0xe2bbb158": {
+        "0x441a3e70": {
             "0x13f5": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -15,7 +15,7 @@
                 ]
             ]
         },
-        "0x441a3e70": {
+        "0xe2bbb158": {
             "0x13f5": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -28,8 +28,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xe2bbb158": {
             "0x17d0S0x16ecS0x163bS0x142aB0xf98": [
                 [
@@ -72,7 +73,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

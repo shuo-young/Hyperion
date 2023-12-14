@@ -2,7 +2,7 @@
     "dapp_name": "0xApes Trilogy",
     "total_func": 32,
     "analyzed_func": 4,
-    "block_num": 18642182,
+    "block_num": 18724473,
     "address": "0x22c08c358f62f35b742d023bf2faf67e30e5376e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

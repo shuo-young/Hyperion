@@ -2,7 +2,7 @@
     "dapp_name": "BNB CAKE FACTORY",
     "total_func": 63,
     "analyzed_func": 4,
-    "block_num": 33855974,
+    "block_num": 34145688,
     "address": "0xbef9409b25737d96844F04335F597d094861Dee4",
     "platform": "BSC",
     "reward": {
@@ -11,6 +11,11 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.02,
+            0.06,
+            0.04
+        ],
         "0x3f9c793": {
             "0xe4bS0x4b5": [
                 [

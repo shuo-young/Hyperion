@@ -2,7 +2,7 @@
     "dapp_name": "MarsToken",
     "total_func": 33,
     "analyzed_func": 1,
-    "block_num": 33855408,
+    "block_num": 34145421,
     "address": "0x2d2bB6cC040010583F16Bb1c5afEE129ed13B532",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

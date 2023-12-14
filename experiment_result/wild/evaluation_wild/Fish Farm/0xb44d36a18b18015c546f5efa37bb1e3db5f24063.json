@@ -2,7 +2,7 @@
     "dapp_name": "Fish Farm",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 18660716,
+    "block_num": 18733560,
     "address": "0xb44d36a18b18015c546f5efa37bb1e3db5f24063",
     "platform": "ETH",
     "reward": {
@@ -32,6 +32,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x4f74acfe": {
             "0xfc2": [
                 [

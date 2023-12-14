@@ -2,7 +2,7 @@
     "dapp_name": "Pololinks",
     "total_func": 9,
     "analyzed_func": 2,
-    "block_num": 50451803,
+    "block_num": 50851552,
     "address": "0x71502c52e46b364227d57b6e7b502256179e6704",
     "platform": "Polygon",
     "reward": {
@@ -39,6 +39,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.07,
+            0.03
+        ],
         "0xa0ffed2f": {
             "0x1418S0x11a": [
                 [

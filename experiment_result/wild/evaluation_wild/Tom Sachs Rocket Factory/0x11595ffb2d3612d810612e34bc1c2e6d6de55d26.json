@@ -2,7 +2,7 @@
     "dapp_name": "Tom Sachs Rocket Factory",
     "total_func": 49,
     "analyzed_func": 4,
-    "block_num": 18641212,
+    "block_num": 18724064,
     "address": "0x11595ffb2d3612d810612e34bc1c2e6d6de55d26",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

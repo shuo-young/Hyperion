@@ -1,0 +1,26 @@
+{
+    "dapp_name": "TRDG Track",
+    "total_func": 22,
+    "analyzed_func": 0,
+    "block_num": 34145584,
+    "address": "0x92a42db88ed0f02c71d439e55962ca7cab0168b5",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

@@ -2,7 +2,7 @@
     "dapp_name": "Arbidex",
     "total_func": 20,
     "analyzed_func": 6,
-    "block_num": 153694804,
+    "block_num": 157328706,
     "address": "0x97C397b23836EbAA1f5602894cAA469537E85f21",
     "platform": "Arbitrum",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Nuclear Nerds V2",
     "total_func": 48,
     "analyzed_func": 4,
-    "block_num": 18642133,
+    "block_num": 18724440,
     "address": "0x0f78c6eee3c89ff37fd9ef96bd685830993636f2",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,27 +2,11 @@
     "dapp_name": "Proof of Carlos Matos",
     "total_func": 28,
     "analyzed_func": 7,
-    "block_num": 18660990,
+    "block_num": 18733679,
     "address": "0x96f3e4086575e2b9d76ab5b1871a94b8b3a08d39",
     "platform": "ETH",
     "reward": {
         "warning": false,
-        "0x3ccfd60b": {
-            "0x145b": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
-                ]
-            ]
-        },
-        "0xa9059cbb": {
-            "0x145b": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
-                ]
-            ]
-        },
         "0xe9fad8ee": {
             "0x145b": [
                 [
@@ -39,11 +23,28 @@
                 ]
             ]
         },
+        "0xa9059cbb": {
+            "0x145b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_1- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_3-)) +\nIa_store-some_var_2-"
+                ]
+            ]
+        },
+        "0x3ccfd60b": {
+            "0x145b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Concat(0,\n       Extract(255,\n               64,\n               Ia_store-9-*Ia_store-some_var_3- +\n               115792089237316195423570985008687907853269984665640564039457584007913129639935*\n               Ia_store-some_var_2-)) +\nIa_store-some_var_1-"
+                ]
+            ]
+        },
         "ui": {}
     },
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

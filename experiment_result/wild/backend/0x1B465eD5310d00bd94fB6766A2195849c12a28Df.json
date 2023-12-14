@@ -2,7 +2,7 @@
     "dapp_name": "BitCereal",
     "total_func": 3,
     "analyzed_func": 2,
-    "block_num": 50451013,
+    "block_num": 50851162,
     "address": "0x1B465eD5310d00bd94fB6766A2195849c12a28Df",
     "platform": "Polygon",
     "reward": {
@@ -22,7 +22,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

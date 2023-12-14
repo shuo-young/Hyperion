@@ -2,7 +2,7 @@
     "dapp_name": "SUPERPLASTIC : SUPERGUCCI",
     "total_func": 40,
     "analyzed_func": 8,
-    "block_num": 18642028,
+    "block_num": 18724391,
     "address": "0x78d61c684a992b0289bbfe58aaa2659f667907f8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

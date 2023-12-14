@@ -2,7 +2,7 @@
     "dapp_name": "Pepe Farm",
     "total_func": 24,
     "analyzed_func": 2,
-    "block_num": 18660851,
+    "block_num": 18733617,
     "address": "0x2b2167bd09c4c8f853e0c011bcf9a581f8459604",
     "platform": "ETH",
     "reward": {
@@ -32,6 +32,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x4f74acfe": {
             "0xfc2": [
                 [

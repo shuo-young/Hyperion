@@ -1,1 +1,0 @@
-This app is deprecated. Please use https://app.mento.org for the latest Mento features SwapAboutConnect0000Copy AddressChange NetworkDisconnectSwapShow SlippageFrom TokenCELOLoading...To TokencUSD0Connect WalletConnecting

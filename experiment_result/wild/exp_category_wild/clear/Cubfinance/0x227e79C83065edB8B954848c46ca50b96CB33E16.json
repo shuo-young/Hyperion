@@ -2,7 +2,7 @@
     "dapp_name": "Cubfinance",
     "total_func": 26,
     "analyzed_func": 3,
-    "block_num": 33804276,
+    "block_num": 34119201,
     "address": "0x227e79C83065edB8B954848c46ca50b96CB33E16",
     "platform": "BSC",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -33,7 +34,7 @@
     },
     "clear": {
         "warning": true,
-        "0xe2bbb158": {
+        "0x441a3e70": {
             "0x2234": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -41,7 +42,7 @@
                 ]
             ]
         },
-        "0x441a3e70": {
+        "0xe2bbb158": {
             "0x2234": [
                 [
                     "Concat(0, Extract(159, 0, Is))",

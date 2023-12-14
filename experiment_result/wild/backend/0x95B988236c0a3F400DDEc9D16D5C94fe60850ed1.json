@@ -2,7 +2,7 @@
     "dapp_name": "POLYCASH GOLD",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 50452430,
+    "block_num": 50851905,
     "address": "0x95B988236c0a3F400DDEc9D16D5C94fe60850ed1",
     "platform": "Polygon",
     "reward": {
@@ -11,6 +11,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.7,
+            0.15
+        ],
         "0xa4f25195": {
             "0x1985": [
                 [
@@ -33,19 +37,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xfe625e08": {
-            "0x1124": [
-                [
-                    "Is",
-                    "IH_b"
-                ]
-            ]
-        },
         "0xd2b3b9f6": {
             "0xce7": [
                 [
                     "Is",
                     "mem_mem_64"
+                ]
+            ]
+        },
+        "0xfe625e08": {
+            "0x1124": [
+                [
+                    "Is",
+                    "IH_b"
                 ]
             ]
         }

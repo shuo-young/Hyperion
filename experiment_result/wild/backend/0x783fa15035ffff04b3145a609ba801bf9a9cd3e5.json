@@ -2,7 +2,7 @@
     "dapp_name": "Growmatic",
     "total_func": 18,
     "analyzed_func": 2,
-    "block_num": 50451291,
+    "block_num": 50851231,
     "address": "0x783fa15035ffff04b3145a609ba801bf9a9cd3e5",
     "platform": "Polygon",
     "reward": {
@@ -19,19 +19,22 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xab94d950": {
-            "0xea5": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-1-))",
-                    "bvudiv_i(10*Iv, 100)"
-                ]
-            ]
-        },
+        "rate": [
+            0.1
+        ],
         "0x3ccfd60b": {
             "0x6eeS0x16f": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-1-))",
                     "bvudiv_i(5*Ia_store-2 + some_var_1- +\n         5*Ia_store-3 + some_var_1- +\n         5*Ia_store-5 + some_var_1-,\n         100)"
+                ]
+            ]
+        },
+        "0xab94d950": {
+            "0xea5": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "bvudiv_i(10*Iv, 100)"
                 ]
             ]
         }

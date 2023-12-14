@@ -2,7 +2,7 @@
     "dapp_name": "Gooniez Gang Official",
     "total_func": 32,
     "analyzed_func": 3,
-    "block_num": 18641952,
+    "block_num": 18724369,
     "address": "0x3ca5b00ade54365fbd590d4bc397e044a13068e5",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

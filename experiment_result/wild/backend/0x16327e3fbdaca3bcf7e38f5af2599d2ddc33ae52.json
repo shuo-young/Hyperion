@@ -2,7 +2,7 @@
     "dapp_name": "SpiritSwap",
     "total_func": 25,
     "analyzed_func": 17,
-    "block_num": 71521214,
+    "block_num": 72110868,
     "address": "0x16327e3fbdaca3bcf7e38f5af2599d2ddc33ae52",
     "platform": "Fantom",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,16 +20,16 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xaf2979eb": {
-            "0x37610x8dc": [
+        "0x5b0d5984": {
+            "0x37610x250eS0x1834": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"
                 ]
             ]
         },
-        "0x5b0d5984": {
-            "0x37610x250eS0x1834": [
+        "0xaf2979eb": {
+            "0x37610x8dc": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"

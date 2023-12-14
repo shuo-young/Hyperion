@@ -2,31 +2,16 @@
     "dapp_name": "Ether Thieves",
     "total_func": 27,
     "analyzed_func": 6,
-    "block_num": 18673679,
+    "block_num": 18736308,
     "address": "0xf4d6F542E0b950949392C3Ed4355b24145D8F451",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0xcb0d5d3b": {
-            "0x22950x7da": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-8-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-"
-                ]
-            ]
-        },
-        "0xd07e4c05": {
-            "0x22950x820": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-8-))",
-                    "Iv +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-9-"
-                ]
-            ]
-        }
+        "rate": []
     },
     "supply": {
         "amount": [],

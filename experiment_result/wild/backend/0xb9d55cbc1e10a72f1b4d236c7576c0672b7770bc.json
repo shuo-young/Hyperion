@@ -2,7 +2,7 @@
     "dapp_name": "KnightDoge",
     "total_func": 78,
     "analyzed_func": 3,
-    "block_num": 33857116,
+    "block_num": 34146224,
     "address": "0xb9d55cbc1e10a72f1b4d236c7576c0672b7770bc",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

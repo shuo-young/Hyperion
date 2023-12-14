@@ -2,7 +2,7 @@
     "dapp_name": "Push Protocol (prev. EPNS)",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 154546206,
+    "block_num": 157738604,
     "address": "0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa",
     "platform": "Arbitrum",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

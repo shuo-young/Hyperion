@@ -2,7 +2,7 @@
     "dapp_name": "Pandora Digital",
     "total_func": 22,
     "analyzed_func": 3,
-    "block_num": 33821346,
+    "block_num": 34127946,
     "address": "0xd5E2E316D898e6b5139281e68e54E59Ce381571c",
     "platform": "BSC",
     "reward": {
@@ -11,6 +11,11 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.1,
+            0.2,
+            0.7
+        ],
         "0xe4fc6b6d": {
             "0x1e85S0x1cf3S0x1726S0x13330x42f": [
                 [

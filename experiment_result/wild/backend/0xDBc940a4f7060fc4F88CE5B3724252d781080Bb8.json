@@ -2,7 +2,7 @@
     "dapp_name": "OBELUS.VOTO",
     "total_func": 17,
     "analyzed_func": 2,
-    "block_num": 18671578,
+    "block_num": 18735520,
     "address": "0xDBc940a4f7060fc4F88CE5B3724252d781080Bb8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

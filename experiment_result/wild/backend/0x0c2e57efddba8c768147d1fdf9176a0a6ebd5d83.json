@@ -2,7 +2,7 @@
     "dapp_name": "Kaiju Kingz",
     "total_func": 51,
     "analyzed_func": 8,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

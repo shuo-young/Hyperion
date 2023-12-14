@@ -2,7 +2,7 @@
     "dapp_name": "Checks - VV Originals",
     "total_func": 31,
     "analyzed_func": 7,
-    "block_num": 18641148,
+    "block_num": 18724050,
     "address": "0x036721e5a769cc48b3189efbb9cce4471e8a48b1",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            30921089766077038035231320427
+            30921089766077038288634390929
         ],
         "unlimited": true
     },

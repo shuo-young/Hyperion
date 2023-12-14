@@ -2,7 +2,7 @@
     "dapp_name": "PancakeSwap V2",
     "total_func": 25,
     "analyzed_func": 17,
-    "block_num": 18653065,
+    "block_num": 18729732,
     "address": "0xEfF92A263d31888d860bD50809A8D171709b7b1c",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,16 +20,16 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xaf2979eb": {
-            "0x3c2b0x9c8": [
+        "0x5b0d5984": {
+            "0x3c2b0x26a2S0x19db": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"
                 ]
             ]
         },
-        "0x5b0d5984": {
-            "0x3c2b0x26a2S0x19db": [
+        "0xaf2979eb": {
+            "0x3c2b0x9c8": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"

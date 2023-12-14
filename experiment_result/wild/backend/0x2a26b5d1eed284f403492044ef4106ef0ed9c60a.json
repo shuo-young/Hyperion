@@ -2,7 +2,7 @@
     "dapp_name": "Lords of the Snails",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 18660473,
+    "block_num": 18733438,
     "address": "0x2a26b5d1eed284f403492044ef4106ef0ed9c60a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

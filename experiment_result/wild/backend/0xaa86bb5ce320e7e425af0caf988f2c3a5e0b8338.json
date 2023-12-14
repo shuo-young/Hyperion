@@ -2,7 +2,7 @@
     "dapp_name": "MLB Champions",
     "total_func": 37,
     "analyzed_func": 5,
-    "block_num": 18671570,
+    "block_num": 18735511,
     "address": "0xaa86bb5ce320e7e425af0caf988f2c3a5e0b8338",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

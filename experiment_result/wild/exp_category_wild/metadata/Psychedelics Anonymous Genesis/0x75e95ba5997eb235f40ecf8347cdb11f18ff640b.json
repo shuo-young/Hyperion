@@ -2,7 +2,7 @@
     "dapp_name": "Psychedelics Anonymous Genesis",
     "total_func": 49,
     "analyzed_func": 2,
-    "block_num": 18640718,
+    "block_num": 18723926,
     "address": "0x75e95ba5997eb235f40ecf8347cdb11f18ff640b",
     "platform": "ETH",
     "reward": {
@@ -26,8 +26,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x3ccfd60b": {
             "0x27f5": [
                 [
@@ -73,7 +74,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": true,

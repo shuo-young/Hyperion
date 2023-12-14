@@ -2,7 +2,7 @@
     "dapp_name": "GMGN",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18661905,
+    "block_num": 18734135,
     "address": "0x4313C378Cc91eA583C91387B9216e2c03096b27f",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

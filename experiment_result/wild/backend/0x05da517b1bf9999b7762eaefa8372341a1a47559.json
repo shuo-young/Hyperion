@@ -2,7 +2,7 @@
     "dapp_name": "KPR",
     "total_func": 57,
     "analyzed_func": 5,
-    "block_num": 18641417,
+    "block_num": 18724174,
     "address": "0x05da517b1bf9999b7762eaefa8372341a1a47559",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

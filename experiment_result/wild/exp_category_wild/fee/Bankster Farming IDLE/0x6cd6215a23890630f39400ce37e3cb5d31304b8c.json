@@ -2,7 +2,7 @@
     "dapp_name": "Bankster Farming IDLE",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18660508,
+    "block_num": 18733464,
     "address": "0x6cd6215a23890630f39400ce37e3cb5d31304b8c",
     "platform": "ETH",
     "reward": {
@@ -24,6 +24,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x3955f0fe": {
             "0x9f1S0x30c": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "BNB FarmX",
     "total_func": 31,
     "analyzed_func": 2,
-    "block_num": 33855203,
+    "block_num": 34145188,
     "address": "0x44608B50bdd7364435d34E6bA51C526262405Bc3",
     "platform": "BSC",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x581c5ae6": {
             "0x16deS0xaaa": [
                 [

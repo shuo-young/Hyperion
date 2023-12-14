@@ -2,7 +2,7 @@
     "dapp_name": "Blocklete Golf",
     "total_func": 57,
     "analyzed_func": 8,
-    "block_num": 18672116,
+    "block_num": 18735730,
     "address": "0xB95FAdA77B99070bf20968c9c1Da43219a81B14e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -1,0 +1,54 @@
+{
+    "dapp_name": "Oceanus",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 34146277,
+    "address": "0x4278691732e40B0A15dd4700a43Ce3cFD36322F9",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false,
+        "ui": []
+    },
+    "lock": {
+        "backend": true,
+        "ui": []
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": false,
+        "lock": true,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

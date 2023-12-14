@@ -2,7 +2,7 @@
     "dapp_name": "Dozerbird",
     "total_func": 9,
     "analyzed_func": 1,
-    "block_num": 18672452,
+    "block_num": 18735872,
     "address": "0xd518ea731f523b6a53f6eb3db2bae217b95d958b",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

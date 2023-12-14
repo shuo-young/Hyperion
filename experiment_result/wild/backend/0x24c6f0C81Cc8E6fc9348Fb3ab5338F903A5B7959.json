@@ -2,7 +2,7 @@
     "dapp_name": "Pandra War",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 50451749,
+    "block_num": 50851481,
     "address": "0x24c6f0C81Cc8E6fc9348Fb3ab5338F903A5B7959",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

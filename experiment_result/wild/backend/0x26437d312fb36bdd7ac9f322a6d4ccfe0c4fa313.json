@@ -2,7 +2,7 @@
     "dapp_name": "ASM AIFA Genesis",
     "total_func": 34,
     "analyzed_func": 6,
-    "block_num": 18641170,
+    "block_num": 18724053,
     "address": "0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

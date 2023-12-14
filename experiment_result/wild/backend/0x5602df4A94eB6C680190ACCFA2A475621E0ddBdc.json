@@ -2,7 +2,7 @@
     "dapp_name": "Spartacus",
     "total_func": 31,
     "analyzed_func": 4,
-    "block_num": 71594854,
+    "block_num": 72137805,
     "address": "0x5602df4A94eB6C680190ACCFA2A475621E0ddBdc",
     "platform": "Fantom",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

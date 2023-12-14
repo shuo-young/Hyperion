@@ -2,7 +2,7 @@
     "dapp_name": "Party Ape | Billionaire Club",
     "total_func": 55,
     "analyzed_func": 8,
-    "block_num": 18641221,
+    "block_num": 18724078,
     "address": "0x5df340b5d1618c543ac81837da1c2d2b17b3b5d8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

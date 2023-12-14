@@ -2,7 +2,7 @@
     "dapp_name": "Mojo Melee",
     "total_func": 56,
     "analyzed_func": 11,
-    "block_num": 50339723,
+    "block_num": 50795832,
     "address": "0xF619606C5f7862Ec6dC0945B385A6D5766F0cF0b",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

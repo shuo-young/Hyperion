@@ -2,7 +2,7 @@
     "dapp_name": "PoWEth",
     "total_func": 36,
     "analyzed_func": 1,
-    "block_num": 18660979,
+    "block_num": 18733657,
     "address": "0x2ee6d1a3ba4e80a61bdfb48a90d40a5cef455326",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

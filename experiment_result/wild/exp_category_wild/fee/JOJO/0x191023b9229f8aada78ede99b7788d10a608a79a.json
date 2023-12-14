@@ -2,7 +2,7 @@
     "dapp_name": "JOJO",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 33852413,
+    "block_num": 34143858,
     "address": "0x191023b9229f8aada78ede99b7788d10a608a79a",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,10 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.1,
+            0.4
+        ],
         "0xe0fef1e0": {
             "0x25f6S0x24d3S0x22c7S0x2481B0x22ae": [
                 [

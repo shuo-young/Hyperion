@@ -2,7 +2,7 @@
     "dapp_name": "Synapse",
     "total_func": 19,
     "analyzed_func": 3,
-    "block_num": 18657903,
+    "block_num": 18732364,
     "address": "0xaed5b25be1c3163c907a471082640450f928ddfe",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

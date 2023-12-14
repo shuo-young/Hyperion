@@ -2,7 +2,7 @@
     "dapp_name": "Badger.Finance",
     "total_func": 36,
     "analyzed_func": 6,
-    "block_num": 18644778,
+    "block_num": 18725508,
     "address": "0x6daCCed8D6d80b0e93a51A4303961678e8A46Fa5",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

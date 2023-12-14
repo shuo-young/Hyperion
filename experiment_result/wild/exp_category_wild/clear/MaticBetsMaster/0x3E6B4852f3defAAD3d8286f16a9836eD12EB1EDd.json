@@ -2,7 +2,7 @@
     "dapp_name": "MaticBetsMaster",
     "total_func": 34,
     "analyzed_func": 3,
-    "block_num": 50451672,
+    "block_num": 50851444,
     "address": "0x3E6B4852f3defAAD3d8286f16a9836eD12EB1EDd",
     "platform": "Polygon",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.15
+        ],
         "0x3f9c793": {
             "0xb83": [
                 [

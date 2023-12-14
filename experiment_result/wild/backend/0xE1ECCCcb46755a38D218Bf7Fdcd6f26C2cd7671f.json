@@ -2,7 +2,7 @@
     "dapp_name": "SmartSwap - Rigelprotocol",
     "total_func": 30,
     "analyzed_func": 8,
-    "block_num": 33830753,
+    "block_num": 34133838,
     "address": "0xE1ECCCcb46755a38D218Bf7Fdcd6f26C2cd7671f",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,6 +20,34 @@
     "lock": false,
     "clear": {
         "warning": true,
+        "0x630b5ba1": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0xec10xde7": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x76b9e12a": {
+            "0xec10x3ab": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
         "0x441a3e70": {
             "0xec10xde7": [
                 [
@@ -65,34 +94,6 @@
             "0xec10xde7": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0xe2bbb158": {
-            "0xec10xde7": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "mem_mem_64"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x630b5ba1": {
-            "0xec10xde7": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x76b9e12a": {
-            "0xec10x3ab": [
-                [
-                    "Concat(0, Extract(159, 0, Id_1))",
                     "mem_mem_64"
                 ]
             ]

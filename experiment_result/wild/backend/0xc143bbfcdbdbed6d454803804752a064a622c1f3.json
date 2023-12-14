@@ -2,7 +2,7 @@
     "dapp_name": "Async Blueprints",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18641736,
+    "block_num": 18724252,
     "address": "0xc143bbfcdbdbed6d454803804752a064a622c1f3",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

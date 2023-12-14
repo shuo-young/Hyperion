@@ -2,7 +2,7 @@
     "dapp_name": "Gods Unchained",
     "total_func": 72,
     "analyzed_func": 4,
-    "block_num": 18660423,
+    "block_num": 18733411,
     "address": "0x6EbeAf8e8E946F0716E6533A6f2cefc83f60e8Ab",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

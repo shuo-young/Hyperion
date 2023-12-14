@@ -2,7 +2,7 @@
     "dapp_name": "Metroverse Blackout",
     "total_func": 53,
     "analyzed_func": 4,
-    "block_num": 18642169,
+    "block_num": 18724459,
     "address": "0x25cd67e2dfec471acd3cdd3b22ccf7147596dd8b",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

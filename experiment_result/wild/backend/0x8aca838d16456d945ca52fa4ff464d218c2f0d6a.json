@@ -2,7 +2,7 @@
     "dapp_name": "CryptoMibs",
     "total_func": 40,
     "analyzed_func": 3,
-    "block_num": 18672360,
+    "block_num": 18735819,
     "address": "0x8aca838d16456d945ca52fa4ff464d218c2f0d6a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": true
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Firebird Finance",
     "total_func": 46,
     "analyzed_func": 5,
-    "block_num": 33806690,
+    "block_num": 34120955,
     "address": "0x3975505D1B82F773925e226F16e7A701Dba559f8",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,7 +20,7 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xe2bbb158": {
+        "0x441a3e70": {
             "0x22ad": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -27,7 +28,7 @@
                 ]
             ]
         },
-        "0x441a3e70": {
+        "0xe2bbb158": {
             "0x22ad": [
                 [
                     "Concat(0, Extract(159, 0, Is))",

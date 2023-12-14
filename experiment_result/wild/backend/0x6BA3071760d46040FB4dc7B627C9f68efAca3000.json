@@ -2,7 +2,7 @@
     "dapp_name": "Beamswap",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 4942852,
+    "block_num": 5021825,
     "address": "0x6BA3071760d46040FB4dc7B627C9f68efAca3000",
     "platform": "Moonbeam",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

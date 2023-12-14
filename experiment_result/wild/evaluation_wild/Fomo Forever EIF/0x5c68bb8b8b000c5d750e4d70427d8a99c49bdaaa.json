@@ -2,7 +2,7 @@
     "dapp_name": "Fomo Forever EIF",
     "total_func": 76,
     "analyzed_func": 0,
-    "block_num": 18661903,
+    "block_num": 18734135,
     "address": "0x5c68bb8b8b000c5d750e4d70427d8a99c49bdaaa",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

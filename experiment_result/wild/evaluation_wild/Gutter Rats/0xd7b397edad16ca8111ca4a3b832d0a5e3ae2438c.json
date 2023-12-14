@@ -2,7 +2,7 @@
     "dapp_name": "Gutter Rats",
     "total_func": 26,
     "analyzed_func": 2,
-    "block_num": 18641710,
+    "block_num": 18724224,
     "address": "0xd7b397edad16ca8111ca4a3b832d0a5e3ae2438c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "ScarySwap",
     "total_func": 12,
     "analyzed_func": 0,
-    "block_num": 71519115,
+    "block_num": 72109941,
     "address": "0x7ceb5F3A6D1888eEc74A41a5377Afba5B97200Ea",
     "platform": "Fantom",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

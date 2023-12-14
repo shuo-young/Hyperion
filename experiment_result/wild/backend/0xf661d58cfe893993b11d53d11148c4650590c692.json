@@ -2,7 +2,7 @@
     "dapp_name": "RTFKT x Nike Dunk Genesis CRYPTOKICKS",
     "total_func": 33,
     "analyzed_func": 4,
-    "block_num": 18641762,
+    "block_num": 18724274,
     "address": "0xf661d58cfe893993b11d53d11148c4650590c692",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            16020
+            16021
         ],
         "unlimited": true
     },

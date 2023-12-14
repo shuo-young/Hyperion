@@ -2,7 +2,7 @@
     "dapp_name": "LORDLESS",
     "total_func": 25,
     "analyzed_func": 4,
-    "block_num": 18673759,
+    "block_num": 18736381,
     "address": "0x448e0209610a9064c776ae0255ad71ef49d58d0a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

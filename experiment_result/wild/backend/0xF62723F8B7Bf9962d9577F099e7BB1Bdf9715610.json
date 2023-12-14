@@ -2,7 +2,7 @@
     "dapp_name": "wLink",
     "total_func": 33,
     "analyzed_func": 1,
-    "block_num": 33855783,
+    "block_num": 34145593,
     "address": "0xF62723F8B7Bf9962d9577F099e7BB1Bdf9715610",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

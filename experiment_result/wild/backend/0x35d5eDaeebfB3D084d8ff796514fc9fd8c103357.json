@@ -2,7 +2,7 @@
     "dapp_name": "SmartSwap - Rigelprotocol",
     "total_func": 32,
     "analyzed_func": 8,
-    "block_num": 33830792,
+    "block_num": 34133838,
     "address": "0x35d5eDaeebfB3D084d8ff796514fc9fd8c103357",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,62 +20,6 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x76b9e12a": {
-            "0xdf80x3b9": [
-                [
-                    "Concat(0, Extract(159, 0, Id_1))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0xe2bbb158": {
-            "0xdf80xd1e": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "mem_mem_64"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x64482f79": {
-            "0xdf80xd1e": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x630b5ba1": {
-            "0xdf80xd1e": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x441a3e70": {
-            "0xdf80xd1e": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "mem_mem_64"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
-        "0x51eb05a6": {
-            "0xdf80xd1e": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-2-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
         "0xc507aeaa": {
             "0xe800xd1e": [
                 [
@@ -98,6 +43,62 @@
                     0.0
                 ]
             ],
+            "0xdf80xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0xe2bbb158": {
+            "0xdf80xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x76b9e12a": {
+            "0xdf80x3b9": [
+                [
+                    "Concat(0, Extract(159, 0, Id_1))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x51eb05a6": {
+            "0xdf80xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x441a3e70": {
+            "0xdf80xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "mem_mem_64"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x64482f79": {
+            "0xdf80xd1e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-2-))",
+                    "mem_mem_64"
+                ]
+            ]
+        },
+        "0x630b5ba1": {
             "0xdf80xd1e": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-2-))",

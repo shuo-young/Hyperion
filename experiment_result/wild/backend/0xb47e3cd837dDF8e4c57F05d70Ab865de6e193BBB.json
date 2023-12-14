@@ -2,7 +2,7 @@
     "dapp_name": "CryptoPunks",
     "total_func": 27,
     "analyzed_func": 2,
-    "block_num": 18660421,
+    "block_num": 18733410,
     "address": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

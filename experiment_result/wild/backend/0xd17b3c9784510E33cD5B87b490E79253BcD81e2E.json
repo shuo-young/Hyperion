@@ -2,7 +2,7 @@
     "dapp_name": "Integral",
     "total_func": 5,
     "analyzed_func": 0,
-    "block_num": 18651259,
+    "block_num": 18728781,
     "address": "0xd17b3c9784510E33cD5B87b490E79253BcD81e2E",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

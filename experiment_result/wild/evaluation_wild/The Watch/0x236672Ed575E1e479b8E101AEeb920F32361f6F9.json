@@ -2,7 +2,7 @@
     "dapp_name": "The Watch",
     "total_func": 26,
     "analyzed_func": 0,
-    "block_num": 18640882,
+    "block_num": 18723953,
     "address": "0x236672Ed575E1e479b8E101AEeb920F32361f6F9",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

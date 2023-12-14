@@ -2,12 +2,12 @@
     "dapp_name": "otctoken",
     "total_func": 15,
     "analyzed_func": 5,
-    "block_num": 18671587,
+    "block_num": 18735529,
     "address": "0x6b3f2c17f579701BC28f69122F713209BaC39456",
     "platform": "ETH",
     "reward": {
         "warning": false,
-        "0xdaf9ada4": {
+        "0x9a5e495e": {
             "0x2063S0x1e04": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -15,7 +15,7 @@
                 ]
             ]
         },
-        "0x9a5e495e": {
+        "0xdaf9ada4": {
             "0x2063S0x1e04": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
@@ -28,6 +28,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

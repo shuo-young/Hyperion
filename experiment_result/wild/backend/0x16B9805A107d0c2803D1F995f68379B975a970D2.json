@@ -2,7 +2,7 @@
     "dapp_name": "Token Fighter",
     "total_func": 41,
     "analyzed_func": 2,
-    "block_num": 18674534,
+    "block_num": 18736898,
     "address": "0x16B9805A107d0c2803D1F995f68379B975a970D2",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

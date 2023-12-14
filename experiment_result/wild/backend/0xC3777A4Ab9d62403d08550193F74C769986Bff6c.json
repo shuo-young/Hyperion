@@ -2,7 +2,7 @@
     "dapp_name": "Tranche Finance",
     "total_func": 41,
     "analyzed_func": 4,
-    "block_num": 18672003,
+    "block_num": 18735676,
     "address": "0xC3777A4Ab9d62403d08550193F74C769986Bff6c",
     "platform": "ETH",
     "reward": {
@@ -22,7 +22,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Mdex",
     "total_func": 32,
     "analyzed_func": 17,
-    "block_num": 33813754,
+    "block_num": 34124234,
     "address": "0x7DAe51BD3E3376B8c7c4900E9107f12Be3AF1bA8",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

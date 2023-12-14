@@ -2,7 +2,7 @@
     "dapp_name": "A2 Swap",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 33854878,
+    "block_num": 34145049,
     "address": "0xBC01C2eDaD8DD4c03bA2226814A5685c4d86Dc99",
     "platform": "BSC",
     "reward": {
@@ -32,6 +32,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xdb663865": {
             "0x1192S0x687": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "KnightSwap",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 33847904,
+    "block_num": 34141560,
     "address": "0xD23811058Eb6e7967D9a00dc3886E75610c4AbBa",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            223772418085223564781758613
+            226171469298518833949784351
         ],
         "unlimited": true,
         "ui": [

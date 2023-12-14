@@ -2,7 +2,7 @@
     "dapp_name": "Swampverse",
     "total_func": 54,
     "analyzed_func": 5,
-    "block_num": 18641393,
+    "block_num": 18724158,
     "address": "0x95784f7b5c8849b0104eaf5d13d6341d8cc40750",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

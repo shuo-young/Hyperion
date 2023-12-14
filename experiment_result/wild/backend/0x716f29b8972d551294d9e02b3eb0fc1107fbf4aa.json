@@ -2,7 +2,7 @@
     "dapp_name": "IO: Imaginary Ones",
     "total_func": 54,
     "analyzed_func": 5,
-    "block_num": 18641118,
+    "block_num": 18724041,
     "address": "0x716f29b8972d551294d9e02b3eb0fc1107fbf4aa",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

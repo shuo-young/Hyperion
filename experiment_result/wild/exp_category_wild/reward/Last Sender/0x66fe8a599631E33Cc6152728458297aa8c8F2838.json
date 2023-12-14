@@ -2,7 +2,7 @@
     "dapp_name": "Last Sender",
     "total_func": 11,
     "analyzed_func": 1,
-    "block_num": 154579038,
+    "block_num": 157758142,
     "address": "0x66fe8a599631E33Cc6152728458297aa8c8F2838",
     "platform": "Arbitrum",
     "reward": {
@@ -23,6 +23,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.15,
+            0.8
+        ],
         "0x426e346a": {
             "0xbb0S0x26fS0x123": [
                 [

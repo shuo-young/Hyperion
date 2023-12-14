@@ -2,7 +2,7 @@
     "dapp_name": "DCup",
     "total_func": 11,
     "analyzed_func": 2,
-    "block_num": 18670714,
+    "block_num": 18735089,
     "address": "0xe3ea690fefbc27ddc49d3329fe6d42ffc1657191",
     "platform": "ETH",
     "reward": {
@@ -18,7 +18,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

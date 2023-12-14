@@ -2,7 +2,7 @@
     "dapp_name": "Iskra",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18642536,
+    "block_num": 18724626,
     "address": "0xbAB3ea9C6462Bb57cc085FaDFbedAE979a477B28",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

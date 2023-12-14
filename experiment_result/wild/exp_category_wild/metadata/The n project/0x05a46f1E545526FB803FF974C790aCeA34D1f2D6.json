@@ -2,7 +2,7 @@
     "dapp_name": "The n project",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 18640823,
+    "block_num": 18723929,
     "address": "0x05a46f1E545526FB803FF974C790aCeA34D1f2D6",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

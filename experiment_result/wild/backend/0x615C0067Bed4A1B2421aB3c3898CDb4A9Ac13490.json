@@ -2,15 +2,16 @@
     "dapp_name": "BakerySwap",
     "total_func": 28,
     "analyzed_func": 3,
-    "block_num": 33788582,
+    "block_num": 34110942,
     "address": "0x615C0067Bed4A1B2421aB3c3898CDb4A9Ac13490",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x2d296bf1": {
             "0x283eS0x2642S0x211f": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "Baby Shiba",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 33855187,
+    "block_num": 34145180,
     "address": "0x2302e370e98890bf2eb547286bf8f8bb318f8e7b",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

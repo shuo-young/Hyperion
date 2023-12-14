@@ -2,7 +2,7 @@
     "dapp_name": "USDT Miner",
     "total_func": 25,
     "analyzed_func": 3,
-    "block_num": 33853267,
+    "block_num": 34144211,
     "address": "0x2EdF80f81e0723ec5e6957B8620Dc606F27C0930",
     "platform": "BSC",
     "reward": {
@@ -23,6 +23,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x3955f0fe": {
             "0xb74": [
                 [

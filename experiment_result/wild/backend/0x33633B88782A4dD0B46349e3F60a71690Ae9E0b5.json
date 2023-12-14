@@ -2,15 +2,16 @@
     "dapp_name": "Chronos",
     "total_func": 47,
     "analyzed_func": 4,
-    "block_num": 153861340,
+    "block_num": 157409300,
     "address": "0x33633B88782A4dD0B46349e3F60a71690Ae9E0b5",
     "platform": "Arbitrum",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x89afcb44": {
             "0x23cb0x2319": [
                 [
@@ -26,7 +27,7 @@
     },
     "supply": {
         "amount": [
-            3948458790510364
+            2551449039953104
         ],
         "unlimited": false
     },

@@ -2,7 +2,7 @@
     "dapp_name": "Azuki Elementals",
     "total_func": 39,
     "analyzed_func": 1,
-    "block_num": 18641284,
+    "block_num": 18724107,
     "address": "0xB6a37b5d14D502c3Ab0Ae6f3a0E058BC9517786e",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            5701
+            5582
         ],
         "unlimited": false,
         "ui": []

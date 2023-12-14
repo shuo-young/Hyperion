@@ -2,7 +2,7 @@
     "dapp_name": "EtherStrike",
     "total_func": 49,
     "analyzed_func": 3,
-    "block_num": 18670865,
+    "block_num": 18735169,
     "address": "0x83036f5de022ce142b63af574dd88b8bea00912a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

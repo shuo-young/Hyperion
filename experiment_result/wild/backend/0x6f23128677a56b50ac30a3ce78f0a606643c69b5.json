@@ -2,7 +2,7 @@
     "dapp_name": "Veggies Farm",
     "total_func": 18,
     "analyzed_func": 2,
-    "block_num": 33775784,
+    "block_num": 34106206,
     "address": "0x6f23128677a56b50ac30a3ce78f0a606643c69b5",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

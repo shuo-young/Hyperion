@@ -2,7 +2,7 @@
     "dapp_name": "CryptoSpaceX",
     "total_func": 37,
     "analyzed_func": 4,
-    "block_num": 18670686,
+    "block_num": 18735072,
     "address": "0xd71034459f83bce1d63b7897d8986485356a138a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
@@ -21,19 +22,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0xdc39d06d": {
-            "0x2399": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "Id_2"
-                ]
-            ]
-        },
         "0xda76d5cd": {
             "0x2255": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-0-))",
                     "Id_1"
+                ]
+            ]
+        },
+        "0xdc39d06d": {
+            "0x2399": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "Id_2"
                 ]
             ]
         }

@@ -2,7 +2,7 @@
     "dapp_name": "Nouns",
     "total_func": 53,
     "analyzed_func": 5,
-    "block_num": 18619592,
+    "block_num": 18724002,
     "address": "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            920
+            937
         ],
         "unlimited": true,
         "ui": [

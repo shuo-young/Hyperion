@@ -2,7 +2,7 @@
     "dapp_name": "Metasaurs by Dr. DMT",
     "total_func": 50,
     "analyzed_func": 10,
-    "block_num": 18641348,
+    "block_num": 18724130,
     "address": "0xf7143ba42d40eaeb49b88dac0067e54af042e963",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Apocalyptic Apes",
     "total_func": 41,
     "analyzed_func": 4,
-    "block_num": 18621249,
+    "block_num": 18724155,
     "address": "0xf793a77e32a0e5c0cd28383e1e04bbc66ee52438",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

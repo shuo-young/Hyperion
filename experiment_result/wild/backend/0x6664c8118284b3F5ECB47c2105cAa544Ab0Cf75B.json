@@ -2,15 +2,16 @@
     "dapp_name": "Envelop wrapper",
     "total_func": 3,
     "analyzed_func": 1,
-    "block_num": 18661854,
+    "block_num": 18734124,
     "address": "0x6664c8118284b3F5ECB47c2105cAa544Ab0Cf75B",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x28012aef": {
             "0x46fS0x37eS0x2a7S0x247": [
                 [

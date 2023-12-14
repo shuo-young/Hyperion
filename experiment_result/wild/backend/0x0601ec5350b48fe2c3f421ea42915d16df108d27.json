@@ -2,7 +2,7 @@
     "dapp_name": "Dragonereum",
     "total_func": 29,
     "analyzed_func": 6,
-    "block_num": 18672462,
+    "block_num": 18735877,
     "address": "0x0601ec5350b48fe2c3f421ea42915d16df108d27",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

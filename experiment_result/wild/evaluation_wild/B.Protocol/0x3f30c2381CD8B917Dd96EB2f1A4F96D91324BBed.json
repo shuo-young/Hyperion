@@ -2,7 +2,7 @@
     "dapp_name": "B.Protocol",
     "total_func": 44,
     "analyzed_func": 0,
-    "block_num": 18670401,
+    "block_num": 18734942,
     "address": "0x3f30c2381CD8B917Dd96EB2f1A4F96D91324BBed",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

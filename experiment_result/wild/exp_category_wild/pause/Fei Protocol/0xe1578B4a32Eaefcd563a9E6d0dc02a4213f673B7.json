@@ -2,7 +2,7 @@
     "dapp_name": "Fei Protocol",
     "total_func": 41,
     "analyzed_func": 1,
-    "block_num": 18671299,
+    "block_num": 18735415,
     "address": "0xe1578B4a32Eaefcd563a9E6d0dc02a4213f673B7",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

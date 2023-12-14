@@ -2,7 +2,7 @@
     "dapp_name": "Los Muertos (Collection)",
     "total_func": 39,
     "analyzed_func": 4,
-    "block_num": 18641746,
+    "block_num": 18724262,
     "address": "0xc878671ff88f1374d2186127573e4a63931370fc",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.94,
+            0.03
+        ],
         "0x3ccfd60b": {
             "0xceeS0x3a1": [
                 [

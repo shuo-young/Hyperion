@@ -2,7 +2,7 @@
     "dapp_name": "BlockCities",
     "total_func": 43,
     "analyzed_func": 4,
-    "block_num": 18672112,
+    "block_num": 18735729,
     "address": "0x24a896e29f79be656f0216ae45e6cd79bb80459b",
     "platform": "ETH",
     "reward": {
@@ -10,9 +10,10 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x6ff3117f": {
+        "rate": [],
+        "0x6070e053": {
             "0x194dS0x152c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-3-))",
@@ -26,7 +27,7 @@
                 ]
             ]
         },
-        "0x6070e053": {
+        "0x6ff3117f": {
             "0x194dS0x152c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-3-))",
@@ -71,7 +72,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

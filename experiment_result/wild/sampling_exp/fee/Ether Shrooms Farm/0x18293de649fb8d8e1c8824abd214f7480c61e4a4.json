@@ -2,7 +2,7 @@
     "dapp_name": "Ether Shrooms Farm",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 18601684,
+    "block_num": 18733528,
     "address": "0x18293de649fb8d8e1c8824abd214f7480c61e4a4",
     "platform": "ETH",
     "reward": {
@@ -50,6 +50,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x4f74acfe": {
             "0x732": [
                 [

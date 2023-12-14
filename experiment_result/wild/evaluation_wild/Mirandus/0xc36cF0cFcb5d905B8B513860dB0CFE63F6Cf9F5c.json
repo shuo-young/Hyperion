@@ -2,7 +2,7 @@
     "dapp_name": "Mirandus",
     "total_func": 29,
     "analyzed_func": 0,
-    "block_num": 18640731,
+    "block_num": 18723926,
     "address": "0xc36cF0cFcb5d905B8B513860dB0CFE63F6Cf9F5c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

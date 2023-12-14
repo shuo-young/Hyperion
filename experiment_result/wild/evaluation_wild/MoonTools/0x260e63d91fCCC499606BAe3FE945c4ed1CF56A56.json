@@ -2,7 +2,7 @@
     "dapp_name": "MoonTools",
     "total_func": 34,
     "analyzed_func": 2,
-    "block_num": 18671572,
+    "block_num": 18735514,
     "address": "0x260e63d91fCCC499606BAe3FE945c4ed1CF56A56",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

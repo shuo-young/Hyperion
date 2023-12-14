@@ -2,7 +2,7 @@
     "dapp_name": "SnakeFarm - Idle",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18661136,
+    "block_num": 18733750,
     "address": "0xe6074bf0124c4f67cfa10a5efdfd16bd0541537a",
     "platform": "ETH",
     "reward": {
@@ -24,6 +24,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
         "0x4f74acfe": {
             "0x11bc": [
                 [

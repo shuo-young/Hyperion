@@ -2,7 +2,7 @@
     "dapp_name": "MGP_Matic Game Player",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 50451739,
+    "block_num": 50851446,
     "address": "0x40c84a6ADe88112A7cd1d970fA0774052823c655",
     "platform": "Polygon",
     "reward": {
@@ -17,8 +17,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x3ccfd60b": {
             "0xf1dS0x2a5": [
                 [

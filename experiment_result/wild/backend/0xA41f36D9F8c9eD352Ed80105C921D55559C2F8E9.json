@@ -2,7 +2,7 @@
     "dapp_name": "Bad Idea AI",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18661752,
+    "block_num": 18734095,
     "address": "0xA41f36D9F8c9eD352Ed80105C921D55559C2F8E9",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

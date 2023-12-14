@@ -2,19 +2,11 @@
     "dapp_name": "CompliFi",
     "total_func": 37,
     "analyzed_func": 7,
-    "block_num": 18670455,
+    "block_num": 18734997,
     "address": "0x817e30fD53b2fE30F87A4Dc450811029961bAbF9",
     "platform": "ETH",
     "reward": {
         "warning": true,
-        "0x278ecde1": {
-            "0x29d0": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "2*Id_1*mem_mem_64"
-                ]
-            ]
-        },
         "0xdd12a043": {
             "0x29d0": [
                 [
@@ -34,11 +26,20 @@
                     "bvudiv_i(Id_1*bvudiv_i(mem_mem_64*mem_mem_64, mem_mem_64),\n         1000000000000)"
                 ]
             ]
+        },
+        "0x278ecde1": {
+            "0x29d0": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "2*Id_1*mem_mem_64"
+                ]
+            ]
         }
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

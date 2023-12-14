@@ -2,7 +2,7 @@
     "dapp_name": "Ethersmart",
     "total_func": 3,
     "analyzed_func": 1,
-    "block_num": 18661857,
+    "block_num": 18734126,
     "address": "0xbeefd8fb3b5778f99e021afa2e41e0614af6af11",
     "platform": "ETH",
     "reward": {
@@ -57,6 +57,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.02,
+            0.07
+        ],
         "0x00000000": {
             "0x44eS0x1af": [
                 [

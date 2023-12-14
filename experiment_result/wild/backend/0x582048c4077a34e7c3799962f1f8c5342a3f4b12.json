@@ -2,7 +2,7 @@
     "dapp_name": "Shinsei Galverse Official",
     "total_func": 52,
     "analyzed_func": 5,
-    "block_num": 18642028,
+    "block_num": 18724383,
     "address": "0x582048c4077a34e7c3799962f1f8c5342a3f4b12",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "CryptoPioneers",
     "total_func": 50,
     "analyzed_func": 0,
-    "block_num": 18670674,
+    "block_num": 18735066,
     "address": "0xddbbc82adde2c4f7d10f64864b488cad53b52449",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

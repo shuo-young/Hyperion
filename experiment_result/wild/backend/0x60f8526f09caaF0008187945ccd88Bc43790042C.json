@@ -2,7 +2,7 @@
     "dapp_name": "DeversiFi",
     "total_func": 25,
     "analyzed_func": 5,
-    "block_num": 18660315,
+    "block_num": 18733357,
     "address": "0x60f8526f09caaF0008187945ccd88Bc43790042C",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

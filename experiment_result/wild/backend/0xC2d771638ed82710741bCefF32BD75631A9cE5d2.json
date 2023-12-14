@@ -2,21 +2,21 @@
     "dapp_name": "POLYTRUSTV2",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 50452575,
+    "block_num": 50852025,
     "address": "0xC2d771638ed82710741bCefF32BD75631A9cE5d2",
     "platform": "Polygon",
     "reward": {
         "warning": false,
-        "0xb88a802f": {
-            "0x1646": [
+        "0x626ee018": {
+            "0x11eb": [
                 [
                     "Is",
                     "bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-, 100) +\nIa_store-3 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-8-*\n         (bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-,\n                   100) +\n          Ia_store-3 + some_var_1-),\n         100)"
                 ]
             ]
         },
-        "0x626ee018": {
-            "0x11eb": [
+        "0xb88a802f": {
+            "0x1646": [
                 [
                     "Is",
                     "bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-, 100) +\nIa_store-3 + some_var_1- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-8-*\n         (bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-,\n                   100) +\n          Ia_store-3 + some_var_1-),\n         100)"
@@ -27,16 +27,19 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xb88a802f": {
-            "0x1681": [
+        "rate": [
+            0.01
+        ],
+        "0x626ee018": {
+            "0x1226": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-7-))",
                     "bvudiv_i(Ia_store-8-*\n         (bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-,\n                   100) +\n          Ia_store-3 + some_var_1-),\n         100)"
                 ]
             ]
         },
-        "0x626ee018": {
-            "0x1226": [
+        "0xb88a802f": {
+            "0x1681": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-7-))",
                     "bvudiv_i(Ia_store-8-*\n         (bvudiv_i(Ia_store-10-*Ia_store-2 + some_var_1-,\n                   100) +\n          Ia_store-3 + some_var_1-),\n         100)"

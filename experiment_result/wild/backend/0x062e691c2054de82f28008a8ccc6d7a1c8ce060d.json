@@ -2,7 +2,7 @@
     "dapp_name": "PudgyPresent",
     "total_func": 39,
     "analyzed_func": 6,
-    "block_num": 18641793,
+    "block_num": 18724282,
     "address": "0x062e691c2054de82f28008a8ccc6d7a1c8ce060d",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.35
+        ],
         "0x853828b6": {
             "0x2554": [
                 [

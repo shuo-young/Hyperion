@@ -2,15 +2,16 @@
     "dapp_name": "SMART-PROFIT",
     "total_func": 29,
     "analyzed_func": 6,
-    "block_num": 33853086,
+    "block_num": 34144192,
     "address": "0x4b2442F39666fcb7A44a53f73d14D2cc7B1aB84A",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0xc41deac8": {
             "0x1dfd": [
                 [

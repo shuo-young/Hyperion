@@ -2,7 +2,7 @@
     "dapp_name": "GrandpaGreen (GGREEN) Token",
     "total_func": 91,
     "analyzed_func": 2,
-    "block_num": 50451236,
+    "block_num": 50851231,
     "address": "0x68CaF7335aA11188D9d91E1c9a5ab73a6de827bE",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Tewkenaire (ETH)",
     "total_func": 40,
     "analyzed_func": 8,
-    "block_num": 18661168,
+    "block_num": 18733774,
     "address": "0xe01e2a3CEaFA8233021Fc759E5A69863558326b6",
     "platform": "ETH",
     "reward": {
@@ -43,21 +43,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xe4849b32": {
-            "0x11c9": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-9-))",
-                    "bvudiv_i(Ia_store-8-*bvudiv_i(Ia_store-6-*Id_1, 100), 100)"
-                ]
-            ],
-            "0x121c": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-13-))",
-                    "bvudiv_i(Ia_store-7-*bvudiv_i(Ia_store-6-*Id_1, 100), 100)"
-                ]
-            ]
-        },
-        "0xa6f2ae3a": {
+        "rate": [
+            0.1
+        ],
+        "0x6f0b5180": {
             "0x77c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-9-))",
@@ -85,6 +74,20 @@
                 ]
             ]
         },
+        "0xa6f2ae3a": {
+            "0x77c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "bvudiv_i(Ia_store-8-*bvudiv_i(Ia_store-4-*Iv, 100), 100)"
+                ]
+            ],
+            "0x7cf": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-13-))",
+                    "bvudiv_i(Ia_store-7-*bvudiv_i(Ia_store-4-*Iv, 100), 100)"
+                ]
+            ]
+        },
         "0xe9fad8ee": {
             "0x11c9": [
                 [
@@ -99,21 +102,21 @@
                 ]
             ]
         },
-        "0x00000000": {
-            "0x77c": [
+        "0xe4849b32": {
+            "0x11c9": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-9-))",
-                    "bvudiv_i(Ia_store-8-*bvudiv_i(Ia_store-4-*Iv, 100), 100)"
+                    "bvudiv_i(Ia_store-8-*bvudiv_i(Ia_store-6-*Id_1, 100), 100)"
                 ]
             ],
-            "0x7cf": [
+            "0x121c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-13-))",
-                    "bvudiv_i(Ia_store-7-*bvudiv_i(Ia_store-4-*Iv, 100), 100)"
+                    "bvudiv_i(Ia_store-7-*bvudiv_i(Ia_store-6-*Id_1, 100), 100)"
                 ]
             ]
         },
-        "0x6f0b5180": {
+        "0x00000000": {
             "0x77c": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-9-))",

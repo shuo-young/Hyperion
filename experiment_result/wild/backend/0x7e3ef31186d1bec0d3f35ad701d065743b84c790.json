@@ -2,7 +2,7 @@
     "dapp_name": "Antonym: GENESIS",
     "total_func": 50,
     "analyzed_func": 4,
-    "block_num": 18641446,
+    "block_num": 18724187,
     "address": "0x7e3ef31186d1bec0d3f35ad701d065743b84c790",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -1,1 +1,0 @@
- You need to enable JavaScript to run this app. MetaMaskConnect to your MetaMask WalletWalletConnectScan with WalletConnect to connectCoinbase WalletConnect to your Coinbase Wallet 

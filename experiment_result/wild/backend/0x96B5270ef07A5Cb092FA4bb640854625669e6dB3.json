@@ -2,7 +2,7 @@
     "dapp_name": "Baby Doge Swap",
     "total_func": 3,
     "analyzed_func": 0,
-    "block_num": 33785330,
+    "block_num": 34109881,
     "address": "0x96B5270ef07A5Cb092FA4bb640854625669e6dB3",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

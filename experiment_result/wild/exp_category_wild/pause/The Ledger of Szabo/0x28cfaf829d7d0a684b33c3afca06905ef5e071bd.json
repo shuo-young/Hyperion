@@ -2,7 +2,7 @@
     "dapp_name": "The Ledger of Szabo",
     "total_func": 45,
     "analyzed_func": 5,
-    "block_num": 18673879,
+    "block_num": 18736425,
     "address": "0x28cfaf829d7d0a684b33c3afca06905ef5e071bd",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "DracooMaster",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33776146,
+    "block_num": 34106325,
     "address": "0xf429F5075143Cb58deB1b733616d0cb87e597FA2",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

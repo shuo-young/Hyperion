@@ -2,7 +2,7 @@
     "dapp_name": "PolkaBridge",
     "total_func": 30,
     "analyzed_func": 4,
-    "block_num": 18671666,
+    "block_num": 18735572,
     "address": "0x75B8c48Bdb04d426aeD57b36BB835aD2dC321c30",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

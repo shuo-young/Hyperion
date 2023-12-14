@@ -2,7 +2,7 @@
     "dapp_name": "NIFTYMOJI",
     "total_func": 37,
     "analyzed_func": 5,
-    "block_num": 18673803,
+    "block_num": 18736401,
     "address": "0xde544e54a330abd1ea8a0e6693d46bfe95d9a684",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

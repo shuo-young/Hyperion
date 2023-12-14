@@ -2,7 +2,7 @@
     "dapp_name": "CroMoon",
     "total_func": 38,
     "analyzed_func": 1,
-    "block_num": 11341155,
+    "block_num": 11495330,
     "address": "0x7d30c36f845d1dee79f852abf3a8a402fadf3b53",
     "platform": "Cronos",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

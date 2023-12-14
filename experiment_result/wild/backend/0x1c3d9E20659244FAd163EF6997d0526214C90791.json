@@ -2,15 +2,16 @@
     "dapp_name": "Farsite",
     "total_func": 24,
     "analyzed_func": 3,
-    "block_num": 18673685,
+    "block_num": 18736311,
     "address": "0x1c3d9E20659244FAd163EF6997d0526214C90791",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x97cbbc06": {
             "0x1a83S0x1182": [
                 [

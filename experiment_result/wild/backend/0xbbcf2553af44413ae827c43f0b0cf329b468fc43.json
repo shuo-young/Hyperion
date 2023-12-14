@@ -1,0 +1,44 @@
+{
+    "dapp_name": "JOJO",
+    "total_func": 34,
+    "analyzed_func": 2,
+    "block_num": 34143869,
+    "address": "0xbbcf2553af44413ae827c43f0b0cf329b468fc43",
+    "platform": "BSC",
+    "reward": {
+        "warning": true,
+        "0x6ed28ed0": {
+            "0x2111": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_2 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nmem_32*If(ULE(mem_mem_64, If(mem_mem_64 == 0, 0, 1)), 0, 1) +\nmem_64"
+                ]
+            ]
+        }
+    },
+    "fee": {
+        "warning": true,
+        "modifiable": true,
+        "rate": [
+            0.4
+        ],
+        "0xe557f3b0": {
+            "0x2096": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "bvudiv_i(Ia_store-12-*Id_1, 100)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

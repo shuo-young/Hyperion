@@ -2,7 +2,7 @@
     "dapp_name": "Mars Ecosystem",
     "total_func": 33,
     "analyzed_func": 2,
-    "block_num": 33847916,
+    "block_num": 34141576,
     "address": "0x7859B01BbF675d67Da8cD128a50D155cd881B576",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

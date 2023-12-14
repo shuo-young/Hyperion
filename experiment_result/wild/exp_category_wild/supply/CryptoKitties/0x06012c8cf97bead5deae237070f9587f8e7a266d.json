@@ -2,7 +2,7 @@
     "dapp_name": "CryptoKitties",
     "total_func": 60,
     "analyzed_func": 5,
-    "block_num": 18641232,
+    "block_num": 18724087,
     "address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x5fd8c710": {
             "0x163fS0x6ba": [
                 [
@@ -28,7 +29,7 @@
     },
     "supply": {
         "amount": [
-            2023484
+            2023490
         ],
         "unlimited": true,
         "ui": [
@@ -58,7 +59,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": true,
         "lock": false,
         "clear": false,

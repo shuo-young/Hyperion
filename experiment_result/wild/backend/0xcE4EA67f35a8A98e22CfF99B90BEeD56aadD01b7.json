@@ -2,7 +2,7 @@
     "dapp_name": "LAUNCHER\u9c81",
     "total_func": 7,
     "analyzed_func": 1,
-    "block_num": 154579157,
+    "block_num": 157758352,
     "address": "0xcE4EA67f35a8A98e22CfF99B90BEeD56aadD01b7",
     "platform": "Arbitrum",
     "reward": {
@@ -11,6 +11,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05,
+            0.95
+        ],
         "0x42a4fda8": {
             "0x469S0xf2": [
                 [

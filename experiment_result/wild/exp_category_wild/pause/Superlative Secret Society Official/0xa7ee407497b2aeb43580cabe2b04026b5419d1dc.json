@@ -2,7 +2,7 @@
     "dapp_name": "Superlative Secret Society Official",
     "total_func": 38,
     "analyzed_func": 5,
-    "block_num": 18641869,
+    "block_num": 18724309,
     "address": "0xa7ee407497b2aeb43580cabe2b04026b5419d1dc",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

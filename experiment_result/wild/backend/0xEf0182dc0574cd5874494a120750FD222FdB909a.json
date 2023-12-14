@@ -2,7 +2,7 @@
     "dapp_name": "Rumble Kong League",
     "total_func": 38,
     "analyzed_func": 5,
-    "block_num": 18640803,
+    "block_num": 18723928,
     "address": "0xEf0182dc0574cd5874494a120750FD222FdB909a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

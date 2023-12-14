@@ -2,7 +2,7 @@
     "dapp_name": "MM Finance",
     "total_func": 26,
     "analyzed_func": 3,
-    "block_num": 154467533,
+    "block_num": 157698405,
     "address": "0x56b251d4b493ee3956E3f899D36b7290902D2326",
     "platform": "Arbitrum",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            52162582898462650693448452
+            54362113840991386325632329
         ],
         "unlimited": true
     },

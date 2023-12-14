@@ -2,7 +2,7 @@
     "dapp_name": "Aavegotchi",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 50327412,
+    "block_num": 50791080,
     "address": "0x86935F11C86623deC8a25696E1C19a8659CbF95d",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

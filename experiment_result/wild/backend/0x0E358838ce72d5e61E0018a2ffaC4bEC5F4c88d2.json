@@ -2,7 +2,7 @@
     "dapp_name": "StellaSwap",
     "total_func": 35,
     "analyzed_func": 1,
-    "block_num": 4956462,
+    "block_num": 5028559,
     "address": "0x0E358838ce72d5e61E0018a2ffaC4bEC5F4c88d2",
     "platform": "Moonbeam",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            31273647563797575447574259
+            31393123418622980414661138
         ],
         "unlimited": false
     },

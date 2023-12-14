@@ -2,7 +2,7 @@
     "dapp_name": "TetherEarn",
     "total_func": 53,
     "analyzed_func": 2,
-    "block_num": 11341220,
+    "block_num": 11495347,
     "address": "0x072F68f73dbAa914362d0A18605F57BA515202d7",
     "platform": "Cronos",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

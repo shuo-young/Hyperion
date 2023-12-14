@@ -2,7 +2,7 @@
     "dapp_name": "Pooh Farmer",
     "total_func": 24,
     "analyzed_func": 3,
-    "block_num": 18660956,
+    "block_num": 18733648,
     "address": "0x1054bf40be3e021e26fa5f6d627fe395a3fd3f26",
     "platform": "ETH",
     "reward": {
@@ -29,16 +29,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x75cf77fb": {
-            "0x77f": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-4-))",
-                    "bvudiv_i(Iv, 20)"
-                ]
-            ]
-        },
+        "rate": [],
         "0x1e2e35a4": {
             "0x4acS0x1fa": [
                 [
@@ -56,6 +49,14 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-4-))",
                     "bvudiv_i(bvudiv_i(Ia_store-2-*balance_10,\n                  bvudiv_i(Ia_store-2-*Ia_store-9-,\n                           Ia_store-some_var_9-*\n                           (IH_s +\n                            115792089237316195423570985008687907853269984665640564039457584007913129639935*\n                            Ia_store-some_var_2-) +\n                           Ia_store-some_var_1-) +\n                  Ia_store-3-),\n         20)"
+                ]
+            ]
+        },
+        "0x75cf77fb": {
+            "0x77f": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(Iv, 20)"
                 ]
             ]
         }

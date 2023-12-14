@@ -2,7 +2,7 @@
     "dapp_name": "motoDEX",
     "total_func": 70,
     "analyzed_func": 2,
-    "block_num": 50341112,
+    "block_num": 50795924,
     "address": "0x79AFe0DfF8E07C9b25284a2610E613519239426D",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

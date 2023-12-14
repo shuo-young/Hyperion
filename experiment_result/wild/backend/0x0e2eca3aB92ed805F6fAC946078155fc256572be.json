@@ -2,7 +2,7 @@
     "dapp_name": "Cairo Finance",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 33852270,
+    "block_num": 34143745,
     "address": "0x0e2eca3aB92ed805F6fAC946078155fc256572be",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

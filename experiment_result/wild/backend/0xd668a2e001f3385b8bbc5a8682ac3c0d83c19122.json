@@ -2,7 +2,7 @@
     "dapp_name": "KingFrogs",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18642049,
+    "block_num": 18724400,
     "address": "0xd668a2e001f3385b8bbc5a8682ac3c0d83c19122",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

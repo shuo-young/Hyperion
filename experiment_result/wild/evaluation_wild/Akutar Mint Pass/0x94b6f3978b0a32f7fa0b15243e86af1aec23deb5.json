@@ -2,7 +2,7 @@
     "dapp_name": "Akutar Mint Pass",
     "total_func": 20,
     "analyzed_func": 1,
-    "block_num": 18641704,
+    "block_num": 18724216,
     "address": "0x94b6f3978b0a32f7fa0b15243e86af1aec23deb5",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

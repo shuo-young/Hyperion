@@ -2,7 +2,7 @@
     "dapp_name": "10KTF",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18641037,
+    "block_num": 18724000,
     "address": "0x0cfb5d82be2b949e8fa73a656df91821e2ad99fd",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

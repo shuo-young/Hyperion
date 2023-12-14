@@ -2,7 +2,7 @@
     "dapp_name": "Yield Wars",
     "total_func": 32,
     "analyzed_func": 6,
-    "block_num": 18672065,
+    "block_num": 18735715,
     "address": "0xCC3A2c4891740e2055f4C6875a28BB9EB32f2e69",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "ZEDXION",
     "total_func": 13,
     "analyzed_func": 2,
-    "block_num": 18672071,
+    "block_num": 18735717,
     "address": "0xfbc4f3f645c4003a2e4f4e9b51077d2daa9a9341",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

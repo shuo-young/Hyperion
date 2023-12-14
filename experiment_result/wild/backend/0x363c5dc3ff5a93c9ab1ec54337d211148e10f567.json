@@ -2,7 +2,7 @@
     "dapp_name": "Gitcoin Presents",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18642027,
+    "block_num": 18724383,
     "address": "0x363c5dc3ff5a93c9ab1ec54337d211148e10f567",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

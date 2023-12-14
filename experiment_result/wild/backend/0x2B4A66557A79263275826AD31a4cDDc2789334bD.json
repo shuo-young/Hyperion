@@ -2,7 +2,7 @@
     "dapp_name": "Sunflower Land",
     "total_func": 32,
     "analyzed_func": 7,
-    "block_num": 50437884,
+    "block_num": 50844139,
     "address": "0x2B4A66557A79263275826AD31a4cDDc2789334bD",
     "platform": "Polygon",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            202672
+            203667
         ],
         "unlimited": true
     },

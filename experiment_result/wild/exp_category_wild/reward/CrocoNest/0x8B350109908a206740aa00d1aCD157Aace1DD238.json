@@ -2,7 +2,7 @@
     "dapp_name": "CrocoNest",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 11341114,
+    "block_num": 11495268,
     "address": "0x8B350109908a206740aa00d1aCD157Aace1DD238",
     "platform": "Cronos",
     "reward": {
@@ -34,6 +34,9 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.04
+        ],
         "0xc8afd8f1": {
             "0x1668S0x3f9": [
                 [
@@ -104,7 +107,7 @@
     },
     "inconsistency": {
         "reward": true,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

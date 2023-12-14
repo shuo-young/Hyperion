@@ -2,23 +2,16 @@
     "dapp_name": "Ultimate Champions",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18643261,
+    "block_num": 18724889,
     "address": "0xA3B963D633173f518152313B0599A3Bb15F25E4a",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x19165587": {
-            "0x241bS0x2340S0x2165S0x1e99": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-8-))",
-                    "bvudiv_i((Concat(0, Extract(63, 0, IH_s)) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-1 + some_var_5-)*\n         bvudiv_i((mem_mem_64 + Ia_store-some_var_1-)*\n                  Concat(0,\n                         Extract(7, 0, Ia_store-some_var_5-)),\n                  100),\n         Concat(0, Extract(63, 0, Ia_store-2 + some_var_5-))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
-                ]
-            ]
-        },
+        "rate": [],
         "0x86d1a69f": {
             "0x2088S0x1b2fS0xcebS0x505": [
                 [
@@ -32,6 +25,14 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-8-))",
                     "bvudiv_i((Concat(0, Extract(63, 0, IH_s)) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-1 + some_var_1-)*\n         bvudiv_i((IH_b + Ia_store-0-)*\n                  Concat(0,\n                         Extract(7, 0, Ia_store-some_var_1-)),\n                  100),\n         Concat(0, Extract(63, 0, Ia_store-2 + some_var_1-))) +\nbvudiv_i((IH_b + Ia_store-0-)*\n         Concat(0, Extract(7, 0, Ia_store-3 + some_var_1-)),\n         100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-0-"
+                ]
+            ]
+        },
+        "0x19165587": {
+            "0x241bS0x2340S0x2165S0x1e99": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-8-))",
+                    "bvudiv_i((Concat(0, Extract(63, 0, IH_s)) +\n          115792089237316195423570985008687907853269984665640564039457584007913129639935*\n          Ia_store-1 + some_var_5-)*\n         bvudiv_i((mem_mem_64 + Ia_store-some_var_1-)*\n                  Concat(0,\n                         Extract(7, 0, Ia_store-some_var_5-)),\n                  100),\n         Concat(0, Extract(63, 0, Ia_store-2 + some_var_5-))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
                 ]
             ]
         }

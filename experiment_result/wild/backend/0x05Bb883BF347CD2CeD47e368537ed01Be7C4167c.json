@@ -2,15 +2,16 @@
     "dapp_name": "LOAD Network",
     "total_func": 29,
     "analyzed_func": 2,
-    "block_num": 18671563,
+    "block_num": 18735500,
     "address": "0x05Bb883BF347CD2CeD47e368537ed01Be7C4167c",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x4a136854": {
             "0x18b0": [
                 [

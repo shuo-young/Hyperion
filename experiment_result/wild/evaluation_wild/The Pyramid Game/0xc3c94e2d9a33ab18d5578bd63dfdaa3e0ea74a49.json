@@ -2,7 +2,7 @@
     "dapp_name": "The Pyramid Game",
     "total_func": 21,
     "analyzed_func": 1,
-    "block_num": 18662037,
+    "block_num": 18734210,
     "address": "0xc3c94e2d9a33ab18d5578bd63dfdaa3e0ea74a49",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

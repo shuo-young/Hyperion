@@ -2,7 +2,7 @@
     "dapp_name": "SnailFarm 3",
     "total_func": 96,
     "analyzed_func": 2,
-    "block_num": 18660474,
+    "block_num": 18733439,
     "address": "0x2a185c995373a766979e645d0912d30e27aa56f6",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

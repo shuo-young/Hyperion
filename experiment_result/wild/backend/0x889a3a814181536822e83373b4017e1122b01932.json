@@ -2,7 +2,7 @@
     "dapp_name": "BAEX",
     "total_func": 38,
     "analyzed_func": 6,
-    "block_num": 18670401,
+    "block_num": 18734942,
     "address": "0x889a3a814181536822e83373b4017e1122b01932",
     "platform": "ETH",
     "reward": {
@@ -41,8 +41,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xa9059cbb": {
             "0x46d3S0x4382S0x31daB0x4322": [
                 [
@@ -135,22 +136,6 @@
                 ]
             ]
         },
-        "0x7697421c": {
-            "0x46d3S0x4382S0x31daB0x4322": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_35)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_265)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-0-))",
-                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_384)"
-                ]
-            ]
-        },
         "0xcb1a8015": {
             "0x46d3S0x4382S0x31daB0x4322": [
                 [
@@ -212,6 +197,22 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-0-))",
                     "some_var_699*\nbvudiv_i(5000000*bvudiv_i(Ia_store-11-*Id_2, 100000000),\n         100000000)"
+                ]
+            ]
+        },
+        "0x7697421c": {
+            "0x46d3S0x4382S0x31daB0x4322": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_35)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_265)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-0-))",
+                    "bvudiv_i(bvudiv_i(5000000*\n                  bvudiv_i(Ia_store-11-*Id_3, 100000000),\n                  100000000),\n         some_var_384)"
                 ]
             ]
         }

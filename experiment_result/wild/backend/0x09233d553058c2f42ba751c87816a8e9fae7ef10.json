@@ -2,7 +2,7 @@
     "dapp_name": "My Pet Hooligan",
     "total_func": 35,
     "analyzed_func": 6,
-    "block_num": 18640831,
+    "block_num": 18723932,
     "address": "0x09233d553058c2f42ba751c87816a8e9fae7ef10",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Pirate Conquest Cryptokitties Exchange",
     "total_func": 12,
     "analyzed_func": 0,
-    "block_num": 18671665,
+    "block_num": 18735572,
     "address": "0xb94a576a8bb6224bc3b4b8f1c634267f75cc47f6",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

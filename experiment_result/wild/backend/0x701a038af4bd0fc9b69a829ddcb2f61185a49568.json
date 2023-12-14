@@ -2,7 +2,7 @@
     "dapp_name": "KIWAMI Genesis",
     "total_func": 62,
     "analyzed_func": 7,
-    "block_num": 18640883,
+    "block_num": 18723954,
     "address": "0x701a038af4bd0fc9b69a829ddcb2f61185a49568",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,11 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.15,
+            0.35,
+            0.5
+        ],
         "0xefb4031d": {
             "0x1fa2S0xa73": [
                 [

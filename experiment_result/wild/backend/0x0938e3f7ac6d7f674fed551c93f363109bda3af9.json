@@ -2,7 +2,7 @@
     "dapp_name": "Neo Tokyo Identities",
     "total_func": 36,
     "analyzed_func": 6,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x0938e3f7ac6d7f674fed551c93f363109bda3af9",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

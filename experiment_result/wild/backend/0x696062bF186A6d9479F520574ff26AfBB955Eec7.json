@@ -2,15 +2,16 @@
     "dapp_name": "BNB2X",
     "total_func": 20,
     "analyzed_func": 3,
-    "block_num": 33853704,
+    "block_num": 34144560,
     "address": "0x696062bF186A6d9479F520574ff26AfBB955Eec7",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xab94d950": {
             "0x1105": [
                 [

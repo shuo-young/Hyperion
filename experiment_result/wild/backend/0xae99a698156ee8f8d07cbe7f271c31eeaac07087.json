@@ -2,7 +2,7 @@
     "dapp_name": "Mutant Hound Collars",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18641869,
+    "block_num": 18724308,
     "address": "0xae99a698156ee8f8d07cbe7f271c31eeaac07087",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

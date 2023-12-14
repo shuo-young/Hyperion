@@ -2,7 +2,7 @@
     "dapp_name": "Lonely Alien Space Club",
     "total_func": 42,
     "analyzed_func": 8,
-    "block_num": 18641988,
+    "block_num": 18724379,
     "address": "0x343f999eaacdfa1f201fb8e43ebb35c99d9ae0c1",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x853828b6": {
             "0x1740S0xbd2": [
                 [
@@ -95,7 +96,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": true,
         "lock": false,
         "clear": true,

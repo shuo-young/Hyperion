@@ -2,7 +2,7 @@
     "dapp_name": "JuggerSWAP",
     "total_func": 27,
     "analyzed_func": 4,
-    "block_num": 18671387,
+    "block_num": 18735461,
     "address": "0xd8a3a9435a7EbF1dEb702A7A0A83561f9EcCEF57",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

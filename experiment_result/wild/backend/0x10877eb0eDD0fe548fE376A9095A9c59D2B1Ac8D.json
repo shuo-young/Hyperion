@@ -2,7 +2,7 @@
     "dapp_name": "BLCR",
     "total_func": 36,
     "analyzed_func": 4,
-    "block_num": 33775896,
+    "block_num": 34106243,
     "address": "0x10877eb0eDD0fe548fE376A9095A9c59D2B1Ac8D",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

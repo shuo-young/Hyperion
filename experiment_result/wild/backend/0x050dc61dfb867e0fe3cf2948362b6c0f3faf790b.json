@@ -2,7 +2,7 @@
     "dapp_name": "Wrapped PixelMap",
     "total_func": 31,
     "analyzed_func": 1,
-    "block_num": 18641087,
+    "block_num": 18724025,
     "address": "0x050dc61dfb867e0fe3cf2948362b6c0f3faf790b",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

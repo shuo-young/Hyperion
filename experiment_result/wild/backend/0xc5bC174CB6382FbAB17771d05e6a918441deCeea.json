@@ -2,7 +2,7 @@
     "dapp_name": "Yoshi Exchange",
     "total_func": 12,
     "analyzed_func": 0,
-    "block_num": 71594680,
+    "block_num": 72137424,
     "address": "0xc5bC174CB6382FbAB17771d05e6a918441deCeea",
     "platform": "Fantom",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

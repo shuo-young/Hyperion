@@ -2,7 +2,7 @@
     "dapp_name": "The Meta Key",
     "total_func": 29,
     "analyzed_func": 0,
-    "block_num": 18641191,
+    "block_num": 18724057,
     "address": "0x10daa9f4c0f985430fde4959adb2c791ef2ccf83",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

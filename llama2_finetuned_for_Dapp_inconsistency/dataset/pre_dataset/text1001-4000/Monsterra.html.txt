@@ -1,1 +1,0 @@
-WebGL builds are not supported on mobile devices.Connect Metamask

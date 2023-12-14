@@ -2,7 +2,7 @@
     "dapp_name": "Solarbeam",
     "total_func": 15,
     "analyzed_func": 1,
-    "block_num": 5615661,
+    "block_num": 5687360,
     "address": "0xB256C57AA0778a184D26D3B7c033dB950c7bF007",
     "platform": "Moonriver",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

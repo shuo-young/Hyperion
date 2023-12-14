@@ -2,7 +2,7 @@
     "dapp_name": "Planet",
     "total_func": 67,
     "analyzed_func": 0,
-    "block_num": 33823565,
+    "block_num": 34129261,
     "address": "0xe983cF03314830d9b4d5e87594bB50215438e19a",
     "platform": "BSC",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            6595698551429471
+            6557259506643574
         ],
         "unlimited": false
     },

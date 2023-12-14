@@ -1,0 +1,1 @@
+Baked Onions Matic, Bean Machine, Cromatoes Greenhouse Ponzi, and Grinch Bucks are not with Fee inconsistency. They are outputed by Hyperion as their descriptions are not used to extract fee-related information.

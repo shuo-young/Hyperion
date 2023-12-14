@@ -2,7 +2,7 @@
     "dapp_name": "The Sandbox",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18673969,
+    "block_num": 18736460,
     "address": "0xe372ED8d188517eF4d4bC464C0c068d2002E2903",
     "platform": "ETH",
     "reward": {
@@ -12,28 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0xa474add": {
-            "0x27de": [
-                [
-                    "0x3845badade8e6dff049820680d1f14bd3903a5d0",
-                    "Id_7 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_7*\n         mem_160 +\nmem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64,\n         10000)"
-                ]
-            ],
-            "0x26e6": [
-                [
-                    "0x3845badade8e6dff049820680d1f14bd3903a5d0",
-                    "bvudiv_i(Id_7*\n         mem_160 +\nmem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64,\n         10000)"
-                ]
-            ]
-        },
-        "0x96bb3c6": {
-            "0x2100S0xf4c": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-6-))",
-                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_mem_64)"
-                ]
-            ]
-        },
+        "rate": [
+            0.0144
+        ],
         "0x18dff510": {
             "0x27de": [
                 [
@@ -49,6 +30,28 @@
                 [
                     "0x6b175474e89094c44da98b954eedeac495271d0f",
                     "bvudiv_i(mem_160 + mem_64*\n         bvudiv_i(14400000000000000*Id_7,\n                  1000000000000000000),\n         10000)"
+                ]
+            ]
+        },
+        "0x96bb3c6": {
+            "0x2100S0xf4c": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-6-))",
+                    "bvudiv_i(14400000000000000*Id_7,\n         mem_mem_mem_mem_mem_mem_mem_mem_64)"
+                ]
+            ]
+        },
+        "0xa474add": {
+            "0x27de": [
+                [
+                    "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+                    "Id_7 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_7*mem_160 + mem_mem_mem_64, 10000)"
+                ]
+            ],
+            "0x26e6": [
+                [
+                    "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+                    "bvudiv_i(Id_7*mem_160 + mem_mem_mem_64, 10000)"
                 ]
             ]
         },

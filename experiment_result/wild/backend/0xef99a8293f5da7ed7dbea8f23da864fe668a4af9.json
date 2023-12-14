@@ -2,7 +2,7 @@
     "dapp_name": "EtherKingdoms",
     "total_func": 27,
     "analyzed_func": 1,
-    "block_num": 18670864,
+    "block_num": 18735165,
     "address": "0xef99a8293f5da7ed7dbea8f23da864fe668a4af9",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

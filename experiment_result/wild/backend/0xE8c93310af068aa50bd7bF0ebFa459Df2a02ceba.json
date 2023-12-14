@@ -1,0 +1,28 @@
+{
+    "dapp_name": "HoneyFarm",
+    "total_func": 28,
+    "analyzed_func": 2,
+    "block_num": 34121663,
+    "address": "0xE8c93310af068aa50bd7bF0ebFa459Df2a02ceba",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            72459142729645569139231
+        ],
+        "unlimited": true
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

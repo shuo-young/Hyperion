@@ -2,7 +2,7 @@
     "dapp_name": "Boki - NFT",
     "total_func": 44,
     "analyzed_func": 5,
-    "block_num": 18641742,
+    "block_num": 18724256,
     "address": "0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,15 +2,16 @@
     "dapp_name": "LandSecrets",
     "total_func": 14,
     "analyzed_func": 2,
-    "block_num": 18671522,
+    "block_num": 18735478,
     "address": "0xe4879b25f8c06a76c683fb7ebd94203d531034e9",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0xc0fe1af8": {
             "0xa81": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "Creature World NFT",
     "total_func": 34,
     "analyzed_func": 7,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0xc92cedDfb8dd984A89fb494c376f9A48b999aAFc",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,11 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.39,
+            0.25,
+            0.18
+        ],
         "0x853828b6": {
             "0x169fS0x5a1": [
                 [

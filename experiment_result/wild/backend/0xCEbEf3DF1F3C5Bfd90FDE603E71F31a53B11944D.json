@@ -2,7 +2,7 @@
     "dapp_name": "LitLab Games - CyberTitans",
     "total_func": 24,
     "analyzed_func": 1,
-    "block_num": 33777698,
+    "block_num": 34107063,
     "address": "0xCEbEf3DF1F3C5Bfd90FDE603E71F31a53B11944D",
     "platform": "BSC",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            2999855645475000000002306876
+            2999843172475000000002516592
         ],
         "unlimited": true
     },

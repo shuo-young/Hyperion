@@ -2,7 +2,7 @@
     "dapp_name": "miniShibaToken",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 33857117,
+    "block_num": 34146263,
     "address": "0x35bd36597ff784fcc30d08ebe4bd917374c40d4b",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

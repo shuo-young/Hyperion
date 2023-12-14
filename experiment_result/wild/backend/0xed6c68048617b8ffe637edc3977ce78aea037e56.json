@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Dynasty (ETH)",
     "total_func": 12,
     "analyzed_func": 1,
-    "block_num": 18672296,
+    "block_num": 18735813,
     "address": "0xed6c68048617b8ffe637edc3977ce78aea037e56",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

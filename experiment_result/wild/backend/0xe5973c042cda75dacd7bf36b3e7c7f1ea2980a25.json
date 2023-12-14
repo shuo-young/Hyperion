@@ -2,7 +2,7 @@
     "dapp_name": "BUSD MINTER",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 33856931,
+    "block_num": 34145937,
     "address": "0xe5973c042cda75dacd7bf36b3e7c7f1ea2980a25",
     "platform": "BSC",
     "reward": {
@@ -39,6 +39,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x5a0S0x21c": [
                 [

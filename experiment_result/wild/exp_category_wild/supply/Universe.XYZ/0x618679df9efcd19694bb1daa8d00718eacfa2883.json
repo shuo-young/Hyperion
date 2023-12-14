@@ -2,7 +2,7 @@
     "dapp_name": "Universe.XYZ",
     "total_func": 18,
     "analyzed_func": 3,
-    "block_num": 18659806,
+    "block_num": 18733034,
     "address": "0x618679df9efcd19694bb1daa8d00718eacfa2883",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

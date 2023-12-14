@@ -2,7 +2,7 @@
     "dapp_name": "EthProfit.io",
     "total_func": 10,
     "analyzed_func": 1,
-    "block_num": 18660696,
+    "block_num": 18733548,
     "address": "0x9b5bbb16a7a68660f6503eff6c8e3159820d6396",
     "platform": "ETH",
     "reward": {
@@ -22,7 +22,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

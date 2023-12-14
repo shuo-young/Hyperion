@@ -2,7 +2,7 @@
     "dapp_name": "Jetswap",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 33847956,
+    "block_num": 34141639,
     "address": "0x0487b824c8261462F88940f97053E65bDb498446",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            65371829096145590053662281
+            66154534910473995212517178
         ],
         "unlimited": true,
         "ui": [

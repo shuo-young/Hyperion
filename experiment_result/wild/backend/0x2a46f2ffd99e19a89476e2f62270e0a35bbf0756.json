@@ -2,7 +2,7 @@
     "dapp_name": "MakersPlace",
     "total_func": 54,
     "analyzed_func": 9,
-    "block_num": 18641402,
+    "block_num": 18724159,
     "address": "0x2a46f2ffd99e19a89476e2f62270e0a35bbf0756",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            75507
+            75514
         ],
         "unlimited": true
     },

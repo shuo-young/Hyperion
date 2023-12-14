@@ -2,7 +2,7 @@
     "dapp_name": "OG:Crystals",
     "total_func": 43,
     "analyzed_func": 7,
-    "block_num": 18642191,
+    "block_num": 18724486,
     "address": "0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "IcyCRO",
     "total_func": 21,
     "analyzed_func": 1,
-    "block_num": 11341184,
+    "block_num": 11495338,
     "address": "0x8F857Af6Ea31447Bb502fE0E3F4e4340CDFCfc6C",
     "platform": "Cronos",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

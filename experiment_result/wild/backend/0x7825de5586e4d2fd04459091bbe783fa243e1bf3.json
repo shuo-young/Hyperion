@@ -2,7 +2,7 @@
     "dapp_name": "SushiSwap",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 18657447,
+    "block_num": 18731965,
     "address": "0x7825de5586e4d2fd04459091bbe783fa243e1bf3",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            1351416269665497559749
+            1352230480478479880530
         ],
         "unlimited": false
     },

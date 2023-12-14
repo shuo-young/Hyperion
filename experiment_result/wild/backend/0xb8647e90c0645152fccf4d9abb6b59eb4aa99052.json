@@ -2,7 +2,7 @@
     "dapp_name": "KeyFi",
     "total_func": 33,
     "analyzed_func": 3,
-    "block_num": 18671403,
+    "block_num": 18735464,
     "address": "0xb8647e90c0645152fccf4d9abb6b59eb4aa99052",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

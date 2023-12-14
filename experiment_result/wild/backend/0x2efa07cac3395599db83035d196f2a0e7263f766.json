@@ -2,15 +2,16 @@
     "dapp_name": "The Flower Girls",
     "total_func": 38,
     "analyzed_func": 7,
-    "block_num": 18642210,
+    "block_num": 18724491,
     "address": "0x2efa07cac3395599db83035d196f2a0e7263f766",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x853828b6": {
             "0xf70S0x4a4": [
                 [

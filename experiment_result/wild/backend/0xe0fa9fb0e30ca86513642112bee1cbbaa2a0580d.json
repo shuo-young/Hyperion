@@ -2,7 +2,7 @@
     "dapp_name": "The Greats V3",
     "total_func": 64,
     "analyzed_func": 4,
-    "block_num": 18641704,
+    "block_num": 18724223,
     "address": "0xe0fa9fb0e30ca86513642112bee1cbbaa2a0580d",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "Smatic",
     "total_func": 22,
     "analyzed_func": 3,
-    "block_num": 50452643,
+    "block_num": 50852033,
     "address": "0x763B7200d141B6eF69FCAd6ac96C8063f2c85a8e",
     "platform": "Polygon",
     "reward": {
@@ -24,6 +24,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

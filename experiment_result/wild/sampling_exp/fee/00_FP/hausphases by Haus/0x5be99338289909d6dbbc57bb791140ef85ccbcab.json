@@ -2,7 +2,7 @@
     "dapp_name": "hausphases by Haus",
     "total_func": 38,
     "analyzed_func": 1,
-    "block_num": 18619900,
+    "block_num": 18724053,
     "address": "0x5be99338289909d6dbbc57bb791140ef85ccbcab",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.85,
+            0.15
+        ],
         "0x3ccfd60b": {
             "0x10c4S0x407": [
                 [

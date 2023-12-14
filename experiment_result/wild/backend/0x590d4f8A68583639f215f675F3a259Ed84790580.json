@@ -2,20 +2,21 @@
     "dapp_name": "Stargate",
     "total_func": 62,
     "analyzed_func": 8,
-    "block_num": 18656638,
+    "block_num": 18731607,
     "address": "0x590d4f8A68583639f215f675F3a259Ed84790580",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x476efe40": {
+        "rate": [],
+        "0xbe310294": {
             "0x2c72": [
                 [
                     "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
-                    "1000000000000*Ia_store-18-"
+                    "1000000000000*Ia_store-17-"
                 ]
             ]
         },
@@ -24,6 +25,14 @@
                 [
                     "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
                     "1000000000000*\nbvudiv_i(Ia_store-14-*\n         bvudiv_i(Ia_store-21-*Ia_store-4-, Ia_store-14-),\n         Ia_store-4-)"
+                ]
+            ]
+        },
+        "0x476efe40": {
+            "0x2c72": [
+                [
+                    "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+                    "1000000000000*Ia_store-18-"
                 ]
             ]
         },
@@ -42,19 +51,11 @@
                     "1000000000000*mem_64 + mem_64 + 1000000000000*mem_mem_64"
                 ]
             ]
-        },
-        "0xbe310294": {
-            "0x2c72": [
-                [
-                    "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
-                    "1000000000000*Ia_store-17-"
-                ]
-            ]
         }
     },
     "supply": {
         "amount": [
-            81867953869
+            79785528856
         ],
         "unlimited": false
     },

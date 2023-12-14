@@ -2,7 +2,7 @@
     "dapp_name": "XY Finance",
     "total_func": 19,
     "analyzed_func": 2,
-    "block_num": 33848026,
+    "block_num": 34141663,
     "address": "0x666666661f9B6D8c581602AAa2f76cbead06C401",
     "platform": "BSC",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            28337293479280430780440
+            19391502719418159570404
         ],
         "unlimited": true
     },

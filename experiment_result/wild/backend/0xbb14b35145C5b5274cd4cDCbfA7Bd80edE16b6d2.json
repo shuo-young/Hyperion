@@ -2,7 +2,7 @@
     "dapp_name": "Rabbit Finance",
     "total_func": 18,
     "analyzed_func": 2,
-    "block_num": 33829654,
+    "block_num": 34132967,
     "address": "0xbb14b35145C5b5274cd4cDCbfA7Bd80edE16b6d2",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

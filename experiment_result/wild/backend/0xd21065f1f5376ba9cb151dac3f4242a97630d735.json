@@ -2,15 +2,16 @@
     "dapp_name": "CryptoServal",
     "total_func": 12,
     "analyzed_func": 4,
-    "block_num": 18672413,
+    "block_num": 18735832,
     "address": "0xd21065f1f5376ba9cb151dac3f4242a97630d735",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xfd8acc42": {
             "0xcdaS0x905": [
                 [

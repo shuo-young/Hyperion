@@ -2,7 +2,7 @@
     "dapp_name": "Known Origin",
     "total_func": 91,
     "analyzed_func": 8,
-    "block_num": 18641476,
+    "block_num": 18724188,
     "address": "0xabb3738f04dc2ec20f4ae4462c3d069d02ae045b",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

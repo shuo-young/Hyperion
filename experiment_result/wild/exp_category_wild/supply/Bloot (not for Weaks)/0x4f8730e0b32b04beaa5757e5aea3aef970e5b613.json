@@ -2,7 +2,7 @@
     "dapp_name": "Bloot (not for Weaks)",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 18641328,
+    "block_num": 18724125,
     "address": "0x4f8730e0b32b04beaa5757e5aea3aef970e5b613",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

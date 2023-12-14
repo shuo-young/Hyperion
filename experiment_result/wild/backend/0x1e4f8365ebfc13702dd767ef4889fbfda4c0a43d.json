@@ -2,7 +2,7 @@
     "dapp_name": "Battle Racers",
     "total_func": 40,
     "analyzed_func": 7,
-    "block_num": 18672088,
+    "block_num": 18735721,
     "address": "0x1e4f8365ebfc13702dd767ef4889fbfda4c0a43d",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

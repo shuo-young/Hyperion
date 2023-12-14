@@ -2,7 +2,7 @@
     "dapp_name": "Cupcats Official",
     "total_func": 38,
     "analyzed_func": 7,
-    "block_num": 18641724,
+    "block_num": 18724249,
     "address": "0x8cd8155e1af6ad31dd9eec2ced37e04145acfcb3",
     "platform": "ETH",
     "reward": {
@@ -24,6 +24,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

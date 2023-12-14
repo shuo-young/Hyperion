@@ -2,7 +2,7 @@
     "dapp_name": "KyberSwap Classic",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18651600,
+    "block_num": 18728954,
     "address": "0x10908C875D865C66f271F5d3949848971c9595C9",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

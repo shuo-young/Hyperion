@@ -2,7 +2,7 @@
     "dapp_name": "Diapers Finance",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 50451217,
+    "block_num": 50851227,
     "address": "0x22762a8a33b7Cb7c52AfAD5096B3b0790DE1c649",
     "platform": "Polygon",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

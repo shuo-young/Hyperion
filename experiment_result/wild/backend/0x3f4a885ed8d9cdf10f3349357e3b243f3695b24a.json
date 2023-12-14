@@ -2,7 +2,7 @@
     "dapp_name": "Incognito",
     "total_func": 39,
     "analyzed_func": 6,
-    "block_num": 18641794,
+    "block_num": 18724286,
     "address": "0x3f4a885ed8d9cdf10f3349357e3b243f3695b24a",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

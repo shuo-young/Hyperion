@@ -2,7 +2,7 @@
     "dapp_name": "Timemium",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18642377,
+    "block_num": 18724563,
     "address": "0x538060565F31ebE1589b92FA4C4E51B300940FdC",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,19 +2,11 @@
     "dapp_name": "Purrnelopes Country Club",
     "total_func": 31,
     "analyzed_func": 8,
-    "block_num": 18642212,
+    "block_num": 18724496,
     "address": "0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1",
     "platform": "ETH",
     "reward": {
         "warning": true,
-        "0x3ccfd60b": {
-            "0xce4S0x354": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b, 10)"
-                ]
-            ]
-        },
         "0x9028f135": {
             "0x19a9S0x57c": [
                 [
@@ -27,11 +19,20 @@
                 ]
             ]
         },
+        "0x3ccfd60b": {
+            "0xce4S0x354": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(IH_b, 10)"
+                ]
+            ]
+        },
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x3ccfd60b": {
             "0xd4dS0x354": [
                 [
@@ -81,7 +82,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": true,

@@ -2,7 +2,7 @@
     "dapp_name": "Frax Finance",
     "total_func": 69,
     "analyzed_func": 4,
-    "block_num": 18650161,
+    "block_num": 18728270,
     "address": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            669863780559440662936586093
+            669655735510510991027735564
         ],
         "unlimited": true
     },

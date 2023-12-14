@@ -2,13 +2,13 @@
     "dapp_name": "Inverse finance",
     "total_func": 43,
     "analyzed_func": 9,
-    "block_num": 18651518,
+    "block_num": 18728894,
     "address": "0x2dCdCA085af2E258654e47204e483127E0D8b277",
     "platform": "ETH",
     "reward": {
         "warning": false,
-        "0x67272999": {
-            "0x3792S0x1d1fS0x869": [
+        "0x4e71d92d": {
+            "0x4539S0x43c9S0x3e80S0x3070B0x34f9": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-7-*Ia_store-some_var_3- +\n               Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
@@ -19,8 +19,8 @@
                 ]
             ]
         },
-        "0x4e71d92d": {
-            "0x4539S0x43c9S0x3e80S0x3070B0x34f9": [
+        "0x67272999": {
+            "0x3792S0x1d1fS0x869": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "Concat(0,\n       Extract(255,\n               128,\n               Ia_store-7-*Ia_store-some_var_3- +\n               Ia_store-some_var_2-)) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-some_var_1-"
@@ -35,6 +35,9 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.1
+        ],
         "0xddc63262": {
             "0x4539S0x43c9S0x3e80S0x3070B0x2839": [
                 [

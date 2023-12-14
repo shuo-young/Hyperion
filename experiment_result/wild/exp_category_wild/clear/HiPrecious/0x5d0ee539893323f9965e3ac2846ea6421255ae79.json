@@ -2,7 +2,7 @@
     "dapp_name": "HiPrecious",
     "total_func": 29,
     "analyzed_func": 2,
-    "block_num": 18671341,
+    "block_num": 18735445,
     "address": "0x5d0ee539893323f9965e3ac2846ea6421255ae79",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

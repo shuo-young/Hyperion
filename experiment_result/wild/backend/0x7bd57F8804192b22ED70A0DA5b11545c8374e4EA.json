@@ -2,7 +2,7 @@
     "dapp_name": "RedVsBlue",
     "total_func": 10,
     "analyzed_func": 1,
-    "block_num": 18673821,
+    "block_num": 18736405,
     "address": "0x7bd57F8804192b22ED70A0DA5b11545c8374e4EA",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

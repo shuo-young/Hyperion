@@ -2,7 +2,7 @@
     "dapp_name": "Pooh Farmer",
     "total_func": 24,
     "analyzed_func": 3,
-    "block_num": 18660964,
+    "block_num": 18733649,
     "address": "0x5585f99a9af13b73a6210ea9c8ca98b69f4a4b31",
     "platform": "ETH",
     "reward": {
@@ -29,8 +29,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x75cf77fb": {
             "0x77f": [
                 [

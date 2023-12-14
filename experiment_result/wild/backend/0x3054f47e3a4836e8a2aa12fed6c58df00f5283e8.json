@@ -2,7 +2,7 @@
     "dapp_name": "0xMultiply",
     "total_func": 13,
     "analyzed_func": 2,
-    "block_num": 18661655,
+    "block_num": 18734019,
     "address": "0x3054f47e3a4836e8a2aa12fed6c58df00f5283e8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

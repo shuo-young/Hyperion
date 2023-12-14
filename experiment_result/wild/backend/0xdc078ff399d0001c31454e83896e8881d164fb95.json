@@ -2,7 +2,7 @@
     "dapp_name": "SnailFarm",
     "total_func": 27,
     "analyzed_func": 3,
-    "block_num": 18661123,
+    "block_num": 18733745,
     "address": "0xdc078ff399d0001c31454e83896e8881d164fb95",
     "platform": "ETH",
     "reward": {
@@ -23,6 +23,17 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.04
+        ],
+        "0x4f74acfe": {
+            "0x10bc": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-4-))",
+                    "bvudiv_i(4*Iv, 100)"
+                ]
+            ]
+        },
         "0x3955f0fe": {
             "0xa8fS0x2f4": [
                 [
@@ -32,14 +43,6 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-4-))",
                     "bvudiv_i(4*\n         bvudiv_i(Ia_store-2-*balance_6,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-0-*Ia_store-some_var_5-),\n                           Ia_store-some_var_1- +\n                           Ia_store-0-*Ia_store-some_var_5-)),\n         100)"
-                ]
-            ]
-        },
-        "0x4f74acfe": {
-            "0x10bc": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-4-))",
-                    "bvudiv_i(4*Iv, 100)"
                 ]
             ]
         }

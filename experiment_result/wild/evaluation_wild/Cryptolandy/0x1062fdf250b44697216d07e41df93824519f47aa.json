@@ -2,7 +2,7 @@
     "dapp_name": "Cryptolandy",
     "total_func": 11,
     "analyzed_func": 1,
-    "block_num": 18672358,
+    "block_num": 18735818,
     "address": "0x1062fdf250b44697216d07e41df93824519f47aa",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

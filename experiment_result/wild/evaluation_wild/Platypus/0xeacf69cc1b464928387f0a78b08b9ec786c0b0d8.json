@@ -2,7 +2,7 @@
     "dapp_name": "Platypus",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 18660867,
+    "block_num": 18733620,
     "address": "0xeacf69cc1b464928387f0a78b08b9ec786c0b0d8",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

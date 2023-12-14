@@ -2,7 +2,7 @@
     "dapp_name": "Rock Finance",
     "total_func": 43,
     "analyzed_func": 8,
-    "block_num": 33857139,
+    "block_num": 34146282,
     "address": "0xd274bB6e89b5d0176642b8E51b0326677C8003Ae",
     "platform": "BSC",
     "reward": {
@@ -45,8 +45,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x00000000": {
             "0x106e": [
                 [
@@ -121,19 +122,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x1e2f395e": {
-            "0x5016S0x4effS0x4c01S0x44d2B0x1681B0x30e": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-1-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
         "0x3ccfd60b": {
             "0x23a7S0x46a": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-20-))",
                     "IH_b"
+                ]
+            ]
+        },
+        "0x1e2f395e": {
+            "0x5016S0x4effS0x4c01S0x44d2B0x1681B0x30e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-1-))",
+                    "mem_mem_64"
                 ]
             ]
         }

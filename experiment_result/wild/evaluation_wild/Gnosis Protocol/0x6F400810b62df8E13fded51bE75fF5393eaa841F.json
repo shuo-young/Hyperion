@@ -2,7 +2,7 @@
     "dapp_name": "Gnosis Protocol",
     "total_func": 42,
     "analyzed_func": 4,
-    "block_num": 18650302,
+    "block_num": 18728326,
     "address": "0x6F400810b62df8E13fded51bE75fF5393eaa841F",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

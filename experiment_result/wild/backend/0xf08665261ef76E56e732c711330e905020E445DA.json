@@ -2,7 +2,7 @@
     "dapp_name": "MATIC MINER",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 50446053,
+    "block_num": 50848175,
     "address": "0xf08665261ef76E56e732c711330e905020E445DA",
     "platform": "Polygon",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x4c6S0x21c": [
                 [

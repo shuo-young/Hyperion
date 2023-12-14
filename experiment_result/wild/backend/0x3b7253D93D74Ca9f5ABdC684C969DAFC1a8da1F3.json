@@ -2,15 +2,16 @@
     "dapp_name": "Drakons",
     "total_func": 21,
     "analyzed_func": 6,
-    "block_num": 18672486,
+    "block_num": 18735888,
     "address": "0x3b7253D93D74Ca9f5ABdC684C969DAFC1a8da1F3",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x454a2ab3": {
             "0xb56": [
                 [
@@ -35,19 +36,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x878eb368": {
-            "0x99e0xbfb": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
-                    "Id_1"
-                ]
-            ]
-        },
         "0x5fd8c710": {
             "0x6acS0x284": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-1-))",
                     "balance_1"
+                ]
+            ]
+        },
+        "0x878eb368": {
+            "0x99e0xbfb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_1-))",
+                    "Id_1"
                 ]
             ]
         }

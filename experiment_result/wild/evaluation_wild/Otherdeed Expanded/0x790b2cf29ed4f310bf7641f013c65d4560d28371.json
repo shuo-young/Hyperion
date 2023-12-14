@@ -2,7 +2,7 @@
     "dapp_name": "Otherdeed Expanded",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18641745,
+    "block_num": 18724262,
     "address": "0x790b2cf29ed4f310bf7641f013c65d4560d28371",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

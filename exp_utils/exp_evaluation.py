@@ -3,9 +3,9 @@ import json
 import shutil
 
 # Directories and file paths
-backend_dir = "result/gt_1205"
-frontend_output = "nlp/result/output_gt.json"
-output_dir = "evaluation_gt_1205"  # Directory to save the merged data
+backend_dir = "result/wild_1205"
+frontend_output = "nlp/result/output_wild.json"
+output_dir = "evaluation_wild_1205"  # Directory to save the merged data
 
 print("analyzed contracts")
 print(len(os.listdir(backend_dir)))
@@ -55,14 +55,24 @@ def report_inconsistency(data):
     }
     # 1. reward: (1) warning and ui has reward claim
     if data["reward"]["warning"] and len(data["reward"]["ui"].keys()) > 0:
-        print(data["address"])
+        # print(data["address"])
         inconsistency["reward"] = True
 
     # 2. fee: (1) warning and ui don't has fee claim. TOD(2) warning and ui' fee claim is not consistent
     if data["fee"]["warning"] and not data["fee"]["ui"]["has_fee"]:
         inconsistency["fee"] = True
-    if data["fee"]["warning"]:
-        inconsistency["fee"] = True
+    if (
+        len(
+            list(
+                set(data["fee"]["rate"]).intersection(
+                    set(data["fee"]["ui"]["fee_values"])
+                )
+            )
+        )
+        > 0
+    ):
+        print(data["address"])
+        inconsistency["fee"] = False
 
     # 3. supply: (1) unlimited
     if data["supply"]["unlimited"]:
@@ -157,7 +167,7 @@ for dapp_name, data in merged_data.items():
     with open(file_path, "w") as f:
         json.dump(data, f, indent=4)
 
-    category_dir = "exp_category_gt_1205"
+    category_dir = "exp_category_wild_1205"
     if not os.path.exists(category_dir):
         os.makedirs(category_dir)
 

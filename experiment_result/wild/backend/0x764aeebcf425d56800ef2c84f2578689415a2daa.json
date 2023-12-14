@@ -2,7 +2,7 @@
     "dapp_name": "Sewer Pass",
     "total_func": 47,
     "analyzed_func": 4,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x764aeebcf425d56800ef2c84f2578689415a2daa",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            3671077898486914320445936679803480572769559610993188
+            3644770869014958067918270352814587478415752825219620
         ],
         "unlimited": true
     },

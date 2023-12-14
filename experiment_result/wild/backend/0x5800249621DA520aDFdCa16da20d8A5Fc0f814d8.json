@@ -2,7 +2,7 @@
     "dapp_name": "Move Stake",
     "total_func": 9,
     "analyzed_func": 2,
-    "block_num": 18660826,
+    "block_num": 18733601,
     "address": "0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

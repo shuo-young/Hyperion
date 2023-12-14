@@ -2,7 +2,7 @@
     "dapp_name": "MULTI STAKE",
     "total_func": 39,
     "analyzed_func": 3,
-    "block_num": 33853020,
+    "block_num": 34144166,
     "address": "0x086fdf589c71e7a5dea5415eb07c1f0879e84dd3",
     "platform": "BSC",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.03
+        ],
         "0x581c5ae6": {
             "0x1c4e": [
                 [

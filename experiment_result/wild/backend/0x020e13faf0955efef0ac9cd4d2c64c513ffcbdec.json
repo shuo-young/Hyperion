@@ -2,7 +2,7 @@
     "dapp_name": "GORGONA",
     "total_func": 18,
     "analyzed_func": 2,
-    "block_num": 18660771,
+    "block_num": 18733569,
     "address": "0x020e13faf0955efef0ac9cd4d2c64c513ffcbdec",
     "platform": "ETH",
     "reward": {
@@ -29,6 +29,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            3.472222222222222e-05
+        ],
         "0x00000000": {
             "0x63f": [
                 [

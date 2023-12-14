@@ -2,7 +2,7 @@
     "dapp_name": "Universo Ancestral",
     "total_func": 26,
     "analyzed_func": 3,
-    "block_num": 33857227,
+    "block_num": 34146457,
     "address": "0x3f4d6bf08cb7a003488ef082102c2e6418a4551e",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

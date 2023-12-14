@@ -2,7 +2,7 @@
     "dapp_name": "Kubz",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18641870,
+    "block_num": 18724317,
     "address": "0xeb2dfc54ebafca8f50efcc1e21a9d100b5aeb349",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Pixelmon",
     "total_func": 30,
     "analyzed_func": 1,
-    "block_num": 18640854,
+    "block_num": 18723948,
     "address": "0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

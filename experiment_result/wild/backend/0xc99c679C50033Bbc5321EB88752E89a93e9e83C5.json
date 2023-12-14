@@ -2,7 +2,7 @@
     "dapp_name": "KILLABEARS",
     "total_func": 46,
     "analyzed_func": 9,
-    "block_num": 18641137,
+    "block_num": 18724043,
     "address": "0xc99c679C50033Bbc5321EB88752E89a93e9e83C5",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
@@ -21,6 +22,14 @@
     "lock": false,
     "clear": {
         "warning": true,
+        "0x86c34401": {
+            "0x1273S0x606": [
+                [
+                    "Is",
+                    "Id_1"
+                ]
+            ]
+        },
         "0x3ccfd60b": {
             "0xc93S0x3d4": [
                 [
@@ -34,14 +43,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-10-))",
                     "IH_b"
-                ]
-            ]
-        },
-        "0x86c34401": {
-            "0x1273S0x606": [
-                [
-                    "Is",
-                    "Id_1"
                 ]
             ]
         }

@@ -2,7 +2,7 @@
     "dapp_name": "Token Locker",
     "total_func": 8,
     "analyzed_func": 5,
-    "block_num": 18671972,
+    "block_num": 18735668,
     "address": "0x4ADFF2F8Da3FCDc80dc2f1e6f32c2B26baA27048",
     "platform": "ETH",
     "reward": {
@@ -18,7 +18,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

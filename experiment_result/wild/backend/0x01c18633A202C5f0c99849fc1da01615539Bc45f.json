@@ -2,15 +2,16 @@
     "dapp_name": "The Tap Platform",
     "total_func": 18,
     "analyzed_func": 6,
-    "block_num": 18674509,
+    "block_num": 18736880,
     "address": "0x01c18633A202C5f0c99849fc1da01615539Bc45f",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xc770ec07": {
             "0x1f34": [
                 [

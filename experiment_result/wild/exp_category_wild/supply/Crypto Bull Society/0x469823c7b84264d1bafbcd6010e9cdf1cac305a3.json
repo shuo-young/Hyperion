@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Bull Society",
     "total_func": 39,
     "analyzed_func": 10,
-    "block_num": 18640852,
+    "block_num": 18723948,
     "address": "0x469823c7b84264d1bafbcd6010e9cdf1cac305a3",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Money Tree",
     "total_func": 29,
     "analyzed_func": 3,
-    "block_num": 11341211,
+    "block_num": 11495346,
     "address": "0x6e4c614da85DD861e08f84706742239dBA892Df1",
     "platform": "Cronos",
     "reward": {
@@ -31,6 +31,17 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.02
+        ],
+        "0xeb96117e": {
+            "0x2229": [
+                [
+                    "Concat(0, Extract(167, 8, Ia_store-11-))",
+                    "bvudiv_i(Ia_store-some_var_1-*Iv, 100)"
+                ]
+            ]
+        },
         "0xdb663865": {
             "0x19f0": [
                 [
@@ -56,14 +67,6 @@
                 [
                     "Concat(0, Extract(167, 8, Ia_store-11-))",
                     "bvudiv_i(Ia_store-1 + some_var_11-*\n         bvudiv_i(IH_b*Ia_store-2-,\n                  Ia_store-3- +\n                  bvudiv_i(Ia_store-2-*Ia_store-9- +\n                           Ia_store-3-*\n                           (Ia_store-some_var_1- +\n                            Ia_store-1-*Ia_store-some_var_8-),\n                           Ia_store-some_var_1- +\n                           Ia_store-1-*Ia_store-some_var_8-)),\n         100)"
-                ]
-            ]
-        },
-        "0xeb96117e": {
-            "0x2229": [
-                [
-                    "Concat(0, Extract(167, 8, Ia_store-11-))",
-                    "bvudiv_i(Ia_store-some_var_1-*Iv, 100)"
                 ]
             ]
         }

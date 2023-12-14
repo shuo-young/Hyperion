@@ -2,7 +2,7 @@
     "dapp_name": "MUSystem",
     "total_func": 9,
     "analyzed_func": 2,
-    "block_num": 18660843,
+    "block_num": 18733611,
     "address": "0xcf5dfe6e2fa63af41e9c01df75e79d3fda69b5f3",
     "platform": "ETH",
     "reward": {
@@ -22,7 +22,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

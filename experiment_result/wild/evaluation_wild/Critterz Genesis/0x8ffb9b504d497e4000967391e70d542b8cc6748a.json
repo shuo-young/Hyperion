@@ -2,7 +2,7 @@
     "dapp_name": "Critterz Genesis",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18641740,
+    "block_num": 18724253,
     "address": "0x8ffb9b504d497e4000967391e70d542b8cc6748a",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

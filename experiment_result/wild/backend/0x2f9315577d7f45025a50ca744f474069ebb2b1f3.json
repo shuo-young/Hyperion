@@ -2,7 +2,7 @@
     "dapp_name": "ToTheSmart",
     "total_func": 34,
     "analyzed_func": 2,
-    "block_num": 33853199,
+    "block_num": 34144203,
     "address": "0x2f9315577d7f45025a50ca744f474069ebb2b1f3",
     "platform": "BSC",
     "reward": {
@@ -19,6 +19,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x364a54c8": {
             "0x12deS0x3d2": [
                 [

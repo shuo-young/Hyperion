@@ -2,7 +2,7 @@
     "dapp_name": "CryptantCrab",
     "total_func": 39,
     "analyzed_func": 2,
-    "block_num": 18672272,
+    "block_num": 18735807,
     "address": "0xff03b16fa94b20b35c19b802f3abb83fc8845f70",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

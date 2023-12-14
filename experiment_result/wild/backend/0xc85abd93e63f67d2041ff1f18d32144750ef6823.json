@@ -2,7 +2,7 @@
     "dapp_name": "PancakeFork Finance",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 33818240,
+    "block_num": 34126726,
     "address": "0xc85abd93e63f67d2041ff1f18d32144750ef6823",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

@@ -2,7 +2,7 @@
     "dapp_name": "MutantCats",
     "total_func": 29,
     "analyzed_func": 4,
-    "block_num": 18640829,
+    "block_num": 18723932,
     "address": "0xaadba140ae5e4c8a9ef0cc86ea3124b446e3e46a",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

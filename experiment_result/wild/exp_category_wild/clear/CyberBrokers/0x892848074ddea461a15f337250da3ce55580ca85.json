@@ -2,7 +2,7 @@
     "dapp_name": "CyberBrokers",
     "total_func": 34,
     "analyzed_func": 4,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x892848074ddea461a15f337250da3ce55580ca85",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

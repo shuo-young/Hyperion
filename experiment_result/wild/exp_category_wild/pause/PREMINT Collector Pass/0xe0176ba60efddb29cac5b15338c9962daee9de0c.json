@@ -2,7 +2,7 @@
     "dapp_name": "PREMINT Collector Pass",
     "total_func": 43,
     "analyzed_func": 4,
-    "block_num": 18641039,
+    "block_num": 18724000,
     "address": "0xe0176ba60efddb29cac5b15338c9962daee9de0c",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x9f93f779": {
             "0x2569": [
                 [
@@ -53,7 +54,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

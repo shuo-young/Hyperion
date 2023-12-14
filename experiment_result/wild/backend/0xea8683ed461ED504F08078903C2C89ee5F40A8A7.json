@@ -2,7 +2,7 @@
     "dapp_name": "BakerySwap",
     "total_func": 35,
     "analyzed_func": 7,
-    "block_num": 33789824,
+    "block_num": 34112022,
     "address": "0xea8683ed461ED504F08078903C2C89ee5F40A8A7",
     "platform": "BSC",
     "reward": {
@@ -19,7 +19,18 @@
     "fee": {
         "warning": true,
         "modifiable": true,
+        "rate": [
+            0.05
+        ],
         "0xc0838afd": {
+            "0x3c44S0x378dS0x3125": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_6-))",
+                    "Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5-*\n         Ia_store-4-,\n         100)"
+                ]
+            ]
+        },
+        "0x2d296bf1": {
             "0x3c44S0x378dS0x3125": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-some_var_6-))",
@@ -38,14 +49,6 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-3-))",
                     "bvudiv_i(Ia_store-4-*mem_32 + mem_64, 100)"
-                ]
-            ]
-        },
-        "0x2d296bf1": {
-            "0x3c44S0x378dS0x3125": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_6-))",
-                    "Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5-*\n         Ia_store-4-,\n         100)"
                 ]
             ]
         }

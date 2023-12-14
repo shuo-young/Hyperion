@@ -2,7 +2,7 @@
     "dapp_name": "ProofOfApes",
     "total_func": 42,
     "analyzed_func": 2,
-    "block_num": 33853057,
+    "block_num": 34144173,
     "address": "0x8e01e6f31debd7035ece01584c059da806a0e67d",
     "platform": "BSC",
     "reward": {
@@ -32,6 +32,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

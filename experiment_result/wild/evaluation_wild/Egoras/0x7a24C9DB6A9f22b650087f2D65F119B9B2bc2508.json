@@ -2,7 +2,7 @@
     "dapp_name": "Egoras",
     "total_func": 23,
     "analyzed_func": 9,
-    "block_num": 18670843,
+    "block_num": 18735156,
     "address": "0x7a24C9DB6A9f22b650087f2D65F119B9B2bc2508",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x26c4e60d": {
             "0x10d1": [
                 [
@@ -81,7 +82,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

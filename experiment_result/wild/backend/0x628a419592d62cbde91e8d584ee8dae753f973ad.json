@@ -2,7 +2,7 @@
     "dapp_name": "Spud3D",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18662035,
+    "block_num": 18734210,
     "address": "0x628a419592d62cbde91e8d584ee8dae753f973ad",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

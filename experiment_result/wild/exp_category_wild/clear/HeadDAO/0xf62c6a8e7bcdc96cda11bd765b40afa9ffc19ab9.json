@@ -2,7 +2,7 @@
     "dapp_name": "HeadDAO",
     "total_func": 44,
     "analyzed_func": 8,
-    "block_num": 18641413,
+    "block_num": 18724172,
     "address": "0xf62c6a8e7bcdc96cda11bd765b40afa9ffc19ab9",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.8
+        ],
         "0x3ccfd60b": {
             "0xedbS0x45b": [
                 [

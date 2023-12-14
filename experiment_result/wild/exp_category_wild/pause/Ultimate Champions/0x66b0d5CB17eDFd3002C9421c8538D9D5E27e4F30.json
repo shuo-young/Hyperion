@@ -2,7 +2,7 @@
     "dapp_name": "Ultimate Champions",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18643263,
+    "block_num": 18724890,
     "address": "0x66b0d5CB17eDFd3002C9421c8538D9D5E27e4F30",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x86d1a69f": {
             "0x2088S0x1b2fS0xcebS0x505": [
                 [
@@ -65,7 +66,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

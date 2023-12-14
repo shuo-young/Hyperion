@@ -2,7 +2,7 @@
     "dapp_name": "SecondLive",
     "total_func": 3,
     "analyzed_func": 1,
-    "block_num": 33778993,
+    "block_num": 34107281,
     "address": "0xca5192DD168fB3D7040A917a44aafa52A4dB3aE0",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

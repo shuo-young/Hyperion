@@ -2,7 +2,7 @@
     "dapp_name": "12HourTrains",
     "total_func": 15,
     "analyzed_func": 4,
-    "block_num": 18660475,
+    "block_num": 18733440,
     "address": "0xf00e5a59fde1cb2ead96a8be7711abc3f981e0f1",
     "platform": "ETH",
     "reward": {
@@ -39,6 +39,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xf088d547": {
             "0x3f8": [
                 [

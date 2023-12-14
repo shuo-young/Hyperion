@@ -2,7 +2,7 @@
     "dapp_name": "10KTF Stockroom",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18641211,
+    "block_num": 18724063,
     "address": "0x7daec605e9e2a1717326eedfd660601e2753a057",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Fang Gang",
     "total_func": 42,
     "analyzed_func": 7,
-    "block_num": 18641828,
+    "block_num": 18724297,
     "address": "0x9d418c2cae665d877f909a725402ebd3a0742844",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xfd2b0492": {
             "0x23d8S0x955": [
                 [
@@ -77,7 +78,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

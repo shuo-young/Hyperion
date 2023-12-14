@@ -1,1 +1,0 @@
-You need to bind a wallet address to continue this operationMetaMaskBinding using MetaMaskBindWallet ConnectBinding using Wallet ConenctBind

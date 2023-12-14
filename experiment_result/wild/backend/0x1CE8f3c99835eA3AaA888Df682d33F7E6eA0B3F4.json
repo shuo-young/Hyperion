@@ -2,7 +2,7 @@
     "dapp_name": "Cougar Exchange",
     "total_func": 10,
     "analyzed_func": 0,
-    "block_num": 11308243,
+    "block_num": 11478648,
     "address": "0x1CE8f3c99835eA3AaA888Df682d33F7E6eA0B3F4",
     "platform": "Cronos",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

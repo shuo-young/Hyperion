@@ -2,7 +2,7 @@
     "dapp_name": "HODL Earth",
     "total_func": 39,
     "analyzed_func": 4,
-    "block_num": 18671343,
+    "block_num": 18735446,
     "address": "0x8a8ec4cedf933dc983724c235fd4f4754ffbe6fc",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

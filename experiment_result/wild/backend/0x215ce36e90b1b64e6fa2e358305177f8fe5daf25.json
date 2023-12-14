@@ -2,7 +2,7 @@
     "dapp_name": "333ETH",
     "total_func": 26,
     "analyzed_func": 3,
-    "block_num": 18660487,
+    "block_num": 18733452,
     "address": "0x215ce36e90b1b64e6fa2e358305177f8fe5daf25",
     "platform": "ETH",
     "reward": {
@@ -19,7 +19,11 @@
     "fee": {
         "warning": true,
         "modifiable": false,
-        "0x00000000": {
+        "rate": [
+            0.075,
+            0.05
+        ],
+        "0xd82fa3f1": {
             "0x9a8": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-12-))",
@@ -33,7 +37,7 @@
                 ]
             ]
         },
-        "0xd82fa3f1": {
+        "0x00000000": {
             "0x9a8": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-12-))",

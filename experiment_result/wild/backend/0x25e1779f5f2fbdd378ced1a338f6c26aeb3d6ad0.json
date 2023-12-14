@@ -2,7 +2,7 @@
     "dapp_name": "Spider Farm",
     "total_func": 33,
     "analyzed_func": 3,
-    "block_num": 18661137,
+    "block_num": 18733752,
     "address": "0x25e1779f5f2fbdd378ced1a338f6c26aeb3d6ad0",
     "platform": "ETH",
     "reward": {
@@ -23,6 +23,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.02,
+            0.03
+        ],
         "0x3955f0fe": {
             "0xc9fS0x358": [
                 [

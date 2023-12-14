@@ -1,0 +1,34 @@
+{
+    "dapp_name": "TukTuk Finance",
+    "total_func": 31,
+    "analyzed_func": 4,
+    "block_num": 34137304,
+    "address": "0x9ff59343525088385D13adC5d796DFD5000FFa60",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "0xe2bbb158": {
+            "0x28c4S0x27e9S0x2722S0x2432": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-7-))",
+                    "bvudiv_i(Id_2*\n         Concat(0,\n                Extract(15,\n                        0,\n                        Ia_store-4 + 5*Id_1 + some_var_1-)),\n         10000)"
+                ]
+            ]
+        }
+    },
+    "supply": {
+        "amount": [],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

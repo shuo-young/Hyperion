@@ -2,23 +2,11 @@
     "dapp_name": "Mushrooms Finance",
     "total_func": 41,
     "analyzed_func": 7,
-    "block_num": 18652268,
+    "block_num": 18729135,
     "address": "0x23B197dc671A55F256199cF7e8Bee77Ea2bDC16D",
     "platform": "ETH",
     "reward": {
         "warning": true,
-        "0x2e1a7d4d": {
-            "0x4382S0x426bS0x40b1S0x3457B0x16170x50d": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-3-)"
-                ],
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "bvudiv_i(0, Ia_store-3-)"
-                ]
-            ]
-        },
         "0x853828b6": {
             "0x4382S0x426bS0x40b1S0x3457B0x16170x1b84B0x765": [
                 [
@@ -30,11 +18,26 @@
                     "bvudiv_i(0, Ia_store-3-)"
                 ]
             ]
+        },
+        "0x2e1a7d4d": {
+            "0x4382S0x426bS0x40b1S0x3457B0x16170x50d": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(2*Id_1*mem_mem_64, Ia_store-3-)"
+                ],
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "bvudiv_i(0, Ia_store-3-)"
+                ]
+            ]
         }
     },
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.95
+        ],
         "0xd389800f": {
             "0x4382S0x426bS0x40b1S0x3457B0x27f9": [
                 [

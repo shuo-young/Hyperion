@@ -2,11 +2,19 @@
     "dapp_name": "Proof of Long HODL",
     "total_func": 18,
     "analyzed_func": 2,
-    "block_num": 18661069,
+    "block_num": 18733710,
     "address": "0x425e9ec3181d9ddfbfc417f1b9b55dbbd78c3a05",
     "platform": "ETH",
     "reward": {
         "warning": false,
+        "0x2e1a7d4d": {
+            "0x80c": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(29*Id_1, 100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_1, 25)"
+                ]
+            ]
+        },
         "0x4e71d92d": {
             "0x89a": [
                 [
@@ -19,19 +27,12 @@
                 ]
             ]
         },
-        "0x2e1a7d4d": {
-            "0x80c": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "Id_1 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(29*Id_1, 100) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Id_1, 25)"
-                ]
-            ]
-        },
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x2e1a7d4d": {
             "0x5b4": [
                 [
@@ -82,7 +83,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

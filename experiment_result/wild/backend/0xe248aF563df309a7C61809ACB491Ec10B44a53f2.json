@@ -2,15 +2,16 @@
     "dapp_name": "Gene A.I.dols",
     "total_func": 27,
     "analyzed_func": 2,
-    "block_num": 18673693,
+    "block_num": 18736318,
     "address": "0xe248aF563df309a7C61809ACB491Ec10B44a53f2",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x00000000": {
             "0x3d6": [
                 [

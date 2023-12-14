@@ -2,7 +2,7 @@
     "dapp_name": "Rare Apepes",
     "total_func": 37,
     "analyzed_func": 5,
-    "block_num": 18641826,
+    "block_num": 18724294,
     "address": "0x31d45de84fde2fb36575085e05754a4932dd5170",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

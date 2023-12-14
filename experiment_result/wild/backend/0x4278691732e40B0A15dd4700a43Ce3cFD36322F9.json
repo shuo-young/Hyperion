@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Oceanus",
+    "total_func": 38,
+    "analyzed_func": 1,
+    "block_num": 34146277,
+    "address": "0x4278691732e40B0A15dd4700a43Ce3cFD36322F9",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            1000000000000000000000000
+        ],
+        "unlimited": false
+    },
+    "lock": true,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

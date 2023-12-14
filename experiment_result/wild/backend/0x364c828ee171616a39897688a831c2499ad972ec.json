@@ -2,7 +2,7 @@
     "dapp_name": "Sappy Seals",
     "total_func": 42,
     "analyzed_func": 4,
-    "block_num": 18640801,
+    "block_num": 18723927,
     "address": "0x364c828ee171616a39897688a831c2499ad972ec",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

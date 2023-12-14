@@ -2,7 +2,7 @@
     "dapp_name": "ZED RUN",
     "total_func": 6,
     "analyzed_func": 0,
-    "block_num": 18674639,
+    "block_num": 18736914,
     "address": "0xff488fd296c38a24cccc60b43dd7254810dab64e",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "Poly Miner",
     "total_func": 30,
     "analyzed_func": 2,
-    "block_num": 50451861,
+    "block_num": 50851554,
     "address": "0x220b4561e89c5220Ac7a6Aa14DCdb35F21f1e705",
     "platform": "Polygon",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1
+        ],
         "0x581c5ae6": {
             "0xb94S0x3c9": [
                 [

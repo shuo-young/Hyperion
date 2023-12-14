@@ -2,7 +2,7 @@
     "dapp_name": "HYPERION",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 33855405,
+    "block_num": 34145420,
     "address": "0xcB368FDb5264a6c2baE1b270EC6A3Ad3029C64C7",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

@@ -2,7 +2,7 @@
     "dapp_name": "AllMiners.net",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 33855048,
+    "block_num": 34145100,
     "address": "0x70293Ad2C9FfE606f2454DbA2CDd06DEa0BB4c46",
     "platform": "BSC",
     "reward": {
@@ -31,6 +31,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1
+        ],
         "0x450edf95": {
             "0x1711S0x3d3": [
                 [

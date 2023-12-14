@@ -2,7 +2,7 @@
     "dapp_name": "MoonCatRescue",
     "total_func": 46,
     "analyzed_func": 5,
-    "block_num": 18640731,
+    "block_num": 18723926,
     "address": "0xc3f733ca98E0daD0386979Eb96fb1722A1A05E69",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            19769
+            19773
         ],
         "unlimited": false
     },

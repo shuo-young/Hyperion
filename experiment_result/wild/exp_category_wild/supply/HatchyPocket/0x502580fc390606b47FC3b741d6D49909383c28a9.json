@@ -2,7 +2,7 @@
     "dapp_name": "HatchyPocket",
     "total_func": 14,
     "analyzed_func": 2,
-    "block_num": 38293232,
+    "block_num": 38729418,
     "address": "0x502580fc390606b47FC3b741d6D49909383c28a9",
     "platform": "Avalanche",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

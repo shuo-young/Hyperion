@@ -2,7 +2,7 @@
     "dapp_name": "Canary Exchange",
     "total_func": 25,
     "analyzed_func": 17,
-    "block_num": 38212857,
+    "block_num": 38688885,
     "address": "0x06f8ED60393AC6A4B16900273C9313222dfe9940",
     "platform": "Avalanche",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,16 +20,16 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x9fc27226": {
-            "0x351e0x17cbS0x2341": [
+        "0x73bc79cf": {
+            "0x351e0x672": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"
                 ]
             ]
         },
-        "0x73bc79cf": {
-            "0x351e0x672": [
+        "0x9fc27226": {
+            "0x351e0x17cbS0x2341": [
                 [
                     "Concat(0, Extract(159, 0, Id_5))",
                     "mem_mem_64"

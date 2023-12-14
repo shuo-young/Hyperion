@@ -2,7 +2,7 @@
     "dapp_name": "apexONE",
     "total_func": 29,
     "analyzed_func": 3,
-    "block_num": 18661728,
+    "block_num": 18734078,
     "address": "0x85e4cd785887cad7c6be93f2f34d5fa683f9bfcd",
     "platform": "ETH",
     "reward": {
@@ -21,8 +21,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xae77c237": {
             "0xf70": [
                 [

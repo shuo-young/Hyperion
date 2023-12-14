@@ -2,7 +2,7 @@
     "dapp_name": "ONESWAP",
     "total_func": 16,
     "analyzed_func": 0,
-    "block_num": 18671585,
+    "block_num": 18735527,
     "address": "0x5eD3C9089Ed0355bc77CF439Dc2eD28c4054C8c4",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

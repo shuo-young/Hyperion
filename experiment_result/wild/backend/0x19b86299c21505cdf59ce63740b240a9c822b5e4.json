@@ -2,7 +2,7 @@
     "dapp_name": "DEGEN TOONZ COLLECTION",
     "total_func": 42,
     "analyzed_func": 4,
-    "block_num": 18640854,
+    "block_num": 18723949,
     "address": "0x19b86299c21505cdf59ce63740b240a9c822b5e4",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

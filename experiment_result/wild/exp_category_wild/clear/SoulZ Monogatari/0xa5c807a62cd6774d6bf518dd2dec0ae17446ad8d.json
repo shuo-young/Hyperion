@@ -2,7 +2,7 @@
     "dapp_name": "SoulZ Monogatari",
     "total_func": 50,
     "analyzed_func": 7,
-    "block_num": 18641884,
+    "block_num": 18724330,
     "address": "0xa5c807a62cd6774d6bf518dd2dec0ae17446ad8d",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

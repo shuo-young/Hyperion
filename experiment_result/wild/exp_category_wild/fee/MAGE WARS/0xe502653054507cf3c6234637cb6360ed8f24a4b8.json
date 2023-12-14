@@ -2,7 +2,7 @@
     "dapp_name": "MAGE WARS",
     "total_func": 22,
     "analyzed_func": 2,
-    "block_num": 33775466,
+    "block_num": 34106029,
     "address": "0xe502653054507cf3c6234637cb6360ed8f24a4b8",
     "platform": "BSC",
     "reward": {
@@ -20,6 +20,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0xfe53bd09": {
             "0x1bed": [
                 [

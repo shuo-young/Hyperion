@@ -2,15 +2,24 @@
     "dapp_name": "Planet IX",
     "total_func": 11,
     "analyzed_func": 4,
-    "block_num": 50341329,
+    "block_num": 50795996,
     "address": "0x206B83FC7FD1250FC30A6A1e51E13277843cDA79",
     "platform": "Polygon",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
+        "0x379607f5": {
+            "0xfb9S0xe650xdd3S0xe30": [
+                [
+                    "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
+                    "bvudiv_i(604800*\n         Ia_store-3 + some_var_1-*\n         bvudiv_i(Concat(0,\n                         Extract(63, 0, IH_s) +\n                         18446744073709551615*\n                         Extract(63,\n                                 0,\n                                 Ia_store-1 + some_var_1-)),\n                  604800),\n         Concat(0, Extract(223, 160, Ia_store-some_var_1-))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-4 + some_var_1-"
+                ]
+            ]
+        },
         "0x486cb0a6": {
             "0xfb9S0xe650xdd3S0xe30": [
                 [
@@ -24,14 +33,6 @@
                 [
                     "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
                     "bvudiv_i(604800*\n         Ia_store-3 + some_var_4-*\n         bvudiv_i(Concat(0,\n                         Extract(63, 0, IH_s) +\n                         18446744073709551615*\n                         Extract(63,\n                                 0,\n                                 Ia_store-1 + some_var_4-)),\n                  604800),\n         Concat(0, Extract(223, 160, Ia_store-some_var_4-))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-4 + some_var_4-"
-                ]
-            ]
-        },
-        "0x379607f5": {
-            "0xfb9S0xe650xdd3S0xe30": [
-                [
-                    "0xe06bd4f5aac8d0aa337d13ec88db6defc6eaeefe",
-                    "bvudiv_i(604800*\n         Ia_store-3 + some_var_1-*\n         bvudiv_i(Concat(0,\n                         Extract(63, 0, IH_s) +\n                         18446744073709551615*\n                         Extract(63,\n                                 0,\n                                 Ia_store-1 + some_var_1-)),\n                  604800),\n         Concat(0, Extract(223, 160, Ia_store-some_var_1-))) +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nIa_store-4 + some_var_1-"
                 ]
             ]
         }

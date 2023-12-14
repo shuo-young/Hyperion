@@ -2,7 +2,7 @@
     "dapp_name": "VOX Collectibles: Mirandus",
     "total_func": 37,
     "analyzed_func": 8,
-    "block_num": 18641220,
+    "block_num": 18724077,
     "address": "0xf76179bb0924ba7da8e7b7fc2779495d7a7939d8",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            8474
+            8475
         ],
         "unlimited": false
     },

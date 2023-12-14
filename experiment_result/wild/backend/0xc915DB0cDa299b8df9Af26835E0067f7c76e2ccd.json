@@ -2,7 +2,7 @@
     "dapp_name": "3DMoon",
     "total_func": 26,
     "analyzed_func": 7,
-    "block_num": 33854852,
+    "block_num": 34145034,
     "address": "0xc915DB0cDa299b8df9Af26835E0067f7c76e2ccd",
     "platform": "BSC",
     "reward": {
@@ -42,7 +42,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

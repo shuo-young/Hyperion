@@ -2,7 +2,7 @@
     "dapp_name": "Contract Servant",
     "total_func": 73,
     "analyzed_func": 8,
-    "block_num": 18672225,
+    "block_num": 18735777,
     "address": "0xF915bbFBB6C097DC327e64eEc55E9eF4D110d627",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

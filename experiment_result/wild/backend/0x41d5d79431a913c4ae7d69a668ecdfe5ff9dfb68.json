@@ -2,7 +2,7 @@
     "dapp_name": "Inverse finance",
     "total_func": 34,
     "analyzed_func": 2,
-    "block_num": 18651499,
+    "block_num": 18728892,
     "address": "0x41d5d79431a913c4ae7d69a668ecdfe5ff9dfb68",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

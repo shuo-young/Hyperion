@@ -2,7 +2,7 @@
     "dapp_name": "goblintownNFT",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x8c6def540b83471664edc6d5cf75883986932674",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

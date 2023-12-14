@@ -2,7 +2,7 @@
     "dapp_name": "Women and Weapons",
     "total_func": 52,
     "analyzed_func": 6,
-    "block_num": 18641918,
+    "block_num": 18724336,
     "address": "0x338866f8ba75bb9d7a00502e11b099a2636c2c18",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": true,
+        "rate": [],
         "0x3ccfd60b": {
             "0x185fS0x542": [
                 [
@@ -65,7 +66,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": true,

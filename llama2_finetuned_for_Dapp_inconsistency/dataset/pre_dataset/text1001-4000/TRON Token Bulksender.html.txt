@@ -1,1 +1,0 @@
- 会员 教程 测试币 ERC20 ↗ 中文 EN 欢迎来到 TRON BulkSender 该Dapp支持 波场主网 Shasta测试网 准备 授信 发送 代币 如果未能在列表中找到要发送的代币，请手动插入代币合约地址或代币ID 位数 收款地址和数量 手动输入 将文件拖到此处或 点击上传 支持文件类型： CSV / Excel / Txt 查看例子 Excel CSV Txt 下一步 

@@ -2,7 +2,7 @@
     "dapp_name": "Crypto.Chicks",
     "total_func": 48,
     "analyzed_func": 7,
-    "block_num": 18641196,
+    "block_num": 18724062,
     "address": "0x1981cc36b59cffdd24b01cc5d698daa75e367e04",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

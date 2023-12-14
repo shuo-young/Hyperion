@@ -2,7 +2,7 @@
     "dapp_name": "UnagiSwap Finance",
     "total_func": 42,
     "analyzed_func": 1,
-    "block_num": 33855763,
+    "block_num": 34145588,
     "address": "0x8f20eBD7Cdb3eFdb51D58D582a21e1A0b41F4436",
     "platform": "BSC",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

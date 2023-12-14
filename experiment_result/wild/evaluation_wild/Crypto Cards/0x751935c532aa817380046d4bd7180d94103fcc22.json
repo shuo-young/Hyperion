@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Cards",
     "total_func": 30,
     "analyzed_func": 2,
-    "block_num": 18660509,
+    "block_num": 18733472,
     "address": "0x751935c532aa817380046d4bd7180d94103fcc22",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x7deb6025": {
             "0xa76": [
                 [
@@ -49,7 +50,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

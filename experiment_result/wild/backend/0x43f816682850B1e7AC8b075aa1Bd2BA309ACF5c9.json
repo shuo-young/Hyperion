@@ -2,7 +2,7 @@
     "dapp_name": "TokenField",
     "total_func": 46,
     "analyzed_func": 3,
-    "block_num": 18671994,
+    "block_num": 18735668,
     "address": "0x43f816682850B1e7AC8b075aa1Bd2BA309ACF5c9",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

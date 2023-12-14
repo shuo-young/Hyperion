@@ -2,7 +2,7 @@
     "dapp_name": "Keld\u807d blockchain Split Game",
     "total_func": 27,
     "analyzed_func": 5,
-    "block_num": 50451512,
+    "block_num": 50851339,
     "address": "0xC5Fc052244e7128087F2D4E797e5c6d617087e7d",
     "platform": "Polygon",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

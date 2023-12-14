@@ -2,7 +2,7 @@
     "dapp_name": "BakerySwap",
     "total_func": 34,
     "analyzed_func": 7,
-    "block_num": 33789104,
+    "block_num": 34111455,
     "address": "0x437bf818Ae0b62C0E1Ad823877e2e5C25d07682B",
     "platform": "BSC",
     "reward": {
@@ -19,20 +19,9 @@
     "fee": {
         "warning": true,
         "modifiable": true,
-        "0xab87d98f": {
-            "0x209e": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-some_var_2-))",
-                    "mem_32 + mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-4-*mem_32 + mem_64, 100)"
-                ]
-            ],
-            "0x1ffe": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-3-))",
-                    "bvudiv_i(Ia_store-4-*mem_32 + mem_64, 100)"
-                ]
-            ]
-        },
+        "rate": [
+            0.05
+        ],
         "0xc0838afd": {
             "0x3beeS0x3737S0x30cf": [
                 [
@@ -46,6 +35,20 @@
                 [
                     "Concat(0, Extract(159, 0, Ia_store-some_var_6-))",
                     "Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5- +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-115792089237316195423570985008687907853269984665640564039457584007913129639935 +\n2*Ia_store-some_var_1- +\nsome_var_5-*\n         Ia_store-4-,\n         100)"
+                ]
+            ]
+        },
+        "0xab87d98f": {
+            "0x209e": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-some_var_2-))",
+                    "mem_32 + mem_64 +\n115792089237316195423570985008687907853269984665640564039457584007913129639935*\nbvudiv_i(Ia_store-4-*mem_32 + mem_64, 100)"
+                ]
+            ],
+            "0x1ffe": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-3-))",
+                    "bvudiv_i(Ia_store-4-*mem_32 + mem_64, 100)"
                 ]
             ]
         }

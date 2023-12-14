@@ -2,7 +2,7 @@
     "dapp_name": "My Shiba Inu",
     "total_func": 34,
     "analyzed_func": 1,
-    "block_num": 33853045,
+    "block_num": 34144168,
     "address": "0xEDd822B00c48D8A1C416ee17507bEFC2ad71d8c4",
     "platform": "BSC",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

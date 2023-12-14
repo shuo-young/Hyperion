@@ -2,7 +2,7 @@
     "dapp_name": "Emblem Vault",
     "total_func": 29,
     "analyzed_func": 2,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x82C7a8f707110f5FBb16184A5933E9F78a34c6ab",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -20,7 +21,7 @@
     },
     "supply": {
         "amount": [
-            44674
+            44543
         ],
         "unlimited": true,
         "ui": [

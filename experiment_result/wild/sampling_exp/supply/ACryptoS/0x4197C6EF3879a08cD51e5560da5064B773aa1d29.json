@@ -1,0 +1,69 @@
+{
+    "dapp_name": "ACryptoS",
+    "total_func": 16,
+    "analyzed_func": 1,
+    "block_num": 34141555,
+    "address": "0x4197C6EF3879a08cD51e5560da5064B773aa1d29",
+    "platform": "BSC",
+    "reward": {
+        "warning": false,
+        "ui": {
+            "provider rewards": 0.5
+        }
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": true,
+            "fee_values": [
+                0.1,
+                0.05,
+                0.005
+            ],
+            "fees": {
+                "withdrawal": 0.1
+            }
+        }
+    },
+    "supply": {
+        "amount": [
+            1671358888463518503689625
+        ],
+        "unlimited": true,
+        "ui": [
+            1888888
+        ]
+    },
+    "lock": {
+        "backend": false,
+        "ui": [
+            [
+                "90 days",
+                "90 days"
+            ]
+        ]
+    },
+    "clear": {
+        "warning": false,
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": false,
+        "pause": false,
+        "metadata": false
+    }
+}

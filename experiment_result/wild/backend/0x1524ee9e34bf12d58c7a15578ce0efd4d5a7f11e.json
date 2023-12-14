@@ -2,7 +2,7 @@
     "dapp_name": "ETHimals - Your Blockchain Pet!",
     "total_func": 23,
     "analyzed_func": 3,
-    "block_num": 18670907,
+    "block_num": 18735188,
     "address": "0x1524ee9e34bf12d58c7a15578ce0efd4d5a7f11e",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

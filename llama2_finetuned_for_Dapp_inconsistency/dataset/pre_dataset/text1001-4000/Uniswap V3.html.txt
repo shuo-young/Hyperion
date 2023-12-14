@@ -1,1 +1,0 @@
-You need to enable JavaScript to run this app.兑换代币NFTs流动池//连接  在 Uniswap 钱包中交换 BASE了解更多兑换买你付钱ETH你收到选择代币连接钱包Uniswap可用：English兑换代币NFTs流动池Connect a walletUniswap WalletInstall MetaMaskWalletConnectCoinbase Wallet连接钱包即表示您同意 Uniswap Labs' 服务条款 并同意其 隐私政策。 (最近更新时间 6.7.23)仅精确输入所选输出代币的费用不允许准确的输出。请改用“您付款”字段。此网络上的最新区块编号。兑换率会每区块都更新。

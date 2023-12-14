@@ -2,7 +2,7 @@
     "dapp_name": "Genopets",
     "total_func": 19,
     "analyzed_func": 2,
-    "block_num": 33776354,
+    "block_num": 34106419,
     "address": "0x9df465460938f9ebdf51c38cc87d72184471f8f0",
     "platform": "BSC",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            200399083736995812312050
+            206107306530524036033579
         ],
         "unlimited": true
     },

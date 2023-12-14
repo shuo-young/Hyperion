@@ -2,7 +2,7 @@
     "dapp_name": "Liquid Driver",
     "total_func": 28,
     "analyzed_func": 2,
-    "block_num": 71437498,
+    "block_num": 72074608,
     "address": "0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9",
     "platform": "Fantom",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

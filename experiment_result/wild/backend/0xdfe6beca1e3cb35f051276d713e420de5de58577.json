@@ -2,7 +2,7 @@
     "dapp_name": "Crypto Ninja",
     "total_func": 53,
     "analyzed_func": 2,
-    "block_num": 18670612,
+    "block_num": 18735023,
     "address": "0xdfe6beca1e3cb35f051276d713e420de5de58577",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

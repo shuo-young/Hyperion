@@ -2,7 +2,7 @@
     "dapp_name": "SmartInu",
     "total_func": 4,
     "analyzed_func": 0,
-    "block_num": 33857150,
+    "block_num": 34146418,
     "address": "0xdb9ad4ada9e5d680c7351516924cdde38663f217",
     "platform": "BSC",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

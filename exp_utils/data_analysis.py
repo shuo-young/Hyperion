@@ -28,7 +28,7 @@ def count_inconsistencies(folder_path):
 
 
 # 示例用法
-folder_path = "/pro/yangshuo/Hyperion/hyperion/evaluation_wild_all"
+folder_path = "evaluation_wild_1205"
 true_key_counts, total_dapps_with_true = count_inconsistencies(folder_path)
 
 print("DApp counts by number of true keys:", true_key_counts)

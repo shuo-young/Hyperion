@@ -2,15 +2,16 @@
     "dapp_name": "Doges On Trial",
     "total_func": 22,
     "analyzed_func": 4,
-    "block_num": 18670817,
+    "block_num": 18735148,
     "address": "0xb7faddf3ecd2402a7e48cea6d2637d90eeb5a7e6",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x311a6c56": {
             "0x18d9S0x207": [
                 [

@@ -2,7 +2,7 @@
     "dapp_name": "Marble.Cards",
     "total_func": 36,
     "analyzed_func": 7,
-    "block_num": 18673776,
+    "block_num": 18736390,
     "address": "0x8888889213dd4da823ebdd1e235b09590633c150",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

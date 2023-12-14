@@ -2,7 +2,7 @@
     "dapp_name": "EveryDayROI",
     "total_func": 15,
     "analyzed_func": 3,
-    "block_num": 18660699,
+    "block_num": 18733559,
     "address": "0x0ba1050376b1f0d99f3ae564601be875cb10ed86",
     "platform": "ETH",
     "reward": {
@@ -28,8 +28,9 @@
         }
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x00000000": {
             "0x191": [
                 [
@@ -73,7 +74,7 @@
     },
     "inconsistency": {
         "reward": true,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

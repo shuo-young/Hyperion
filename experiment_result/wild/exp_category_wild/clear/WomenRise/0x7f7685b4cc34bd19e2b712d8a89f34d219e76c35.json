@@ -2,7 +2,7 @@
     "dapp_name": "WomenRise",
     "total_func": 35,
     "analyzed_func": 8,
-    "block_num": 18642044,
+    "block_num": 18724399,
     "address": "0x7f7685b4cc34bd19e2b712d8a89f34d219e76c35",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

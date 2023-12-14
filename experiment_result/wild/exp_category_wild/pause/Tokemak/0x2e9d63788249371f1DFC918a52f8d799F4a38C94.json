@@ -2,7 +2,7 @@
     "dapp_name": "Tokemak",
     "total_func": 18,
     "analyzed_func": 1,
-    "block_num": 18660310,
+    "block_num": 18733352,
     "address": "0x2e9d63788249371f1DFC918a52f8d799F4a38C94",
     "platform": "ETH",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

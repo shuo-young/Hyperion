@@ -2,7 +2,7 @@
     "dapp_name": "PieDAO",
     "total_func": 15,
     "analyzed_func": 0,
-    "block_num": 18671602,
+    "block_num": 18735538,
     "address": "0x9a607dd7Da5fdABf4f53f73a476D99F68172C36D",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

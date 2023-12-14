@@ -2,15 +2,16 @@
     "dapp_name": "Moonshots Farm",
     "total_func": 34,
     "analyzed_func": 4,
-    "block_num": 33852558,
+    "block_num": 34143923,
     "address": "0x67833cf5e213ae148fb037327585e2bc377ab34a",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0xa9e732bb": {
             "0x131a": [
                 [

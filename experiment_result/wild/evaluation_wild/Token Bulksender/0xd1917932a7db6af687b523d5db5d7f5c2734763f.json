@@ -2,7 +2,7 @@
     "dapp_name": "Token Bulksender",
     "total_func": 0,
     "analyzed_func": 0,
-    "block_num": 18662038,
+    "block_num": 18734211,
     "address": "0xd1917932a7db6af687b523d5db5d7f5c2734763f",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

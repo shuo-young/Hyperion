@@ -2,7 +2,7 @@
     "dapp_name": "BuyTheFloor NFT Exchange",
     "total_func": 15,
     "analyzed_func": 1,
-    "block_num": 18670403,
+    "block_num": 18734977,
     "address": "0x20eb324ab10fb83ebe90a3f5d863068faba10124",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.01
+        ],
         "0xcc3f33a1": {
             "0x142a": [
                 [

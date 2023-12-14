@@ -2,7 +2,7 @@
     "dapp_name": "PieDAO",
     "total_func": 20,
     "analyzed_func": 4,
-    "block_num": 18671636,
+    "block_num": 18735539,
     "address": "0x6cb4b8669e23295563d3b34df4a760c0cee993c7",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],
@@ -19,19 +20,19 @@
     "lock": false,
     "clear": {
         "warning": true,
-        "0x9528432b": {
-            "0x256aS0x61b": [
-                [
-                    "Concat(0, Extract(159, 0, Is))",
-                    "IH_b"
-                ]
-            ]
-        },
         "0xe560ce9c": {
             "0x2ac4": [
                 [
                     "Concat(0, Extract(159, 0, Is))",
                     "mem_mem_64"
+                ]
+            ]
+        },
+        "0x9528432b": {
+            "0x256aS0x61b": [
+                [
+                    "Concat(0, Extract(159, 0, Is))",
+                    "IH_b"
                 ]
             ]
         }

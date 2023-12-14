@@ -2,7 +2,7 @@
     "dapp_name": "SmartHash",
     "total_func": 9,
     "analyzed_func": 1,
-    "block_num": 18661118,
+    "block_num": 18733745,
     "address": "0xb10ea0d397db942a1083a4af9c6074ab63bc8c8b",
     "platform": "ETH",
     "reward": {
@@ -11,6 +11,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.1,
+            0.05
+        ],
         "0x00000000": {
             "0xfb": [
                 [

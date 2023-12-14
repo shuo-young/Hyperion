@@ -2,15 +2,16 @@
     "dapp_name": "Radiant",
     "total_func": 63,
     "analyzed_func": 6,
-    "block_num": 33847876,
+    "block_num": 34141534,
     "address": "0xf7DE7E8A6bd59ED41a4b5fe50278b3B7f31384dF",
     "platform": "BSC",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x695ef6bf": {
             "0x2b15S0x6f7": [
                 [
@@ -26,7 +27,7 @@
     },
     "supply": {
         "amount": [
-            88055203778232340000000000
+            89455929387936220000000000
         ],
         "unlimited": true
     },

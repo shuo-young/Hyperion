@@ -2,7 +2,7 @@
     "dapp_name": "PEACEFUL GROUPIES V2",
     "total_func": 46,
     "analyzed_func": 4,
-    "block_num": 18641108,
+    "block_num": 18724027,
     "address": "0x4f89Cd0CAE1e54D98db6a80150a824a533502EEa",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

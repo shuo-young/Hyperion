@@ -2,7 +2,7 @@
     "dapp_name": "Forest Knight",
     "total_func": 26,
     "analyzed_func": 5,
-    "block_num": 50336159,
+    "block_num": 50794260,
     "address": "0xff7bdbaed4fe92ced4e40845ab43575bde6d3488",
     "platform": "Polygon",
     "reward": {
@@ -19,11 +19,14 @@
     "fee": {
         "warning": true,
         "modifiable": true,
-        "0x7587b4df": {
-            "0x13b7S0x229": [
+        "rate": [
+            0.05
+        ],
+        "0x9703ef35": {
+            "0x1feb": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-5-))",
-                    "bvudiv_i(Ia_store-3-*mem_32 + mem_160 + mem_64, 1000)"
+                    "bvudiv_i(Ia_store-1 + some_var_3-*Ia_store-4-, 1000)"
                 ]
             ]
         },
@@ -35,19 +38,19 @@
                 ]
             ]
         },
-        "0x1dd92a66": {
-            "0x992S0x1b6": [
+        "0x7587b4df": {
+            "0x13b7S0x229": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-5-))",
                     "bvudiv_i(Ia_store-3-*mem_32 + mem_160 + mem_64, 1000)"
                 ]
             ]
         },
-        "0x9703ef35": {
-            "0x1feb": [
+        "0x1dd92a66": {
+            "0x992S0x1b6": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-5-))",
-                    "bvudiv_i(Ia_store-1 + some_var_3-*Ia_store-4-, 1000)"
+                    "bvudiv_i(Ia_store-3-*mem_32 + mem_160 + mem_64, 1000)"
                 ]
             ]
         }

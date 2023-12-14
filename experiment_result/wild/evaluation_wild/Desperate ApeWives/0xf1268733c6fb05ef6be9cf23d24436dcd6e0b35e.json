@@ -2,7 +2,7 @@
     "dapp_name": "Desperate ApeWives",
     "total_func": 52,
     "analyzed_func": 9,
-    "block_num": 18640945,
+    "block_num": 18723962,
     "address": "0xf1268733c6fb05ef6be9cf23d24436dcd6e0b35e",
     "platform": "ETH",
     "reward": {
@@ -10,8 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
+        "rate": [],
         "0x69d89575": {
             "0x2524": [
                 [
@@ -89,7 +90,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

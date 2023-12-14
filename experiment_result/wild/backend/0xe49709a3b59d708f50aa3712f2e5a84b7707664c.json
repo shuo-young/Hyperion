@@ -2,7 +2,7 @@
     "dapp_name": "Ebisu's Bay",
     "total_func": 77,
     "analyzed_func": 10,
-    "block_num": 11296143,
+    "block_num": 11473143,
     "address": "0xe49709a3b59d708f50aa3712f2e5a84b7707664c",
     "platform": "Cronos",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

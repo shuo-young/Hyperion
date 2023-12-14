@@ -2,7 +2,7 @@
     "dapp_name": "Arbi Chill Inu",
     "total_func": 54,
     "analyzed_func": 3,
-    "block_num": 154577059,
+    "block_num": 157757198,
     "address": "0x18654F7ccb90EcfCe0E808cC0b929cE627632AD3",
     "platform": "Arbitrum",
     "reward": {
@@ -14,6 +14,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": true,
             "fee_values": [

@@ -2,7 +2,7 @@
     "dapp_name": "BSC BNB Miner",
     "total_func": 23,
     "analyzed_func": 2,
-    "block_num": 33626390,
+    "block_num": 34143637,
     "address": "0x26850f82fbcCC015212f8a4A983b539b67738F46",
     "platform": "BSC",
     "reward": {
@@ -36,6 +36,9 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.05
+        ],
         "0x3955f0fe": {
             "0x909S0x2e0": [
                 [

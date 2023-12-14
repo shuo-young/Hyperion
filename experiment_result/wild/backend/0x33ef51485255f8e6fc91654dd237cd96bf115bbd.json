@@ -2,7 +2,7 @@
     "dapp_name": "Some Wei're",
     "total_func": 14,
     "analyzed_func": 4,
-    "block_num": 18673843,
+    "block_num": 18736411,
     "address": "0x33ef51485255f8e6fc91654dd237cd96bf115bbd",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

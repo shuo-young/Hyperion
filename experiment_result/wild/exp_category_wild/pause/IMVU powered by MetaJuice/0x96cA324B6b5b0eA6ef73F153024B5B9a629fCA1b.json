@@ -2,7 +2,7 @@
     "dapp_name": "IMVU powered by MetaJuice",
     "total_func": 82,
     "analyzed_func": 5,
-    "block_num": 18642530,
+    "block_num": 18724622,
     "address": "0x96cA324B6b5b0eA6ef73F153024B5B9a629fCA1b",
     "platform": "ETH",
     "reward": {
@@ -10,24 +10,9 @@
         "ui": {}
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0x8a78bdf6": {
-            "0x251a": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-10-))",
-                    "Ia_store-35-*Id_5"
-                ]
-            ]
-        },
-        "0xfe939263": {
-            "0x2edb": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-10-))",
-                    "Ia_store-35-*Id_2"
-                ]
-            ]
-        },
+        "rate": [],
         "0x20cbf5f9": {
             "0x16a1": [
                 [
@@ -88,6 +73,22 @@
                 ]
             ]
         },
+        "0x8a78bdf6": {
+            "0x251a": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "Ia_store-35-*Id_5"
+                ]
+            ]
+        },
+        "0xfe939263": {
+            "0x2edb": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-10-))",
+                    "Ia_store-35-*Id_2"
+                ]
+            ]
+        },
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -117,7 +118,7 @@
     },
     "inconsistency": {
         "reward": false,
-        "fee": true,
+        "fee": false,
         "supply": false,
         "lock": false,
         "clear": false,

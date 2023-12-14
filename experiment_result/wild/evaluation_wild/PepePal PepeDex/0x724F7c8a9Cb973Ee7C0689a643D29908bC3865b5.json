@@ -2,7 +2,7 @@
     "dapp_name": "PepePal PepeDex",
     "total_func": 25,
     "analyzed_func": 17,
-    "block_num": 18654182,
+    "block_num": 18730199,
     "address": "0x724F7c8a9Cb973Ee7C0689a643D29908bC3865b5",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

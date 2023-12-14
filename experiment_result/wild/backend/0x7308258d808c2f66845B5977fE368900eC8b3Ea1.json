@@ -2,7 +2,7 @@
     "dapp_name": "Usdtseed",
     "total_func": 34,
     "analyzed_func": 2,
-    "block_num": 33855775,
+    "block_num": 34145591,
     "address": "0x7308258d808c2f66845B5977fE368900eC8b3Ea1",
     "platform": "BSC",
     "reward": {
@@ -11,6 +11,10 @@
     "fee": {
         "warning": true,
         "modifiable": false,
+        "rate": [
+            0.08,
+            0.02
+        ],
         "0xfba05279": {
             "0xfc7": [
                 [

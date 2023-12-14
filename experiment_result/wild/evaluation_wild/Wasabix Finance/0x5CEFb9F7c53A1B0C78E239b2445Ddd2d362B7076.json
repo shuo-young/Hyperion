@@ -2,7 +2,7 @@
     "dapp_name": "Wasabix Finance",
     "total_func": 48,
     "analyzed_func": 7,
-    "block_num": 18672043,
+    "block_num": 18735703,
     "address": "0x5CEFb9F7c53A1B0C78E239b2445Ddd2d362B7076",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

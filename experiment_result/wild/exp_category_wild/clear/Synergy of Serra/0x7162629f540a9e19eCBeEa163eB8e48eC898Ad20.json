@@ -2,7 +2,7 @@
     "dapp_name": "Synergy of Serra",
     "total_func": 35,
     "analyzed_func": 3,
-    "block_num": 18673878,
+    "block_num": 18736424,
     "address": "0x7162629f540a9e19eCBeEa163eB8e48eC898Ad20",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
@@ -29,19 +30,19 @@
     },
     "clear": {
         "warning": true,
-        "0x89476069": {
-            "0x159d": [
-                [
-                    "Concat(0, Extract(159, 0, Ia_store-9-))",
-                    "mem_mem_64"
-                ]
-            ]
-        },
         "0x3ccfd60b": {
             "0xccaS0x3d8": [
                 [
                     "Concat(0, Extract(159, 0, Ia_store-9-))",
                     "IH_b"
+                ]
+            ]
+        },
+        "0x89476069": {
+            "0x159d": [
+                [
+                    "Concat(0, Extract(159, 0, Ia_store-9-))",
+                    "mem_mem_64"
                 ]
             ]
         },

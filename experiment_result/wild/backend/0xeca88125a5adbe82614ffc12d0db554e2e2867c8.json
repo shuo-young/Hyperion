@@ -1,0 +1,28 @@
+{
+    "dapp_name": "Venus Protocol",
+    "total_func": 51,
+    "analyzed_func": 0,
+    "block_num": 34140328,
+    "address": "0xeca88125a5adbe82614ffc12d0db554e2e2867c8",
+    "platform": "BSC",
+    "reward": {
+        "warning": false
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": []
+    },
+    "supply": {
+        "amount": [
+            392032770032890470
+        ],
+        "unlimited": false
+    },
+    "lock": false,
+    "clear": {
+        "warning": false
+    },
+    "pause": false,
+    "metadata": ""
+}

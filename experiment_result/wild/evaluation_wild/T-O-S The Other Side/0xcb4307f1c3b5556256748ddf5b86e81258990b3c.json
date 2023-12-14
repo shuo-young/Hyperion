@@ -2,7 +2,7 @@
     "dapp_name": "T-O-S The Other Side",
     "total_func": 56,
     "analyzed_func": 3,
-    "block_num": 18641757,
+    "block_num": 18724272,
     "address": "0xcb4307f1c3b5556256748ddf5b86e81258990b3c",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

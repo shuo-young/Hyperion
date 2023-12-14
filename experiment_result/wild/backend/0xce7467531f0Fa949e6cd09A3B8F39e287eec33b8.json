@@ -2,7 +2,7 @@
     "dapp_name": "The Sandbox",
     "total_func": 25,
     "analyzed_func": 4,
-    "block_num": 18674281,
+    "block_num": 18736528,
     "address": "0xce7467531f0Fa949e6cd09A3B8F39e287eec33b8",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

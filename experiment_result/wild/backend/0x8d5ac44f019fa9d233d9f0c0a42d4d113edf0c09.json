@@ -2,7 +2,7 @@
     "dapp_name": "5Degrees",
     "total_func": 28,
     "analyzed_func": 1,
-    "block_num": 18661719,
+    "block_num": 18734053,
     "address": "0x8d5ac44f019fa9d233d9f0c0a42d4d113edf0c09",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

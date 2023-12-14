@@ -2,16 +2,17 @@
     "dapp_name": "Robotos Official",
     "total_func": 35,
     "analyzed_func": 6,
-    "block_num": 18640903,
+    "block_num": 18723959,
     "address": "0x099689220846644f87d1137665cded7bf3422747",
     "platform": "ETH",
     "reward": {
         "warning": false
     },
     "fee": {
-        "warning": true,
+        "warning": false,
         "modifiable": false,
-        "0xa0712d68": {
+        "rate": [],
+        "0x853828b6": {
             "0x11b5": [
                 [
                     "Concat(0, Extract(175, 16, Ia_store-14-))",
@@ -31,7 +32,7 @@
                 ]
             ]
         },
-        "0x853828b6": {
+        "0xa0712d68": {
             "0x11b5": [
                 [
                     "Concat(0, Extract(175, 16, Ia_store-14-))",

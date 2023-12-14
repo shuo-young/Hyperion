@@ -2,7 +2,7 @@
     "dapp_name": "Damien Hirst - The Currency",
     "total_func": 38,
     "analyzed_func": 7,
-    "block_num": 18640774,
+    "block_num": 18723927,
     "address": "0xaaDc2D4261199ce24A4B0a57370c4FCf43BB60aa",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            1968
+            1974
         ],
         "unlimited": true
     },

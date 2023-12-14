@@ -2,7 +2,7 @@
     "dapp_name": "EasyFi Network",
     "total_func": 18,
     "analyzed_func": 1,
-    "block_num": 18670839,
+    "block_num": 18735155,
     "address": "0x5512014efa6Cd57764Fa743756F7a6Ce3358cC83",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [

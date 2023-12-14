@@ -2,7 +2,7 @@
     "dapp_name": "Chibi Fighters 2.0",
     "total_func": 30,
     "analyzed_func": 5,
-    "block_num": 18672164,
+    "block_num": 18735748,
     "address": "0xEd098DEA07ee0060A80EbA5e0B29083B1868119B",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

@@ -2,7 +2,7 @@
     "dapp_name": "The Mike Tyson NFT Collection",
     "total_func": 39,
     "analyzed_func": 7,
-    "block_num": 18642033,
+    "block_num": 18724395,
     "address": "0x40fb1c0f6f73b9fc5a81574ff39d27e0ba06b17b",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

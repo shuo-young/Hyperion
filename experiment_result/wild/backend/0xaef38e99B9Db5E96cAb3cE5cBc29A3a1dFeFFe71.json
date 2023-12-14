@@ -2,7 +2,7 @@
     "dapp_name": "KeeperDAO",
     "total_func": 11,
     "analyzed_func": 2,
-    "block_num": 18671401,
+    "block_num": 18735464,
     "address": "0xaef38e99B9Db5E96cAb3cE5cBc29A3a1dFeFFe71",
     "platform": "ETH",
     "reward": {
@@ -10,7 +10,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [],

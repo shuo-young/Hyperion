@@ -2,7 +2,7 @@
     "dapp_name": "Boonji Project",
     "total_func": 34,
     "analyzed_func": 6,
-    "block_num": 18641000,
+    "block_num": 18723993,
     "address": "0x4cd0ea8b1bdb5ab9249d96ccf3d8a0d3ada2bc76",
     "platform": "ETH",
     "reward": {
@@ -12,6 +12,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

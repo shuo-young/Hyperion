@@ -2,7 +2,7 @@
     "dapp_name": "Uniswap V2",
     "total_func": 28,
     "analyzed_func": 4,
-    "block_num": 18659233,
+    "block_num": 18732776,
     "address": "0x1E49768714E438E789047f48FD386686a5707db2",
     "platform": "ETH",
     "reward": {
@@ -10,11 +10,12 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": false
+        "modifiable": false,
+        "rate": []
     },
     "supply": {
         "amount": [
-            252993168717598831
+            342294197921048014
         ],
         "unlimited": false
     },

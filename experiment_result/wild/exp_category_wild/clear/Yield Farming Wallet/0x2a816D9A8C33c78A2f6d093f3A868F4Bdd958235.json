@@ -2,7 +2,7 @@
     "dapp_name": "Yield Farming Wallet",
     "total_func": 15,
     "analyzed_func": 4,
-    "block_num": 33857407,
+    "block_num": 34146543,
     "address": "0x2a816D9A8C33c78A2f6d093f3A868F4Bdd958235",
     "platform": "BSC",
     "reward": {
@@ -40,6 +40,7 @@
     "fee": {
         "warning": false,
         "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],

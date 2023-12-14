@@ -2,7 +2,7 @@
     "dapp_name": "CyberKongz VX",
     "total_func": 45,
     "analyzed_func": 4,
-    "block_num": 18640688,
+    "block_num": 18723926,
     "address": "0x7EA3Cca10668B8346aeC0bf1844A49e995527c8B",
     "platform": "ETH",
     "reward": {
@@ -11,7 +11,8 @@
     },
     "fee": {
         "warning": false,
-        "modifiable": true,
+        "modifiable": false,
+        "rate": [],
         "ui": {
             "has_fee": false,
             "fee_values": [],
