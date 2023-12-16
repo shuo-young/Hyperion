@@ -5,13 +5,9 @@ This directory contains the raw experimental output of our evaluation section. D
 - `dataset`: csv data that records (DApp's name, DApp contract address, blockchain platform), including ground truth and wild datasets.
 
 - `ground_truth`: the running output on ground truth dataset.
-
   - `backend`: the running output of contract bytecode analysis.
-
   - `frontend`: the running output of description analysis.
-
   - `evaluation_gt`: the inconsistency detection results of each DApp.
-
   - `exp_category_gt`: the catogrized detection result according to the inconsistency type. For the clarity, we do not use the name shown in the paper. The mapping relationship is shown below:
 
     ```csv
@@ -27,13 +23,9 @@ This directory contains the raw experimental output of our evaluation section. D
 - `wild`: the running output on wild dataset
 
   - `backend`: the running output of contract bytecode analysis on wild DApps.
-
   - `frontend`: the running output of description analysis on wild DApps.
-
   - `evaluation_wild`: the inconsistency detection results of each wild DApp.
-
   - `exp_category_wild`: the catogrized wild detection result according to the inconsistency type.
-  
   - `sampling_exp`: sampling experiment based on the interval 10 and a confidence of 95%.
     - We use `00_FP` in each directory to outline the false positives we find during evaluation on the random sampled results.
 
@@ -78,6 +70,7 @@ Ground Truth: BUSD miner, CROBeansMiner, Miracle BUSD Gems ROI Miner, Staker Caf
 >             level_price_local=LEVEL_PRICE[_level];
 >             }
 >             sent = address(uint160(referer)).send(level_price_local);
+>             ...
 > ```
 
 #### Wrongly reported by HyperCode

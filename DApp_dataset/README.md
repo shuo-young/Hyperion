@@ -3,17 +3,11 @@
 This directory contains the datasets used in the experimental section of the paper. where
 
 - `fine_tune`: A dataset for fine-tuning large models.
-
 - `risky_DAPPs`: A dataset for testing the effectiveness of detection tools. It contains labeled dapps (ground truth).
-
 - `wilds`: A dataset for large-scale experiment. It contains unlabeled dapps (wild).
-
 - `HtmlTextExtractor`: a tool for automatically parsing the website raw text from a given url, serving as a helper.
-
 - `Crawler`: a tool set for crawling wild DApp dataset, i.e., DAppradar crawler, Website crawler, and Contract-crawler, please refer to their readme in each directory.
-
 - `DApp-Collected.xlsx`: DApp collected from DAppradar and DAppbay for finding DApp inconsistencies.
-
 - `inconsistency_map.csv`: the mapping csv that shows the problematic DApp with its inconsistency type.
 
 We have a readme in each dataset directory.
