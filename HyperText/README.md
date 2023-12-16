@@ -18,6 +18,10 @@
 
 ## Key experiments/directory in workflow
 
+The fine-tune process refers to the architecture shown below:
+
+<img src="../images/llm_ft.jpg" alt="arch" style="zoom: 50%;" />
+
 In order to obtain the best LLM inference results, we conducted numerous experimental attempts. Some key experimental directory contain important data. If you want to obtain the final experimental data we use, just follow the directories/files mentioned below.
 
 ### Prompt Design

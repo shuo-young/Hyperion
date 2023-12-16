@@ -4,6 +4,14 @@
 
 Artifact repository of the work: *<u>Hyperion: Illuminating Shadows of DApp Inconsistencies using LLM and Dataflow-Guided Symbolic Execution</u>*
 
+## Workflow
+
+The design of Hyperion refers to the architecture shown below:
+
+<img src="./images/overview.jpg" alt="arch" style="zoom: 50%;" />
+
+## Components
+
 There are 4 main parts of our artifact:
 
 1. `HyperText`: Instruction-tuned model based on LLaMA2 for DApp description analysis. Please go to this directory for a **detailed markdown file**, illustrating the complete **process of our experiments** on the LLM, i.e., *prompt design, prompt segmentation, and instruction-tune.*
@@ -84,7 +92,9 @@ There are 4 main parts of our artifact:
 
    - `ground_truth`: the running output on ground truth dataset.
 
-   - `wild`: the running output on wild dataset
+   - `wild`: the running output on wild dataset.
+
+   - We also show details obout missing or wronly reported cases, combining with a real-world case study.
 
 ### Some other Utils
 
