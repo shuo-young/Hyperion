@@ -3,9 +3,9 @@ import json
 import shutil
 
 # Directories and file paths
-backend_dir = "result/wild_1205"
+backend_dir = "result/wild"
 frontend_output = "nlp/result/output_wild.json"
-output_dir = "evaluation_wild_1205"  # Directory to save the merged data
+output_dir = "evaluation_wild"  # Directory to save the merged data
 
 print("analyzed contracts")
 print(len(os.listdir(backend_dir)))
@@ -167,7 +167,7 @@ for dapp_name, data in merged_data.items():
     with open(file_path, "w") as f:
         json.dump(data, f, indent=4)
 
-    category_dir = "exp_category_wild_1205"
+    category_dir = "exp_category_wild"
     if not os.path.exists(category_dir):
         os.makedirs(category_dir)
 

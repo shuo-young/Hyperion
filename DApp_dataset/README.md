@@ -24,18 +24,6 @@ The 3 datasets' links are follow:
 
 3. fine-tune: <https://drive.google.com/drive/folders/1BDDJNrzBqWR0n5Jkrad33agy2YyappuY?usp=drive_link>
 
-For the clarity, we do not name the directory as the inconsistency shown in the paper. For understanding, the mapping relationship is shown below:
-
-```csv=
-clear => Unclaimed Fund Flow
-fee => Hidden Fee
-lock => Adjustable Liquidity
-metadata => Volatile NFT Accessibility
-pause => Changeable DApp Status
-reward => Unguaranteed Reward
-supply => Unconstrained Token Supply
-```
-
 ---
 
 Furthermoe, to illutrate our structure of DApp dataset, we put a sample case in directory `sample`.
