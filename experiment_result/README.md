@@ -27,10 +27,15 @@ This directory contains the raw experimental output of our evaluation section. D
 - `wild`: the running output on wild dataset
 
   - `backend`: the running output of contract bytecode analysis on wild DApps.
+
   - `frontend`: the running output of description analysis on wild DApps.
+
   - `evaluation_wild`: the inconsistency detection results of each wild DApp.
+
   - `exp_category_wild`: the catogrized wild detection result according to the inconsistency type.
+  
   - `sampling_exp`: sampling experiment based on the interval 10 and a confidence of 95%.
+    - We use `00_FP` in each directory to outline the false positives we find during evaluation on the random sampled results.
 
 ### FN and FP analysis details
 

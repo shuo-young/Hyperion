@@ -1,4 +1,4 @@
-# Helios: DApp front-end description analysis module
+# HyperText: DApp front-end description analysis module
 
 ## module directory structure
 
@@ -23,6 +23,7 @@ In order to obtain the best LLM inference results, we conducted numerous experim
 ### Prompt Design
 
 In our paper, it is mentioned that our complete prompt consists of the following parts:
+
 > { 𝑃 = { 𝑆𝑃 : 𝑅 + 𝐺𝐼 } + { 𝑈𝑃 : 𝑈𝑃<sub>𝑓𝑝</sub> +𝑈𝑃<sub>𝐶𝑜𝑇</sub> } + 𝐷 }
 
 In order to facilitate flexible adjustment of prompts in the experiment, we have placed different parts in files or inference scripts.
@@ -34,9 +35,10 @@ The location corresponding to each part:
 system prompt. In llama2, SP is the role assigned to llama2 during the first conversation, along with some response criteria.
 
 Located inside the inference script: `/llama_recipes/chat_completion/ask_all_question.py` and `/llama_recipes.chat_completion/my_chat.py` ,stored in a variable named "system_role". The specific content is as follows:
+
 > You are an expert in blockchain and smart contracts.
-Always answer according to my requirements and be concise and accurate.
-If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
+> Always answer according to my requirements and be concise and accurate.
+> If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
 
 #### UP
 
@@ -52,9 +54,11 @@ The front-end text of Dapp. Almost every experimental directory has its correspo
 #### Attention
 
 In order to facilitate LLM's understanding and effectively distinguish between data and instructions in the prompt, natural language for transition was added between UP and D when concatenating the parts of the prompt in the code, as follows:
+
 > { 𝑃 = { 𝑆𝑃 : 𝑅 + 𝐺𝐼 } + { 𝑈𝑃 : 𝑈𝑃<sub>𝑓𝑝</sub> +𝑈𝑃<sub>𝐶𝑜𝑇</sub> } + "The text I provided is:" + 𝐷 }
 
 The following is a complete prompt example for the first category of inconsistency problem
+
 > You are an expert in blockchain and smart contracts. Always answer according to my requirements and be concise and accurate. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
 >
 > Extract numerical information related to the rate of reward or profit from the provided text. The text I provided is:
@@ -72,6 +76,15 @@ The specific experimental data for Dapp text segmentation with different token l
 The final dataset in Alpaca dataset format for Lora fine-tuning is located at: `dataset/ft_dataset/exp35.json`.
 
 This fine-tuning experiment and its related records are located at: `experiments/35`. The output file in this directory is the output result of the llama2 base model. On this basis, we corrected and streamlined the output of llama2 to achieve our expected effect, and then constructed it into a dataset in alpaca_dataset format (i.e. `dataset/ft_dataset/exp35.json`), for final fine-tuning.`log.out` is a fine-tuning log file.
+
+## Explanation of experimental results
+
+`experiments/36` is the final experiment we conducted on ground truth. In this experiment, llama2 achieved an accuracy of 84% in identifying Dapp inconsistency issues. I will explain the files in the experimental directory.
+
+- `gt.json`: Ground truth data of Dapp front-end text.
+- `out_dialog.json`: Experimental results saved in dialogue format
+- `out.json`: Detailed experimental results
+- `gt_out.xlsx`: Consistent with the data in out.json, only converted to xlsx format for easy labeling of the data. Among them, the `output_1` field represents the output of the LLM, the `expected` field represents our expected output, and the `correct` field represents the label of correctness.
 
 ## Run Step
 
@@ -92,14 +105,14 @@ cd llama2_finetuning_for_Dapp/llama_recipes/chat_completion
 ```
 
 Edit the parameters in the script that need to be used, with the main parameters being as follows:
->
-> - model_name :Llama2 base model path
-> - peft_model: The path of the fine-tuning Lora model
-> - do_sample: Sampling method
-> - question_file:The specific question content for a certain question in the JSON file
-> - text_file:Dapp front-end text file
-> - out_file_path:Output path JSON file
-> - out_file_path_d:Output dialog JSON file
+
+>- model_name :Llama2 base model path
+>- peft_model: The path of the fine-tuning Lora model
+>- do_sample: Sampling method
+>- question_file:The specific question content for a certain question in the JSON file
+>- text_file:Dapp front-end text file
+>- out_file_path:Output path JSON file
+>- out_file_path_d:Output dialog JSON file
 
 inference
 
@@ -129,7 +142,3 @@ Open the run.sh file and configure the main parameters
 > - data_path:JSON file path of datasets for fine-tuning
 
 Execute fine-tuning scripts
-
-```bash
-nohup bash run_ft.sh > {Log path} 2>&1 &
-```
