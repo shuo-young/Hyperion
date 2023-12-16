@@ -8,7 +8,9 @@ Artifact repository of the work: *<u>Hyperion: Illuminating Shadows of DApp Inco
 
 The design of Hyperion refers to the architecture shown below:
 
-<img src="./images/overview.jpg" alt="arch" style="zoom: 50%;" />
+<div align="center">
+  <img src="./images/overview.jpg" alt="arch" width = "600"/>
+</div>
 
 ## Components
 
