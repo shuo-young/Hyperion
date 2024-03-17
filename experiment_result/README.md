@@ -19,6 +19,12 @@ This directory contains the raw experimental output of our evaluation section. D
   - `sampling_exp`: sampling experiment based on the interval 10 and a confidence of 95%.
     - We use `00_FP` in each directory to outline the false positives we find during evaluation on the random sampled results.
 
+- `sampled_50`: randomly sampled 50 DApps for the comparison between NFTGuard and HyperCode on analyzing contract semantics of UTS Inconsistency.
+  - `dataset`: sampled DApp's contract sourcecode crawled from blockchain explorer API.
+  - `hyperion_positives`: reported positives of Hyperion, while 75% of them are true positives.
+  - `nftgurad_outputs`: original outputs of nftguard.
+  - `data.csv`: csv data of sampled 50 DApps.
+
 ### FN and FP analysis details
 
 Our paper only highlights some critical information of our analysis on the FNs and FPs due to the page limit. We now use this repo to illutrate the details of them.

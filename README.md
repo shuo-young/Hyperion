@@ -2,7 +2,7 @@
 
 ## Overview
 
-Artifact repository of the work: *<u>Hyperion: Illuminating Shadows of DApp Inconsistencies using LLM and Dataflow-Guided Symbolic Execution</u>*
+Artifact repository of the work: *<u>Hyperion: Unveiling DApp Inconsistencies using LLM and Dataflow-Guided Symbolic Execution</u>*
 
 ## Workflow
 

@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "93.3",
+ "instructions": "1749",
+ "time": "6.876018524169922",
+ "analysis": {
+  "proxy": [],
+  "burn": [],
+  "reentrancy": [],
+  "unlimited_minting": [],
+  "violation": []
+ },
+ "bool_defect": {
+  "proxy": false,
+  "burn": false,
+  "reentrancy": false,
+  "unlimited_minting": false,
+  "violation": false
+ },
+ "address": "",
+ "contract_count": 7,
+ "storage_var_count": 4,
+ "pub_fun_count": 5
+}

@@ -1,0 +1,62 @@
+{
+    "dapp_name": "Treeverse",
+    "total_func": 38,
+    "analyzed_func": 6,
+    "block_num": 18723952,
+    "address": "0x1B829B926a14634d36625e60165c0770C09D02b2",
+    "platform": "ETH",
+    "reward": {
+        "warning": false,
+        "ui": {}
+    },
+    "fee": {
+        "warning": false,
+        "modifiable": false,
+        "rate": [],
+        "ui": {
+            "has_fee": false,
+            "fee_values": [],
+            "fees": {}
+        }
+    },
+    "supply": {
+        "amount": [
+            10420
+        ],
+        "unlimited": true,
+        "ui": []
+    },
+    "lock": {
+        "backend": false,
+        "ui": []
+    },
+    "clear": {
+        "warning": true,
+        "0x3ccfd60b": {
+            "0xb41S0x37b": [
+                [
+                    "Is",
+                    "IH_b"
+                ]
+            ]
+        },
+        "ui": false
+    },
+    "pause": {
+        "backend": false,
+        "ui": false
+    },
+    "metadata": {
+        "backend": "",
+        "ui": false
+    },
+    "inconsistency": {
+        "reward": false,
+        "fee": false,
+        "supply": true,
+        "lock": false,
+        "clear": true,
+        "pause": false,
+        "metadata": false
+    }
+}
