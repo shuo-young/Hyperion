@@ -1,0 +1,72 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/NervousNFT.sol:
+Error: Source "@openzeppelin/contracts/security/ReentrancyGuard.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/NervousNFT.sol:71:1:
+   |
+71 | import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/NervousNFT.sol:72:1:
+   |
+72 | import "@openzeppelin/contracts/access/Ownable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/cryptography/ECDSA.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/NervousNFT.sol:73:1:
+   |
+73 | import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/finance/PaymentSplitter.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/NervousNFT.sol:74:1:
+   |
+74 | import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:6:1:
+  |
+6 | import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Address.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:7:1:
+  |
+7 | import "@openzeppelin/contracts/utils/Address.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Context.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:8:1:
+  |
+8 | import "@openzeppelin/contracts/utils/Context.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Strings.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:9:1:
+  |
+9 | import "@openzeppelin/contracts/utils/Strings.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/introspection/ERC165.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/WVRPS by WarpSound/0xcbc67ea382f8a006d46eeeb7255876beb7d7f14d/contracts/ERC721S.sol:10:1:
+   |
+10 | import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

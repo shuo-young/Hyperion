@@ -1,0 +1,39 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+incomplete push instruction at 72
+INFO:root:contract:dataset/Pixelmon/0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220/Pixelmon.sol:Pixelmon
+INFO:root:contract dataset/Pixelmon/0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220/Pixelmon.sol:Pixelmon:
+INFO:cfg_builder.sym_exec:	============ Results of dataset/Pixelmon/0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220/Pixelmon.sol:Pixelmon===========
+INFO:root:Building CFG...
+                            NFTGuard GENESIS v0.0.1                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Defect Detection           ┃           Execution States            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━┳━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ St… ┃ Lo… ┃ │ ┃ Time  ┃ Code Cover… ┃ Block Cove… ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━╇━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ Fa… │     │ │ │ 444.4 │ 86.0        │ 83.9        │ │
+│ │   ERC-721 Reentrancy │ Fa… │     │ │ └───────┴─────────────┴─────────────┘ │
+│ │    Unlimited Minting │ Fa… │     │ │ ┏━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━ │
+│ │ Missing Requirements │ Fa… │     │ │ ┃ PC    ┃ Opcode ┃ Current Function   │
+│ │          Public Burn │ Fa… │     │ │ ┡━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━ │
+│ └──────────────────────┴─────┴─────┘ │ │ 1912  │ PUSH2  │ transferOwnership  │
+│                                      │ └───────┴────────┴─────────────────── │
+└──────────────────────────────────────┴───────────────────────────────────────┘                          NFTGuard GENESIS v0.0.1                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Defect Detection               ┃     Execution States      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ Status ┃ Location ┃ │ ┃ Time  ┃ Code Coverage ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ False  │          │ │ │ 454.4 │ 88.9          │ │
+│ │   ERC-721 Reentrancy │ False  │          │ │ └───────┴───────────────┘ │
+│ │    Unlimited Minting │ False  │          │ │ ┏━━━━━━━━━━━━━━━━━━━━━━┓  │
+│ │ Missing Requirements │ False  │          │ │ ┃ Total Instructions   ┃  │
+│ │          Public Burn │ False  │          │ │ ┡━━━━━━━━━━━━━━━━━━━━━━┩  │
+│ └──────────────────────┴────────┴──────────┘ │ │ 7691                 │  │
+│                                              │ └──────────────────────┘  │
+└──────────────────────────────────────────────┴───────────────────────────┘
+INFO:defect_identifier.identifier:	====== Analysis Completed ======
+INFO:defect_identifier.identifier:Wrote results to dataset/Pixelmon/0xADaE0Ddaf90170a44ADEbcFB8eeDE12041D13220/Pixelmon.sol:Pixelmon.json.

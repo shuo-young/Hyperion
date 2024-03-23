@@ -1,0 +1,18 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/8liens NFT/0x740c178e10662bbb050bde257bfa318defe3cabc/contracts/8liens/8liens.sol:
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/8liens NFT/0x740c178e10662bbb050bde257bfa318defe3cabc/contracts/8liens/8liensMeta.sol:5:1:
+  |
+5 | import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "erc721a/contracts/extensions/ERC721ABurnable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/8liens NFT/0x740c178e10662bbb050bde257bfa318defe3cabc/contracts/8liens/8liensMeta.sol:6:1:
+  |
+6 | import {IERC721A, ERC721A, ERC721ABurnable} from "erc721a/contracts/extensions/ERC721ABurnable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

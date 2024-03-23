@@ -1,0 +1,47 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:
+Warning: Contract code size is 28797 bytes and exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.
+  --> dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:41:1:
+   |
+41 | contract Valhalla is ERC721V, Ownable, ERC2981 {
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+incomplete push instruction at 6394
+INFO:root:contract:dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:Valhalla
+INFO:root:contract dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:Valhalla:
+INFO:cfg_builder.sym_exec:	============ Results of dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:Valhalla===========
+INFO:root:Building CFG...
+                            NFTGuard GENESIS v0.0.1                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Defect Detection           ┃           Execution States            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━┳━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ St… ┃ Lo… ┃ │ ┃ Time  ┃ Code Cover… ┃ Block Cove… ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━╇━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ Fa… │     │ │ │ 456.1 │ 26.0        │ 24.9        │ │
+│ │   ERC-721 Reentrancy │ Fa… │     │ │ └───────┴─────────────┴─────────────┘ │
+│ │    Unlimited Minting │ Fa… │     │ │ ┏━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━ │
+│ │ Missing Requirements │ Fa… │     │ │ ┃ PC    ┃ Opcode ┃ Current Function   │
+│ │          Public Burn │ Fa… │     │ │ ┡━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━ │
+│ └──────────────────────┴─────┴─────┘ │ │ 8692  │ PUSH1  │ transferFrom       │
+│                                      │ └───────┴────────┴─────────────────── │
+└──────────────────────────────────────┴───────────────────────────────────────┘                          NFTGuard GENESIS v0.0.1                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Defect Detection               ┃     Execution States      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ Status ┃ Location ┃ │ ┃ Time  ┃ Code Coverage ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ False  │          │ │ │ 606.3 │ 28.5          │ │
+│ │   ERC-721 Reentrancy │ False  │          │ │ └───────┴───────────────┘ │
+│ │    Unlimited Minting │ False  │          │ │ ┏━━━━━━━━━━━━━━━━━━━━━━┓  │
+│ │ Missing Requirements │ False  │          │ │ ┃ Total Instructions   ┃  │
+│ │          Public Burn │ False  │          │ │ ┡━━━━━━━━━━━━━━━━━━━━━━┩  │
+│ └──────────────────────┴────────┴──────────┘ │ │ 15483                │  │
+│                                              │ └──────────────────────┘  │
+└──────────────────────────────────────────────┴───────────────────────────┘
+INFO:defect_identifier.identifier:	====== Analysis Completed ======
+INFO:defect_identifier.identifier:Wrote results to dataset/Valhalla/0x231d3559aa848bf10366fb9868590f01d34bf240/contracts/Valhalla.sol:Valhalla.json.

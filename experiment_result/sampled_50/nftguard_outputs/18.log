@@ -1,0 +1,12 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Hashmasks/0xc2c747e0f7004f9e8817db2ca4997657a7746928/Users/gauthm/Ethereum/kingzului/contracts/Masks.sol:
+Error: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> dataset/Hashmasks/0xc2c747e0f7004f9e8817db2ca4997657a7746928/Users/gauthm/Ethereum/kingzului/contracts/Masks.sol:1:1:
+  |
+1 | pragma solidity ^0.7.0;
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

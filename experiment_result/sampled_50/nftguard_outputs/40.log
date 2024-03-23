@@ -1,0 +1,30 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/The Watch/0x236672Ed575E1e479b8E101AEeb920F32361f6F9/C/Users/hunte/Documents/missingwatcher-contracts/contracts/WatcherMinter.sol:
+Error: Source "@openzeppelin/contracts/token/ERC1155/ERC1155.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/The Watch/0x236672Ed575E1e479b8E101AEeb920F32361f6F9/C/Users/hunte/Documents/missingwatcher-contracts/contracts/WatcherMinter.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@rarible/royalties/contracts/impl/RoyaltiesV2Impl.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/The Watch/0x236672Ed575E1e479b8E101AEeb920F32361f6F9/C/Users/hunte/Documents/missingwatcher-contracts/contracts/WatcherMinter.sol:5:1:
+  |
+5 | import "@rarible/royalties/contracts/impl/RoyaltiesV2Impl.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@rarible/royalties/contracts/LibPart.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/The Watch/0x236672Ed575E1e479b8E101AEeb920F32361f6F9/C/Users/hunte/Documents/missingwatcher-contracts/contracts/WatcherMinter.sol:6:1:
+  |
+6 | import "@rarible/royalties/contracts/LibPart.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@rarible/royalties/contracts/LibRoyaltiesV2.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/The Watch/0x236672Ed575E1e479b8E101AEeb920F32361f6F9/C/Users/hunte/Documents/missingwatcher-contracts/contracts/WatcherMinter.sol:7:1:
+  |
+7 | import "@rarible/royalties/contracts/LibRoyaltiesV2.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

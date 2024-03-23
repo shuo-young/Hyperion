@@ -1,0 +1,36 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/CyberBrokers.sol:
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/CyberBrokers.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/CyberBrokers.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Strings.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/CyberBrokersMetadata.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/utils/Strings.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/CyberBrokersMetadata.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/CyberBrokers/0x892848074ddea461a15f337250da3ce55580ca85/contracts/ContractDataStorage.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

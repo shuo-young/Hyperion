@@ -1,0 +1,12 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Prime Ape Planet PAP/0x6632a9d63e142f17a668064d41a21193b49b41a0/contracts/MintableERC721.sol:
+Error: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> dataset/Prime Ape Planet PAP/0x6632a9d63e142f17a668064d41a21193b49b41a0/contracts/MintableERC721.sol:9:1:
+  |
+9 | pragma solidity 0.8.10;
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

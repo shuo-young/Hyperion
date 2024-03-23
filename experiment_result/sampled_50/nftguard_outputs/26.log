@@ -1,0 +1,24 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/OG:Crystals/0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5/contracts/og.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/OG:Crystals/0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5/contracts/og.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/math/SafeMath.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/OG:Crystals/0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5/contracts/og.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/OG:Crystals/0x368ad4a7a7f49b8fa8f34476be0fc4d04ce622f5/contracts/og.sol:6:1:
+  |
+6 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

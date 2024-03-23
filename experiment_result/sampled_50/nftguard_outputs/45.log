@@ -1,0 +1,48 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:6:1:
+  |
+6 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:7:1:
+  |
+7 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Counters.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:8:1:
+  |
+8 | import "@openzeppelin/contracts/utils/Counters.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/math/SafeMath.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:9:1:
+  |
+9 | import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/VOX Collectibles: Town Star/0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C/contracts/vox.sol:10:1:
+   |
+10 | import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

@@ -1,0 +1,24 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Tom Sachs Rocket Factory/0x11595ffb2d3612d810612e34bc1c2e6d6de55d26/Users/nahuel/nftstudios/rocket-factory/rocket-factory-contracts/contracts/RocketComponent.sol:
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/Tom Sachs Rocket Factory/0x11595ffb2d3612d810612e34bc1c2e6d6de55d26/Users/nahuel/nftstudios/rocket-factory/rocket-factory-contracts/contracts/RocketComponent.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/Tom Sachs Rocket Factory/0x11595ffb2d3612d810612e34bc1c2e6d6de55d26/Users/nahuel/nftstudios/rocket-factory/rocket-factory-contracts/contracts/RocketComponent.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/Tom Sachs Rocket Factory/0x11595ffb2d3612d810612e34bc1c2e6d6de55d26/Users/nahuel/nftstudios/rocket-factory/rocket-factory-contracts/contracts/RocketComponent.sol:6:1:
+  |
+6 | import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

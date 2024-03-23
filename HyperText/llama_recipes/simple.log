@@ -1,0 +1,4 @@
+2023-10-11 09:55:05,239 - /GPUFS/nsccgz_ywang_zfd/zhongqy/llama2_finetuning_for_Dapp/experiments/6/exp.log - INFO - 第6次测试，基于实验3-1，扩充case到24个
+2023-10-11 09:55:05,240 - /GPUFS/nsccgz_ywang_zfd/zhongqy/llama2_finetuning_for_Dapp/experiments/6/exp.log - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}
+2023-10-11 09:55:05,266 - /GPUFS/nsccgz_ywang_zfd/zhongqy/llama2_finetuning_for_Dapp/experiments/6/exp.log - INFO - 第6次测试，基于实验3-1，扩充case到24个
+2023-10-11 09:55:05,267 - /GPUFS/nsccgz_ywang_zfd/zhongqy/llama2_finetuning_for_Dapp/experiments/6/exp.log - INFO - {'peft_model': False, 'do_sample': True, 'temperature': 1.0, 'top_p': 1.0, 'top_k': 10, 'use_fast_kernels': False}

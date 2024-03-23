@@ -1,0 +1,36 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/Kiwami.sol:
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/Kiwami.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "erc721a/contracts/ERC721A.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/Kiwami.sol:5:1:
+  |
+5 | import "erc721a/contracts/ERC721A.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Strings.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/Kiwami.sol:7:1:
+  |
+7 | import "@openzeppelin/contracts/utils/Strings.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/MerkleWhitelist.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/KIWAMI Genesis/0x701a038af4bd0fc9b69a829ddcb2f61185a49568/contracts/MerkleWhitelist.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

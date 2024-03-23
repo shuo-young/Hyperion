@@ -1,0 +1,12 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/FEWOCiOUS x RTFKT/0x2250d7c238392f4b575bb26c672afe45f0adcb75/0x2250d7c238392f4b575bb26c672afe45f0adcb75.sol:
+Error: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> dataset/FEWOCiOUS x RTFKT/0x2250d7c238392f4b575bb26c672afe45f0adcb75/0x2250d7c238392f4b575bb26c672afe45f0adcb75.sol:1:1:
+  |
+1 | pragma solidity ^0.5.0;
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

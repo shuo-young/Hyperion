@@ -1,0 +1,12 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/0x9eeeaf684e228c2d5c89435e010acc02c41dc86b/contracts/Bricktopians.sol:
+Error: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> dataset/0x9eeeaf684e228c2d5c89435e010acc02c41dc86b/contracts/Bricktopians.sol:2:1:
+  |
+2 | pragma solidity 0.8.0;
+  | ^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

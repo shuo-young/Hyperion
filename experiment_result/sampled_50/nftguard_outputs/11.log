@@ -1,0 +1,12 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Damien Hirst - The Currency/0xaaDc2D4261199ce24A4B0a57370c4FCf43BB60aa/0xaaDc2D4261199ce24A4B0a57370c4FCf43BB60aa.sol:
+Error: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+    --> dataset/Damien Hirst - The Currency/0xaaDc2D4261199ce24A4B0a57370c4FCf43BB60aa/0xaaDc2D4261199ce24A4B0a57370c4FCf43BB60aa.sol:1498:1:
+     |
+1498 | pragma solidity 0.8.6;
+     | ^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

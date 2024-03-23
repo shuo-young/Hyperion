@@ -1,0 +1,48 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:5:1:
+  |
+5 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/security/ReentrancyGuard.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:6:1:
+  |
+6 | import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:7:1:
+  |
+7 | import "@openzeppelin/contracts/access/Ownable.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/cryptography/ECDSA.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:8:1:
+  |
+8 | import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:9:1:
+  |
+9 | import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/common/ERC2981.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/World of Women Galaxy/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/contracts/WoWGalaxy.sol:10:1:
+   |
+10 | import "@openzeppelin/contracts/token/common/ERC2981.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

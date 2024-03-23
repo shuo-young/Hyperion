@@ -1,0 +1,48 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:
+Warning: Contract code size is 25138 bytes and exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.
+    --> dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:1215:1:
+     |
+1215 | contract Treeverse is ERC721Enumerable, Ownable {
+     | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+incomplete push instruction at 74
+incomplete push instruction at 76
+INFO:root:contract:dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:Treeverse
+INFO:root:contract dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:Treeverse:
+INFO:cfg_builder.sym_exec:	============ Results of dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:Treeverse===========
+INFO:root:Building CFG...
+                            NFTGuard GENESIS v0.0.1                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Defect Detection           ┃           Execution States            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━┳━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ St… ┃ Lo… ┃ │ ┃ Time  ┃ Code Cover… ┃ Block Cove… ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━╇━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ Fa… │     │ │ │ 594.1 │ 41.0        │ 43.0        │ │
+│ │   ERC-721 Reentrancy │ Fa… │     │ │ └───────┴─────────────┴─────────────┘ │
+│ │    Unlimited Minting │ Fa… │     │ │ ┏━━━━━━┳━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓ │
+│ │ Missing Requirements │ Fa… │     │ │ ┃ PC   ┃ Opc… ┃ Current Function    ┃ │
+│ │          Public Burn │ Fa… │     │ │ ┡━━━━━━╇━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩ │
+│ └──────────────────────┴─────┴─────┘ │ │ 213… │ DUP3 │ getTokenIdsInColle… │ │
+│                                      │ └──────┴──────┴─────────────────────┘ │
+└──────────────────────────────────────┴───────────────────────────────────────┘                          NFTGuard GENESIS v0.0.1                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Defect Detection               ┃     Execution States      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ Status ┃ Location ┃ │ ┃ Time  ┃ Code Coverage ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ False  │          │ │ │ 601.7 │ 41.0          │ │
+│ │   ERC-721 Reentrancy │ False  │          │ │ └───────┴───────────────┘ │
+│ │    Unlimited Minting │ False  │          │ │ ┏━━━━━━━━━━━━━━━━━━━━━━┓  │
+│ │ Missing Requirements │ False  │          │ │ ┃ Total Instructions   ┃  │
+│ │          Public Burn │ False  │          │ │ ┡━━━━━━━━━━━━━━━━━━━━━━┩  │
+│ └──────────────────────┴────────┴──────────┘ │ │ 12929                │  │
+│                                              │ └──────────────────────┘  │
+└──────────────────────────────────────────────┴───────────────────────────┘
+INFO:defect_identifier.identifier:	====== Analysis Completed ======
+INFO:defect_identifier.identifier:Wrote results to dataset/Treeverse/0x1B829B926a14634d36625e60165c0770C09D02b2/0x1B829B926a14634d36625e60165c0770C09D02b2.sol:Treeverse.json.

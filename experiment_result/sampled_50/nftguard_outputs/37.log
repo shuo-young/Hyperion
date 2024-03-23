@@ -1,0 +1,30 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/The Flower Girls/0x2efa07cac3395599db83035d196f2a0e7263f766/0x2efa07cac3395599db83035d196f2a0e7263f766.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> dataset/The Flower Girls/0x2efa07cac3395599db83035d196f2a0e7263f766/0x2efa07cac3395599db83035d196f2a0e7263f766.sol
+
+
+incomplete push instruction at 21338
+incomplete push instruction at 9087
+Traceback (most recent call last):
+  File "tool.py", line 339, in <module>
+    main()
+  File "tool.py", line 333, in main
+    exit_code = analyze_solidity()
+  File "tool.py", line 171, in analyze_solidity
+    inputs = helper.get_inputs(global_params.TARGET_CONTRACTS)
+  File "/pro/yangshuo/nftdefects/inputter/input_helper.py", line 72, in get_inputs
+    source_map = SourceMap(contract, self.source, "solidity")
+  File "/pro/yangshuo/nftdefects/inputter/source_map.py", line 40, in __init__
+    SourceMap.position_groups = SourceMap._load_position_groups()
+  File "/pro/yangshuo/nftdefects/inputter/source_map.py", line 175, in _load_position_groups
+    out = json.loads(out)
+  File "/home/yangs/anaconda3/envs/nftguard/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/yangs/anaconda3/envs/nftguard/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/yangs/anaconda3/envs/nftguard/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

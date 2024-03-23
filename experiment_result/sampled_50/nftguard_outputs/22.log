@@ -1,0 +1,30 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Kaiju Kingz/0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83/contracts/KaijuKingz.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Kaiju Kingz/0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83/contracts/KaijuKingzERC721.sol:30:1:
+   |
+30 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Kaiju Kingz/0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83/contracts/KaijuKingzERC721.sol:31:1:
+   |
+31 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Kaiju Kingz/0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83/contracts/KaijuKingzERC721.sol:32:1:
+   |
+32 | import "@openzeppelin/contracts/access/Ownable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/math/SafeMath.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Kaiju Kingz/0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83/contracts/KaijuKingzERC721.sol:33:1:
+   |
+33 | import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

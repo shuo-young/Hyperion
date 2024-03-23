@@ -23,6 +23,11 @@ There are 4 main parts of our artifact:
    - `symbolic execution`: an IR-based symbolic execution module, using the semantics recovered to guide targeted symbolic execution. The IR-based SE is extensible and programmed with the IR instructions.
       - `ir_basic_blocks`: constructing basic blocks and functions from decompiled contract IR.
       - `ir_se`: extensible symbolic engine on contract IR, encompassing IR-instruction rules.
+
+      <div align="center">
+         <img src="./images/ir_cfg.jpg" alt="arch" width = "500"/>
+      </div>
+
       - `state_extractor`: on-chain data fetcher for checking attributes, e.g., programmed fee ratio.
       - `vargenerator`: classic generator for symbolic variables.
       - `utils`: some utility methods during symbolic execution.
@@ -30,6 +35,10 @@ There are 4 main parts of our artifact:
       - `semantic`: main class for preparing recovered semantics from dataflow analysis and graph analysis.
       - `decompilation`: decompiler dispatcher and information collector for graph analysis.
       - `graph_analyzer`: connector that assembles dataflow information to prepare function-level information for directed symbolic execution.
+
+      <div align="center">
+         <img src="./images/graph_analysis.jpg" alt="arch" width = "500"/>
+      </div>
 
    - `nlp`: a module for extracting key value attributes from `HyperText` outputs, based on NLTK.
    - `main.py`: the entrance for contract bytecode analysis, the supported parameters are showing below:

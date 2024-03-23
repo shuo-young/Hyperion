@@ -1,0 +1,66 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/hero/Hero.sol:
+Error: Source "@openzeppelin/contracts/access/AccessControlEnumerable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/hero/Hero.sol:15:1:
+   |
+15 | import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:10:1:
+   |
+10 | import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:11:1:
+   |
+11 | import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:12:1:
+   |
+12 | import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Address.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:13:1:
+   |
+13 | import "@openzeppelin/contracts/utils/Address.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Context.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:14:1:
+   |
+14 | import "@openzeppelin/contracts/utils/Context.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Strings.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:15:1:
+   |
+15 | import "@openzeppelin/contracts/utils/Strings.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/introspection/ERC165.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721.sol:16:1:
+   |
+16 | import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/utils/ERC721Enumerable.sol:11:1:
+   |
+11 | import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/IERC721.sol" not found: File not found. Searched the following locations: "".
+ --> dataset/RaidParty Heroes/0x966731dfd9b9925dd105ff465687f5aa8f54ee9f/contracts/interfaces/IRaidERC721.sol:4:1:
+  |
+4 | import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

@@ -1,0 +1,24 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Playing Arts Crypto Edition/0xc22616e971a670e72f35570337e562c3e515fbfe/contracts/PlayingArtsCryptoEdition.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Playing Arts Crypto Edition/0xc22616e971a670e72f35570337e562c3e515fbfe/contracts/PlayingArtsCryptoEdition.sol:16:1:
+   |
+16 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Playing Arts Crypto Edition/0xc22616e971a670e72f35570337e562c3e515fbfe/contracts/PlayingArtsCryptoEdition.sol:17:1:
+   |
+17 | import "@openzeppelin/contracts/access/Ownable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Playing Arts Crypto Edition/0xc22616e971a670e72f35570337e562c3e515fbfe/contracts/PlayingArtsCryptoEdition.sol:18:1:
+   |
+18 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

@@ -1,0 +1,48 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+INFO:CryticCompile:Compilation warnings/errors on dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:
+Error: Source "@openzeppelin/contracts/token/ERC721/ERC721.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:47:1:
+   |
+47 | import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:48:1:
+   |
+48 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:49:1:
+   |
+49 | import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/security/Pausable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:50:1:
+   |
+50 | import "@openzeppelin/contracts/security/Pausable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/access/Ownable.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:51:1:
+   |
+51 | import "@openzeppelin/contracts/access/Ownable.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/Counters.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:52:1:
+   |
+52 | import "@openzeppelin/contracts/utils/Counters.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@openzeppelin/contracts/utils/math/SafeMath.sol" not found: File not found. Searched the following locations: "".
+  --> dataset/Purrnelopes Country Club/0x9759226b2f8ddeff81583e244ef3bd13aaa7e4a1/contracts/CatToken.sol:53:1:
+   |
+53 | import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.

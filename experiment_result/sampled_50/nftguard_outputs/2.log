@@ -1,0 +1,40 @@
+nohup: 忽略输入
+WARNING:root:You are using an untested version of z3. 4.8.13 is the officially tested version
+INFO:root:Compiling solidity...
+incomplete push instruction at 1080
+incomplete push instruction at 2783
+INFO:root:contract:dataset/0x7daec605e9e2a1717326eedfd660601e2753a057/0x7daec605e9e2a1717326eedfd660601e2753a057.sol:AdminUpgradeabilityProxy
+INFO:root:contract dataset/0x7daec605e9e2a1717326eedfd660601e2753a057/0x7daec605e9e2a1717326eedfd660601e2753a057.sol:AdminUpgradeabilityProxy:
+INFO:cfg_builder.sym_exec:	============ Results of dataset/0x7daec605e9e2a1717326eedfd660601e2753a057/0x7daec605e9e2a1717326eedfd660601e2753a057.sol:AdminUpgradeabilityProxy===========
+INFO:root:Building CFG...
+                            NFTGuard GENESIS v0.0.1                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Defect Detection           ┃           Execution States            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━┳━━━━━┓ │ ┏━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ St… ┃ Lo… ┃ │ ┃ Time  ┃ Code Cover… ┃ Block Cove… ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━╇━━━━━┩ │ ┡━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ Fa… │     │ │ │ 6.8   │ 91.0        │ 86.2        │ │
+│ │   ERC-721 Reentrancy │ Fa… │     │ │ └───────┴─────────────┴─────────────┘ │
+│ │    Unlimited Minting │ Fa… │     │ │ ┏━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━ │
+│ │ Missing Requirements │ Fa… │     │ │ ┃ PC    ┃ Opcode ┃ Current Function   │
+│ │          Public Burn │ Fa… │     │ │ ┡━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━ │
+│ └──────────────────────┴─────┴─────┘ │ │ 789   │ PUSH20 │ admin              │
+│                                      │ └───────┴────────┴─────────────────── │
+└──────────────────────────────────────┴───────────────────────────────────────┘                          NFTGuard GENESIS v0.0.1                          
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Defect Detection               ┃     Execution States     ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓ │ ┏━━━━━━┳━━━━━━━━━━━━━━━┓ │
+│ ┃               Defect ┃ Status ┃ Location ┃ │ ┃ Time ┃ Code Coverage ┃ │
+│ ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩ │ ┡━━━━━━╇━━━━━━━━━━━━━━━┩ │
+│ │  Risky Mutable Proxy │ False  │          │ │ │ 6.9  │ 93.3          │ │
+│ │   ERC-721 Reentrancy │ False  │          │ │ └──────┴───────────────┘ │
+│ │    Unlimited Minting │ False  │          │ │ ┏━━━━━━━━━━━━━━━━━━━━━━┓ │
+│ │ Missing Requirements │ False  │          │ │ ┃ Total Instructions   ┃ │
+│ │          Public Burn │ False  │          │ │ ┡━━━━━━━━━━━━━━━━━━━━━━┩ │
+│ └──────────────────────┴────────┴──────────┘ │ │ 1749                 │ │
+│                                              │ └──────────────────────┘ │
+└──────────────────────────────────────────────┴──────────────────────────┘
+INFO:defect_identifier.identifier:	====== Analysis Completed ======
+INFO:defect_identifier.identifier:Wrote results to dataset/0x7daec605e9e2a1717326eedfd660601e2753a057/0x7daec605e9e2a1717326eedfd660601e2753a057.sol:AdminUpgradeabilityProxy.json.
