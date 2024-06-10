@@ -1,8 +1,0 @@
-torchrun指定显卡
-CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --nnodes 1 --nproc_per_node 4
-
-微调保存日志（自行替换目录）：
-nohup bash run_ft.sh > /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/21/log.out 2>&1 &
-
-后台运行脚本并保存控制台输出（自行替换目录）
-nohup bash run.sh > /home/zhongqy/workplace/llama2_finetuning_for_Dapp/experiments/34/log.out 2>&1 &

@@ -1,0 +1,8 @@
+torchrun specify gpu
+CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --nnodes 1 --nproc_per_node 4
+
+save log path：
+nohup bash run_ft.sh > /your/path/llama2_finetuning_for_Dapp/experiments/21/log.out 2>&1 &
+
+save console log:
+nohup bash run.sh > /your/path/llama2_finetuning_for_Dapp/experiments/34/log.out 2>&1 &
